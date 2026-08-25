@@ -6,16 +6,13 @@
   <title>Ben's Music DNA</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       min-height: 100vh;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top, #17382b 0%, #0b1713 35%, #070b0a 75%);
+      background: radial-gradient(circle at top, #17382b 0%, #0b1713 35%, #070b0a 75%);
       color: white;
       display: flex;
       justify-content: center;
@@ -69,10 +66,7 @@
       letter-spacing: 1px;
     }
 
-    h2 {
-      margin: 8px 0 8px;
-      font-size: 24px;
-    }
+    h2 { margin: 8px 0; font-size: 24px; }
 
     p {
       color: #bdc8c3;
@@ -92,9 +86,17 @@
       cursor: pointer;
     }
 
-    .secondary {
-      background: rgba(255,255,255,.10);
-      color: white;
+    #status {
+      margin-top: 14px;
+      color: #bdc8c3;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .tracks {
+      color: #bdc8c3;
+      line-height: 1.8;
+      padding-left: 22px;
     }
 
     .footer {
@@ -107,41 +109,217 @@
 </head>
 
 <body>
-  <main class="app">
+<main class="app">
 
-    <div class="logo">♫</div>
+  <div class="logo">♫</div>
 
-    <h1>Ben's Music DNA</h1>
+  <h1>Ben's Music DNA</h1>
 
-    <div class="subtitle">
-      Jouw muziek. Jouw DNA.<br>
-      En iedere zaterdag iets nieuws.
-    </div>
+  <div class="subtitle">
+    Jouw muziek. Jouw DNA.<br>
+    En iedere zaterdag iets nieuws.
+  </div>
 
-    <section class="card">
-      <div class="eyebrow">Ontdek-DNA</div>
-      <h2>Het zaterdagcadeautje 🎁</h2>
-      <p>
-        Iedere week 30 verrassende tracks,
-        gekozen vanuit jouw muzikale DNA.
-      </p>
-      <button>Open nieuwste Ontdek-DNA</button>
-    </section>
+  <section class="card">
+    <div class="eyebrow">Spotify-proef</div>
+    <h2>Ontdek-DNA — TEST 🎁</h2>
 
-    <section class="card">
-      <div class="eyebrow">Mijn muziek</div>
-      <h2>Ben's Music DNA</h2>
-      <p>
-        Van hardrock, prog, punk en glam tot
-        new wave, metal en nieuwe ontdekkingen.
-      </p>
-      <button class="secondary">Bekijk mijn DNA</button>
-    </section>
+    <p>Onze eerste mobiele proefplaylist:</p>
 
-    <div class="footer">
-      Ben's Music DNA · 2026
-    </div>
+    <ol class="tracks">
+      <li>Rush — Tom Sawyer</li>
+      <li>Ghost — Mary On A Cross</li>
+      <li>KISS — I Was Made For Lovin' You</li>
+    </ol>
 
-  </main>
+    <button id="spotifyButton">
+      Maak TEST-playlist in Spotify
+    </button>
+
+    <div id="status"></div>
+  </section>
+
+  <div class="footer">
+    Ben's Music DNA · 2026
+  </div>
+
+</main>
+
+<script>
+const CLIENT_ID = "7e680d38c1f343b6a55e8615e8030295";
+const REDIRECT_URI = "https://bcim1958.github.io/bens-music-dna/";
+
+const SCOPES = [
+  "playlist-modify-private",
+  "playlist-modify-public"
+].join(" ");
+
+const TEST_TRACKS = [
+  "spotify:track:5aPeUmT8QH1G2gRnSuKw17",
+  "spotify:track:2wBnZdVWa5jVpvYRfGU7rP",
+  "spotify:track:2ZSCy3P1QzpJySCWA6NRIU"
+];
+
+const button = document.getElementById("spotifyButton");
+const statusBox = document.getElementById("status");
+
+function setStatus(text) {
+  statusBox.textContent = text;
+}
+
+function randomString(length) {
+  const possible =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const values = crypto.getRandomValues(new Uint8Array(length));
+  return values.reduce(
+    (acc, x) => acc + possible[x % possible.length],
+    ""
+  );
+}
+
+async function sha256(text) {
+  const data = new TextEncoder().encode(text);
+  return crypto.subtle.digest("SHA-256", data);
+}
+
+function base64urlencode(buffer) {
+  return btoa(
+    String.fromCharCode(...new Uint8Array(buffer))
+  )
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_")
+    .replace(/=+$/, "");
+}
+
+async function startSpotifyLogin() {
+  const verifier = randomString(64);
+  const challenge = base64urlencode(await sha256(verifier));
+
+  sessionStorage.setItem("spotify_code_verifier", verifier);
+
+  const params = new URLSearchParams({
+    client_id: CLIENT_ID,
+    response_type: "code",
+    redirect_uri: REDIRECT_URI,
+    scope: SCOPES,
+    code_challenge_method: "S256",
+    code_challenge: challenge
+  });
+
+  window.location =
+    "https://accounts.spotify.com/authorize?" + params.toString();
+}
+
+async function getAccessToken(code) {
+  const verifier =
+    sessionStorage.getItem("spotify_code_verifier");
+
+  const body = new URLSearchParams({
+    client_id: CLIENT_ID,
+    grant_type: "authorization_code",
+    code: code,
+    redirect_uri: REDIRECT_URI,
+    code_verifier: verifier
+  });
+
+  const response = await fetch(
+    "https://accounts.spotify.com/api/token",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: body
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error("Spotify-login kon niet worden afgerond.");
+  }
+
+  return response.json();
+}
+
+async function spotifyFetch(url, token, options = {}) {
+  const response = await fetch(url, {
+    ...options,
+    headers: {
+      Authorization: "Bearer " + token,
+      "Content-Type": "application/json",
+      ...(options.headers || {})
+    }
+  });
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error("Spotify API-fout: " + text);
+  }
+
+  if (response.status === 204) return null;
+  return response.json();
+}
+
+async function createTestPlaylist(token) {
+  setStatus("Spotify is gekoppeld. TEST-playlist wordt gemaakt…");
+
+  const playlist = await spotifyFetch(
+    "https://api.spotify.com/v1/me/playlists",
+    token,
+    {
+      method: "POST",
+      body: JSON.stringify({
+        name: "Ontdek-DNA — TEST",
+        public: false,
+        description:
+          "Mobiele proef van Ben's Music DNA — Rush, Ghost en KISS."
+      })
+    }
+  );
+
+  await spotifyFetch(
+    "https://api.spotify.com/v1/playlists/" +
+      playlist.id +
+      "/items",
+    token,
+    {
+      method: "POST",
+      body: JSON.stringify({
+        uris: TEST_TRACKS
+      })
+    }
+  );
+
+  setStatus(
+    "Gelukt! 🎉 Open Spotify en kijk naar Ontdek-DNA — TEST."
+  );
+
+  button.textContent = "Open Spotify";
+  button.onclick = () => {
+    window.location.href = playlist.external_urls.spotify;
+  };
+}
+
+async function handleSpotifyReturn() {
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get("code");
+
+  if (!code) return;
+
+  history.replaceState({}, document.title, REDIRECT_URI);
+
+  try {
+    setStatus("Spotify-login wordt afgerond…");
+    const tokenData = await getAccessToken(code);
+    await createTestPlaylist(tokenData.access_token);
+  } catch (error) {
+    console.error(error);
+    setStatus("Er ging iets mis: " + error.message);
+  }
+}
+
+button.addEventListener("click", startSpotifyLogin);
+handleSpotifyReturn();
+</script>
+
 </body>
 </html>
