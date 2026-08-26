@@ -20,7 +20,7 @@
 
     .app {
       width: 100%;
-      max-width: 520px;
+      max-width: 620px;
       padding: 38px 22px 60px;
     }
 
@@ -66,7 +66,10 @@
       letter-spacing: 1px;
     }
 
-    h2 { margin: 8px 0; font-size: 24px; }
+    h2 {
+      margin: 8px 0;
+      font-size: 24px;
+    }
 
     p {
       color: #bdc8c3;
@@ -78,7 +81,7 @@
       border: 0;
       border-radius: 999px;
       padding: 16px 18px;
-      margin-top: 8px;
+      margin-top: 12px;
       background: #1ed760;
       color: #07100b;
       font-size: 17px;
@@ -86,17 +89,51 @@
       cursor: pointer;
     }
 
+    button:disabled {
+      opacity: .55;
+      cursor: wait;
+    }
+
     #status {
-      margin-top: 14px;
+      margin-top: 16px;
       color: #bdc8c3;
       line-height: 1.5;
       text-align: center;
+      white-space: pre-line;
     }
 
     .tracks {
       color: #bdc8c3;
-      line-height: 1.8;
-      padding-left: 22px;
+      line-height: 1.65;
+      padding-left: 24px;
+      font-size: 14px;
+    }
+
+    .tracks li {
+      padding: 2px 0;
+    }
+
+    .details {
+      display: none;
+      margin-top: 18px;
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.20);
+      color: #bdc8c3;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .details.visible {
+      display: block;
+    }
+
+    .ok {
+      color: #1ed760;
+    }
+
+    .warning {
+      color: #ffd166;
     }
 
     .footer {
@@ -121,26 +158,26 @@
   </div>
 
   <section class="card">
-    <div class="eyebrow">Spotify-proef</div>
-    <h2>Ontdek-DNA — TEST 🎁</h2>
+    <div class="eyebrow">Ontdek-DNA zaterdag</div>
+    <h2>Ontdek-DNA — 2026 W35 🎁</h2>
 
-    <p>Onze eerste mobiele proefplaylist:</p>
+    <p>
+      De eerste echte Ontdek-DNA-proeftuin:
+      30 ontdekkingen vanuit Ben's muzikale DNA.
+    </p>
 
-    <ol class="tracks">
-      <li>Rush — Tom Sawyer</li>
-      <li>Ghost — Mary On A Cross</li>
-      <li>KISS — I Was Made For Lovin' You</li>
-    </ol>
+    <ol class="tracks" id="trackList"></ol>
 
     <button id="spotifyButton">
-      Maak TEST-playlist in Spotify
+      Controleer 30 tracks en maak W35
     </button>
 
     <div id="status"></div>
+    <div id="details" class="details"></div>
   </section>
 
   <div class="footer">
-    Ben's Music DNA · 2026
+    Ben's Music DNA · Ontdek-DNA · 2026
   </div>
 
 </main>
@@ -154,23 +191,263 @@ const SCOPES = [
   "playlist-modify-public"
 ].join(" ");
 
-const TEST_TRACKS = [
-  "spotify:track:5aPeUmT8QH1G2gRnSuKw17",
-  "spotify:track:2wBnZdVWa5jVpvYRfGU7rP",
-  "spotify:track:2ZSCy3P1QzpJySCWA6NRIU"
+const PLAYLIST_NAME = "Ontdek-DNA — 2026 W35";
+
+const W35_TRACKS = [
+  {
+    artist: "Crown Lands",
+    title: "Right Way Back",
+    year: 2021,
+    dnaRoute: "Rush → prog/hardrock",
+    testRole: "anker"
+  },
+  {
+    artist: "Hällas",
+    title: "Fading Hero",
+    year: 2020,
+    dnaRoute: "70s prog/hardrock",
+    testRole: "ontdekking"
+  },
+  {
+    artist: "The Night Flight Orchestra",
+    title: "Give Us the Moon",
+    year: 2025,
+    dnaRoute: "hardrock → AOR",
+    testRole: "melodische brug"
+  },
+  {
+    artist: "Dirty Honey",
+    title: "Won't Take Me Alive",
+    year: 2023,
+    dnaRoute: "70s hardrock",
+    testRole: "anker"
+  },
+  {
+    artist: "The Sheepdogs",
+    title: "Rock and Roll (Ain't No Simple Thing)",
+    year: 2021,
+    dnaRoute: "70s rock/boogie",
+    testRole: "grensproef"
+  },
+  {
+    artist: "The Struts",
+    title: "Pretty Vicious",
+    year: 2023,
+    dnaRoute: "Sweet → neo-glam",
+    testRole: "anker"
+  },
+  {
+    artist: "Starbenders",
+    title: "The Game",
+    year: 2023,
+    dnaRoute: "glam + new wave",
+    testRole: "kruising"
+  },
+  {
+    artist: "Creeper",
+    title: "Cry to Heaven",
+    year: 2023,
+    dnaRoute: "punk + goth + glam",
+    testRole: "kruising"
+  },
+  {
+    artist: "White Reaper",
+    title: "Might Be Right",
+    year: 2019,
+    dnaRoute: "punk + powerpop/AOR",
+    testRole: "kruising"
+  },
+  {
+    artist: "Royal Republic",
+    title: "Fireman & Dancer",
+    year: 2019,
+    dnaRoute: "garage/glam/80s",
+    testRole: "grensproef"
+  },
+  {
+    artist: "Starcrawler",
+    title: "She Said",
+    year: 2022,
+    dnaRoute: "punk + glam",
+    testRole: "anker"
+  },
+  {
+    artist: "Bleeker",
+    title: "Highway",
+    year: 2016,
+    dnaRoute: "hardrock/neo-glam",
+    testRole: "anker"
+  },
+  {
+    artist: "The Lemon Twigs",
+    title: "My Golden Years",
+    year: 2024,
+    dnaRoute: "70s pop/glam",
+    testRole: "grensproef"
+  },
+  {
+    artist: "Temples",
+    title: "Hot Motion",
+    year: 2019,
+    dnaRoute: "psych/glam",
+    testRole: "zijpad"
+  },
+  {
+    artist: "IST IST",
+    title: "Lost My Shadow",
+    year: 2024,
+    dnaRoute: "post-punk/new wave",
+    testRole: "anker"
+  },
+  {
+    artist: "Yard Act",
+    title: "We Make Hits",
+    year: 2024,
+    dnaRoute: "UK post-punk",
+    testRole: "moderne mutatie"
+  },
+  {
+    artist: "Fontaines D.C.",
+    title: "Starburster",
+    year: 2024,
+    dnaRoute: "post-punk → modern",
+    testRole: "grensproef"
+  },
+  {
+    artist: "The Murder Capital",
+    title: "Return My Head",
+    year: 2023,
+    dnaRoute: "donkere post-punk",
+    testRole: "anker"
+  },
+  {
+    artist: "shame",
+    title: "Adderall",
+    year: 2023,
+    dnaRoute: "UK post-punk",
+    testRole: "grensproef"
+  },
+  {
+    artist: "Protomartyr",
+    title: "Make Way",
+    year: 2023,
+    dnaRoute: "post-punk/dark rock",
+    testRole: "grensproef"
+  },
+  {
+    artist: "Nation of Language",
+    title: "Sole Obsession",
+    year: 2023,
+    dnaRoute: "new wave/synth",
+    testRole: "anker"
+  },
+  {
+    artist: "Drab Majesty",
+    title: "Ellipsis",
+    year: 2019,
+    dnaRoute: "dark wave/post-punk",
+    testRole: "anker"
+  },
+  {
+    artist: "Unto Others",
+    title: "When Will Gods Work Be Done",
+    year: 2021,
+    dnaRoute: "goth + heavy metal",
+    testRole: "kruising"
+  },
+  {
+    artist: "Green Lung",
+    title: "Maxine (Witch Queen)",
+    year: 2023,
+    dnaRoute: "70s heavy/occult rock",
+    testRole: "anker"
+  },
+  {
+    artist: "Lucifer",
+    title: "Ghosts",
+    year: 2018,
+    dnaRoute: "70s hardrock/occult",
+    testRole: "anker"
+  },
+  {
+    artist: "The Vintage Caravan",
+    title: "On the Run",
+    year: null,
+    dnaRoute: "70s hardrock/prog",
+    testRole: "anker"
+  },
+  {
+    artist: "Airbourne",
+    title: "Breakin' Outta Hell",
+    year: 2016,
+    dnaRoute: "old-school hardrock",
+    testRole: "ijkpunt"
+  },
+  {
+    artist: "Church of the Cosmic Skull",
+    title: "Cold Sweat",
+    year: 2018,
+    dnaRoute: "prog/psych/hardrock",
+    testRole: "grensproef"
+  },
+  {
+    artist: "Enforcer",
+    title: "Kiss of Death",
+    year: 2021,
+    dnaRoute: "NWOBHM → moderne metal",
+    testRole: "anker"
+  },
+  {
+    artist: "The Gems",
+    title: "Like a Phoenix",
+    year: 2023,
+    dnaRoute: "hardrock → modern",
+    testRole: "moderne hardrock"
+  }
 ];
 
 const button = document.getElementById("spotifyButton");
 const statusBox = document.getElementById("status");
+const detailsBox = document.getElementById("details");
+const trackList = document.getElementById("trackList");
+
+let activeToken = null;
+
+function renderTrackList() {
+  trackList.innerHTML = "";
+
+  W35_TRACKS.forEach(track => {
+    const li = document.createElement("li");
+    li.textContent =
+      track.artist +
+      " — " +
+      track.title +
+      (track.year ? " (" + track.year + ")" : "");
+    trackList.appendChild(li);
+  });
+}
 
 function setStatus(text) {
   statusBox.textContent = text;
 }
 
+function setDetails(html) {
+  detailsBox.innerHTML = html;
+
+  if (html) {
+    detailsBox.classList.add("visible");
+  } else {
+    detailsBox.classList.remove("visible");
+  }
+}
+
 function randomString(length) {
   const possible =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  const values = crypto.getRandomValues(new Uint8Array(length));
+
+  const values =
+    crypto.getRandomValues(new Uint8Array(length));
+
   return values.reduce(
     (acc, x) => acc + possible[x % possible.length],
     ""
@@ -191,11 +468,28 @@ function base64urlencode(buffer) {
     .replace(/=+$/, "");
 }
 
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function normalizeText(text) {
+  return text
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "");
+}
+
 async function startSpotifyLogin() {
   const verifier = randomString(64);
-  const challenge = base64urlencode(await sha256(verifier));
+  const challenge =
+    base64urlencode(await sha256(verifier));
 
-  sessionStorage.setItem("spotify_code_verifier", verifier);
+  sessionStorage.setItem(
+    "spotify_code_verifier",
+    verifier
+  );
 
   const params = new URLSearchParams({
     client_id: CLIENT_ID,
@@ -207,12 +501,19 @@ async function startSpotifyLogin() {
   });
 
   window.location =
-    "https://accounts.spotify.com/authorize?" + params.toString();
+    "https://accounts.spotify.com/authorize?" +
+    params.toString();
 }
 
 async function getAccessToken(code) {
   const verifier =
     sessionStorage.getItem("spotify_code_verifier");
+
+  if (!verifier) {
+    throw new Error(
+      "De Spotify-beveiligingscode ontbreekt. Start de koppeling opnieuw."
+    );
+  }
 
   const body = new URLSearchParams({
     client_id: CLIENT_ID,
@@ -227,97 +528,388 @@ async function getAccessToken(code) {
     {
       method: "POST",
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
+        "Content-Type":
+          "application/x-www-form-urlencoded"
       },
       body: body
     }
   );
 
   if (!response.ok) {
-    throw new Error("Spotify-login kon niet worden afgerond.");
+    const text = await response.text();
+    throw new Error(
+      "Spotify-login kon niet worden afgerond: " +
+      text
+    );
   }
 
   return response.json();
 }
 
-async function spotifyFetch(url, token, options = {}) {
+async function spotifyFetch(
+  url,
+  token,
+  options = {},
+  retryCount = 0
+) {
   const response = await fetch(url, {
     ...options,
     headers: {
       Authorization: "Bearer " + token,
-      "Content-Type": "application/json",
+      ...(options.body
+        ? { "Content-Type": "application/json" }
+        : {}),
       ...(options.headers || {})
     }
   });
 
+  if (response.status === 429 && retryCount < 2) {
+    const retryAfter =
+      Number(response.headers.get("Retry-After")) || 2;
+
+    setStatus(
+      "Spotify vraagt even rust. Over " +
+      retryAfter +
+      " seconden gaan we automatisch verder…"
+    );
+
+    await delay(retryAfter * 1000);
+
+    return spotifyFetch(
+      url,
+      token,
+      options,
+      retryCount + 1
+    );
+  }
+
   if (!response.ok) {
     const text = await response.text();
-    throw new Error("Spotify API-fout: " + text);
+
+    throw new Error(
+      "Spotify API-fout " +
+      response.status +
+      ": " +
+      text
+    );
   }
 
   if (response.status === 204) return null;
+
   return response.json();
 }
 
-async function createTestPlaylist(token) {
-  setStatus("Spotify is gekoppeld. TEST-playlist wordt gemaakt…");
+function isExactTrackMatch(candidate, requested) {
+  const titleMatches =
+    normalizeText(candidate.name) ===
+    normalizeText(requested.title);
 
-  const playlist = await spotifyFetch(
-    "https://api.spotify.com/v1/me/playlists",
-    token,
-    {
-      method: "POST",
-      body: JSON.stringify({
-        name: "Ontdek-DNA — TEST",
-        public: false,
-        description:
-          "Mobiele proef van Ben's Music DNA — Rush, Ghost en KISS."
-      })
+  const artistMatches =
+    candidate.artists.some(
+      artist =>
+        normalizeText(artist.name) ===
+        normalizeText(requested.artist)
+    );
+
+  return titleMatches && artistMatches;
+}
+
+function chooseBestCandidate(items, requested) {
+  const exactMatches =
+    items.filter(item =>
+      isExactTrackMatch(item, requested)
+    );
+
+  if (exactMatches.length === 0) {
+    return null;
+  }
+
+  exactMatches.sort((a, b) => {
+    const albumScoreA =
+      a.album?.album_type === "album"
+        ? 20
+        : a.album?.album_type === "single"
+        ? 10
+        : 0;
+
+    const albumScoreB =
+      b.album?.album_type === "album"
+        ? 20
+        : b.album?.album_type === "single"
+        ? 10
+        : 0;
+
+    return albumScoreB - albumScoreA;
+  });
+
+  return exactMatches[0];
+}
+
+async function searchSpotifyTrack(token, requested) {
+  const strictQuery =
+    `track:"${requested.title}" ` +
+    `artist:"${requested.artist}"`;
+
+  const params =
+    new URLSearchParams({
+      q: strictQuery,
+      type: "track",
+      limit: "10"
+    });
+
+  let data = await spotifyFetch(
+    "https://api.spotify.com/v1/search?" +
+      params.toString(),
+    token
+  );
+
+  let candidate =
+    chooseBestCandidate(
+      data.tracks?.items || [],
+      requested
+    );
+
+  if (candidate) return candidate;
+
+  const fallbackParams =
+    new URLSearchParams({
+      q: requested.title + " " + requested.artist,
+      type: "track",
+      limit: "10"
+    });
+
+  data = await spotifyFetch(
+    "https://api.spotify.com/v1/search?" +
+      fallbackParams.toString(),
+    token
+  );
+
+  return chooseBestCandidate(
+    data.tracks?.items || [],
+    requested
+  );
+}
+
+async function resolveAllTracks(token) {
+  const resolved = [];
+  const unresolved = [];
+
+  setDetails("");
+
+  for (let i = 0; i < W35_TRACKS.length; i++) {
+    const requested = W35_TRACKS[i];
+
+    setStatus(
+      `Spotify-controle ${i + 1} van ${W35_TRACKS.length}\n` +
+      requested.artist +
+      " — " +
+      requested.title
+    );
+
+    try {
+      const found =
+        await searchSpotifyTrack(
+          token,
+          requested
+        );
+
+      if (found) {
+        resolved.push({
+          requested,
+          spotify: found
+        });
+      } else {
+        unresolved.push(requested);
+      }
+    } catch (error) {
+      console.error(
+        "Zoekfout:",
+        requested,
+        error
+      );
+
+      unresolved.push(requested);
     }
-  );
 
-  await spotifyFetch(
-    "https://api.spotify.com/v1/playlists/" +
-      playlist.id +
-      "/items",
-    token,
-    {
-      method: "POST",
-      body: JSON.stringify({
-        uris: TEST_TRACKS
-      })
+    await delay(120);
+  }
+
+  return { resolved, unresolved };
+}
+
+function showResolvedSummary(resolved, unresolved) {
+  let html =
+    `<strong class="ok">${resolved.length} tracks exact gevonden.</strong>`;
+
+  if (unresolved.length > 0) {
+    html +=
+      `<br><br><strong class="warning">` +
+      `${unresolved.length} track(s) vragen controle:</strong><br>`;
+
+    unresolved.forEach(track => {
+      html +=
+        "• " +
+        track.artist +
+        " — " +
+        track.title +
+        "<br>";
+    });
+  }
+
+  setDetails(html);
+}
+
+async function createW35Playlist(token) {
+  button.disabled = true;
+  button.textContent = "W35 wordt gecontroleerd…";
+
+  try {
+    const result =
+      await resolveAllTracks(token);
+
+    showResolvedSummary(
+      result.resolved,
+      result.unresolved
+    );
+
+    if (
+      result.unresolved.length > 0 ||
+      result.resolved.length !== W35_TRACKS.length
+    ) {
+      setStatus(
+        "VEILIGHEIDSSTOP\n" +
+        "Er is nog geen playlist gemaakt. " +
+        "Eerst moeten alle 30 tracks exact zijn gevonden."
+      );
+
+      button.disabled = false;
+      button.textContent =
+        "Controleer W35 opnieuw";
+
+      button.onclick = () =>
+        createW35Playlist(token);
+
+      return;
     }
-  );
 
-  setStatus(
-    "Gelukt! 🎉 Open Spotify en kijk naar Ontdek-DNA — TEST."
-  );
+    setStatus(
+      "Alle 30 tracks zijn exact gevonden.\n" +
+      "Ontdek-DNA — 2026 W35 wordt nu gemaakt…"
+    );
 
-  button.textContent = "Open Spotify";
-  button.onclick = () => {
-    window.location.href = playlist.external_urls.spotify;
-  };
+    const playlist =
+      await spotifyFetch(
+        "https://api.spotify.com/v1/me/playlists",
+        token,
+        {
+          method: "POST",
+          body: JSON.stringify({
+            name: PLAYLIST_NAME,
+            public: false,
+            description:
+              "Ontdek-DNA 2026 W35 — 30 ontdekkingen vanuit Ben's Music DNA."
+          })
+        }
+      );
+
+    const uris =
+      result.resolved.map(
+        item => item.spotify.uri
+      );
+
+    await spotifyFetch(
+      "https://api.spotify.com/v1/playlists/" +
+        playlist.id +
+        "/items",
+      token,
+      {
+        method: "POST",
+        body: JSON.stringify({
+          uris: uris
+        })
+      }
+    );
+
+    setStatus(
+      "GELUKT! 🎉\n" +
+      "Ontdek-DNA — 2026 W35 staat met 30 tracks in Spotify."
+    );
+
+    button.disabled = false;
+    button.textContent = "Open W35 in Spotify";
+
+    button.onclick = () => {
+      window.location.href =
+        playlist.external_urls.spotify;
+    };
+
+  } catch (error) {
+    console.error(error);
+
+    setStatus(
+      "Er ging iets mis.\n" +
+      error.message
+    );
+
+    button.disabled = false;
+    button.textContent =
+      "Probeer W35 opnieuw";
+
+    button.onclick = () =>
+      createW35Playlist(token);
+  }
 }
 
 async function handleSpotifyReturn() {
-  const params = new URLSearchParams(window.location.search);
+  const params =
+    new URLSearchParams(
+      window.location.search
+    );
+
   const code = params.get("code");
 
   if (!code) return;
 
-  history.replaceState({}, document.title, REDIRECT_URI);
+  history.replaceState(
+    {},
+    document.title,
+    REDIRECT_URI
+  );
 
   try {
-    setStatus("Spotify-login wordt afgerond…");
-    const tokenData = await getAccessToken(code);
-    await createTestPlaylist(tokenData.access_token);
+    setStatus(
+      "Spotify-login wordt afgerond…"
+    );
+
+    const tokenData =
+      await getAccessToken(code);
+
+    activeToken =
+      tokenData.access_token;
+
+    await createW35Playlist(activeToken);
+
   } catch (error) {
     console.error(error);
-    setStatus("Er ging iets mis: " + error.message);
+
+    setStatus(
+      "Er ging iets mis: " +
+      error.message
+    );
+
+    button.disabled = false;
+    button.textContent =
+      "Koppel opnieuw met Spotify";
   }
 }
 
-button.addEventListener("click", startSpotifyLogin);
+renderTrackList();
+
+button.addEventListener(
+  "click",
+  startSpotifyLogin
+);
+
 handleSpotifyReturn();
 </script>
 
