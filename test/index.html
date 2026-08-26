@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ben's Music DNA — Dag van 3</title>
+<style>
+:root{--green:#1ed760;--bg:#07100c;--card:rgba(255,255,255,.065);--line:rgba(255,255,255,.11);--muted:#aebbb5;--text:#f5f8f6}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#17382b 0,#0b1713 34%,#070b0a 75%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{max-width:520px;margin:auto;min-height:100vh;padding:22px 18px calc(44px + env(safe-area-inset-bottom))}.top{display:flex;align-items:center;gap:12px;margin-bottom:24px}.mark{width:50px;height:50px;border:1.5px solid var(--green);border-radius:50%;display:grid;place-items:center;font-size:24px;box-shadow:0 0 20px rgba(30,215,96,.15)}.muted{color:var(--muted)}.eyebrow{color:var(--green);font-size:12px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase}h1{font-size:31px;line-height:1.08;margin:5px 0 8px}h2{font-size:25px;margin:6px 0 8px}h3{font-size:20px;margin:0 0 7px}.intro{font-size:17px;line-height:1.45;color:#d4ddd8}.card,.panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;margin:13px 0}.card{cursor:pointer;transition:.15s transform,.15s opacity}.card:active{transform:scale(.99)}.card.done{opacity:.72}.row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.status{font-size:12px;color:var(--green);font-weight:800;letter-spacing:.45px}.meta{font-size:15px;color:#bbc7c1;margin-top:8px;line-height:1.45}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.tag{font-size:13px;background:rgba(30,215,96,.105);border:1px solid rgba(30,215,96,.22);padding:7px 10px;border-radius:999px;color:#d1f7dc}.rating-pill{white-space:nowrap;font-size:14px}.progress{margin:16px 0 6px}.trackbar{height:7px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden;margin-top:8px}.trackbar>div{height:100%;background:var(--green);border-radius:999px}.btn{width:100%;border:0;border-radius:999px;padding:16px 16px;font-size:17px;font-weight:800;margin:10px 0;background:var(--green);color:#07100b;cursor:pointer}.btn.secondary{background:rgba(255,255,255,.09);color:#fff;border:1px solid var(--line)}.back{background:none;border:0;color:var(--green);font-size:17px;padding:4px 0 14px;cursor:pointer}.story{font-size:18px;line-height:1.58;color:#edf2ef;margin:8px 0}.why{font-size:17px;line-height:1.52;color:#dce5e0}.hook{margin-top:14px}.hook-label{display:flex;align-items:center;gap:8px}.sources button{width:100%;text-align:left;background:transparent;color:#dfe7e3;border:0;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px;cursor:pointer}.ratings{display:grid;grid-template-columns:1fr 1fr;gap:10px}.rate{border:1px solid var(--line);background:rgba(255,255,255,.07);color:#fff;border-radius:17px;padding:16px 8px;font-size:16px;font-weight:750;cursor:pointer}.complete{text-align:center;padding:30px 18px}.complete .check{font-size:44px;color:var(--green)}.small{font-size:13px;color:#8f9d96}.hidden{display:none}.memory{font-size:14px;color:#aebbb5;margin-top:10px}.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#122019;border:1px solid rgba(30,215,96,.35);padding:12px 16px;border-radius:999px;color:#eafff0;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:5}.toast.show{opacity:1}.section-link{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.08);padding:14px 0;font-size:17px}.section-link:first-child{border-top:0}.icon{color:var(--green)}
+</style>
+</head>
+<body>
+<main class="app"><div id="today"></div><div id="detail" class="hidden"></div></main><div id="toast" class="toast">Opgeslagen in jouw Music DNA ✓</div>
+
+<script src="music-dna-data-v1.3.js"></script>
+
+<script>
+const ids=["2026-W35-01","2026-W35-02","2026-W35-03"];
+const ratingLabels={raak:"❤️ Raak",goed:"👍 Goed",twijfel:"😐 Twijfel",nee:"👎 Nee"};
+
+const STORE_KEY='bmd-day1-v13';
+const MEMORY_KEY='bmd-memory-v13';
+const SPOTIFY_CACHE_KEY='bmd-spotify-resolved-v13';
+const TOKEN_KEY='bmd-spotify-token-v13';
+const TOKEN_EXPIRY_KEY='bmd-spotify-token-expiry-v13';
+const PENDING_TRACK_KEY='bmd-pending-track-v13';
+
+const CLIENT_ID="97d634a60b824ecabfcc63790c0af5dd";
+const REDIRECT_URI="https://bcim1958.github.io/bens-music-dna/test/";
+const SCOPES=["playlist-modify-private","playlist-modify-public"].join(" ");
+
+function load(key){try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}}
+function save(key,x){localStorage.setItem(key,JSON.stringify(x))}
+function top(){return `<div class="top"><div class="mark">♫</div><div><div class="eyebrow">Ben's Music DNA</div><div class="muted">Ontdek-DNA · Dag 1</div></div></div>`}
+function getState(){return load(STORE_KEY)}
+function getMemory(){return load(MEMORY_KEY)}
+function getSpotifyCache(){return load(SPOTIFY_CACHE_KEY)}
+function showToast(text='Opgeslagen in jouw Music DNA ✓'){toast.textContent=text;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1500)}
+function esc(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
+
+function renderToday(){
+  const r=getState();
+  detail.classList.add('hidden');
+  today.classList.remove('hidden');
+
+  const done=ids.filter(id=>r[id]?.rating).length;
+
+  let html=top()+`
+    <div class="eyebrow">Vandaag</div>
+    <h1>Jouw 3 ontdekkingen</h1>
+    <div class="intro">Drie nieuwe nummers. Luister wanneer het jou uitkomt; één beoordeling per nummer is genoeg.</div>
+  `;
+
+  html+=`
+    <div class="progress">
+      <div class="small">${done} van 3 beoordeeld</div>
+      <div class="trackbar"><div style="width:${done/3*100}%"></div></div>
+    </div>
+  `;
+
+  ids.forEach((id,i)=>{
+    const t=MUSIC_DNA_DB.tracks[id];
+    const s=r[id]||{};
+    const d=s.rating;
+
+    html+=`
+      <section class="card ${d?'done':''}" onclick="openTrack('${id}')">
+        <div class="row">
+          <div>
+            <div class="status">${d?'✓ BEOORDEELD':`${i+1} VAN 3 · NOG TE ONTDEKKEN`}</div>
+            <h3>${esc(t.identity.title)}</h3>
+            <div class="muted">${esc(t.identity.artist)}</div>
+          </div>
+          <div class="rating-pill">${d?ratingLabels[d]:'›'}</div>
+        </div>
+        <div class="meta">${esc(t.identity.country)} · ${esc(t.identity.releaseYear)}${t.identity.albumOrRelease?' · '+esc(t.identity.albumOrRelease):''}</div>
+        <div class="tags">
+          ${t.taxonomy.allMusicStyles.slice(0,2).map(x=>`<span class="tag">${esc(x)}</span>`).join('')}
+        </div>
+      </section>
+    `;
+  });
+
+  if(done===3){
+    html+=`
+      <section class="panel complete">
+        <div class="check">✓</div>
+        <h2>Vandaag klaar</h2>
+        <div class="intro">Drie ontdekkingen opgeslagen in jouw Music DNA.<br>Tot morgen 🎵</div>
+      </section>
+    `;
+  }
+
+  today.innerHTML=html;
+}
+
+function markViewed(id){
+  const mem=getMemory();
+  if(!mem[id])mem[id]={views:0,presentedHooks:{}};
+  mem[id].views++;
+  mem[id].lastViewedAt=new Date().toISOString();
+  save(MEMORY_KEY,mem);
+}
+
+function markHookPresented(trackId,hookId){
+  const mem=getMemory();
+  if(!mem[trackId])mem[trackId]={views:0,presentedHooks:{}};
+
+  const h=mem[trackId].presentedHooks[hookId]||{count:0};
+  h.count++;
+  h.lastPresentedAt=new Date().toISOString();
+
+  mem[trackId].presentedHooks[hookId]=h;
+  save(MEMORY_KEY,mem);
+}
+
+function renderSources(t){
+  return (t.sourceIds||[]).map(id=>{
+    const s=MUSIC_DNA_DB.sources[id];
+    return `
+      <button onclick="window.open('${esc(s.url)}','_blank')">
+        <strong>${esc(s.publisher)}</strong><br>
+        <span class="small">${esc(s.title)}</span>
+      </button>
+    `;
+  }).join('');
+}
+
+function spotifyStatusHtml(id){
+  const c=getSpotifyCache()[id];
+  if(!c){
+    return `<div class="small">Spotify-identiteit wordt bij de eerste keer exact gecontroleerd.</div>`;
+  }
+  return `<div class="small">✓ Exact gekoppeld aan Spotify · ${esc(c.album||'release onbekend')}</div>`;
+}
+
+function openTrack(id){
+  const t=MUSIC_DNA_DB.tracks[id];
+  const state=getState();
+  const current=state[id]||{};
+
+  markViewed(id);
+
+  today.classList.add('hidden');
+  detail.classList.remove('hidden');
+
+  const listen=(t.editorial.listenHooks||[]);
+  const surprises=(t.editorial.surpriseHooks||[]);
+
+  detail.innerHTML=
+    top()+
+    `<button class="back" onclick="renderToday()">‹ Vandaag</button>
+
+    <div class="eyebrow">${esc(t.identity.country)} · ${esc(t.identity.releaseYear)}</div>
+    <h1>${esc(t.identity.title)}</h1>
+    <h3 class="muted">${esc(t.identity.artist)}</h3>
+
+    <div class="tags">
+      ${t.taxonomy.allMusicStyles.slice(0,3).map(x=>`<span class="tag">${esc(x)}</span>`).join('')}
+    </div>
+
+    <button class="btn" id="spotify-${id}" onclick="openSpotifyExact('${id}')">
+      ▶ Luister in Spotify
+    </button>
+
+    ${spotifyStatusHtml(id)}
+
+    <section class="panel">
+      <div class="eyebrow">Waarom voor jou?</div>
+      <div class="why">${esc(t.editorial.whyForYou)}</div>
+    </section>
+
+    <section>
+      <div class="eyebrow">Over dit nummer</div>
+      <h2>${esc(t.editorial.storyTitle||'Het verhaal')}</h2>
+      <p class="story">${esc(t.editorial.storySummary)}</p>
+    </section>
+
+    ${listen.map(h=>`
+      <section class="panel hook" onclick="markHookPresented('${id}','${h.id}')">
+        <div class="hook-label">
+          <span class="icon">🎧</span>
+          <div class="eyebrow">Luister eens naar…</div>
+        </div>
+        <h3>${esc(h.title)}</h3>
+        <div class="why">${esc(h.text)}</div>
+      </section>
+    `).join('')}
+
+    ${surprises.map(h=>`
+      <section class="panel hook" onclick="markHookPresented('${id}','${h.id}')">
+        <div class="hook-label">
+          <span class="icon">${h.hookType==='tour_connection'?'🎤':'🔗'}</span>
+          <div class="eyebrow">${esc(h.label)}</div>
+        </div>
+        <h3>${esc(h.title||'')}</h3>
+        <div class="why">${esc(h.text)}</div>
+      </section>
+    `).join('')}
+
+    <section class="panel">
+      <div class="section-link">
+        <span>🧬 Muzikaal DNA</span><span>›</span>
+      </div>
+      <div class="why">${t.discoverDNA.dnaRoute.map(esc).join(' → ')}</div>
+    </section>
+
+    <section class="panel sources">
+      <div class="eyebrow">Bronnen & verantwoording</div>
+      ${renderSources(t)}
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">Jouw oordeel</div>
+      <h3>Wat vond je ervan?</h3>
+      <div class="ratings">
+        ${Object.entries(ratingLabels).map(([v,l])=>`<button class="rate" onclick="rate('${id}','${v}')">${l}</button>`).join('')}
+      </div>
+      ${current.rating?`<div class="meta">Huidige beoordeling: ${ratingLabels[current.rating]}</div>`:''}
+    </section>`;
+}
+
+function rate(id,v){
+  const s=getState();
+  s[id]={
+    ...(s[id]||{}),
+    rating:v,
+    ratedAt:new Date().toISOString()
+  };
+
+  save(STORE_KEY,s);
+  showToast();
+  setTimeout(renderToday,550);
+}
+
+// Spotify PKCE
+function randomString(length){
+  const possible="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const values=crypto.getRandomValues(new Uint8Array(length));
+  return values.reduce((acc,x)=>acc+possible[x%possible.length],"");
+}
+
+async function sha256(text){
+  const data=new TextEncoder().encode(text);
+  return crypto.subtle.digest("SHA-256",data);
+}
+
+function base64urlencode(buffer){
+  return btoa(String.fromCharCode(...new Uint8Array(buffer)))
+    .replace(/\+/g,"-")
+    .replace(/\//g,"_")
+    .replace(/=+$/,"");
+}
+
+function normalizeText(text){
+  return text
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu,"")
+    .toLowerCase()
+    .replace(/&/g,"and")
+    .replace(/[^a-z0-9]+/g,"");
+}
+
+function tokenValid(){
+  const t=sessionStorage.getItem(TOKEN_KEY);
+  const exp=Number(sessionStorage.getItem(TOKEN_EXPIRY_KEY)||0);
+  return !!t && Date.now()<exp-30000;
+}
+
+function currentToken(){
+  return tokenValid()?sessionStorage.getItem(TOKEN_KEY):null;
+}
+
+async function startSpotifyLogin(trackId){
+  sessionStorage.setItem(PENDING_TRACK_KEY,trackId);
+
+  const verifier=randomString(64);
+  const challenge=base64urlencode(await sha256(verifier));
+
+  sessionStorage.setItem("spotify_code_verifier",verifier);
+
+  const params=new URLSearchParams({
+    client_id:CLIENT_ID,
+    response_type:"code",
+    redirect_uri:REDIRECT_URI,
+    scope:SCOPES,
+    code_challenge_method:"S256",
+    code_challenge:challenge
+  });
+
+  window.location="https://accounts.spotify.com/authorize?"+params.toString();
+}
+
+async function getAccessToken(code){
+  const verifier=sessionStorage.getItem("spotify_code_verifier");
+
+  if(!verifier){
+    throw new Error("De Spotify-beveiligingscode ontbreekt. Start de koppeling opnieuw.");
+  }
+
+  const body=new URLSearchParams({
+    client_id:CLIENT_ID,
+    grant_type:"authorization_code",
+    code,
+    redirect_uri:REDIRECT_URI,
+    code_verifier:verifier
+  });
+
+  const response=await fetch(
+    "https://accounts.spotify.com/api/token",
+    {
+      method:"POST",
+      headers:{"Content-Type":"application/x-www-form-urlencoded"},
+      body
+    }
+  );
+
+  if(!response.ok){
+    throw new Error("Spotify-login kon niet worden afgerond: "+await response.text());
+  }
+
+  return response.json();
+}
+
+async function spotifyFetch(url,token,options={},retryCount=0){
+  const response=await fetch(url,{
+    ...options,
+    headers:{
+      Authorization:"Bearer "+token,
+      ...(options.body?{"Content-Type":"application/json"}:{}),
+      ...(options.headers||{})
+    }
+  });
+
+  if(response.status===429 && retryCount<2){
+    const retryAfter=Number(response.headers.get("Retry-After"))||2;
+    await new Promise(r=>setTimeout(r,retryAfter*1000));
+    return spotifyFetch(url,token,options,retryCount+1);
+  }
+
+  if(!response.ok){
+    throw new Error("Spotify API-fout "+response.status+": "+await response.text());
+  }
+
+  if(response.status===204)return null;
+
+  return response.json();
+}
+
+function isExactTrackMatch(candidate,requested){
+  const titleMatches=
+    normalizeText(candidate.name)===
+    normalizeText(requested.identity.title);
+
+  const artistMatches=
+    candidate.artists.some(
+      a=>normalizeText(a.name)===
+      normalizeText(requested.identity.artist)
+    );
+
+  return titleMatches&&artistMatches;
+}
+
+function chooseBestCandidate(items,requested){
+  const exact=items.filter(i=>isExactTrackMatch(i,requested));
+
+  if(!exact.length)return null;
+
+  exact.sort((a,b)=>{
+    const score=x=>(
+      x.album?.album_type==='album'
+        ?20
+        :x.album?.album_type==='single'
+        ?10
+        :0
+    );
+
+    return score(b)-score(a);
+  });
+
+  return exact[0];
+}
+
+async function searchSpotifyTrack(token,requested){
+  const strict=
+    `track:"${requested.identity.title}" artist:"${requested.identity.artist}"`;
+
+  let p=new URLSearchParams({
+    q:strict,
+    type:"track",
+    limit:"10"
+  });
+
+  let data=await spotifyFetch(
+    "https://api.spotify.com/v1/search?"+p.toString(),
+    token
+  );
+
+  let c=chooseBestCandidate(
+    data.tracks?.items||[],
+    requested
+  );
+
+  if(c)return c;
+
+  p=new URLSearchParams({
+    q:requested.identity.title+" "+requested.identity.artist,
+    type:"track",
+    limit:"10"
+  });
+
+  data=await spotifyFetch(
+    "https://api.spotify.com/v1/search?"+p.toString(),
+    token
+  );
+
+  return chooseBestCandidate(
+    data.tracks?.items||[],
+    requested
+  );
+}
+
+async function resolveAndOpenSpotify(id,token){
+  const t=MUSIC_DNA_DB.tracks[id];
+  const cache=getSpotifyCache();
+
+  let c=cache[id];
+
+  if(!c){
+    showToast('Spotify controleert de exacte opname…');
+
+    const found=await searchSpotifyTrack(token,t);
+
+    if(!found){
+      throw new Error(
+        `Spotify vond geen exacte match voor ${t.identity.artist} — ${t.identity.title}.`
+      );
+    }
+
+    c={
+      id:found.id,
+      uri:found.uri,
+      url:found.external_urls.spotify,
+      album:found.album?.name||null,
+      albumType:found.album?.album_type||null,
+      resolvedAt:new Date().toISOString()
+    };
+
+    cache[id]=c;
+    save(SPOTIFY_CACHE_KEY,cache);
+  }
+
+  const s=getState();
+
+  s[id]={
+    ...(s[id]||{}),
+    listened:true,
+    lastSpotifyOpenAt:new Date().toISOString(),
+    spotifyCanonicalId:c.id,
+    spotifyUri:c.uri
+  };
+
+  save(STORE_KEY,s);
+
+  window.location.href=c.url;
+}
+
+async function openSpotifyExact(id){
+  try{
+    const token=currentToken();
+
+    if(!token){
+      await startSpotifyLogin(id);
+      return;
+    }
+
+    await resolveAndOpenSpotify(id,token);
+
+  }catch(e){
+    console.error(e);
+    showToast('Spotify: '+e.message);
+  }
+}
+
+async function handleSpotifyReturn(){
+  const params=new URLSearchParams(window.location.search);
+  const code=params.get("code");
+
+  if(!code)return;
+
+  history.replaceState({},document.title,REDIRECT_URI);
+
+  try{
+    showToast('Spotify-login wordt afgerond…');
+
+    const td=await getAccessToken(code);
+
+    sessionStorage.setItem(TOKEN_KEY,td.access_token);
+    sessionStorage.setItem(
+      TOKEN_EXPIRY_KEY,
+      String(Date.now()+(td.expires_in||3600)*1000)
+    );
+
+    const pending=sessionStorage.getItem(PENDING_TRACK_KEY);
+    sessionStorage.removeItem(PENDING_TRACK_KEY);
+
+    if(pending && MUSIC_DNA_DB.tracks[pending]){
+      openTrack(pending);
+      await resolveAndOpenSpotify(
+        pending,
+        td.access_token
+      );
+    }else{
+      renderToday();
+      showToast('Spotify is gekoppeld ✓');
+    }
+
+  }catch(e){
+    console.error(e);
+    renderToday();
+    showToast('Spotify-login mislukte');
+  }
+}
+
+renderToday();
+handleSpotifyReturn();
+</script>
+</body>
+</html>
