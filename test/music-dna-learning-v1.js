@@ -10,6 +10,7 @@
   function findTrack(id){
     if(typeof MUSIC_DNA_DB!=='undefined'&&MUSIC_DNA_DB.tracks&&MUSIC_DNA_DB.tracks[id])return MUSIC_DNA_DB.tracks[id];
     if(typeof MUSIC_DNA_W35_CANDIDATES!=='undefined'&&MUSIC_DNA_W35_CANDIDATES.tracks&&MUSIC_DNA_W35_CANDIDATES.tracks[id])return MUSIC_DNA_W35_CANDIDATES.tracks[id];
+    if(typeof MUSIC_DNA_W36_CANDIDATES!=='undefined'&&MUSIC_DNA_W36_CANDIDATES.tracks&&MUSIC_DNA_W36_CANDIDATES.tracks[id])return MUSIC_DNA_W36_CANDIDATES.tracks[id];
     if(typeof MUSIC_DNA_WEEK_CANDIDATES!=='undefined'&&MUSIC_DNA_WEEK_CANDIDATES.tracks&&MUSIC_DNA_WEEK_CANDIDATES.tracks[id])return MUSIC_DNA_WEEK_CANDIDATES.tracks[id];
     return null;
   }
