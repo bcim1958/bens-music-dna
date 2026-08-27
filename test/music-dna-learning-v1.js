@@ -1,5 +1,5 @@
 (function(){
-  var DAY_STATE_KEYS=['bmd-day1-v13','bmd-day2-v13','bmd-day3-v13'];
+  var DAY_STATE_KEYS=['bmd-day1-v13','bmd-day2-v13','bmd-day3-v13','bmd-day4-v13'];
   var LEARNING_KEY='bmd-learning-v1';
   var WEIGHTS={raak:2,goed:1,twijfel:0,nee:-2};
 
