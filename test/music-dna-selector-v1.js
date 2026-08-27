@@ -1,5 +1,5 @@
 (function(){
-  var VERSION=2;
+  var VERSION=3;
 
   function readSignals(){
     if(window.MUSIC_DNA_LEARNING&&typeof window.MUSIC_DNA_LEARNING.read==='function'){
@@ -20,6 +20,10 @@
     hit('goth-dark',/goth|dark|occult|ghost/);
     hit('psychedelic',/psychedel|stoner/);
     return out;
+  }
+  function reserveMode(){
+    if(window.MUSIC_DNA_POSITIVE_BANK&&typeof window.MUSIC_DNA_POSITIVE_BANK.selectorMode==='function')return window.MUSIC_DNA_POSITIVE_BANK.selectorMode();
+    return {mode:'normal',exploration:0.45,inventory:null};
   }
 
   function buildProfile(){
@@ -59,9 +63,14 @@
     ranked.sort(function(a,b){return b.score-a.score;});return ranked;
   }
   function chooseBatch(candidates,options){
-    options=options||{};var size=options.size||3,ranked=rank(candidates,options),chosen=[],artists={},countries={};
-    for(var i=0;i<ranked.length&&chosen.length<size;i++){var row=ranked[i],artist=row.track.identity&&row.track.identity.artist,country=row.track.identity&&row.track.identity.country;if(artist&&artists[artist])continue;if(country&&(countries[country]||0)>=2)continue;chosen.push(row);if(artist)artists[artist]=true;if(country)countries[country]=(countries[country]||0)+1;}
-    return chosen;
+    options=options||{};var size=options.size||3,ranked=rank(candidates,options),chosen=[],artists={},countries={},mode=reserveMode();
+    var exploration=typeof options.exploration==='number'?options.exploration:mode.exploration;
+    var safeCount=Math.max(1,Math.round(size*(1-exploration)));
+    function canUse(row){var artist=row.track.identity&&row.track.identity.artist,country=row.track.identity&&row.track.identity.country;if(artist&&artists[artist])return false;if(country&&(countries[country]||0)>=2)return false;return true;}
+    function take(row){var artist=row.track.identity&&row.track.identity.artist,country=row.track.identity&&row.track.identity.country;chosen.push(row);if(artist)artists[artist]=true;if(country)countries[country]=(countries[country]||0)+1;}
+    for(var i=0;i<ranked.length&&chosen.length<safeCount;i++)if(canUse(ranked[i]))take(ranked[i]);
+    var pool=ranked.slice(safeCount);while(chosen.length<size&&pool.length){var span=Math.min(pool.length,Math.max(3,Math.round(pool.length*exploration)));var picked=-1;for(var p=0;p<span;p++){if(canUse(pool[p])){picked=p;break;}}if(picked<0){for(var q=span;q<pool.length;q++){if(canUse(pool[q])){picked=q;break;}}}if(picked<0)break;take(pool.splice(picked,1)[0]);}
+    chosen.reserveMode=mode;return chosen;
   }
-  window.MUSIC_DNA_SELECTOR={version:VERSION,buildProfile:buildProfile,scoreCandidate:scoreCandidate,rank:rank,chooseBatch:chooseBatch};
+  window.MUSIC_DNA_SELECTOR={version:VERSION,buildProfile:buildProfile,scoreCandidate:scoreCandidate,rank:rank,chooseBatch:chooseBatch,reserveMode:reserveMode};
 })();
