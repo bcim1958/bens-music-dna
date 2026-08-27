@@ -21,13 +21,3 @@ const MUSIC_DNA_DB = {
     "src-tnfo-napalm":{title:"The Night Flight Orchestra",publisher:"Napalm Records",url:"https://label.napalmrecords.com/the-night-flight-orchestra"}
   }
 };
-
-const today = document.getElementById('today');
-const detail = document.getElementById('detail');
-const toast = document.getElementById('toast');
-
-window.addEventListener('error', function(event){
-  if(today && !today.innerHTML.trim()){
-    today.innerHTML = '<section class="panel"><div class="eyebrow">Technische melding</div><h2>De pagina is geladen, maar JavaScript stopte.</h2><div class="intro">'+String(event.message || 'Onbekende fout')+'</div></section>';
-  }
-});
