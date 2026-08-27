@@ -10,6 +10,24 @@ const MUSIC_DNA_DB = {
     "2026-W35-03": {identity:{artist:"The Night Flight Orchestra",title:"Give Us the Moon",releaseDate:"2025-01-31",releaseYear:2025,albumOrRelease:"Give Us the Moon",country:"Zweden",locality:"Helsingborg"},spotify:{id:null,uri:null,resolvedExact:false},discoverDNA:{week:"2026-W35",day:1,dailySlot:3,offered:true,dnaRoute:["Hardrock","AOR","The Night Flight Orchestra"],role:"melodische brug"},taxonomy:{allMusicGenres:["Pop/Rock"],allMusicStyles:["Arena Rock","Hard Rock","Pop-Metal","Heavy Metal"],taxonomyScope:"ARTIST"},editorial:{whyForYou:"Een melodische brug van hardrock naar filmische AOR: groot refrein, jaren-80-glans en toch geworteld in een veel zwaardere rock- en metalwereld.",storyTitle:"Metal-muzikanten die hun andere platenkast openzetten",storySummary:"The Night Flight Orchestra ontstond rond Björn Strid en David Andersson van Soilwork en groeide uit tot een uitgesproken AOR/classic-rockband. Give Us the Moon verscheen in 2025.",listenHooks:[{id:"tnfo-listen-01",title:"Luister naar de contrasten",text:"De zang en hooks zijn glanzend en melodieus, maar onder die AOR-laag hoor je hoe strak en krachtig muzikanten uit een zwaardere metalachtergrond spelen.",evidenceType:"EDITORIAL_OBSERVATION",sourceIds:["src-tnfo-allmusic"]}],surpriseHooks:[{id:"tnfo-surprise-01",hookType:"tour_connection",label:"Op hetzelfde podium",title:"Voorprogramma van KISS",text:"The Night Flight Orchestra opende voor KISS tijdens de laatste twee Zweedse KISS-shows in Dalhalla.",evidenceType:"SOURCE_FACT",sourceIds:["src-tnfo-napalm"]}]},sourceIds:["src-tnfo-allmusic","src-tnfo-napalm"]}
   },
   sources:{
-    "src-cl-allmusic":{title:"Crown Lands — Biography",publisher:"AllMusic",url:"https://www.allmusic.com/artist/crown-lands-mn0003910795"},"src-cl-umc-right-way-back":{title:"Crown Lands unleash Context: Fearless Pt. 1 and Right Way Back",publisher:"Universal Music Canada",url:"https://www.universalmusic.ca/press-releases/juno-nominated-crown-lands-unleash-two-new-tracks-context-fearless-pt-1-and-right-way-back/"},"src-ha-allmusic":{title:"Hällas — Biography",publisher:"AllMusic",url:"https://www.allmusic.com/artist/h%C3%A4llas-mn0003452445"},"src-ha-bandcamp-fading-hero":{title:"Fading Hero",publisher:"Hällas / Bandcamp",url:"https://haellas.bandcamp.com/track/fading-hero"},"src-ha-bandcamp-conundrum":{title:"Conundrum",publisher:"Hällas / Bandcamp",url:"https://haellas.bandcamp.com/album/conundrum"},"src-ha-decibel":{title:"Q&A: Kasper Eriksson (Hällas) Finds Himself In A Conundrum",publisher:"Decibel Magazine",url:"https://www.decibelmagazine.com/2020/02/24/kasper-eriksson-hallas-adventure-rock/"},"src-ha-deadrhetoric":{title:"Hällas — Wisdom of the Past",publisher:"Dead Rhetoric",url:"https://deadrhetoric.com/features/hallas-wisdom-of-the-past/"},"src-tnfo-allmusic":{title:"The Night Flight Orchestra — Biography",publisher:"AllMusic",url:"https://www.allmusic.com/artist/the-night-flight-orchestra-mn0002928334"},"src-tnfo-napalm":{title:"The Night Flight Orchestra",publisher:"Napalm Records",url:"https://label.napalmrecords.com/the-night-flight-orchestra"}
+    "src-cl-allmusic":{title:"Crown Lands — Biography",publisher:"AllMusic",url:"https://www.allmusic.com/artist/crown-lands-mn0003910795"},
+    "src-cl-umc-right-way-back":{title:"Crown Lands unleash Context: Fearless Pt. 1 and Right Way Back",publisher:"Universal Music Canada",url:"https://www.universalmusic.ca/press-releases/juno-nominated-crown-lands-unleash-two-new-tracks-context-fearless-pt-1-and-right-way-back/"},
+    "src-ha-allmusic":{title:"Hällas — Biography",publisher:"AllMusic",url:"https://www.allmusic.com/artist/h%C3%A4llas-mn0003452445"},
+    "src-ha-bandcamp-fading-hero":{title:"Fading Hero",publisher:"Hällas / Bandcamp",url:"https://haellas.bandcamp.com/track/fading-hero"},
+    "src-ha-bandcamp-conundrum":{title:"Conundrum",publisher:"Hällas / Bandcamp",url:"https://haellas.bandcamp.com/album/conundrum"},
+    "src-ha-decibel":{title:"Q&A: Kasper Eriksson (Hällas) Finds Himself In A Conundrum",publisher:"Decibel Magazine",url:"https://www.decibelmagazine.com/2020/02/24/kasper-eriksson-hallas-adventure-rock/"},
+    "src-ha-deadrhetoric":{title:"Hällas — Wisdom of the Past",publisher:"Dead Rhetoric",url:"https://deadrhetoric.com/features/hallas-wisdom-of-the-past/"},
+    "src-tnfo-allmusic":{title:"The Night Flight Orchestra — Biography",publisher:"AllMusic",url:"https://www.allmusic.com/artist/the-night-flight-orchestra-mn0002928334"},
+    "src-tnfo-napalm":{title:"The Night Flight Orchestra",publisher:"Napalm Records",url:"https://label.napalmrecords.com/the-night-flight-orchestra"}
   }
 };
+
+const today = document.getElementById('today');
+const detail = document.getElementById('detail');
+const toast = document.getElementById('toast');
+
+window.addEventListener('error', function(event){
+  if(today && !today.innerHTML.trim()){
+    today.innerHTML = '<section class="panel"><div class="eyebrow">Technische melding</div><h2>De pagina is geladen, maar JavaScript stopte.</h2><div class="intro">'+String(event.message || 'Onbekende fout')+'</div></section>';
+  }
+});
