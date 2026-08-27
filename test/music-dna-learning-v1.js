@@ -1,62 +1,27 @@
 (function(){
-  var DAY_STATE_KEY='bmd-day1-v13';
+  var DAY_STATE_KEYS=['bmd-day1-v13','bmd-day2-v13'];
   var LEARNING_KEY='bmd-learning-v1';
   var WEIGHTS={raak:2,goed:1,twijfel:0,nee:-2};
 
-  function safeParse(raw,fallback){
-    try{return raw?JSON.parse(raw):fallback;}catch(e){return fallback;}
-  }
-  function readLearning(){
-    return safeParse(window.localStorage.getItem(LEARNING_KEY),{version:1,signals:{},updatedAt:null});
-  }
-  function writeLearning(model){
-    try{window.localStorage.setItem(LEARNING_KEY,JSON.stringify(model));}catch(e){}
-  }
+  function safeParse(raw,fallback){try{return raw?JSON.parse(raw):fallback;}catch(e){return fallback;}}
+  function readLearning(){return safeParse(window.localStorage.getItem(LEARNING_KEY),{version:1,signals:{},updatedAt:null});}
+  function writeLearning(model){try{window.localStorage.setItem(LEARNING_KEY,JSON.stringify(model));}catch(e){}}
   function upsertSignal(id,rating,ratedAt){
     if(!rating||!Object.prototype.hasOwnProperty.call(WEIGHTS,rating))return;
     if(typeof MUSIC_DNA_DB==='undefined'||!MUSIC_DNA_DB.tracks||!MUSIC_DNA_DB.tracks[id])return;
-    var t=MUSIC_DNA_DB.tracks[id];
-    var model=readLearning();
-    if(!model.signals)model.signals={};
-    model.signals[id]={
-      trackId:id,
-      rating:rating,
-      weight:WEIGHTS[rating],
-      ratedAt:ratedAt||null,
-      artist:t.identity.artist,
-      title:t.identity.title,
-      country:t.identity.country,
-      releaseYear:t.identity.releaseYear,
-      styles:(t.taxonomy&&t.taxonomy.allMusicStyles?t.taxonomy.allMusicStyles.slice():[]),
-      dnaRoute:(t.discoverDNA&&t.discoverDNA.dnaRoute?t.discoverDNA.dnaRoute.slice():[]),
-      role:t.discoverDNA?t.discoverDNA.role:null
-    };
-    model.updatedAt=new Date().toISOString();
-    writeLearning(model);
+    var t=MUSIC_DNA_DB.tracks[id],model=readLearning();if(!model.signals)model.signals={};
+    model.signals[id]={trackId:id,rating:rating,weight:WEIGHTS[rating],ratedAt:ratedAt||null,artist:t.identity.artist,title:t.identity.title,country:t.identity.country,releaseYear:t.identity.releaseYear,styles:(t.taxonomy&&t.taxonomy.allMusicStyles?t.taxonomy.allMusicStyles.slice():[]),dnaRoute:(t.discoverDNA&&t.discoverDNA.dnaRoute?t.discoverDNA.dnaRoute.slice():[]),role:t.discoverDNA?t.discoverDNA.role:null};
+    model.updatedAt=new Date().toISOString();writeLearning(model);
   }
-  function ingestDayState(raw){
-    var state=safeParse(raw,{});
-    for(var id in state){
-      if(Object.prototype.hasOwnProperty.call(state,id)&&state[id]&&state[id].rating){
-        upsertSignal(id,state[id].rating,state[id].ratedAt);
-      }
-    }
-  }
+  function ingestDayState(raw){var state=safeParse(raw,{});for(var id in state)if(Object.prototype.hasOwnProperty.call(state,id)&&state[id]&&state[id].rating)upsertSignal(id,state[id].rating,state[id].ratedAt);}
+  function isDayStateKey(key){for(var i=0;i<DAY_STATE_KEYS.length;i++)if(DAY_STATE_KEYS[i]===key)return true;return false;}
 
-  // Migrate already recorded W35 Day 1 ratings immediately.
-  ingestDayState(window.localStorage.getItem(DAY_STATE_KEY));
+  for(var i=0;i<DAY_STATE_KEYS.length;i++)ingestDayState(window.localStorage.getItem(DAY_STATE_KEYS[i]));
 
-  // Observe future ratings written by the app, without changing the UI code.
   var originalSetItem=window.localStorage.setItem.bind(window.localStorage);
-  window.localStorage.setItem=function(key,value){
-    originalSetItem(key,value);
-    if(key===DAY_STATE_KEY)ingestDayState(value);
-  };
+  window.localStorage.setItem=function(key,value){originalSetItem(key,value);if(isDayStateKey(key))ingestDayState(value);};
 
-  window.MUSIC_DNA_LEARNING={
-    version:1,
-    weights:WEIGHTS,
-    storageKey:LEARNING_KEY,
-    read:readLearning
-  };
+  window.MUSIC_DNA_LEARNING={version:1,weights:WEIGHTS,storageKey:LEARNING_KEY,dayStateKeys:DAY_STATE_KEYS.slice(),read:readLearning};
+
+  var selector=document.createElement('script');selector.src='music-dna-selector-v1.js';document.head.appendChild(selector);
 })();
