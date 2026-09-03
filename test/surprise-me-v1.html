@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Music DNA — Verras me!</title>
+<style>
+  :root{
+    --bg:#070909; --panel:#111515; --panel2:#171d1c; --text:#f4f6f5; --muted:#9aa8a3;
+    --green:#3ddc97; --line:#27302e; --gold:#e7c56b; --violet:#9d7cff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(circle at top,#14211c 0,#070909 38%,#050606 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;min-height:100vh}
+  .app{max-width:540px;margin:0 auto;padding:22px 18px 92px}
+  .eyebrow{font-size:12px;letter-spacing:.16em;color:var(--green);font-weight:700;text-transform:uppercase}
+  h1{font-size:42px;line-height:.98;margin:10px 0 12px;letter-spacing:-.04em}
+  .intro{font-size:17px;line-height:1.45;color:#d9dfdc;margin:0 0 22px}
+  .hero{background:linear-gradient(145deg,#13201b,#0b0f0e);border:1px solid #26342f;border-radius:24px;padding:22px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+  .big{width:100%;border:0;border-radius:18px;padding:18px 20px;font-size:19px;font-weight:800;background:var(--green);color:#05100b;cursor:pointer}
+  .sub{margin-top:10px;text-align:center;color:var(--muted);font-size:13px}
+  .tuner{margin-top:18px;border-top:1px solid var(--line);padding-top:16px}
+  .tuner button{background:none;border:0;color:#dfe7e3;font-size:15px;padding:0;cursor:pointer}
+  .filters{display:none;margin-top:14px;gap:9px;flex-wrap:wrap}
+  .filters.show{display:flex}
+  select{appearance:none;background:#131817;color:#f6f7f7;border:1px solid #303a37;border-radius:14px;padding:11px 13px;font-size:14px;max-width:100%}
+  .result{margin-top:18px;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:20px;display:none}
+  .result.show{display:block;animation:rise .28s ease-out}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .picked{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:800}
+  .artist{font-size:34px;font-weight:850;letter-spacing:-.035em;margin:6px 0 5px}
+  .meta{color:#b9c5c0;font-size:14px;line-height:1.5}
+  .track{margin:16px 0;background:#0c100f;border:1px solid #24302c;border-radius:16px;padding:14px}
+  .track small{display:block;color:var(--muted);margin-bottom:5px}
+  .track strong{font-size:17px}
+  .actions{display:grid;gap:9px;margin-top:14px}
+  .action{display:block;text-decoration:none;text-align:center;border-radius:15px;padding:13px 14px;font-weight:750;border:1px solid #34423d;color:#f5f7f6;background:#151b19}
+  .spotify{background:#143421;border-color:#245b39;color:#bff2d4}
+  .why{font-size:13px;color:#aab5b1;margin-top:14px;line-height:1.45}
+  .why strong{color:#eef3f1}
+  .chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+  .chip{font-size:12px;padding:7px 9px;border-radius:999px;border:1px solid #2e3936;color:#cbd5d1;background:#111615}
+  .nav{position:fixed;bottom:0;left:0;right:0;background:rgba(6,8,8,.93);backdrop-filter:blur(14px);border-top:1px solid #202826;padding:12px max(18px,calc((100vw - 540px)/2 + 18px)) calc(12px + env(safe-area-inset-bottom));display:flex;justify-content:space-between;color:#c8d0cd;font-size:13px}
+  .nav b{color:var(--green)}
+</style>
+</head>
+<body>
+<main class="app">
+  <div class="eyebrow">Muzikale pleisterplaats</div>
+  <h1>Verras me!</h1>
+  <p class="intro">Geen zin om te bedenken wat je wilt horen? Trek iets uit je eigen muziekwereld. Alles staat open — sturen mag, maar hoeft niet.</p>
+
+  <section class="hero">
+    <button id="surprise" class="big">VERRAS ME!</button>
+    <div class="sub">Standaard: alles uit mijn muziekwereld</div>
+    <div class="tuner">
+      <button id="toggle">Stuur mijn verrassing ▾</button>
+      <div id="filters" class="filters">
+        <select id="genre"><option value="">Alle genres</option></select>
+        <select id="style"><option value="">Alle stijlen</option></select>
+        <select id="country"><option value="">Alle landen</option></select>
+        <select id="decade"><option value="">Alle periodes</option></select>
+        <select id="mood"><option value="">Alle moods</option></select>
+        <select id="theme"><option value="">Alle themes</option></select>
+      </div>
+    </div>
+  </section>
+
+  <section id="result" class="result">
+    <div class="picked">Uit jouw muziekwereld getrokken</div>
+    <div id="artist" class="artist"></div>
+    <div id="meta" class="meta"></div>
+    <div class="track"><small>Even horen</small><strong id="track"></strong></div>
+    <div id="chips" class="chips"></div>
+    <div class="actions">
+      <a id="spotify" class="action spotify" target="_blank" rel="noopener">▶ Luister in Spotify</a>
+      <a id="world" class="action" href="#">Ga naar deze artiestenwereld →</a>
+      <button id="again" class="action" style="cursor:pointer">Verras me nog eens</button>
+    </div>
+    <div id="why" class="why"></div>
+  </section>
+</main>
+
+<div class="nav"><span>← Terug</span><b>⌁ Verras me!</b><span>Music DNA</span></div>
+
+<script>
+const fallback={artists:[
+{name:'H.E.A.T',country:'Zweden',decade:'2000s',genre:'Hard Rock',style:'Arena Rock',dna:'RATT DNA',track:'1000 Miles',spotify:'https://open.spotify.com/search/H.E.A.T%201000%20Miles',moods:['Energetic','Theatrical','Rousing'],themes:['Motivation','Empowerment']},
+{name:'Ghost',country:'Zweden',decade:'2010s',genre:'Hard Rock',style:'Heavy Metal',dna:'Ghost DNA',track:'Rats',spotify:'https://open.spotify.com/search/Ghost%20Rats',moods:['Dark','Epic','Theatrical'],themes:['Late Night','Halloween']},
+{name:'Rush',country:'Canada',decade:'1970s',genre:'Hard Rock',style:'Prog-Rock',dna:'Rush DNA',track:'La Villa Strangiato',spotify:'https://open.spotify.com/search/Rush%20La%20Villa%20Strangiato',moods:['Complex','Epic','Energetic'],themes:['Imagination','SciFi']},
+{name:'Genesis',country:'Verenigd Koninkrijk',decade:'1970s',genre:'Art-Rock/Experimental',style:'Prog-Rock',dna:'Genesis DNA',track:'Dance on a Volcano',spotify:'https://open.spotify.com/search/Genesis%20Dance%20on%20a%20Volcano',moods:['Theatrical','Cerebral','Dramatic'],themes:['Imagination','Introspection']},
+{name:'Buzzcocks',country:'Verenigd Koninkrijk',decade:'1970s',genre:'Alternative/Indie Rock',style:'Punk',dna:'Buzzcocks DNA',track:'Fast Cars',spotify:'https://open.spotify.com/search/Buzzcocks%20Fast%20Cars',moods:['Energetic','Rousing','Witty'],themes:['Maverick','Motivation']},
+{name:'The Cure',country:'Verenigd Koninkrijk',decade:'1980s',genre:'Alternative/Indie Rock',style:'Goth Rock',dna:'',track:'A Forest',spotify:'https://open.spotify.com/search/The%20Cure%20A%20Forest',moods:['Brooding','Nocturnal','Atmospheric'],themes:['Late Night','Reflection']},
+{name:'Ratt',country:'Verenigde Staten',decade:'1980s',genre:'Hard Rock',style:'Hair Metal',dna:'RATT DNA',track:'Lay It Down',spotify:'https://open.spotify.com/search/Ratt%20Lay%20It%20Down',moods:['Brash','Rousing','Sleazy'],themes:['Partying','TGIF']},
+{name:'Sweet',country:'Verenigd Koninkrijk',decade:'1970s',genre:'Hard Rock',style:'Glam Rock',dna:'Sweet DNA',track:'Ballroom Blitz',spotify:'https://open.spotify.com/search/Sweet%20Ballroom%20Blitz',moods:['Playful','Energetic','Swaggering'],themes:['Hanging Out','Late Night']},
+{name:'Uriah Heep',country:'Verenigd Koninkrijk',decade:'1970s',genre:'Hard Rock',style:'Prog-Rock',dna:'',track:"Easy Livin'",spotify:'https://open.spotify.com/search/Uriah%20Heep%20Easy%20Livin',moods:['Theatrical','Dramatic','Rousing'],themes:['Hanging Out','Reflection']},
+{name:'Metallica',country:'Verenigde Staten',decade:'1980s',genre:'Hard Rock',style:'Heavy Metal',dna:'',track:'Master of Puppets',spotify:'https://open.spotify.com/search/Metallica%20Master%20of%20Puppets',moods:['Aggressive','Epic','Intense'],themes:['Road Trip','Victory']},
+{name:'Nirvana',country:'Verenigde Staten',decade:'1990s',genre:'Alternative/Indie Rock',style:'Grunge',dna:'',track:'Smells Like Teen Spirit',spotify:'https://open.spotify.com/search/Nirvana%20Smells%20Like%20Teen%20Spirit',moods:['Angst-Ridden','Cathartic','Energetic'],themes:['Maverick','Reflection']},
+{name:'Siouxsie and the Banshees',country:'Verenigd Koninkrijk',decade:'1980s',genre:'Alternative/Indie Rock',style:'Goth Rock',dna:'',track:'Spellbound',spotify:'https://open.spotify.com/search/Siouxsie%20and%20the%20Banshees%20Spellbound',moods:['Theatrical','Nocturnal','Hypnotic'],themes:['Late Night','Maverick']},
+{name:'Tubeway Army',country:'Verenigd Koninkrijk',decade:'1970s',genre:'Alternative/Indie Rock',style:'New Wave',dna:'',track:"Are 'Friends' Electric?",spotify:'https://open.spotify.com/search/Tubeway%20Army%20Are%20Friends%20Electric',moods:['Cold','Brooding','Clinical'],themes:[]},
+{name:'Emerson, Lake & Palmer',country:'Verenigd Koninkrijk',decade:'1970s',genre:'Art-Rock/Experimental',style:'Prog-Rock',dna:'',track:'Lucky Man',spotify:'https://open.spotify.com/search/Emerson%20Lake%20Palmer%20Lucky%20Man',moods:['Epic','Theatrical','Cerebral'],themes:['Imagination','Introspection']},
+{name:'Iron Maiden',country:'Verenigd Koninkrijk',decade:'1980s',genre:'Hard Rock',style:'Heavy Metal',dna:'Iron Maiden DNA',track:'The Trooper',spotify:'https://open.spotify.com/search/Iron%20Maiden%20The%20Trooper',moods:['Intense','Rousing','Rebellious'],themes:['Guys Night Out']}
+]};
+let data=fallback, recent=[];
+const $=id=>document.getElementById(id);
+function uniq(fn){return [...new Set(data.artists.flatMap(a=>fn(a)).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),'nl'))}
+function fill(id,vals){const s=$(id); vals.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;s.appendChild(o)})}
+function init(){fill('genre',uniq(a=>[a.genre]));fill('style',uniq(a=>[a.style]));fill('country',uniq(a=>[a.country]));fill('decade',uniq(a=>[a.decade]));fill('mood',uniq(a=>a.moods||[]));fill('theme',uniq(a=>a.themes||[]))}
+function pool(){return data.artists.filter(a=>(!$('genre').value||a.genre===$('genre').value)&&(!$('style').value||a.style===$('style').value)&&(!$('country').value||a.country===$('country').value)&&(!$('decade').value||a.decade===$('decade').value)&&(!$('mood').value||(a.moods||[]).includes($('mood').value))&&(!$('theme').value||(a.themes||[]).includes($('theme').value)))}
+function currentTrace(){let p=[];for(const id of ['genre','style','country','decade','mood','theme'])if($(id).value)p.push($(id).value);return p}
+function pick(){let p=pool(); if(!p.length){$('result').classList.add('show');$('artist').textContent='Geen kandidaat';$('meta').textContent='Deze combinatie levert in de huidige proefset nog niets op. Maak één filter ruimer.';$('track').textContent='';$('chips').innerHTML='';$('spotify').style.display='none';$('world').style.display='none';$('why').textContent='Dit is precies waarom filters later alleen worden getoond wanneer de onderliggende database genoeg kandidaten bevat.';return}
+ let fresh=p.filter(a=>!recent.includes(a.name)); if(fresh.length) p=fresh; const a=p[Math.floor(Math.random()*p.length)]; recent=[a.name,...recent].slice(0,4);
+ $('result').classList.add('show');$('spotify').style.display='block';$('world').style.display='block';$('artist').textContent=a.name;$('meta').textContent=[a.country,a.decade,a.genre,a.style].filter(Boolean).join(' · ');$('track').textContent=a.track;$('spotify').href=a.spotify;
+ $('world').href=a.name==='H.E.A.T'?'artist-heat-rich-world-v1.html':'#';$('world').onclick=a.name==='H.E.A.T'?null:(e)=>{e.preventDefault();alert('In de volledige Music DNA-versie opent hier de rijke artiestenwereld van '+a.name+'.');};
+ const trace=currentTrace();$('why').innerHTML='<strong>Waarom deze?</strong> '+(trace.length?'Getrokken binnen: '+trace.join(' · ')+'.':'Je liet Music DNA vrij kiezen uit de hele proefwereld.')+(a.dna?' Bestaande relatie: '+a.dna+'.':'')+' Recente trekkingen krijgen tijdelijk minder kans.';
+ $('chips').innerHTML='';[...(a.moods||[]).slice(0,2),...(a.themes||[]).slice(0,1)].forEach(x=>{let s=document.createElement('span');s.className='chip';s.textContent=x;$('chips').appendChild(s)});
+ $('result').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+$('toggle').onclick=()=>{$('filters').classList.toggle('show');$('toggle').textContent=$('filters').classList.contains('show')?'Stuur mijn verrassing ▴':'Stuur mijn verrassing ▾'};
+$('surprise').onclick=pick;$('again').onclick=pick;
+fetch('../data/surprise-sample-v1.json').then(r=>r.ok?r.json():Promise.reject()).then(j=>{data=j;init()}).catch(()=>init());
+</script>
+</body>
+</html>
