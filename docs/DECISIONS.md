@@ -36,5 +36,25 @@ This is the durable record of accepted product decisions. New chats must not sil
 ## 2026-09-03 — Master database is content source of truth
 **Decision:** `Ben_Master_Music_DNA_Database_1.7_Spotify_Gereconcilieerd_2026-08-25.xlsx` is the fixed music-content underlayer. DNA playlists are relationships/selections from it. `artist-registry-v1.json` remains experimental and must not become a manually maintained parallel database.
 
+## 2026-09-03 — Mood DNA and Theme DNA are first-class discovery axes
+**Decision:** Treat AllMusic Mood and Theme metadata as distinct layers alongside Genre DNA rather than flattening them into genre/style.
+- Genre DNA = what kind of music is it?
+- Mood DNA = how does it feel?
+- Theme DNA = when/why does it fit?
+- Ben DNA = what actually proves to move Ben?
+**Reason:** this turns the full Master into a richer discovery substrate and enables playlists such as Dark & Theatrical, Epic & Driving, Night Driving, Late Night, Road Trip, etc., without duplicating tracks.
+**Constraint:** Mood/Theme playlists should be generated from relationships/tags and personal weighting, not by copying track data into parallel databases.
+
+## 2026-09-03 — Richness must never become complexity
+**Decision:** The amount of information behind Music DNA may grow dramatically, but the visible experience must remain calm, accessible and easy to explain.
+**Rule:** Music DNA shows first what is important, then what is interesting, and only then everything that is possible.
+**Artist-page test:** within seconds the user should see who the artist is, what they sound like and why they are in Ben's Music DNA.
+**Navigation depth:** Kijken -> Bladeren -> Verdwalen, with persistent context and a guaranteed way back.
+**Constraint:** avoid Wikipedia-like forests of inline links and card-grid overload; expose deeper relationships through deliberate, meaningful entries such as `Ontdek de verbinding` or `Meer zoals…`.
+
+## 2026-09-03 — H.E.A.T becomes the first full rich-artist pilot
+**Decision:** Use H.E.A.T as the first artist-world prototype to test the complete experience: Master relation, genre/styles, moods, themes, story, albums, people, live/current layer, reviews/interviews, related artists, credits and graph connections.
+**Purpose:** validate how much richness can sit behind one calm, phone-first artist page before scaling enrichment across the Master.
+
 ## Standing — Rating persistence
 **Decision:** A rating once given may never be lost or presented later as if Ben had never rated that track. Persistence/migration is a hard product requirement.
