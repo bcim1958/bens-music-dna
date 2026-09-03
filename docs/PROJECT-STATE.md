@@ -63,18 +63,78 @@ Example daily cycle: 3 -> 2 -> 1 -> no badge after completion.
 Do not count passive news/articles as required actions.
 Action indicator should harmonize with the Music DNA visual language rather than becoming generic app clutter.
 
-## Rich artist world
+## Rich artist world — VALIDATED FIRST PROOF
 Music remains central. Artist/band information makes the app rich and attractive but must never block the daily music process.
 Desired enrichment includes: official band bio, current/former member bios, Wikipedia, recent articles, setlist.fm, tour data, band logo, albums, songs, people, interviews, video/Chapters, media, merch, connections/influences.
 Editorial source preferences noted in practice: Lust for Life (classic rock/glam/older heroes), Progwereld (prog), Arrow Lords of Metal (hard rock/Ghost/new metal), Rockportaal (punk/new wave/broader rock).
 A visual 'Mijn Smaak' thermometer is a desired personal/artist relationship element.
 Navigation rule: do not throw Ben 'out of the band'; preserve context and a clear route back.
 
+### H.E.A.T proof — completed and tested on iPhone
+The public H.E.A.T rich-artist prototype is implemented and tested successfully on iPhone:
+`test/artist-heat-rich-world-v1.html`
+
+Observed product proof:
+- the page feels logical and clickable rather than like a click maze;
+- Kijken -> Bladeren -> Verdwalen works naturally;
+- `Waarom hier?` successfully explains a real Master relationship;
+- band -> person -> band graph traversal feels natural (H.E.A.T -> Erik Grönwall -> Skid Row);
+- Mood DNA and Theme DNA are understandable as optional routes;
+- the bottom semantic return path is calm and reliable;
+- the navigation grammar should not be fundamentally redesigned before broader rollout.
+
 ### Accessibility principle
 Richness must never become visible complexity.
 The first artist screen must answer within seconds: who is this, what does it sound like, and why is it in Ben's Music DNA?
 Use three depths: Kijken -> Bladeren -> Verdwalen. Even at the deepest level, preserve a semantic trail and a guaranteed route back.
 Avoid click mazes and Wikipedia-like forests of inline links.
+
+> **Music DNA hoeft niet alles tegelijk te laten zien om alles bereikbaar te maken.**
+
+> **Iedere klik in Music DNA moet een antwoord geven óf nieuwsgierigheid belonen. Nooit alleen een volgend menu openen.**
+
+## Muzikale pleisterplaats
+A rich artist world is not primarily an information page. It is a **muzikale pleisterplaats**: Ben can arrive through one relation, stay briefly, listen, read, follow a surprising side path and leave again. Nothing has to be completed.
+
+Spotify is therefore a contextual listening layer throughout the rich world.
+
+> **Waar Music DNA een muzikale bewering doet, moet je die waar mogelijk met één tik kunnen beluisteren.**
+
+Examples include artist, album, essential-track, person-connection, Mood/Theme and comparison links. A route such as H.E.A.T -> Erik Grönwall -> Skid Row can therefore offer a direct Spotify entry to a representative Skid Row track such as `18 and Life`.
+
+Unexpected links are desirable, but not arbitrary. A surprise should have a real basis in Master/enrichment/graph data and an optional `Waarom deze verbinding?` explanation.
+
+## Verras me! — accepted homepage function
+`Verras me!` is accepted as a prominent start-page function.
+
+Purpose: rediscover Ben's own existing music world when he does not want to decide in advance what to hear.
+
+Default:
+- one tap;
+- `Alles / hoofdindeling` preselected;
+- choose an artist from the existing Master world;
+- reduce recent repeats;
+- open the artist's rich musical resting place.
+
+Optional steering after the first tap can use available database dimensions such as:
+- Genre;
+- Mood;
+- Theme;
+- year/period;
+- taste rating;
+- later country, Style, DNA relationship, people, producer/credit and other reliable graph fields.
+
+Combinations are desirable. The interface must reveal this progressively rather than demand setup.
+
+> **Music DNA moet veel keuze bieden, maar nooit voelen alsof je veel móét kiezen.**
+
+> **Music DNA gebruikt de database niet om Ben's keuze te beperken, maar om hem meer manieren te geven om te kiezen.**
+
+`Ontdek DNA` and `Verras me!` are deliberately different:
+- Ontdek DNA = find music that may be new to Ben;
+- Verras me! = rediscover music already inside Ben's own music world.
+
+See `docs/RICH-ARTIST-PROOF-AND-SURPRISE-MODE-2026-09-03.md`.
 
 ## AllMusic opportunity audit — completed 2026-09-03
 Current Master usage of AllMusic Genre/Style is valid but does not exploit all useful semantic layers.
@@ -97,17 +157,12 @@ Treat them as first-class discovery axes, not as extra genre labels:
 Potential playlist concepts include Dark & Theatrical, Epic & Driving, Energetic & Rousing, Night Driving, Late Night, Road Trip, etc.
 Selections should be generated over the existing Master/graph, never by duplicating music into parallel databases.
 
-## Current pilot
-**H.E.A.T is the first full rich-artist pilot.**
-Goal: prototype one calm phone-first artist world using real Master relation + Genre/Styles + Moods + Themes + story + albums + people + current/live layer + reviews/interviews + related artists + credits + graph connections.
-This pilot should prove how much richness can sit behind a simple, accessible entry screen before scaling enrichment to all Master artists.
-Ghost remains a secondary comparison artist because it exercises different mood/theme and relationship patterns.
-
 ## Current build status
 - Existing W36 discovery/week implementation remains the live build and must not be disrupted.
-- Project-memory branch contains durable project-state, decisions, UX/design docs and the AllMusic opportunity audit.
-- No full H.E.A.T rich-artist UI has been implemented yet; it is the next design/prototype step.
-- The Master has not been altered by the audit; enrichment strategy remains layered on top of it.
+- H.E.A.T rich-artist v1 is implemented, publicly deployed and positively evaluated on iPhone.
+- Its navigation grammar is the current template for rich artist worlds.
+- The Master has not been altered by the AllMusic audit; enrichment remains layered on top of it.
+- The next product proof after database baseline/enrichment design is `Verras me!`.
 
 ## Open technical risks
 1. Rating persistence/localStorage migration remains the highest functional risk; historical ratings must never be lost.
@@ -119,23 +174,21 @@ Ghost remains a secondary comparison artist because it exercises different mood/
 7. Current/live data (news, tours, setlists, reviews) needs source + date and must remain separate from durable Master facts.
 
 ## Exact next step
-Design and implement the **H.E.A.T rich-artist pilot screen/flow** as the first full proof of the post-3/3 Music DNA world:
-1. calm artist entry screen;
-2. immediate identity + sound + `why in my DNA`;
-3. six simple top-level routes: Luisteren, Verhaal, Albums, Mensen, Actueel, Ontdekken;
-4. Mood/Theme character behind an `Ontdek via sfeer` route;
-5. `Meer zoals…` and person/credit relationships behind deliberate graph routes;
-6. persistent semantic back trail;
-7. verify it remains usable on iPhone without exposing graph complexity.
-Do not scale to all artists until this pilot has been evaluated.
+Move from successful product proof to factual database foundation:
+1. establish a Master 1.7 baseline: tracks, unique artists, albums, years, countries, Genre/Style and DNA relation coverage;
+2. measure completeness and identify fields that are already strong enough to drive choice;
+3. assess Mood/Theme and graph enrichment coverage on representative entities;
+4. define one enrichment model with stable identity, scope, provenance, date checked and confidence/status;
+5. only then build `Verras me!` on the same Master + enrichment + graph substrate.
 
 ## Immediate technical priorities
-1. Reconstruct the latest implemented W36 behaviour from repository files before changing it.
+1. Preserve the running W36 path through Saturday and generate the 30-track gift.
 2. Inspect and harden rating persistence/localStorage migration. A rating once given must never be lost.
-3. Map the master database fully as the fixed underlayer and define a generated app-serving data layer instead of manual duplication.
-4. Reconcile Ghost_DNA export when available with master relationships.
-5. Build the H.E.A.T rich-artist pilot from the agreed UX/design principles.
-6. Preserve the live W36 path through Saturday and generate the 30-track gift.
+3. Map Master 1.7 fully as the fixed underlayer and quantify its current usable dimensions.
+4. Define a generated app-serving data layer instead of manual duplication.
+5. Measure Mood/Theme/graph enrichment opportunity before bulk enrichment.
+6. Reconcile Ghost_DNA export when available with master relationships.
+7. Build `Verras me!` after the data baseline and enrichment model are proven.
 
 ## Session safety rule
 A chat is a workbench, never the archive. Decisions and current state must be written to GitHub during the session. Before a new Music DNA work session, read this file plus `DECISIONS.md`, `UX-SPEC.md`, `DESIGN-SYSTEM.md` and the latest dated audit/research notes first.
