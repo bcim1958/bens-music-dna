@@ -46,6 +46,7 @@ Music first. Possible content:
 - continue listening;
 - weekly Ontdek-DNA status;
 - existing Genre DNA / Band DNA;
+- Mood DNA / Theme DNA routes when sufficient enrichment exists;
 - recently opened artist world;
 - a gentle curiosity invitation related to a track that hit Ben;
 - actual pending action indicator.
@@ -54,6 +55,27 @@ Music first. Possible content:
 A positive or interesting music encounter can open a rich world, but enrichment never blocks the music loop.
 Navigation is object/relationship-driven rather than a rigid menu hierarchy.
 Every deep page must have a clear route back to where Ben came from.
+
+### Accessibility rule for richness
+The richness behind Music DNA must never be presented as visible complexity.
+The first artist screen should answer within seconds:
+1. Who is this?
+2. What does it sound like?
+3. Why is this artist in Ben's Music DNA?
+
+Only after that should curiosity reveal deeper layers.
+
+Use three depths:
+- **Kijken** — immediate identity, musical character, Ben-DNA connection.
+- **Bladeren** — story, albums, songs, people, live, news, reviews/interviews.
+- **Verdwalen** — deliberate cross-links to people, other bands, albums, moods/themes, producers, labels and `Meer zoals…`.
+
+Even when 'verdwalen', the app must preserve a semantic trail and guaranteed return route. Do not make the user reconstruct where they came from.
+
+Avoid Wikipedia-like forests of inline links and avoid showing every possible relationship at once. Prefer deliberate calls such as:
+- `Ontdek de verbinding ->`
+- `Meer zoals H.E.A.T ->`
+- `Ontdek via sfeer ->`
 
 Potential artist-world dimensions:
 - story/timeline/lore
@@ -66,7 +88,28 @@ Potential artist-world dimensions:
 - current news
 - merch/books/reissues
 - connections/influences
+- Mood/Theme character
 - personal 'Mijn Smaak' relationship indicator
+
+## Mood DNA / Theme DNA
+Treat Genre, Mood and Theme as distinct discovery axes:
+- Genre DNA — what kind of music?
+- Mood DNA — how does it feel?
+- Theme DNA — when/why does it fit?
+- Ben DNA — what does Ben actually respond to?
+
+Mood/Theme values may be grouped into understandable playlist concepts while preserving source tags underneath. Do not duplicate tracks into separate master stores; playlists are selections/relationships over one music world.
+
+## H.E.A.T pilot UX goal
+H.E.A.T is the first full rich-artist pilot. The prototype should test a calm phone-first entry screen with a limited number of obvious top-level routes such as:
+- Luisteren
+- Verhaal
+- Albums
+- Mensen
+- Actueel
+- Ontdekken
+
+Deeper Mood/Theme data, related artists, credits and graph connections should remain available behind those routes rather than crowding the entry screen.
 
 ## Second Chance
 `NOG EENS` means: this music deserves another encounter.
