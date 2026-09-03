@@ -28,6 +28,7 @@ Existing DNA playlist members are already harvested and must not be presented as
 3. Personal memory — offers, ratings, learning, second chances; ratings may never be lost or requested again as if new.
 4. Rich artist world — story, albums, songs, people, live/setlists, interviews, media, news, merch, connections; supporting/bonus layer.
 5. Presentation — calm, cinematic, phone-first interface.
+6. Enrichment/knowledge graph — Moods, Themes, related artists, memberships, credits and other durable relationships layered over the Master without duplicating the music world.
 
 ## Daily UX
 - 3 discoveries per day.
@@ -69,13 +70,72 @@ Editorial source preferences noted in practice: Lust for Life (classic rock/glam
 A visual 'Mijn Smaak' thermometer is a desired personal/artist relationship element.
 Navigation rule: do not throw Ben 'out of the band'; preserve context and a clear route back.
 
+### Accessibility principle
+Richness must never become visible complexity.
+The first artist screen must answer within seconds: who is this, what does it sound like, and why is it in Ben's Music DNA?
+Use three depths: Kijken -> Bladeren -> Verdwalen. Even at the deepest level, preserve a semantic trail and a guaranteed route back.
+Avoid click mazes and Wikipedia-like forests of inline links.
+
+## AllMusic opportunity audit — completed 2026-09-03
+Current Master usage of AllMusic Genre/Style is valid but does not exploit all useful semantic layers.
+Accepted enrichment directions:
+- Moods — high-priority durable enrichment layer.
+- Themes — high-value context/use layer.
+- Similar To / Influenced By / Followed By / Associated With / Collaborated With — graph relations.
+- Group Members / Member Of — graph relations.
+- Album Picks / Track Picks / Similar Albums / editorial ratings — album/artist enrichment.
+- Credits — high-value person/production graph relations.
+- Biography, active years, formation, aliases, discography and related artist metadata — artist enrichment.
+See `docs/ALLMUSIC-OPPORTUNITY-AUDIT-2026-09-03.md`.
+
+## Mood DNA / Theme DNA direction
+Treat them as first-class discovery axes, not as extra genre labels:
+- Genre DNA = what kind of music?
+- Mood DNA = how does it feel?
+- Theme DNA = when/why does it fit?
+- Ben DNA = what actually proves to move Ben?
+Potential playlist concepts include Dark & Theatrical, Epic & Driving, Energetic & Rousing, Night Driving, Late Night, Road Trip, etc.
+Selections should be generated over the existing Master/graph, never by duplicating music into parallel databases.
+
+## Current pilot
+**H.E.A.T is the first full rich-artist pilot.**
+Goal: prototype one calm phone-first artist world using real Master relation + Genre/Styles + Moods + Themes + story + albums + people + current/live layer + reviews/interviews + related artists + credits + graph connections.
+This pilot should prove how much richness can sit behind a simple, accessible entry screen before scaling enrichment to all Master artists.
+Ghost remains a secondary comparison artist because it exercises different mood/theme and relationship patterns.
+
+## Current build status
+- Existing W36 discovery/week implementation remains the live build and must not be disrupted.
+- Project-memory branch contains durable project-state, decisions, UX/design docs and the AllMusic opportunity audit.
+- No full H.E.A.T rich-artist UI has been implemented yet; it is the next design/prototype step.
+- The Master has not been altered by the audit; enrichment strategy remains layered on top of it.
+
+## Open technical risks
+1. Rating persistence/localStorage migration remains the highest functional risk; historical ratings must never be lost.
+2. Stable artist identity is required before automatic enrichment. Name-only matching (e.g. `Ghost`) can attach the wrong artist. Use stable external IDs and provenance.
+3. Rights/licensing/source policy for AllMusic enrichment must be defined before large-scale automated ingestion; avoid copying protected editorial text.
+4. Mood/Theme scope may vary by artist/album/song; store source scope and provenance rather than pretending every tag is track-level truth.
+5. The 30-track Saturday gift still exceeds the maximum 21 daily offers; supplementation/ranking logic must remain explicit.
+6. Knowledge-graph enrichment must not create a manually maintained parallel database or a click maze in the UX.
+7. Current/live data (news, tours, setlists, reviews) needs source + date and must remain separate from durable Master facts.
+
+## Exact next step
+Design and implement the **H.E.A.T rich-artist pilot screen/flow** as the first full proof of the post-3/3 Music DNA world:
+1. calm artist entry screen;
+2. immediate identity + sound + `why in my DNA`;
+3. six simple top-level routes: Luisteren, Verhaal, Albums, Mensen, Actueel, Ontdekken;
+4. Mood/Theme character behind an `Ontdek via sfeer` route;
+5. `Meer zoals…` and person/credit relationships behind deliberate graph routes;
+6. persistent semantic back trail;
+7. verify it remains usable on iPhone without exposing graph complexity.
+Do not scale to all artists until this pilot has been evaluated.
+
 ## Immediate technical priorities
 1. Reconstruct the latest implemented W36 behaviour from repository files before changing it.
 2. Inspect and harden rating persistence/localStorage migration. A rating once given must never be lost.
 3. Map the master database fully as the fixed underlayer and define a generated app-serving data layer instead of manual duplication.
 4. Reconcile Ghost_DNA export when available with master relationships.
-5. Build the current iPhone choice screen from the agreed UX/design principles.
+5. Build the H.E.A.T rich-artist pilot from the agreed UX/design principles.
 6. Preserve the live W36 path through Saturday and generate the 30-track gift.
 
 ## Session safety rule
-A chat is a workbench, never the archive. Decisions and current state must be written to GitHub during the session. Before a new Music DNA work session, read this file plus `DECISIONS.md`, `UX-SPEC.md` and `DESIGN-SYSTEM.md` first.
+A chat is a workbench, never the archive. Decisions and current state must be written to GitHub during the session. Before a new Music DNA work session, read this file plus `DECISIONS.md`, `UX-SPEC.md`, `DESIGN-SYSTEM.md` and the latest dated audit/research notes first.
