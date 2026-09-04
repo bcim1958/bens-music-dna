@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07130f">
+<title>Music DNA — Persistence Health</title>
+<style>
+:root{--g:#1ed760;--bg:#07100b;--c:rgba(255,255,255,.065);--l:rgba(255,255,255,.11);--m:#aebbb5;--t:#f5f8f6;--w:#ffd166}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#17382b 0,#0b1713 36%,#070b0a 76%);color:var(--t);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{max-width:560px;margin:auto;padding:calc(env(safe-area-inset-top,0px) + 34px) 20px 48px}.eye{color:var(--g);font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase}h1{font-size:30px;margin:7px 0 10px}.intro,.muted{color:var(--m);line-height:1.5}.panel{background:var(--c);border:1px solid var(--l);border-radius:20px;padding:18px;margin:14px 0}.ok{color:var(--g);font-weight:800}.warn{color:var(--w);font-weight:800}.row{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.07)}.row:last-child{border:0}.btn{display:block;width:100%;border:0;border-radius:999px;padding:15px;margin-top:14px;background:var(--g);color:#07100b;font-size:16px;font-weight:850}.small{font-size:13px}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;word-break:break-word;color:#c7d2cd}</style>
+</head>
+<body><main class="app">
+<div class="eye">Music DNA Health Check</div><h1>Beoordelingen & selecties</h1>
+<div class="intro">Deze pagina leest alleen. Ze wijzigt geen beoordelingen, selecties of leerdata.</div>
+<section class="panel" id="summary"></section>
+<section class="panel"><div class="eye">W36 per dag</div><div id="days"></div></section>
+<section class="panel"><div class="eye">Leerlaag</div><div id="learning"></div></section>
+<section class="panel"><div class="eye">Veilige kopie</div><div class="muted small">Maak desgewenst een JSON-kopie van alle Music-DNA-localStorage-sleutels op dit toestel.</div><button class="btn" id="export">Exporteer Music DNA-opslag</button></section>
+<section class="panel"><div class="eye">Technisch</div><div class="mono" id="keys"></div></section>
+</main>
+<script>
+(function(){
+function parse(k){try{var r=localStorage.getItem(k);return r?JSON.parse(r):null}catch(e){return null}}
+function row(a,b){return '<div class="row"><span>'+a+'</span><strong>'+b+'</strong></div>'}
+var week='2026-W36',rated=0,selections=0,completeDays=0,dayHtml='';
+for(var d=1;d<=7;d++){
+ var sk='bmd-week-'+week+'-day'+d+'-v1';
+ var qk='bmd-week-'+week+'-day'+d+'-selection-v1';
+ var s=parse(sk)||{},q=parse(qk),r=Object.keys(s).filter(function(id){return s[id]&&s[id].rating}).length;
+ if(q&&q.ids&&q.ids.length===3)selections++; if(r===3)completeDays++; rated+=r;
+ dayHtml+=row('Dag '+d,(q&&q.ids&&q.ids.length===3?'3 geselecteerd':'geen selectie')+' · '+r+'/3 beoordeeld');
+}
+var learn=parse('bmd-learning-v1')||{},signals=learn.signals||{},signalCount=Object.keys(signals).length;
+var healthy=rated>0;
+document.getElementById('summary').innerHTML='<div class="eye">Status</div><div class="'+(healthy?'ok':'warn')+'">'+(healthy?'Opslag gevonden':'Nog geen W36-beoordelingen gevonden op dit toestel')+'</div>'+row('W36 beoordelingen',rated+'/21')+row('Dagen met vaste selectie',selections+'/7')+row('Voltooide dagen',completeDays+'/7');
+document.getElementById('days').innerHTML=dayHtml;
+document.getElementById('learning').innerHTML=row('bmd-learning-v1 signalen',signalCount)+row('Versie',learn.version||'—')+row('Laatst bijgewerkt',learn.updatedAt||'—');
+var all={};for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&k.indexOf('bmd-')===0)all[k]=localStorage.getItem(k)}
+document.getElementById('keys').textContent=Object.keys(all).sort().join('\n');
+document.getElementById('export').onclick=function(){var payload={exportedAt:new Date().toISOString(),origin:location.origin,items:all};var blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='music-dna-storage-backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(function(){URL.revokeObjectURL(a.href)},1000)};
+})();
+</script></body></html>
