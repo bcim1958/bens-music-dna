@@ -42,5 +42,25 @@ Een checkpoint bewaart minimaal:
 3. Daarna: vervang de kleine proefset gecontroleerd door een gegenereerde Master-derived artist/facet dataset met stabiele identity keys en bestaande Spotify Track URI-ankers.
 4. Pas daarna koppelen aan bredere rijke artiestenwerelden en duurzame recent-history/personal-state.
 
+## Checkpoint — 2026-09-05 — Verras me! v4 volledige Masterwereld
+- `test/surprise-me-v4-full.html` laadt nu 16 zelfstandige, gecontroleerde productiedelen uit `data/surprise-prod-full-01.txt` t/m `-16.txt`.
+- De loader accepteert de wereld alleen wanneer delen 1–16 uniek/compleet zijn, alle delen `n=16` en `total=3284` melden en samen exact 3.284 records opleveren.
+- iPhone-validatie geslaagd: de UI meldt **3.284 verrassingen mogelijk** en **Master v1.8 · volledige productiewereld · 3.284 artiestenwerelden**.
+- Eerste vrije trekking uit de volledige wereld geslaagd: **Dirty Shirley — Here Comes the King**, met herkomst/periode/taxonomie en bestaande **Journey DNA**-relatie.
+- De exacte Spotify-tracklink opent de juiste track in Spotify. Spotify zet de track klaar maar start hem vanuit de gewone web-tracklink niet gegarandeerd automatisch; autoplay is daarom een apart integratie-/UX-punt en geen dataketenfout.
+- De eerdere v4-verpakkingsfout kwam door afgekapt geschreven data; de huidige 16 delen omzeilen dit en zijn de gevalideerde v4-productieset.
+- W36/Ontdek-DNA en de veilige Master zijn tijdens deze bouwfase niet gewijzigd.
+
+## Gesloten na dit checkpoint
+- Verras me! kan productietechnisch over de volledige 3.284 Master-derived artiestenwerelden beschikken.
+- De keten Master-derived productiedata → vrije trekking → artiest/track → exacte Spotify-bestemming is op iPhone bewezen.
+- Sfeer en Thema blijven uitgeschakeld totdat echte enrichment beschikbaar is; niets synthetisch invullen.
+
+## Open / volgende laag
+1. Brede rijke artiestenwerelden koppelen, voortbouwend op de gevalideerde H.E.A.T.-grammatica; geen fundamentele herontwerpstap.
+2. Stabiele artiestidentiteit en duurzame recent-history/personal-state gebruiken voordat die koppeling breed wordt uitgerold.
+3. Spotify-afspeelgedrag verbeteren: onderzoeken welke uiteindelijke app-koppeling één-tik-afspelen betrouwbaar kan ondersteunen; gewone track-URL garandeert autoplay niet.
+4. Rating persistence blijft een harde eis en W36 blijft onaangeroerd.
+
 ## Sessieregel
 De chat is werkbank; GitHub is archief. Voor iedere volgende werksessie eerst de project-state en decision/UX/design-documenten lezen.
