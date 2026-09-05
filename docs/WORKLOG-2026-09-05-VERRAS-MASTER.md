@@ -37,12 +37,33 @@ Nieuwe proef: `test/surprise-me-v3-master.html`.
 - Recente artiesten worden via `localStorage` tijdelijk onderdrukt.
 - H.E.A.T blijft de enige reeds gekoppelde rijke artiestenwereld; voor overige artiesten blijft de bestaande prototype-melding gelden.
 
+## Verras me! v3 — iPhone-techniekproef geslaagd
+- Vrije trekking uit de 206-proefwereld werkt.
+- Exacte Spotify Track URI opent en speelt de bedoelde track.
+- `Verras me nog eens` onderdrukt recente artiesten via bestaande lokale staat.
+- Dynamische filters reageren onderling correct op Periode, Genre en Stijl.
+- Gefilterde proef `1980s + Hard Rock + Hair Metal` trok Kix — `Blow My Fuse` en opende exact die Spotify-track.
+
+## Verras me! v4 — volledige Masterwereld
+Nieuwe proef: `test/surprise-me-v4-full.html`.
+- v3 blijft intact als bewezen 206-artiesten-techniekproef.
+- Vier zelfstandige gzip+base64-datadelen bevatten samen exact 3.284 artiestwerelden:
+  - `data/surprise-prod-full-01.txt`
+  - `data/surprise-prod-full-02.txt`
+  - `data/surprise-prod-full-03.txt`
+  - `data/surprise-prod-full-04.txt`
+- v4 laadt alle vier delen, valideert partnummers, gezamenlijke bronset en exact totaal 3.284 vóór de VERRAS ME!-knop wordt vrijgegeven.
+- Bewezen v3-gedrag blijft behouden: dynamische Genre/Stijl/Land/Periode-filters, exacte Spotify Track URI, recente-artiestonderdrukking, H.E.A.T rich-world-koppeling.
+- Sfeer en Thema blijven bewust uitgeschakeld tot verantwoorde verrijking beschikbaar is.
+- W36/Ontdek-DNA en bestaande v2/v3-proeven zijn niet gewijzigd.
+
 ## Data-opslag
-- Productiedata wordt in zelfstandige gzip+base64-delen voorbereid om de app-serving laag compact te houden.
-- `data/surprise-prod-02.txt` is de eerste zelfstandige wiring-chunk die v3 momenteel gebruikt.
-- `data/surprise-prod-b64-01.txt` is een eerder technisch tussenbestand en is niet de productiebron voor v3.
+- v3 gebruikt nog `data/surprise-prod-02.txt` als zelfstandige 206-wiring-chunk.
+- v4 gebruikt uitsluitend de vier `surprise-prod-full-*` productiedelen.
+- `data/surprise-prod-b64-01.txt` blijft een eerder technisch tussenbestand en is geen v4-bron.
 
 ## Volgende stap
-1. iPhone-techniekproef van v3: laden, dynamische filters, trekking, exacte Spotify-link en recent-suppression.
-2. Daarna alle 16 zelfstandige productiedelen aansluiten voor de volledige 3.284 artiestwerelden.
-3. Vervolgens bredere rijke artiestenwerelden en duurzame persoonlijke staat aansluiten.
+1. iPhone-laadtest van v4: bevestigen dat exact 3.284 artiestwerelden worden geladen.
+2. Daarna één vrije trekking + exacte Spotify-link controleren.
+3. Daarna één dynamische filterketen in de volledige wereld controleren.
+4. Vervolgens representatieve-trackselectie tegen het productiecontract nalopen en daarna bredere rijke artiestenwerelden/persoonlijke staat aansluiten.
