@@ -115,6 +115,15 @@ De health check moet daarom niet alleen controleren of GitHub technisch bereikba
 - Spotify één-tik-afspeelgedrag blijft apart technisch/UX-punt.
 - De vier filmische beoordelingssymbolen concreet ontwerpen en valideren zonder de semantiek te wijzigen.
 
+## Herstelanker van deze consolidatie
+Na het bijwerken van `PROJECT-STATE.md`, `DECISIONS.md` en `DESIGN-SYSTEM.md` is een aparte herstelbranch gemaakt:
+
+`checkpoint/consolidation-2026-09-06`
+
+Die branch is aangemaakt op commit `44454a2fe356ee84ac87d46a6bdff70c548445df`, de toestand waarin de consolidatie-inhoud, projectstaat, besluitbewaking en designverfijning samen waren vastgelegd. De branch is een herstelanker en niet bedoeld als gewone ontwikkelbranch.
+
+Deze latere tekstuele aanvulling op het checkpoint verandert de inhoudelijke herstelbasis niet; zij documenteert alleen het reeds aangemaakte herstelanker.
+
 ## Hervattingsregel
 Voor een volgende wezenlijke Music-DNA-bouwsessie eerst lezen:
 1. `docs/PROJECT-STATE.md`;
