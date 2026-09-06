@@ -34,7 +34,9 @@ This is the durable record of accepted product decisions. New chats must not sil
 **Decision:** Show a counter on the Music DNA app icon only for real actions requiring Ben's input. Daily example: 3 -> 2 -> 1 -> none. Passive content does not increase the counter. Violet is the preferred action accent.
 
 ## 2026-09-03 — Master database is content source of truth
-**Decision:** `Ben_Master_Music_DNA_Database_1.7_Spotify_Gereconcilieerd_2026-08-25.xlsx` is the fixed music-content underlayer. DNA playlists are relationships/selections from it. `artist-registry-v1.json` remains experimental and must not become a manually maintained parallel database.
+**Decision:** The Master music database is the fixed content underlayer. DNA playlists are relationships/selections from it. `artist-registry-v1.json` remains experimental and must not become a manually maintained parallel database.
+
+**Current safe spreadsheet nuance (2026-09-06):** the safe taxonomy-repair working basis is `Ben_Master_Music_DNA_Database_1.8_Taxonomie_Reparatie_2026-09-04_v2.xlsx`; later investigated repairs may exist without already being safely written into that xlsx. Do not silently equate investigated with synchronized.
 
 ## 2026-09-03 — Mood DNA and Theme DNA are first-class discovery axes
 **Decision:** Treat AllMusic Mood and Theme metadata as distinct layers alongside Genre DNA rather than flattening them into genre/style.
@@ -58,3 +60,48 @@ This is the durable record of accepted product decisions. New chats must not sil
 
 ## Standing — Rating persistence
 **Decision:** A rating once given may never be lost or presented later as if Ben had never rated that track. Persistence/migration is a hard product requirement.
+
+## 2026-09-06 — Closed decisions may not be silently replaced
+**Decision:** An accepted Music-DNA decision may not be changed implicitly by a later chat, refactor or design idea.
+
+A proposed change must:
+1. identify the existing decision it affects;
+2. explain the reason for changing it;
+3. receive explicit acceptance from Ben;
+4. be recorded as a new dated GitHub decision;
+5. state clearly which older decision is historical and which is superseded where applicable.
+
+**Reason:** correctness is not only technical; continuity of intent and agreements is part of project integrity.
+
+## 2026-09-06 — Status language is controlled
+**Decision:** Use project status terms consistently.
+- **GESLOTEN** — not reopened without an explicit change decision.
+- **OPEN / IN UITVOERING** — not yet complete.
+- **ONDER VOORBEHOUD** — intentionally not final.
+- **HISTORISCH** — retained for provenance but no longer current truth.
+
+A technical failure or partial import may never be described as closed merely because an intermediate file or tool reported success.
+
+## 2026-09-06 — Spotify is final operational playlist control
+**Decision:** A DNA playlist is only closed after verification in Spotify itself.
+
+Required chain:
+**content audit → establish actual gaps → agree removals/additions → user removes → verify exact Spotify versions/URIs → small import CSV → import into existing playlist → verify in Spotify → only then close at real 30/30 with active tracks → synchronize Master afterward.**
+
+Hard constraints:
+- importer/CSV success alone never closes a playlist;
+- never invent or guess Spotify URIs;
+- 30/30 means 30 actually verified tracks, not merely 30 rows;
+- closed playlists are not silently changed.
+
+## 2026-09-06 — Reaction symbols must become more distinctive
+**Decision:** Preserve the four accepted meanings RAAK / GOED / NOG EENS / NEE, but refine their visible symbols so they are substantially more unique, memorable and cinematic than generic icons or emoji.
+
+**Constraint:** the existing gold/blue/violet/red-orange cinematic language remains directionally valid, but the concrete pictograms/objects may be redesigned to become more characteristic of Music DNA.
+
+**Reason:** the reaction controls are central daily interaction objects and should feel like part of the same filmic Music-DNA world rather than ordinary phone controls.
+
+## 2026-09-06 — Chat is workbench, GitHub is archive
+**Decision:** New project knowledge required for recovery, handoff or consistent continuation must not remain only in chat. During or at the end of a substantial session it must be consolidated to GitHub.
+
+Health checks therefore assess not only repository health but also alignment between GitHub and the actual project state, including chat-only decisions, Master/Spotify differences and outdated project-state documentation.
