@@ -31,23 +31,40 @@ Chosen 2026-09-03 direction: **C — Living DNA**.
 ## Four reaction objects
 These are bespoke visual objects, not stock emoji/icons.
 
+Accepted semantics remain fixed:
+- **RAAK** — strong musical/emotional hit;
+- **GOED** — positive musical fit;
+- **NOG EENS** — unresolved; deserves another encounter;
+- **NEE** — does not fit Ben.
+
+### 2026-09-06 refinement requirement
+The earlier light/spark/wave/ribbon directions are **design directions, not final pictograms**. The four visible objects must become more distinctive, memorable and mutually recognizable, with stronger character in the filmic Music-DNA world.
+
+They must not collapse back into generic phone emoji, ordinary thumbs/check/cross controls or four nearly interchangeable abstract glows.
+
+The user should be able to learn the four objects as a recognizable Music-DNA visual language in their own right.
+
 ### RAAK
-Golden light impact/spark. Moment of being struck by music.
-Micro-animation idea: brief expansion/light burst.
+Directional language: golden light/impact/decisive moment of being struck by music.
+The final object should feel immediate and unmistakable rather than merely decorative.
+Micro-animation direction: brief impact/expansion, restrained.
 
 ### GOED
-Blue musical resonance/wave. Calm positive fit.
-Micro-animation idea: gentle pulse/breath.
+Directional language: blue musical resonance/settled positive fit.
+The final object must differ clearly from RAAK in silhouette and motion, not only in colour.
+Micro-animation direction: gentle resonance/pulse.
 
 ### NOG EENS
-Violet returning film/light ribbon. A story/encounter not yet finished.
-This object should become a reusable visual motif for Second Chance elsewhere in the app.
-Micro-animation idea: one restrained returning loop.
+Directional language: violet return/loop/unfinished encounter.
+This must become a reusable Second-Chance visual motif elsewhere in the app.
+The final object should communicate return without looking like a generic refresh icon.
+Micro-animation direction: one restrained returning movement.
 
 ### NEE
-Red/orange waveform or light that dies into black.
-No thumbs-down, cross or aggressive rejection.
-Micro-animation idea: signal softly fades.
+Directional language: red/orange stop/fade/dissolving signal.
+No aggressive thumbs-down, cross or punishment imagery.
+The final object must still be immediately distinguishable as a clear negative choice.
+Micro-animation direction: signal softly fades into black.
 
 All four reactions are visually equal in size/status so the UI does not bias Ben's judgement.
 
@@ -68,3 +85,6 @@ Target micro-animations roughly 300–500 ms, subtle and purposeful. A selection
 
 ## Visual reference policy
 Concept images created in chat are design references, not source-of-truth assets until stored/exported into the repository. Important accepted visuals should be archived as project assets with a short README describing what is accepted from each image.
+
+## Change-control rule
+A future visual refinement may improve form, motion or recognizability, but may not silently alter the accepted meaning of RAAK / GOED / NOG EENS / NEE or replace the cinematic direction with generic UI controls. A semantic or strategic change requires a new dated decision in `docs/DECISIONS.md`.
