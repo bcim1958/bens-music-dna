@@ -5,7 +5,7 @@
   var PROD_RE=/^bmd-week-\d{4}-W\d{2}-day[1-7]-v1$/;
 
   function safeParse(raw,fallback){try{return raw?JSON.parse(raw):fallback;}catch(e){return fallback;}}
-  function readLearning(){return safeParse(window.localStorage.getItem(LEARNING_KEY),{version:2,signals:{},updatedAt:null});}
+  function readLearning(){return safeParse(window.localStorage.getItem(LEARNING_KEY),{version:3,signals:{},updatedAt:null});}
   function writeLearning(model){try{window.localStorage.setItem(LEARNING_KEY,JSON.stringify(model));}catch(e){}}
   function findTrack(id){
     if(typeof MUSIC_DNA_DB!=='undefined'&&MUSIC_DNA_DB.tracks&&MUSIC_DNA_DB.tracks[id])return MUSIC_DNA_DB.tracks[id];
@@ -14,11 +14,18 @@
     if(typeof MUSIC_DNA_WEEK_CANDIDATES!=='undefined'&&MUSIC_DNA_WEEK_CANDIDATES.tracks&&MUSIC_DNA_WEEK_CANDIDATES.tracks[id])return MUSIC_DNA_WEEK_CANDIDATES.tracks[id];
     return null;
   }
+  function exactSpotifyUrl(t){
+    if(!t)return null;
+    if(t.spotifyUrl&&/open\.spotify\.com\/track\/[A-Za-z0-9]+/.test(t.spotifyUrl))return t.spotifyUrl;
+    var id=t.spotify&&t.spotify.id;
+    if(id&&t.spotify.resolvedExact===true)return 'https://open.spotify.com/track/'+id;
+    return null;
+  }
   function upsertSignal(id,rating,ratedAt){
     if(!rating||!Object.prototype.hasOwnProperty.call(WEIGHTS,rating))return;
     var t=findTrack(id);if(!t)return;
-    var model=readLearning();if(!model.signals)model.signals={};model.version=2;
-    model.signals[id]={trackId:id,rating:rating,weight:WEIGHTS[rating],ratedAt:ratedAt||null,artist:t.identity.artist,title:t.identity.title,country:t.identity.country,releaseYear:t.identity.releaseYear,styles:(t.taxonomy&&t.taxonomy.allMusicStyles?t.taxonomy.allMusicStyles.slice():[]),dnaRoute:(t.discoverDNA&&t.discoverDNA.dnaRoute?t.discoverDNA.dnaRoute.slice():[]),role:t.discoverDNA?t.discoverDNA.role:null};
+    var model=readLearning();if(!model.signals)model.signals={};model.version=3;
+    model.signals[id]={trackId:id,rating:rating,weight:WEIGHTS[rating],ratedAt:ratedAt||null,artist:t.identity.artist,title:t.identity.title,country:t.identity.country,releaseYear:t.identity.releaseYear,albumOrRelease:t.identity.albumOrRelease||null,styles:(t.taxonomy&&t.taxonomy.allMusicStyles?t.taxonomy.allMusicStyles.slice():[]),dnaRoute:(t.discoverDNA&&t.discoverDNA.dnaRoute?t.discoverDNA.dnaRoute.slice():[]),role:t.discoverDNA?t.discoverDNA.role:null,spotifyUrl:exactSpotifyUrl(t),spotifyResolvedExact:!!exactSpotifyUrl(t)};
     model.updatedAt=new Date().toISOString();writeLearning(model);
   }
   function ingestState(raw){var state=safeParse(raw,{});for(var id in state)if(Object.prototype.hasOwnProperty.call(state,id)&&state[id]&&state[id].rating)upsertSignal(id,state[id].rating,state[id].ratedAt);}
@@ -30,5 +37,5 @@
   var originalSetItem=window.localStorage.setItem.bind(window.localStorage);
   window.localStorage.setItem=function(key,value){originalSetItem(key,value);if(isStateKey(key))ingestState(value);};
 
-  window.MUSIC_DNA_LEARNING={version:2,weights:WEIGHTS,storageKey:LEARNING_KEY,legacyKeys:LEGACY_KEYS.slice(),productionKeyPattern:PROD_RE,read:readLearning};
+  window.MUSIC_DNA_LEARNING={version:3,weights:WEIGHTS,storageKey:LEARNING_KEY,legacyKeys:LEGACY_KEYS.slice(),productionKeyPattern:PROD_RE,read:readLearning};
 })();
