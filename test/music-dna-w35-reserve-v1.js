@@ -1,0 +1,1 @@
+const MUSIC_DNA_W35_RESERVE={version:1,signals:{"2026-W35-08":"raak","2026-W35-09":"raak","2026-W35-10":"raak","2026-W35-16":"raak","2026-W35-17":"raak","2026-W35-18":"goed","2026-W35-20":"goed","2026-W35-21":"goed","2026-W35-22":"goed","2026-W35-35":"goed","2026-W35-36":"raak"}};
