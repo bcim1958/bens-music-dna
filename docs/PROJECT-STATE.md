@@ -1,7 +1,7 @@
 # Ben's Music DNA — Project State
 
-Last updated: 2026-09-06
-Status: ACTIVE DEVELOPMENT — CONSOLIDATED
+Last updated: 2026-09-08
+Status: ACTIVE DEVELOPMENT — W36 RECOVERY CONSOLIDATED
 
 ## Product north star
 Music DNA is Ben's daily go-to place for music experience.
@@ -105,6 +105,51 @@ Mood/Theme are first-class optional discovery axes. They are not required fields
 
 They share data infrastructure but have different product purposes.
 
+## Ontdek DNA — W36 recovery — GESLOTEN
+W36 is now **GESLOTEN** as of 2026-09-08.
+
+Verified chain:
+- 21/21 W36 ratings preserved in the installed iPhone app storage;
+- 10 positive W36 tracks found;
+- safety guard remained active;
+- 11 previously verified positive W35 reserve tracks restored without altering W36 ratings;
+- 21-track gift assembled and committed to playlist history;
+- export corrected to importer-v4-compatible header `Spotify Track URI`;
+- importer v4 verified **21 unique exact Spotify tracks**;
+- Spotify playlist actually created and visually verified at 21/21;
+- final Spotify route/name:
+  `♦️ DNA → 💎 Ontdek DNA → Ben's Ontdek DNA #2026-36`.
+
+The W36 musical content must not be silently reopened. A later uniform weekly cover remains a cosmetic system-level task only.
+
+Current dated recovery checkpoint:
+`docs/CHECKPOINT-2026-09-08-W36-RECOVERY.md`.
+
+Latest relevant W36 export compatibility commit before the checkpoint:
+`f6cbdec8c42c8442934290c2002215990a611d40` — **Make W36 gift CSV compatible with Spotify importer v4**.
+
+### W36 launch/cache finding
+The installed iPhone home-screen web app retained its own localStorage context and could reopen older cached entry pages independently of Safari.
+
+Controlled recovery route used:
+- `test/daily.html` as same-storage bridge;
+- current bridge routes to `test/daily-w36-repair-7.html`;
+- cached `daily-w36-repair-6.html` was also converted into a bridge to build 7;
+- **Herstelbuild 7** is the definitive W36 recovery/finalization build.
+
+Safari showed 0 W36 ratings while the installed app showed 21/21 during the recovery test. Therefore deleting/reinstalling the installed app or assuming Safari/app storage equivalence is unsafe until a deliberate persistence/migration design exists.
+
+## W37 — OPEN / IN UITVOERING
+W37 was not safely released by the Saturday transition.
+
+Known pre-audit state:
+- `test/music-dna-weeks-v1.js` previously showed W36 `ready:true` and W37 `ready:false`;
+- the W37 candidate file was not yet safely present/validated in the known production state;
+- W37 must **not** be released by merely flipping a readiness flag.
+
+Required chain:
+**inspect current resolver/config → establish exact missing W37 assets → build/verify 21 candidates → verify exact Spotify identities/deliverability → validate daily flow + Saturday transition → only then set W37 ready → verify on installed iPhone.**
+
 ## Playlist restoration — current status
 ### Genre DNA
 - **20 of 21** Genre-DNA playlists are content-wise and Spotify-wise closed in Top-of-the-Bill order.
@@ -126,11 +171,15 @@ A playlist is closed only through this chain:
 
 **content audit → establish real gaps → agree removals/additions → user removes → verify exact Spotify versions/URIs → small import CSV → import into existing playlist → verify in Spotify → close only at real 30/30 with active tracks → then synchronize Master.**
 
+For weekly Ontdek-DNA gifts, the equivalent closure rule is:
+**ratings preserved → positive gift safely assembled → exact Spotify identities verified → gift-history commit → importer file validated → Spotify playlist actually created → 21/21 visually verified → correct Ontdek-DNA route/name → close.**
+
 Hard rules:
 - Spotify is the operational final control for playlists;
 - CSV/importer success alone never closes a playlist;
 - never invent or guess a Spotify URI;
 - 30/30 means 30 actually checked tracks, not merely 30 CSV rows;
+- weekly Ontdek DNA means 21/21 actually checked tracks;
 - a closed playlist is not silently reopened or changed;
 - technical/import failure is never reported as content completion.
 
@@ -150,22 +199,26 @@ Status words are used strictly:
 
 ## Open technical risks
 1. Rating persistence/localStorage migration remains a hard functional risk.
-2. Stable artist identity must be hardened before broad automatic enrichment.
-3. Rights/licensing/source policy for enrichment must be respected; protected editorial text is not bulk-copied.
-4. Mood/Theme scope must remain explicit.
-5. Generated app-serving data must prevent manual duplication.
-6. Living/current data requires source + date.
-7. Durable recent-history/personal-state remains open beyond local browser state.
-8. Spotify one-tap/autoplay behavior remains an integration/UX issue; correct track destination alone does not guarantee autoplay.
-9. Alternative Metal DNA 2.0 still requires safe Spotify construction/final verification when rate limiting allows it.
-10. Playlist restorations/relations must be synchronized back to the Master in a controlled way where not already done.
+2. Safari versus installed home-screen web-app storage context must not be assumed equivalent.
+3. iOS home-screen launch/cache behavior can keep older entry pages alive after GitHub updates; version/bridge routing needs a durable general solution.
+4. Export/import contract must be versioned/tested so generated CSV headers remain compatible with Spotify importer v4.
+5. Gift-history commit and Spotify delivery must remain separate verifiable states.
+6. Stable artist identity must be hardened before broad automatic enrichment.
+7. Rights/licensing/source policy for enrichment must be respected; protected editorial text is not bulk-copied.
+8. Mood/Theme scope must remain explicit.
+9. Generated app-serving data must prevent manual duplication.
+10. Living/current data requires source + date.
+11. Durable recent-history/personal-state remains open beyond local browser state.
+12. Spotify one-tap/autoplay behavior remains an integration/UX issue; correct track destination alone does not guarantee autoplay.
+13. Alternative Metal DNA 2.0 still requires safe Spotify construction/final verification when rate limiting allows it.
+14. Playlist restorations/relations must be synchronized back to the Master in a controlled way where not already done.
 
 ## Exact next step
-Before further substantial app building, treat `docs/CHECKPOINT-2026-09-06-CONSOLIDATION.md` as the current transfer checkpoint and keep GitHub aligned with actual project decisions/progress.
+**Before further substantial app/enrichment work: audit W37 readiness.**
 
-Then resume from the validated v4/generic-artist-world foundation without rebuilding it. The next app layer remains controlled enrichment of the reusable artist worlds, while preserving stable identity, source scope, rating persistence and the no-parallel-database rule.
+Read current `test/music-dna-weeks-v1.js`, verify whether the W37 candidate asset exists and what it contains, inspect resolver/transition behavior, and establish exactly what is missing. Do not change W36.
 
-Operational playlist work may continue separately under the playlist/importer control chain above.
+Only after W37 is safely understood and released should the project return to the validated v4/generic-artist-world enrichment line.
 
 ## Session safety rule
 A chat is a workbench, never the archive. Decisions and current state needed for recovery or consistent continuation must be written to GitHub during or at the end of the session.
@@ -176,6 +229,7 @@ Before a new substantial Music DNA work session, read:
 - `docs/UX-SPEC.md`;
 - `docs/DESIGN-SYSTEM.md`;
 - `docs/CHECKPOINT-2026-09-05-VERRAS-V4-ARTIST-WORLDS.md`;
-- `docs/CHECKPOINT-2026-09-06-CONSOLIDATION.md`.
+- `docs/CHECKPOINT-2026-09-06-CONSOLIDATION.md`;
+- `docs/CHECKPOINT-2026-09-08-W36-RECOVERY.md`.
 
 Health checks must verify both technical repository health and **state alignment**: latest checkpoint, PROJECT-STATE age, chat-only decisions, Master/Spotify/GitHub differences, open risks and any closed decision not durably recorded.
