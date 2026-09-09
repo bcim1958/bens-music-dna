@@ -105,3 +105,30 @@ Hard constraints:
 **Decision:** New project knowledge required for recovery, handoff or consistent continuation must not remain only in chat. During or at the end of a substantial session it must be consolidated to GitHub.
 
 Health checks therefore assess not only repository health but also alignment between GitHub and the actual project state, including chat-only decisions, Master/Spotify differences and outdated project-state documentation.
+
+## 2026-09-08 — Band-DNA listening order tells a story
+**Decision:** For an already controlled 30-track Band-DNA playlist, the listening pass may reorder the same 30 tracks without reopening content selection.
+
+**Standing phrase:** **De naamgever bepaalt de wereld; de volgorde vertelt het verhaal.**
+
+Rules:
+- the naming artist/band remains #1 and establishes the reference world;
+- the other 29 tracks are not reselected merely for the listening pass;
+- ordering should make musical kinship, contrast, bridges and return points audible rather than sort alphabetically or mechanically;
+- the final track should function as a deliberate ending, not as a leftover;
+- Spotify remains the final visual control after reordering.
+
+**Safe mechanism:** use the local Playlist Orderer with exact playlist matching, exact 30-track/artist-set validation, STOP on mismatch, pre-write same-set verification and post-write exact-order verification.
+
+## 2026-09-08 — Daily completion can open into Mijn Muziekwereld
+**Decision:** The accepted product direction after the daily three is:
+
+**beoordelen → dagelijkse oogst → uitnodiging/portal → Mijn Muziekwereld → vrije muzikale verkenning.**
+
+The daily task remains finite: after 3/3 Music DNA asks no more questions. The next layer is optional exploration, not additional homework.
+
+**Mijn Muziekwereld direction:** positive discoveries can receive first attention and may lead toward artist exploration, Mijn RAAK, Band DNA, Genre DNA and Ontdek DNA.
+
+**The Music Master direction:** a restrained ceremonial guide may notice and invite at meaningful moments, but never becomes more important than the music and never dictates Ben's taste.
+
+**Implementation status:** the 8 September pages for cinematic rating, daily harvest and Mijn Muziekwereld are isolated prototypes. This decision accepts the product direction, not those prototype files as production-ready behavior.
