@@ -145,3 +145,24 @@ The daily task remains finite: after 3/3 Music DNA asks no more questions. The n
 **Meaning:** the final weekly gemstone visually gathers/reflects the preceding colour journey and closes the annual jewel collection. This can become a recurring year-end Music-DNA tradition, with each future year receiving its own final jewel/visual treatment.
 
 **Status:** concept deliberately recorded now so it cannot disappear in day-to-day development. Exact storyboard, soundtrack, final gemstone and production method remain OPEN until the 2026 gemstone sequence is finalized.
+
+## 2026-09-09 — Ontdek DNA gets a persistent Gemstone Cabinet
+**Decision:** Add a subtle, museum-like **Edelstenenkabinet** inside the app's deeper `Mijn Muziekwereld` / behind-the-front-door experience. The weekly Ontdek-DNA gemstones are not disposable cover art: each revealed gemstone becomes a persistent exhibit in a growing personal collection.
+
+**Core principle:** the playlists are never "gone" after their week. Ontdek-DNA playlists remain accessible through multiple routes, including directly in Spotify and through their gemstone in the Edelstenenkabinet. The cabinet therefore adds a durable, emotional route to the same music rather than creating a parallel playlist system.
+
+**Meaning:** the collection represents **de juwelen van de persoonlijke muzieksmaak**. It grows through musical discovery, not through artificial points, badges or completion pressure.
+
+**Experience direction:**
+- The cabinet feels like a warm, dark, refined museum room: glass, wood/dark materials, restrained gold/brass and focused museum lighting.
+- The Music Master is the subtle guardian/curator of the room. His presence may be felt or occasionally seen, but he never overshadows the music or the gemstones.
+- Every Saturday's revealed gemstone is added to the current year's collection, so the cabinet visibly fills and its colour journey develops through the year.
+- Selecting a gemstone can reveal three connected layers: **De steen** (real mineralogical properties, origin and a verified historical/cultural fact), **Het verhaal** (its place in that year's colour journey), and **De muziek** (a direct route to the exact associated Ontdek-DNA weekly playlist).
+- Gemstone/mineral information remains factually correct and verifiable; The Music Master's surrounding presentation may remain theatrical/mythic.
+- Annual collections remain separately browsable (for example `Collection 2026 · 17 jewels`, `Collection 2027 · 52 jewels`) so the personal musical discovery history accumulates instead of being overwritten.
+
+**Annual finale rule:** the last jewel of each year visually summarizes the preceding colour journey. In 2026 the intended finale is opal reflecting the colours of W36–W51. A full 52-week year such as 2027 should culminate in an even richer and deeper final-jewel colour synthesis. The final mineral need not always be opal; it should be chosen to support the year's real mineralogical and visual story.
+
+**Music Master mythology:** the fictive `Moeder aller Edelstenen` remains uniquely associated with The Music Master's cylinder and is not a weekly collectible. His exceptional Burmese ruby remains in his staff and is guarded rather than awarded. These special objects can be hinted at in the cabinet without becoming ordinary collection items.
+
+**Design status:** accepted as a durable product concept. Exact room layout, interaction design, navigation labels, animation and technical Spotify deep-link implementation remain OPEN for later design/prototyping.
