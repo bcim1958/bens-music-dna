@@ -132,3 +132,16 @@ The daily task remains finite: after 3/3 Music DNA asks no more questions. The n
 **The Music Master direction:** a restrained ceremonial guide may notice and invite at meaningful moments, but never becomes more important than the music and never dictates Ben's taste.
 
 **Implementation status:** the 8 September pages for cinematic rating, daily harvest and Mijn Muziekwereld are isolated prototypes. This decision accepts the product direction, not those prototype files as production-ready behavior.
+
+## 2026-09-09 — Ontdek DNA annual finale becomes a cinematic ritual
+**Decision:** Preserve the concept of a very short cinematic sequence for the closing Ontdek-DNA week gift of a calendar year. This is a special annual moment, not a weekly video routine.
+
+**2026 concept:** The Music Master presents the final gemstone of the 2026 Ontdek-DNA colour journey — currently conceived as opal — theatrically on his open hand. Alternatively/precedingly, his staff may radiate or activate the moment. The exceptional ruby remains physically in the staff; it is not transformed into or given away as the weekly gemstone.
+
+**Visual story direction:** dark theatrical setting; restrained movement; the ruby in the staff briefly glows; light travels/emanates; the final gemstone appears or is revealed above/on The Music Master's open hand; its colours echo the year's gemstone colour journey; The Music Master offers it with a small ceremonial gesture.
+
+**Duration direction:** approximately 8–12 seconds. No spoken explanation required; light, gesture and music carry the scene. Possible closing title: `ONTDEK DNA · 2026 — THE FINAL JEWEL` / `Week 52 · Opaal`.
+
+**Meaning:** the final weekly gemstone visually gathers/reflects the preceding colour journey and closes the annual jewel collection. This can become a recurring year-end Music-DNA tradition, with each future year receiving its own final jewel/visual treatment.
+
+**Status:** concept deliberately recorded now so it cannot disappear in day-to-day development. Exact storyboard, soundtrack, final gemstone and production method remain OPEN until the 2026 gemstone sequence is finalized.
