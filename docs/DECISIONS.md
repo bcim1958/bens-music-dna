@@ -166,3 +166,36 @@ The daily task remains finite: after 3/3 Music DNA asks no more questions. The n
 **Music Master mythology:** the fictive `Moeder aller Edelstenen` remains uniquely associated with The Music Master's cylinder and is not a weekly collectible. His exceptional Burmese ruby remains in his staff and is guarded rather than awarded. These special objects can be hinted at in the cabinet without becoming ordinary collection items.
 
 **Design status:** accepted as a durable product concept. Exact room layout, interaction design, navigation labels, animation and technical Spotify deep-link implementation remain OPEN for later design/prototyping.
+
+## 2026-09-10 — Mijn Muziekwereld has two complementary destinations
+**Decision:** The Edelstenenkabinet is not the only route into deeper Music DNA. `Mijn Muziekwereld` has two complementary destinations that remain mutually connected.
+
+- **Edelstenenkabinet = bewaren.** A persistent, freely revisitable museum of the user's acquired weekly musical jewels and their exact Ontdek-DNA playlists. It can be visited at any time, not only through Saturday's reveal ritual.
+- **Muziekportaal / broader music world = ontdekken.** A separate direct entrance for free musical curiosity: artists, bands, genres, scenes, years, countries, relationships, influences, live/current context, `Verras me!` and other discovery routes.
+- A discovery in the cabinet can open into the broader artist/music world; conversely, an artist encountered while freely exploring can point back to the exact jewel/week in which that artist was previously discovered.
+
+**Core contrast:** **Wat heb ik gevonden? → Kabinet. Wat zou ik nog kunnen vinden? → Portaal.**
+
+**Reason:** the cabinet must retain its special emotional function as personal musical memory rather than becoming a crowded main menu, while the broader world must allow unrestricted curiosity without requiring a Saturday/gemstone route.
+
+## 2026-09-10 — The Music Master is magical, role-adaptive and visually environment-adaptive
+**Decision:** The Music Master is a single recognizable character whose presence is not bound by ordinary geography. The user can occupy only one place in Music DNA at a time; The Music Master can simply be present wherever his role is meaningful. The app does not explain how he travelled there and should not show him hurrying between locations.
+
+**Roles:**
+- **Curator/conservator in the Edelstenenkabinet:** friendly, careful and serving the preservation and presentation of the user's musical finds. He does not own the collection. He preserves what the user has found.
+- **Guide in the broader Muziekwereld:** curious, inviting and occasionally challenging, pointing toward meaningful doors and connections without dictating taste.
+- **Ceremonial master at exceptional moments:** a more theatrical form for Saturday reveals, annual Final Jewel rituals and comparable milestones.
+
+**Standing character principle:** **The user travels through Music DNA. The Music Master appears where Music DNA needs him. He knows all the doors.**
+
+**Adaptive appearance:** outside the Edelstenenkabinet, the musical environment may visibly manifest itself in The Music Master's clothing, accessories, styling and details while his identity remains unmistakably the same. Examples include a historically informed 1970s London-punk interpretation in a UK Punk world or a more flamboyant, polished interpretation in a Glam Metal world.
+
+**Hard visual rule:** **The Music Master does not dress up as a genre; the genre manifests itself in The Music Master.** Avoid caricature, cosplay and direct imitation of identifiable artists. Translate the musical world's historical/stylistic essence into his established character.
+
+**Continuity anchors:** face/identity, expressive presence, posture and core mythology remain recognizable. His staff and its exceptional Burmese ruby remain his; the `Moeder aller Edelstenen` remains uniquely associated with his cylinder/world. Details may adapt subtly, but these objects are not ordinary genre props or user collectibles.
+
+**Transitions:** when the user travels between related worlds, The Music Master's appearance may evolve gradually with the musical environment. His styling can therefore become part of Music DNA's navigational language: the visitor can feel that the musical territory has changed before needing to read a label.
+
+**Canonical/home appearance:** the Edelstenenkabinet uses The Music Master's own timeless curator appearance rather than a genre-specific form, because the cabinet represents the user's complete musical collection rather than one style.
+
+**Meaning:** The Music Master is more than a mascot. He is a magical, serving host/conservator/guide whose changing presentation helps make the otherwise data-rich Music DNA world spatial, emotional and understandable without becoming more important than the music.
