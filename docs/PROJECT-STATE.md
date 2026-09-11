@@ -1,7 +1,7 @@
 # Ben's Music DNA — Project State
 
-Last updated: 2026-09-10
-Status: ACTIVE DEVELOPMENT — W37 LIVE / TAXONOMY REPAIR CLOSED / MUSIC WORLD EXPLORATION ACTIVE
+Last updated: 2026-09-11
+Status: ACTIVE DEVELOPMENT — W37 LIVE / TAXONOMY REPAIR CLOSED / ARTIST WORLD 1.0 VERTICAL PROOF ACTIVE
 
 ## Product north star
 Music DNA is Ben's daily go-to place for music experience.
@@ -135,6 +135,41 @@ For H.E.A.T the first hypothesis arose from one strongly liked track, so broader
 The world may be visually rich, but the active interaction surface must remain calm. Information should reveal progressively through meaningful objects/doors rather than placing every possible fact and control on one iPhone screen.
 
 Status of this artist-world work: **ACCEPTED CONCEPT DIRECTION / H.E.A.T PROOF — NOT PRODUCTION-INTEGRATED**.
+
+## Artist World 1.0 — accepted development principles (2026-09-11)
+Governing decision: `docs/DECISION-2026-09-11-ARTIST-WORLD-1.0-DEVELOPMENT-PRINCIPLES.md`.
+
+The Master is the trusted **centre, not the boundary**, of Ben's musical world. Grounded external artists and relations may extend the Music Portal without automatically becoming part of Ben's personal Music DNA.
+
+The first complete vertical proof is:
+**H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate**.
+
+Accepted principles:
+- **Studio first** for the H.E.A.T proof.
+- The Studio explains music to a **music lover, not a musician or sound engineer**; avoid technical fader-style analysis as the main interaction.
+- A single enticing Music-DNA control on the mixing desk may reveal a plain-language **HET GELUID VAN H.E.A.T** explanation, followed optionally by **LAAT HET ME HOREN** and **WAAR KOMT DIT VANDAAN?**.
+- Essential artist/music knowledge lives in a compact block with deeper detail behind it; Trivia is similarly optional. Do not fill the iPhone with tappable facts.
+- **MEER ZOALS DEZE ARTIEST** opens a small number of explainable musical doors, not an endless recommendation list. Preserve the real relation type rather than calling every relation similarity.
+- **LIJKT INTERESSANT** records curiosity only and may feed the Ontdek-DNA candidate pool. It is not a positive taste rating.
+- **EXIT** is part of the universal spatial grammar: previous door = where I came from; new doors = where I may go; EXIT = leave artist-world exploration for the Music Portal.
+- Core navigation principle: **You may get lost in Music DNA, but you must never become lost.**
+- World richness is data-driven: rich data gives a richer world; sparse data gives a compact but credible world; never invent filler.
+- Reusable scene grammar/components are preferred over bespoke heavy worlds for every artist.
+
+### Motion / performance rule
+Music DNA 1.0 does **not** need animation to feel like a world.
+
+Base rule:
+**The world is still by default. Movement happens briefly when something meaningful occurs.**
+
+Avoid continuous character animation, heavy permanent 3D rendering, blocking transitions and movement that exists only to prove the scene is alive. Lightweight glow/pulse/light reactions are acceptable where useful, but content/navigation may never depend on animation.
+
+Development order:
+**WERKEN → BEGRIJPELIJK → MOOI → SFEERVOL → LEVENDIG**.
+
+Later improvement passes may add richer motion only where it improves meaning, orientation, reward or wonder.
+
+The Music Master remains restrained: he does not constantly narrate or perform. **He helps the world explain itself.**
 
 ## Visual identity
 - Double DNA helix + sound waveform retained.
@@ -271,21 +306,22 @@ Status words are used strictly:
 The former risk `Master coverage must be audited before new music data is created; UK Punk is an explicit attention area` is **SUPERSEDED / CLOSED** by the 10 September taxonomy-closure decision and the completed UK Punk #01/#02 work. It is not a prerequisite for further product building.
 
 ## Exact next step
-**Resume Music DNA product exploration from the accepted Music Portal / artist-world direction. Use H.E.A.T as the first controlled proof: validate how real artist data, personal Music-DNA relations and a calm phone-first backstage/studio experience can form one navigable artist world.**
+**Build the first complete Artist World 1.0 vertical proof from the H.E.A.T Studio: H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate.**
 
 Do not reopen taxonomy repair unless a concrete urgent functional blocker requires it.
 
-The next proof should distinguish three layers clearly:
+The proof must keep three layers distinct:
 1. **fact layer** — verified artist/music facts and relationships;
 2. **personal DNA layer** — what Ben's ratings/listening actually support, without false precision;
-3. **experience layer** — visual/spatial translation into meaningful rooms, objects, doors, light and Music-Master presence.
+3. **experience layer** — calm phone-first spatial translation into meaningful rooms, objects, doors, EXIT, light and restrained Music-Master presence.
 
-The goal is not to build the whole world at once. First prove that one H.E.A.T route can be both truthful and genuinely enjoyable on an iPhone.
+Start with a simple, convincing H.E.A.T Studio 1.0. Do not require animation, technical music-production knowledge or a crowded interaction surface. Prove the functional loop before broadening to many rooms/artists; richer motion is a later improvement layer.
 
 Parallel maintenance/design work may continue when useful, but it must not displace this product direction with another broad taxonomy audit.
 
 ## Current checkpoints
 Read together:
+- `docs/DECISION-2026-09-11-ARTIST-WORLD-1.0-DEVELOPMENT-PRINCIPLES.md`
 - `docs/DECISION-2026-09-10-TAXONOMY-REPAIR-CLOSED.md`
 - `docs/CHECKPOINT-2026-09-09-UK-PUNK-01-RAW-REBELLIOUS.md`
 - `docs/CHECKPOINT-2026-09-09-UK-PUNK-02-ART-HOOKS-ATTITUDE.md`
