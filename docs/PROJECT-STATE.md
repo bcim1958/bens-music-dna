@@ -171,6 +171,21 @@ Later improvement passes may add richer motion only where it improves meaning, o
 
 The Music Master remains restrained: he does not constantly narrate or perform. **He helps the world explain itself.**
 
+## Personal Weekbrief — accepted future product layer (2026-09-11)
+Governing decision: `docs/DECISION-2026-09-11-PERSONAL-WEEKBRIEF.md` (commit `c57a0371c0c2e9eca2349c634eb0243d6a2764cb`).
+
+Music DNA may use its living/current source layer to create an **optional, taste-personalized weekly reading experience**. It complements the Saturday Ontdek-DNA gift rather than replacing it.
+
+Saturday can therefore contain two acts:
+1. **Weekbrief — what happened this week in my music world?**
+2. **Ontdek DNA — what has Music DNA discovered for me this week?**
+
+The Weekbrief may selectively surface relevant releases, album/concert reviews, interviews, live/tour developments and worthwhile short news. Relevance beats volume; no filler and no generic rock-news firehose.
+
+Reputable international music journalism may be offered through concise **Dutch Music-DNA summaries**, with publication/author/date attribution and access to the original source. Summaries must preserve fact versus opinion and may not reproduce or effectively translate full copyrighted articles. Multiple reviews may optionally be compared through a compact **Wat zeggen de recensenten?** view that preserves differences between sources.
+
+The user remains in control: the Weekbrief is opt-in, easy to skim or ignore, and every deeper source remains one tap away. This accepted future layer does **not** interrupt the current Artist World 1.0 vertical proof.
+
 ## Visual identity
 - Double DNA helix + sound waveform retained.
 - Brand mark says what Music DNA IS; cinematic language says how Music DNA FEELS.
@@ -277,55 +292,7 @@ A previously accepted Music-DNA decision may not be silently replaced. A change 
 5. state which earlier decision remains historical and which is superseded where relevant.
 
 Status words are used strictly:
-- **GESLOTEN** — do not reopen without explicit change decision;
-- **OPEN / IN UITVOERING** — not complete;
-- **ONDER VOORBEHOUD** — intentionally not final;
-- **HISTORISCH** — preserved for provenance but not current truth.
-
-## Open technical/content risks
-1. Rating persistence/localStorage migration remains a hard functional risk.
-2. Safari versus installed home-screen web-app storage context must not be assumed equivalent.
-3. iOS home-screen launch/cache behavior can keep older entry pages alive after GitHub updates; version/bridge routing needs a durable general solution.
-4. Export/import contract must remain versioned/tested against Spotify importer v4.
-5. Gift-history commit and Spotify delivery remain separate verifiable states.
-6. Stable artist identity should be hardened before broad automatic enrichment.
-7. Rights/licensing/source policy for enrichment must be respected; protected editorial text is not bulk-copied.
-8. Mood/Theme scope must remain explicit.
-9. Generated app-serving data must prevent manual duplication.
-10. Living/current data requires source + date.
-11. Durable recent-history/personal-state remains open beyond local browser state.
-12. Spotify one-tap/autoplay remains an integration/UX issue.
-13. Alternative Metal DNA 2.0 still requires safe Spotify construction/final verification when rate limiting allows it.
-14. Closed Spotify playlist relations/orders and known corrections may require later controlled Master synchronization, but this is maintenance and **not** a broad taxonomy/coverage audit prerequisite.
-15. Exact Second Chance lifecycle, persistence and re-rating behavior remain open.
-16. Spotify side-door availability logic should be incorporated structurally: not visible in discography ≠ unavailable; direct identity + actual playability matter.
-17. Artist-world visuals must remain grounded in real artist identity/history/relationships and avoid generic reskinning or unsupported factual storytelling.
-18. Phone-first progressive disclosure must prevent the rich visual world from becoming a crowded navigation surface.
-
-### Closed / superseded risk
-The former risk `Master coverage must be audited before new music data is created; UK Punk is an explicit attention area` is **SUPERSEDED / CLOSED** by the 10 September taxonomy-closure decision and the completed UK Punk #01/#02 work. It is not a prerequisite for further product building.
-
-## Exact next step
-**Build the first complete Artist World 1.0 vertical proof from the H.E.A.T Studio: H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate.**
-
-Do not reopen taxonomy repair unless a concrete urgent functional blocker requires it.
-
-The proof must keep three layers distinct:
-1. **fact layer** — verified artist/music facts and relationships;
-2. **personal DNA layer** — what Ben's ratings/listening actually support, without false precision;
-3. **experience layer** — calm phone-first spatial translation into meaningful rooms, objects, doors, EXIT, light and restrained Music-Master presence.
-
-Start with a simple, convincing H.E.A.T Studio 1.0. Do not require animation, technical music-production knowledge or a crowded interaction surface. Prove the functional loop before broadening to many rooms/artists; richer motion is a later improvement layer.
-
-Parallel maintenance/design work may continue when useful, but it must not displace this product direction with another broad taxonomy audit.
-
-## Current checkpoints
-Read together:
-- `docs/DECISION-2026-09-11-ARTIST-WORLD-1.0-DEVELOPMENT-PRINCIPLES.md`
-- `docs/DECISION-2026-09-10-TAXONOMY-REPAIR-CLOSED.md`
-- `docs/CHECKPOINT-2026-09-09-UK-PUNK-01-RAW-REBELLIOUS.md`
-- `docs/CHECKPOINT-2026-09-09-UK-PUNK-02-ART-HOOKS-ATTITUDE.md`
-- `docs/CHECKPOINT-2026-09-08-W36-RECOVERY.md`
-- `docs/CHECKPOINT-2026-09-08-EVENING-CONSOLIDATION.md`
-
-These are provenance/checkpoints. This `PROJECT-STATE.md` is the central current navigation layer and supersedes older next-step wording where those older documents conflict with later accepted decisions.
+- **GESLOTEN** — verified/closed and not silently reopened;
+- **VALIDATED** — technically demonstrated in its stated scope;
+- **ACCEPTED CONCEPT DIRECTION** — accepted design/product direction, not necessarily production-integrated;
+- **RELEASED / LIVE** — currently released/active in its stated scope.
