@@ -124,12 +124,10 @@ H.E.A.T is the first controlled conceptual proof. Current exploration includes a
 
 The exact room set is not a rigid universal template. Artist identity determines which spaces matter and how they manifest.
 
-### Muziekkoorts / Mijn Smaak
-Avoid false precision such as `87/100` when the evidence does not justify it. Prefer defensible qualitative states such as **STERKE DNA-MATCH**, supported by musical characteristics.
+### Muziekmeter / personal affinity
+The earlier Muziekkoorts metaphor has evolved into the broader **Muziekmeter**: a personal Music-DNA instrument that may distinguish prediction from actual listening evidence. It never claims to score an artist's objective quality.
 
-A visual **Muziekkoorts** metaphor is accepted for exploration: temperature, glow and heat can express strength of personal musical connection. It must remain an interpretive Music-DNA signal, not pretend to be an exact scientific score.
-
-For H.E.A.T the first hypothesis arose from one strongly liked track, so broader band affinity must still be learned through listening rather than assumed.
+The strongest first quantitative application is the complete weekly Ontdek-DNA evaluation cycle. Exact artist-level numeric scoring remains provisional and must not pretend to precision when evidence is sparse.
 
 ### Phone-first interaction rule
 The world may be visually rich, but the active interaction surface must remain calm. Information should reveal progressively through meaningful objects/doors rather than placing every possible fact and control on one iPhone screen.
@@ -185,6 +183,24 @@ The Weekbrief may selectively surface relevant releases, album/concert reviews, 
 Reputable international music journalism may be offered through concise **Dutch Music-DNA summaries**, with publication/author/date attribution and access to the original source. Summaries must preserve fact versus opinion and may not reproduce or effectively translate full copyrighted articles. Multiple reviews may optionally be compared through a compact **Wat zeggen de recensenten?** view that preserves differences between sources.
 
 The user remains in control: the Weekbrief is opt-in, easy to skim or ignore, and every deeper source remains one tap away. This accepted future layer does **not** interrupt the current Artist World 1.0 vertical proof.
+
+## Muziekmeter / Ontdek-DNA learning layer — accepted concept direction (2026-09-11)
+Governing decision: `docs/DECISION-2026-09-11-MUZIEKMETER-ONTDEK-DNA.md` (commit `5d12a7f62ea9a365cb7196dbe92da60d453f2083`).
+
+The Muziekmeter's strongest first application is the **complete weekly Ontdek-DNA measurement**, not the filtered Spotify gift playlist. Seven daily rounds × three discoveries produce **21 explicit ratings**; all four states — RAAK, GOED, NOG EENS and NEE — belong to the measurement.
+
+Keep three things separate:
+1. **21 ratings** = raw weekly evidence.
+2. **Muziekmeter** = summarized weekly result.
+3. **Ontdek-DNA jewel/playlist** = curated weekly harvest.
+
+The weekly Muziekmeter belongs naturally in the Personal Weekbrief and may show the current week, rating distribution, moving average, high/low weeks and later predicted-versus-measured performance.
+
+W36–W52 2026 forms the first calibration/reference set: **17 weeks = 357 individual ratings**. Preserve the raw evidence permanently; calibrate the numeric mapping after the complete 2026 set rather than freezing arbitrary weights now. The 2026 series becomes reference material for later years.
+
+The score is personal, never an objective quality judgment. Working semantic scale: `<70 SCHADUWGEBIED`, `70–79 GOED`, `80–89 STERK`, `90–94 BIJZONDER`, `95–98 UITZONDERLIJK`, `99–100` deliberately rare/possibly unnamed.
+
+The learning goal is broader than simply increasing the average. Strong weeks and weak weeks are both knowledge. Music DNA should learn to improve fit **without optimizing exploration and surprise out of the system**. Prediction error, RAAK/NEE frequency, NOG EENS behavior and recurring musical characteristics of unusually strong/weak weeks can all become useful learning signals.
 
 ## Visual identity
 - Double DNA helix + sound waveform retained.
@@ -270,29 +286,14 @@ Spotify folders do not support custom folder images; do not build a workflow tha
 A playlist is closed only after real Spotify verification. CSV/importer success alone never closes it.
 
 Hard rules:
-- Spotify is the operational final control for playlists;
-- never invent or guess a Spotify URI;
-- 30/30 means 30 actually checked tracks;
-- weekly Ontdek DNA means 21/21 actually checked tracks;
-- a closed playlist is not silently reopened or changed;
-- technical/import failure is never reported as content completion.
+- do not invent Spotify URIs;
+- do not silently substitute tracks;
+- preserve historical work/year semantics separately from digital reissue metadata;
+- use the Spotify side-door check where discography visibility is incomplete;
+- verify exact count and actual Spotify state before declaring a playlist closed.
 
-Historical work year is not silently overwritten by a later digital reissue year. Spotify metadata may identify the digital object while Music-DNA historical year/version fields preserve the historical execution/work semantics.
+## Current exact next product step
+Build the first complete Artist World 1.0 vertical proof from the H.E.A.T Studio:
+**H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate**.
 
-Spotify availability must not be inferred solely from normal discography visibility. Direct album/track identity and actual playability may reveal valid availability.
-
-A strong duration mismatch can indicate a wrong or malformed Spotify version and should be flagged for identity/version review. The Blitzkrieg 6:15-versus-3:43 case established this as a useful future quality-control rule. Spotify NWOBHM DNA has been manually repaired to the 3:43 execution while retaining 30/30; Master v3 still contains the old 6:15 identity/duration and may be synchronized later in a controlled maintenance pass rather than reopening taxonomy repair.
-
-## Decision governance
-A previously accepted Music-DNA decision may not be silently replaced. A change must:
-1. name the existing decision;
-2. explain why change is proposed;
-3. receive explicit acceptance from Ben;
-4. be recorded as a new dated GitHub decision;
-5. state which earlier decision remains historical and which is superseded where relevant.
-
-Status words are used strictly:
-- **GESLOTEN** — verified/closed and not silently reopened;
-- **VALIDATED** — technically demonstrated in its stated scope;
-- **ACCEPTED CONCEPT DIRECTION** — accepted design/product direction, not necessarily production-integrated;
-- **RELEASED / LIVE** — currently released/active in its stated scope.
+The accepted Weekbrief and Muziekmeter layers are valuable future/parallel product layers and must be preserved, but they do not require abandoning this controlled vertical proof.
