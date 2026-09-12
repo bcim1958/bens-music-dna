@@ -54,5 +54,33 @@
 
   function selectorMode(){var inv=inventory();if(inv.fresh<7)return {mode:'protect',exploration:0.15,reason:'bezorgbare positieve voorraad zeer krap',inventory:inv};if(inv.fresh<TARGET_RESERVE)return {mode:'rebuild',exploration:0.3,reason:'bezorgbare positieve voorraad aanvullen',inventory:inv};return {mode:'normal',exploration:0.45,reason:'bezorgbare positieve voorraad gezond',inventory:inv};}
 
-  window.MUSIC_DNA_POSITIVE_BANK={version:VERSION,playlistSize:PLAYLIST_SIZE,targetReserve:TARGET_RESERVE,storageKey:BANK_KEY,historyKey:PLAYLIST_HISTORY_KEY,sync:sync,inventory:inventory,buildSaturdayPlaylist:buildSaturdayPlaylist,commitSaturdayPlaylist:commitSaturdayPlaylist,selectorMode:selectorMode};
+  function findTrack(id){
+    if(window.MUSIC_DNA_DB&&MUSIC_DNA_DB.tracks&&MUSIC_DNA_DB.tracks[id])return MUSIC_DNA_DB.tracks[id];
+    for(var k in window){if(/^MUSIC_DNA_W\d+_CANDIDATES$/.test(k)){var c=window[k];if(c&&c.tracks&&c.tracks[id])return c.tracks[id];}}
+    return null;
+  }
+  function sourceSpotifyOk(t){return !!(t&&t.spotifyUrl&&/open\.spotify\.com\/track\/[A-Za-z0-9]+/.test(t.spotifyUrl));}
+  function weekIds(weekKey){var ids=[];for(var d=1;d<=7;d++){var s=read('bmd-week-'+weekKey+'-day'+d+'-selection-v1',null);if(s&&Array.isArray(s.ids))for(var i=0;i<s.ids.length;i++)ids.push(s.ids[i]);}return ids;}
+  function giftDiagnostic(weekKey){
+    var ids=weekIds(weekKey),inv=inventory(),gift=buildSaturdayPlaylist(weekKey,ids),missing=[],badSource=[];
+    for(var i=0;i<gift.ids.length;i++){var id=gift.ids[i],t=findTrack(id);if(!t)missing.push(id);else if(!sourceSpotifyOk(t))badSource.push(id);}
+    return {weekKey:weekKey,weekIds:ids.length,inventory:inv,giftSize:gift.size,fromCurrentWeek:gift.fromCurrentWeek,fromReserve:gift.fromReserve,missingSource:missing,badSourceSpotify:badSource,gift:gift};
+  }
+  function shortName(id){var bank=read(BANK_KEY,{items:{}}),x=bank.items&&bank.items[id];return x?(x.artist+' — '+x.title):id;}
+  function renderInlineDiagnostic(){
+    try{
+      var q=new URLSearchParams(location.search),week=q.get('week');if(week!=='2026-W37')return;
+      var eye=document.querySelector('.blocked .eye'),lead=document.querySelector('.blocked .lead');if(!eye||!lead||eye.textContent.toLowerCase().indexOf('veilige wachtstand')<0)return;
+      var d=giftDiagnostic(week),lines=[];
+      lines.push('<b>Diagnose W37</b>');
+      lines.push('Weekselecties: '+d.weekIds+'/21 · positieve bank bezorgbaar: '+d.inventory.deliverable);
+      lines.push('Cadeau opgebouwd: '+d.giftSize+'/21 · uit W37: '+d.fromCurrentWeek+' · reserve: '+d.fromReserve);
+      lines.push('Brontrack ontbreekt: '+d.missingSource.length+' · brontrack zonder directe Spotify-ID: '+d.badSourceSpotify.length);
+      var probs=d.missingSource.concat(d.badSourceSpotify).slice(0,6);if(probs.length){lines.push('<span style="color:#ffd166">Probleemitems:</span>');for(var i=0;i<probs.length;i++)lines.push('• '+shortName(probs[i])+' <span style="font-size:11px;opacity:.75">('+probs[i]+')</span>');}
+      lead.innerHTML=lines.join('<br>');lead.style.fontSize='12px';lead.style.lineHeight='1.35';lead.style.maxWidth='500px';
+    }catch(e){}
+  }
+
+  window.MUSIC_DNA_POSITIVE_BANK={version:VERSION,playlistSize:PLAYLIST_SIZE,targetReserve:TARGET_RESERVE,storageKey:BANK_KEY,historyKey:PLAYLIST_HISTORY_KEY,sync:sync,inventory:inventory,buildSaturdayPlaylist:buildSaturdayPlaylist,commitSaturdayPlaylist:commitSaturdayPlaylist,selectorMode:selectorMode,giftDiagnostic:giftDiagnostic};
+  setTimeout(renderInlineDiagnostic,900);setTimeout(renderInlineDiagnostic,1800);setTimeout(renderInlineDiagnostic,3000);
 })();
