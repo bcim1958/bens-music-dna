@@ -1,7 +1,7 @@
 # Ben's Music DNA — Project State
 
-Last updated: 2026-09-11
-Status: ACTIVE DEVELOPMENT — W37 LIVE / TAXONOMY REPAIR CLOSED / ARTIST WORLD 1.0 VERTICAL PROOF ACTIVE
+Last updated: 2026-09-12
+Status: ACTIVE DEVELOPMENT — W37 COMPLETE / TAXONOMY REPAIR CLOSED / ARTIST WORLD 1.0 VERTICAL PROOF ACTIVE
 
 ## Product north star
 Music DNA is Ben's daily go-to place for music experience.
@@ -26,9 +26,7 @@ Important:
 - do not reopen broad taxonomy repair unless a concrete urgent functional blocker requires it;
 - older v2 / Master 1.7 documents remain historical provenance, not the current physical source-of-truth declaration.
 
-Governing decision:
-`docs/DECISION-2026-09-10-TAXONOMY-REPAIR-CLOSED.md`
-(commit `1109a489f8c7f211d228795c6ae3111267bec46e`).
+Governing decision: `docs/DECISION-2026-09-10-TAXONOMY-REPAIR-CLOSED.md` (commit `1109a489f8c7f211d228795c6ae3111267bec46e`).
 
 `data/artist-registry-v1.json` remains an experimental technical layer only, not the central music database.
 
@@ -54,10 +52,7 @@ See `docs/ENRICHMENT-SCHEMA-V1-2026-09-03.md`.
 - Daily completion may show a brief harvest, then invite optional exploration in Mijn Muziekwereld.
 - Missed tracks do not become homework/backlog.
 
-Accepted post-rating direction:
-**beoordelen → dagelijkse oogst → uitnodiging/portal → Mijn Muziekwereld → vrije muzikale verkenning**.
-
-The existing cinematic/daily-harvest pages remain prototypes until deliberately production-integrated.
+Accepted post-rating direction: **beoordelen → dagelijkse oogst → uitnodiging/portal → Mijn Muziekwereld → vrije muzikale verkenning**.
 
 ## Rating concept — accepted semantic direction
 Four reactions remain semantically compatible with internal values `raak`, `goed`, `twijfel`, `nee`.
@@ -67,22 +62,14 @@ Visible language:
 - NOG EENS — unresolved music that deserves another encounter.
 - NEE — does not fit Ben.
 
-The visual symbols must be distinctive, memorable and cinematic in the Music-DNA language. Generic phone emoji are not the final UI.
-
 `NOG EENS` is unresolved music, not discarded music. Exact Second Chance lifecycle still needs technical specification.
 
 ## Mijn Muziekwereld — accepted architecture
-Mijn Muziekwereld is the broader personal world entered after the finite daily listening task. It has two equal conceptual destinations:
-
-1. **Edelstenenkabinet — BEWAREN**: what Ben has found; weekly Ontdek-DNA jewels become persistent exhibits rather than disposable cover art.
+Mijn Muziekwereld has two equal conceptual destinations:
+1. **Edelstenenkabinet — BEWAREN**: what Ben has found; weekly Ontdek-DNA jewels become persistent exhibits.
 2. **Muziekportaal — ONTDEKKEN**: what Ben might still find; free exploration through artists, genres, years, countries, scenes, influences, relations, concerts, releases and surprise routes.
 
-The two destinations may link bidirectionally. The experience should feel like a navigable musical world, not a database UI.
-
-Core visual/product rule:
-**Music DNA builds no generic decor around an artist. The identity, history and real musical relationships of the artist determine how that artist world manifests.**
-
-A useful quality test is: if artist name/logo are removed, the environment should still feel meaningfully connected to that artist rather than like a reskinned template.
+Core visual/product rule: **Music DNA builds no generic decor around an artist. The identity, history and real musical relationships of the artist determine how that artist world manifests.**
 
 ## The Music Master — accepted role
 The Music Master is gastheer, conservator and ceremoniemeester: distinguished, mysterious and inviting; never more important than the music and never dictating taste.
@@ -98,133 +85,70 @@ Core principles:
 - He knows all the doors.
 - He does not dress up as a genre; the genre manifests itself in The Music Master.
 
-In the Edelstenenkabinet he can appear in canonical curator form. In artist worlds his appearance/context may adapt subtly to the real musical environment.
-
 ## Edelstenenkabinet — accepted concept direction
-Weekly Ontdek-DNA gemstones are persistent museum-like exhibits. The cabinet represents **the jewels of the personal musical taste**.
+Weekly Ontdek-DNA gemstones are persistent museum-like exhibits: **the jewels of the personal musical taste**.
+Each jewel can connect: De steen / Het verhaal / De muziek.
+Provenance may use `VERWORVEN · WEEK 36 · 2026`. The fictive Moeder aller Edelstenen is separate from weekly real gemstones. The Music Master's staff contains an exceptional earthly Burmese ruby; that ruby is not a weekly gift.
 
-Each jewel can connect:
-- De steen
-- Het verhaal
-- De muziek
-
-Provenance can use museum language such as `VERWORVEN · WEEK 36 · 2026`, meaning that the jewel became part of Ben's personal musical history through discovery, not that he physically owns the mineral.
-
-The Music Master's fictive **Moeder aller Edelstenen** is separate from weekly real gemstones. His staff contains an exceptional earthly Burmese ruby; that ruby is not a weekly gift.
-
-## Muziekportaal / artist worlds — accepted concept direction / H.E.A.T proof
-The rich artist world is evolving from an information page into a **betreedbare artiestenwereld**: a musical backstage environment in which facts and relations become meaningful places and objects.
-
-H.E.A.T is the first controlled conceptual proof. Current exploration includes a possible route through:
-- kleedkamer — identity, people, context and first personal connection;
-- studio — songwriting, sound, albums, production, musical ingredients and influences;
-- coulissen/backstage — relations, tensions, transitions, tour context and the life around performance;
-- podium — live identity, setlists, concerts and performance energy;
-- doors/routes — grounded connections to other artist/genre/music worlds.
-
-The exact room set is not a rigid universal template. Artist identity determines which spaces matter and how they manifest.
-
-### Muziekmeter / personal affinity
-The earlier Muziekkoorts metaphor has evolved into the broader **Muziekmeter**: a personal Music-DNA instrument that may distinguish prediction from actual listening evidence. It never claims to score an artist's objective quality.
-
-The strongest first quantitative application is the complete weekly Ontdek-DNA evaluation cycle. Exact artist-level numeric scoring remains provisional and must not pretend to precision when evidence is sparse.
-
-### Phone-first interaction rule
-The world may be visually rich, but the active interaction surface must remain calm. Information should reveal progressively through meaningful objects/doors rather than placing every possible fact and control on one iPhone screen.
-
-Status of this artist-world work: **ACCEPTED CONCEPT DIRECTION / H.E.A.T PROOF — NOT PRODUCTION-INTEGRATED**.
-
-## Artist World 1.0 — accepted development principles (2026-09-11)
+## Artist World 1.0 — accepted development principles
 Governing decision: `docs/DECISION-2026-09-11-ARTIST-WORLD-1.0-DEVELOPMENT-PRINCIPLES.md`.
 
 The Master is the trusted **centre, not the boundary**, of Ben's musical world. Grounded external artists and relations may extend the Music Portal without automatically becoming part of Ben's personal Music DNA.
 
-The first complete vertical proof is:
-**H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate**.
+The first complete vertical proof is: **H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate**.
 
 Accepted principles:
 - **Studio first** for the H.E.A.T proof.
-- The Studio explains music to a **music lover, not a musician or sound engineer**; avoid technical fader-style analysis as the main interaction.
-- A single enticing Music-DNA control on the mixing desk may reveal a plain-language **HET GELUID VAN H.E.A.T** explanation, followed optionally by **LAAT HET ME HOREN** and **WAAR KOMT DIT VANDAAN?**.
-- Essential artist/music knowledge lives in a compact block with deeper detail behind it; Trivia is similarly optional. Do not fill the iPhone with tappable facts.
-- **MEER ZOALS DEZE ARTIEST** opens a small number of explainable musical doors, not an endless recommendation list. Preserve the real relation type rather than calling every relation similarity.
-- **LIJKT INTERESSANT** records curiosity only and may feed the Ontdek-DNA candidate pool. It is not a positive taste rating.
-- **EXIT** is part of the universal spatial grammar: previous door = where I came from; new doors = where I may go; EXIT = leave artist-world exploration for the Music Portal.
-- Core navigation principle: **You may get lost in Music DNA, but you must never become lost.**
-- World richness is data-driven: rich data gives a richer world; sparse data gives a compact but credible world; never invent filler.
-- Reusable scene grammar/components are preferred over bespoke heavy worlds for every artist.
+- Explain music to a music lover, not a musician or sound engineer.
+- Essential knowledge and Trivia use compact blocks with deeper detail behind them.
+- **MEER ZOALS DEZE ARTIEST** opens a small number of explainable musical doors and preserves the real relation type.
+- **LIJKT INTERESSANT** records curiosity only and may feed the Ontdek-DNA candidate pool.
+- **EXIT** is universal spatial grammar: previous door = where I came from; new doors = where I may go; EXIT = leave artist-world exploration for the Music Portal.
+- **You may get lost in Music DNA, but you must never become lost.**
+- Rich data gives a richer world; sparse data gives a compact but credible world; never invent filler.
+- Reusable scene grammar/components are preferred over bespoke heavy worlds.
 
 ### Motion / performance rule
-Music DNA 1.0 does **not** need animation to feel like a world.
-
-Base rule:
-**The world is still by default. Movement happens briefly when something meaningful occurs.**
-
-Avoid continuous character animation, heavy permanent 3D rendering, blocking transitions and movement that exists only to prove the scene is alive. Lightweight glow/pulse/light reactions are acceptable where useful, but content/navigation may never depend on animation.
-
-Development order:
-**WERKEN → BEGRIJPELIJK → MOOI → SFEERVOL → LEVENDIG**.
-
-Later improvement passes may add richer motion only where it improves meaning, orientation, reward or wonder.
-
-The Music Master remains restrained: he does not constantly narrate or perform. **He helps the world explain itself.**
+Music DNA 1.0 does **not** need animation to feel like a world. **The world is still by default. Movement happens briefly when something meaningful occurs.**
+Development order: **WERKEN → BEGRIJPELIJK → MOOI → SFEERVOL → LEVENDIG**.
 
 ## Personal Weekbrief — accepted future product layer (2026-09-11)
 Governing decision: `docs/DECISION-2026-09-11-PERSONAL-WEEKBRIEF.md` (commit `c57a0371c0c2e9eca2349c634eb0243d6a2764cb`).
 
-Music DNA may use its living/current source layer to create an **optional, taste-personalized weekly reading experience**. It complements the Saturday Ontdek-DNA gift rather than replacing it.
-
-Saturday can therefore contain two acts:
+Saturday can contain two acts:
 1. **Weekbrief — what happened this week in my music world?**
 2. **Ontdek DNA — what has Music DNA discovered for me this week?**
 
-The Weekbrief may selectively surface relevant releases, album/concert reviews, interviews, live/tour developments and worthwhile short news. Relevance beats volume; no filler and no generic rock-news firehose.
-
-Reputable international music journalism may be offered through concise **Dutch Music-DNA summaries**, with publication/author/date attribution and access to the original source. Summaries must preserve fact versus opinion and may not reproduce or effectively translate full copyrighted articles. Multiple reviews may optionally be compared through a compact **Wat zeggen de recensenten?** view that preserves differences between sources.
-
-The user remains in control: the Weekbrief is opt-in, easy to skim or ignore, and every deeper source remains one tap away. This accepted future layer does **not** interrupt the current Artist World 1.0 vertical proof.
+The Weekbrief is optional, taste-personalized and selective. It may surface relevant releases, reviews, interviews, live/tour developments and worthwhile news. Reputable international journalism may be offered through concise Dutch Music-DNA summaries with publication/author/date attribution and access to the original source. Fact and opinion remain distinct. This layer does **not** interrupt the current Artist World 1.0 vertical proof.
 
 ## Muziekmeter / Ontdek-DNA learning layer — accepted concept direction (2026-09-11)
 Governing decision: `docs/DECISION-2026-09-11-MUZIEKMETER-ONTDEK-DNA.md` (commit `5d12a7f62ea9a365cb7196dbe92da60d453f2083`).
 
-The Muziekmeter's strongest first application is the **complete weekly Ontdek-DNA measurement**, not the filtered Spotify gift playlist. Seven daily rounds × three discoveries produce **21 explicit ratings**; all four states — RAAK, GOED, NOG EENS and NEE — belong to the measurement.
+The strongest first application is the **complete weekly Ontdek-DNA measurement**, not the filtered Spotify gift playlist. Seven daily rounds × three discoveries produce **21 explicit ratings**; all four states — RAAK, GOED, NOG EENS and NEE — belong to the measurement.
 
-Keep three things separate:
+Keep separate:
 1. **21 ratings** = raw weekly evidence.
 2. **Muziekmeter** = summarized weekly result.
 3. **Ontdek-DNA jewel/playlist** = curated weekly harvest.
 
-The weekly Muziekmeter belongs naturally in the Personal Weekbrief and may show the current week, rating distribution, moving average, high/low weeks and later predicted-versus-measured performance.
+The weekly Muziekmeter belongs naturally in the Personal Weekbrief and may show current week, rating distribution, moving average, high/low weeks and later predicted-versus-measured performance.
 
-W36–W52 2026 forms the first calibration/reference set: **17 weeks = 357 individual ratings**. Preserve the raw evidence permanently; calibrate the numeric mapping after the complete 2026 set rather than freezing arbitrary weights now. The 2026 series becomes reference material for later years.
+W36–W52 2026 forms the first calibration/reference set: **17 weeks = 357 individual ratings**. Preserve raw evidence permanently; calibrate numeric mapping after the complete 2026 set rather than freezing arbitrary weights now. Working semantic scale: `<70 SCHADUWGEBIED`, `70–79 GOED`, `80–89 STERK`, `90–94 BIJZONDER`, `95–98 UITZONDERLIJK`, `99–100` deliberately rare/possibly unnamed.
 
-The score is personal, never an objective quality judgment. Working semantic scale: `<70 SCHADUWGEBIED`, `70–79 GOED`, `80–89 STERK`, `90–94 BIJZONDER`, `95–98 UITZONDERLIJK`, `99–100` deliberately rare/possibly unnamed.
-
-The learning goal is broader than simply increasing the average. Strong weeks and weak weeks are both knowledge. Music DNA should learn to improve fit **without optimizing exploration and surprise out of the system**. Prediction error, RAAK/NEE frequency, NOG EENS behavior and recurring musical characteristics of unusually strong/weak weeks can all become useful learning signals.
+Strong and weak weeks are both knowledge. Improve fit **without optimizing exploration and surprise out of the system**.
 
 ## Visual identity
 - Double DNA helix + sound waveform retained.
-- Brand mark says what Music DNA IS; cinematic language says how Music DNA FEELS.
 - Chosen icon direction: **C — Living DNA**.
 - Black base, living emerald-green DNA/sound mark, violet action/Second-Chance accent.
 - Technology under the hood; wonder on the outside.
 
 ## Rich artist world + Verras me! v4 — VALIDATED
-`test/surprise-me-v4-full.html` works over the full safe Master-derived world of **3,284 artist worlds**. It remains a validated technical/navigation substrate for broader Music-Portal exploration.
-
-Production data is loaded from 16 controlled parts. Free draw and filtering by Genre, Style, Country and Period are validated on iPhone. Missing biography/people/current facts are not invented. Mood/Theme remain disabled where reliable enrichment is absent.
-
-Validated checkpoint:
-`docs/CHECKPOINT-2026-09-05-VERRAS-V4-ARTIST-WORLDS.md`.
+`test/surprise-me-v4-full.html` works over the full safe Master-derived world of **3,284 artist worlds**. It remains a validated technical/navigation substrate. Missing biography/people/current facts are not invented.
 
 ## Muzikale pleisterplaats
-An artist world is a **muzikale pleisterplaats**, not primarily an information page. Ben can arrive, listen, read, follow a surprising side path and leave again without completing anything.
-
-Spotify is a contextual listening layer.
-
+An artist world is a **muzikale pleisterplaats**, not primarily an information page. Spotify is a contextual listening layer.
 > **Waar Music DNA een muzikale bewering doet, moet je die waar mogelijk met één tik kunnen beluisteren.**
-
-Unexpected links should be grounded in real Master/enrichment/graph data and have an optional `Waarom deze verbinding?` explanation.
 
 ## Mood DNA / Theme DNA direction
 - Genre DNA = what kind of music?
@@ -232,68 +156,111 @@ Unexpected links should be grounded in real Master/enrichment/graph data and hav
 - Theme DNA = when/why does it fit?
 - Ben DNA = what actually proves to move Ben?
 
-Mood/Theme are first-class optional discovery axes. They are not required fields for every entity and are never silently inherited from album to track.
+Mood/Theme are first-class optional discovery axes and are never silently inherited from album to track.
 
 ## Verras me! versus Ontdek DNA
 - Ontdek DNA = find music that may be new to Ben.
 - Verras me! = rediscover music already inside Ben's own music world.
 
-They share data infrastructure but have different product purposes.
-
 ## Ontdek DNA — W36 — GESLOTEN
-W36 is closed at 21/21 and must not be silently reopened. The Spotify playlist was created and visually verified. The accepted weekly gift norm is **21 discoveries**.
+W36 is closed at 21/21 and must not be silently reopened. Spotify playlist was created and visually verified. W36's first official jewel/prototype is **Granaat**.
+Recovery checkpoint: `docs/CHECKPOINT-2026-09-08-W36-RECOVERY.md`.
 
-The weekly visual system is now conceptually tied to the Edelstenenkabinet. W36's first official jewel/prototype is **Granaat**.
-
-Recovery checkpoint:
-`docs/CHECKPOINT-2026-09-08-W36-RECOVERY.md`.
-
-## W37 — RELEASED / CURRENT LIVE WEEK
-W37 is released and active for 6–12 September 2026. Do not revert to obsolete instructions to audit whether W37 can be released.
-
-Persistence/cache risks remain open independently of W37 content status.
+## W37 — 21/21 COMPLETE / GIFT DELIVERY IN SAFE WAIT STATE
+W37 ran 6–12 September 2026. The 21 daily ratings are complete. The gift delivery currently reports a safe wait state because not all gift tracks can yet be safely delivered to Spotify. No playlist mutation is inferred from this state; packaging/delivery must be verified separately.
 
 ## Playlist restoration — current status
 ### Genre DNA
-The earlier 20/21 restoration milestone is historical context. In addition, two UK Punk Genre-DNA playlists are now closed:
-- **UK Punk #01 — Raw & Rebellious** — 30/30, Spotify-closed.
-- **UK Punk #02 — Art, Hooks and Attitude** — 30/30, Spotify-closed.
-
-Checkpoints:
-- `docs/CHECKPOINT-2026-09-09-UK-PUNK-01-RAW-REBELLIOUS.md`
-- `docs/CHECKPOINT-2026-09-09-UK-PUNK-02-ART-HOOKS-ATTITUDE.md`
-
-**Alternative Metal DNA 2.0** has a fixed content Top 30 but is not Spotify-closed because HTTP 429/rate limiting blocked final construction/control. **Canterbury Scene** remains separately **ONDER VOORBEHOUD**.
+UK Punk #01 — Raw & Rebellious and UK Punk #02 — Art, Hooks and Attitude are 30/30 and Spotify-closed. Alternative Metal DNA 2.0 has a fixed content Top 30 but is not Spotify-closed because rate limiting blocked final construction/control. Canterbury Scene remains **ONDER VOORBEHOUD**.
 
 ### Band DNA
-The controlled content restoration/listening pass is closed. The 19 current Band-DNA playlists have descriptions and custom visual covers. Closed Band-DNA content must not be silently reopened.
-
-Standing listening rule:
-> **De naamgever bepaalt de wereld; de volgorde vertelt het verhaal.**
+The controlled content restoration/listening pass is closed. The 19 current Band-DNA playlists have descriptions and custom covers. Closed Band-DNA content must not be silently reopened.
 
 ## User-owned W.A.S.P. / Randy Piper albums
-Ben successfully completed the local ripping/insertion. The Local Files source contains the relevant material and the three controlled 10/10 local playlists are closed. Do not reopen ripping itself.
+Local Files material and three controlled 10/10 local playlists are closed. Do not reopen ripping itself.
 
 ## Spotify DNA folder visual hierarchy — fixed
 - `♦ DNA` — Moeder aller Edelstenen / source-root symbolism.
-- `✧ Band DNA` — gold accent; artist/band personality.
-- `Genre DNA` — silver accent; styles/scenes/cartography.
-- `💎 Ontdek DNA` — cosmic violet/blue accent; discovery/unknown worlds.
-
-Spotify folders do not support custom folder images; do not build a workflow that assumes they do.
+- `✧ Band DNA` — gold accent.
+- `Genre DNA` — silver accent.
+- `💎 Ontdek DNA` — cosmic violet/blue accent.
 
 ## Playlist/importer control rules
 A playlist is closed only after real Spotify verification. CSV/importer success alone never closes it.
 
 Hard rules:
-- do not invent Spotify URIs;
-- do not silently substitute tracks;
-- preserve historical work/year semantics separately from digital reissue metadata;
-- use the Spotify side-door check where discography visibility is incomplete;
-- verify exact count and actual Spotify state before declaring a playlist closed.
+- Spotify is the operational final control for playlists;
+- never invent or guess a Spotify URI;
+- 30/30 means 30 actually checked tracks;
+- weekly Ontdek DNA means 21/21 actually checked tracks where 21 is the applicable gift norm;
+- a closed playlist is not silently reopened or changed;
+- technical/import failure is never reported as content completion;
+- historical work year is not silently overwritten by a later digital reissue year;
+- Spotify availability is not inferred solely from normal discography visibility: direct identity and actual playability matter;
+- a strong duration mismatch is an identity/version warning and must be reviewed rather than silently accepted.
 
-## Current exact next product step
-Build the first complete Artist World 1.0 vertical proof from the H.E.A.T Studio:
-**H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate**.
+## Decision governance
+A previously accepted Music-DNA decision may not be silently replaced. A change must:
+1. name the existing decision;
+2. explain why change is proposed;
+3. receive explicit acceptance from Ben;
+4. be recorded as a new dated GitHub decision;
+5. state which earlier decision remains historical and which is superseded where relevant.
 
-The accepted Weekbrief and Muziekmeter layers are valuable future/parallel product layers and must be preserved, but they do not require abandoning this controlled vertical proof.
+Status words are used strictly:
+- **GESLOTEN** — do not reopen without explicit change decision;
+- **OPEN / IN UITVOERING** — not complete;
+- **ONDER VOORBEHOUD** — intentionally not final;
+- **HISTORISCH** — preserved for provenance but not current truth;
+- **VALIDATED** — technically demonstrated in its stated scope;
+- **ACCEPTED CONCEPT DIRECTION** — accepted design/product direction, not necessarily production-integrated;
+- **RELEASED / LIVE** — currently released/active in its stated scope.
+
+## Open technical/content risks
+1. Rating persistence/localStorage migration remains a hard functional risk.
+2. Safari versus installed home-screen web-app storage context must not be assumed equivalent.
+3. iOS home-screen launch/cache behavior can keep older entry pages alive after GitHub updates; version/bridge routing needs a durable general solution.
+4. Export/import contract must remain versioned/tested against Spotify importer v4.
+5. Gift-history commit and Spotify delivery remain separate verifiable states.
+6. Stable artist identity should be hardened before broad automatic enrichment.
+7. Rights/licensing/source policy for enrichment must be respected; protected editorial text is not bulk-copied.
+8. Mood/Theme scope must remain explicit.
+9. Generated app-serving data must prevent manual duplication.
+10. Living/current data requires source + date.
+11. Durable recent-history/personal-state remains open beyond local browser state.
+12. Spotify one-tap/autoplay remains an integration/UX issue.
+13. Alternative Metal DNA 2.0 still requires safe Spotify construction/final verification when rate limiting allows it.
+14. Closed Spotify playlist relations/orders and known corrections may require later controlled Master synchronization, but this is maintenance and **not** a broad taxonomy/coverage audit prerequisite.
+15. Exact Second Chance lifecycle, persistence and re-rating behavior remain open.
+16. Spotify side-door availability logic should be incorporated structurally: not visible in discography ≠ unavailable; direct identity + actual playability matter.
+17. Artist-world visuals must remain grounded in real artist identity/history/relationships and avoid generic reskinning or unsupported factual storytelling.
+18. Phone-first progressive disclosure must prevent the rich visual world from becoming a crowded navigation surface.
+19. W37 gift packaging/delivery is currently in a safe wait state and must be diagnosed without disabling the safety gate or silently substituting content.
+
+### Closed / superseded risk
+The former risk `Master coverage must be audited before new music data is created; UK Punk is an explicit attention area` is **SUPERSEDED / CLOSED** by the 10 September taxonomy-closure decision and completed UK Punk work. It is not a prerequisite for further product building.
+
+## Exact next step
+**Build the first complete Artist World 1.0 vertical proof from the H.E.A.T Studio: H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate.**
+
+Do not reopen taxonomy repair unless a concrete urgent functional blocker requires it.
+
+The proof keeps three layers distinct:
+1. **fact layer** — verified artist/music facts and relationships;
+2. **personal DNA layer** — what Ben's ratings/listening actually support, without false precision;
+3. **experience layer** — calm phone-first spatial translation into meaningful rooms, objects, doors, EXIT, light and restrained Music-Master presence.
+
+Start with a simple, convincing H.E.A.T Studio 1.0. Prove the functional loop before broadening. Weekbrief and Muziekmeter are preserved accepted layers but do not displace this proof.
+
+## Current checkpoints
+Read together:
+- `docs/DECISION-2026-09-11-MUZIEKMETER-ONTDEK-DNA.md`
+- `docs/DECISION-2026-09-11-PERSONAL-WEEKBRIEF.md`
+- `docs/DECISION-2026-09-11-ARTIST-WORLD-1.0-DEVELOPMENT-PRINCIPLES.md`
+- `docs/DECISION-2026-09-10-TAXONOMY-REPAIR-CLOSED.md`
+- `docs/CHECKPOINT-2026-09-09-UK-PUNK-01-RAW-REBELLIOUS.md`
+- `docs/CHECKPOINT-2026-09-09-UK-PUNK-02-ART-HOOKS-ATTITUDE.md`
+- `docs/CHECKPOINT-2026-09-08-W36-RECOVERY.md`
+- `docs/CHECKPOINT-2026-09-08-EVENING-CONSOLIDATION.md`
+
+These are provenance/checkpoints. This `PROJECT-STATE.md` is the central current navigation layer and supersedes older next-step wording where older documents conflict with later accepted decisions.
