@@ -121,6 +121,13 @@ Saturday can contain two acts:
 
 The Weekbrief is optional, taste-personalized and selective. It may surface relevant releases, reviews, interviews, live/tour developments and worthwhile news. Reputable international journalism may be offered through concise Dutch Music-DNA summaries with publication/author/date attribution and access to the original source. Fact and opinion remain distinct. This layer does **not** interrupt the current Artist World 1.0 vertical proof.
 
+### Editorial/source routing — durably recorded
+Concrete source families and their intended roles are recorded in `docs/SOURCE-MAP-MUSIC-JOURNALISM-2026-09-12.md` (commit `9fd404fc9f25d0176dd7430988ee50e5083b5ad2`).
+
+This source map includes AllMusic, official artist/label sources, setlist.fm, Wikipedia and Spotify context, plus international journalism such as Louder / Classic Rock, Loudwire, Kerrang!, Revolver, Stereogum and Pitchfork, and Dutch/Dutch-language sources including Lust for Life, Progwereld, Arrow Lords of Metal, Rockportaal, iO Pages, Counter Culture, KINK, ARROW Classic Rock and Muziekweb.
+
+Source use is question- and time-dependent. **Official ≠ automatically current.** Current/state claims require source + date; reviews remain opinion; foreign journalism may be compactly summarized in Dutch but not reproduced or fully translated.
+
 ## Muziekmeter / Ontdek-DNA learning layer — accepted concept direction (2026-09-11)
 Governing decision: `docs/DECISION-2026-09-11-MUZIEKMETER-ONTDEK-DNA.md` (commit `5d12a7f62ea9a365cb7196dbe92da60d453f2083`).
 
@@ -254,6 +261,8 @@ Start with a simple, convincing H.E.A.T Studio 1.0. Prove the functional loop be
 
 ## Current checkpoints
 Read together:
+- `docs/HANDOFF-2026-09-12-FRESH-CHAT.md` (commit `a6c13fdbc4570eaf81efa100ec058085f18c241e`)
+- `docs/SOURCE-MAP-MUSIC-JOURNALISM-2026-09-12.md` (commit `9fd404fc9f25d0176dd7430988ee50e5083b5ad2`)
 - `docs/DECISION-2026-09-11-MUZIEKMETER-ONTDEK-DNA.md`
 - `docs/DECISION-2026-09-11-PERSONAL-WEEKBRIEF.md`
 - `docs/DECISION-2026-09-11-ARTIST-WORLD-1.0-DEVELOPMENT-PRINCIPLES.md`
