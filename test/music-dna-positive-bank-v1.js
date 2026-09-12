@@ -35,6 +35,17 @@
     var ad=a.ratedAt||'',bd=b.ratedAt||'';return bd.localeCompare(ad);
   }
 
+  function ensureRuntimeTrack(x){
+    if(!deliverable(x)||!window.MUSIC_DNA_DB||!MUSIC_DNA_DB.tracks||MUSIC_DNA_DB.tracks[x.trackId])return;
+    MUSIC_DNA_DB.tracks[x.trackId]={
+      identity:{artist:x.artist||'Onbekend',title:x.title||x.trackId,country:x.country||null,releaseYear:x.releaseYear||null,albumOrRelease:x.albumOrRelease||null},
+      spotifyUrl:x.spotifyUrl,
+      taxonomy:{allMusicStyles:(x.styles||[]).slice()},
+      discoverDNA:{dnaRoute:(x.dnaRoute||[]).slice(),role:'positieve reserve'},
+      editorial:{whyForYou:'Eerder positief beoordeeld en veilig bewaard in je Music-DNA-reserve.'}
+    };
+  }
+
   function buildSaturdayPlaylist(weekKey,weekCandidateIds){
     var bank=sync(),candidateSet={},selected=[],selectedSet={};weekCandidateIds=weekCandidateIds||[];
     for(var i=0;i<weekCandidateIds.length;i++)candidateSet[weekCandidateIds[i]]=true;
@@ -43,6 +54,7 @@
     current.sort(sortPositive);reserve.sort(sortPositive);
     function addRows(rows){for(var j=0;j<rows.length&&selected.length<PLAYLIST_SIZE;j++){var x=rows[j];if(selectedSet[x.trackId])continue;selected.push(x);selectedSet[x.trackId]=true;}}
     addRows(current);addRows(reserve);
+    for(var h=0;h<selected.length;h++)ensureRuntimeTrack(selected[h]);
     return {version:VERSION,weekKey:weekKey||null,size:selected.length,targetSize:PLAYLIST_SIZE,complete:selected.length===PLAYLIST_SIZE,ids:selected.map(function(x){return x.trackId;}),tracks:selected,fromCurrentWeek:selected.filter(function(x){return !!candidateSet[x.trackId];}).length,fromReserve:selected.filter(function(x){return !candidateSet[x.trackId];}).length,blockedUndeliverable:blocked.map(function(x){return x.trackId;}),createdAt:new Date().toISOString()};
   }
 
