@@ -33,3 +33,4 @@ const MUSIC_DNA_W35_CANDIDATES={tracks:{
 "2026-W35-38":{identity:{artist:"Enforcer",title:"Kiss of Death",releaseYear:2021,albumOrRelease:"Kiss of Death",country:"Sweden"},discoverDNA:{dnaRoute:["NWOBHM","heavy metal","Enforcer"],role:"anker"},taxonomy:{allMusicStyles:["Heavy Metal"]},editorial:{whyForYou:"Een moderne Zweedse route terug naar de snelheid en melodie van klassieke NWOBHM."}},
 "2026-W35-39":{identity:{artist:"The Gems",title:"Like a Phoenix",releaseYear:2023,albumOrRelease:"Phoenix",country:"Sweden"},discoverDNA:{dnaRoute:["hardrock","modern hardrock","The Gems"],role:"moderne hardrock"},taxonomy:{allMusicStyles:["Hard Rock"]},editorial:{whyForYou:"Moderne melodische hardrock die dicht genoeg bij je kern blijft om als ijking te werken."}}
 },sources:{}};
+window.MUSIC_DNA_W35_CANDIDATES=MUSIC_DNA_W35_CANDIDATES;
