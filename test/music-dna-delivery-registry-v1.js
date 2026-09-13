@@ -13,3 +13,4 @@ const MUSIC_DNA_DELIVERY_REGISTRY={version:1,tracks:{
 "2026-W35-35":{spotifyUrl:"https://open.spotify.com/track/1tFQwUUnsotRNBPCupoyQd",verifiedArtist:"Drab Majesty",verifiedTitle:"Ellipsis"},
 "2026-W35-36":{spotifyUrl:"https://open.spotify.com/track/0cq5YH4eRdbXgunCPgvX6S",verifiedArtist:"Airbourne",verifiedTitle:"Breakin' Outta Hell"}
 }};
+window.MUSIC_DNA_DELIVERY_REGISTRY=MUSIC_DNA_DELIVERY_REGISTRY;
