@@ -23,6 +23,20 @@ A week of listening and rating can therefore culminate not only in the 21-track 
 - Information is offered, never imposed; deeper reading remains optional.
 - Every meaningful item should remain a doorway back into the relevant Artist World, album, concert/tour context or original source where appropriate.
 
+## Muziekmeter — wekelijkse positieve indicator
+De Weekbrief bevat voortaan ook een compact persoonlijk Muziekmeter-blok. Dit is geen rapportcijfer of wedstrijd, maar een positieve terugkoppeling over hoe de persoonlijke smaak zich verduidelijkt.
+
+Vaste regels:
+- alleen de 21 officiële beoordelingen op dagelijkse posities 1–3 tellen mee voor de Muziekmeter;
+- een eventuele positie 4 blijft volledig buiten de Muziekmeter en dient uitsluitend de positieve zaterdag-aanvulvoorraad;
+- de Weekbrief mag de weekscore/schaal, verdeling RAAK/GOED/NOG EENS/NEE en werkelijk zichtbare muzikale patronen tonen;
+- de stand van de positieve zaterdag-aanvulvoorraad mag als aparte operationele indicator worden vermeld;
+- september–december 2026 geldt als observerende opbouwfase;
+- januari 2027 is het eerste formele langetermijn-ijkpunt;
+- daarna kunnen kwartaalanalyses steeds beter onderbouwde smaakpatronen en mogelijke verschuivingen benoemen.
+
+Governing detail: `docs/DECISION-2026-09-13-MUZIEKMETER-LONGITUDINAL.md`.
+
 ## International sources and Dutch summaries
 Reputable international music journalism may provide valuable depth and context. Music DNA may offer a concise Dutch editorial summary of a relevant review/interview/article while clearly preserving source attribution and the distinction between source opinion and fact.
 
