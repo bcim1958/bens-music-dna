@@ -34,3 +34,4 @@ const MUSIC_DNA_W35_CANDIDATES={tracks:{
 "2026-W35-39":{identity:{artist:"The Gems",title:"Like a Phoenix",releaseYear:2023,albumOrRelease:"Phoenix",country:"Sweden"},discoverDNA:{dnaRoute:["hardrock","modern hardrock","The Gems"],role:"moderne hardrock"},taxonomy:{allMusicStyles:["Hard Rock"]},editorial:{whyForYou:"Moderne melodische hardrock die dicht genoeg bij je kern blijft om als ijking te werken."}}
 },sources:{}};
 window.MUSIC_DNA_W35_CANDIDATES=MUSIC_DNA_W35_CANDIDATES;
+if(window.MUSIC_DNA_DELIVERY_REGISTRY&&window.MUSIC_DNA_DELIVERY_REGISTRY.tracks){for(const id in window.MUSIC_DNA_DELIVERY_REGISTRY.tracks){const r=window.MUSIC_DNA_DELIVERY_REGISTRY.tracks[id],t=MUSIC_DNA_W35_CANDIDATES.tracks[id];if(t&&r&&r.spotifyUrl&&!t.spotifyUrl)t.spotifyUrl=r.spotifyUrl;}}
