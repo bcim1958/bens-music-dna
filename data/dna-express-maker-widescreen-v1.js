@@ -1,4 +1,4 @@
-// DNA EXPRESS-MAKER — widescreen reading layer v2
+// DNA EXPRESS-MAKER — widescreen reading layer v3
 // Desktop: use the screen as a digital music weekly, not as an A4 simulation.
 (function(){
  const css=`
@@ -6,8 +6,9 @@
    html{font-size:20px}
    body{background:#0b0b0b}
    .issue{width:100%;max-width:none;margin:0;background:var(--paper);box-shadow:none;overflow:hidden}
-   .page{width:100%;min-height:100vh;padding:clamp(42px,4.5vw,84px) clamp(52px,6.2vw,124px);}
+   .page{width:100%;min-height:100vh;padding:clamp(42px,4.5vw,84px) clamp(52px,6.2vw,124px);display:flex;flex-direction:column;}
    .page>*{position:relative;z-index:1}
+   .page>.editionFooter{margin-top:auto!important;padding-top:14px}
    .meta{font-size:clamp(14px,1vw,18px)}
    .kicker{font-size:clamp(14px,1vw,18px)}
    .mast{font-size:clamp(92px,10.8vw,186px);max-width:1600px}
@@ -48,7 +49,7 @@
    #greenlung .featurePhoto,#wilson .featurePhoto,#live .livePhoto{margin-left:calc(-1 * clamp(52px,6.2vw,124px));margin-right:calc(-1 * clamp(52px,6.2vw,124px));width:auto}
    #greenlung .featurePhoto img,#wilson .featurePhoto img{height:min(68vh,780px)}
    #live .livePhoto{height:min(72vh,820px)}
-   #inhoud .contents{margin-top:18px}
+   #inhoud .contents{margin-top:18px;flex:1;align-content:start}
  }
  @media (min-width: 1500px){
    .page{padding-left:max(6.5vw,104px);padding-right:max(6.5vw,104px)}
@@ -56,5 +57,5 @@
    .article p{font-size:clamp(26px,1.5vw,32px)}
  }
  `;
- const style=document.createElement('style');style.id='dnaWidescreenV2';style.textContent=css;document.head.appendChild(style);
+ const style=document.createElement('style');style.id='dnaWidescreenV3';style.textContent=css;document.head.appendChild(style);
 })();
