@@ -1,5 +1,5 @@
 (function(){
-  var VERSION=2;
+  var VERSION=3;
   var PLAYLIST_SIZE=21;
   var TARGET_RESERVE=21;
   var BANK_KEY='bmd-positive-bank-v1';
@@ -18,7 +18,12 @@
     var s=signals(),old=read(BANK_KEY,{version:VERSION,items:{}}),used=usedCounts(),items={};
     for(var id in s){if(!Object.prototype.hasOwnProperty.call(s,id))continue;var x=s[id];if(x.rating!=='raak'&&x.rating!=='goed')continue;
       var prev=old.items&&old.items[id]||{};
-      items[id]={trackId:id,rating:x.rating,weight:x.weight,artist:x.artist,title:x.title,country:x.country,releaseYear:x.releaseYear,albumOrRelease:x.albumOrRelease||null,styles:x.styles||[],dnaRoute:x.dnaRoute||[],ratedAt:x.ratedAt||null,spotifyUrl:x.spotifyUrl||null,spotifyResolvedExact:!!x.spotifyResolvedExact,deliverable:deliverable(x),firstPositiveAt:prev.firstPositiveAt||x.ratedAt||new Date().toISOString(),playlistUses:used[id]||0,lastPlaylistWeek:prev.lastPlaylistWeek||null};
+      /* Preserve an already exact, safely deliverable identity from the positive bank.
+         Older reserve tracks may no longer have their source candidate loaded, while
+         their verified Spotify identity is durable evidence from an earlier delivery. */
+      var safeUrl=(x.spotifyResolvedExact&&x.spotifyUrl)?x.spotifyUrl:((prev.spotifyResolvedExact&&prev.spotifyUrl)?prev.spotifyUrl:null);
+      var safeExact=!!safeUrl;
+      items[id]={trackId:id,rating:x.rating,weight:x.weight,artist:x.artist||prev.artist,title:x.title||prev.title,country:x.country||prev.country,releaseYear:x.releaseYear||prev.releaseYear,albumOrRelease:x.albumOrRelease||prev.albumOrRelease||null,styles:(x.styles&&x.styles.length?x.styles:prev.styles)||[],dnaRoute:(x.dnaRoute&&x.dnaRoute.length?x.dnaRoute:prev.dnaRoute)||[],ratedAt:x.ratedAt||prev.ratedAt||null,spotifyUrl:safeUrl,spotifyResolvedExact:safeExact,deliverable:deliverable({spotifyResolvedExact:safeExact,spotifyUrl:safeUrl}),firstPositiveAt:prev.firstPositiveAt||x.ratedAt||new Date().toISOString(),playlistUses:used[id]||0,lastPlaylistWeek:prev.lastPlaylistWeek||null};
     }
     var bank={version:VERSION,items:items,updatedAt:new Date().toISOString()};write(BANK_KEY,bank);return bank;
   }
@@ -68,6 +73,7 @@
 
   function findTrack(id){
     if(window.MUSIC_DNA_DB&&MUSIC_DNA_DB.tracks&&MUSIC_DNA_DB.tracks[id])return MUSIC_DNA_DB.tracks[id];
+    if(window.MUSIC_DNA_W35_CANDIDATES&&MUSIC_DNA_W35_CANDIDATES.tracks&&MUSIC_DNA_W35_CANDIDATES.tracks[id])return MUSIC_DNA_W35_CANDIDATES.tracks[id];
     for(var k in window){if(/^MUSIC_DNA_W\d+_CANDIDATES$/.test(k)){var c=window[k];if(c&&c.tracks&&c.tracks[id])return c.tracks[id];}}
     return null;
   }
