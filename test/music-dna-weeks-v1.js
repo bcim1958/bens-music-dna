@@ -16,7 +16,7 @@ const MUSIC_DNA_WEEKS = (() => {
       key: '2026-W38', yearLabel: '2026', weekLabel: 'W38', display: '2026 · W38',
       start: new Date(2026, 8, 13), end: new Date(2026, 8, 20),
       startText: 'zondag 13 september', endText: 'zaterdag 19 september 2026',
-      candidateGlobal: 'MUSIC_DNA_W38_CANDIDATES', candidateFile: 'music-dna-candidates-w38-v1.js?v=20260913a', ready: false
+      candidateGlobal: 'MUSIC_DNA_W38_CANDIDATES', candidateFile: 'music-dna-candidates-w38-v1.js?v=20260913b', ready: true
     }
   ];
   function get(key){return weeks.find(w => w.key === key) || null;}
