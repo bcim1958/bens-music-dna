@@ -1,7 +1,7 @@
 # Ben's Music DNA — Project State
 
 Last updated: 2026-09-13
-Status: ACTIVE DEVELOPMENT — W37 OPEN / TAXONOMY REPAIR CLOSED / ARTIST WORLD 1.0 PAUSED UNTIL W37 IS CORRECT
+Status: ACTIVE DEVELOPMENT — W37 CLOSED / TAXONOMY REPAIR CLOSED / ARTIST WORLD 1.0 READY TO RESUME
 
 ## Product north star
 **Eerst muziek. Dan jij. Dan de wereld.**
@@ -52,20 +52,15 @@ Weekly Ontdek-DNA gemstones are persistent exhibits: the jewels of Ben's persona
 
 ## Artist World 1.0
 Governing decision: `docs/DECISION-2026-09-11-ARTIST-WORLD-1.0-DEVELOPMENT-PRINCIPLES.md`.
-
-First vertical proof:
-**H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate**.
-
-This route remains the next main product route, but it is temporarily paused until W37 is repaired and verified at the agreed weekly count of 21 tracks.
+First vertical proof: **H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate**.
+W37 no longer blocks this route.
 
 ## Personal Weekbrief
 Accepted future layer: `docs/DECISION-2026-09-11-PERSONAL-WEEKBRIEF.md` and `docs/SOURCE-MAP-MUSIC-JOURNALISM-2026-09-12.md`.
 
 ## Muziekmeter / Ontdek-DNA learning
 Governing decision: `docs/DECISION-2026-09-11-MUZIEKMETER-ONTDEK-DNA.md`.
-
-The fixed weekly Ontdek-DNA number is **21 tracks**. Seven daily rounds × three discoveries = 21 weekly tracks and 21 ratings. The Spotify weekly playlist must also contain the agreed 21-track weekly set before a week can be closed.
-
+The fixed weekly Ontdek-DNA number is **21 tracks**. Seven daily rounds × three discoveries = 21 weekly tracks and 21 ratings. The Spotify weekly playlist also contains the agreed 21-track weekly set before a week is closed.
 The 2026-09-13 proposal to allow a 12-track W37 playlist is **HISTORISCH / NOT ACCEPTED** and does not govern the product.
 
 ## Visual identity
@@ -89,8 +84,8 @@ Genre DNA = what kind; Mood DNA = how it feels; Theme DNA = when/why it fits; Be
 21/21 ratings; Spotify playlist verified; first jewel/prototype **Granaat**. Do not reopen.
 Recovery: `docs/CHECKPOINT-2026-09-08-W36-RECOVERY.md`.
 
-## Ontdek DNA — W37 — OPEN / IN HERSTEL
-W37 ran 6–12 September 2026. All 21 daily ratings are preserved. A temporary 12-track Spotify repair was delivered on 13 September but is not accepted as completion because the agreed weekly count is 21. W37 remains OPEN until the Spotify playlist is restored to the correct 21-track weekly set and visually verified there.
+## Ontdek DNA — W37 — GESLOTEN
+W37 ran 6–12 September 2026. All 21 daily ratings are preserved. On 13 September 2026 the Spotify playlist **Ontdek-DNA · 2026 · W37** was restored to the agreed **21 tracks** and visually verified in Spotify from tracks 1 through 21. W37 is therefore **GESLOTEN**. Do not silently reopen it.
 
 ## Playlist restoration
 Genre DNA: UK Punk #01/#02 are 30/30 Spotify-closed. Alternative Metal DNA 2.0 has fixed Top 30 but awaits safe Spotify final verification. Canterbury Scene remains **ONDER VOORBEHOUD**.
@@ -132,4 +127,4 @@ Material decision changes name the existing decision, explain why, receive Ben's
 18. Phone-first progressive disclosure.
 
 ## Immediate next step
-Repair W37 to the agreed **21-track** Spotify weekly set and verify it in Spotify. Only after that is W37 **GESLOTEN** and Artist World 1.0 resumes.
+W37 is **GESLOTEN**. Resume the accepted Artist World 1.0 vertical proof: **H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate**.
