@@ -1,6 +1,6 @@
 # Ben's Music DNA — Project State
 
-Last updated: 2026-09-14
+Last updated: 2026-09-14 18:00 CEST
 Status: ACTIVE DEVELOPMENT — W37 CLOSED / TAXONOMY REPAIR CLOSED / DNA EXPRESS-MAKER EDITIE NUL ACTIVE PROTOTYPE
 
 ## Product north star
@@ -19,6 +19,7 @@ Working line: **The personal music weekly · powered by Music DNA**.
 - iPhone: generous one-column reading edition.
 - iPad: intermediate model; landscape may support true spreads.
 - The magazine ritual remains cover → contents → articles → back page, but browsing is deliberately non-linear: tempting stories can be opened directly and the reader can return to the prior position.
+- Chapter navigation is a functional requirement, but must remain visually subordinate to the magazine: one subtle INHOUD affordance, jump to a chapter, and return to the exact prior reading position. No permanent website navigation bar or menu rail.
 
 ### Art direction — ACCEPTED CONCEPT DIRECTION
 Canonical current direction: `docs/DECISION-2026-09-14-DNA-EXPRESS-MAKER-ARTDIRECTION-2.0.md`.
@@ -36,6 +37,17 @@ Artist-led model: EXPRESS-MAKER is the permanent house; the headliner supplies t
 Whole-issue visual dramaturgy is designed before pages are locked. The next page should offer something visually different, not necessarily louder. The issue as a whole must be compelling to browse.
 
 Editorial restraint: **Geen tekst zonder redactionele functie. Geen versiering die zichzelf moet uitleggen. Vertrouw op het beeld. Een symbool mag een geheim hebben.**
+
+### Proof history — SAFE IN GITHUB, NOT CANONICAL PRODUCTION
+**Art Direction Blueprint** exists and translates Art Direction 2.0 into issue-level visual dramaturgy.
+
+**Magazine navigation proof** established the desired functional behavior: one action can jump to a chosen chapter and `← TERUG` can return to the prior reading position. The visible implementation in Proof 1 (permanent bottom navigation / menu-like rail) is rejected as website-like; preserve the behavior, not that presentation.
+
+**Art Direction Proof 1** is a **technical/navigation proof only**. It demonstrated widescreen chapter jumping and return behavior, but visually retained too much of the earlier website/grid/card architecture. Do not extend or polish it as the visual basis.
+
+**Art Direction Proof 2** (`001b87e3`) rebuilt the opening sequence on a cleaner full-screen canvas and contains cover → contents route → Mijn Week opening with responsive behavior and rights-safe Green Lung photography. It proved that the old A4-like shell and permanent web navigation can be removed. However, Ben's review rejected Proof 2 as the visual basis too: it still substitutes large CSS geometry, abstract grids, oversized typography and empty fields for the richer artist-led editorial image world agreed in Art Direction 2.0. The Green Lung cover remains too dependent on one concert photograph with type over it; the contents map is too abstract; the Mijn Week spread fails the coffee-table test through lack of editorial/visual discovery.
+
+**Current design conclusion:** do not repair Proof 1 or Proof 2. Their useful technical behavior may be reused, but their visible design is non-canonical. Art Direction 2.0 requires visual composition first — meaningful photography, rights-safe/original image layers, texture, objects, unexpected crops, editorial typography and subject-specific visual grammar — with CSS/HTML serving the art direction rather than generating it from geometric blocks.
 
 ### Visual context layer
 - `KANTTEKENINGEN`: selective visual footnotes/context.
@@ -58,6 +70,8 @@ Principle: **Het beeld hoeft zichzelf niet uit te leggen. EXPRESS-MAKER mag zijn
 
 **FLASHBACK** = time machine, not nostalgia list. Start from the actual corresponding historical music-press week, find an artist then small/emerging/at a turning point, reconstruct what was knowable then, then follow the wordingsgang to the present. Core twist: **ze wisten nog niet wat wij nu weten.** Where reliable, Ben's own point of entry may join the timeline.
 
+For Editie NUL, the current editorial choice is **U2**: Dublin, 9 September 1978, support for The Stranglers, then the extraordinary scale-growth toward the present. Working headline: **HOE GROOT KAN £50 WORDEN?** Joy Division remains a strong same-week secondary find, not the main Flashback subject.
+
 **DIEPTEBOM** = optional editor's privilege for an unusually compelling discovery: unexpected connection + real depth + immediate curiosity. If nothing earns it, no Dieptebom. Music Master visual folklore: restrained FIRE control / finger on the trigger. Contents may tease **DIEPTEBOM — geen spoilers**. Reader can jump straight to it and return.
 
 ### Edelstenenkabinet / Ontdek DNA
@@ -73,14 +87,14 @@ The 52 weekly visuals should be capable of forming a credible year-level rainbow
 
 ## Editie NUL — current whole-issue dramaturgy
 1. Cover — Green Lung / Necropolitan.
-2. Opening + contents — withdrawn Green Lung/map-like orientation.
-3–4. Mijn Week — personal spread.
+2. Opening + contents — Green Lung/occult-London orientation, using meaningful visual material rather than an abstract CSS map.
+3–4. Mijn Week — personal editorial spread, not dashboard and not an empty geometric 21-page.
 5–6. Green Lung — full immersion.
 7. Steven Wilson — space/scale/conceptual quiet; 2026 transition from The Overview toward Requiem For A Village.
 8. Hard & Heavy — speed/steel/urban-night; Editie NUL current backbone Iron Maiden / Somewhere in Time 40 without copying protected artwork.
 9. Band/Genre DNA — personal relationships/patterns, not dashboard.
 10. LIVE! — photographic physicality.
-11. FLASHBACK — historical press plus forward time-jump.
+11. FLASHBACK — U2 / Dublin / 9 September 1978 → present; working headline **HOE GROOT KAN £50 WORDEN?**
 12. DIEPTEBOM — only if editorial discovery earns FIRE.
 13. Ontdek DNA / Edelstenenkabinet — harvest + weekly stone visual + story of the stone.
 14. GEZIEN? / Kanttekeningen / Opdracht aan de redactie / back-page closure, arranged for rhythm rather than mechanically forced into one screen.
@@ -199,8 +213,9 @@ Material decision changes name the existing decision, explain why, receive Ben's
 23. Art-direction automation must preserve editorial judgement and visual dramaturgy; avoid template/card/dashboard convergence.
 24. Artist visual-oeuvre sourcing must distinguish inspiration, licensed/direct reproduction and newly composed visual grammar.
 25. Exact existing special Band-DNA visual identities still need reliable recovery before Band-DNA page production.
-26. FLASHBACK requires date-boundary historical source verification for each issue; Editie NUL must research 6–12 September 1978 before choosing its featured artist.
+26. FLASHBACK requires date-boundary historical source verification for each issue; Editie NUL's current U2 selection still needs production-grade primary/archival source verification before final publication.
 27. Annual year-rainbow/corona system needs a future data/visual contract that preserves each weekly stone identity and navigation.
+28. Proof 1/2 demonstrate a recurring failure mode: CSS geometry, grids, oversized type and empty fields can recreate website/poster aesthetics even on a full-screen canvas. Future proofs must begin from a composed visual/editorial image world, not from layout primitives.
 
 ## Immediate next step
-**Compose DNA EXPRESS-MAKER Editie NUL as one coherent visual sequence under Art Direction 2.0 before writing another generic HTML layout.** Use Green Lung as issue-wide visual weather, allow guest subjects to own their pages, preserve the newly defined Band/Genre DNA, LIVE!, FLASHBACK, optional DIEPTEBOM and Edelstenenkabinet identities, and design the full page-turning rhythm first. Then produce the next visual proof for Mac widescreen, iPhone one-column and iPad intermediate behavior while preserving rights/source boundaries. Only after acceptance should the proof be consolidated into canonical publication architecture rather than left as an iframe/wrapper experiment.
+**Do not repair Proof 1 or Proof 2. Build one fully resolved Green Lung cover/opening spread as the next visual gate.** Start from the artist-led `Necropolitan` / occult-London world and compose the image first: meaningful rights-safe photography and/or newly generated/original visual material, layered texture, objects/symbols, unexpected crops and editorial typography. CSS/HTML should only make that art direction responsive and interactive. The spread must pass the coffee-table test on Mac before page two is designed. Preserve the proven chapter-jump/return behavior invisibly; do not reintroduce permanent web navigation. After the Mac visual gate passes, translate the same art direction deliberately to iPhone and iPad rather than treating responsiveness as automatic scaling. Only after this gate is accepted should the rest of Editie NUL be built into the coherent visual sequence and later consolidated into canonical publication architecture.
