@@ -1,6 +1,6 @@
 # Ben's Music DNA — Project State
 
-Last updated: 2026-09-13
+Last updated: 2026-09-14
 Status: ACTIVE DEVELOPMENT — W37 CLOSED / TAXONOMY REPAIR CLOSED / DNA EXPRESS-MAKER EDITIE NUL ACTIVE PROTOTYPE
 
 ## Product north star
@@ -8,46 +8,84 @@ Status: ACTIVE DEVELOPMENT — W37 CLOSED / TAXONOMY REPAIR CLOSED / DNA EXPRESS
 Music is the main road. Rich artist information is optional reward for curiosity. The app remembers the route back to music.
 
 ## Current product focus — DNA EXPRESS-MAKER
-DNA EXPRESS-MAKER is now an **active built product line**, not merely a future Personal Weekbrief concept. Editie NUL has working responsive reading prototypes, a data-driven editorial model using real W37 content, a visual editorial layer with rights-safe photography, LIVE and Ontdek-DNA identities, editorial navigation, and a separate widescreen Mac reading proof.
+DNA EXPRESS-MAKER is an **active built product line**. Editie NUL reconstructs the issue that would have landed Saturday 12 September 2026; No.001 is intended as the first prospective issue.
 
 Core publication idea: **Geen muzieknieuws dat jij moet doorzoeken. Jouw muziekwereld, voor jou geredigeerd.**
-Working publication line: **The personal music weekly · powered by Music DNA**.
-Editie NUL reconstructs the issue that would have landed Saturday 12 September 2026; No.001 is intended as the first prospective issue.
+Working line: **The personal music weekly · powered by Music DNA**.
 
 ### Reading model
 **De editie is het tijdschrift. Het scherm bepaalt hoe je haar leest.**
-- Mac: rich widescreen edition using the display generously; no A4-like fixed sheet.
+- Mac: rich widescreen edition; no A4-like fixed sheet.
 - iPhone: generous one-column reading edition.
 - iPad: intermediate model; landscape may support true spreads.
-- The magazine ritual remains: cover → contents → articles → back page.
+- The magazine ritual remains cover → contents → articles → back page, but browsing is deliberately non-linear: tempting stories can be opened directly and the reader can return to the prior position.
 
-### Art direction — active direction
-The design has moved from layout toward **art direction**. The success test is: would the issue attract attention on a coffee table, invite pickup, page-turning and lingering?
+### Art direction — ACCEPTED CONCEPT DIRECTION
+Canonical current direction: `docs/DECISION-2026-09-14-DNA-EXPRESS-MAKER-ARTDIRECTION-2.0.md`.
 
-The permanent publication identity combines:
+The design has moved from layout toward **art direction**. Coffee-table test: would Ben pick it up, turn a page, skip ahead out of curiosity, return, and linger?
+
+Permanent identity:
 - late-1970s NME visual nerve and surprise;
 - Melody Maker depth, photography, authority and reading space;
 - Music DNA personal intelligence;
 - modern 2026 digital execution.
 
-Controlled imperfection is welcome: photostat/halftone character, selective misregistration, unexpected crops, overlays, pasted strips, stamps/editorial marks, asymmetry and other purposeful print-like gestures. It must never become nostalgic costume or generic grunge.
+Artist-led model: EXPRESS-MAKER is the permanent house; the headliner supplies the weekly visual weather; substantial guest artists/subjects temporarily own their pages through their own visual language. No substantial artist page without artist identity. Visual rest comes from composition and scale, not empty white pages. Controlled imperfection is welcome when purposeful. Rights/licensing remains a hard boundary: **we lenen de beeldtaal; we stelen het beeld niet.**
 
-### Artist-led visual grammar
-**The main artist determines the visual world of the week.** Album art and the broader visual oeuvre are inspiration and source material for palette, symbols, objects, typography, atmosphere, physical-record details and page ornament — never a requirement to copy a cover literally.
+Whole-issue visual dramaturgy is designed before pages are locked. The next page should offer something visually different, not necessarily louder. The issue as a whole must be compelling to browse.
 
-Every substantial artist page also contributes its own visual identity. A guest artist may temporarily reshape the page through its own imagery, iconography, live photography, album-world, logo language, locations, objects or symbols. The main artist supplies the edition's ground tone; the artist filling a page supplies that page's visual character.
+Editorial restraint: **Geen tekst zonder redactionele functie. Geen versiering die zichzelf moet uitleggen. Vertrouw op het beeld. Een symbool mag een geheim hebben.**
 
-Design rules:
-- no substantial artist page without artist-specific visual identity;
-- no empty/white page merely for layout cleanliness: visual rest comes from composition, scale and restraint, not absence of imagery;
-- use strong covers/details, dynamic band photography, live scenes, notable locations, symbols and physical-release details when they have real visual force;
-- symbols may remain unexplained: recognition rewards knowledge but lack of recognition must not block reading;
-- **trust the image**: no decorative aphorisms or explanatory text without editorial function;
-- page sequence is designed as **visual dramaturgy**: loud → quiet → surprising → spectacular → intimate, according to the issue's material;
-- the whole issue must be compelling to browse; not every page needs the same grid or intensity;
-- exact existing Band-DNA visual identities must be recovered and reused rather than invented.
+### Visual context layer
+- `KANTTEKENINGEN`: selective visual footnotes/context.
+- `GEZIEN?`: playful multiple-choice visual quiz near the back; never homework/judgement.
+- `ACHTER HET BEELD`: optional deeper explanation of selected art-direction choices.
+- Some easter eggs remain unexplained.
+- Annual editions may aggregate GEZIEN? recognition statistics.
 
-Copyright and licensing remain a hard production boundary: protected album artwork, logos, illustrations and other visual material require appropriate rights/usage decisions. The visual grammar can be translated into original compositions where direct reproduction is not appropriate.
+Principle: **Het beeld hoeft zichzelf niet uit te leggen. EXPRESS-MAKER mag zijn lezer wél vertellen wat er te ontdekken valt.**
+
+### Recurring editorial source worlds
+**Band DNA:** each 30-name playlist is the namegiver plus **29 surrounding artists**. Use it repeatedly to investigate musical, personnel, producer, label, management, touring, geographic, historical, brand/visual and statistical relationships. Weak/no relationships are valid findings. Exact existing Band-DNA visual identities must be recovered/reused, not invented.
+
+**Genre DNA:** equally renewable editorial source without one central artist; useful for clusters, borders, period/country bias, track characteristics and contrasts between band kinship and genre kinship.
+
+**Van de MASTER …:** flexible personal facts/patterns from the Master, integrated where editorially useful rather than forced into a fixed box.
+
+### Character rubrics
+**LIVE!** = human/physical/immediate; large concert photography, stage light, movement, crowd and anticipation. Personal/local shows can have equal editorial dignity to arena shows. Avoid concert-card dashboards.
+
+**FLASHBACK** = time machine, not nostalgia list. Start from the actual corresponding historical music-press week, find an artist then small/emerging/at a turning point, reconstruct what was knowable then, then follow the wordingsgang to the present. Core twist: **ze wisten nog niet wat wij nu weten.** Where reliable, Ben's own point of entry may join the timeline.
+
+**DIEPTEBOM** = optional editor's privilege for an unusually compelling discovery: unexpected connection + real depth + immediate curiosity. If nothing earns it, no Dieptebom. Music Master visual folklore: restrained FIRE control / finger on the trigger. Contents may tease **DIEPTEBOM — geen spoilers**. Reader can jump straight to it and return.
+
+### Edelstenenkabinet / Ontdek DNA
+Ontdek DNA is the weekly musical harvest/reward near the end, distinct from Mijn Week.
+- Mijn Week = what happened to Ben's taste / what Music DNA observed.
+- Ontdek DNA = what the week yielded musically.
+
+The **Edelstenenkabinet is the visual treasury of Music DNA** across Spotify, Ontdek DNA, EXPRESS-MAKER, Mijn Muziekwereld and the Annual. Each week gets one gemstone visual identity; the same week visual should be recognisable in EXPRESS-MAKER and on its Spotify playlist.
+
+`HET VERHAAL VAN DE STEEN` may tell the real geology/origin/history/visual properties of the weekly stone and only then make a restrained musical connection. Prefer factual wonder over invented mysticism.
+
+The 52 weekly visuals should be capable of forming a credible year-level rainbow without falsifying natural stone appearance. Future Annual concept: all 52 weekly visuals form the luminous **corona around a total solar eclipse** — 52 weeks, one music year. From distance one crown; closer inspection reveals the weeks.
+
+## Editie NUL — current whole-issue dramaturgy
+1. Cover — Green Lung / Necropolitan.
+2. Opening + contents — withdrawn Green Lung/map-like orientation.
+3–4. Mijn Week — personal spread.
+5–6. Green Lung — full immersion.
+7. Steven Wilson — space/scale/conceptual quiet; 2026 transition from The Overview toward Requiem For A Village.
+8. Hard & Heavy — speed/steel/urban-night; Editie NUL current backbone Iron Maiden / Somewhere in Time 40 without copying protected artwork.
+9. Band/Genre DNA — personal relationships/patterns, not dashboard.
+10. LIVE! — photographic physicality.
+11. FLASHBACK — historical press plus forward time-jump.
+12. DIEPTEBOM — only if editorial discovery earns FIRE.
+13. Ontdek DNA / Edelstenenkabinet — harvest + weekly stone visual + story of the stone.
+14. GEZIEN? / Kanttekeningen / Opdracht aan de redactie / back-page closure, arranged for rhythm rather than mechanically forced into one screen.
+
+Arc: **VERLEIDING → ORIËNTATIE → PERSOONLIJK → ONDERDOMPELING → CONTRAST → ENERGIE → HERKENNING → LIVE → TIJDREIS → VERRASSING → BELONING → AFSCHEID.**
 
 ## Source of truth — music data
 The Master remains the primary content substrate. Definitive safe physical Master:
@@ -87,15 +125,19 @@ Two equal destinations:
 Core rule: **Music DNA builds no generic decor around an artist. The identity, history and real musical relationships of the artist determine how that artist world manifests.**
 
 ## Music Master
-Gastheer, conservator and ceremoniemeester; distinguished, mysterious and inviting; never more important than the music and never dictates taste.
+Gastheer, conservator and ceremoniemeester; distinguished, mysterious and inviting; never more important than the music and never dictates taste. In EXPRESS-MAKER the Music Master may also act as editor/curator; DIEPTEBOM's FIRE folklore is an occasional visual/editorial privilege, not his dominant identity.
 
 ## Artist World 1.0
 Governing decision: `docs/DECISION-2026-09-11-ARTIST-WORLD-1.0-DEVELOPMENT-PRINCIPLES.md`.
 First vertical proof remains: **H.E.A.T → Meer zoals deze → New Horizon → Artist World → Lijkt interessant → Ontdek-DNA candidate**.
-This route remains accepted but is **temporarily parked while DNA EXPRESS-MAKER / Editie NUL is the active product focus**. Do not describe Artist World as the immediate next step unless the project focus is explicitly changed.
+This route remains accepted but is **temporarily parked while DNA EXPRESS-MAKER / Editie NUL is the active product focus**.
 
 ## Personal Weekbrief → DNA EXPRESS-MAKER
-The earlier Personal Weekbrief concept has developed into DNA EXPRESS-MAKER. Governing/background documents include `docs/DECISION-2026-09-11-PERSONAL-WEEKBRIEF.md`, `docs/SOURCE-MAP-MUSIC-JOURNALISM-2026-09-12.md`, and the dated DNA EXPRESS-MAKER/Editie NUL decisions. Preserve the historical concept trail; do not reduce the current product back to a future-layer description.
+The earlier Personal Weekbrief concept has developed into DNA EXPRESS-MAKER. Governing/background documents include `docs/DECISION-2026-09-11-PERSONAL-WEEKBRIEF.md`, `docs/SOURCE-MAP-MUSIC-JOURNALISM-2026-09-12.md`, the dated DNA EXPRESS-MAKER/Editie NUL decisions, and `docs/DECISION-2026-09-14-DNA-EXPRESS-MAKER-ARTDIRECTION-2.0.md`.
+
+### Editorial learning period — ACTIVE
+Decision: `docs/DECISION-2026-09-13-DNA-EXPRESS-MAKER-LEERPERIODE.md` (commit `20bbd8a75f118618d24d7fae818a6f5ac693cedf`).
+September–December 2026 is a deliberate editorial learning period. Each issue remains a full product. A short post-issue survey may gather browsing/visual/story/surprise feedback without turning reading into homework. Music DNA learns which music moves Ben; EXPRESS-MAKER learns how Ben likes to experience his music world. First Redactierapport: January 2027.
 
 ## Muziekmeter / Ontdek-DNA learning
 Governing decision: `docs/DECISION-2026-09-11-MUZIEKMETER-ONTDEK-DNA.md` plus the 2026-09-13 longitudinal decision.
@@ -138,7 +180,7 @@ Material decision changes name the existing decision, explain why, receive Ben's
 4. Export/import contract.
 5. Gift-history vs Spotify delivery verification.
 6. Stable artist identity before broad enrichment.
-7. Rights/licensing/source policy, now including EXPRESS-MAKER editorial imagery, album artwork, logos and visual oeuvre.
+7. Rights/licensing/source policy, including EXPRESS-MAKER editorial imagery, album artwork, logos, visual oeuvre and historical press material.
 8. Mood/Theme scope.
 9. Generated app-serving duplication prevention.
 10. Living/current source + date.
@@ -155,7 +197,10 @@ Material decision changes name the existing decision, explain why, receive Ben's
 21. EXPRESS-MAKER editorial source provenance and image-rights/attribution policy must be production-safe.
 22. EXPRESS-MAKER prototype content/data must remain clearly separated from structural production data and future automated weekly generation.
 23. Art-direction automation must preserve editorial judgement and visual dramaturgy; avoid template/card/dashboard convergence.
-24. Artist visual-oeuvre sourcing must distinguish inspiration, licensed/direct reproduction and newly composed derivative visual grammar.
+24. Artist visual-oeuvre sourcing must distinguish inspiration, licensed/direct reproduction and newly composed visual grammar.
+25. Exact existing special Band-DNA visual identities still need reliable recovery before Band-DNA page production.
+26. FLASHBACK requires date-boundary historical source verification for each issue; Editie NUL must research 6–12 September 1978 before choosing its featured artist.
+27. Annual year-rainbow/corona system needs a future data/visual contract that preserves each weekly stone identity and navigation.
 
 ## Immediate next step
-**Continue DNA EXPRESS-MAKER Editie NUL as the active product focus.** First convert the newly accepted artist-led art-direction principles into the next coherent Editie NUL visual proof: Green Lung supplies the issue-wide ground tone, while substantial guest-artist pages contribute their own visual identity. Design the issue as a complete visual sequence rather than isolated templates, while preserving responsive Mac/iPhone behavior and the rights/source boundary. After that proof is accepted, consolidate it into the canonical publication architecture rather than leaving the widescreen iframe/wrapper as the final implementation.
+**Compose DNA EXPRESS-MAKER Editie NUL as one coherent visual sequence under Art Direction 2.0 before writing another generic HTML layout.** Use Green Lung as issue-wide visual weather, allow guest subjects to own their pages, preserve the newly defined Band/Genre DNA, LIVE!, FLASHBACK, optional DIEPTEBOM and Edelstenenkabinet identities, and design the full page-turning rhythm first. Then produce the next visual proof for Mac widescreen, iPhone one-column and iPad intermediate behavior while preserving rights/source boundaries. Only after acceptance should the proof be consolidated into canonical publication architecture rather than left as an iframe/wrapper experiment.
