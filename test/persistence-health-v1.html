@@ -13,17 +13,24 @@
 <div class="eye">Music DNA Health Check</div><h1>Beoordelingen & selecties</h1>
 <div class="intro">Deze pagina leest alleen. Ze wijzigt geen beoordelingen, selecties of leerdata.</div>
 <section class="panel" id="summary"></section>
-<section class="panel"><div class="eye">W36 per dag</div><div id="days"></div></section>
+<section class="panel"><div class="eye" id="week-title">Actieve week per dag</div><div id="days"></div></section>
 <section class="panel"><div class="eye">Leerlaag</div><div id="learning"></div></section>
 <section class="panel"><div class="eye">Veilige kopie</div><div class="muted small">Maak desgewenst een JSON-kopie van alle Music-DNA-localStorage-sleutels op dit toestel.</div><button class="btn" id="export">Exporteer Music DNA-opslag</button></section>
 <section class="panel"><div class="eye">Technisch</div><div class="mono" id="keys"></div></section>
 </main>
+<script src="music-dna-weeks-v1.js?v=20260918.production1"></script>
 <script>
 (function(){
 function parse(k){try{var r=localStorage.getItem(k);return r?JSON.parse(r):null}catch(e){return null}}
 function row(a,b){return '<div class="row"><span>'+a+'</span><strong>'+b+'</strong></div>'}
-var week='2026-W36',rated=0,selections=0,completeDays=0,dayHtml='';
-for(var d=1;d<=7;d++){
+var now=new Date(),cfg=(window.MUSIC_DNA_WEEKS&&MUSIC_DNA_WEEKS.resolve)?MUSIC_DNA_WEEKS.resolve(now):null,week=cfg&&cfg.key;
+if(!week){
+ var keys=[];for(var z=0;z<localStorage.length;z++){var kk=localStorage.key(z),m=kk&&kk.match(/^bmd-week-(\d{4}-W\d{2})-day[1-7]-v1$/);if(m)keys.push(m[1]);}
+ keys.sort();week=keys.length?keys[keys.length-1]:null;
+}
+var rated=0,selections=0,completeDays=0,dayHtml='';
+if(week)document.getElementById('week-title').textContent=week+' per dag';
+if(week)for(var d=1;d<=7;d++){
  var sk='bmd-week-'+week+'-day'+d+'-v1';
  var qk='bmd-week-'+week+'-day'+d+'-selection-v1';
  var s=parse(sk)||{},q=parse(qk),r=Object.keys(s).filter(function(id){return s[id]&&s[id].rating}).length;
@@ -31,8 +38,9 @@ for(var d=1;d<=7;d++){
  dayHtml+=row('Dag '+d,(q&&q.ids&&q.ids.length===3?'3 geselecteerd':'geen selectie')+' · '+r+'/3 beoordeeld');
 }
 var learn=parse('bmd-learning-v1')||{},signals=learn.signals||{},signalCount=Object.keys(signals).length;
-var healthy=rated>0;
-document.getElementById('summary').innerHTML='<div class="eye">Status</div><div class="'+(healthy?'ok':'warn')+'">'+(healthy?'Opslag gevonden':'Nog geen W36-beoordelingen gevonden op dit toestel')+'</div>'+row('W36 beoordelingen',rated+'/21')+row('Dagen met vaste selectie',selections+'/7')+row('Voltooide dagen',completeDays+'/7');
+var storageOk=false,probe='bmd-health-probe';try{localStorage.setItem(probe,'1');storageOk=localStorage.getItem(probe)==='1';localStorage.removeItem(probe)}catch(e){}
+var healthy=storageOk&&!!week;
+document.getElementById('summary').innerHTML='<div class="eye">Status</div><div class="'+(healthy?'ok':'warn')+'">'+(healthy?'Lokale opslag bereikbaar':'Opslag of weekcontext niet beschikbaar')+'</div>'+row('Week',week||'—')+row('Beoordelingen',rated+'/21')+row('Dagen met vaste selectie',selections+'/7')+row('Voltooide dagen',completeDays+'/7')+row('localStorage lees/schrijf-test',storageOk?'OK':'MISLUKT');
 document.getElementById('days').innerHTML=dayHtml;
 document.getElementById('learning').innerHTML=row('bmd-learning-v1 signalen',signalCount)+row('Versie',learn.version||'—')+row('Laatst bijgewerkt',learn.updatedAt||'—');
 var all={};for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&k.indexOf('bmd-')===0)all[k]=localStorage.getItem(k)}
