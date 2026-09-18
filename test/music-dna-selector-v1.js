@@ -1,5 +1,5 @@
 (function(){
-  var VERSION=3;
+  var VERSION=4;
 
   function readSignals(){
     if(window.MUSIC_DNA_LEARNING&&typeof window.MUSIC_DNA_LEARNING.read==='function'){
@@ -69,7 +69,7 @@
     function canUse(row){var artist=row.track.identity&&row.track.identity.artist,country=row.track.identity&&row.track.identity.country;if(artist&&artists[artist])return false;if(country&&(countries[country]||0)>=2)return false;return true;}
     function take(row){if(chosen.some(function(x){return x.id===row.id;}))return false;var artist=row.track.identity&&row.track.identity.artist,country=row.track.identity&&row.track.identity.country;chosen.push(row);if(artist)artists[artist]=true;if(country)countries[country]=(countries[country]||0)+1;return true;}
     for(var i=0;i<ranked.length&&chosen.length<safeCount;i++)if(canUse(ranked[i]))take(ranked[i]);
-    var chosenIds={};for(var ci=0;ci<chosen.length;ci++)chosenIds[chosen[ci].id]=true;var pool=ranked.filter(function(row){return !chosenIds[row.id];});while(chosen.length<size&&pool.length){var span=Math.min(pool.length,Math.max(3,Math.round(pool.length*exploration)));var picked=-1;for(var p=0;p<span;p++){if(canUse(pool[p])){picked=p;break;}}if(picked<0){for(var q=span;q<pool.length;q++){if(canUse(pool[q])){picked=q;break;}}}if(picked<0)break;take(pool.splice(picked,1)[0]);}
+    var chosenIds={};for(var ci=0;ci<chosen.length;ci++)chosenIds[chosen[ci].id]=true;var pool=ranked.filter(function(row){return !chosenIds[row.id];});while(chosen.length<size&&pool.length){var span=Math.min(pool.length,Math.max(3,Math.round(pool.length*exploration)));var picked=-1;for(var p=0;p<span;p++){if(canUse(pool[p])){picked=p;break;}}if(picked<0){for(var q=span;q<pool.length;q++){if(canUse(pool[q])){picked=q;break;}}}if(picked<0){/* Country diversity is a preference, never a reason to strand a day. Keep artist uniqueness, relax only the max-2-per-country rule. */for(var r=0;r<pool.length;r++){var ra=pool[r].track.identity&&pool[r].track.identity.artist;if(!ra||!artists[ra]){picked=r;break;}}}if(picked<0)break;take(pool.splice(picked,1)[0]);}
     chosen.reserveMode=mode;return chosen;
   }
   function stressWeek(candidates,options){options=options||{};var days=options.days||7,official=options.officialPerDay||3,reserve=options.reservePerDay==null?2:options.reservePerDay,excluded=(options.excludeIds||[]).slice(),runs=[],ok=true;for(var d=1;d<=days;d++){var need=official+reserve,batch=chooseBatch(candidates,{size:need,excludeIds:excluded,exploration:typeof options.exploration==='number'?options.exploration:0.3});var ids=batch.map(function(x){return x.id;});runs.push({day:d,needed:need,selected:ids.length,ids:ids});if(ids.length!==need){ok=false;break;}excluded=excluded.concat(ids);}return {ok:ok,daysCompleted:runs.length,requested:days*(official+reserve),selected:runs.reduce(function(n,x){return n+x.selected;},0),uniqueSelected:(function(){var s={};runs.forEach(function(x){x.ids.forEach(function(id){s[id]=1;});});return Object.keys(s).length;})(),remaining:Object.keys(candidates||{}).filter(function(id){return excluded.indexOf(id)===-1;}).length,runs:runs};
