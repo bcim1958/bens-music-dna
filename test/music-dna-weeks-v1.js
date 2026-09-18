@@ -20,6 +20,22 @@ const MUSIC_DNA_WEEKS = (() => {
     }
   ];
   function get(key){return weeks.find(w => w.key === key) || null;}
-  function resolve(now){const ready=weeks.filter(w=>w.ready);const active=ready.find(w=>now>=w.start&&now<w.end);if(active)return active;if(now<ready[0].start)return ready[0];return ready.filter(w=>now>=w.start).slice(-1)[0]||ready[0];}
-  return {weeks,get,resolve};
+  function resolve(now){
+    const ready=weeks.filter(w=>w.ready);
+    if(!ready.length)return null;
+    const active=ready.find(w=>now>=w.start&&now<w.end);
+    if(active)return active;
+    if(now<ready[0].start)return ready[0];
+    // Safety rule: never present an expired last-ready week as if it were current.
+    // A future week must be explicitly added and marked ready before it can be served.
+    return null;
+  }
+  function status(now){
+    const ready=weeks.filter(w=>w.ready),active=resolve(now);
+    if(active)return {state:'ready',week:active};
+    if(!ready.length)return {state:'no-ready-weeks',week:null};
+    if(now<ready[0].start)return {state:'before-first-ready-week',week:ready[0]};
+    return {state:'awaiting-next-week',week:null,lastReadyWeek:ready[ready.length-1]};
+  }
+  return {weeks,get,resolve,status};
 })();
