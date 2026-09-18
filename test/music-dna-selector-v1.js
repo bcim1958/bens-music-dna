@@ -67,7 +67,7 @@
     var exploration=typeof options.exploration==='number'?options.exploration:mode.exploration;
     var safeCount=Math.max(1,Math.round(size*(1-exploration)));
     function canUse(row){var artist=row.track.identity&&row.track.identity.artist,country=row.track.identity&&row.track.identity.country;if(artist&&artists[artist])return false;if(country&&(countries[country]||0)>=2)return false;return true;}
-    function take(row){var artist=row.track.identity&&row.track.identity.artist,country=row.track.identity&&row.track.identity.country;chosen.push(row);if(artist)artists[artist]=true;if(country)countries[country]=(countries[country]||0)+1;}
+    function take(row){if(chosen.some(function(x){return x.id===row.id;}))return false;var artist=row.track.identity&&row.track.identity.artist,country=row.track.identity&&row.track.identity.country;chosen.push(row);if(artist)artists[artist]=true;if(country)countries[country]=(countries[country]||0)+1;return true;}
     for(var i=0;i<ranked.length&&chosen.length<safeCount;i++)if(canUse(ranked[i]))take(ranked[i]);
     var chosenIds={};for(var ci=0;ci<chosen.length;ci++)chosenIds[chosen[ci].id]=true;var pool=ranked.filter(function(row){return !chosenIds[row.id];});while(chosen.length<size&&pool.length){var span=Math.min(pool.length,Math.max(3,Math.round(pool.length*exploration)));var picked=-1;for(var p=0;p<span;p++){if(canUse(pool[p])){picked=p;break;}}if(picked<0){for(var q=span;q<pool.length;q++){if(canUse(pool[q])){picked=q;break;}}}if(picked<0)break;take(pool.splice(picked,1)[0]);}
     chosen.reserveMode=mode;return chosen;
