@@ -99,3 +99,29 @@ Geen DNA-LAB-functionaliteit in 1.0 forceren als dit de consolidatie, betrouwbaa
 
 En voor het Lab:
 > Een experiment mag verrassen; de data erachter mag niet doen alsof zij meer bewijst dan werkelijk is gemeten.
+
+
+## DNA-LAB ↔ DNA Express — redactionele wisselwerking
+Het DNA-LAB kan naast appfunctie ook een **journalistieke bron voor DNA Express** worden. DNA Express wordt daarbij nadrukkelijk geen technisch verslag of promotiekanaal voor de app. Het Lab levert de aanleiding, hypothese of ontdekking; DNA Express maakt daarvan een zelfstandig, echt muziekverhaal.
+
+Werkende redactionele keten:
+
+**MUSIC DNA ONTDEKT → DNA-LAB EXPERIMENTEERT → DNA EXPRESS VERTELT → SPOTIFY LAAT HOREN**
+
+Mogelijke terugkerende itemvormen, voorlopig als ideeënbank en niet als bevroren rubrieken:
+- **UIT HET DNA-LAB** — een muzikale hypothese uit een petrischaal uitgewerkt tot magazine-item;
+- **DE MUTATIE** — volgen hoe een herkenbaar muzikaal kenmerk door artiesten, periodes of stromingen verandert;
+- **VERWANTSCHAPSONDERZOEK** — onderzoeken waarom twee artiesten/stromingen muzikaal verwant zijn of juist slechts buren lijken;
+- **HET RECESSIEVE GEN** — een minder zichtbare smaak- of muziekeigenschap die onverwacht een verhaal blijkt te dragen;
+- **DNA-SEQUENTIE** — begrijpelijk laten zien welke muzikale kenmerken samen een relatie verklaren, zonder onnodige muzikantentechniek;
+- **ONVERWACHTE MATCH** — twee ogenschijnlijk verschillende muzikale werelden onderzoeken die in één luisterroute toch overtuigend samengaan.
+
+Een DNA Express-item kan waar zinvol eindigen met een natuurlijke luisterdeur naar het bijbehorende experiment / de DNA Special in het Lab, bijvoorbeeld **OPEN DE PETRISCHAAL · BELUISTER HET EXPERIMENT**. Definitieve copy en interactie worden later ontworpen.
+
+### Redactionele grens
+DNA Express schrijft primair over **muziek**, niet over de werking van Music DNA. De lezer moet een inhoudelijk volwaardig muziekitem krijgen, ook wanneer het DNA-LAB de aanleiding vormde. Vermijd de toon “kijk eens wat onze app kan”.
+
+### Mogelijke voorbeeldhoek
+Een item kan bijvoorbeeld onderzoeken waarom punkenergie en vroege/NWOBHM-metal in een specifieke selectie muzikaal overtuigend op elkaar aansluiten. Het verhaal moet dan worden onderbouwd met echte muzikale/historische bronnen volgens de DNA Express-productiestraat; de metafoor of een overtuigende playlist is nooit zelf bewijs.
+
+Deze wisselwerking is een post-1.0 ontwerp- en redactierichting en verandert de huidige Music DNA 1.0-scope niet.
