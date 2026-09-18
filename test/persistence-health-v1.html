@@ -18,7 +18,7 @@
 <section class="panel"><div class="eye">Veilige kopie</div><div class="muted small">Maak desgewenst een JSON-kopie van alle Music-DNA-localStorage-sleutels op dit toestel.</div><button class="btn" id="export">Exporteer Music DNA-opslag</button></section>
 <section class="panel"><div class="eye">Technisch</div><div class="mono" id="keys"></div></section>
 </main>
-<script src="music-dna-weeks-v1.js?v=20260918.production1"></script>
+<script src="music-dna-weeks-v1.js?v=20260918.production1"></script><script src="music-dna-storage-v1.js?v=20260918.storage2"></script>
 <script>
 (function(){
 function parse(k){try{var r=localStorage.getItem(k);return r?JSON.parse(r):null}catch(e){return null}}
@@ -38,9 +38,9 @@ if(week)for(var d=1;d<=7;d++){
  dayHtml+=row('Dag '+d,(q&&q.ids&&q.ids.length===3?'3 geselecteerd':'geen selectie')+' · '+r+'/3 beoordeeld');
 }
 var learn=parse('bmd-learning-v1')||{},signals=learn.signals||{},signalCount=Object.keys(signals).length;
-var storageOk=false,probe='bmd-health-probe';try{localStorage.setItem(probe,'1');storageOk=localStorage.getItem(probe)==='1';localStorage.removeItem(probe)}catch(e){}
+var sr=window.MUSIC_DNA_STORAGE?MUSIC_DNA_STORAGE.check():{ok:false},storageOk=!!sr.ok;
 var healthy=storageOk&&!!week;
-document.getElementById('summary').innerHTML='<div class="eye">Status</div><div class="'+(healthy?'ok':'warn')+'">'+(healthy?'Lokale opslag bereikbaar':'Opslag of weekcontext niet beschikbaar')+'</div>'+row('Week',week||'—')+row('Beoordelingen',rated+'/21')+row('Dagen met vaste selectie',selections+'/7')+row('Voltooide dagen',completeDays+'/7')+row('localStorage lees/schrijf-test',storageOk?'OK':'MISLUKT');
+document.getElementById('summary').innerHTML='<div class="eye">Status</div><div class="'+(healthy?'ok':'warn')+'">'+(healthy?'Lokale opslag bereikbaar':'Opslag of weekcontext niet beschikbaar')+'</div>'+row('Week',week||'—')+row('Beoordelingen',rated+'/21')+row('Dagen met vaste selectie',selections+'/7')+row('Voltooide dagen',completeDays+'/7')+row('localStorage lees/schrijf-test',storageOk?'OK':'MISLUKT')+row('Zelfde opslag-origin',sr.sameOrigin===false?'MISLUKT':'OK')+row('Music-DNA sleutels',sr.keyCount==null?'—':sr.keyCount)+row('Opslagvingerafdruk',sr.digest||'—');
 document.getElementById('days').innerHTML=dayHtml;
 document.getElementById('learning').innerHTML=row('bmd-learning-v1 signalen',signalCount)+row('Versie',learn.version||'—')+row('Laatst bijgewerkt',learn.updatedAt||'—');
 var all={};for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&k.indexOf('bmd-')===0)all[k]=localStorage.getItem(k)}
