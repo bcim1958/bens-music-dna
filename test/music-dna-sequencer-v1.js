@@ -1,5 +1,5 @@
 (function(){
-  var VERSION=1;
+  var VERSION=2;
   function vals(x){return (x||[]).map(function(v){return String(v).toLowerCase()})}
   function family(t){
     var a=vals((t.styles||[]).concat(t.dnaRoute||[])).join(' '),f=[];
@@ -31,7 +31,7 @@
       for(var i=0;i<remaining.length;i++){
         var r=remaining[i],score=transition(ordered[ordered.length-1],r)-Math.abs(energy(r)-target)*.8;
         if(pos===rows.length-1)score+=quality(r)*1.3+energy(r)*.7;
-        if(pos>1&&family(ordered[pos-1])[0]&&family(ordered[pos-2])[0]&&family(r)[0]===family(ordered[pos-1])[0]&&family(r)[0]===family(ordered[pos-2])[0])score-=2;
+        if(pos>2){var f1=family(ordered[pos-1]),f2=family(ordered[pos-2]),f3=family(ordered[pos-3]),fr=family(r);if(fr.length&&overlap(fr,f1)&&overlap(fr,f2)&&overlap(fr,f3))score-=.65} if(pos>0&&pos<rows.length-1){var prevFam=family(ordered[pos-1]),curFam=family(r);if(overlap(prevFam,curFam))score+=.55}
         if(score>bestScore){bestScore=score;best=i}
       }
       ordered.push(remaining.splice(best,1)[0]);
