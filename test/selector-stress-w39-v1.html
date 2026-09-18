@@ -1,0 +1,10 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><title>W39 selector stress</title></head><body><pre id="out">run</pre>
+<script src="music-dna-candidates-w39-v1.js?v=20260918b"></script>
+<script>
+window.MUSIC_DNA_LEARNING={read:function(){return {signals:{}}}};
+window.MUSIC_DNA_POSITIVE_BANK={selectorMode:function(){return {mode:'rebuild',exploration:.3,inventory:{fresh:0}}}};
+</script>
+<script src="music-dna-selector-v1.js?v=20260918-stress1"></script>
+<script>
+(function(){var r=MUSIC_DNA_SELECTOR.stressWeek(MUSIC_DNA_W39_CANDIDATES.tracks,{days:7,officialPerDay:3,reservePerDay:2,exploration:.3});document.getElementById('out').textContent=JSON.stringify(r,null,2);window.W39_STRESS_RESULT=r;})();
+</script></body></html>
