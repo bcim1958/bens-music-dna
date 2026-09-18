@@ -72,5 +72,7 @@
     var pool=ranked.slice(safeCount);while(chosen.length<size&&pool.length){var span=Math.min(pool.length,Math.max(3,Math.round(pool.length*exploration)));var picked=-1;for(var p=0;p<span;p++){if(canUse(pool[p])){picked=p;break;}}if(picked<0){for(var q=span;q<pool.length;q++){if(canUse(pool[q])){picked=q;break;}}}if(picked<0)break;take(pool.splice(picked,1)[0]);}
     chosen.reserveMode=mode;return chosen;
   }
-  window.MUSIC_DNA_SELECTOR={version:VERSION,buildProfile:buildProfile,scoreCandidate:scoreCandidate,rank:rank,chooseBatch:chooseBatch,reserveMode:reserveMode};
+  function stressWeek(candidates,options){options=options||{};var days=options.days||7,official=options.officialPerDay||3,reserve=options.reservePerDay==null?2:options.reservePerDay,excluded=(options.excludeIds||[]).slice(),runs=[],ok=true;for(var d=1;d<=days;d++){var need=official+reserve,batch=chooseBatch(candidates,{size:need,excludeIds:excluded,exploration:typeof options.exploration==='number'?options.exploration:0.3});var ids=batch.map(function(x){return x.id;});runs.push({day:d,needed:need,selected:ids.length,ids:ids});if(ids.length!==need){ok=false;break;}excluded=excluded.concat(ids);}return {ok:ok,daysCompleted:runs.length,requested:days*(official+reserve),selected:runs.reduce(function(n,x){return n+x.selected;},0),uniqueSelected:(function(){var s={};runs.forEach(function(x){x.ids.forEach(function(id){s[id]=1;});});return Object.keys(s).length;})(),remaining:Object.keys(candidates||{}).filter(function(id){return excluded.indexOf(id)===-1;}).length,runs:runs};
+  }
+  window.MUSIC_DNA_SELECTOR={version:VERSION,buildProfile:buildProfile,scoreCandidate:scoreCandidate,rank:rank,chooseBatch:chooseBatch,reserveMode:reserveMode,stressWeek:stressWeek};
 })();
