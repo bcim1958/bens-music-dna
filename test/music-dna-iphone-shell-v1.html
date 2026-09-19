@@ -141,10 +141,10 @@
    badge.setAttribute('aria-label','Visuele preview zonder productiedata');
    badge.style.cssText='position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 58px);transform:translateX(-50%);z-index:99;background:#d8b96b;color:#09091b;padding:6px 10px;border-radius:999px;font:800 9px -apple-system,sans-serif;letter-spacing:.8px;white-space:nowrap';
    document.body.appendChild(badge);
-   setTimeout(function(){
+   function renderPreview(){
     var api=window.MUSIC_DNA_IPHONE_PREVIEW;
     if(!window.MUSIC_DNA_IPHONE_APP_READY||!api){
-      if((window.MUSIC_DNA_PREVIEW_RETRIES=(window.MUSIC_DNA_PREVIEW_RETRIES||0)+1)<40){setTimeout(arguments.callee,100)}
+      if((window.MUSIC_DNA_PREVIEW_RETRIES=(window.MUSIC_DNA_PREVIEW_RETRIES||0)+1)<40){setTimeout(renderPreview,100)}
       return
     }
     if(previewScreen==='world'){api.world();return}
@@ -163,7 +163,8 @@
     root.innerHTML=j.tracks.slice(0,3).map(previewCard).join('');
     status.querySelector('b').textContent='Voorraadmotor';
     status.querySelector('span').textContent='In preview worden geen actuele voorraadcijfers getoond.';
-   },250);
+   }
+   setTimeout(renderPreview,250);
   });
  }
 })();
