@@ -1,7 +1,7 @@
 # Music DNA iPhone — candidate status 2026-09-19
 
 ## Decision
-The current iPhone work is a **visual/functional candidate**, not a production replacement. The existing production page remains the fallback and the new shell does not create daily selections or Saturday gifts.
+The current iPhone work is a **visually approved, production-connected candidate**, not yet a production replacement. The existing production page remains the fallback. The integrated shell reads existing production selections and ratings, but deliberately does not create daily selections or Saturday gifts.
 
 ## Closed for this candidate
 - Standalone four-screen visual preview: Discover, Detail, My Music World, Gemstone Museum.
@@ -26,6 +26,9 @@ The current iPhone work is a **visual/functional candidate**, not a production r
 - Saturday gift construction remains in the existing controlled Saturday route.
 - No automated browser-gate PASS has been claimed in this environment.
 - The four-screen candidate has been manually rendered and visually inspected on the user's real iPhone on 2026-09-19; Discover, Detail/Muziekmeter, My Music World and Gemstone Museum were all reviewed. The explicit Detail → Discover return path was added after that inspection exposed the navigation ergonomics.
+
+## Current stop point
+All source-level work that can be completed safely without executing a real browser has been completed. Do not add further production behavior merely to make a test pass. The remaining blockers are runtime verification only.
 
 ## Promotion gate
 Do not replace the current production page until:
