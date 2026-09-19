@@ -1,0 +1,29 @@
+<!doctype html><meta charset="utf-8"><title>iPhone rating write gate</title><pre id="out"></pre>
+<script>
+const mem={};const ls={getItem:k=>Object.prototype.hasOwnProperty.call(mem,k)?mem[k]:null,setItem:(k,v)=>{mem[k]=String(v)},removeItem:k=>delete mem[k],key:i=>Object.keys(mem)[i]||null,get length(){return Object.keys(mem).length}};Object.defineProperty(window,'localStorage',{value:ls});
+window.MUSIC_DNA_DB={tracks:{'2026-W39-TEST-A':{identity:{artist:'Test Artist',title:'Test Track',country:'NL',releaseYear:2026,albumOrRelease:'Test'},spotifyUrl:'https://open.spotify.com/track/TEST123',taxonomy:{allMusicStyles:['Hard Rock']},discoverDNA:{dnaRoute:['hard rock'],role:'anker'}}}};
+window.MUSIC_DNA_DELIVERY_REGISTRY={tracks:{}};
+</script>
+<script src="music-dna-rating-ledger-v1.js"></script><script src="music-dna-learning-v1.js"></script><script>
+window.MUSIC_DNA_POSITIVE_BANK={sync:function(){this.synced=(this.synced||0)+1},synced:0};
+</script><script src="music-dna-rating-write-v1.js"></script>
+<script>
+(function(){
+ var R=MUSIC_DNA_RATING_WRITE,res=[];
+ function ok(n,p,d){res.push({name:n,pass:!!p,detail:d||null})}
+ var id='2026-W39-TEST-A';
+ var a=R.writeRating({weekKey:'2026-W39',day:1,trackId:id,rating:'raak',ratedAt:'2026-09-20T08:00:00.000Z',reserve:false});
+ var st=JSON.parse(localStorage.getItem('bmd-week-2026-W39-day1-v1')),led=MUSIC_DNA_RATING_LEDGER.read(),learn=MUSIC_DNA_LEARNING.read();
+ ok('official state written',a.ok&&st[id].rating==='raak'&&st[id].meter===true);
+ ok('ledger appended',led.events.length===1&&led.latest[id].rating==='raak'&&led.latest[id].meter===true);
+ ok('learning synced',learn.signals[id]&&learn.signals[id].rating==='raak');
+ ok('positive bank synced',MUSIC_DNA_POSITIVE_BANK.synced>0);
+ var b=R.writeRating({weekKey:'2026-W39',day:1,trackId:id,rating:'goed',ratedAt:'2026-09-20T08:05:00.000Z',reserve:true});
+ var rst=JSON.parse(localStorage.getItem('bmd-week-2026-W39-day1-reserve-v1')),cnt=MUSIC_DNA_RATING_LEDGER.counts('2026-W39');
+ ok('reserve state separated',b.ok&&rst[id].rating==='goed'&&rst[id].meter===false&&rst[id].slot==='reserve');
+ ok('rerating remains append-only',MUSIC_DNA_RATING_LEDGER.read().events.length===2);
+ ok('latest ledger value wins',MUSIC_DNA_RATING_LEDGER.read().latest[id].rating==='goed');
+ ok('ledger records reserve latest',cnt.reserve===1&&cnt.official===0&&cnt.goed===1,cnt);
+ var pass=res.every(x=>x.pass);out.textContent=JSON.stringify({suite:'iphone-rating-write-gate',pass:pass,results:res},null,2);document.title=(pass?'PASS':'FAIL')+' · iPhone rating write';
+})();
+</script>
