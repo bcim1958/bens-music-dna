@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-09-19",
+  "source": "browser-localStorage-readonly report supplied by user",
+  "evidenceNote": "Broad audit returned the same 33 unique rating IDs for each requested week because legacy bmd-day-v13 keys are not week-scoped. Candidate IDs themselves prove 30 belong to W35 and 3 to W36. No W37 or W38 per-track rating IDs were recovered.",
+  "ratings": [
+    {
+      "id": "2026-W35-13",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "id": "2026-W35-07",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-14",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "id": "2026-W35-12",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-19",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-10",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-36",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-25",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-38",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W36-19",
+      "rating": "NIET"
+    },
+    {
+      "id": "2026-W36-10",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "id": "2026-W36-13",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "id": "2026-W35-04",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-05",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-06",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-01",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-02",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-03",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-22",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-27",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "id": "2026-W35-35",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-09",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-15",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-08",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-20",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-21",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-11",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-16",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-18",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-17",
+      "rating": "RAAK"
+    },
+    {
+      "id": "2026-W35-24",
+      "rating": "NIET"
+    },
+    {
+      "id": "2026-W35-39",
+      "rating": "GOED"
+    },
+    {
+      "id": "2026-W35-37",
+      "rating": "TERUGKOMEN"
+    }
+  ],
+  "summary": {
+    "total": 33,
+    "W35": 30,
+    "W36": 3,
+    "W37": 0,
+    "W38": 0
+  }
+}
