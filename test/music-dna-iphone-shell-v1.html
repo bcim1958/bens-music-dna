@@ -33,11 +33,13 @@
 <script src="music-dna-data-v1.3.js"></script><script src="music-dna-museum-v1.js"></script><script src="music-dna-delivery-registry-v1.js?v=20260918-production4"></script><script src="music-dna-weeks-v1.js"></script>
 <script>
 (async function(){
- var CFG=MUSIC_DNA_WEEKS.resolve(new Date()),WEEK=CFG&&CFG.key,CAND=null,root=document.getElementById('tracks');
+ var NOW=new Date(),CFG=MUSIC_DNA_WEEKS.resolve(NOW),WEEK=CFG&&CFG.key,CAND=null,root=document.getElementById('tracks');
+ var DATEKEY=NOW.getFullYear()+'-'+String(NOW.getMonth()+1).padStart(2,'0')+'-'+String(NOW.getDate()).padStart(2,'0'),EXPECTED_WEEK={'2026-09-19':'2026-W38','2026-09-20':'2026-W39'}[DATEKEY]||null;
+ if(EXPECTED_WEEK&&WEEK!==EXPECTED_WEEK){CFG=MUSIC_DNA_WEEKS.get(EXPECTED_WEEK);WEEK=CFG&&CFG.key;}
  function read(k,f){try{var x=localStorage.getItem(k);return x?JSON.parse(x):f}catch(e){return f}}
  function load(src){return new Promise(function(ok,no){var s=document.createElement('script');s.src=src+(src.indexOf('?')>=0?'&':'?')+'v=iphone1';s.onload=ok;s.onerror=no;document.head.appendChild(s)})}
  function key(d,reserve,selection){return 'bmd-week-'+WEEK+'-day'+d+(reserve?'-reserve':'')+(selection?'-selection':'')+'-v1'}
- function calendarDay(){var n=new Date();if(n<CFG.start)return 0;if(n>=CFG.end)return 7;return Math.min(7,Math.floor((n-CFG.start)/86400000)+1)}
+ function calendarDay(){var n=NOW;if(n<CFG.start)return 0;if(n>=CFG.end)return 7;return Math.min(7,Math.floor((n-CFG.start)/86400000)+1)}
  function track(id){return CAND&&CAND.tracks&&CAND.tracks[id]||(window.MUSIC_DNA_DB&&MUSIC_DNA_DB.tracks&&MUSIC_DNA_DB.tracks[id])}
  function esc(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
  function card(id,i,reserve,st){var t=track(id);if(!t)return '';var r=st[id]&&st[id].rating,styles=t.taxonomy&&t.taxonomy.allMusicStyles||[];return '<section class="track'+(reserve?' reserve':'')+'" data-id="'+esc(id)+'"><div class="slot">'+(reserve?'Extra · voorraadkans':('0'+(i+1)).slice(-2)+' · Muziekmeter')+(r?' · ✓':'')+'</div><h2>'+esc(t.identity.title)+'</h2><div class="artist">'+esc(t.identity.artist)+'</div><div class="meta">'+esc(t.identity.country)+' · '+esc(t.identity.releaseYear)+' · '+esc(t.identity.albumOrRelease)+'</div><div class="tags">'+styles.slice(0,2).map(function(x){return '<span class="tag">'+esc(x)+'</span>'}).join('')+'</div>'+(reserve?'<div class="reserveNote">Buiten de Muziekmeter · RAAK/GOED kan de zaterdagvoorraad aanvullen.</div>':'')+'<div class="trackFoot"><span class="pulse">♪</span><span>Luister & beoordeel</span><b>→</b></div></section>'}
@@ -153,6 +155,7 @@
 window.MUSIC_DNA_IPHONE_UI_GATE=function(){
  var out=[],push=function(name,ok){out.push({name:name,ok:!!ok})},nav=document.querySelector('.nav'),app=document.querySelector('.app'),nr=nav&&nav.getBoundingClientRect(),ar=app&&app.getBoundingClientRect();
  push('mobile viewport declared',!!document.querySelector('meta[name="viewport"]'));
+ push('calendar resolves expected transition week',!EXPECTED_WEEK||WEEK===EXPECTED_WEEK);
  push('shell stays within iPhone width',!!ar&&ar.width<=430.5);
  push('navigation is horizontally safe',!!nr&&nr.left>=ar.left-.5&&nr.right<=ar.right+.5&&nr.height>0);
  Array.prototype.forEach.call(document.querySelectorAll('button,.nav span,.nav strong'),function(el){var r=el.getBoundingClientRect();push('control >=40px: '+((el.textContent||el.id||el.tagName).trim().slice(0,24)),r.height>=40&&r.width>=40)});
