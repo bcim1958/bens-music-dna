@@ -1,0 +1,18 @@
+(function(){
+  function parse(raw,f){try{return raw?JSON.parse(raw):f}catch(e){return f}}
+  function stateKey(week,day,reserve){return 'bmd-week-'+week+'-day'+day+(reserve?'-reserve':'')+'-v1'}
+  function writeRating(x){
+    if(!x||!x.weekKey||!x.day||!x.trackId||!x.rating)return {ok:false,reason:'missing-input'};
+    if(!window.MUSIC_DNA_RATING_LEDGER||!window.MUSIC_DNA_LEARNING||!window.MUSIC_DNA_POSITIVE_BANK)return {ok:false,reason:'dependencies-missing'};
+    var key=stateKey(x.weekKey,x.day,!!x.reserve),st=parse(localStorage.getItem(key),{}),before=st[x.trackId]||null,at=x.ratedAt||new Date().toISOString();
+    st[x.trackId]={rating:x.rating,ratedAt:at,meter:!x.reserve,slot:x.reserve?'reserve':null};
+    localStorage.setItem(key,JSON.stringify(st));
+    var ledgerOk=MUSIC_DNA_RATING_LEDGER.record({trackId:x.trackId,weekKey:x.weekKey,rating:x.rating,ratedAt:at,source:x.reserve?'reserve':'official',meter:!x.reserve,slot:x.reserve?'reserve':null});
+    if(!ledgerOk){if(before)st[x.trackId]=before;else delete st[x.trackId];localStorage.setItem(key,JSON.stringify(st));return {ok:false,reason:'ledger-rejected'};}
+    MUSIC_DNA_LEARNING.resyncStoredRatings();MUSIC_DNA_POSITIVE_BANK.sync();
+    var latest=MUSIC_DNA_RATING_LEDGER.read().latest[x.trackId];
+    if(!latest||latest.rating!==({terugkomen:'twijfel',niet:'nee'}[x.rating]||x.rating))return {ok:false,reason:'ledger-verify-failed'};
+    return {ok:true,key:key,ratedAt:at,source:x.reserve?'reserve':'official'};
+  }
+  window.MUSIC_DNA_RATING_WRITE={version:1,writeRating:writeRating,stateKey:stateKey};
+})();
