@@ -24,6 +24,14 @@ window.MUSIC_DNA_POSITIVE_BANK={sync:function(){this.synced=(this.synced||0)+1},
  ok('rerating remains append-only',MUSIC_DNA_RATING_LEDGER.read().events.length===2);
  ok('latest ledger value wins',MUSIC_DNA_RATING_LEDGER.read().latest[id].rating==='goed');
  ok('ledger records reserve latest',cnt.reserve===1&&cnt.official===0&&cnt.goed===1,cnt);
+ var beforeInvalid=JSON.stringify(mem),beforeEvents=MUSIC_DNA_RATING_LEDGER.read().events.length,beforeSync=MUSIC_DNA_POSITIVE_BANK.synced;
+ var badRating=R.writeRating({weekKey:'2026-W39',day:1,trackId:id,rating:'geweldig',reserve:false});
+ ok('invalid rating rejected before mutation',badRating.ok===false&&badRating.reason==='invalid-rating'&&JSON.stringify(mem)===beforeInvalid&&MUSIC_DNA_RATING_LEDGER.read().events.length===beforeEvents&&MUSIC_DNA_POSITIVE_BANK.synced===beforeSync);
+ var badDay=R.writeRating({weekKey:'2026-W39',day:8,trackId:id,rating:'goed',reserve:false});
+ ok('invalid day rejected before mutation',badDay.ok===false&&badDay.reason==='invalid-scope'&&JSON.stringify(mem)===beforeInvalid&&MUSIC_DNA_RATING_LEDGER.read().events.length===beforeEvents&&MUSIC_DNA_POSITIVE_BANK.synced===beforeSync);
+ var badWeek=R.writeRating({weekKey:'W39',day:1,trackId:id,rating:'goed',reserve:false});
+ ok('invalid week rejected before mutation',badWeek.ok===false&&badWeek.reason==='invalid-scope'&&JSON.stringify(mem)===beforeInvalid&&MUSIC_DNA_RATING_LEDGER.read().events.length===beforeEvents&&MUSIC_DNA_POSITIVE_BANK.synced===beforeSync);
+ ok('rating writer v2 loaded',R.version===2);
  var pass=res.every(x=>x.pass);out.textContent=JSON.stringify({suite:'iphone-rating-write-gate',pass:pass,results:res},null,2);document.title=(pass?'PASS':'FAIL')+' · iPhone rating write';
 })();
 </script>
