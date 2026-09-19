@@ -164,6 +164,8 @@ window.MUSIC_DNA_IPHONE_UI_GATE=function(){
  push('discovery root exists',!!document.getElementById('tracks'));
  push('week progress exists',!!document.getElementById('weekProgress'));
  push('stock status exists',!!document.querySelector('.status'));
+ var learnForStock=window.MUSIC_DNA_LEARNING&&MUSIC_DNA_LEARNING.read?MUSIC_DNA_LEARNING.read():null,stockSignals=learnForStock&&learnForStock.signals?Object.keys(learnForStock.signals).length:0,stockTitle=(document.getElementById('stockTitle')||{}).textContent||'',stockText=(document.getElementById('stockText')||{}).textContent||'';
+ push('missing local learning is not labeled critical',stockSignals>0||(/LOKALE STATUS ONBEKEND/.test(stockTitle)&&/niet als echte voorraadstand/.test(stockText)));
  push('rating writer v5 loaded',!!(window.MUSIC_DNA_RATING_WRITE&&MUSIC_DNA_RATING_WRITE.version===5));
  push('positive bank v14 loaded',!!(window.MUSIC_DNA_POSITIVE_BANK&&MUSIC_DNA_POSITIVE_BANK.version===14));
  push('Saturday handoff passes deterministic completion semantics',typeof window.MUSIC_DNA_IPHONE_SATURDAY_SEMANTICS_TEST==='function'&&window.MUSIC_DNA_IPHONE_SATURDAY_SEMANTICS_TEST());
