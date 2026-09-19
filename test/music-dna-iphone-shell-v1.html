@@ -12,12 +12,42 @@
 .nav{display:flex;justify-content:space-around;margin-top:27px;padding-top:16px;border-top:1px solid rgba(255,255,255,.07);font-size:10px;color:#858492;text-transform:uppercase;letter-spacing:.7px}.nav strong{color:var(--gold)}
 </style></head><body><main class="app">
 <header class="top"><div><div class="brand">Ben's Music DNA</div><div class="sub">Ontdek · luister · voel</div></div><div class="instrument"><div class="odo">MUSIC DNA</div><div class="lamp">● SYSTEEM GEREED</div></div></header>
-<section class="hero"><div class="kicker">Ontdek-DNA · dagelijkse reis</div><h1>Jouw ontdekkingen</h1><p>Drie officiële luisterkansen vormen vandaag je Muziekmeter. De muziek staat voorop; de machine waakt op de achtergrond.</p></section>
-<div class="progress"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
-<section class="track"><div class="slot">01 · Muziekmeter</div><h2>Tracktitel</h2><div class="artist">Artiest</div><div class="meta">Land · jaar · album</div><div class="tags"><span class="tag">Hard Rock</span><span class="tag">Arena Rock</span></div></section>
-<section class="track"><div class="slot">02 · Muziekmeter</div><h2>Tracktitel</h2><div class="artist">Artiest</div><div class="meta">Land · jaar · album</div><div class="tags"><span class="tag">Progressive Rock</span></div></section>
-<section class="track"><div class="slot">03 · Muziekmeter</div><h2>Tracktitel</h2><div class="artist">Artiest</div><div class="meta">Land · jaar · album</div><div class="tags"><span class="tag">Heavy Metal</span><span class="tag">Melodic</span></div></section>
-<section class="track reserve"><div class="slot">Extra · voorraadkans</div><h2>Tracktitel</h2><div class="artist">Artiest</div><div class="meta">Land · jaar · album</div><div class="reserveNote">Buiten de Muziekmeter · helpt alleen de zaterdagvoorraad wanneer jij RAAK of GOED kiest.</div></section>
-<section class="status"><div class="gauge">⛽</div><div><b>Voorraadmotor</b><span>Werkelijke voorraadstatus verschijnt hier uit de Music-DNA-data.</span></div></section>
+<section class="hero"><div class="kicker" id="weekLabel">Ontdek-DNA · dagelijkse reis</div><h1 id="heroTitle">Jouw ontdekkingen</h1><p>Drie officiële luisterkansen vormen vandaag je Muziekmeter. De muziek staat voorop; de machine waakt op de achtergrond.</p></section>
+<div class="progress" id="weekProgress"></div>
+<div id="tracks"></div>
+<section class="status"><div class="gauge">⛽</div><div><b id="stockTitle">Voorraadmotor</b><span id="stockText">Werkelijke voorraadstatus wordt geladen.</span></div></section>
 <nav class="nav"><strong>Ontdek</strong><span>Mijn wereld</span><span>Edelstenen</span></nav>
-</main></body></html>
+</main>
+<script src="music-dna-data-v1.3.js"></script><script src="music-dna-delivery-registry-v1.js?v=20260918-production4"></script><script src="music-dna-weeks-v1.js"></script>
+<script>
+(async function(){
+ var CFG=MUSIC_DNA_WEEKS.resolve(new Date()),WEEK=CFG&&CFG.key,CAND=null,root=document.getElementById('tracks');
+ function read(k,f){try{var x=localStorage.getItem(k);return x?JSON.parse(x):f}catch(e){return f}}
+ function load(src){return new Promise(function(ok,no){var s=document.createElement('script');s.src=src+(src.indexOf('?')>=0?'&':'?')+'v=iphone1';s.onload=ok;s.onerror=no;document.head.appendChild(s)})}
+ function key(d,reserve,selection){return 'bmd-week-'+WEEK+'-day'+d+(reserve?'-reserve':'')+(selection?'-selection':'')+'-v1'}
+ function calendarDay(){var n=new Date();if(n<CFG.start)return 0;if(n>=CFG.end)return 7;return Math.min(7,Math.floor((n-CFG.start)/86400000)+1)}
+ function track(id){return CAND&&CAND.tracks&&CAND.tracks[id]||(window.MUSIC_DNA_DB&&MUSIC_DNA_DB.tracks&&MUSIC_DNA_DB.tracks[id])}
+ function esc(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+ function card(id,i,reserve,st){var t=track(id);if(!t)return '';var r=st[id]&&st[id].rating,styles=t.taxonomy&&t.taxonomy.allMusicStyles||[];return '<section class="track'+(reserve?' reserve':'')+'" data-id="'+esc(id)+'"><div class="slot">'+(reserve?'Extra · voorraadkans':('0'+(i+1)).slice(-2)+' · Muziekmeter')+(r?' · ✓':'')+'</div><h2>'+esc(t.identity.title)+'</h2><div class="artist">'+esc(t.identity.artist)+'</div><div class="meta">'+esc(t.identity.country)+' · '+esc(t.identity.releaseYear)+' · '+esc(t.identity.albumOrRelease)+'</div><div class="tags">'+styles.slice(0,2).map(function(x){return '<span class="tag">'+esc(x)+'</span>'}).join('')+'</div>'+(reserve?'<div class="reserveNote">Buiten de Muziekmeter · RAAK/GOED kan de zaterdagvoorraad aanvullen.</div>':'')+'</section>'}
+ function renderProgress(day){var h='';for(var i=1;i<=7;i++)h+='<i class="'+(i<=day?'on':'')+'"></i>';document.getElementById('weekProgress').innerHTML=h}
+ function renderExisting(){
+   var d=calendarDay();renderProgress(d);document.getElementById('weekLabel').textContent='Ontdek-DNA · '+CFG.display+' · dag '+d+' van 7';
+   if(d===0){document.getElementById('heroTitle').textContent='Klaar voor zondag';root.innerHTML='';return}
+   var q=read(key(d,false,true),null),rq=read(key(d,true,true),null),st=read(key(d,false,false),{}),rst=read(key(d,true,false),{});
+   if(!q||!Array.isArray(q.ids)||q.ids.length!==3){document.getElementById('heroTitle').textContent='Nog geen set geopend';root.innerHTML='<section class="track"><div class="slot">Veilige kijkmodus</div><h2>Open eerst de huidige productie-app</h2><div class="meta">Deze nieuwe vormgeving leest bestaande W39-data maar maakt in deze fase zelf nog geen selectie of beoordeling aan.</div></section>';return}
+   var ids=q.ids,rids=rq?(rq.ids||(rq.id?[rq.id]:[])):[];
+   root.innerHTML=ids.map(function(id,i){return card(id,i,false,st)}).join('')+rids.map(function(id,i){return card(id,i,true,rst)}).join('');
+   document.getElementById('heroTitle').textContent='Jouw '+(ids.length+rids.length)+' ontdekkingen';
+ }
+ try{
+   if(!CFG)throw new Error('Geen actieve productieweek');
+   var fs=CFG.candidateFiles||[CFG.candidateFile];for(var i=0;i<fs.length;i++)await load(fs[i]);CAND=window[CFG.candidateGlobal];
+   await load('music-dna-learning-v1.js');await load('music-dna-positive-bank-v1.js');
+   renderExisting();
+   var inv=MUSIC_DNA_POSITIVE_BANK.inventory(WEEK),labels={'op-peil':'OP PEIL','bijtanken':'BIJTANKEN','bijna-leeg':'BIJNA LEEG','kritiek':'KRITIEK'};
+   document.getElementById('stockTitle').textContent='Voorraadmotor · '+labels[inv.status];
+   document.getElementById('stockText').textContent=inv.fresh+' / '+inv.targetReserve+' positieve reservetracks · '+inv.safeSaturdayCoverage.toFixed(1)+' zaterdag(en) buffer';
+   document.querySelector('.lamp').textContent='● '+(inv.status==='op-peil'?'SYSTEEM GEREED':labels[inv.status]);
+ }catch(e){document.getElementById('heroTitle').textContent='Veilige kijkmodus';root.innerHTML='<section class="track"><div class="slot">Niet gewijzigd</div><h2>De app-data kon niet veilig worden gelezen.</h2></section>'}
+})();
+</script></body></html>
