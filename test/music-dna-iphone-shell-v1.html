@@ -139,6 +139,7 @@ window.MUSIC_DNA_IPHONE_UI_GATE=function(){
  push('discovery root exists',!!document.getElementById('tracks'));
  push('week progress exists',!!document.getElementById('weekProgress'));
  push('stock status exists',!!document.querySelector('.status'));
+ push('Saturday handoff uses official-week + Saturday-reserve semantics',typeof allOfficialComplete==='function'&&typeof saturdayReady==='function'&&/allOfficialComplete\(\)\s*&&\s*reserveCompleted\(7\)/.test(String(saturdayReady)));
  push('museum dataset loaded',!!(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks));
  if(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks){
   ['2026-W36','2026-W37','2026-W38'].forEach(function(w){
