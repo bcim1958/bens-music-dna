@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "status": "partial-browser-recovery",
+  "recoveredAt": "2026-09-19T17:07:35.286Z",
+  "source": "browser-localStorage-readonly",
+  "weeks": {
+    "2026-W36": [
+      {"candidateId":"2026-W36-19","artist":"Tigercub","title":"The Perfume of Decay - Redux","spotifyTrackId":"3lubbUrIJx6aghnlMTgWwJ","rating":"NIET","day":4,"reserve":false},
+      {"candidateId":"2026-W36-10","artist":"Skindred","title":"Gimme That Boom","spotifyTrackId":"7iJ9EfGFYKv0Cv9KcaceP2","rating":"TERUGKOMEN","day":4,"reserve":false},
+      {"candidateId":"2026-W36-13","artist":"Des Rocs","title":"Never Ending Moment","spotifyTrackId":"4XtagwFOP5raVawgXl498u","rating":"TERUGKOMEN","day":4,"reserve":false}
+    ],
+    "2026-W37": [],
+    "2026-W38": []
+  },
+  "rules": {
+    "NIET": "historical rejection; exclude from new-discovery candidate supply",
+    "TERUGKOMEN": "historical rating; eligible only through explicit repeater/second-chance route, never as a new discovery"
+  },
+  "warning": "Partial recovery only. Do not infer missing W36-W38 ratings from absence."
+}
