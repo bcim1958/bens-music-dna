@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><title>W39 to W40 transition gate</title><pre id="out"></pre>
+<script src="music-dna-weeks-v1.js"></script>
+<script>
+(function(){
+ function iso(y,m,d,h){return new Date(y,m,d,h||12,0,0)}
+ var before=MUSIC_DNA_WEEKS.resolve(iso(2026,8,26));
+ var boundary=MUSIC_DNA_WEEKS.resolve(iso(2026,8,27,0));
+ var during=MUSIC_DNA_WEEKS.resolve(iso(2026,8,30));
+ var after=MUSIC_DNA_WEEKS.resolve(iso(2026,9,4,0));
+ var w40=MUSIC_DNA_WEEKS.get('2026-W40');
+ var checks={
+   w39StillActiveOnSaturday:!!before&&before.key==='2026-W39',
+   switchesAtSundayBoundary:!!boundary&&boundary.key==='2026-W40',
+   w40ActiveDuringWeek:!!during&&during.key==='2026-W40',
+   stopsAfterW40End:after===null,
+   w40Ready:!!w40&&w40.ready===true,
+   w40LoadsFourFiles:!!w40&&Array.isArray(w40.candidateFiles)&&w40.candidateFiles.length===4,
+   productionGlobalCorrect:!!w40&&w40.candidateGlobal==='MUSIC_DNA_W40_CANDIDATES'
+ };
+ var pass=Object.keys(checks).every(k=>checks[k]);
+ out.textContent=JSON.stringify({suite:'W39-W40-transition-gate',pass:pass,checks:checks,w40:{start:w40&&w40.startText,end:w40&&w40.endText,files:w40&&w40.candidateFiles}},null,2);
+ document.title=(pass?'PASS':'FAIL')+' · W39→W40';
+})();
+</script>
