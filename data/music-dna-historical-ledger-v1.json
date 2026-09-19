@@ -13,45 +13,208 @@
       "playlistStatus": "exact-21-verified",
       "playlistSource": "Flow-DNA Reference 001 / Spotify read-only verification",
       "playlist": [
-        {"position":1,"candidateId":"2026-W36-09","spotifyTrackId":"0quGf2fy3h7GpXOUz5uDDG","artist":"The Darkness","title":"Rock and Roll Party Cowboy"},
-        {"position":2,"candidateId":"2026-W35-10","spotifyTrackId":"7d1jgc7jRYIc1yuUEp7zx7","artist":"Nestor","title":"On The Run"},
-        {"position":3,"candidateId":"2026-W36-11","spotifyTrackId":"3eIjstKAnx7opSMKBl4qaS","artist":"H.E.A.T","title":"A Shot At Redemption"},
-        {"position":4,"candidateId":"2026-W36-08","spotifyTrackId":"6M1mxjG7myksQTxAJWWKMW","artist":"The Bites","title":"Do Me a Favor"},
-        {"position":5,"candidateId":"2026-W36-06","spotifyTrackId":"2ZS87ydp7TZyJbqr8xqL4i","artist":"Danko Jones","title":"Guess Who's Back"},
-        {"position":6,"candidateId":"2026-W36-01","spotifyTrackId":"6wloxCuWOzeIRshsrY7zY3","artist":"Royal Republic","title":"Fireman & Dancer"},
-        {"position":7,"candidateId":"2026-W35-22","spotifyTrackId":"6RGURwb5jvJMa3QSe6tViy","artist":"White Reaper","title":"Might Be Right"},
-        {"position":8,"candidateId":"2026-W36-12","spotifyTrackId":"2SPSxDbgSbi7reegoHzWgl","artist":"Bad Nerves","title":"You've Got The Nerve"},
-        {"position":9,"candidateId":"2026-W35-18","spotifyTrackId":"7hPc1Q8iPbYBzZw6eAOlTa","artist":"Grade 2","title":"Under the Streetlight"},
-        {"position":10,"candidateId":"2026-W35-17","spotifyTrackId":"5LWmGFuiygZ5Sc4uH6ERrj","artist":"The Chats","title":"6L GTR"},
-        {"position":11,"candidateId":"2026-W35-16","spotifyTrackId":"401y3CGGbwRAOQP4jVdGc5","artist":"Amyl and The Sniffers","title":"Hertz"},
-        {"position":12,"candidateId":"2026-W36-16","spotifyTrackId":"456sTgUGjvqvmYr7GqMFnG","artist":"Kid Kapichi","title":"Let's Get To Work"},
-        {"position":13,"candidateId":"2026-W35-36","spotifyTrackId":"0cq5YH4eRdbXgunCPgvX6S","artist":"Airbourne","title":"Breakin' Outta Hell"},
-        {"position":14,"candidateId":"2026-W36-14","spotifyTrackId":"0o0lsTqkU8YOTahFJXitea","artist":"The Cold Stares","title":"Horse To Water"},
-        {"position":15,"candidateId":"2026-W35-09","spotifyTrackId":"2wbfb2aLoDZMfX3kuuqYbt","artist":"Green Lung","title":"Maxine (Witch Queen)"},
-        {"position":16,"candidateId":"2026-W35-08","spotifyTrackId":"2yFzF7w2re0HxT4jDrGgOX","artist":"Elder","title":"Catastasis"},
-        {"position":17,"candidateId":"2026-W35-21","spotifyTrackId":"5TZbDoSfKFm30smKZy7bK2","artist":"King Buffalo","title":"Mammoth"},
-        {"position":18,"candidateId":"2026-W36-13","spotifyTrackId":"4XtagwFOP5raVawgXl498u","artist":"Des Rocs","title":"Never Ending Moment"},
-        {"position":19,"candidateId":"2026-W35-20","spotifyTrackId":"5lnCypJsQ39undAOrvqLNP","artist":"Unto Others","title":"Butterfly"},
-        {"position":20,"candidateId":"2026-W36-20","spotifyTrackId":"6SzTWFZFZPGoRy3dJz4ALP","artist":"IST IST","title":"Makes No Difference"},
-        {"position":21,"candidateId":"2026-W35-35","spotifyTrackId":"1tFQwUUnsotRNBPCupoyQd","artist":"Drab Majesty","title":"Ellipsis"}
+        {
+          "position": 1,
+          "candidateId": "2026-W36-09",
+          "spotifyTrackId": "0quGf2fy3h7GpXOUz5uDDG",
+          "artist": "The Darkness",
+          "title": "Rock and Roll Party Cowboy"
+        },
+        {
+          "position": 2,
+          "candidateId": "2026-W35-10",
+          "spotifyTrackId": "7d1jgc7jRYIc1yuUEp7zx7",
+          "artist": "Nestor",
+          "title": "On The Run"
+        },
+        {
+          "position": 3,
+          "candidateId": "2026-W36-11",
+          "spotifyTrackId": "3eIjstKAnx7opSMKBl4qaS",
+          "artist": "H.E.A.T",
+          "title": "A Shot At Redemption"
+        },
+        {
+          "position": 4,
+          "candidateId": "2026-W36-08",
+          "spotifyTrackId": "6M1mxjG7myksQTxAJWWKMW",
+          "artist": "The Bites",
+          "title": "Do Me a Favor"
+        },
+        {
+          "position": 5,
+          "candidateId": "2026-W36-06",
+          "spotifyTrackId": "2ZS87ydp7TZyJbqr8xqL4i",
+          "artist": "Danko Jones",
+          "title": "Guess Who's Back"
+        },
+        {
+          "position": 6,
+          "candidateId": "2026-W36-01",
+          "spotifyTrackId": "6wloxCuWOzeIRshsrY7zY3",
+          "artist": "Royal Republic",
+          "title": "Fireman & Dancer"
+        },
+        {
+          "position": 7,
+          "candidateId": "2026-W35-22",
+          "spotifyTrackId": "6RGURwb5jvJMa3QSe6tViy",
+          "artist": "White Reaper",
+          "title": "Might Be Right"
+        },
+        {
+          "position": 8,
+          "candidateId": "2026-W36-12",
+          "spotifyTrackId": "2SPSxDbgSbi7reegoHzWgl",
+          "artist": "Bad Nerves",
+          "title": "You've Got The Nerve"
+        },
+        {
+          "position": 9,
+          "candidateId": "2026-W35-18",
+          "spotifyTrackId": "7hPc1Q8iPbYBzZw6eAOlTa",
+          "artist": "Grade 2",
+          "title": "Under the Streetlight"
+        },
+        {
+          "position": 10,
+          "candidateId": "2026-W35-17",
+          "spotifyTrackId": "5LWmGFuiygZ5Sc4uH6ERrj",
+          "artist": "The Chats",
+          "title": "6L GTR"
+        },
+        {
+          "position": 11,
+          "candidateId": "2026-W35-16",
+          "spotifyTrackId": "401y3CGGbwRAOQP4jVdGc5",
+          "artist": "Amyl and The Sniffers",
+          "title": "Hertz"
+        },
+        {
+          "position": 12,
+          "candidateId": "2026-W36-16",
+          "spotifyTrackId": "456sTgUGjvqvmYr7GqMFnG",
+          "artist": "Kid Kapichi",
+          "title": "Let's Get To Work"
+        },
+        {
+          "position": 13,
+          "candidateId": "2026-W35-36",
+          "spotifyTrackId": "0cq5YH4eRdbXgunCPgvX6S",
+          "artist": "Airbourne",
+          "title": "Breakin' Outta Hell"
+        },
+        {
+          "position": 14,
+          "candidateId": "2026-W36-14",
+          "spotifyTrackId": "0o0lsTqkU8YOTahFJXitea",
+          "artist": "The Cold Stares",
+          "title": "Horse To Water"
+        },
+        {
+          "position": 15,
+          "candidateId": "2026-W35-09",
+          "spotifyTrackId": "2wbfb2aLoDZMfX3kuuqYbt",
+          "artist": "Green Lung",
+          "title": "Maxine (Witch Queen)"
+        },
+        {
+          "position": 16,
+          "candidateId": "2026-W35-08",
+          "spotifyTrackId": "2yFzF7w2re0HxT4jDrGgOX",
+          "artist": "Elder",
+          "title": "Catastasis"
+        },
+        {
+          "position": 17,
+          "candidateId": "2026-W35-21",
+          "spotifyTrackId": "5TZbDoSfKFm30smKZy7bK2",
+          "artist": "King Buffalo",
+          "title": "Mammoth"
+        },
+        {
+          "position": 18,
+          "candidateId": "2026-W36-13",
+          "spotifyTrackId": "4XtagwFOP5raVawgXl498u",
+          "artist": "Des Rocs",
+          "title": "Never Ending Moment"
+        },
+        {
+          "position": 19,
+          "candidateId": "2026-W35-20",
+          "spotifyTrackId": "5lnCypJsQ39undAOrvqLNP",
+          "artist": "Unto Others",
+          "title": "Butterfly"
+        },
+        {
+          "position": 20,
+          "candidateId": "2026-W36-20",
+          "spotifyTrackId": "6SzTWFZFZPGoRy3dJz4ALP",
+          "artist": "IST IST",
+          "title": "Makes No Difference"
+        },
+        {
+          "position": 21,
+          "candidateId": "2026-W35-35",
+          "spotifyTrackId": "1tFQwUUnsotRNBPCupoyQd",
+          "artist": "Drab Majesty",
+          "title": "Ellipsis"
+        }
       ],
       "ratingsProven": [
-        {"candidateId":"2026-W36-19","spotifyTrackId":"3lubbUrIJx6aghnlMTgWwJ","artist":"Tigercub","title":"The Perfume of Decay - Redux","rating":"NIET","day":4},
-        {"candidateId":"2026-W36-10","spotifyTrackId":"7iJ9EfGFYKv0Cv9KcaceP2","artist":"Skindred","title":"Gimme That Boom","rating":"TERUGKOMEN","day":4},
-        {"candidateId":"2026-W36-13","spotifyTrackId":"4XtagwFOP5raVawgXl498u","artist":"Des Rocs","title":"Never Ending Moment","rating":"TERUGKOMEN","day":4}
+        {
+          "candidateId": "2026-W36-19",
+          "spotifyTrackId": "3lubbUrIJx6aghnlMTgWwJ",
+          "artist": "Tigercub",
+          "title": "The Perfume of Decay - Redux",
+          "rating": "NIET",
+          "day": 4
+        },
+        {
+          "candidateId": "2026-W36-10",
+          "spotifyTrackId": "7iJ9EfGFYKv0Cv9KcaceP2",
+          "artist": "Skindred",
+          "title": "Gimme That Boom",
+          "rating": "TERUGKOMEN",
+          "day": 4
+        },
+        {
+          "candidateId": "2026-W36-13",
+          "spotifyTrackId": "4XtagwFOP5raVawgXl498u",
+          "artist": "Des Rocs",
+          "title": "Never Ending Moment",
+          "rating": "TERUGKOMEN",
+          "day": 4
+        }
       ],
-      "ratingCoverage": {"proven":3,"expectedOfficial":21,"unknown":18}
+      "ratingCoverage": {
+        "proven": 3,
+        "expectedOfficial": 21,
+        "unknown": 18
+      }
     },
     "2026-W37": {
       "playlistStatus": "21-tracks-visually-verified-in-Spotify",
       "ratingStatus": "historical-project-state-says-all-21-daily-ratings-were-preserved; exact per-track values not yet recovered",
       "identityStatus": "exact 21 playlist identities not yet promoted into this ledger",
-      "ratingCoverage": {"provenPerTrack":0,"historicallyConfirmedTotal":21}
+      "ratingCoverage": {
+        "provenPerTrack": 0,
+        "historicallyConfirmedTotal": 21
+      },
+      "spotifyPlaylist": {
+        "playlistId": "04D9Y87cVENIuzl0vNz1Nj",
+        "url": "https://open.spotify.com/playlist/04D9Y87cVENIuzl0vNz1Nj",
+        "identification": "user-confirmed",
+        "confirmedAt": "2026-09-19",
+        "trackIdentitiesStatus": "pending-readout"
+      }
     },
     "2026-W38": {
       "playlistStatus": "known 21-track Flow-DNA reference, exact identities pending ledger promotion",
       "ratingStatus": "exact per-track historical values not yet recovered",
-      "ratingCoverage": {"provenPerTrack":0}
+      "ratingCoverage": {
+        "provenPerTrack": 0
+      }
     }
   }
 }
