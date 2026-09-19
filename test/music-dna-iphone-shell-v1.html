@@ -105,18 +105,23 @@
  function officialCompleted(d){var q=read(key(d,false,true),null),st=read(key(d,false,false),{});return !!(q&&Array.isArray(q.ids)&&q.ids.length===3&&q.ids.every(function(id){return st[id]&&st[id].rating}))}
  function reserveCompleted(d){var q=read(key(d,true,true),null);if(!q)return true;var ids=q.ids||(q.id?[q.id]:[]),st=read(key(d,true,false),{});return ids.every(function(id){return st[id]&&st[id].rating})}
  function allOfficialComplete(){for(var d=1;d<=7;d++)if(!officialCompleted(d))return false;return true}
- function saturdayReady(){return allOfficialComplete()&&reserveCompleted(7)}
+ function reserveNeeded(){return MUSIC_DNA_POSITIVE_BANK&&MUSIC_DNA_POSITIVE_BANK.recommendedReserveCount?MUSIC_DNA_POSITIVE_BANK.recommendedReserveCount(WEEK):(MUSIC_DNA_POSITIVE_BANK&&MUSIC_DNA_POSITIVE_BANK.recommendedDailyCount&&MUSIC_DNA_POSITIVE_BANK.recommendedDailyCount(WEEK)>3?1:0)}
+ function dayResolved(d){if(!officialCompleted(d))return false;var q=read(key(d,true,true),null);if(q&&(q.id||(q.ids&&q.ids.length)))return reserveCompleted(d);return reserveNeeded()===0}
+ function saturdayReady(){return allOfficialComplete()&&dayResolved(7)}
  function saturdaySemanticsSelfTest(){
-  var savedOfficial=officialCompleted,savedReserve=reserveCompleted;
+  var savedOfficial=officialCompleted,savedReserve=reserveCompleted,savedNeed=reserveNeeded;
   try{
-   officialCompleted=function(){return true};reserveCompleted=function(d){return d===7};
-   var allDone=saturdayReady()===true;
+   officialCompleted=function(){return true};reserveCompleted=function(){return true};reserveNeeded=function(){return 0};
+   var noReserveNeededReady=saturdayReady()===true;
+   reserveNeeded=function(){return 2};
+   var neededButMissingBlocks=saturdayReady()===false;
+   var originalRead=read;
    reserveCompleted=function(){return false};
-   var saturdayReserveBlocks=saturdayReady()===false;
-   officialCompleted=function(d){return d!==4};reserveCompleted=function(){return true};
+   var reserveIncompleteBlocks=(function(){var old=read;read=function(k,f){if(k===key(7,true,true))return {ids:["reserve-test"]};return old(k,f)};try{return saturdayReady()===false}finally{read=old}})();
+   officialCompleted=function(d){return d!==4};reserveNeeded=function(){return 0};
    var missingOfficialBlocks=saturdayReady()===false;
-   return allDone&&saturdayReserveBlocks&&missingOfficialBlocks;
-  }finally{officialCompleted=savedOfficial;reserveCompleted=savedReserve}
+   return noReserveNeededReady&&neededButMissingBlocks&&reserveIncompleteBlocks&&missingOfficialBlocks;
+  }finally{officialCompleted=savedOfficial;reserveCompleted=savedReserve;reserveNeeded=savedNeed}
  }
  function showSaturdayHandoff(){
    setPlace('Ontdek-DNA · zaterdag');chrome('secondary');setNav('navDiscover');
