@@ -67,7 +67,9 @@
  function showJourney(week){
    setPlace('Edelsteenmuseum · reis');chrome('secondary');setNav('navGems');var j=window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks[week];if(!j)return;
    setNav('navGems');root.innerHTML='<button class="detailBack" id="journeyBack">‹ Terug naar museum</button><section class="journeyHead"><div class="kicker">'+esc(week.replace('2026-W','2026 · W'))+'</div><h1>'+esc(j.title)+'</h1><div class="dashNote">'+esc(j.subtitle)+' · '+j.tracks.length+' tracks · vaste reisvolgorde</div></section><section class="journeyList">'+j.tracks.map(function(x,i){return '<div class="journeyTrack" data-index="'+i+'"><div><b>'+esc(x[2])+'</b><span>'+esc(x[1])+'</span></div></div>'}).join('')+'</section>';
-   document.getElementById('journeyBack').onclick=showMuseum;Array.prototype.forEach.call(root.querySelectorAll('.journeyTrack'),function(e){activateCard(e,function(){showMuseumTrack(week,Number(e.getAttribute('data-index')))})});
+   document.getElementById('journeyBack').onclick=showMuseum;
+   var jsp=document.getElementById('journeySpotify');if(jsp)jsp.onclick=function(){location.href='https://open.spotify.com/playlist/'+encodeURIComponent(j.spotifyPlaylistId)};
+   Array.prototype.forEach.call(root.querySelectorAll('.journeyTrack'),function(e){activateCard(e,function(){showMuseumTrack(week,Number(e.getAttribute('data-index')))})});
  }
  function bindMuseum(){Array.prototype.forEach.call(root.querySelectorAll('.gem[data-week]'),function(x){activateCard(x,function(){showJourney(x.getAttribute('data-week'))})})}
  function showMuseum(){
@@ -183,7 +185,10 @@ window.MUSIC_DNA_IPHONE_UI_GATE=function(){
     var j=MUSIC_DNA_MUSEUM_V1.weeks[w],ids=j&&Array.isArray(j.tracks)?j.tracks.map(function(x){return x&&x[0]}):[];
     push(w+' has exactly 21 museum tracks',!!j&&ids.length===21);
     push(w+' museum tracks are unique',ids.length===21&&new Set(ids).size===21);
+    push(w+' marked released with provenance',!!j&&j.released===true&&j.sourceKind==='historical-final-order');
   });
+  push('W37 historical Spotify playlist ID present',MUSIC_DNA_MUSEUM_V1.weeks['2026-W37'].spotifyPlaylistId==='04D9Y87cVENIuzl0vNz1Nj');
+  push('W38 historical Spotify playlist ID present',MUSIC_DNA_MUSEUM_V1.weeks['2026-W38'].spotifyPlaylistId==='4AcVNq5qhCq8LXT8ilKAYE');
   var w39=MUSIC_DNA_MUSEUM_V1.weeks['2026-W39'],w39ok=!w39||(w39.released===true&&Array.isArray(w39.tracks)&&w39.tracks.length===21&&new Set(w39.tracks.map(function(x){return x&&x[0]})).size===21);
   push('W39 absent or valid released 21-track artifact',w39ok);
  }
