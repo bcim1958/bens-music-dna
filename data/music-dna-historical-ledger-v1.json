@@ -210,7 +210,7 @@
       }
     },
     "2026-W38": {
-      "playlistStatus": "known 21-track Flow-DNA reference, exact identities pending ledger promotion",
+      "playlistStatus": "exact-21-verified-from-user-Spotify-screenshots",
       "ratingStatus": "exact per-track historical values not yet recovered",
       "ratingCoverage": {
         "provenPerTrack": 0
@@ -220,8 +220,159 @@
         "url": "https://open.spotify.com/playlist/4AcVNq5qhCq8LXT8ilKAYE",
         "identification": "user-confirmed",
         "confirmedAt": "2026-09-19",
-        "trackIdentitiesStatus": "pending-readout"
-      }
+        "trackIdentitiesStatus": "exact-21-verified"
+      },
+      "playlistSource": "User-provided Spotify screenshots 2026-09-19 + repository candidate/delivery identity mapping",
+      "identityStatus": "exact 21 playlist identities promoted into ledger",
+      "playlist": [
+        {
+          "position": 1,
+          "candidateId": "2026-W38-01",
+          "spotifyTrackId": "2MC57MCOiCz2UGskL2uCVF",
+          "artist": "Eclipse",
+          "title": "Viva La Victoria"
+        },
+        {
+          "position": 2,
+          "candidateId": "2026-W38-08",
+          "spotifyTrackId": "0JEwiiGvzp4WVTz3yOgckN",
+          "artist": "Collateral",
+          "title": "Mr Big Shot"
+        },
+        {
+          "position": 3,
+          "candidateId": "2026-W38-03",
+          "spotifyTrackId": "2tGsC65mITLnxAEcCviPgf",
+          "artist": "Crashdïet",
+          "title": "Riot In Everyone"
+        },
+        {
+          "position": 4,
+          "candidateId": "2026-W38-02",
+          "spotifyTrackId": "6Mo2SAMVWRuZzlAunlrguj",
+          "artist": "Hardcore Superstar",
+          "title": "We Don't Celebrate Sundays"
+        },
+        {
+          "position": 5,
+          "candidateId": "2026-W38-09",
+          "spotifyTrackId": "3gmEzilP9BzF45wIMvA16l",
+          "artist": "Halestorm",
+          "title": "I Miss the Misery"
+        },
+        {
+          "position": 6,
+          "candidateId": "2026-W38-12",
+          "spotifyTrackId": "6ISZ6sKcNBdYJS7XYHm5cV",
+          "artist": "The Pretty Reckless",
+          "title": "Death By Rock And Roll"
+        },
+        {
+          "position": 7,
+          "candidateId": "2026-W38-05",
+          "spotifyTrackId": "1a5aHWU2N8bxy8fTg5Nn5O",
+          "artist": "The Dead Daisies",
+          "title": "Long Way To Go"
+        },
+        {
+          "position": 8,
+          "candidateId": "2026-W38-23",
+          "spotifyTrackId": "69iLUKlpzeJYhIEpyYoSbd",
+          "artist": "Jet",
+          "title": "Cold Hard Bitch"
+        },
+        {
+          "position": 9,
+          "candidateId": "2026-W38-07",
+          "spotifyTrackId": "4eCmS9ZeBOqj84fZjTnnWK",
+          "artist": "The Damn Truth",
+          "title": "This is Who We Are Now"
+        },
+        {
+          "position": 10,
+          "candidateId": "2026-W38-13",
+          "spotifyTrackId": "1M1Fi7Dl3MsjZKrtxyUKKD",
+          "artist": "Tyler Bryant & the Shakedown",
+          "title": "On To The Next"
+        },
+        {
+          "position": 11,
+          "candidateId": "2026-W36-14",
+          "spotifyTrackId": "0o0lsTqkU8YOTahFJXitea",
+          "artist": "The Cold Stares",
+          "title": "Horse To Water"
+        },
+        {
+          "position": 12,
+          "candidateId": "2026-W38-10",
+          "spotifyTrackId": "0qPLNGJhvrhuuayoKhTR3B",
+          "artist": "The Blue Stones",
+          "title": "Black Holes (Solid Ground)"
+        },
+        {
+          "position": 13,
+          "candidateId": "2026-W38-25",
+          "spotifyTrackId": "4OAgAZNz1bFyUvyuJGibjy",
+          "artist": "The Raconteurs",
+          "title": "Steady, As She Goes"
+        },
+        {
+          "position": 14,
+          "candidateId": "2026-W38-18",
+          "spotifyTrackId": "3CkjLJYnnyOtGk4Jx4iYS4",
+          "artist": "Wolfmother",
+          "title": "Woman"
+        },
+        {
+          "position": 15,
+          "candidateId": "2026-W36-01",
+          "spotifyTrackId": "6wloxCuWOzeIRshsrY7zY3",
+          "artist": "Royal Republic",
+          "title": "Fireman & Dancer"
+        },
+        {
+          "position": 16,
+          "candidateId": "2026-W38-06",
+          "spotifyTrackId": "0o2ysRHmjbkNEBQUT51h3i",
+          "artist": "The Virginmarys",
+          "title": "Just a Ride"
+        },
+        {
+          "position": 17,
+          "candidateId": "2026-W38-26",
+          "spotifyTrackId": "3JVwl1DvmaLDevxl24UYzt",
+          "artist": "The Vines",
+          "title": "Get Free"
+        },
+        {
+          "position": 18,
+          "candidateId": "2026-W38-14",
+          "spotifyTrackId": "36ipTRje6uQfU5wSzzOvLf",
+          "artist": "The Beaches",
+          "title": "Blame Brett"
+        },
+        {
+          "position": 19,
+          "candidateId": "2026-W35-16",
+          "spotifyTrackId": "401y3CGGbwRAOQP4jVdGc5",
+          "artist": "Amyl and The Sniffers",
+          "title": "Hertz"
+        },
+        {
+          "position": 20,
+          "candidateId": "2026-W36-16",
+          "spotifyTrackId": "456sTgUGjvqvmYr7GqMFnG",
+          "artist": "Kid Kapichi",
+          "title": "Let's Get To Work"
+        },
+        {
+          "position": 21,
+          "candidateId": "2026-W36-20",
+          "spotifyTrackId": "6SzTWFZFZPGoRy3dJz4ALP",
+          "artist": "IST IST",
+          "title": "Makes No Difference"
+        }
+      ]
     }
   }
 }
