@@ -11,10 +11,10 @@
     localStorage.setItem(key,JSON.stringify(st));
     var ledgerOk=MUSIC_DNA_RATING_LEDGER.record({trackId:x.trackId,weekKey:x.weekKey,rating:x.rating,ratedAt:at,source:x.reserve?'reserve':'official',meter:!x.reserve,slot:x.reserve?'reserve':null});
     if(!ledgerOk){if(before)st[x.trackId]=before;else delete st[x.trackId];localStorage.setItem(key,JSON.stringify(st));return {ok:false,reason:'ledger-rejected'};}
-    MUSIC_DNA_LEARNING.resyncStoredRatings();MUSIC_DNA_POSITIVE_BANK.sync();
+    try{MUSIC_DNA_LEARNING.resyncStoredRatings();MUSIC_DNA_POSITIVE_BANK.sync()}catch(e){return {ok:false,reason:'derived-sync-failed',committed:true};}
     var latest=MUSIC_DNA_RATING_LEDGER.read().latest[x.trackId];
-    if(!latest||latest.rating!==({terugkomen:'twijfel',niet:'nee'}[x.rating]||x.rating))return {ok:false,reason:'ledger-verify-failed'};
-    return {ok:true,key:key,ratedAt:at,source:x.reserve?'reserve':'official'};
+    if(!latest||latest.rating!==({terugkomen:'twijfel',niet:'nee'}[x.rating]||x.rating))return {ok:false,reason:'ledger-verify-failed',committed:true};
+    return {ok:true,committed:true,key:key,ratedAt:at,source:x.reserve?'reserve':'official'};
   }
-  window.MUSIC_DNA_RATING_WRITE={version:2,writeRating:writeRating,stateKey:stateKey};
+  window.MUSIC_DNA_RATING_WRITE={version:3,writeRating:writeRating,stateKey:stateKey};
 })();
