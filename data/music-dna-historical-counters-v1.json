@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-19",
+  "purpose": "Evidence-safe historical counters for Music DNA cockpit. Unknown rating values are never allocated to rating buckets.",
+  "exactRatingCounts": {
+    "RAAK": 13,
+    "GOED": 12,
+    "TERUGKOMEN": 6,
+    "NIET": 2,
+    "total": 33
+  },
+  "historicallyConfirmedButUnallocated": {
+    "week": "2026-W37",
+    "count": 21,
+    "reason": "Historical project state proves 21 ratings existed; exact per-track values are unrecoverable."
+  },
+  "confirmedRatedTotal": 54,
+  "unknownNotCountedAsRatings": {
+    "W36": 18,
+    "W38": "not established from durable evidence"
+  },
+  "notes": [
+    "W35/W36 exact values come from browser-localStorage recovery.",
+    "W37 contributes 21 only to aggregate confirmed-rated total, never to RAAK/GOED/TERUGKOMEN/NIET buckets.",
+    "Playlist membership is separate from rating evidence."
+  ]
+}
