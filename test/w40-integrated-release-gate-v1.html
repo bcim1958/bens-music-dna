@@ -1,0 +1,26 @@
+<!doctype html><meta charset="utf-8"><title>W40 integrated release gate</title><pre id="out"></pre>
+<script>window.MUSIC_DNA_LEARNING={read:()=>({signals:{}})};window.MUSIC_DNA_POSITIVE_BANK={selectorMode:()=>({mode:'critical',exploration:0.3,inventory:null})};</script>
+<script src="music-dna-selector-v1.js"></script>
+<script src="music-dna-candidates-w40-data-1.js"></script><script src="music-dna-candidates-w40-data-2.js"></script><script src="music-dna-candidates-w40-data-3.js"></script><script src="music-dna-candidates-w40-staging-v1.js"></script>
+<script>
+(function(){
+ var C=MUSIC_DNA_W40_CANDIDATES.tracks,S=MUSIC_DNA_SELECTOR,rows=Object.keys(C).map(id=>({id:id,t:C[id]}));
+ var spotifyIds=rows.map(x=>(x.t.spotifyUrl||'').split('/').pop()),artists=rows.map(x=>x.t.identity.artist);
+ var metadata=rows.length===85&&rows.every(x=>x.t.identity&&x.t.identity.artist&&x.t.identity.title&&x.t.identity.releaseYear&&x.t.identity.country&&x.t.taxonomy&&x.t.taxonomy.allMusicStyles&&x.t.taxonomy.allMusicStyles.length&&x.t.discoverDNA&&x.t.discoverDNA.dnaRoute&&x.t.discoverDNA.dnaRoute.length);
+ var identityUnique=(new Set(spotifyIds).size===85),artistCreditsUnique=(new Set(artists).size===85);
+ var historicalSpotifyIds=new Set([
+ // W36 exact playlist + proven non-playlist ratings; W37 exact playlist; W38 exact playlist.
+ "0quGf2fy3h7GpXOUz5uDDG","7d1jgc7jRYIc1yuUEp7zx7","3eIjstKAnx7opSMKBl4qaS","6M1mxjG7myksQTxAJWWKMW","2ZS87ydp7TZyJbqr8xqL4i","6wloxCuWOzeIRshsrY7zY3","6RGURwb5jvJMa3QSe6tViy","2SPSxDbgSbi7reegoHzWgl","7hPc1Q8iPbYBzZw6eAOlTa","5LWmGFuiygZ5Sc4uH6ERrj","401y3CGGbwRAOQP4jVdGc5","456sTgUGjvqvmYr7GqMFnG","0cq5YH4eRdbXgunCPgvX6S","0o0lsTqkU8YOTahFJXitea","2wbfb2aLoDZMfX3kuuqYbt","2yFzF7w2re0HxT4jDrGgOX","5TZbDoSfKFm30smKZy7bK2","4XtagwFOP5raVawgXl498u","5lnCypJsQ39undAOrvqLNP","6SzTWFZFZPGoRy3dJz4ALP","1tFQwUUnsotRNBPCupoyQd","3lubbUrIJx6aghnlMTgWwJ","7iJ9EfGFYKv0Cv9KcaceP2",
+ "4QaxyJsbo5AR3bnEB7ko8h","5KpYYRnknZ4rKOk6NYLEjZ","5hmAx18RDdlqvN1ikcPCC1","23czLeQvLpg5t3yflZheRg","58VTMFtsoe0E0vSX1pV03h","7qRmdDl9dnHkFT4MMboG7Y","6Ns6ZLgRKPym5Rxj3BZzzG","1Pznl6uY7F8PUXGZCHTw3u","3rutIwayGw0W7JE5lfzgfN","2gqS1qR8YRihZFwrVT5RO3","2OdkkVvm7iwDiL5yZbokgo","0PF0V7vjos7UA8gFDCDiZ2","0PtYFqyiiUbsH7GtYdqej5","7boNv1NtUklJBBGG0Qap4W","0jJqXjcy3LwwD7gFT5Ds7H","3FOxK4zKJp5yCVqZPFIm5a","2cyJkqB2OYHwWWvKGtrJ0r","1nNxTwaC6jFJUGPVRTsNaR","34ZvRwa42pvx6ZeXGS1ydC","0za2S4LnnHXOVPwkp6Sv8Q","5jHIpRdAg7vLJ14XrHK32m",
+ "2MC57MCOiCz2UGskL2uCVF","0JEwiiGvzp4WVTz3yOgckN","2tGsC65mITLnxAEcCviPgf","6Mo2SAMVWRuZzlAunlrguj","3gmEzilP9BzF45wIMvA16l","6ISZ6sKcNBdYJS7XYHm5cV","1a5aHWU2N8bxy8fTg5Nn5O","69iLUKlpzeJYhIEpyYoSbd","4eCmS9ZeBOqj84fZjTnnWK","1M1Fi7Dl3MsjZKrtxyUKKD","0qPLNGJhvrhuuayoKhTR3B","4OAgAZNz1bFyUvyuJGibjy","3CkjLJYnnyOtGk4Jx4iYS4","0o2ysRHmjbkNEBQUT51h3i","3JVwl1DvmaLDevxl24UYzt","36ipTRje6uQfU5wSzzOvLf"
+ ]);
+ var historicalOverlap=spotifyIds.filter(id=>historicalSpotifyIds.has(id));
+ var cap=S.capacityCheck(C,{days:7,officialPerDay:3,maxReservePerDay:6});
+ var stress=S.stressWeek(C,{days:7,officialPerDay:3,reservePerDay:6,exploration:0.3});
+ var selected=[];stress.runs.forEach(x=>selected=selected.concat(x.ids));var selectedUnique=new Set(selected).size;
+ var checks={metadataComplete:metadata,spotifyIdentityUnique:identityUnique,artistCreditsUnique:artistCreditsUnique,historicalOverlapZero:historicalOverlap.length===0,capacity85gte63:cap.ok,stress63of63:stress.ok&&stress.selected===63&&selectedUnique===63&&stress.remaining===22};
+ var pass=Object.keys(checks).every(k=>checks[k]);
+ var result={suite:'W40-integrated-release-gate-v1',pass:pass,status:pass?'PRODUCTION-READY':'BLOCKED',checks:checks,counts:{candidates:rows.length,uniqueSpotifyIds:new Set(spotifyIds).size,uniqueArtistCredits:new Set(artists).size,historicalOverlap:historicalOverlap.length,stressSelected:stress.selected,stressUnique:selectedUnique,stressRemaining:stress.remaining},historicalOverlapIds:historicalOverlap,stressPerDay:stress.runs.map(x=>({day:x.day,needed:x.needed,selected:x.selected}))};
+ out.textContent=JSON.stringify(result,null,2);document.title=(pass?'PASS':'FAIL')+' · W40 integrated gate';
+})();
+</script>
