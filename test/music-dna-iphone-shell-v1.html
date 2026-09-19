@@ -88,7 +88,7 @@
  }
  function showDiscover(){setPlace('Ontdek · luister · voel');chrome('discover');setNav('navDiscover');renderExisting()}
  function showCockpit(){
-   setPlace('Mijn Muziekwereld · cockpit');var d=calendarDay(),counts=MUSIC_DNA_RATING_LEDGER.counts(WEEK),inv=MUSIC_DNA_POSITIVE_BANK.inventory(WEEK),hist=null;try{hist=window.MUSIC_DNA_HISTORICAL_COUNTERS||null}catch(e){}
+   setPlace('Mijn Muziekwereld · cockpit');var d=calendarDay(),counts=MUSIC_DNA_RATING_LEDGER.counts(WEEK),inv=MUSIC_DNA_POSITIVE_BANK.inventory(WEEK)
    chrome('secondary');setNav('navWorld');
    root.innerHTML='<button class="detailBack" id="cockpitBack">‹ Terug naar Ontdek-DNA</button><section class="cockpit"><div class="kicker">Mijn Muziekwereld · cockpit</div><h1>Instrumenten</h1><div class="dashNote">Alleen echte Music-DNA-waarden. Geen demonstratiecijfers.</div><div class="dashgrid"><div class="dial"><div class="l">Deze week · officieel</div><div class="n">'+counts.official+' / 21</div><div class="dashNote">Muziekmeter</div></div><div class="dial"><div class="l">Positieve reserve</div><div class="n">'+inv.fresh+' / '+inv.targetReserve+'</div><div class="dashNote">'+inv.safeSaturdayCoverage.toFixed(1)+' zaterdag(en)</div></div><div class="dial"><div class="l">Raak</div><div class="n">'+counts.raak+'</div><div class="dashNote">deze week</div></div><div class="dial"><div class="l">Goed</div><div class="n">'+counts.goed+'</div><div class="dashNote">deze week</div></div><div class="dial"><div class="l">Nog eens</div><div class="n">'+counts.terugkomen+'</div><div class="dashNote">deze week</div></div><div class="dial"><div class="l">Nee</div><div class="n">'+counts.niet+'</div><div class="dashNote">deze week</div></div><div class="dial wide"><div class="l">Weekreis</div><div class="n">Dag '+d+' / 7</div><div class="dashNote">'+esc(CFG.display)+' · Flow-DNA en zaterdagcadeau blijven buiten deze cockpit onaangetast.</div></div></div></section>';
    document.getElementById('cockpitBack').onclick=showWorld
@@ -116,6 +116,7 @@
    var fs=CFG.candidateFiles||[CFG.candidateFile];for(var i=0;i<fs.length;i++)await load(fs[i]);CAND=window[CFG.candidateGlobal];
    await load('music-dna-candidates-w36-v1.js');await load('music-dna-candidates-w37-v1.js');await load('music-dna-candidates-w38-v1.js');await load('music-dna-rating-ledger-v1.js');await load('music-dna-learning-v1.js');await load('music-dna-positive-bank-v1.js');await load('music-dna-rating-write-v1.js');
    function refreshStock(){var inv=MUSIC_DNA_POSITIVE_BANK.inventory(WEEK),labels={'op-peil':'OP PEIL','bijtanken':'BIJTANKEN','bijna-leeg':'BIJNA LEEG','kritiek':'KRITIEK'};document.getElementById('stockTitle').textContent='Voorraadmotor · '+labels[inv.status];document.getElementById('stockText').textContent=inv.fresh+' / '+inv.targetReserve+' positieve reservetracks · '+inv.safeSaturdayCoverage.toFixed(1)+' zaterdag(en) buffer';document.querySelector('.lamp').textContent='● '+(inv.status==='op-peil'?'SYSTEEM GEREED':labels[inv.status])}
+   window.MUSIC_DNA_IPHONE_APP_READY=true;
    window.MUSIC_DNA_IPHONE_PREVIEW={
      discover:showDiscover,
      world:showWorld,
@@ -142,9 +143,13 @@
    document.body.appendChild(badge);
    setTimeout(function(){
     var api=window.MUSIC_DNA_IPHONE_PREVIEW;
-    if(api&&previewScreen==='world'){api.world();return}
-    if(api&&previewScreen==='museum'){api.museum();return}
-    if(api&&previewScreen==='detail'){api.detail();return}
+    if(!window.MUSIC_DNA_IPHONE_APP_READY||!api){
+      if((window.MUSIC_DNA_PREVIEW_RETRIES=(window.MUSIC_DNA_PREVIEW_RETRIES||0)+1)<40){setTimeout(arguments.callee,100)}
+      return
+    }
+    if(previewScreen==='world'){api.world();return}
+    if(previewScreen==='museum'){api.museum();return}
+    if(previewScreen==='detail'){api.detail();return}
     var root=document.getElementById('tracks'),hero=document.querySelector('.hero'),progress=document.getElementById('weekProgress'),status=document.querySelector('.status');
     if(!root||!window.MUSIC_DNA_MUSEUM_V1)return;
     var j=MUSIC_DNA_MUSEUM_V1.weeks['2026-W38'];
@@ -169,6 +174,7 @@ window.MUSIC_DNA_IPHONE_UI_GATE=function(){
  push('discovery root exists',!!document.getElementById('tracks'));
  push('week progress exists',!!document.getElementById('weekProgress'));
  push('stock status exists',!!document.querySelector('.status'));
+ push('app readiness flag set',window.MUSIC_DNA_IPHONE_APP_READY===true);
  push('preview navigation API exposed',!!(window.MUSIC_DNA_IPHONE_PREVIEW&&MUSIC_DNA_IPHONE_PREVIEW.discover&&MUSIC_DNA_IPHONE_PREVIEW.world&&MUSIC_DNA_IPHONE_PREVIEW.museum&&MUSIC_DNA_IPHONE_PREVIEW.detail));
  push('museum dataset loaded',!!(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks));
  if(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks){
