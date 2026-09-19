@@ -214,6 +214,13 @@
       "ratingStatus": "exact per-track historical values not yet recovered",
       "ratingCoverage": {
         "provenPerTrack": 0
+      },
+      "spotifyPlaylist": {
+        "playlistId": "4AcVNq5qhCq8LXT8ilKAYE",
+        "url": "https://open.spotify.com/playlist/4AcVNq5qhCq8LXT8ilKAYE",
+        "identification": "user-confirmed",
+        "confirmedAt": "2026-09-19",
+        "trackIdentitiesStatus": "pending-readout"
       }
     }
   }
