@@ -151,7 +151,12 @@
 <script>
 /* Deterministic structural integrity gate; production state is read-only here. */
 window.MUSIC_DNA_IPHONE_UI_GATE=function(){
- var out=[],push=function(name,ok){out.push({name:name,ok:!!ok})};
+ var out=[],push=function(name,ok){out.push({name:name,ok:!!ok})},nav=document.querySelector('.nav'),app=document.querySelector('.app'),nr=nav&&nav.getBoundingClientRect(),ar=app&&app.getBoundingClientRect();
+ push('mobile viewport declared',!!document.querySelector('meta[name="viewport"]'));
+ push('shell stays within iPhone width',!!ar&&ar.width<=430.5);
+ push('navigation is horizontally safe',!!nr&&nr.left>=ar.left-.5&&nr.right<=ar.right+.5&&nr.height>0);
+ Array.prototype.forEach.call(document.querySelectorAll('button,.nav span,.nav strong'),function(el){var r=el.getBoundingClientRect();push('control >=40px: '+((el.textContent||el.id||el.tagName).trim().slice(0,24)),r.height>=40&&r.width>=40)});
+
  push('three main navigation targets',!!document.getElementById('navDiscover')&&!!document.getElementById('navWorld')&&!!document.getElementById('navGems'));
  push('cockpit entry exists',!!document.getElementById('cockpitEntry'));
  push('discovery root exists',!!document.getElementById('tracks'));
