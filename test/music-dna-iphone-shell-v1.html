@@ -97,4 +97,22 @@
    renderExisting();refreshStock();document.getElementById('cockpitEntry').onclick=showCockpit;document.getElementById('navDiscover').onclick=showDiscover;document.getElementById('navWorld').onclick=showWorld;document.getElementById('navGems').onclick=showMuseum;setNav('navDiscover');
  }catch(e){document.getElementById('heroTitle').textContent='Veilige kijkmodus';root.innerHTML='<section class="track"><div class="slot">Niet gewijzigd</div><h2>De app-data kon niet veilig worden gelezen.</h2></section>'}
 })();
+</script>
+<script>
+/* Lightweight deterministic UI integrity gate: no production state is mutated. */
+window.MUSIC_DNA_IPHONE_UI_GATE=function(){
+ var out=[],push=function(name,ok){out.push({name:name,ok:!!ok})};
+ push('three main navigation targets',!!document.getElementById('navDiscover')&&!!document.getElementById('navWorld')&&!!document.getElementById('navGems'));
+ push('cockpit entry exists',!!document.getElementById('cockpitEntry'));
+ push('discovery root exists',!!document.getElementById('tracks'));
+ push('week progress exists',!!document.getElementById('weekProgress'));
+ push('stock status exists',!!document.querySelector('.status'));
+ push('museum dataset loaded',!!(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks));
+ if(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks){
+  ['2026-W36','2026-W37','2026-W38'].forEach(function(w){push(w+' has exactly 21 museum tracks',!!MUSIC_DNA_MUSEUM_V1.weeks[w]&&MUSIC_DNA_MUSEUM_V1.weeks[w].tracks.length===21)});
+  push('W39 is not preloaded in museum dataset',!MUSIC_DNA_MUSEUM_V1.weeks['2026-W39']);
+ }
+ var failed=out.filter(function(x){return !x.ok});
+ return {ok:failed.length===0,checks:out,failed:failed};
+};
 </script></body></html>
