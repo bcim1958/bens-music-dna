@@ -116,6 +116,12 @@
    var fs=CFG.candidateFiles||[CFG.candidateFile];for(var i=0;i<fs.length;i++)await load(fs[i]);CAND=window[CFG.candidateGlobal];
    await load('music-dna-candidates-w36-v1.js');await load('music-dna-candidates-w37-v1.js');await load('music-dna-candidates-w38-v1.js');await load('music-dna-rating-ledger-v1.js');await load('music-dna-learning-v1.js');await load('music-dna-positive-bank-v1.js');await load('music-dna-rating-write-v1.js');
    function refreshStock(){var inv=MUSIC_DNA_POSITIVE_BANK.inventory(WEEK),labels={'op-peil':'OP PEIL','bijtanken':'BIJTANKEN','bijna-leeg':'BIJNA LEEG','kritiek':'KRITIEK'};document.getElementById('stockTitle').textContent='Voorraadmotor · '+labels[inv.status];document.getElementById('stockText').textContent=inv.fresh+' / '+inv.targetReserve+' positieve reservetracks · '+inv.safeSaturdayCoverage.toFixed(1)+' zaterdag(en) buffer';document.querySelector('.lamp').textContent='● '+(inv.status==='op-peil'?'SYSTEEM GEREED':labels[inv.status])}
+   window.MUSIC_DNA_IPHONE_PREVIEW={
+     discover:showDiscover,
+     world:showWorld,
+     museum:showMuseum,
+     detail:function(){var px=window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks['2026-W38'];if(px&&px.tracks&&px.tracks[0])showMuseumTrack('2026-W38',0)}
+   };
    renderExisting();refreshStock();document.getElementById('cockpitEntry').onclick=showCockpit;document.getElementById('navDiscover').onclick=showDiscover;document.getElementById('navWorld').onclick=showWorld;document.getElementById('navGems').onclick=showMuseum;setNav('navDiscover');
  }catch(e){document.getElementById('heroTitle').textContent='Veilige kijkmodus';root.innerHTML='<section class="track"><div class="slot">Niet gewijzigd</div><h2>De app-data kon niet veilig worden gelezen.</h2></section>'}
 })();
@@ -135,12 +141,10 @@
    badge.style.cssText='position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 58px);transform:translateX(-50%);z-index:99;background:#d8b96b;color:#09091b;padding:6px 10px;border-radius:999px;font:800 9px -apple-system,sans-serif;letter-spacing:.8px;white-space:nowrap';
    document.body.appendChild(badge);
    setTimeout(function(){
-    if(previewScreen==='world'&&typeof showWorld==='function'){showWorld();return}
-    if(previewScreen==='museum'&&typeof showMuseum==='function'){showMuseum();return}
-    if(previewScreen==='detail'&&window.MUSIC_DNA_MUSEUM_V1){
-      var px=MUSIC_DNA_MUSEUM_V1.weeks['2026-W38'];
-      if(px&&px.tracks&&px.tracks[0]&&typeof showMuseumTrack==='function'){showMuseumTrack('2026-W38',0);return}
-    }
+    var api=window.MUSIC_DNA_IPHONE_PREVIEW;
+    if(api&&previewScreen==='world'){api.world();return}
+    if(api&&previewScreen==='museum'){api.museum();return}
+    if(api&&previewScreen==='detail'){api.detail();return}
     var root=document.getElementById('tracks'),hero=document.querySelector('.hero'),progress=document.getElementById('weekProgress'),status=document.querySelector('.status');
     if(!root||!window.MUSIC_DNA_MUSEUM_V1)return;
     var j=MUSIC_DNA_MUSEUM_V1.weeks['2026-W38'];
@@ -165,6 +169,7 @@ window.MUSIC_DNA_IPHONE_UI_GATE=function(){
  push('discovery root exists',!!document.getElementById('tracks'));
  push('week progress exists',!!document.getElementById('weekProgress'));
  push('stock status exists',!!document.querySelector('.status'));
+ push('preview navigation API exposed',!!(window.MUSIC_DNA_IPHONE_PREVIEW&&MUSIC_DNA_IPHONE_PREVIEW.discover&&MUSIC_DNA_IPHONE_PREVIEW.world&&MUSIC_DNA_IPHONE_PREVIEW.museum&&MUSIC_DNA_IPHONE_PREVIEW.detail));
  push('museum dataset loaded',!!(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks));
  if(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks){
   ['2026-W36','2026-W37','2026-W38'].forEach(function(w){push(w+' has exactly 21 museum tracks',!!MUSIC_DNA_MUSEUM_V1.weeks[w]&&MUSIC_DNA_MUSEUM_V1.weeks[w].tracks.length===21)});
