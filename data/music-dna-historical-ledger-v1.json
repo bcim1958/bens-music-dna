@@ -194,9 +194,9 @@
       }
     },
     "2026-W37": {
-      "playlistStatus": "21-tracks-visually-verified-in-Spotify",
+      "playlistStatus": "exact-21-verified-from-user-Spotify-screenshots",
       "ratingStatus": "historical-project-state-says-all-21-daily-ratings-were-preserved; exact per-track values not yet recovered",
-      "identityStatus": "exact 21 playlist identities not yet promoted into this ledger",
+      "identityStatus": "exact 21 playlist identities promoted into ledger",
       "ratingCoverage": {
         "provenPerTrack": 0,
         "historicallyConfirmedTotal": 21
@@ -206,8 +206,158 @@
         "url": "https://open.spotify.com/playlist/04D9Y87cVENIuzl0vNz1Nj",
         "identification": "user-confirmed",
         "confirmedAt": "2026-09-19",
-        "trackIdentitiesStatus": "pending-readout"
-      }
+        "trackIdentitiesStatus": "exact-21-verified"
+      },
+      "playlistSource": "User-provided Spotify screenshots 2026-09-19 + W37 candidate identity mapping",
+      "playlist": [
+        {
+          "position": 1,
+          "candidateId": "2026-W37-06",
+          "spotifyTrackId": "4QaxyJsbo5AR3bnEB7ko8h",
+          "artist": "Dynazty",
+          "title": "Heartless Madness"
+        },
+        {
+          "position": 2,
+          "candidateId": "2026-W37-18",
+          "spotifyTrackId": "5KpYYRnknZ4rKOk6NYLEjZ",
+          "artist": "The Hellacopters",
+          "title": "By The Grace Of God"
+        },
+        {
+          "position": 3,
+          "candidateId": "2026-W37-16",
+          "spotifyTrackId": "5hmAx18RDdlqvN1ikcPCC1",
+          "artist": "Goodbye June",
+          "title": "Step Aside"
+        },
+        {
+          "position": 4,
+          "candidateId": "2026-W37-10",
+          "spotifyTrackId": "23czLeQvLpg5t3yflZheRg",
+          "artist": "The Temperance Movement",
+          "title": "Only Friend"
+        },
+        {
+          "position": 5,
+          "candidateId": "2026-W37-21",
+          "spotifyTrackId": "58VTMFtsoe0E0vSX1pV03h",
+          "artist": "Black Stone Cherry",
+          "title": "Blame It on the Boom Boom"
+        },
+        {
+          "position": 6,
+          "candidateId": "2026-W37-14",
+          "spotifyTrackId": "7qRmdDl9dnHkFT4MMboG7Y",
+          "artist": "Royal Blood",
+          "title": "Come on Over"
+        },
+        {
+          "position": 7,
+          "candidateId": "2026-W37-17",
+          "spotifyTrackId": "6Ns6ZLgRKPym5Rxj3BZzzG",
+          "artist": "Electric Mary",
+          "title": "sweet mary c"
+        },
+        {
+          "position": 8,
+          "candidateId": "2026-W37-03",
+          "spotifyTrackId": "1Pznl6uY7F8PUXGZCHTw3u",
+          "artist": "The Lazys",
+          "title": "Nothing but Trouble"
+        },
+        {
+          "position": 9,
+          "candidateId": "2026-W37-19",
+          "spotifyTrackId": "3rutIwayGw0W7JE5lfzgfN",
+          "artist": "Thundermother",
+          "title": "Hot Mess"
+        },
+        {
+          "position": 10,
+          "candidateId": "2026-W37-11",
+          "spotifyTrackId": "2gqS1qR8YRihZFwrVT5RO3",
+          "artist": "Smith/Kotzen",
+          "title": "Scars"
+        },
+        {
+          "position": 11,
+          "candidateId": "2026-W37-09",
+          "spotifyTrackId": "2OdkkVvm7iwDiL5yZbokgo",
+          "artist": "Those Damn Crows",
+          "title": "Who Did It"
+        },
+        {
+          "position": 12,
+          "candidateId": "2026-W37-15",
+          "spotifyTrackId": "0PF0V7vjos7UA8gFDCDiZ2",
+          "artist": "Monster Truck",
+          "title": "Young City Hearts"
+        },
+        {
+          "position": 13,
+          "candidateId": "2026-W37-12",
+          "spotifyTrackId": "0PtYFqyiiUbsH7GtYdqej5",
+          "artist": "Massive Wagons",
+          "title": "Death or Glory"
+        },
+        {
+          "position": 14,
+          "candidateId": "2026-W37-20",
+          "spotifyTrackId": "7boNv1NtUklJBBGG0Qap4W",
+          "artist": "Florence Black",
+          "title": "CAN YOU FEEL IT?"
+        },
+        {
+          "position": 15,
+          "candidateId": "2026-W37-08",
+          "spotifyTrackId": "0jJqXjcy3LwwD7gFT5Ds7H",
+          "artist": "The Vintage Caravan",
+          "title": "On the Run"
+        },
+        {
+          "position": 16,
+          "candidateId": "2026-W37-01",
+          "spotifyTrackId": "3FOxK4zKJp5yCVqZPFIm5a",
+          "artist": "Teen Mortgage",
+          "title": "Tuning In"
+        },
+        {
+          "position": 17,
+          "candidateId": "2026-W37-13",
+          "spotifyTrackId": "2cyJkqB2OYHwWWvKGtrJ0r",
+          "artist": "Beast In Black",
+          "title": "Sweet True Lies"
+        },
+        {
+          "position": 18,
+          "candidateId": "2026-W37-02",
+          "spotifyTrackId": "1nNxTwaC6jFJUGPVRTsNaR",
+          "artist": "Twin Tribes",
+          "title": "Cauldron of Thorns"
+        },
+        {
+          "position": 19,
+          "candidateId": "2026-W37-07",
+          "spotifyTrackId": "34ZvRwa42pvx6ZeXGS1ydC",
+          "artist": "SPRINTS",
+          "title": "Heavy"
+        },
+        {
+          "position": 20,
+          "candidateId": "2026-W37-04",
+          "spotifyTrackId": "0za2S4LnnHXOVPwkp6Sv8Q",
+          "artist": "Whispering Sons",
+          "title": "Alone"
+        },
+        {
+          "position": 21,
+          "candidateId": "2026-W37-05",
+          "spotifyTrackId": "5jHIpRdAg7vLJ14XrHK32m",
+          "artist": "DEADLETTER",
+          "title": "Mere Mortal"
+        }
+      ]
     },
     "2026-W38": {
       "playlistStatus": "exact-21-verified-from-user-Spotify-screenshots",
