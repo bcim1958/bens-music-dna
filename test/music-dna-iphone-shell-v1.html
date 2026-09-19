@@ -106,6 +106,18 @@
  function reserveCompleted(d){var q=read(key(d,true,true),null);if(!q)return true;var ids=q.ids||(q.id?[q.id]:[]),st=read(key(d,true,false),{});return ids.every(function(id){return st[id]&&st[id].rating})}
  function allOfficialComplete(){for(var d=1;d<=7;d++)if(!officialCompleted(d))return false;return true}
  function saturdayReady(){return allOfficialComplete()&&reserveCompleted(7)}
+ function saturdaySemanticsSelfTest(){
+  var savedOfficial=officialCompleted,savedReserve=reserveCompleted;
+  try{
+   officialCompleted=function(){return true};reserveCompleted=function(d){return d===7};
+   var allDone=saturdayReady()===true;
+   reserveCompleted=function(){return false};
+   var saturdayReserveBlocks=saturdayReady()===false;
+   officialCompleted=function(d){return d!==4};reserveCompleted=function(){return true};
+   var missingOfficialBlocks=saturdayReady()===false;
+   return allDone&&saturdayReserveBlocks&&missingOfficialBlocks;
+  }finally{officialCompleted=savedOfficial;reserveCompleted=savedReserve}
+ }
  function showSaturdayHandoff(){
    setPlace('Ontdek-DNA · zaterdag');chrome('secondary');setNav('navDiscover');
    root.innerHTML='<button class="detailBack" id="giftBack">‹ Terug naar Ontdek-DNA</button><section class="detailHero"><div class="slot">Zaterdag · gecontroleerde overdracht</div><h1>Jouw week is compleet</h1><div class="artist">21 Muziekmeter-beoordelingen zijn afgerond.</div></section><section class="why"><div class="slot">Cadeau</div><p>De definitieve 21-track reis wordt alleen door de bestaande zaterdagmotor opgebouwd. Deze nieuwe app maakt zelf geen cadeau, playlist of museumstuk aan.</p></section><button class="spotify" id="giftOpen">🎁 Open de bestaande zaterdaglevering</button><div class="readonly">Zo blijft Flow-DNA, FIFO-reserve, Spotify-integriteit en de verzegeling van het Edelsteenmuseum volledig onder de bestaande veiligheidsroute.</div>';
@@ -139,7 +151,7 @@ window.MUSIC_DNA_IPHONE_UI_GATE=function(){
  push('discovery root exists',!!document.getElementById('tracks'));
  push('week progress exists',!!document.getElementById('weekProgress'));
  push('stock status exists',!!document.querySelector('.status'));
- push('Saturday handoff uses official-week + Saturday-reserve semantics',typeof allOfficialComplete==='function'&&typeof saturdayReady==='function'&&/allOfficialComplete\(\)\s*&&\s*reserveCompleted\(7\)/.test(String(saturdayReady)));
+ push('Saturday handoff passes deterministic completion semantics',typeof saturdaySemanticsSelfTest==='function'&&saturdaySemanticsSelfTest());
  push('museum dataset loaded',!!(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks));
  if(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks){
   ['2026-W36','2026-W37','2026-W38'].forEach(function(w){
