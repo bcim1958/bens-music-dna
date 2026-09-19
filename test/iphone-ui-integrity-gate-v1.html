@@ -11,6 +11,10 @@
    checks.push({name:screen+' reports correct route',ok:r.screen===screen});
    var doc=results[screen]._doc,txt=doc&&doc.body?doc.body.textContent:'';
    checks.push({name:screen+' DOM contains route-specific content',ok:expectedText[screen].every(function(x){return txt.indexOf(x)>=0})});
+   var docEl=doc&&doc.documentElement,body=doc&&doc.body;
+   checks.push({name:screen+' viewport is iPhone-safe',ok:!!docEl&&docEl.scrollWidth<=430&&!!body&&body.scrollWidth<=430});
+   var controls=doc?Array.prototype.slice.call(doc.querySelectorAll('button,a')):[];
+   checks.push({name:screen+' interactive controls have usable height',ok:controls.length>0&&controls.every(function(el){return el.getBoundingClientRect().height>=40})});
   });
   var ok=checks.every(function(x){return x.ok});
   out.className=ok?'pass':'fail';
