@@ -16,5 +16,9 @@
     if(!latest||latest.rating!==({terugkomen:'twijfel',niet:'nee'}[x.rating]||x.rating))return {ok:false,reason:'ledger-verify-failed',committed:true};
     return {ok:true,committed:true,key:key,ratedAt:at,source:x.reserve?'reserve':'official'};
   }
-  window.MUSIC_DNA_RATING_WRITE={version:3,writeRating:writeRating,stateKey:stateKey};
+  function resyncDerived(){
+    if(!window.MUSIC_DNA_LEARNING||!window.MUSIC_DNA_POSITIVE_BANK)return {ok:false,reason:'dependencies-missing'};
+    try{MUSIC_DNA_LEARNING.resyncStoredRatings();MUSIC_DNA_POSITIVE_BANK.sync();return {ok:true}}catch(e){return {ok:false,reason:'derived-sync-failed'}}
+  }
+  window.MUSIC_DNA_RATING_WRITE={version:4,writeRating:writeRating,resyncDerived:resyncDerived,stateKey:stateKey};
 })();
