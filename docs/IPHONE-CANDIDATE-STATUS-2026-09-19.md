@@ -18,6 +18,8 @@ The current iPhone work is a **visually approved, production-connected candidate
 - The Discover cards again expose a visible “Luister & beoordeel” affordance and are keyboard-operable in the standalone candidate.
 - The functional shell now exposes its Saturday-semantics self-test to the outer integrity gate; the gate also requires rating writer v5 and positive bank v14.
 - Static source inspection confirms the standalone visual preview remains isolated from production data, while the functional shell deliberately reads the existing production selections/state and uses the shared rating writer / learning / positive-bank stack.
+- The temporary hard-coded W38→W39 calendar override has been removed; the shared week registry is again the sole calendar source and `calendarDay()` reads current time dynamically.
+- Stock presentation now distinguishes missing local learning history from a real zero reserve: with no local learning signals the shell shows `LOKALE STATUS ONBEKEND`, not `KRITIEK`. The integrity gate protects this wording rule; positive-bank semantics are unchanged.
 
 ## Known deliberate limits
 - No real W39 rating is used for testing.
@@ -28,7 +30,7 @@ The current iPhone work is a **visually approved, production-connected candidate
 - The four-screen candidate has been manually rendered and visually inspected on the user's real iPhone on 2026-09-19; Discover, Detail/Muziekmeter, My Music World and Gemstone Museum were all reviewed. The explicit Detail → Discover return path was added after that inspection exposed the navigation ergonomics.
 
 ## Current stop point
-All source-level work that can be completed safely without executing a real browser has been completed. Do not add further production behavior merely to make a test pass. The remaining blockers are runtime verification only.
+All source-level iPhone-candidate work that can be completed safely without executing a real browser has been completed, including the calendar-source cleanup and truthful local-stock wording. Do not add further production behavior merely to make a test pass. The remaining iPhone blockers are runtime verification only. W39 operational preparation is tracked separately and does not reopen the iPhone candidate.
 
 ## Promotion gate
 Do not replace the current production page until:
