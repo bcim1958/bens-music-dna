@@ -1,0 +1,20 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><title>Rating ledger v1 test</title></head><body><pre id="out"></pre>
+<script>
+const mem={};const ls={getItem:k=>Object.prototype.hasOwnProperty.call(mem,k)?mem[k]:null,setItem:(k,v)=>{mem[k]=String(v)},removeItem:k=>delete mem[k],key:i=>Object.keys(mem)[i]||null,get length(){return Object.keys(mem).length}};Object.defineProperty(window,'localStorage',{value:ls});
+</script>
+<script src="music-dna-rating-ledger-v1.js"></script>
+<script>
+(function(){
+ const L=MUSIC_DNA_RATING_LEDGER, results=[];function ok(name,pass,detail){results.push({name,pass:!!pass,detail:detail||null})}
+ const a='2026-W39-TEST-A',b='2026-W39-TEST-B';
+ L.record({trackId:a,weekKey:'2026-W39',rating:'raak',ratedAt:'2026-09-20T08:00:00.000Z',source:'official',meter:true});
+ let m=L.read();ok('first rating persisted',m.events.length===1&&m.latest[a].rating==='raak');
+ L.record({trackId:a,weekKey:'2026-W39',rating:'goed',ratedAt:'2026-09-20T08:05:00.000Z',source:'official',meter:true});
+ m=L.read();ok('rerating appends history',m.events.length===2&&m.latest[a].rating==='goed',m.events.map(x=>x.rating));
+ L.record({trackId:b,weekKey:'2026-W39',rating:'twijfel',ratedAt:'2026-09-20T08:10:00.000Z',source:'reserve',meter:false,slot:'reserve'});
+ let c=L.counts('2026-W39');ok('official/reserve separated',c.official===1&&c.reserve===1&&c.goed===1&&c.terugkomen===1,c);
+ localStorage.removeItem(L.storageKey);m=L.read();ok('mirror recovery',m.events.length===3&&m.latest[a].rating==='goed'&&m.latest[b].rating==='twijfel');
+ const snap=JSON.parse(L.snapshot());ok('snapshot complete',snap.ledger.events.length===3&&snap.ledger.weeks['2026-W39']);
+ const pass=results.every(x=>x.pass);document.getElementById('out').textContent=JSON.stringify({suite:'rating-ledger-v1',pass,results},null,2);document.title=(pass?'PASS':'FAIL')+' · Rating ledger v1';
+})();
+</script></body></html>
