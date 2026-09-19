@@ -3,6 +3,8 @@
   function stateKey(week,day,reserve){return 'bmd-week-'+week+'-day'+day+(reserve?'-reserve':'')+'-v1'}
   function writeRating(x){
     if(!x||!x.weekKey||!x.day||!x.trackId||!x.rating)return {ok:false,reason:'missing-input'};
+    if(!/^[0-9]{4}-W[0-9]{2}$/.test(x.weekKey)||!Number.isInteger(x.day)||x.day<1||x.day>7)return {ok:false,reason:'invalid-scope'};
+    if(['raak','goed','twijfel','nee'].indexOf(x.rating)<0)return {ok:false,reason:'invalid-rating'};
     if(!window.MUSIC_DNA_RATING_LEDGER||!window.MUSIC_DNA_LEARNING||!window.MUSIC_DNA_POSITIVE_BANK)return {ok:false,reason:'dependencies-missing'};
     var key=stateKey(x.weekKey,x.day,!!x.reserve),st=parse(localStorage.getItem(key),{}),before=st[x.trackId]||null,at=x.ratedAt||new Date().toISOString();
     st[x.trackId]={rating:x.rating,ratedAt:at,meter:!x.reserve,slot:x.reserve?'reserve':null};
@@ -14,5 +16,5 @@
     if(!latest||latest.rating!==({terugkomen:'twijfel',niet:'nee'}[x.rating]||x.rating))return {ok:false,reason:'ledger-verify-failed'};
     return {ok:true,key:key,ratedAt:at,source:x.reserve?'reserve':'official'};
   }
-  window.MUSIC_DNA_RATING_WRITE={version:1,writeRating:writeRating,stateKey:stateKey};
+  window.MUSIC_DNA_RATING_WRITE={version:2,writeRating:writeRating,stateKey:stateKey};
 })();
