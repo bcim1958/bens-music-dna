@@ -111,7 +111,7 @@
 <script>
 /* Lightweight deterministic UI integrity gate: no production state is mutated. */
 (function(){
- var q=new URLSearchParams(location.search);
+ var q=new URLSearchParams(location.search),previewScreen=q.get('screen')||'discover';
  if(q.get('preview')==='1'){
   document.documentElement.setAttribute('data-preview','1');
   window.addEventListener('load',function(){
@@ -123,6 +123,12 @@
    badge.style.cssText='position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 58px);transform:translateX(-50%);z-index:99;background:#d8b96b;color:#09091b;padding:6px 10px;border-radius:999px;font:800 9px -apple-system,sans-serif;letter-spacing:.8px;white-space:nowrap';
    document.body.appendChild(badge);
    setTimeout(function(){
+    if(previewScreen==='world'&&typeof showWorld==='function'){showWorld();return}
+    if(previewScreen==='museum'&&typeof showMuseum==='function'){showMuseum();return}
+    if(previewScreen==='detail'&&window.MUSIC_DNA_MUSEUM_V1){
+      var px=MUSIC_DNA_MUSEUM_V1.weeks['2026-W38'];
+      if(px&&px.tracks&&px.tracks[0]&&typeof showMuseumTrack==='function'){showMuseumTrack('2026-W38',0);return}
+    }
     var root=document.getElementById('tracks'),hero=document.querySelector('.hero'),progress=document.getElementById('weekProgress'),status=document.querySelector('.status');
     if(!root||!window.MUSIC_DNA_MUSEUM_V1)return;
     var j=MUSIC_DNA_MUSEUM_V1.weeks['2026-W38'];
