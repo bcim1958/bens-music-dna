@@ -22,7 +22,7 @@ The current iPhone work is a **visual/functional candidate**, not a production r
 ## Known deliberate limits
 - No real W39 rating is used for testing.
 - The new functional shell reads existing selections; it does not replace the current production selector.
-- The manually approved standalone visual candidate and the production-connected functional shell are still separate artifacts. The final visual language must be merged into the functional shell before any production replacement.
+- The standalone visual preview remains available as a design reference, but its approved visual language has now been merged into the production-connected functional shell. The shell still remains a candidate and production fallback is retained.
 - Saturday gift construction remains in the existing controlled Saturday route.
 - No automated browser-gate PASS has been claimed in this environment.
 - The four-screen candidate has been manually rendered and visually inspected on the user's real iPhone on 2026-09-19; Discover, Detail/Muziekmeter, My Music World and Gemstone Museum were all reviewed. The explicit Detail → Discover return path was added after that inspection exposed the navigation ergonomics.
@@ -32,7 +32,7 @@ Do not replace the current production page until:
 1. `test/iphone-rating-write-gate.html` reports PASS in an actual browser.
 2. `test/iphone-ui-integrity-gate-v1.html` reports PASS at the intended iPhone viewport.
 3. ~~Discover, Detail, My Music World and Gemstone Museum have been visually inspected from rendered output.~~ Completed on a real iPhone on 2026-09-19.
-4. Merge the approved visual candidate into the production-connected functional shell without changing selector, Flow-DNA, rating-ledger or Saturday-gift semantics.
-5. Run both automated gates in an actual browser; correct any failures and rerun them.
+4. ~~Merge the approved visual candidate into the production-connected functional shell without changing selector, Flow-DNA, rating-ledger or Saturday-gift semantics.~~ Completed; the shell remains read-existing-data-first and the existing selector / Saturday route are retained.
+5. Run both automated gates in an actual browser; correct any failures and rerun them. A read-only `MUSIC_DNA_IPHONE_DIAGNOSTIC()` helper is available in the integrated shell to report current week/day and failed shell checks without changing ratings or selections.
 
 Until then this candidate is safe to inspect alongside production, with production retained as fallback.
