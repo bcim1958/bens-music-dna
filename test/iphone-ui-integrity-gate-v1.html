@@ -1,6 +1,6 @@
 <!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Music DNA · iPhone UI integrity gate</title><style>body{font:15px -apple-system,sans-serif;background:#090a15;color:#eee;padding:24px}iframe{width:390px;height:844px;border:1px solid #444;border-radius:28px;background:#050611}.pass{color:#55df98}.fail{color:#ff7777}pre{white-space:pre-wrap}</style></head><body><h1>iPhone UI integrity gate</h1><p>Read-only structure check. This gate does not create selections or ratings.</p><div id="frames"></div><pre id="out">Laden…</pre><script>
 (function(){
- var screens=['discover','detail','world','museum'],expectedText={discover:['Ontdek-DNA','Eclipse','Luister & beoordeel'],detail:['Viva La Victoria','Muziekmeter','RAAK','GOED','TERUGKOMEN'],world:['Mijn Muziekwereld','Brandstof voor zaterdag','Week · jaar · totaal'],museum:['Edelsteenmuseum','W39 · VERZEGELD','Nog niet zichtbaar']},host=document.getElementById('frames'),out=document.getElementById('out'),results={},done=0;
+ var screens=['discover','detail','world','museum'],expectedText={discover:['Ontdek-DNA','Eclipse','Luister & beoordeel'],detail:['Viva La Victoria','Muziekmeter','RAAK','GOED','NOG EENS','NEE'],world:['Mijn Muziekwereld','Brandstof voor zaterdag','Week · jaar · totaal'],museum:['Edelsteenmuseum','W39 · VERZEGELD','Nog niet zichtbaar']},host=document.getElementById('frames'),out=document.getElementById('out'),results={},done=0;
  function finish(){
   var checks=[];
   screens.forEach(function(screen){
@@ -18,7 +18,7 @@
    var clipped=doc?Array.prototype.slice.call(doc.querySelectorAll('button,a,h1,h2,.panel,.track,.gem')).filter(function(el){var r=el.getBoundingClientRect(),cs=doc.defaultView.getComputedStyle(el);return cs.display!=='none'&&cs.visibility!=='hidden'&&(r.right>430.5||r.left<-.5)}):[];
    checks.push({name:screen+' key content is not horizontally clipped',ok:clipped.length===0});
    var nav=doc?doc.querySelector('.nav'):null,nr=nav&&nav.getBoundingClientRect();
-   checks.push({name:screen+' bottom navigation remains on-screen',ok:!!nr&&nr.left>=0&&nr.right<=430.5&&nr.height>0});
+   checks.push({name:screen+' navigation is present and horizontally safe',ok:!!nr&&nr.left>=0&&nr.right<=430.5&&nr.height>0});
   });
   var ok=checks.every(function(x){return x.ok});
   out.className=ok?'pass':'fail';
