@@ -1,24 +1,30 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Music DNA · iPhone UI integrity gate</title><style>body{font:15px -apple-system,sans-serif;background:#090a15;color:#eee;padding:24px}iframe{width:390px;height:844px;border:1px solid #444;border-radius:28px;background:#050611}.pass{color:#55df98}.fail{color:#ff7777}pre{white-space:pre-wrap}</style></head><body><h1>iPhone UI integrity gate</h1><p>Read-only structure check. This gate does not create selections or ratings.</p><iframe id="app" src="music-dna-iphone-visual-preview-v1.html?screen=discover"></iframe><pre id="out">Laden…</pre><script>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Music DNA · iPhone UI integrity gate</title><style>body{font:15px -apple-system,sans-serif;background:#090a15;color:#eee;padding:24px}iframe{width:390px;height:844px;border:1px solid #444;border-radius:28px;background:#050611}.pass{color:#55df98}.fail{color:#ff7777}pre{white-space:pre-wrap}</style></head><body><h1>iPhone UI integrity gate</h1><p>Read-only structure check. This gate does not create selections or ratings.</p><div id="frames"></div><pre id="out">Laden…</pre><script>
 (function(){
- var frame=document.getElementById('app'),out=document.getElementById('out'),tries=0,maxTries=50;
- function finish(r){
-   out.className=r.ok?'pass':'fail';
-   out.textContent=(r.ok?'PASS':'FAIL')+'\n\n'+r.checks.map(function(x){return (x.ok?'✓ ':'✗ ')+x.name}).join('\n');
+ var screens=['discover','detail','world','museum'],host=document.getElementById('frames'),out=document.getElementById('out'),results={},done=0;
+ function finish(){
+  var checks=[];
+  screens.forEach(function(screen){
+   var r=results[screen];
+   if(!r){checks.push({name:screen+' preview completed',ok:false});return}
+   checks.push({name:screen+' preview gate passes',ok:r.ok===true});
+   checks.push({name:screen+' declares zero production-data access',ok:r.productionDataAccess===false});
+   checks.push({name:screen+' reports correct route',ok:r.screen===screen});
+  });
+  var ok=checks.every(function(x){return x.ok});
+  out.className=ok?'pass':'fail';
+  out.textContent=(ok?'PASS':'FAIL')+'\n\n'+checks.map(function(x){return (x.ok?'✓ ':'✗ ')+x.name}).join('\n');
  }
- function poll(){
+ screens.forEach(function(screen){
+  var frame=document.createElement('iframe');frame.title='Music DNA '+screen;frame.src='music-dna-iphone-visual-preview-v1.html?screen='+screen;host.appendChild(frame);
+  var tries=0,maxTries=50,settled=false;
+  function settle(r){if(settled)return;settled=true;results[screen]=r;if(++done===screens.length)finish()}
+  function poll(){
    tries++;
-   try{
-     var w=frame.contentWindow;
-     if(w&&typeof w.MUSIC_DNA_VISUAL_PREVIEW_GATE==='function'){
-       var r=w.MUSIC_DNA_VISUAL_PREVIEW_GATE();
-       r.checks.push({name:'preview declares zero production-data access',ok:r.productionDataAccess===false});
-       r.ok=r.checks.every(function(x){return x.ok});
-       finish(r);return;
-     }
-   }catch(e){}
-   if(tries>=maxTries){finish({ok:false,checks:[{name:'UI gate became ready within 5 seconds',ok:false}]});return}
+   try{var w=frame.contentWindow;if(w&&typeof w.MUSIC_DNA_VISUAL_PREVIEW_GATE==='function'){settle(w.MUSIC_DNA_VISUAL_PREVIEW_GATE());return}}catch(e){}
+   if(tries>=maxTries){settle({ok:false,productionDataAccess:null,screen:screen});return}
    setTimeout(poll,100);
- }
- frame.onload=function(){tries=0;poll()};
+  }
+  frame.onload=function(){tries=0;poll()};
+ });
 })();
 </script></body></html>
