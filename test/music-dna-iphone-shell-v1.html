@@ -59,12 +59,12 @@
  function bindMuseum(){Array.prototype.forEach.call(root.querySelectorAll('.gem[data-week]'),function(x){x.onclick=function(){showJourney(x.getAttribute('data-week'))}})}
  function showMuseum(){
    setPlace('Edelsteenmuseum');chrome('secondary');setNav('navGems');
-   var now=new Date(),w39Unlocked=now>=new Date(2026,8,27);
+   var w39=MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks&&MUSIC_DNA_MUSEUM_V1.weeks['2026-W39'],w39Unlocked=!!(w39&&Array.isArray(w39.tracks)&&w39.tracks.length===21&&w39.released===true);
    root.innerHTML='<section class="cockpit"><div class="kicker">Ben\'s Music DNA · archief</div><h1 class="screenTitle">Edelsteenmuseum</h1><div class="dashNote" style="margin:-3px 0 15px">Verzamelde reizen</div><div class="dashNote museumIntro">Hier wonen de afgeronde zaterdagreizen. Alleen wat al echt is vrijgegeven wordt getoond; een toekomstige verrassing blijft gesloten.</div>'+
    '<section class="gem" data-week="2026-W36"><div class="gemStone">◆</div><div><div class="slot">2026 · W36</div><h2>Flow-DNA Reference 001</h2><p>21 tracks · afgeronde zaterdagreis · historische referentie voor de flow.</p></div></section>'+
    '<section class="gem" data-week="2026-W37"><div class="gemStone">◇</div><div><div class="slot">2026 · W37</div><h2>Ontdek-DNA #2026-37</h2><p>21 tracks · afgeronde zaterdagreis. De exacte edelsteennaam wordt pas getoond wanneer die uit betrouwbare projectdata beschikbaar is.</p></div></section>'+
    '<section class="gem" data-week="2026-W38"><div class="gemStone">◆</div><div><div class="slot">2026 · W38</div><h2>Flow-DNA Reference 002</h2><p>21 tracks · afgeronde zaterdagreis · tweede vaste flowreferentie.</p></div></section>'+
-   (w39Unlocked?'<section class="gem"><div class="gemStone">◈</div><div><div class="slot">2026 · W39</div><h2>Carneool</h2><p>De W39-reis is vrijgegeven. De definitieve playlistinhoud wordt uitsluitend uit het zaterdagresultaat gelezen zodra die museumkoppeling is aangesloten.</p></div></section>':'<section class="gem locked"><div class="gemStone">?</div><div><div class="slot">2026 · W39</div><h2>Nog verzegeld</h2><p>Opent pas na de zaterdagse vrijgave. Geen track, volgorde of edelsteen wordt hier vooraf onthuld.</p></div></section>')+
+   (w39Unlocked?'<section class="gem" data-week="2026-W39"><div class="gemStone">◈</div><div><div class="slot">2026 · W39</div><h2>'+esc(w39.gemstone||'W39')+'</h2><p>21 tracks · vrijgegeven zaterdagreis · inhoud uit het definitieve release-artifact.</p></div></section>':'<section class="gem locked"><div class="gemStone">?</div><div><div class="slot">2026 · W39</div><h2>Nog verzegeld</h2><p>Opent pas na de zaterdagse vrijgave. Geen track, volgorde of edelsteen wordt hier vooraf onthuld.</p></div></section>')+
    '</section>';bindMuseum();
  }
  function showWorld(){
