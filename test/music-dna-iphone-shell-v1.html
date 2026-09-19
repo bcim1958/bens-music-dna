@@ -123,6 +123,7 @@
    return noReserveNeededReady&&neededButMissingBlocks&&reserveIncompleteBlocks&&missingOfficialBlocks;
   }finally{officialCompleted=savedOfficial;reserveCompleted=savedReserve;reserveNeeded=savedNeed}
  }
+ window.MUSIC_DNA_IPHONE_SATURDAY_SEMANTICS_TEST=saturdaySemanticsSelfTest;
  function showSaturdayHandoff(){
    setPlace('Ontdek-DNA · zaterdag');chrome('secondary');setNav('navDiscover');
    root.innerHTML='<button class="detailBack" id="giftBack">‹ Terug naar Ontdek-DNA</button><section class="detailHero"><div class="slot">Zaterdag · gecontroleerde overdracht</div><h1>Jouw week is compleet</h1><div class="artist">21 Muziekmeter-beoordelingen zijn afgerond.</div></section><section class="why"><div class="slot">Cadeau</div><p>De definitieve 21-track reis wordt alleen door de bestaande zaterdagmotor opgebouwd. Deze nieuwe app maakt zelf geen cadeau, playlist of museumstuk aan.</p></section><button class="spotify" id="giftOpen">🎁 Open de bestaande zaterdaglevering</button><div class="readonly">Zo blijft Flow-DNA, FIFO-reserve, Spotify-integriteit en de verzegeling van het Edelsteenmuseum volledig onder de bestaande veiligheidsroute.</div>';
@@ -156,7 +157,9 @@ window.MUSIC_DNA_IPHONE_UI_GATE=function(){
  push('discovery root exists',!!document.getElementById('tracks'));
  push('week progress exists',!!document.getElementById('weekProgress'));
  push('stock status exists',!!document.querySelector('.status'));
- push('Saturday handoff passes deterministic completion semantics',typeof saturdaySemanticsSelfTest==='function'&&saturdaySemanticsSelfTest());
+ push('rating writer v5 loaded',!!(window.MUSIC_DNA_RATING_WRITE&&MUSIC_DNA_RATING_WRITE.version===5));
+ push('positive bank v14 loaded',!!(window.MUSIC_DNA_POSITIVE_BANK&&MUSIC_DNA_POSITIVE_BANK.version===14));
+ push('Saturday handoff passes deterministic completion semantics',typeof window.MUSIC_DNA_IPHONE_SATURDAY_SEMANTICS_TEST==='function'&&window.MUSIC_DNA_IPHONE_SATURDAY_SEMANTICS_TEST());
  push('museum dataset loaded',!!(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks));
  if(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks){
   ['2026-W36','2026-W37','2026-W38'].forEach(function(w){
