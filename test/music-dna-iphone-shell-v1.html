@@ -136,7 +136,7 @@
    if(d===0){document.getElementById('heroTitle').textContent='Klaar voor zondag';root.innerHTML='';return}
    if(d===7&&saturdayReady()){document.getElementById('heroTitle').textContent='Week compleet';root.innerHTML='<section class="track" id="saturdayGift"><div class="slot">21 / 21 · Muziekmeter</div><h2>Je zaterdagreis staat klaar</h2><div class="meta">Open de bestaande gecontroleerde cadeau-route. De iPhone-app bouwt zelf niets vooruit.</div></section>';activateCard(document.getElementById('saturdayGift'),showSaturdayHandoff);return}
    var q=read(key(d,false,true),null),rq=read(key(d,true,true),null),st=read(key(d,false,false),{}),rst=read(key(d,true,false),{});
-   if(!q||!Array.isArray(q.ids)||q.ids.length!==3){document.getElementById('heroTitle').textContent='Nog geen set geopend';root.innerHTML='<section class="track"><div class="slot">Veilige kijkmodus</div><h2>Open eerst de huidige productie-app</h2><div class="meta">Deze nieuwe vormgeving leest bestaande W39-data maar maakt in deze fase zelf nog geen selectie of beoordeling aan.</div></section>';return}
+   if(!q||!Array.isArray(q.ids)||q.ids.length!==3){document.getElementById('heroTitle').textContent='Nog geen set geopend';root.innerHTML='<section class="track"><div class="slot">Veilige kijkmodus</div><h2>Open eerst de huidige productie-app</h2><div class="meta">Deze nieuwe vormgeving leest uitsluitend bestaande data van de actieve productieweek en maakt in deze fase zelf nog geen selectie of beoordeling aan.</div></section>';return}
    var ids=q.ids,rids=rq?(rq.ids||(rq.id?[rq.id]:[])):[];
    root.innerHTML=ids.map(function(id,i){return card(id,i,false,st)}).join('')+rids.map(function(id,i){return card(id,i,true,rst)}).join('');
    document.getElementById('heroTitle').textContent='Jouw '+(ids.length+rids.length)+' ontdekkingen';bindCards();
@@ -152,6 +152,7 @@
 </script>
 <script>
 /* Deterministic structural integrity gate; production state is read-only here. */
+window.MUSIC_DNA_IPHONE_DIAGNOSTIC=function(){var g=window.MUSIC_DNA_IPHONE_UI_GATE();return {ok:g.ok,week:typeof WEEK!=='undefined'?WEEK:null,day:typeof calendarDay==='function'?calendarDay():null,failed:g.failed};};
 window.MUSIC_DNA_IPHONE_UI_GATE=function(){
  var out=[],push=function(name,ok){out.push({name:name,ok:!!ok})},nav=document.querySelector('.nav'),app=document.querySelector('.app'),nr=nav&&nav.getBoundingClientRect(),ar=app&&app.getBoundingClientRect();
  push('mobile viewport declared',!!document.querySelector('meta[name="viewport"]'));
