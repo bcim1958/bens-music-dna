@@ -15,6 +15,10 @@
    checks.push({name:screen+' viewport is iPhone-safe',ok:!!docEl&&docEl.scrollWidth<=430&&!!body&&body.scrollWidth<=430});
    var controls=doc?Array.prototype.slice.call(doc.querySelectorAll('button,a')):[];
    checks.push({name:screen+' interactive controls have usable height',ok:controls.length>0&&controls.every(function(el){return el.getBoundingClientRect().height>=40})});
+   var clipped=doc?Array.prototype.slice.call(doc.querySelectorAll('button,a,h1,h2,.panel,.track,.gem')).filter(function(el){var r=el.getBoundingClientRect(),cs=doc.defaultView.getComputedStyle(el);return cs.display!=='none'&&cs.visibility!=='hidden'&&(r.right>430.5||r.left<-.5)}):[];
+   checks.push({name:screen+' key content is not horizontally clipped',ok:clipped.length===0});
+   var nav=doc?doc.querySelector('.nav'):null,nr=nav&&nav.getBoundingClientRect();
+   checks.push({name:screen+' bottom navigation remains on-screen',ok:!!nr&&nr.left>=0&&nr.right<=430.5&&nr.height>0});
   });
   var ok=checks.every(function(x){return x.ok});
   out.className=ok?'pass':'fail';
