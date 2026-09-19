@@ -179,8 +179,13 @@ window.MUSIC_DNA_IPHONE_UI_GATE=function(){
  push('preview navigation API exposed',!!(window.MUSIC_DNA_IPHONE_PREVIEW&&MUSIC_DNA_IPHONE_PREVIEW.discover&&MUSIC_DNA_IPHONE_PREVIEW.world&&MUSIC_DNA_IPHONE_PREVIEW.museum&&MUSIC_DNA_IPHONE_PREVIEW.detail));
  push('museum dataset loaded',!!(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks));
  if(window.MUSIC_DNA_MUSEUM_V1&&MUSIC_DNA_MUSEUM_V1.weeks){
-  ['2026-W36','2026-W37','2026-W38'].forEach(function(w){push(w+' has exactly 21 museum tracks',!!MUSIC_DNA_MUSEUM_V1.weeks[w]&&MUSIC_DNA_MUSEUM_V1.weeks[w].tracks.length===21)});
-  push('W39 is not preloaded in museum dataset',!MUSIC_DNA_MUSEUM_V1.weeks['2026-W39']);
+  ['2026-W36','2026-W37','2026-W38'].forEach(function(w){
+    var j=MUSIC_DNA_MUSEUM_V1.weeks[w],ids=j&&Array.isArray(j.tracks)?j.tracks.map(function(x){return x&&x[0]}):[];
+    push(w+' has exactly 21 museum tracks',!!j&&ids.length===21);
+    push(w+' museum tracks are unique',ids.length===21&&new Set(ids).size===21);
+  });
+  var w39=MUSIC_DNA_MUSEUM_V1.weeks['2026-W39'],w39ok=!w39||(w39.released===true&&Array.isArray(w39.tracks)&&w39.tracks.length===21&&new Set(w39.tracks.map(function(x){return x&&x[0]})).size===21);
+  push('W39 absent or valid released 21-track artifact',w39ok);
  }
  var failed=out.filter(function(x){return !x.ok});
  return {ok:failed.length===0,checks:out,failed:failed};
