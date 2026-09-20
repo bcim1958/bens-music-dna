@@ -46,3 +46,6 @@ Do not replace the current production page until:
 5. ~~Run both automated gates in an actual browser; correct any failures and rerun them.~~ Completed: both Gate `2026-09-20.1` checks PASS on real iPhone Safari. A read-only `MUSIC_DNA_IPHONE_DIAGNOSTIC()` helper remains available in the integrated shell to report current week/day and failed shell checks without changing ratings or selections.
 
 All listed promotion-gate evidence is now closed. Keep the current production page as fallback while W39 is live; promotion of the candidate is a separate controlled deployment decision and must not disturb the active W39 week.
+
+## Controlled deployment freeze — active W39
+The integrated candidate source is frozen at `test/music-dna-iphone-shell-v1.html` after the two real-iPhone PASS results. During active W39 it must remain a parallel candidate: do not redirect `test/index.html`, do not replace `test/daily.html`, and do not migrate or rewrite the user's production localStorage. The next promotion decision is deferred until a clean week boundary, unless a production defect requires an explicit recovery change. This preserves the proven W39 daily route while preventing candidate drift after its accepted gates.
