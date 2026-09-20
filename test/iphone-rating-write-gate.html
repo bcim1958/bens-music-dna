@@ -1,6 +1,6 @@
 <!doctype html><meta charset="utf-8"><title>iPhone rating write gate</title><pre id="out"></pre>
 <script>
-const mem={};const ls={getItem:k=>Object.prototype.hasOwnProperty.call(mem,k)?mem[k]:null,setItem:(k,v)=>{mem[k]=String(v)},removeItem:k=>delete mem[k],key:i=>Object.keys(mem)[i]||null,get length(){return Object.keys(mem).length}};Object.defineProperty(window,'localStorage',{value:ls});
+const GATE_VERSION='2026-09-20.1';const mem={};const ls={getItem:k=>Object.prototype.hasOwnProperty.call(mem,k)?mem[k]:null,setItem:(k,v)=>{mem[k]=String(v)},removeItem:k=>delete mem[k],key:i=>Object.keys(mem)[i]||null,get length(){return Object.keys(mem).length}};Object.defineProperty(window,'localStorage',{value:ls});
 window.MUSIC_DNA_DB={tracks:{'2026-W39-TEST-A':{identity:{artist:'Test Artist',title:'Test Track',country:'NL',releaseYear:2026,albumOrRelease:'Test'},spotifyUrl:'https://open.spotify.com/track/TEST123',taxonomy:{allMusicStyles:['Hard Rock']},discoverDNA:{dnaRoute:['hard rock'],role:'anker'}}}};
 window.MUSIC_DNA_DELIVERY_REGISTRY={tracks:{}};
 </script>
@@ -48,6 +48,6 @@ window.MUSIC_DNA_POSITIVE_BANK={sync:function(){this.synced=(this.synced||0)+1},
  MUSIC_DNA_LEARNING.resyncStoredRatings=MUSIC_DNA_LEARNING_before;MUSIC_DNA_POSITIVE_BANK.sync=syncBefore;
  var recoveryEventsBefore=MUSIC_DNA_RATING_LEDGER.read().events.length,recoveryStateBefore=localStorage.getItem('bmd-week-2026-W39-day2-v1'),recovery=R.resyncDerived();
  ok('derived recovery succeeds without a new rating',recovery.ok===true&&MUSIC_DNA_RATING_LEDGER.read().events.length===recoveryEventsBefore&&localStorage.getItem('bmd-week-2026-W39-day2-v1')===recoveryStateBefore);
- var pass=res.every(x=>x.pass);out.textContent=JSON.stringify({suite:'iphone-rating-write-gate',pass:pass,results:res},null,2);document.title=(pass?'PASS':'FAIL')+' · iPhone rating write';
+ var pass=res.every(x=>x.pass);out.textContent='Gate '+GATE_VERSION+' · '+new Date().toISOString()+'\n'+JSON.stringify({suite:'iphone-rating-write-gate',pass:pass,results:res},null,2);document.title=(pass?'PASS':'FAIL')+' · iPhone rating write';
 })();
 </script>
