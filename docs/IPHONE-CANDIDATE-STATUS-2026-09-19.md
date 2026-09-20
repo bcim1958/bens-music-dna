@@ -32,12 +32,17 @@ The current iPhone work is a **visually approved, production-connected candidate
 ## Current stop point
 All source-level iPhone-candidate work that can be completed safely without executing a real browser has been completed, including the calendar-source cleanup and truthful local-stock wording. Do not add further production behavior merely to make a test pass. The remaining iPhone blockers are runtime verification only. W39 operational preparation is tracked separately and does not reopen the iPhone candidate.
 
+## Real-browser verification — 2026-09-20
+- `test/iphone-ui-integrity-gate-v1.html` — **PASS** on the user's real iPhone in Safari, Gate `2026-09-20.1` at `2026-09-20T09:10:18.717Z`. Discover, Detail, World and Museum all passed route, production-isolation, viewport, control-height, clipping and navigation checks.
+- `test/iphone-rating-write-gate.html` — **PASS** on the user's real iPhone in Safari, Gate `2026-09-20.1` at `2026-09-20T09:16:52.803Z`. Official/reserve state separation, append-only ledger behavior, validation-before-mutation, rating-writer v5, committed post-ledger failure semantics and non-rating derived recovery all passed.
+- The rating-write harness uses isolated synthetic localStorage; these checks did not write to the user's real W39 production ratings.
+
 ## Promotion gate
 Do not replace the current production page until:
-1. `test/iphone-rating-write-gate.html` reports PASS in an actual browser.
-2. `test/iphone-ui-integrity-gate-v1.html` reports PASS at the intended iPhone viewport.
+1. ~~`test/iphone-rating-write-gate.html` reports PASS in an actual browser.~~ Completed on real iPhone Safari on 2026-09-20.
+2. ~~`test/iphone-ui-integrity-gate-v1.html` reports PASS at the intended iPhone viewport.~~ Completed on real iPhone Safari on 2026-09-20.
 3. ~~Discover, Detail, My Music World and Gemstone Museum have been visually inspected from rendered output.~~ Completed on a real iPhone on 2026-09-19.
 4. ~~Merge the approved visual candidate into the production-connected functional shell without changing selector, Flow-DNA, rating-ledger or Saturday-gift semantics.~~ Completed; the shell remains read-existing-data-first and the existing selector / Saturday route are retained.
-5. Run both automated gates in an actual browser; correct any failures and rerun them. A read-only `MUSIC_DNA_IPHONE_DIAGNOSTIC()` helper is available in the integrated shell to report current week/day and failed shell checks without changing ratings or selections.
+5. ~~Run both automated gates in an actual browser; correct any failures and rerun them.~~ Completed: both Gate `2026-09-20.1` checks PASS on real iPhone Safari. A read-only `MUSIC_DNA_IPHONE_DIAGNOSTIC()` helper remains available in the integrated shell to report current week/day and failed shell checks without changing ratings or selections.
 
-Until then this candidate is safe to inspect alongside production, with production retained as fallback.
+All listed promotion-gate evidence is now closed. Keep the current production page as fallback while W39 is live; promotion of the candidate is a separate controlled deployment decision and must not disturb the active W39 week.
