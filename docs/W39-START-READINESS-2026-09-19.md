@@ -31,3 +31,28 @@ Do not preselect or expose W39 Day 1 before the real Sunday opening. At first pr
 - Saturday gift contents.
 - Real ratings.
 - Production fallback.
+
+## Real Day 1 runtime — 2026-09-20
+Day 1 has now run on the user's real iPhone and is no longer a readiness-only state.
+
+Observed and closed:
+- W39 resolved correctly on the real Sunday boundary.
+- The first live opening exposed an inconsistency: positive-bank v14 requested six reserve offers at local inventory 0/42, while the production UI and the proven W39 capacity model promise at most two extra reserve places per day.
+- Production now clamps reserve offers to **0–2 per day**. Therefore the production weekly maximum is again 7 × (3 official + 2 reserve) = **35 selections**, so the 42-candidate W39 pool has seven positions of headroom under this production rule.
+- The already-persisted Day-1 six-reserve selection was repaired before any rating: the three official discoveries were preserved and the active reserve selection was reduced to its first two entries.
+- The repair was applied to the actual live route `test/daily.html`; earlier edits to the safe copy alone did not affect the user's live screen.
+- Real iPhone verification then showed exactly five discoveries: three official + two reserve.
+
+Real Day-1 ratings recorded by the user:
+- official: Battle Scar — NEE; Healer — GOED; Get It On — RAAK;
+- reserve: Too Hot To Handle — RAAK; Better Days — GOED.
+- end screen showed Day 1 complete and positive Saturday stock **2/42**.
+
+Day-2 invariant:
+1. Day 1 must remain immutable.
+2. Day 2 may create exactly three new official discoveries.
+3. With stock below 21, at most two reserve places may be created.
+4. No already selected/learned ID may be reused.
+5. Do not pre-create Day 2 before the real calendar boundary; the next evidence is the user's real Monday opening.
+
+Note: four reserve candidates were briefly exposed before the Day-1 repair but removed before rating. The generic repair now preserves removed IDs as `retiredIds` for future repairs. The four already removed in this first incident predate that metadata change, so no retroactive mutation of the completed Day-1 local state is attempted.
