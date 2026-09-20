@@ -1,0 +1,6 @@
+window.MUSIC_DNA_EXPLORER_EDITORIAL_STANDARD={
+version:"2026-09-20.1",
+name:"DNA Explorer editorial standard",
+story:{targetWords:[300,400],softRange:[200,500],audience:"neutral music reader",tone:"direct, informative, contextual, easy to store mentally",goal:"Make the subject come alive through a few memorable facts and connections without becoming encyclopedic.",paragraphs:"short",personalization:"Never address the reader or infer taste inside editorial prose. Personal Music DNA appears only as separate links/cards after the story.",structure:["clear context","a few memorable anchors","natural chronology or causal line","optional side trails","short takeaway","separate Music DNA links"]},
+search:{principle:"Store reusable knowledge as structured metadata as well as prose.",fields:["entity","people","bands","tracks","albums","places","genres/styles","eras","relations","searchTerms","sources"],futureScope:"Zoeken in Music DNA may combine DNA Explorer knowledge, DNA Express stories and DNA playlist/special links."}
+};
