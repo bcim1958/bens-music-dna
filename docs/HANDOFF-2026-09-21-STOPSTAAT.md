@@ -1,210 +1,223 @@
 # Music DNA — stopstaat 21 september 2026
 
-**Status:** canoniek tussenanker na de Explorer-bouw van 21-09-2026  
-**Vastgezet:** 21-09-2026, vóór een volgende grote Explorer-bouwslag  
-**Productie:** W39 blijft onaangeroerd en operationeel; Explorer blijft een geïsoleerde ontwikkellijn.
+**Status:** canonieke stopstaat na Explorer Engine 29  
+**Vastgezet:** 21-09-2026, na de bronnenregister-, trail- en iPhone-navigatiebouw  
+**Productie:** W39 blijft onaangeroerd en operationeel; Explorer blijft een geïsoleerde ontwikkel-/proeflijn.  
+**Belangrijk:** Engine 29 is `test/music-dna-explorer-engine-v29.html` en is **geen productie-Explorer**.
 
 ## 1. Actuele Explorer-build
 
-- Actuele proefbuild: `test/music-dna-explorer-engine-v24.html`
-- Engine 24 main-commit: `9bfac186bb69802f0f330c9ca3470c99f2bf8233`
-- Engine 24 Pages-commit: `356bc4152f2f8b3de2f6de23e2b18bcaba203ae5`
-- Engine 24 is een **proefstand**, geen automatisch goedgekeurde productieversie.
-- GitHub Pages wordt voor Explorer vanuit de afzonderlijke `gh-pages`-branch bediend. Nieuwe Engines moeten daarom op `main` worden gemaakt én afzonderlijk naar `gh-pages` worden gepubliceerd.
-- Engine 21 is de goedgekeurde referentie voor de artiesten-/informatiearchitectuur.
-- Engine 22 is de goedgekeurde referentie voor album → track-navigatie.
-- Engine 23, na de navigatiefix, is de inhoudelijke referentie voor de Rats-trackverdieping en de toon van het Rats-verhaal.
-- Engine 24 is een experiment rond externe bronnen en routebehoud. De daarin gekozen directe externe-bronroute is **inhoudelijk inmiddels achterhaald** door het hieronder vastgelegde bronnenregister-principe.
+- Actuele proefbuild: `test/music-dna-explorer-engine-v29.html`
+- Engine 29 main-commit: `5d767f70690dc4e5e730ed3c593ab93b0d0ae41e`
+- Engine 29 Pages-commit: `d347b98ddb30d02c8c72b2a219f62e4e13d884d0`
+- GitHub Pages wordt vanuit de afzonderlijke `gh-pages`-branch bediend. Nieuwe Engines worden daarom op `main` gebouwd én afzonderlijk op `gh-pages` gepubliceerd.
+- Engine 21 blijft de goedgekeurde referentie voor artiesten-/informatiearchitectuur.
+- Engine 22 blijft de goedgekeurde referentie voor album → track.
+- Engine 23/Rats blijft de redactionele referentie voor trackverdieping.
+- Engine 24 was een inmiddels achterhaald experiment met directe externe bronnen.
+- Engine 25 bewees het interne bronnenregister op de echte iPhone.
+- Engine 26 voegde één gecontroleerd horizontaal spoor toe: Rats → Moskou 1989.
+- Engine 27 maakte zijpaden/trails data-gedreven via een herbruikbaar trail registry.
+- Engine 28 trok de bestaande Ghost-verhalen gelijk achter een intern bronnenregister.
+- Engine 29 corrigeert de iPhone-navigatie zodat de onderste Explorer-navigatie tijdens lezen niet meer als vaste balk over verhaal-/broninhoud ligt.
 
-## 2. Nieuwe vaste muziekstructuur
+## 2. Productstatus versus proefstatus
+
+Explorer is inhoudelijk en technisch sterk gevorderd, maar de huidige Engines zijn **testbestanden**.
+
+Daarom:
+- een geslaagde iPhone-proef is geen automatische productiepromotie;
+- `test/music-dna-explorer-engine-v29.html` blijft proefcode;
+- er is nog geen besluit genomen om Engine 29 of een afgeleide daarvan als definitieve productie-Explorer te publiceren;
+- W39-productie blijft strikt gescheiden van deze ontwikkellijn.
+
+## 3. Vaste informatiearchitectuur
 
 Voor een artiest begint **Muziek** bij albums.
 
 Hoofdregel:
 **Artiest → Muziek → Studioalbums (nieuw → oud) → Album → Tracks → Track → verdieping.**
 
-Daarnaast worden andere uitgaven afzonderlijk en herkenbaar aangeboden:
+Andere uitgaven staan afzonderlijk:
 - Live;
 - EP's;
 - Singles;
 - Compilaties.
 
-De basisstructuur wordt bepaald door de artiest en het oeuvre. Persoonlijke Music-DNA-relaties mogen de discografie annoteren en interessante extra deuren laten ontstaan, maar bepalen niet welke basale oeuvre-informatie wel of niet wordt getoond.
+De basisstructuur wordt bepaald door artiest en oeuvre. Persoonlijke Music-DNA-relaties annoteren en openen extra deuren, maar bepalen niet welke basale oeuvre-informatie wordt getoond.
 
-Voor Ghost betekent dit onder meer dat `Rats` primair bereikbaar is via:
+Voor Ghost:
 **Ghost → Muziek → Prequelle → Rats.**
 
-De marker `◆ Music DNA` bij Rats is bruikbaar als contextsignaal, maar verandert deze structuur niet.
+De marker `◆ Music DNA` bij Rats is context, geen navigatieprincipe.
 
-## 3. Album → track is nu een echte Explorer-laag
+## 4. Redactionele referentie
 
-Engine 22 heeft bewezen dat een album geen eindpunt hoeft te zijn. Een track kan een zelfstandig verdiepingspunt worden, met eigen context, verhaal en onderbouwde vervolgroutes.
+**“Waarom Rats meer is dan ratten”** blijft het referentieverhaal.
 
-De goedgekeurde route:
-**Ghost → Muziek → Prequelle → Rats.**
+Kwaliteitsmaat:
+**na circa 2–3 minuten lezen keert de gebruiker terug met minstens één interessant, onthoudbaar stukje muziekkennis.**
 
-De Prequelle-trackvolgorde is gecorrigeerd; `Ashes` is track 1 en `Rats` track 2.
+De richtlijn van circa 300–400 woorden is bruikbaar, maar kwaliteit gaat vóór lengte.
 
-De bredere regel is:
-**Artiest → categorie → object → detail → verdieping.**
+Vaste redactionele regel:
+**Selectie persoonlijk; verhaal neutraal.**
 
-Iedere laag moet zelfstandig begrijpelijk blijven. Een gebruiker moet zowel één stap terug als rechtstreeks naar een herkenbaar anker kunnen.
+Dus geen systeemtaal of smaakverklaring in het artikel zelf. Het stuk moet als zelfstandig, prettig leesbaar muziekverhaal functioneren.
 
-## 4. Rats als redactionele referentie
+## 5. Bronnenregister — nu gebouwd en bewezen
 
-Het verhaal **“Waarom Rats meer is dan ratten”** is door Ben expliciet goedgekeurd als voorbeeld van het gewenste type verdieping.
+De voorkeursarchitectuur is niet langer alleen een ontwerpbesluit maar werkende Explorer-structuur:
 
-Waarom dit werkt:
-- informatief zonder encyclopedisch te worden;
-- prettig en snel leesbaar;
-- neutrale muziekmediumstem;
-- concrete context en een onthoudbaar inzicht;
-- de lezer keert na enkele minuten terug naar het hoofdspoor met een stukje nieuwe muziekkennis.
-
-Nieuwe kwaliteitsmaat:
-**Een verdiepingsstuk is geslaagd wanneer de gebruiker na circa 2–3 minuten lezen terugkeert met minstens één interessant, onthoudbaar inzicht.**
-
-De eerdere richtlijn van circa 300–400 woorden blijft bruikbaar, maar is geen doel op zichzelf. Niet kunstmatig opvullen als een korter stuk inhoudelijk sterker is.
-
-## 5. Oriëntatie en terugweg
-
-De goedgekeurde structuur moet het gevoel geven:
-**bovenin overzicht → daarna keuze → pas daarna diepte.**
-
-Bij iedere stap dieper blijft een duidelijke terugweg beschikbaar.
-
-Werkend mentaal model:
-**Ghost → Muziek → Prequelle → Rats → Verhaal.**
-
-Voorkeur:
-- compact klikbaar kruimelpad;
-- `← Eén stap terug`;
-- direct terug naar het hoofdanker, bijvoorbeeld `⌂ Ghost`.
-
-Kern:
-**Verdwalen is het product; verdwaald raken moet worden voorkomen.**
-
-Klikgeschiedenis is technisch; de zichtbare route moet semantisch begrijpelijk blijven.
-
-## 6. Externe bronnen — belangrijke correctie na Engine 24
-
-Engine 24 onderzocht of een externe bron geopend kon worden terwijl de Explorer-route intact bleef. In de echte proef bleek dat onvoldoende: na bezoek aan Revolver en terugkeer kwam de gebruiker niet betrouwbaar terug op de diepe Rats-verhaalpositie.
-
-Daarom is het productprincipe aangescherpt.
-
-Een externe website is letterlijk **buiten** DNA Explorer. We gaan niet proberen te doen alsof die externe pagina onderdeel van onze eigen route is.
-
-Nieuwe voorkeursarchitectuur:
 **Verhaal → intern Bronnenregister → oorspronkelijke externe bron.**
-
-De eerste twee stappen blijven binnen Music DNA. Alleen de laatste, expliciete keuze verlaat de app.
-
-In een verhaal komt dus geen dominante directe externe-bronknop meer. Voorkeur voor een subtiele ingang zoals:
-- `ⓘ Bronnen geraadpleegd · bronnenregister`;
-- of `Hoe weten we dit?`.
-
-In het bronnenregister kunnen per bron staan:
-- titel;
-- publicatie;
-- datum;
-- auteur, alleen indien bevestigd;
-- compact welke feiten/beweringen ermee zijn onderbouwd;
-- pas daar: `↗ Originele publicatie`.
 
 Kernregel:
 **Music DNA vertelt het verhaal. Het bronnenregister laat zien waarop het verhaal rust. De oorspronkelijke bron blijft beschikbaar voor wie zelf verder wil zoeken.**
 
-Dit bronnenregister is de beoogde herbruikbare bewijslaag voor Explorer en kan later ook bruikbaar worden voor andere Music-DNA-onderdelen.
+### Bewezen in Engine 25
+Op de echte iPhone is voor Rats de volledige route doorlopen:
+**Ghost → Muziek → Prequelle → Rats → Verhaal → Bronnenregister.**
 
-## 7. Horizontaal dwalen zonder de hele muziekwereld vooraf te bouwen
+De eerste iPhone-render liet zien dat de bronnenknop door iOS wit werd weergegeven. Dit is gecorrigeerd; een daaropvolgende echte iPhone-screenshot bevestigde dat de knop daarna visueel correct in de donkere Explorer-interface paste.
 
-Naast verticale verdieping ontstaat horizontale beweging:
+### Gelijkgetrokken in Engine 28
+De eerdere Ghost-verhalen gebruiken nu eveneens de interne bewijslaag:
+- Ghost + Iron Maiden;
+- Ghost + Metallica;
+- Wie had Ghost bijna gezongen?
+
+Echte iPhone-screenshots van 21 september bevestigen dat deze verhalen en hun bronnenregisters renderen en dat de interne bewijslaag begrijpelijk is.
+
+Externe originelen staan pas in het bronnenregister. De oude generieke directe externe-bronknop is uit deze verhalen verwijderd.
+
+## 6. Herbruikbare bron- en route-infrastructuur
+
+Explorer groeit niet langer uitsluitend door losse schermen handmatig te programmeren.
+
+### Story source registry
+Een herbruikbaar story-source-register bevat bronmetadata en bewijsinformatie voor verhalen. De renderer maakt daaruit het interne bronnenregister.
+
+### Trail registry
+Zijpaden zijn data-gedreven gemaakt via:
+`test/music-dna-explorer-trails-v1.js`
+
+Het eerste gecontroleerde voorbeeld is:
+**Rats → Moskou 1989.**
+
+Het spoor gebruikt Forge's herinnering aan Ozzy Osbourne / `I Don't Know` tijdens het Moscow Music Peace Festival van 1989 als aantoonbare relatie met het ontwerpdoel van Rats als grote live-opener.
+
+De trail bevat:
+- een verklaarbare deur;
+- een zelfstandig kort verhaal;
+- een onthoudbare takeaway;
+- eigen bronnen;
+- een intern bronnenregister;
+- een duidelijke terugweg.
+
+Kernregel:
+**Een deur verschijnt alleen wanneer kan worden uitgelegd waarom precies deze deur vanuit precies dit knooppunt bestaat.**
+
+Geen aantoonbare relatie = geen deur.
+
+## 7. Lazy enrichment — schaalregel
+
+De wereld mag vrijwel onbeperkt groot zijn; de voorbereiding moet begrensd blijven.
+
+Werkwijze:
+**voldoende rijk → bruikbaar → volgende aantoonbare stap beschikbaar → pas verder verrijken wanneer gebruikt.**
+
+Dus niet vooraf Tobias Forge, Ozzy Osbourne, Black Sabbath, alle tournees en alle aangrenzende werelden volledig uitbouwen.
+
+Horizontale beweging:
 **overzicht → detail → verhaal → onderbouwde zijdeur.**
 
-Een verhaal mag nieuwe deuren opleveren, bijvoorbeeld naar een persoon, album, artiest, gebeurtenis of scene, maar alleen als de relatie aantoonbaar is.
+Verticale beweging:
+**overzicht → keuze → diepte.**
 
-Belangrijk schaalprincipe:
-**De wereld mag vrijwel onbeperkt groot zijn; de voorbereiding moet begrensd blijven.**
+De trail-infrastructuur is juist bedoeld om nieuwe sporen later als data/verhaal/bronnen toe te voegen zonder telkens de schermlogica opnieuw te programmeren.
 
-We bouwen dus niet vooraf alle artiesten, personen en relaties volledig uit. Verrijking gebeurt op gebruik en relevantie:
-- huidige plek voldoende rijk maken;
-- enkele goede, aantoonbare deuren aanbieden;
-- pas een volgende wereld verder verrijken wanneer een spoor daar werkelijk komt.
+## 8. Oriëntatie en terugweg
 
-Dit is het lazy-enrichment-principe en voorkomt dat DNA Explorer een eindeloos voorwerkproject wordt.
+Kern:
+**Verdwalen is het product; verdwaald raken moet worden voorkomen.**
 
-## 8. Nieuwe taakverdeling
+Vaste oriëntatiemiddelen:
+- compact semantisch kruimelpad;
+- één stap terug;
+- direct hoofdanker, bijvoorbeeld `⌂ Ghost`.
 
-Vanaf 21 september verschuift de samenwerking bewust naar **minder Ben — meer assistent**.
+De zichtbare route beschrijft de muzikale/inhoudelijke positie; technische klikgeschiedenis is ondergeschikt.
 
-Ben is primair proefrijder/gebruiker:
-- luisteren;
-- klikken;
-- spoorzoeken;
-- alleen melden wanneer iets leuk, onlogisch, onduidelijk of ongewenst voelt.
+## 9. iPhone-presentatie — actuele correctie
 
-De assistent is primair bouwer/redacteur:
-- bestaande ontwerpregels zelfstandig toepassen;
-- informatie verzamelen en controleren;
-- structuur consequent houden;
-- verhalen en relaties selecteren;
-- bronnen/provenance bewaken;
-- inconsistenties opsporen;
-- de volgende logische bouwstap kiezen.
+Engine 28 werd op de echte iPhone bekeken. Daaruit bleek één duidelijk UX-probleem: de vaste onderste Explorer-balk `← Eén stap terug · ⌂ Ghost` kon tijdens lezen over tekst en bronkaarten liggen, terwijl Safari zelf ook schermruimte inneemt.
 
-Niet voor iedere kleine afweging opnieuw A/B-keuzes aan Ben voorleggen. Alleen terugkomen bij een echte smaakbeslissing, een wijziging van een goedgekeurd uitgangspunt of een blokkade die niet verantwoord zelfstandig kan worden opgelost.
+Engine 29 corrigeert dit:
+- op iPhone-/smalle schermen staat de Explorer-navigatie niet meer fixed over het leesgebied;
+- zij wordt onderdeel van de pagina onder de inhoud;
+- op grotere schermen blijft de vaste navigatie behouden;
+- breadcrumbs bovenin blijven beschikbaar.
 
-## 9. W39 blijft strikt geïsoleerd
+**Open visuele beoordeling:** de Engine-29-correctie is syntactisch gecontroleerd, maar sinds de wijziging is nog geen nieuwe echte-iPhone-screenshot vastgelegd die de uiteindelijke positie van deze navigatie bevestigt. Dit is een kleine gerichte proef, geen reden om de hele Ghost-route opnieuw te doorlopen.
 
-De Explorer-bouw verandert niets aan de actieve Ontdek-DNA-week.
+## 10. Wat uit de chat expliciet is meegenomen
+
+Sinds de vorige stopstaat zijn de volgende acceptaties/observaties niet alleen uit GitHub maar ook uit de proefritten meegenomen:
+
+- de donkere, subtiele bronnenknop na de iOS-fix is visueel goedgekeurd;
+- het bronnenregister voelt als de juiste bewijslaag: transparant, optioneel en niet dominant in de normale ontdekkingsroute;
+- Engine 28-screenshots bevestigen de consistente bewijslaag bij Iron Maiden, Metallica en het bijna-zanger-verhaal;
+- de vaste onderste navigatie van Engine 28 bleek op iPhone te veel leesgebied af te dekken; daarom Engine 29;
+- het principe **minder Ben — meer assistent** blijft actief: Ben is vooral proefrijder, de assistent bewaakt bouw, redactie, bronnen, structuur en volgende logische stap;
+- niet na iedere technische verbetering opnieuw een volledige reeks screenshots vragen;
+- geen onbegrensde voorbouw van de muziekwereld: routes groeien lazy en evidence-based.
+
+## 11. W39 blijft strikt geïsoleerd
 
 Op 21 september is W39 Dag 2 op de echte iPhone succesvol afgerond:
-- 5 beoordelingen voltooid;
+- 5 beoordelingen;
 - alle vijf `Raak`;
-- positieve zaterdagvoorraad na Dag 2: `4 / 42`;
-- geen productiebug waargenomen.
+- positieve zaterdagvoorraad: `4 / 42`;
+- geen productiebug.
 
 Daarom:
 - geen wijziging aan `test/daily.html`;
-- geen wijziging aan de live index-redirect;
-- geen localStorage wissen of migreren;
+- geen wijziging aan live index-redirect;
+- geen localStorage wissen/migreren;
 - geen Day 1/Day 2-ratings muteren;
 - Flow-DNA niet wijzigen;
-- geen Explorer-experiment in de actieve W39-productieroute plaatsen.
+- geen Explorer-proef in de actieve W39-productieroute plaatsen.
 
-## 10. Open risico's / nog niet gesloten
+## 12. Open punten
 
-1. **Bronnenregister is inhoudelijk besloten maar nog niet als nieuwe Explorer-Engine bewezen.**
-2. **Engine 24 routebehoud rond externe sites is geen goedgekeurde oplossing** en moet niet als eindarchitectuur worden voortgezet.
-3. Bronmetadata moet bij implementatie worden geverifieerd; auteur/datum niet invullen op basis van aannames.
-4. Iedere zijdeur blijft bron-/relatiegebonden: geen aantoonbare relatie = geen deur.
-5. Niet te vroeg verbreden naar complete nieuwe artiestenwerelden; eerst één gecontroleerde horizontale route bewijzen.
-6. Engine 24 is proefcode. De referenties uit Engine 21, 22 en 23 blijven inhoudelijk leidend waar Engine 24 daarvan afwijkt.
+1. Engine 29 blijft **prototype/test**, niet productie.
+2. De iPhone-navigatiecorrectie van Engine 29 verdient nog één gerichte echte-iPhone-visuele bevestiging.
+3. Het horizontale Moskou-spoor is technisch/data-gedreven aanwezig; het is nog geen bewijs dat alle toekomstige zijroutes inhoudelijk of visueel automatisch goed zijn.
+4. Bronmetadata en concrete relaties blijven per verhaal/spoor controleerbaar; geen bron = geen feitelijke deur.
+5. De bron-/trailregistries zijn de schaalbare richting; verdere content hoort daar te landen in plaats van opnieuw hardcoded schermlogica te maken.
+6. Geen noodzaak om nu complete aangrenzende artiestenwerelden vooraf te vullen.
+7. Productiepromotie van Explorer is een afzonderlijk later besluit en mag niet stilzwijgend volgen uit een succesvolle Engine-test.
 
-## 11. Concrete hervatpositie
+## 13. Concrete hervatpositie
 
-De eerstvolgende Explorer-bouwslag is **Engine 25**.
+Na deze stopstaat hoeft niet opnieuw administratief te worden gereconstrueerd wat Engines 25–29 deden.
 
-Doel:
-1. uitgaan van de goedgekeurde Ghost → Prequelle → Rats-route;
-2. het Rats-verhaal inhoudelijk behouden;
-3. de directe externe Revolver-knop uit het normale verhaalspoor halen;
-4. een intern Bronnenregister voor Rats toevoegen;
-5. externe oorspronkelijke publicatie alleen vanuit dat register aanbieden;
-6. terug vanuit het register exact naar het Rats-verhaal laten leiden;
-7. breadcrumb/back/home logisch houden;
-8. daarna hoogstens één aantoonbare zijroute vanaf Rats gebruiken om horizontaal dwalen te bewijzen;
-9. geen complete nieuwe artiestenwereld vooraf bouwen;
-10. syntax/navigatie controleren;
-11. op `main` bouwen en dezelfde Engine afzonderlijk op `gh-pages` publiceren.
+Eerstvolgende werkvolgorde:
+1. Engine 29 op één gericht iPhone-moment visueel bevestigen wanneer dat natuurlijk uitkomt;
+2. geen volledige regressieproef vragen als alleen die navigatiepositie wordt gecontroleerd;
+3. daarna de schaalbare registries verder als basis gebruiken;
+4. nieuwe inhoud alleen toevoegen via een aantoonbaar interessant spoor;
+5. voorlopig geen productiepromotie;
+6. W39 onaangeroerd houden.
 
-## 12. Stopbesluit
+## 14. Stopbesluit
 
-**De bouw van 21 september is hiermee administratief gelijkgetrokken met de inhoudelijke stand.**
+**De projectadministratie is hiermee opnieuw gelijkgetrokken met de bouwstand tot en met Engine 29.**
 
-De grote vraag is niet meer of Explorer diep kan gaan. Dat is voldoende bewezen.
+De belangrijke sprong sinds de vorige stopstaat is niet “vijf nieuwe schermversies”, maar de overgang van losse proefpagina's naar een herhaalbare structuur:
 
-De volgende kwaliteitsvraag is:
-**kan Explorer vanuit een sterke trackverdieping betrouwbaar zijwaarts verder groeien, terwijl de interface rustig blijft en de wereld alleen wordt verrijkt waar de gebruiker werkelijk komt?**
+**verhaal → bewijslaag → bron**  
+en  
+**knooppunt → aantoonbare zijdeur → data-gedreven trail → eigen bewijslaag.**
 
-Dat is het hervatpunt.
+Daarmee kan Explorer groter worden zonder dat iedere nieuwe dwaalroute een nieuw handgebouwd mini-project wordt.
