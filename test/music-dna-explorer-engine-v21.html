@@ -37,3 +37,4 @@ function shelf(id){const names={live:"Live",ep:"EP’s",single:"Singles",comp:"C
 function story(n){return '<section class="card story"><div class="eyebrow">'+esc(n.eyebrow)+'</div><h1>'+esc(n.name)+'</h1><div class="small">'+esc(n.publisher)+' · '+esc(n.readtime)+'</div><h2>'+esc(n.title)+'</h2>'+n.summary.map(p=>'<p>'+esc(p)+'</p>').join("")+'<div class="take"><b>Kort samengevat</b><br>'+esc(n.takeaway)+'</div><a class="source" href="'+n.url+'" target="_blank" rel="noopener">Bekijk de oorspronkelijke bron ↗</a></section>'}
 function render(){crumbs();let x=path[path.length-1];document.getElementById("view").innerHTML=(x.kind==="artist"||x.kind==="tab")?artist():(x.kind==="shelf"?shelf(x.id):node(x.id));scrollTo(0,0)}render();
 </script></body></html>
+<!-- republished 2026-09-21 -->
