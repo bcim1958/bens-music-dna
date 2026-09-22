@@ -38,27 +38,9 @@ function relationThemeIntro(theme){
 }
 function relationBundleTeaser(b){let name=(b.entity||{}).name||b.entityId;let summary=b.relations.length+" verband"+(b.relations.length===1?"":"en")+" in één dossier";return '<button class="door" onclick="openRelationBundle(\''+esc(b.entityId)+'\')"><span>'+esc(relationTheme(b))+'</span><strong>'+esc(name)+' →</strong><span>'+esc(summary)+'</span></button>'}
 function openRelationBundle(id){path.push({kind:"relationbundle",id,label:((RR.api.entity(id)||{}).name||id)});render()}
-const RELATION_STORIES={
-  abba:{title:"Niet de klank, wel het liedje",lead:"Verschillende gesprekken vullen drie kanten van dezelfde relatie in: schrijven, plek en een concreet liedje.",introLabel:"De kern",intro:"ABBA helpt verklaren waarom Ghost ondanks zware gitaren zo nadrukkelijk op melodie en memorabele songs leunt. Forge komt daar in verschillende gesprekken op terug zonder te beweren dat Ghost als ABBA moet klinken.",sectionLabel:"Vondsten",items:[
-    ["De les zit in het liedje","Forge gebruikt ABBA niet als voorbeeld van hoe Ghost moet klinken. De terugkerende bewondering gaat juist over compositie: sterke melodieën, duidelijke hooks en liedjes die eenvoudig lijken maar uiterst precies in elkaar zitten."],
-    ["Van invloed naar fysieke plek","Bij de opnamen van Impera komt die relatie onverwacht dichtbij. Ghost werkt in Atlantis/Metronome in Stockholm, de historische studio die sterk met ABBA verbonden is. Forge vertelt enthousiast over oude instrumenten en apparatuur die daar nog aanwezig zijn."],
-    ["Een klein detail zegt soms meer","In een apart interview kiest Forge I Have A Dream wanneer hem naar een favoriete ABBA-song wordt gevraagd. Zo krijgt de brede uitspraak 'ABBA is een invloed' ineens een concreet luisterspoor."]
-  ]},
-  metallica:{title:"Van maatstaf naar eigen versie",lead:"Drie soorten relatie lopen in elkaar over: voorbeeld, professionele nabijheid en uiteindelijk een concrete opname.",introLabel:"De rode draad",intro:"Metallica staat eerst op afstand als voorbeeld. Later deelt Ghost het podium en de professionele wereld met de band. Met Enter Sandman krijgt die lange relatie uiteindelijk een hoorbaar resultaat.",sectionLabel:"Hoofdstukken",items:[
-    ["Een vroege maatstaf","Forge beschrijft Metallica als een band die al vroeg liet zien hoe zware muziek tegelijk groot, direct en professioneel kon worden."],
-    ["Later dezelfde wereld in","Ghost komt vervolgens daadwerkelijk in Metallica's professionele omgeving terecht. Samen optreden verandert een verre invloed in een concrete collegiale relatie."],
-    ["Enter Sandman maakt de cirkel zichtbaar","De Polar Music Prize vormt een aparte route naar Ghosts cover van Enter Sandman. Forge vertelt over de verantwoordelijkheid van zo'n bekende song en het vinden van een Ghost-eigen benadering."]
-  ]},
-  iron_maiden:{title:"Van atlas naar tourbus",lead:"Forge komt jarenlang op dezelfde relatie terug. De bronnen bouwen samen één steeds rijker verhaal.",introLabel:"De rode draad",intro:"Als jongen bestudeert Forge Iron Maiden om te begrijpen hoe een grote rockband leeft en toert. Later staat Ghost zelf met Maiden op tour, leert hij de mensen achter de band kennen en wordt die jeugdinvloed een echte professionele relatie.",sectionLabel:"Bronmomenten",items:[
-    ["2017 · het jeugdmodel","Forge vertelt dat Iron Maiden hem muzikaal vormde, maar vooral dat Live After Death hem liet zien hoe een echte tour eruitzag. Met een kaartboek tekende hij als kind de speelsteden uit."],
-    ["2018 · van atlas naar werkelijkheid","Na daadwerkelijk met Maiden te hebben getourd, vertelt Forge hetzelfde jeugdverhaal opnieuw. Nu voegt hij toe dat hij Steve Harris en de crew persoonlijk kent en dat beide tourcrews mensen delen."],
-    ["2019–2022 · een blijvende leerschool","In latere gesprekken keert dezelfde kern terug: Maiden is niet alleen muziek, maar ook podiumproductie, werkethiek en een professionele school voor Ghost."],
-    ["2023 · de relatie wordt muziek","Ghost neemt Phantom of the Opera op. Forge zegt dat de vriendschap en eerdere gezamenlijke tours extra druk geven: hij hoopt dat Maiden hun versie waardeert."]
-  ]}
-};
 function renderRelationStory(b,story){
   let name=(b.entity||{}).name||b.entityId;
-  let cards=story.items.map(x=>'<div class="fact"><span>'+esc(x[0])+'</span><b>'+esc(x[1])+'</b></div>').join("");
+  let cards=(story.items||[]).map(x=>'<div class="fact"><span>'+esc(x.label)+'</span><b>'+esc(x.text)+'</b></div>').join("");
   let sourceNames=[...new Set((b.evidence||[]).map(s=>s.provider))];
   let sources=sourceNames.length?'<div class="section"><div class="eyebrow">Bronnen achter dit verhaal</div><p class="source-note">'+esc(sourceNames.join(" · "))+'</p></div>':"";
   return '<section class="card"><div class="eyebrow">Ghost ↔ '+esc(name)+'</div><h1>'+esc(story.title)+'</h1><p class="lead">'+esc(story.lead)+'</p><div class="section"><div class="eyebrow">'+esc(story.introLabel)+'</div><p>'+esc(story.intro)+'</p></div><div class="section"><div class="eyebrow">'+esc(story.sectionLabel)+'</div>'+cards+'</div>'+sources+'</section>';
@@ -66,7 +48,7 @@ function renderRelationStory(b,story){
 function relationBundle(id){
   let b=RR.api.relationshipBundles("ghost",{use:"explorer",confidence:"confirmed"}).find(x=>x.entityId===id);
   if(!b)return '<section class="card"><div class="eyebrow">Relatiedossier</div><h1>Niet gevonden</h1></section>';
-  if(RELATION_STORIES[id])return renderRelationStory(b,RELATION_STORIES[id]);
+  let story=RR.api.storyFor("ghost",id);if(story)return renderRelationStory(b,story);
   let name=(b.entity||{}).name||id;
   let facts=b.relations.map(r=>'<div class="fact"><span>'+esc(r.family+" · "+r.type)+'</span><b>'+esc(r.claim)+'</b></div>').join("");
   let sources=b.evidence.map(s=>'<div class="source-card"><div class="eyebrow">'+esc(s.provider)+'</div><h2>'+esc(s.title)+'</h2><div class="source-meta">'+esc(s.kind)+'</div></div>').join("");
