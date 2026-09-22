@@ -366,3 +366,19 @@ Daarmee is ook de schaalregel bewezen: uitbreiding van drie naar elf artiestverb
 Belangrijk inhoudelijk bewijs: dezelfde relatiekennis kan per toepassing anders worden geselecteerd. Een contextuele show-/carrièrerelatie hoeft niet automatisch een muziekkandidaat te worden. De Relation Registry bewaart dus niet alleen verbindingen, maar maakt semantische selectie mogelijk.
 
 Besluit na deze proef: geen verdere tijd steken in het mooier maken van de architectuur-proofpagina. De proef heeft haar functie vervuld. Volgende bouwslag gebruikt de Registry als kennislaag in de echte Explorer-/verhaalcontext en ontwikkelt de inhoud lazy vanuit interessante Ghost-sporen. W39 blijft onaangeroerd.
+
+
+## 18. Relation Registry — multi-source dossierregel (22 september 2026)
+
+Nieuwe inhoudelijke regel na mobiele review: een aantrekkelijk interview dat meerdere bands noemt is één bronmoment dat meerdere relaties mag ondersteunen; het mag niet visueel de indruk wekken van meerdere onafhankelijke bevestigingen.
+
+De gewenste volwassen bewijslaag is verticaal per relatie: dezelfde kernrelatie wordt, waar beschikbaar, gevolgd door meerdere onafhankelijke interview-/bronmomenten door de tijd. De waarde zit niet alleen in herhaling maar vooral in aanvullende details. Presentatie moet daarom kunnen tonen: terugkerende kern, tijdlijn van bronmomenten, unieke details per bron en eventuele afwijking/nuance.
+
+Eerste webverificatie bevestigt dit patroon sterk voor:
+- ABBA: meerdere Forge-interviews over songwritinginvloed en de concrete Atlantis/Metronome/ABBA-studiolijn;
+- Iron Maiden: terugkerend verhaal over muzikale invloed, Live After Death als tour-/werkethiekmodel, later echte tour- en crew-cross-pollination;
+- Metallica: jeugd-/professionele leerschool, later tourrelatie en afzonderlijk het ontstaan van Ghosts Enter Sandman-cover.
+
+Belangrijk contrast: Mercyful Fate mag niet kunstmatig even rijk worden gemaakt. Een 2019 interview bevat zelfs een nuttige nuance: toen de interviewer Mercyful Fate/Blue Öyster Cult als hoorbare vergelijkingen noemde, antwoordde Forge dat Ghost volgens hem duidelijk sterker door Voïvod was beïnvloed. Dat soort tegenbewijs/nuance hoort óók in het dossier.
+
+Datamodelrichting: Relation hub → claim/theme → source moments → unique details/nuance. Eén source moment kan meerdere claims/relaties ondersteunen; meerdere source moments kunnen één claim versterken of verfijnen. Geen kunstmatige betrouwbaarheidsscore nodig: de gebruiker moet de herhaling, tijdspreiding en details kunnen zien.
