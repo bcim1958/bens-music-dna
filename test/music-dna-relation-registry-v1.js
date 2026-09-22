@@ -1,116 +1,154 @@
-window.MUSIC_DNA_RELATION_REGISTRY_V1={
+(function(){
+"use strict";
+const registry={
   version:"2026-09-22.1",
   status:"prototype",
-  principle:"store-once-use-many",
-  relationTypes:{
-    influence:{label:"invloed",family:"influence",playlistEligible:true},
-    "professional-influence":{label:"professionele invloed",family:"influence",playlistEligible:true},
-    "support-act":{label:"support/tour",family:"live",playlistEligible:false},
-    cover:{label:"cover/opname",family:"recording",playlistEligible:false},
-    "studio-musician":{label:"studiomuzikant",family:"personnel",playlistEligible:false},
-    "producer-songwriter":{label:"producer/songwriter",family:"production",playlistEligible:false},
-    place:{label:"tijd & plaats",family:"context",playlistEligible:false},
-    inspiration:{label:"creatieve inspiratie",family:"influence",playlistEligible:true}
+  principle:"one relation, many uses",
+  entities:{
+    ghost:{type:"artist",name:"Ghost"},
+    abba:{type:"artist",name:"ABBA"},
+    black_sabbath:{type:"artist",name:"Black Sabbath"},
+    iron_maiden:{type:"artist",name:"Iron Maiden"},
+    metallica:{type:"artist",name:"Metallica"},
+    tobias_forge:{type:"person",name:"Tobias Forge"},
+    fredrik_akesson:{type:"person",name:"Fredrik Åkesson"},
+    klas_ahlund:{type:"person",name:"Klas Åhlund"},
+    impera:{type:"album",name:"Impera"},
+    enter_sandman:{type:"track",name:"Enter Sandman"},
+    rats:{type:"track",name:"Rats"},
+    moscow_1989:{type:"event",name:"Moscow Music Peace Festival 1989"},
+    sweden:{type:"place",name:"Zweden"}
   },
   sources:{
-    allmusicGhost:{kind:"editorial",publisher:"AllMusic",title:"Ghost — Biography",url:"https://www.allmusic.com/artist/ghost-mn0002616588/biography"},
-    guitarWorldForge:{kind:"interview",publisher:"Guitar World",title:"Ghost's Tobias Forge on Impera",url:"https://www.guitarworld.com/features/ghost-tobias-forge-impera"},
-    slugForge:{kind:"interview",publisher:"SLUG Magazine",title:"Kiss the Go-Ghost: An Interview with Tobias Forge",url:"https://www.slugmag.com/music/interviews/kiss-the-go-ghost-an-interview-with-tobias-forge/"},
-    louderMetallica:{kind:"interview",publisher:"Metal Hammer / Louder",title:"The story behind Ghost's Enter Sandman cover",url:"https://www.loudersound.com/features/tobias-forge-metallica-enter-sandman"},
-    nmeForge:{kind:"interview",publisher:"NME",title:"Tobias Forge interview",url:"https://www.nme.com/features/music-interviews/tobias-forge-interview-new-material-future-of-ghost-black-sabbath-metal-scene-3847292"},
-    guitarWorldAkesson:{kind:"interview",publisher:"Guitar World",title:"Fredrik Åkesson on recording Ghost's Impera",url:"https://www.guitarworld.com/features/fredrick-akesson-ghost-opeth-impera"},
-    loudwireRats:{kind:"interview",publisher:"Loudwire",title:"Tobias Forge talks Rats",url:"https://loudwire.com/ghost-tobias-forge-ghost-new-song-rats-new-album/"}
+    guitarworld_forge_2022:{
+      provider:"Guitar World",kind:"primary-interview",
+      title:"Ghost's Tobias Forge: the 10 records that changed my life / Impera interview context",
+      url:"https://www.guitarworld.com/features/ghost-tobias-forge-impera"
+    },
+    slug_forge_2019:{
+      provider:"SLUG Magazine",kind:"primary-interview",
+      title:"Kiss the Go-Ghost: An Interview with Tobias Forge",
+      url:"https://www.slugmag.com/music/interviews/kiss-the-go-ghost-an-interview-with-tobias-forge/"
+    },
+    louder_metallica_2022:{
+      provider:"Metal Hammer / Louder",kind:"interview",
+      title:"The story behind Ghost's Enter Sandman cover",
+      url:"https://www.loudersound.com/features/tobias-forge-metallica-enter-sandman"
+    },
+    loudwire_rats_2018:{
+      provider:"Loudwire",kind:"primary-interview",
+      title:"Tobias Forge Talks Ghost's New Song Rats + New Album",
+      url:"https://loudwire.com/ghost-tobias-forge-ghost-new-song-rats-new-album/"
+    },
+    guitarworld_akesson:{
+      provider:"Guitar World",kind:"interview",
+      title:"Fredrik Åkesson on recording guitars for Ghost's Impera",
+      url:"https://www.guitarworld.com/features/fredrick-akesson-ghost-opeth-impera"
+    },
+    musicdna_catalog:{
+      provider:"Music DNA",kind:"catalog",
+      title:"Music DNA entity/catalog context",url:null
+    }
   },
   relations:[
     {
-      id:"ghost-influence-abba",from:"ghost",to:"abba",type:"influence",direction:"ghost→abba",
-      claim:"ABBA's songwriting is an explicit influence in Ghost's musical world.",
-      provenance:["guitarWorldForge","allmusicGhost"],status:"confirmed",
-      evidenceLevel:"primary+editorial",featuredExplorer:true,
-      explorer:{relation:"songwriting",summary:"Forge heeft ABBA expliciet genoemd als belangrijke songwriting-invloed."},
-      quickFact:"Tobias Forge noemt ABBA als belangrijke songwriting-invloed op Ghost."
+      id:"rel-ghost-abba-influence",from:"ghost",to:"abba",
+      family:"influence",type:"stated-songwriting-influence",direction:"out",
+      claim:"Tobias Forge noemt ABBA als belangrijke invloed op Ghosts songwriting.",
+      evidence:["guitarworld_forge_2022"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
     },
     {
-      id:"ghost-influence-sabbath",from:"ghost",to:"sabbath",type:"influence",direction:"ghost→sabbath",
-      claim:"Black Sabbath is an explicit musical influence on Tobias Forge/Ghost.",
-      provenance:["nmeForge"],status:"confirmed",evidenceLevel:"primary",featuredExplorer:true,
-      explorer:{relation:"invloed + jouw DNA",summary:"Een vroege zware-rockbron én aanwezig in Band DNA playlist Ghost."},
-      quickFact:"Black Sabbath behoort tot de expliciet genoemde muzikale invloeden rond Tobias Forge en Ghost."
+      id:"rel-ghost-maiden-learning",from:"ghost",to:"iron_maiden",
+      family:"influence",type:"formative-professional-influence",direction:"out",
+      claim:"Forge beschrijft Iron Maiden als een jeugdvoorbeeld en latere professionele leerschool.",
+      evidence:["slug_forge_2019"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
     },
     {
-      id:"ghost-influence-ironmaiden",from:"ghost",to:"ironmaiden",type:"professional-influence",direction:"ghost→ironmaiden",
-      claim:"Forge studied Iron Maiden from youth and later described learning from the band professionally.",
-      provenance:["slugForge"],status:"confirmed",evidenceLevel:"primary",
-      quickFact:"Forge bestudeerde Iron Maiden al jong en kon later tijdens gezamenlijke tournees van dichtbij zien hoe zo'n grote band functioneert."
+      id:"rel-ghost-maiden-live",from:"ghost",to:"iron_maiden",
+      family:"live",type:"support-act",direction:"out",
+      claim:"Ghost trok in 2017 door Noord-Amerika als support van Iron Maiden.",
+      evidence:["slug_forge_2019"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik"]
     },
     {
-      id:"ghost-support-ironmaiden",from:"ghost",to:"ironmaiden",type:"support-act",direction:"ghost→ironmaiden",
-      claim:"Ghost supported Iron Maiden on the 2017 North American tour.",
-      provenance:["slugForge"],status:"confirmed",evidenceLevel:"primary"
+      id:"rel-ghost-metallica-learning",from:"ghost",to:"metallica",
+      family:"influence",type:"formative-professional-influence",direction:"out",
+      claim:"Forge beschrijft Metallica als voorbeeld en professionele leerschool.",
+      evidence:["slug_forge_2019","louder_metallica_2022"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
     },
     {
-      id:"ghost-influence-metallica",from:"ghost",to:"metallica",type:"professional-influence",direction:"ghost→metallica",
-      claim:"Forge has described Metallica as an early example and later professional learning reference.",
-      provenance:["slugForge","louderMetallica"],status:"confirmed",evidenceLevel:"primary",
-      quickFact:"Metallica liep voor Forge van jeugdvoorbeeld naar een band waarvan Ghost later tijdens tournees van dichtbij kon leren."
+      id:"rel-ghost-metallica-live",from:"ghost",to:"metallica",
+      family:"live",type:"support-act",direction:"out",
+      claim:"Ghost ging in 2019 mee als support op Metallica's Europese stadiontour.",
+      evidence:["slug_forge_2019"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik"]
     },
     {
-      id:"ghost-support-metallica",from:"ghost",to:"metallica",type:"support-act",direction:"ghost→metallica",
-      claim:"Ghost supported Metallica on their 2019 European stadium tour.",
-      provenance:["slugForge"],status:"confirmed",evidenceLevel:"primary"
+      id:"rel-ghost-metallica-cover",from:"ghost",to:"enter_sandman",
+      family:"recording",type:"covered-song",direction:"out",
+      claim:"Ghost nam Enter Sandman op voor The Metallica Blacklist.",
+      evidence:["louder_metallica_2022"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","playlist"]
     },
     {
-      id:"ghost-cover-metallica",from:"ghost",to:"metallica",type:"cover",direction:"ghost→metallica",
-      object:"enter-sandman",claim:"Ghost recorded Enter Sandman for The Metallica Blacklist.",
-      provenance:["louderMetallica"],status:"confirmed",evidenceLevel:"primary"
+      id:"rel-akesson-impera",from:"fredrik_akesson",to:"impera",
+      family:"personnel",type:"studio-guitar",direction:"out",
+      claim:"Fredrik Åkesson speelde de gitaren in voor Impera.",
+      evidence:["guitarworld_akesson"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik"]
     },
     {
-      id:"ghost-studio-akesson",from:"ghost",to:"akesson",type:"studio-musician",direction:"ghost→akesson",
-      via:"impera",claim:"Fredrik Åkesson played guitars on Impera.",
-      provenance:["guitarWorldAkesson","guitarWorldForge"],status:"confirmed",evidenceLevel:"primary"
+      id:"rel-ghost-sweden",from:"ghost",to:"sweden",
+      family:"place",type:"origin",direction:"out",
+      claim:"Ghost is een Zweedse band.",
+      evidence:["musicdna_catalog"],confidence:"confirmed",
+      uses:["explorer"]
     },
     {
-      id:"ghost-production-ahlund",from:"ghost",to:"ahlund",type:"producer-songwriter",direction:"ghost→ahlund",
-      via:"impera",claim:"Klas Åhlund produced and co-wrote on Impera.",
-      provenance:["guitarWorldForge","allmusicGhost"],status:"confirmed",evidenceLevel:"primary+editorial"
-    },
-    {
-      id:"ghost-place-sweden",from:"ghost",to:"sweden",type:"place",direction:"ghost→sweden",
-      claim:"Ghost formed in Linköping, Sweden.",provenance:["allmusicGhost"],status:"confirmed",
-      evidenceLevel:"editorial",featuredExplorer:true,
-      explorer:{relation:"tijd & plaats",summary:"De geografische context opent een andere Zweedse muziekwereld."}
-    },
-    {
-      id:"rats-inspiration-moscow1989",from:"rats",to:"moscow-1989",type:"inspiration",direction:"rats→moscow-1989",
-      claim:"Forge linked the desired opening impact of Rats to his memory of Ozzy Osbourne opening with I Don't Know at Moscow Music Peace Festival 1989.",
-      provenance:["loudwireRats"],status:"confirmed",evidenceLevel:"primary"
+      id:"rel-rats-moscow",from:"rats",to:"moscow_1989",
+      family:"story",type:"creative-function-inspiration",direction:"out",
+      claim:"Forge koppelde het gewenste opener-effect van Rats aan zijn jeugdherinnering aan Ozzy Osbourne in Moskou in 1989.",
+      evidence:["loudwire_rats_2018"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik"]
     }
-  ],
-  relationsFor:function(id,options){
-    options=options||{};
-    return this.relations.filter(function(r){
-      if(r.from!==id && !(options.includeIncoming&&r.to===id))return false;
-      if(options.type&&r.type!==options.type)return false;
-      if(options.family&&(!this.relationTypes[r.type]||this.relationTypes[r.type].family!==options.family))return false;
-      if(options.featuredExplorer&&!r.featuredExplorer)return false;
-      return true;
-    },this);
-  },
-  sourcesFor:function(relation){
-    var self=this;return (relation.provenance||[]).map(function(id){return Object.assign({id:id},self.sources[id]||{});});
-  },
-  influenceCandidates:function(id){
-    var self=this;return this.relations.filter(function(r){
-      var t=self.relationTypes[r.type];
-      return r.from===id&&r.status==="confirmed"&&t&&t.family==="influence"&&t.playlistEligible;
-    });
-  },
-  incomingInfluenceCounts:function(){
-    var self=this,out={};
-    this.relations.forEach(function(r){
-      var t=self.relationTypes[r.type];
-      if(r.status==="confirmed"&&t&&t.family==="influence")out[r.to]=(out[r.to]||0)+1;
-    });
-    return out;
-  }
+  ]
 };
+
+function entity(id){return registry.entities[id]||null}
+function relationsFor(id,opts){
+  opts=opts||{};
+  return registry.relations.filter(r=>{
+    const touches=r.from===id||r.to===id;
+    if(!touches)return false;
+    if(opts.family&&r.family!==opts.family)return false;
+    if(opts.type&&r.type!==opts.type)return false;
+    if(opts.use&&!(r.uses||[]).includes(opts.use))return false;
+    if(opts.confidence&&r.confidence!==opts.confidence)return false;
+    return true;
+  });
+}
+function evidenceFor(rel){
+  return (rel.evidence||[]).map(id=>({id,...registry.sources[id]})).filter(Boolean);
+}
+function aggregateInfluence(){
+  const counts={};
+  registry.relations.filter(r=>r.family==="influence"&&r.confidence==="confirmed").forEach(r=>{
+    counts[r.to]=(counts[r.to]||0)+1;
+  });
+  return Object.entries(counts).map(([id,count])=>({id,name:(entity(id)||{}).name||id,count}))
+    .sort((a,b)=>b.count-a.count||a.name.localeCompare(b.name));
+}
+function playlistCandidates(id){
+  return relationsFor(id,{family:"influence",use:"playlist",confidence:"confirmed"})
+    .map(r=>({relationId:r.id,entityId:r.from===id?r.to:r.from,name:(entity(r.from===id?r.to:r.from)||{}).name||"",why:r.claim}));
+}
+function quickFacts(id){
+  return relationsFor(id,{use:"wat-hoor-ik",confidence:"confirmed"}).map(r=>({
+    relationId:r.id,family:r.family,text:r.claim,sources:evidenceFor(r)
+  }));
+}
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,aggregateInfluence,playlistCandidates,quickFacts}};
+})();
