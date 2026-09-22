@@ -1,7 +1,8 @@
 <!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Music DNA — Relation Registry proof V1</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#070812;color:#f4efe7;font:16px/1.5 system-ui,-apple-system,sans-serif}.app{max-width:760px;margin:auto;padding:18px}.ey{color:#e6b65d;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.card{background:#11121d;border:1px solid #302d43;border-radius:22px;padding:18px;margin:12px 0}h1{font:700 2.4rem/1 Georgia,serif;margin:.2em 0}h2{font:700 1.25rem Georgia,serif;margin:.2em 0 .6em}.muted{color:#aaa7b6}.row{padding:10px 0;border-top:1px solid #2b2939}.tag{display:inline-block;border:1px solid #4b465f;border-radius:999px;padding:3px 8px;margin-right:5px;font-size:.72rem;color:#ddd7e2}.why{font-size:.85rem;color:#c9c4cf}.ok{color:#a9d9ae}.count{font-size:2rem;font-weight:850}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(max-width:600px){.grid{grid-template-columns:1fr}}</style></head><body><main class="app">
 <div class="ey">Geïsoleerde architectuurproef · geen productie</div><h1>Ghost Relation Registry</h1><p class="muted">Eén centrale set relaties, vier verschillende toepassingen. Deze pagina wijzigt W39 of Engine 29 niet.</p>
-<div id="out"></div></main><script src="music-dna-relation-registry-v1.js"></script><script>
+<div id="out"></div></main><script src="music-dna-relation-registry-v1.js?v=20260922-2"></script><script>
+try {
 const R=window.MUSIC_DNA_RELATION_REGISTRY_V1,A=R.api;
 const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const ghost=A.relationsFor("ghost",{confidence:"confirmed"});
@@ -18,4 +19,7 @@ document.getElementById("out").innerHTML=
 '<div class="grid"><section class="card"><div class="ey">4 · Express kan tellen</div><p class="muted">Demo-aggregatie binnen uitsluitend deze proefset.</p>'+agg.map(x=>'<div class="row"><b>'+esc(x.name)+'</b> · '+x.count+'</div>').join("")+'</section>'+
 '<section class="card"><div class="ey">5 · 🧬 Hoor dit DNA</div><h2>'+playlist.length+' invloed-kandidaten</h2><p class="muted">Alleen relaties met family=influence + use=playlist.</p>'+playlist.map(x=>'<div class="row"><b>'+esc(x.name)+'</b><div class="why">'+esc(x.why)+'</div></div>').join("")+'</section></div>'+
 '<section class="card"><div class="ey ok">Resultaat</div><h2>Atomaire feiten blijven apart; de gebruiker ziet één complete relatie per counterpart.</h2><p class="muted">De proef bewijst het gegevensmodel en de uitleesroutes; hij bewijst nog geen volledige Relation Registry, AllMusic-import of productie-playlistgenerator.</p></section>';
+} catch (err) {
+  document.getElementById("out").innerHTML='<section class="card"><div class="ey">Proef kon niet laden</div><h2>De Relation Registry is niet beschikbaar in deze browsercache.</h2><p class="muted">Ververs deze pagina één keer. Fout: '+esc(err && err.message ? err.message : err)+'</p></section>';
+}
 </script></body></html>
