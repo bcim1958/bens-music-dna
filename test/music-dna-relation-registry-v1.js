@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.4",
+  version:"2026-09-22.5",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -78,9 +78,9 @@ const registry={
       lead:"Verschillende gesprekken vullen drie kanten van dezelfde relatie in: schrijven, plek en een concreet liedje.",
       introLabel:"De kern",intro:"ABBA helpt verklaren waarom Ghost ondanks zware gitaren zo nadrukkelijk op melodie en memorabele songs leunt. Forge komt daar in verschillende gesprekken op terug zonder te beweren dat Ghost als ABBA moet klinken.",
       sectionLabel:"Vondsten",items:[
-        {label:"De les zit in het liedje",text:"Forge gebruikt ABBA niet als voorbeeld van hoe Ghost moet klinken. De terugkerende bewondering gaat juist over compositie: sterke melodieën, duidelijke hooks en liedjes die eenvoudig lijken maar uiterst precies in elkaar zitten."},
-        {label:"Van invloed naar fysieke plek",text:"Bij de opnamen van Impera komt die relatie onverwacht dichtbij. Ghost werkt in Atlantis/Metronome in Stockholm, de historische studio die sterk met ABBA verbonden is."},
-        {label:"Een klein detail zegt soms meer",text:"In een apart interview kiest Forge I Have A Dream wanneer hem naar een favoriete ABBA-song wordt gevraagd. Zo krijgt de brede uitspraak ABBA is een invloed een concreet luisterspoor."}
+        {relations:["rel-ghost-abba-influence"],evidence:["guitarworld_forge_2022"],label:"De les zit in het liedje",text:"Forge gebruikt ABBA niet als voorbeeld van hoe Ghost moet klinken. De terugkerende bewondering gaat juist over compositie: sterke melodieën, duidelijke hooks en liedjes die eenvoudig lijken maar uiterst precies in elkaar zitten."},
+        {relations:["rel-ghost-abba-influence"],evidence:["guitarworld_forge_2022"],label:"Van invloed naar fysieke plek",text:"Bij de opnamen van Impera komt die relatie onverwacht dichtbij. Ghost werkt in Atlantis/Metronome in Stockholm, de historische studio die sterk met ABBA verbonden is."},
+        {relations:["rel-ghost-abba-influence"],evidence:["guitarworld_forge_2022"],label:"Een klein detail zegt soms meer",text:"In een apart interview kiest Forge I Have A Dream wanneer hem naar een favoriete ABBA-song wordt gevraagd. Zo krijgt de brede uitspraak ABBA is een invloed een concreet luisterspoor."}
       ]
     },
     ghost_metallica:{
@@ -88,9 +88,9 @@ const registry={
       lead:"Drie soorten relatie lopen in elkaar over: voorbeeld, professionele nabijheid en uiteindelijk een concrete opname.",
       introLabel:"De rode draad",intro:"Metallica staat eerst op afstand als voorbeeld. Later deelt Ghost het podium en de professionele wereld met de band. Met Enter Sandman krijgt die lange relatie uiteindelijk een hoorbaar resultaat.",
       sectionLabel:"Hoofdstukken",items:[
-        {label:"Een vroege maatstaf",text:"Forge beschrijft Metallica als een band die al vroeg liet zien hoe zware muziek tegelijk groot, direct en professioneel kon worden."},
-        {label:"Later dezelfde wereld in",text:"Ghost komt vervolgens daadwerkelijk in Metallica's professionele omgeving terecht. Samen optreden verandert een verre invloed in een concrete collegiale relatie."},
-        {label:"Enter Sandman maakt de cirkel zichtbaar",text:"De Polar Music Prize vormt een aparte route naar Ghosts cover van Enter Sandman en naar het vinden van een Ghost-eigen benadering."}
+        {relations:["rel-ghost-metallica-learning"],evidence:["slug_forge_2019","louder_metallica_2022"],label:"Een vroege maatstaf",text:"Forge beschrijft Metallica als een band die al vroeg liet zien hoe zware muziek tegelijk groot, direct en professioneel kon worden."},
+        {relations:["rel-ghost-metallica-live"],evidence:["slug_forge_2019"],label:"Later dezelfde wereld in",text:"Ghost komt vervolgens daadwerkelijk in Metallica's professionele omgeving terecht. Samen optreden verandert een verre invloed in een concrete collegiale relatie."},
+        {relations:["rel-ghost-metallica-cover"],evidence:["louder_metallica_2022"],label:"Enter Sandman maakt de cirkel zichtbaar",text:"De Polar Music Prize vormt een aparte route naar Ghosts cover van Enter Sandman en naar het vinden van een Ghost-eigen benadering."}
       ]
     },
     ghost_iron_maiden:{
@@ -98,10 +98,10 @@ const registry={
       lead:"Forge komt jarenlang op dezelfde relatie terug. De bronnen bouwen samen één steeds rijker verhaal.",
       introLabel:"De rode draad",intro:"Als jongen bestudeert Forge Iron Maiden om te begrijpen hoe een grote rockband leeft en toert. Later staat Ghost zelf met Maiden op tour, leert hij de mensen achter de band kennen en wordt die jeugdinvloed een echte professionele relatie.",
       sectionLabel:"Bronmomenten",items:[
-        {label:"2017 · het jeugdmodel",text:"Forge vertelt dat Iron Maiden hem muzikaal vormde, maar vooral dat Live After Death hem liet zien hoe een echte tour eruitzag. Met een kaartboek tekende hij als kind de speelsteden uit."},
-        {label:"2018 · van atlas naar werkelijkheid",text:"Na daadwerkelijk met Maiden te hebben getourd, vertelt Forge hetzelfde jeugdverhaal opnieuw en voegt hij persoonlijke contacten en gedeelde tourcrew toe."},
-        {label:"2019–2022 · een blijvende leerschool",text:"In latere gesprekken keert dezelfde kern terug: Maiden is niet alleen muziek, maar ook podiumproductie, werkethiek en een professionele school voor Ghost."},
-        {label:"2023 · de relatie wordt muziek",text:"Ghost neemt Phantom of the Opera op; de eerdere tours en vriendschap geven die keuze extra betekenis."}
+        {relations:["rel-ghost-maiden-learning"],evidence:["slug_forge_2019"],label:"2017 · het jeugdmodel",text:"Forge vertelt dat Iron Maiden hem muzikaal vormde, maar vooral dat Live After Death hem liet zien hoe een echte tour eruitzag. Met een kaartboek tekende hij als kind de speelsteden uit."},
+        {relations:["rel-ghost-maiden-learning","rel-ghost-maiden-live"],evidence:["slug_forge_2019"],label:"2018 · van atlas naar werkelijkheid",text:"Na daadwerkelijk met Maiden te hebben getourd, vertelt Forge hetzelfde jeugdverhaal opnieuw en voegt hij persoonlijke contacten en gedeelde tourcrew toe."},
+        {relations:["rel-ghost-maiden-learning"],evidence:["slug_forge_2019"],label:"2019–2022 · een blijvende leerschool",text:"In latere gesprekken keert dezelfde kern terug: Maiden is niet alleen muziek, maar ook podiumproductie, werkethiek en een professionele school voor Ghost."},
+        {relations:["rel-ghost-maiden-learning"],evidence:["slug_forge_2019"],label:"2023 · de relatie wordt muziek",text:"Ghost neemt Phantom of the Opera op; de eerdere tours en vriendschap geven die keuze extra betekenis."}
       ]
     }
   },
@@ -284,6 +284,24 @@ function storyBundle(baseId,counterpartId,opts){
   const story=storyFor(baseId,counterpartId);
   return {bundle,story,mode:story?"story":"facts"};
 }
+function traceStory(baseId,counterpartId){
+  const story=storyFor(baseId,counterpartId);
+  if(!story)return null;
+  const relationById=Object.fromEntries(registry.relations.map(r=>[r.id,r]));
+  return {...story,items:(story.items||[]).map(item=>({
+    ...item,
+    relationRecords:(item.relations||[]).map(id=>relationById[id]).filter(Boolean),
+    sourceRecords:(item.evidence||[]).map(id=>registry.sources[id]).filter(Boolean)
+  }))};
+}
+function storyCoverage(baseId,counterpartId){
+  const traced=traceStory(baseId,counterpartId);
+  if(!traced)return null;
+  const bundle=relationshipBundles(baseId,{use:"explorer",confidence:"confirmed"}).find(b=>b.entityId===counterpartId);
+  const used=new Set((traced.items||[]).flatMap(i=>i.relations||[]));
+  const available=(bundle?bundle.relations:[]).map(r=>r.id);
+  return {used:[...used],available,unused:available.filter(id=>!used.has(id)),complete:available.every(id=>used.has(id))};
+}
 function aggregateInfluence(){
   const counts={},seen=new Set();
   registry.relations.filter(r=>r.family==="influence"&&r.confidence==="confirmed").forEach(r=>{
@@ -312,5 +330,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
