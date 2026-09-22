@@ -5,16 +5,17 @@
 const R=window.MUSIC_DNA_RELATION_REGISTRY_V1,A=R.api;
 const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const ghost=A.relationsFor("ghost",{confidence:"confirmed"});
-const explorer=ghost.filter(r=>(r.uses||[]).includes("explorer"));
-const facts=A.quickFacts("ghost");
+const explorerBundles=A.relationshipBundles("ghost",{use:"explorer",confidence:"confirmed"});
+const factBundles=A.quickFactBundles("ghost");
 const playlist=A.playlistCandidates("ghost");
 const agg=A.aggregateInfluence();
-function relationRow(r){const other=r.from==="ghost"?r.to:r.from,n=A.entity(other);return '<div class="row"><span class="tag">'+esc(r.family)+'</span><span class="tag">'+esc(r.type)+'</span><b>'+esc(n?n.name:other)+'</b><div class="why">'+esc(r.claim)+'</div></div>'}
+function relationRow(r){const other=A.counterpartFor("ghost",r),n=A.entity(other);return '<div class="row"><span class="tag">'+esc(r.family)+'</span><span class="tag">'+esc(r.type)+'</span><b>'+esc(n?n.name:other)+'</b><div class="why">'+esc(r.claim)+'</div></div>'}
+function bundleRow(b){const name=(b.entity||{}).name||b.entityId;return '<div class="row"><b>'+esc(name)+'</b><div>'+b.families.map(x=>'<span class="tag">'+esc(x)+'</span>').join("")+'</div>'+b.claims.map(x=>'<div class="why">• '+esc(x)+'</div>').join("")+'</div>'}
 document.getElementById("out").innerHTML=
-'<section class="card"><div class="ey">1 · Centrale registry</div><h2>'+ghost.length+' bevestigde Ghost-relaties in deze kleine proefset</h2>'+ghost.map(relationRow).join("")+'</section>'+
-'<div class="grid"><section class="card"><div class="ey">2 · Explorer leest dezelfde data</div><div class="count">'+explorer.length+'</div><p class="muted">relaties kunnen als verklaarbare deuren dienen.</p>'+explorer.slice(0,4).map(relationRow).join("")+'</section>'+
-'<section class="card"><div class="ey">3 · ⓘ Wat hoor ik?</div><div class="count">'+facts.length+'</div><p class="muted">korte feiten zonder tweede kennisbank.</p>'+facts.slice(0,4).map(f=>'<div class="row">'+esc(f.text)+'</div>').join("")+'</section></div>'+
+'<section class="card"><div class="ey">1 · Centrale registry</div><h2>'+ghost.length+' atomaire feiten → '+explorerBundles.length+' complete verbindingen</h2><p class="muted">Achter de schermen blijven invloed, tour, cover enzovoort afzonderlijk bewaard. In de app worden ze per band/persoon samengebracht.</p>'+explorerBundles.map(bundleRow).join("")+'</section>'+
+'<div class="grid"><section class="card"><div class="ey">2 · Explorer · één naam, één complete deur</div><div class="count">'+explorerBundles.length+'</div><p class="muted">Metallica of Iron Maiden verschijnt hier maar één keer; alle relatievormen zitten achter dezelfde deur.</p>'+explorerBundles.map(bundleRow).join("")+'</section>'+
+'<section class="card"><div class="ey">3 · ⓘ Wat hoor ik? · dezelfde bundeling</div><div class="count">'+factBundles.length+'</div><p class="muted">Ook hier geen herhaalde bandnamen.</p>'+factBundles.map(b=>'<div class="row"><b>'+esc(b.name)+'</b><div>'+b.families.map(x=>'<span class="tag">'+esc(x)+'</span>').join("")+'</div>'+b.facts.map(x=>'<div class="why">• '+esc(x)+'</div>').join("")+'</div>').join("")+'</section></div>'+
 '<div class="grid"><section class="card"><div class="ey">4 · Express kan tellen</div><p class="muted">Demo-aggregatie binnen uitsluitend deze proefset.</p>'+agg.map(x=>'<div class="row"><b>'+esc(x.name)+'</b> · '+x.count+'</div>').join("")+'</section>'+
 '<section class="card"><div class="ey">5 · 🧬 Hoor dit DNA</div><h2>'+playlist.length+' invloed-kandidaten</h2><p class="muted">Alleen relaties met family=influence + use=playlist.</p>'+playlist.map(x=>'<div class="row"><b>'+esc(x.name)+'</b><div class="why">'+esc(x.why)+'</div></div>').join("")+'</section></div>'+
-'<section class="card"><div class="ey ok">Resultaat</div><h2>Dezelfde relatie wordt één keer bewaard en daarna anders gebruikt.</h2><p class="muted">De proef bewijst het gegevensmodel en de uitleesroutes; hij bewijst nog geen volledige Relation Registry, AllMusic-import of productie-playlistgenerator.</p></section>';
+'<section class="card"><div class="ey ok">Resultaat</div><h2>Atomaire feiten blijven apart; de gebruiker ziet één complete relatie per counterpart.</h2><p class="muted">De proef bewijst het gegevensmodel en de uitleesroutes; hij bewijst nog geen volledige Relation Registry, AllMusic-import of productie-playlistgenerator.</p></section>';
 </script></body></html>
