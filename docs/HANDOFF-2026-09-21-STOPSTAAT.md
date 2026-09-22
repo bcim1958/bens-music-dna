@@ -346,3 +346,23 @@ Niet opnieuw dezelfde relaties apart modelleren. Gebruik dezelfde Relation Regis
 3. daarna pas `🧬 Hoor dit DNA` / playlistselectie.
 
 De bestaande `test/music-dna-relation-registry-proof-v1.html` bevat hiervoor al uitleesroutes (`quickFactBundles`, aggregatie en playlistCandidates); de volgende stap is die route gericht als echte Pages-proef te valideren en waar nodig te verfijnen. W39 blijft volledig onaangeroerd.
+
+
+## 17. Relation Registry — rijkere schaalproef op echte iPhone bewezen (22 september 2026)
+
+De opgeschaalde Ghost Relation Registry is op een echte iPhone via GitHub Pages visueel bevestigd.
+
+Stand van de getoonde proef:
+- 15 atomaire feiten;
+- 11 complete artiestverbindingen;
+- Explorer-uitlezing: 11 unieke artiesten/counterparts;
+- Express kan de invloedrelaties afzonderlijk tellen;
+- Hoor dit DNA levert 10 invloed-kandidaten uit 11 Explorer-artiesten;
+- Rammstein blijft bewust wel context voor Explorer/Wat hoor ik?, maar geen playlist-kandidaat;
+- mobiele controle meldt expliciet: **PASS · alle artiesten blijven uniek**.
+
+Daarmee is ook de schaalregel bewezen: uitbreiding van drie naar elf artiestverbindingen veroorzaakt geen presentatieduplicatie en vereist geen tweede gegevensmodel.
+
+Belangrijk inhoudelijk bewijs: dezelfde relatiekennis kan per toepassing anders worden geselecteerd. Een contextuele show-/carrièrerelatie hoeft niet automatisch een muziekkandidaat te worden. De Relation Registry bewaart dus niet alleen verbindingen, maar maakt semantische selectie mogelijk.
+
+Besluit na deze proef: geen verdere tijd steken in het mooier maken van de architectuur-proofpagina. De proef heeft haar functie vervuld. Volgende bouwslag gebruikt de Registry als kennislaag in de echte Explorer-/verhaalcontext en ontwikkelt de inhoud lazy vanuit interessante Ghost-sporen. W39 blijft onaangeroerd.
