@@ -314,7 +314,40 @@ Eerst bewijzen:
 
 Pas daarna breed opschalen.
 
-## 15. Samenvatting
+## 15. Presentatieregel — één counterpart één keer compleet
+
+De Relation Registry bewaart achter de schermen **atomaire relaties** afzonderlijk. Ghost ↔ Metallica kan dus tegelijk bestaan uit invloed, tour, cover en andere aantoonbare relatievormen.
+
+De app presenteert die atomaire records echter niet als losse herhalingen van dezelfde band.
+
+Vaste UX-regel:
+
+**één counterpart wordt binnen dezelfde context één keer genoemd; alle relevante relatievormen worden daaronder compleet gebundeld.**
+
+Dus niet:
+- Metallica — invloed;
+- later opnieuw Metallica — tour;
+- later opnieuw Metallica — cover.
+
+Maar bijvoorbeeld één deur/kaart:
+
+**Metallica**  
+invloed · tour · cover  
+met daaronder de relevante korte toelichtingen en verdere verdieping.
+
+Hetzelfde geldt voor ABBA, Iron Maiden en andere sterke relaties.
+
+Belangrijk onderscheid:
+- **opslagniveau:** relaties blijven afzonderlijk en semantisch zuiver, zodat tellingen, bewijs en playlistselectie correct blijven;
+- **presentatieniveau:** Music DNA bundelt alle relevante relaties per counterpart tot één complete ingang.
+
+Ook aggregaties moeten waar nodig dedupliceren. Een band met drie verschillende invloedsubtypen mag bij de vraag "hoeveel artiesten zijn door X beïnvloed?" niet automatisch drie keer meetellen. Voor invloedstatistiek telt de unieke artiest→invloed-combinatie als basis.
+
+Voor samengestelde relaties kan een onderliggend object naar een hoofd-counterpart wijzen. Voorbeeld: Ghost → Enter Sandman (cover) hoort in de presentatie bij de complete Ghost ↔ Metallica-verbinding.
+
+Dit principe geldt generiek voor Explorer, Wat hoor ik?, Express-kaarten en andere app-presentaties.
+
+## 16. Samenvatting
 
 **Eén keer bewaren, overal gebruiken.**
 
