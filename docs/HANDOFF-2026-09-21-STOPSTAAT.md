@@ -250,6 +250,15 @@ Werkregel:
 
 Dit versoepelt niet de semantiek: `Influenced By`/`Followed By` blijft invloed; tour, cover, producer, plaats enzovoort blijven afzonderlijke relatietypen.
 
+### Presentatieregel voor sterke/meervoudige relaties
+
+De Relation Registry bewaart relatievormen atomair, maar de app herhaalt dezelfde band/artiest/persoon niet per relatievorm.
+
+Kernregel:
+**één counterpart één keer zichtbaar; alle relevante relatievormen compleet daarbinnen.**
+
+Voorbeeld: Metallica verschijnt bij Ghost één keer met invloed + tour + cover/opname, niet drie keer op verschillende plekken. Dit voorkomt dat sterke bands de presentatie gaan domineren alleen doordat er veel soorten relaties bestaan.
+
 ### Kleinste veilige implementatieproef — gebouwd
 
 De afgesproken Ghost-proef is op 22 september geïsoleerd gebouwd, zonder W39 te wijzigen.
