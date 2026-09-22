@@ -20,6 +20,6 @@ document.getElementById("out").innerHTML=
 '<section class="card"><div class="ey">5 · 🧬 Hoor dit DNA</div><h2>'+playlist.length+' invloed-kandidaten</h2><p class="muted">Alleen relaties met family=influence + use=playlist.</p>'+playlist.map(x=>'<div class="row"><b>'+esc(x.name)+'</b><div class="why">'+esc(x.why)+'</div></div>').join("")+'</section></div>'+
 '<section class="card"><div class="ey ok">Resultaat</div><h2>Atomaire feiten blijven apart; de gebruiker ziet één complete relatie per counterpart.</h2><p class="muted">De proef bewijst het gegevensmodel en de uitleesroutes; hij bewijst nog geen volledige Relation Registry, AllMusic-import of productie-playlistgenerator.</p></section>';
 } catch (err) {
-  document.getElementById("out").innerHTML='<section class="card"><div class="ey">Proef kon niet laden</div><h2>De Relation Registry is niet beschikbaar in deze browsercache.</h2><p class="muted">Ververs deze pagina één keer. Fout: '+esc(err && err.message ? err.message : err)+'</p></section>';
+  document.getElementById("out").innerHTML='<section class="card"><div class="ey">Proef kon niet laden</div><h2>De Relation Registry is niet beschikbaar in deze browsercache.</h2><p class="muted">Ververs deze pagina één keer. Fout: '+String(err && err.message ? err.message : err).replace(/[&<>]/g,"")+'</p></section>';
 }
 </script></body></html>
