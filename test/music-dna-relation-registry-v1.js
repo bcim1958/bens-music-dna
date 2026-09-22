@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.7",
+  version:"2026-09-22.8",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -331,6 +331,61 @@ function storyCoverage(baseId,counterpartId){
   const available=(bundle?bundle.relations:[]).map(r=>r.id);
   return {used:[...used],available,unused:available.filter(id=>!used.has(id)),complete:available.every(id=>used.has(id))};
 }
+function integrityReport(baseId){
+  const relationById=Object.fromEntries(registry.relations.map(r=>[r.id,r]));
+  const sourceIds=new Set(Object.keys(registry.sources));
+  const stories=Object.values(registry.stories||{}).filter(s=>s.base===baseId);
+  const findings=[];
+  const usedRelations=new Set(),usedSources=new Set();
+
+  registry.relations.forEach(r=>{
+    (r.evidence||[]).forEach(id=>{
+      if(!sourceIds.has(id))findings.push({level:"error",code:"relation-missing-source",relationId:r.id,sourceId:id});
+    });
+    if(!(r.evidence||[]).length)findings.push({level:"error",code:"relation-no-evidence",relationId:r.id});
+  });
+
+  stories.forEach(story=>{
+    (story.items||[]).forEach((item,index)=>{
+      if(!(item.relations||[]).length)findings.push({level:"error",code:"story-item-no-relation",counterpart:story.counterpart,index,label:item.label});
+      if(!(item.evidence||[]).length)findings.push({level:"warning",code:"story-item-no-source",counterpart:story.counterpart,index,label:item.label});
+      (item.relations||[]).forEach(id=>{
+        usedRelations.add(id);
+        if(!relationById[id])findings.push({level:"error",code:"story-missing-relation",counterpart:story.counterpart,index,relationId:id});
+      });
+      (item.evidence||[]).forEach(id=>{
+        usedSources.add(id);
+        if(!sourceIds.has(id))findings.push({level:"error",code:"story-missing-source",counterpart:story.counterpart,index,sourceId:id});
+        const linked=(item.relations||[]).some(rid=>((relationById[rid]||{}).evidence||[]).includes(id));
+        if(!linked)findings.push({level:"warning",code:"story-source-not-on-linked-relation",counterpart:story.counterpart,index,sourceId:id});
+      });
+    });
+  });
+
+  relationshipBundles(baseId,{use:"explorer",confidence:"confirmed"}).forEach(bundle=>{
+    const story=storyFor(baseId,bundle.entityId);
+    if(!story)return;
+    const used=new Set((story.items||[]).flatMap(i=>i.relations||[]));
+    bundle.relations.forEach(r=>{
+      if(!used.has(r.id))findings.push({level:"info",code:"relation-not-yet-told",counterpart:bundle.entityId,relationId:r.id});
+    });
+  });
+
+  const relevantSources=new Set();
+  registry.relations.filter(r=>r.from===baseId||r.to===baseId).forEach(r=>(r.evidence||[]).forEach(id=>relevantSources.add(id)));
+  [...relevantSources].forEach(id=>{
+    if(!usedSources.has(id))findings.push({level:"info",code:"source-not-used-in-story",sourceId:id});
+  });
+
+  return {
+    baseId,stories:stories.length,
+    errors:findings.filter(x=>x.level==="error").length,
+    warnings:findings.filter(x=>x.level==="warning").length,
+    info:findings.filter(x=>x.level==="info").length,
+    pass:!findings.some(x=>x.level==="error"),
+    findings
+  };
+}
 function aggregateInfluence(){
   const counts={},seen=new Set();
   registry.relations.filter(r=>r.family==="influence"&&r.confidence==="confirmed").forEach(r=>{
@@ -359,5 +414,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
