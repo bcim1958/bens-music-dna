@@ -382,3 +382,20 @@ Eerste webverificatie bevestigt dit patroon sterk voor:
 Belangrijk contrast: Mercyful Fate mag niet kunstmatig even rijk worden gemaakt. Een 2019 interview bevat zelfs een nuttige nuance: toen de interviewer Mercyful Fate/Blue Öyster Cult als hoorbare vergelijkingen noemde, antwoordde Forge dat Ghost volgens hem duidelijk sterker door Voïvod was beïnvloed. Dat soort tegenbewijs/nuance hoort óók in het dossier.
 
 Datamodelrichting: Relation hub → claim/theme → source moments → unique details/nuance. Eén source moment kan meerdere claims/relaties ondersteunen; meerdere source moments kunnen één claim versterken of verfijnen. Geen kunstmatige betrouwbaarheidsscore nodig: de gebruiker moet de herhaling, tijdspreiding en details kunnen zien.
+
+
+## 19. Buzzcocks als historische/lokale stresstest (22 september 2026)
+
+Na Ghost wordt Buzzcocks de bewuste contrastproef voor de algemene Relation Dossier-regel: jaren 70, Manchester/Bolton, minder moderne exposure, veel historische/lokale relaties en bronnen die verspreid liggen over interviews, archieven, oral history en getuigenissen van andere artiesten.
+
+Eerste bronverkenning toont al meerdere relationele families zonder dat er één centrale moderne bron nodig is:
+- oorsprong: Shelley/Devoto worden door Sex Pistols geactiveerd en halen de band zelf naar Manchester;
+- plek/scene: Lesser Free Trade Hall als concrete schakel tussen Buzzcocks en de ontluikende Manchester-scene;
+- DIY/infrastructuur: Spiral Scratch + New Hormones als onafhankelijke productie/distributie-route;
+- producer-netwerk: vroege Martin Hannett-relatie, vóór zijn latere Factory/Joy Division-status;
+- doorwerking: Peter Hook beschrijft Shelley expliciet als mentor en de Buzzcocks-tour als beslissend voor Joy Division;
+- lokale doorwerking: Shelley noemt o.a. Noel Gallagher/Oasis, Inspiral Carpets en Morrissey als voorbeelden van Manchester-bands/personen die met Buzzcocks verbonden waren;
+- songwriting-erfenis: latere artiesten zoals Bob Mould benoemen Shelley's korte, melodische, gender-neutrale liefdesliedjes als concrete invloed;
+- institutioneel lokaal bewijs: University of Manchester bewaart een Pete Shelley Archive met circa 500 items.
+
+Ontwerpconclusie: historische/lokale artiesten mogen niet benadeeld worden door minder web-exposure. De dossiermotor moet zowel uitgaande relaties (wie beïnvloedde Buzzcocks?) als inkomende getuigenissen (wie zegt door Buzzcocks/Shelley beïnvloed te zijn?), plaatsen, personen, producers, labels, tours en lokale infrastructuur kunnen combineren. Bronkwaliteit en herkomst blijven zichtbaar; latere getuigenissen zijn niet automatisch gelijk aan directe Shelley/Devoto-uitspraken.
