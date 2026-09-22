@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.8",
+  version:"2026-09-22.9",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -386,6 +386,20 @@ function integrityReport(baseId){
     findings
   };
 }
+function integritySelfTest(){
+  const originalStory=registry.stories.__integrity_probe__;
+  const originalRelation=registry.relations.find(r=>r.id==="__integrity_probe_relation__");
+  registry.stories.__integrity_probe__={
+    base:"ghost",counterpart:"__probe_artist__",title:"Audit probe",lead:"",introLabel:"",intro:"",
+    sectionLabel:"",items:[{label:"Deliberate broken item",text:"probe",relations:["__missing_relation__"],evidence:["__missing_source__"]}]
+  };
+  const report=integrityReport("ghost");
+  if(originalStory)registry.stories.__integrity_probe__=originalStory; else delete registry.stories.__integrity_probe__;
+  if(originalRelation&&!registry.relations.some(r=>r.id===originalRelation.id))registry.relations.push(originalRelation);
+  const codes=new Set(report.findings.filter(x=>x.counterpart==="__probe_artist__").map(x=>x.code));
+  const expected=["story-missing-relation","story-missing-source","story-source-not-on-linked-relation"];
+  return {pass:expected.every(x=>codes.has(x)),expected,detected:[...codes]};
+}
 function aggregateInfluence(){
   const counts={},seen=new Set();
   registry.relations.filter(r=>r.family==="influence"&&r.confidence==="confirmed").forEach(r=>{
@@ -414,5 +428,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
