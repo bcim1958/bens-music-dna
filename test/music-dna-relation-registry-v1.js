@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.5",
+  version:"2026-09-22.6",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -67,6 +67,11 @@ const registry={
       title:"Ghost’s Impera: how Tobias Forge made the best album of 2022",
       url:"https://www.loudersound.com/features/ghost-impera-interview-tobias-forge-2022"
     },
+    rollingstone_uk_phantomime_2023:{
+      provider:"Rolling Stone UK",kind:"primary-interview",
+      title:"Ghost’s Tobias Forge on the Swedish group’s eclectic new Phantomime EP",
+      url:"https://www.rollingstone.co.uk/music/ghosts-tobias-forge-on-the-swedish-groups-eclectic-new-phantomime-ep-29546/"
+    },
     musicdna_catalog:{
       provider:"Music DNA",kind:"catalog",
       title:"Music DNA entity/catalog context",url:null
@@ -101,7 +106,7 @@ const registry={
         {relations:["rel-ghost-maiden-learning"],evidence:["slug_forge_2019"],label:"2017 · het jeugdmodel",text:"Forge vertelt dat Iron Maiden hem muzikaal vormde, maar vooral dat Live After Death hem liet zien hoe een echte tour eruitzag. Met een kaartboek tekende hij als kind de speelsteden uit."},
         {relations:["rel-ghost-maiden-learning","rel-ghost-maiden-live"],evidence:["slug_forge_2019"],label:"2018 · van atlas naar werkelijkheid",text:"Na daadwerkelijk met Maiden te hebben getourd, vertelt Forge hetzelfde jeugdverhaal opnieuw en voegt hij persoonlijke contacten en gedeelde tourcrew toe."},
         {relations:["rel-ghost-maiden-learning"],evidence:["slug_forge_2019"],label:"2019–2022 · een blijvende leerschool",text:"In latere gesprekken keert dezelfde kern terug: Maiden is niet alleen muziek, maar ook podiumproductie, werkethiek en een professionele school voor Ghost."},
-        {relations:["rel-ghost-maiden-learning"],evidence:["slug_forge_2019"],label:"2023 · de relatie wordt muziek",text:"Ghost neemt Phantom of the Opera op; de eerdere tours en vriendschap geven die keuze extra betekenis."}
+        {relations:["rel-ghost-maiden-phantom-cover"],evidence:["rollingstone_uk_phantomime_2023"],label:"2023 · de relatie wordt muziek",text:"Ghost neemt Phantom of the Opera op; de eerdere tours en vriendschap geven die keuze extra betekenis."}
       ]
     }
   },
