@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Music DNA — Relation Registry proof V1</title>
+<style>
+body{margin:0;background:#080914;color:#f4efe7;font:16px/1.45 system-ui,-apple-system,sans-serif}
+main{max-width:760px;margin:auto;padding:18px}.card{background:#11121e;border:1px solid #343047;border-radius:22px;padding:18px;margin:12px 0}
+h1,h2{font-family:Georgia,serif}h1{font-size:2rem;margin:.2em 0}h2{font-size:1.25rem}.muted{color:#aaa7b6}.gold{color:#e6b65d}
+.row{border-top:1px solid #302d43;padding:10px 0}.pill{display:inline-block;border:1px solid #494052;border-radius:999px;padding:3px 8px;font-size:.75rem;margin-right:5px}
+b{color:#fff}
+</style></head><body><main>
+<div class="gold">MUSIC DNA · TECHNISCHE PROEF</div><h1>Relation Registry V1</h1>
+<p class="muted">Eén kleine Ghost-dataset, vier toepassingen. Geen productiecomponent.</p>
+<div id="out"></div>
+</main>
+<script src="music-dna-explorer-graph-v16.js"></script>
+<script src="music-dna-relation-registry-v1.js"></script>
+<script>
+const G=window.MUSIC_DNA_EXPLORER_GRAPH_V1,RR=window.MUSIC_DNA_RELATION_REGISTRY_V1;
+const name=id=>(G.nodes[id]&&G.nodes[id].name)||id;
+const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ghost=RR.relationsFor("ghost");
+const featured=RR.relationsFor("ghost",{featuredExplorer:true});
+const quick=ghost.filter(r=>r.quickFact);
+const influence=RR.influenceCandidates("ghost");
+const counts=RR.incomingInfluenceCounts();
+document.getElementById("out").innerHTML=
+'<section class="card"><div class="gold">1 · Explorer</div><h2>Dezelfde centrale relaties leveren deuren</h2>'+
+featured.map(r=>'<div class="row"><span class="pill">'+esc((RR.relationTypes[r.type]||{}).label)+'</span><b>'+esc(name(r.to))+'</b><div class="muted">'+esc((r.explorer||{}).summary||r.claim)+'</div></div>').join("")+
+'</section>'+
+'<section class="card"><div class="gold">2 · ⓘ Wat hoor ik?</div><h2>Korte weetjes uit dezelfde records</h2>'+
+quick.slice(0,4).map(r=>'<div class="row"><b>'+esc(name(r.to))+'</b><div>'+esc(r.quickFact)+'</div></div>').join("")+
+'</section>'+
+'<section class="card"><div class="gold">3 · DNA Express / statistiek</div><h2>Relaties zijn telbaar</h2><p>'+ghost.length+' bevestigde Ghost-relaties in deze proef; '+influence.length+' daarvan zijn playlist-geschikte invloedsporen.</p>'+
+Object.entries(counts).map(([id,n])=>'<span class="pill">'+esc(name(id))+' · '+n+'</span>').join("")+
+'</section>'+
+'<section class="card"><div class="gold">4 · 🧬 Hoor dit DNA</div><h2>Invloed is selecteerbaar</h2><p class="muted">Nog geen Spotify-playlist: alleen bewijs dat de registry de juiste kandidaten kan leveren.</p>'+
+influence.map(r=>'<div class="row"><b>'+esc(name(r.to))+'</b><div class="muted">'+esc(r.claim)+'</div></div>').join("")+
+'</section>'+
+'<section class="card"><div class="gold">Bewijslaag</div><h2>Bronnen reizen met de relatie mee</h2>'+
+RR.sourcesFor(RR.relations.find(r=>r.id==="ghost-influence-abba")).map(s=>'<div class="row"><b>'+esc(s.publisher)+'</b><div class="muted">'+esc(s.title)+' · '+esc(s.kind)+'</div></div>').join("")+
+'</section>';
+</script></body></html>
