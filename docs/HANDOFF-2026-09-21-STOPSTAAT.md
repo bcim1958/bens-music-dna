@@ -310,3 +310,39 @@ en
 **knooppunt → aantoonbare zijdeur → data-gedreven trail → eigen bewijslaag.**
 
 Daarmee kan Explorer groter worden zonder dat iedere nieuwe dwaalroute een nieuw handgebouwd mini-project wordt.
+
+
+## 16. Engine 30 — gebundelde relatiehubs op echte iPhone bewezen (22 september 2026)
+
+De Relation Registry-bundeling is op 22 september via de bestaande GitHub Pages-route daadwerkelijk op een iPhone getest en visueel bevestigd.
+
+Werkende proefroute:
+`test/music-dna-explorer-engine-v30.html`
+
+Herstelcommit na de eerste lege render:
+`64c3e2528aacdc815640c28e69f6cf3f922fcb61`
+
+Bewezen op de echte iPhone:
+- Engine 30 rendert en navigeert;
+- Overzicht, Muziek, Mensen en Verhalen blijven functioneren;
+- tab `Verwantschap` toont iedere artiest/counterpart één keer;
+- ABBA = 1 zichtbaar hub-item met 1 onderliggend verband;
+- Iron Maiden = 1 zichtbaar hub-item met 2 afzonderlijke onderliggende verbanden;
+- Metallica = 1 zichtbaar hub-item met 3 afzonderlijke onderliggende verbanden;
+- doorklikken naar het relatiedossier bewaart de afzonderlijke feiten en de bronnenkast;
+- er is in deze proef geen duplicatie van ABBA, Iron Maiden of Metallica in de relationele hoofdpresentatie.
+
+Daarmee is de presentatieregel nu niet alleen architectonisch maar ook in de echte mobiele Explorer bewezen:
+
+**één counterpart één keer zichtbaar → één rijk relatiedossier → daarachter afzonderlijke relaties en bewijsstukken.**
+
+Belangrijke observatie voor de volgende fase: de huidige labels zoals `influence · formative-professional-influence` zijn nog technische registrytaal. Dat is bewust nog geen eindredactie. Eerst blijft de verzamel-/kennislaag leidend; verhalende presentatie en uiteindelijke UI-redactie volgen later.
+
+### Volgende architectuurproef
+
+Niet opnieuw dezelfde relaties apart modelleren. Gebruik dezelfde Relation Registry nu aantoonbaar voor:
+1. `ⓘ Wat hoor ik?` — compacte, gebundelde context zonder dubbele artiestnamen;
+2. DNA Express/telling — telbare relatiekennis zonder presentatieduplicatie;
+3. daarna pas `🧬 Hoor dit DNA` / playlistselectie.
+
+De bestaande `test/music-dna-relation-registry-proof-v1.html` bevat hiervoor al uitleesroutes (`quickFactBundles`, aggregatie en playlistCandidates); de volgende stap is die route gericht als echte Pages-proef te valideren en waar nodig te verfijnen. W39 blijft volledig onaangeroerd.
