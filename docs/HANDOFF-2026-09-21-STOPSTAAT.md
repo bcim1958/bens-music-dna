@@ -1,6 +1,6 @@
 # Music DNA — stopstaat 21 september 2026
 
-**Status:** canonieke stopstaat na Explorer Engine 29 + Relation Registry-ontwerp  
+**Status:** canonieke stopstaat na Explorer Engine 30 + Relation Registry-proef V1  
 **Vastgezet:** 21-09-2026, na de bronnenregister-, trail- en iPhone-navigatiebouw  
 **Productie:** W39 blijft onaangeroerd en operationeel; Explorer blijft een geïsoleerde ontwikkel-/proeflijn.  
 **Belangrijk:** Engine 29 is `test/music-dna-explorer-engine-v29.html` en is **geen productie-Explorer**.
@@ -224,7 +224,7 @@ Op 22 september is een nieuwe gemeenschappelijke kennislaag als ontwerpbesluit v
 
 Ontwerpcommit: `e3893ba3a02245aee0d7c8d2565e521aaf89da67`.
 
-**Status:** geaccepteerde ontwerprichting; nog niet als productiecomponent gebouwd.
+**Status:** geaccepteerde architectuurrichting; op 22 september als kleine geïsoleerde proefcomponent gebouwd, nog niet als productiecomponent.
 
 Kern:
 **één relatie één keer opslaan + herkomst/bewijs eraan koppelen → daarna hergebruiken in Explorer, Wat hoor ik?, DNA Express, aanbevelingen, statistiek en playlistgeneratie.**
@@ -250,24 +250,49 @@ Werkregel:
 
 Dit versoepelt niet de semantiek: `Influenced By`/`Followed By` blijft invloed; tour, cover, producer, plaats enzovoort blijven afzonderlijke relatietypen.
 
-### Kleinste veilige implementatieproef
+### Kleinste veilige implementatieproef — gebouwd
 
-Nog niet breed opschalen. Ghost is de logische eerste proef omdat de bestaande Explorer-graph al verschillende relatievormen bevat, onder meer ABBA, Black Sabbath, Iron Maiden, Metallica, Fredrik Åkesson, Klas Åhlund, Zweden en Rats/Moskou.
+De afgesproken Ghost-proef is op 22 september geïsoleerd gebouwd, zonder W39 te wijzigen.
 
-De eerste implementatieproef moet aantonen dat één kleine centrale set Ghost-relaties door meerdere toepassingen kan worden gelezen, zonder de goedgekeurde Engine-29-presentatie of W39-productie open te breken.
+Nieuwe bestanden:
+- `test/music-dna-relation-registry-v1.js`
+- `test/music-dna-relation-registry-proof-v1.html`
+- `test/music-dna-explorer-engine-v30.html`
 
-Minimaal bewijzen:
-1. centrale relatie + type + bron/herkomst;
-2. Explorer leest dezelfde relatie;
-3. Wat hoor ik? kan er een kort weetje van maken;
-4. een aggregatie kan relaties tellen;
-5. een playlistselectie kan op relatietype filteren.
+Registry V1 bevat 11 relaties, waarvan 10 vanuit Ghost. De proef bevat meerdere relatietypen: invloed, professionele invloed, support/tour, cover, studiopersoneel, producer/songwriter, plaats en inspiratie. Bronnen/herkomst reizen met de relatie mee.
 
-Geen bulkonderzoek of grote invloed-playlistbouw vóór deze kleine proef.
+Dezelfde registry bewijst nu vier gebruiksvormen:
+1. Explorer leest zijn bestaande drie uitgelichte Ghost-deuren uit de centrale registry;
+2. `ⓘ Wat hoor ik?`-achtige korte feiten kunnen uit dezelfde records worden afgeleid;
+3. relaties kunnen worden geteld/geaggregeerd;
+4. invloedrelaties kunnen afzonderlijk worden geselecteerd als kandidaten voor `🧬 Hoor dit DNA`.
+
+Technische controle:
+- Relation Registry: syntax PASS;
+- Engine 30: syntax PASS;
+- multi-use proof page: syntax PASS;
+- registrycontrole: 11 relaties totaal, 10 vanuit Ghost, 3 huidige Explorer-deuren, 4 playlist-geschikte invloedsporen.
+
+Belangrijke grens:
+**dit bewijst de gegevensarchitectuur, niet een productie-Explorer, productie-Wat-hoor-ik of werkende Spotify-invloedplaylist.**
+
+Engine 30 verandert de goedgekeurde Explorer-presentatie niet fundamenteel. Het belangrijkste verschil zit onder de motorkap: de drie bestaande uitgelichte Ghost-relaties worden nu uit de Relation Registry gelezen in plaats van afzonderlijk in de tab hardcoded te zijn.
+
+Commits:
+- registry main: `5c00c7452eac3f20f5efc67cdbbc429cee431afd`
+- registry Pages: `f1f08416d9c51c5edd101acf3140bffd741ee24f`
+- Engine 30 main, eerste aanleg: `3f278b188f781c3ca6ebe7bb7ab8cb1602ad9bc5`
+- Engine 30 Pages, eerste aanleg: `7f0407bfbb5c3c755922c50401bacb0d03c992d1`
+- Engine 30 syntaxfix main: `ee15a211e76436ea5ea5658a4ce1871e576802fe`
+- Engine 30 syntaxfix Pages: `96e24df9f47641ae9cd35fcf12907fe984d3548f`
+- multi-use proof main: `aad55dcd4111f655d112820d21c514c2c6e82528`
+- multi-use proof Pages: `4bc98939397c05fd0f34483949b94d533dbac976`
+
+Geen bulkonderzoek of grote invloed-playlistbouw volgt automatisch uit deze proef. Eerst gebruiken we dit kleine model als onderlaag en schalen we lazy op wanneer de toepassing daarom vraagt.
 
 ## 15. Stopbesluit
 
-**De projectadministratie is hiermee opnieuw gelijkgetrokken met de bouwstand tot en met Engine 29 én de geaccepteerde Relation Registry-richting van 22 september.**
+**De projectadministratie is hiermee opnieuw gelijkgetrokken met de bouwstand tot en met Engine 30 én de Relation Registry-proef V1 van 22 september.**
 
 De belangrijke sprong sinds de vorige stopstaat is niet “vijf nieuwe schermversies”, maar de overgang van losse proefpagina's naar een herhaalbare structuur:
 
