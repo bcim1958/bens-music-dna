@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.12",
+  version:"2026-09-22.13",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -483,6 +483,37 @@ function discoveryQueue(baseId,limit){
   }
   return out;
 }
+function createDiscoveryState(seed){
+  const state={};
+  (registry.discoveries||[]).forEach(d=>state[d.id]={status:(seed&&seed[d.id]&&seed[d.id].status)||d.status||"unread",shownAt:(seed&&seed[d.id]||{}).shownAt||null,readAt:(seed&&seed[d.id]||{}).readAt||null});
+  return state;
+}
+function discoveryQueueForState(baseId,state,limit){
+  const ranked=discoveryCandidates(baseId).filter(d=>((state[d.id]||{}).status||d.status||"unread")==="unread");
+  const seenCounterparts=new Set(),out=[];
+  for(const d of ranked){
+    if(seenCounterparts.has(d.counterpart))continue;
+    seenCounterparts.add(d.counterpart);out.push(d);
+    if(limit&&out.length>=limit)break;
+  }
+  return out;
+}
+function markDiscovery(state,id,status,at){
+  if(!state[id])state[id]={status:"unread",shownAt:null,readAt:null};
+  if(!["unread","shown","read"].includes(status))throw new Error("Unknown discovery status: "+status);
+  state[id].status=status;
+  if(status==="shown")state[id].shownAt=at||"session";
+  if(status==="read"){state[id].readAt=at||"session";if(!state[id].shownAt)state[id].shownAt=state[id].readAt;}
+  return state[id];
+}
+function discoveryRotation(baseId,state,limit){
+  const fresh=discoveryQueueForState(baseId,state,limit);
+  return {fresh,counts:{
+    unread:Object.values(state).filter(x=>x.status==="unread").length,
+    shown:Object.values(state).filter(x=>x.status==="shown").length,
+    read:Object.values(state).filter(x=>x.status==="read").length
+  }};
+}
 function aggregateInfluence(){
   const counts={},seen=new Set();
   registry.relations.filter(r=>r.family==="influence"&&r.confidence==="confirmed").forEach(r=>{
@@ -511,5 +542,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
