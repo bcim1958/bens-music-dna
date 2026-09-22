@@ -1,13 +1,20 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.2",
+  version:"2026-09-22.3",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
     ghost:{type:"artist",name:"Ghost"},
     abba:{type:"artist",name:"ABBA"},
     black_sabbath:{type:"artist",name:"Black Sabbath"},
+    blue_oyster_cult:{type:"artist",name:"Blue Öyster Cult"},
+    mercyful_fate:{type:"artist",name:"Mercyful Fate"},
+    misfits:{type:"artist",name:"Misfits"},
+    rammstein:{type:"artist",name:"Rammstein"},
+    deep_purple:{type:"artist",name:"Deep Purple"},
+    led_zeppelin:{type:"artist",name:"Led Zeppelin"},
+    judas_priest:{type:"artist",name:"Judas Priest"},
     iron_maiden:{type:"artist",name:"Iron Maiden"},
     metallica:{type:"artist",name:"Metallica"},
     tobias_forge:{type:"person",name:"Tobias Forge"},
@@ -44,6 +51,21 @@ const registry={
       provider:"Guitar World",kind:"interview",
       title:"Fredrik Åkesson on recording guitars for Ghost's Impera",
       url:"https://www.guitarworld.com/features/fredrick-akesson-ghost-opeth-impera"
+    },
+    louder_opus_2021:{
+      provider:"Metal Hammer / Louder",kind:"primary-interview",
+      title:"Ghost’s Opus Eponymous: the story behind the album",
+      url:"https://www.loudersound.com/features/ghost-opus-eponymous-story-behind-album"
+    },
+    guitarworld_prequelle_2018:{
+      provider:"Guitar World",kind:"primary-interview",
+      title:"Scary Good: Ghost’s Tobias Forge Breaks Down Prequelle",
+      url:"https://www.guitarworld.com/artists/scary-good-ghosts-tobias-forge-breaks-down-the-brilliant-new-prequelle"
+    },
+    louder_impera_2022:{
+      provider:"Metal Hammer / Louder",kind:"primary-interview",
+      title:"Ghost’s Impera: how Tobias Forge made the best album of 2022",
+      url:"https://www.loudersound.com/features/ghost-impera-interview-tobias-forge-2022"
     },
     musicdna_catalog:{
       provider:"Music DNA",kind:"catalog",
@@ -92,6 +114,62 @@ const registry={
       claim:"Ghost nam Enter Sandman op voor The Metallica Blacklist.",
       evidence:["louder_metallica_2022"],confidence:"confirmed",
       uses:["explorer","wat-hoor-ik","playlist"]
+    },
+    {
+      id:"rel-ghost-boc-foundation",from:"ghost",to:"blue_oyster_cult",
+      family:"influence",type:"foundational-musical-influence",direction:"out",
+      claim:"Forge noemt het oude Blue Öyster Cult-materiaal als een van de platen waaruit de eerste Ghost-songs voortkwamen.",
+      evidence:["louder_opus_2021"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
+    },
+    {
+      id:"rel-ghost-mercyful-fate-foundation",from:"ghost",to:"mercyful_fate",
+      family:"influence",type:"foundational-musical-influence",direction:"out",
+      claim:"Forge noemt Mercyful Fate als een van de vroege muzikale bouwstenen van Ghost.",
+      evidence:["louder_opus_2021"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
+    },
+    {
+      id:"rel-ghost-misfits-foundation",from:"ghost",to:"misfits",
+      family:"influence",type:"foundational-musical-influence",direction:"out",
+      claim:"Forge noemt Misfits als vroege bouwsteen: klassieke rock-, metal- en punkvormen met grote popmelodieën en donkere beeldtaal.",
+      evidence:["louder_opus_2021"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
+    },
+    {
+      id:"rel-ghost-black-sabbath-guitar",from:"ghost",to:"black_sabbath",
+      family:"influence",type:"guitar-influence",direction:"out",
+      claim:"Forge noemt Black Sabbath onder zijn klassieke heavy-metalinvloeden als gitarist.",
+      evidence:["guitarworld_prequelle_2018"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
+    },
+    {
+      id:"rel-ghost-deep-purple-guitar",from:"ghost",to:"deep_purple",
+      family:"influence",type:"guitar-influence",direction:"out",
+      claim:"Forge noemt Deep Purple onder zijn klassieke rock- en heavy-metalinvloeden als gitarist.",
+      evidence:["guitarworld_prequelle_2018"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
+    },
+    {
+      id:"rel-ghost-led-zeppelin-guitar",from:"ghost",to:"led_zeppelin",
+      family:"influence",type:"guitar-influence",direction:"out",
+      claim:"Forge noemt Led Zeppelin onder zijn klassieke rock- en heavy-metalinvloeden als gitarist.",
+      evidence:["guitarworld_prequelle_2018"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
+    },
+    {
+      id:"rel-ghost-judas-priest-guitar",from:"ghost",to:"judas_priest",
+      family:"influence",type:"guitar-influence",direction:"out",
+      claim:"Forge noemt Judas Priest onder zijn klassieke heavy-metalinvloeden als gitarist.",
+      evidence:["guitarworld_prequelle_2018"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
+    },
+    {
+      id:"rel-ghost-rammstein-guidepost",from:"ghost",to:"rammstein",
+      family:"influence",type:"career-show-guidepost",direction:"out",
+      claim:"Forge noemt Rammstein een hedendaagse leidraad voor de schaal, thematiek en stadionambitie van Ghost, niet als klankvoorbeeld.",
+      evidence:["louder_impera_2022"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express"]
     },
     {
       id:"rel-akesson-impera",from:"fredrik_akesson",to:"impera",
