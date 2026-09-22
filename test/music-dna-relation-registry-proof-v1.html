@@ -1,15 +1,18 @@
 <!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Music DNA — Relation Registry proof V1</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#070812;color:#f4efe7;font:16px/1.5 system-ui,-apple-system,sans-serif}.app{max-width:760px;margin:auto;padding:18px}.ey{color:#e6b65d;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.card{background:#11121d;border:1px solid #302d43;border-radius:22px;padding:18px;margin:12px 0}h1{font:700 2.4rem/1 Georgia,serif;margin:.2em 0}h2{font:700 1.25rem Georgia,serif;margin:.2em 0 .6em}.muted{color:#aaa7b6}.row{padding:10px 0;border-top:1px solid #2b2939}.tag{display:inline-block;border:1px solid #4b465f;border-radius:999px;padding:3px 8px;margin-right:5px;font-size:.72rem;color:#ddd7e2}.why{font-size:.85rem;color:#c9c4cf}.ok{color:#a9d9ae}.count{font-size:2rem;font-weight:850}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(max-width:600px){.grid{grid-template-columns:1fr}}</style></head><body><main class="app">
-<div class="ey">Geïsoleerde architectuurproef · geen productie</div><h1>Ghost Relation Registry</h1><p class="muted">Eén centrale set relaties, vier verschillende toepassingen. Deze pagina wijzigt W39 of Engine 29 niet.</p>
+<div class="ey">Geïsoleerde architectuurproef · geen productie</div><h1>Ghost Relation Registry</h1><p class="muted">Dezelfde relatiekennis wordt hieronder opnieuw gebruikt voor Explorer, Wat hoor ik?, Express en Hoor dit DNA. W39 blijft onaangeroerd.</p>
 <div id="out"></div></main><script src="music-dna-relation-registry-v1.js?v=20260922-2"></script><script>
 try {
 const R=window.MUSIC_DNA_RELATION_REGISTRY_V1,A=R.api;
 const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const ghost=A.relationsFor("ghost",{confidence:"confirmed"});
-const explorerBundles=A.relationshipBundles("ghost",{use:"explorer",confidence:"confirmed"});
-const factBundles=A.quickFactBundles("ghost");
+const explorerBundles=A.relationshipBundles("ghost",{use:"explorer",confidence:"confirmed"}).filter(b=>(b.entity||{}).type==="artist");
+const factBundles=A.quickFactBundles("ghost").filter(b=>(A.entity(b.entityId)||{}).type==="artist");
 const playlist=A.playlistCandidates("ghost");
 const agg=A.aggregateInfluence();
+const expected={abba:1,iron_maiden:2,metallica:3};
+const artistInvariant=explorerBundles.length===3&&explorerBundles.every(b=>expected[b.entityId]===b.relations.length)&&new Set(explorerBundles.map(b=>b.entityId)).size===3;
+const quickInvariant=factBundles.length===3&&new Set(factBundles.map(b=>b.entityId)).size===3;
 function relationRow(r){const other=A.counterpartFor("ghost",r),n=A.entity(other);return '<div class="row"><span class="tag">'+esc(r.family)+'</span><span class="tag">'+esc(r.type)+'</span><b>'+esc(n?n.name:other)+'</b><div class="why">'+esc(r.claim)+'</div></div>'}
 function bundleRow(b){const name=(b.entity||{}).name||b.entityId;return '<div class="row"><b>'+esc(name)+'</b><div>'+b.families.map(x=>'<span class="tag">'+esc(x)+'</span>').join("")+'</div>'+b.claims.map(x=>'<div class="why">• '+esc(x)+'</div>').join("")+'</div>'}
 document.getElementById("out").innerHTML=
@@ -18,7 +21,7 @@ document.getElementById("out").innerHTML=
 '<section class="card"><div class="ey">3 · ⓘ Wat hoor ik? · dezelfde bundeling</div><div class="count">'+factBundles.length+'</div><p class="muted">Ook hier geen herhaalde bandnamen.</p>'+factBundles.map(b=>'<div class="row"><b>'+esc(b.name)+'</b><div>'+b.families.map(x=>'<span class="tag">'+esc(x)+'</span>').join("")+'</div>'+b.facts.map(x=>'<div class="why">• '+esc(x)+'</div>').join("")+'</div>').join("")+'</section></div>'+
 '<div class="grid"><section class="card"><div class="ey">4 · Express kan tellen</div><p class="muted">Demo-aggregatie binnen uitsluitend deze proefset.</p>'+agg.map(x=>'<div class="row"><b>'+esc(x.name)+'</b> · '+x.count+'</div>').join("")+'</section>'+
 '<section class="card"><div class="ey">5 · 🧬 Hoor dit DNA</div><h2>'+playlist.length+' invloed-kandidaten</h2><p class="muted">Alleen relaties met family=influence + use=playlist.</p>'+playlist.map(x=>'<div class="row"><b>'+esc(x.name)+'</b><div class="why">'+esc(x.why)+'</div></div>').join("")+'</section></div>'+
-'<section class="card"><div class="ey ok">Resultaat</div><h2>Atomaire feiten blijven apart; de gebruiker ziet één complete relatie per counterpart.</h2><p class="muted">De proef bewijst het gegevensmodel en de uitleesroutes; hij bewijst nog geen volledige Relation Registry, AllMusic-import of productie-playlistgenerator.</p></section>';
+'<section class="card"><div class="ey ok">Controle</div><h2>'+(artistInvariant&&quickInvariant?'PASS · dezelfde drie artiesten blijven uniek':'LET OP · invariant wijkt af')+'</h2><p class="muted">Verwacht: ABBA 1 feit · Iron Maiden 2 feiten · Metallica 3 feiten. Wat hoor ik? moet dezelfde drie artiesten zonder dubbele naam kunnen uitlezen.</p></section>'+ '<section class="card"><div class="ey ok">Resultaat</div><h2>Atomaire feiten blijven apart; dezelfde kennis kan meerdere functies voeden.</h2><p class="muted">De proef bewijst het gegevensmodel en de uitleesroutes; hij bewijst nog geen volledige Relation Registry, AllMusic-import of productie-playlistgenerator.</p></section>';
 } catch (err) {
   document.getElementById("out").innerHTML='<section class="card"><div class="ey">Proef kon niet laden</div><h2>De Relation Registry is niet beschikbaar in deze browsercache.</h2><p class="muted">Ververs deze pagina één keer. Fout: '+String(err && err.message ? err.message : err).replace(/[&<>]/g,"")+'</p></section>';
 }
