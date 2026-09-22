@@ -399,3 +399,21 @@ Eerste bronverkenning toont al meerdere relationele families zonder dat er één
 - institutioneel lokaal bewijs: University of Manchester bewaart een Pete Shelley Archive met circa 500 items.
 
 Ontwerpconclusie: historische/lokale artiesten mogen niet benadeeld worden door minder web-exposure. De dossiermotor moet zowel uitgaande relaties (wie beïnvloedde Buzzcocks?) als inkomende getuigenissen (wie zegt door Buzzcocks/Shelley beïnvloed te zijn?), plaatsen, personen, producers, labels, tours en lokale infrastructuur kunnen combineren. Bronkwaliteit en herkomst blijven zichtbaar; latere getuigenissen zijn niet automatisch gelijk aan directe Shelley/Devoto-uitspraken.
+
+
+## 20. Explorer redactionele kernregel — vondsten, variatie en terugkeerwaarde (22 september 2026)
+
+Gebruikersdoel aangescherpt: Explorer moet niet voorspellen welke kleine vondst emotioneel belangrijk wordt. Het moet breed genoeg verzamelen en redigeren dat onverwachte betekenis niet wordt weggefilterd.
+
+Vaste redactionele regels:
+- zo weinig mogelijk herhaling/dubbeling; één feit/anekdote krijgt een canonieke kern en wordt elders hooguit functioneel verwezen, niet opnieuw verteld;
+- originaliteit en inhoudelijke meerwaarde gaan vóór hoeveelheid;
+- standaard leesbrok circa 400 woorden; een rijk onderwerp mag uit meerdere afzonderlijke stukken bestaan;
+- meerdere stukken over hetzelfde onderwerp moeten verschillende invalshoeken/details hebben, niet dezelfde bronkern navertellen;
+- terugkeerwaarde is expliciet gewenst: bij later bezoek mag een andere nog-ongelezen vondst klaarstaan;
+- gelezen/ongelezen en recent getoond moeten daarom later als presentatiestatus kunnen bestaan, los van de feitelijke Relation Registry;
+- kleine/lokale/obscure relaties worden niet lager gewaardeerd vanwege geringe exposure of roem;
+- geen emotionele voorspellingsscore: Explorer biedt deuren en verrassingen, gebruiker bepaalt wat raakt;
+- persoonlijke raakpunten (bijv. eigen reis/foto/bijna-concert) mogen later als aparte persoonlijke laag naast de algemene muziekhistorische waarheid bestaan, zonder die waarheid te vervormen.
+
+Architectuurgevolg: Knowledge Registry (feiten/bronnen) → Story/Vondst units (canonieke inhoud, circa 400 woorden, eigen invalshoek) → Presentation rotation (ongelezen/anders-bij-terugkeer). Dit voorkomt dat variatie wordt bereikt door dezelfde informatie anders te formuleren.
