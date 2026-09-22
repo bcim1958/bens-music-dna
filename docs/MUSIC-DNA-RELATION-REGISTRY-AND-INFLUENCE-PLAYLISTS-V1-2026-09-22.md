@@ -60,6 +60,23 @@ Daaronder kunnen preciezere typen bestaan, bijvoorbeeld:
 **Playlistlidmaatschap mag nooit automatisch als invloed worden geïnterpreteerd.**  
 **Geen aantoonbare relatie = geen feitelijke Explorer-deur.**
 
+### 2a. Presentatieregel — één counterpart, één complete presentatie
+
+Achter de schermen blijven verschillende relatievormen atomair en afzonderlijk bewaard. In de app worden alle relaties tussen het huidige object en dezelfde band/artiest/persoon echter **gebundeld tot één complete verbinding**.
+
+Dus niet:
+- Metallica als invloed;
+- Metallica later opnieuw als tourrelatie;
+- Metallica nogmaals als coverrelatie.
+
+Maar één keer:
+**Metallica — invloed · tour · opname/cover**, met daarachter de verschillende onderliggende feiten en bronnen.
+
+Kernregel:
+**één counterpart één keer zichtbaar; alle relevante relatievormen compleet daarbinnen.**
+
+Dit geldt in ieder geval voor Explorer en Wat hoor ik? en moet waar logisch ook andere presentatielagen sturen. De onderliggende atomaire relaties blijven apart beschikbaar voor tellingen, filtering en playlistlogica.
+
 ## 3. Bewijs reist met de relatie mee
 
 Een relatie bevat niet alleen bron- en doelentiteit, maar ook de bewijslaag.
