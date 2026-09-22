@@ -1,6 +1,6 @@
 # Music DNA — stopstaat 21 september 2026
 
-**Status:** canonieke stopstaat na Explorer Engine 29  
+**Status:** canonieke stopstaat na Explorer Engine 29 + Relation Registry-ontwerp  
 **Vastgezet:** 21-09-2026, na de bronnenregister-, trail- en iPhone-navigatiebouw  
 **Productie:** W39 blijft onaangeroerd en operationeel; Explorer blijft een geïsoleerde ontwikkel-/proeflijn.  
 **Belangrijk:** Engine 29 is `test/music-dna-explorer-engine-v29.html` en is **geen productie-Explorer**.
@@ -174,11 +174,17 @@ Sinds de vorige stopstaat zijn de volgende acceptaties/observaties niet alleen u
 
 ## 11. W39 blijft strikt geïsoleerd
 
-Op 21 september is W39 Dag 2 op de echte iPhone succesvol afgerond:
-- 5 beoordelingen;
-- alle vijf `Raak`;
-- positieve zaterdagvoorraad: `4 / 42`;
+Op 22 september is W39 Dag 3 op de bestaande echte-iPhone-omgeving succesvol afgerond:
+- Shiraz Lane — To The Moon & Back → `Raak`;
+- The Poodles — Night of Passion → `Raak`;
+- Reckless Love — Hot → `Goed`;
+- reserve Swedish Erotica — Rock'n'Roll City → `Goed`;
+- reserve Heavy Pettin — Sole Survivor → `Goed`;
+- 5/5 positief;
+- positieve zaterdagvoorraad: `6 / 42`;
 - geen productiebug.
+
+Belangrijke bedieningsregel: de live dagelijkse Ontdek-DNA-sessie moet in Ben's bestaande iPhone-browser/context worden geopend. De ChatGPT in-app-browser heeft een afzonderlijke localStorage en kan daardoor ten onrechte een verse/oude dagstaat tonen. Dit is geen W39-productiebug.
 
 Daarom:
 - geen wijziging aan `test/daily.html`;
@@ -210,9 +216,58 @@ Eerstvolgende werkvolgorde:
 5. voorlopig geen productiepromotie;
 6. W39 onaangeroerd houden.
 
-## 14. Stopbesluit
+## 14. Relation Registry — nieuwe geaccepteerde architectuurrichting
 
-**De projectadministratie is hiermee opnieuw gelijkgetrokken met de bouwstand tot en met Engine 29.**
+Op 22 september is een nieuwe gemeenschappelijke kennislaag als ontwerpbesluit vastgelegd in:
+
+`docs/MUSIC-DNA-RELATION-REGISTRY-AND-INFLUENCE-PLAYLISTS-V1-2026-09-22.md`
+
+Ontwerpcommit: `e3893ba3a02245aee0d7c8d2565e521aaf89da67`.
+
+**Status:** geaccepteerde ontwerprichting; nog niet als productiecomponent gebouwd.
+
+Kern:
+**één relatie één keer opslaan + herkomst/bewijs eraan koppelen → daarna hergebruiken in Explorer, Wat hoor ik?, DNA Express, aanbevelingen, statistiek en playlistgeneratie.**
+
+Relatietypen blijven semantisch gescheiden. Een tourrelatie is bijvoorbeeld geen invloedrelatie. De Relation Registry moet uiteindelijk leesbaar, telbaar én selecteerbaar zijn, zodat dezelfde kennis ook invloed-playlists kan voeden.
+
+Nieuwe productrichting:
+**🧬 Hoor dit DNA**
+
+Daarbij geldt:
+**Relation Registry → inhoudelijke kandidaten → smaakdata → Flow-DNA-volgorde → Spotify-aflevering.**
+
+### AllMusic als praktische relatiebron
+
+AllMusic `Influenced By` en `Followed By` mogen structureel als bruikbare AllMusic-relaties voor DNA-artiesten worden benut. Music DNA is een persoonlijk muziekproject, geen forensisch bewijsarchief.
+
+Werkregel:
+- een door AllMusic benoemde invloedrelatie is bruikbaar als AllMusic-invloedrelatie;
+- de herkomst `AllMusic` blijft bewaard;
+- een primaire artiestuitspraak is welkom wanneer die vanzelf beschikbaar komt, maar hoeft niet standaard voor iedere relatie apart te worden gezocht;
+- alleen opvallend vreemde of tegenstrijdige relaties vragen extra controle;
+- de grote lijnen moeten betrouwbaar zijn; een fractionele onnauwkeurigheid in een grote muziekrelatiekaart is voor deze persoonlijke toepassing acceptabel.
+
+Dit versoepelt niet de semantiek: `Influenced By`/`Followed By` blijft invloed; tour, cover, producer, plaats enzovoort blijven afzonderlijke relatietypen.
+
+### Kleinste veilige implementatieproef
+
+Nog niet breed opschalen. Ghost is de logische eerste proef omdat de bestaande Explorer-graph al verschillende relatievormen bevat, onder meer ABBA, Black Sabbath, Iron Maiden, Metallica, Fredrik Åkesson, Klas Åhlund, Zweden en Rats/Moskou.
+
+De eerste implementatieproef moet aantonen dat één kleine centrale set Ghost-relaties door meerdere toepassingen kan worden gelezen, zonder de goedgekeurde Engine-29-presentatie of W39-productie open te breken.
+
+Minimaal bewijzen:
+1. centrale relatie + type + bron/herkomst;
+2. Explorer leest dezelfde relatie;
+3. Wat hoor ik? kan er een kort weetje van maken;
+4. een aggregatie kan relaties tellen;
+5. een playlistselectie kan op relatietype filteren.
+
+Geen bulkonderzoek of grote invloed-playlistbouw vóór deze kleine proef.
+
+## 15. Stopbesluit
+
+**De projectadministratie is hiermee opnieuw gelijkgetrokken met de bouwstand tot en met Engine 29 én de geaccepteerde Relation Registry-richting van 22 september.**
 
 De belangrijke sprong sinds de vorige stopstaat is niet “vijf nieuwe schermversies”, maar de overgang van losse proefpagina's naar een herhaalbare structuur:
 
