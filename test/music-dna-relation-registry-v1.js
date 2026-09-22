@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.6",
+  version:"2026-09-22.7",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -31,6 +31,16 @@ const registry={
       provider:"Guitar World",kind:"primary-interview",
       title:"Ghost's Tobias Forge: the 10 records that changed my life / Impera interview context",
       url:"https://www.guitarworld.com/features/ghost-tobias-forge-impera"
+    },
+    iheart_inside_studio_2022:{
+      provider:"Inside the Studio / iHeart",kind:"primary-interview",
+      title:"Tobias Forge of Ghost",
+      url:"https://www.iheart.com/podcast/1119-inside-the-studio-29407846/episode/tobias-forge-of-ghost-94001697/"
+    },
+    guitarworld_blacklist_2021:{
+      provider:"Guitar World",kind:"primary-interview",
+      title:"Metallica Blacklist artists discuss covering metal classics",
+      url:"https://www.guitarworld.com/features/metallica-blacklist-artists"
     },
     slug_forge_2019:{
       provider:"SLUG Magazine",kind:"primary-interview",
@@ -84,7 +94,7 @@ const registry={
       introLabel:"De kern",intro:"ABBA helpt verklaren waarom Ghost ondanks zware gitaren zo nadrukkelijk op melodie en memorabele songs leunt. Forge komt daar in verschillende gesprekken op terug zonder te beweren dat Ghost als ABBA moet klinken.",
       sectionLabel:"Vondsten",items:[
         {relations:["rel-ghost-abba-influence"],evidence:["guitarworld_forge_2022"],label:"De les zit in het liedje",text:"Forge gebruikt ABBA niet als voorbeeld van hoe Ghost moet klinken. De terugkerende bewondering gaat juist over compositie: sterke melodieën, duidelijke hooks en liedjes die eenvoudig lijken maar uiterst precies in elkaar zitten."},
-        {relations:["rel-ghost-abba-influence"],evidence:["guitarworld_forge_2022"],label:"Van invloed naar fysieke plek",text:"Bij de opnamen van Impera komt die relatie onverwacht dichtbij. Ghost werkt in Atlantis/Metronome in Stockholm, de historische studio die sterk met ABBA verbonden is."},
+        {relations:["rel-ghost-abba-studio"],evidence:["guitarworld_forge_2022","iheart_inside_studio_2022"],label:"Van invloed naar fysieke plek",text:"Bij de opnamen van Impera komt die relatie onverwacht dichtbij. Ghost werkt in Atlantis/Metronome in Stockholm, de historische studio die sterk met ABBA verbonden is."},
         {relations:["rel-ghost-abba-influence"],evidence:["guitarworld_forge_2022"],label:"Een klein detail zegt soms meer",text:"In een apart interview kiest Forge I Have A Dream wanneer hem naar een favoriete ABBA-song wordt gevraagd. Zo krijgt de brede uitspraak ABBA is een invloed een concreet luisterspoor."}
       ]
     },
@@ -95,7 +105,7 @@ const registry={
       sectionLabel:"Hoofdstukken",items:[
         {relations:["rel-ghost-metallica-learning"],evidence:["slug_forge_2019","louder_metallica_2022"],label:"Een vroege maatstaf",text:"Forge beschrijft Metallica als een band die al vroeg liet zien hoe zware muziek tegelijk groot, direct en professioneel kon worden."},
         {relations:["rel-ghost-metallica-live"],evidence:["slug_forge_2019"],label:"Later dezelfde wereld in",text:"Ghost komt vervolgens daadwerkelijk in Metallica's professionele omgeving terecht. Samen optreden verandert een verre invloed in een concrete collegiale relatie."},
-        {relations:["rel-ghost-metallica-cover"],evidence:["louder_metallica_2022"],label:"Enter Sandman maakt de cirkel zichtbaar",text:"De Polar Music Prize vormt een aparte route naar Ghosts cover van Enter Sandman en naar het vinden van een Ghost-eigen benadering."}
+        {relations:["rel-ghost-metallica-polar","rel-ghost-metallica-cover"],evidence:["louder_metallica_2022","guitarworld_blacklist_2021"],label:"Enter Sandman maakt de cirkel zichtbaar",text:"De Polar Music Prize vormt een aparte route naar Ghosts cover van Enter Sandman en naar het vinden van een Ghost-eigen benadering."}
       ]
     },
     ghost_iron_maiden:{
@@ -119,6 +129,13 @@ const registry={
       uses:["explorer","wat-hoor-ik","express","playlist"]
     },
     {
+      id:"rel-ghost-abba-studio",from:"ghost",to:"abba",
+      family:"place",type:"shared-studio-lineage",direction:"out",
+      claim:"Forge verbindt Ghosts opnamen in Atlantis/Metronome en Benny Anderssons studio expliciet met zijn ABBA-fascinatie; bij Impera waren historische instrumenten en apparatuur uit de ABBA-studio nog aanwezig.",
+      evidence:["guitarworld_forge_2022","iheart_inside_studio_2022"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik"]
+    },
+    {
       id:"rel-ghost-maiden-learning",from:"ghost",to:"iron_maiden",
       family:"influence",type:"formative-professional-influence",direction:"out",
       claim:"Forge beschrijft Iron Maiden als een jeugdvoorbeeld en latere professionele leerschool.",
@@ -138,6 +155,13 @@ const registry={
       claim:"Forge beschrijft Metallica als voorbeeld en professionele leerschool.",
       evidence:["slug_forge_2019","louder_metallica_2022"],confidence:"confirmed",
       uses:["explorer","wat-hoor-ik","express","playlist"]
+    },
+    {
+      id:"rel-ghost-metallica-polar",from:"ghost",to:"metallica",
+      family:"event",type:"tribute-performance",direction:"out",
+      claim:"Ghosts Enter Sandman-route begon bij Metallica's Polar Music Prize in 2018, waar Forge werd gevraagd juist die song als eerbetoon uit te voeren.",
+      evidence:["louder_metallica_2022","guitarworld_blacklist_2021"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik"]
     },
     {
       id:"rel-ghost-metallica-live",from:"ghost",to:"metallica",
