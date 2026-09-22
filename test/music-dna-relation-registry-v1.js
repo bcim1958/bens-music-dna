@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.10",
+  version:"2026-09-22.11",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -126,6 +126,36 @@ const registry={
       ]
     }
   },
+  discoveries:[
+    {
+      id:"disc-ghost-voivod-identity",
+      base:"ghost",counterpart:"voivod",kind:"new-fact",
+      title:"Niet de voor de hand liggende vergelijking",
+      summary:"Forge zegt dat Voïvod een veel diepere invloed op Ghost is dan de vaak genoemde Mercyful Fate/Blue Öyster Cult-vergelijkingen suggereren.",
+      relations:["rel-ghost-voivod-influence"],evidence:["voir_voivod_2019"],status:"unread"
+    },
+    {
+      id:"disc-ghost-voivod-away-jacket",
+      base:"ghost",counterpart:"voivod",kind:"enriching-detail",
+      title:"De versleten spijkerjas",
+      summary:"Forge vertelt dat hij Away als tiener ontmoette, diens handtekening op zijn spijkerjas kreeg en die jas nog steeds bezit.",
+      relations:["rel-ghost-voivod-influence"],evidence:["voir_voivod_2019"],status:"unread"
+    },
+    {
+      id:"disc-ghost-voivod-convention",
+      base:"ghost",counterpart:"voivod",kind:"story-angle",
+      title:"Afwijken als artistiek DNA",
+      summary:"Forge bewondert vooral dat Voïvod hoorbare invloeden niet kopieerde maar bewust iets eigens en per album anders durfde te maken.",
+      relations:["rel-ghost-voivod-influence"],evidence:["voir_voivod_2019"],status:"unread"
+    },
+    {
+      id:"disc-ghost-boc-nuance",
+      base:"ghost",counterpart:"blue_oyster_cult",kind:"nuance",
+      title:"Een vergelijking is nog geen hoofd-invloed",
+      summary:"Forge nuanceert de bekende Blue Öyster Cult-vergelijking: hij houdt van de band, maar noemt hun werk minder bepalend voor Ghost dan vaak wordt aangenomen.",
+      relations:["rel-ghost-boc-foundation"],evidence:["voir_voivod_2019"],status:"unread"
+    }
+  ],
   relations:[
     {
       id:"rel-ghost-voivod-influence",from:"ghost",to:"voivod",
@@ -413,6 +443,22 @@ function integritySelfTest(){
   const expected=["story-missing-relation","story-missing-source","story-source-not-on-linked-relation"];
   return {pass:expected.every(x=>codes.has(x)),expected,detected:[...codes]};
 }
+function discoveriesFor(baseId,opts){
+  opts=opts||{};
+  return (registry.discoveries||[]).filter(d=>{
+    if(d.base!==baseId)return false;
+    if(opts.counterpart&&d.counterpart!==opts.counterpart)return false;
+    if(opts.kind&&d.kind!==opts.kind)return false;
+    if(opts.status&&d.status!==opts.status)return false;
+    return true;
+  });
+}
+function discoveryStock(baseId){
+  const items=discoveriesFor(baseId,{status:"unread"});
+  const byKind={};
+  items.forEach(d=>byKind[d.kind]=(byKind[d.kind]||0)+1);
+  return {total:items.length,byKind,items};
+}
 function aggregateInfluence(){
   const counts={},seen=new Set();
   registry.relations.filter(r=>r.family==="influence"&&r.confidence==="confirmed").forEach(r=>{
@@ -441,5 +487,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,discoveriesFor,discoveryStock,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
