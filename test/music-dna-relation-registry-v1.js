@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.1",
+  version:"2026-09-22.2",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -87,7 +87,7 @@ const registry={
       uses:["explorer","wat-hoor-ik"]
     },
     {
-      id:"rel-ghost-metallica-cover",from:"ghost",to:"enter_sandman",
+      id:"rel-ghost-metallica-cover",from:"ghost",to:"enter_sandman",counterpart:"metallica",
       family:"recording",type:"covered-song",direction:"out",
       claim:"Ghost nam Enter Sandman op voor The Metallica Blacklist.",
       evidence:["louder_metallica_2022"],confidence:"confirmed",
@@ -133,22 +133,65 @@ function relationsFor(id,opts){
 function evidenceFor(rel){
   return (rel.evidence||[]).map(id=>({id,...registry.sources[id]})).filter(Boolean);
 }
+function counterpartFor(baseId,rel){
+  if(rel.counterpart)return rel.counterpart;
+  return rel.from===baseId?rel.to:rel.from;
+}
+function relationshipBundles(id,opts){
+  opts=opts||{};
+  const grouped={};
+  relationsFor(id,opts).forEach(rel=>{
+    const counterpartId=counterpartFor(id,rel);
+    const key=counterpartId||rel.id;
+    if(!grouped[key])grouped[key]={
+      entityId:counterpartId,
+      entity:entity(counterpartId),
+      relations:[],
+      families:[],
+      claims:[],
+      evidence:[]
+    };
+    const bundle=grouped[key];
+    bundle.relations.push(rel);
+    if(!bundle.families.includes(rel.family))bundle.families.push(rel.family);
+    bundle.claims.push(rel.claim);
+    evidenceFor(rel).forEach(src=>{
+      if(!bundle.evidence.some(x=>x.id===src.id))bundle.evidence.push(src);
+    });
+  });
+  return Object.values(grouped).sort((a,b)=>{
+    const an=(a.entity||{}).name||a.entityId||"";
+    const bn=(b.entity||{}).name||b.entityId||"";
+    return an.localeCompare(bn);
+  });
+}
 function aggregateInfluence(){
-  const counts={};
+  const counts={},seen=new Set();
   registry.relations.filter(r=>r.family==="influence"&&r.confidence==="confirmed").forEach(r=>{
+    const key=r.from+"→"+r.to;
+    if(seen.has(key))return;
+    seen.add(key);
     counts[r.to]=(counts[r.to]||0)+1;
   });
   return Object.entries(counts).map(([id,count])=>({id,name:(entity(id)||{}).name||id,count}))
     .sort((a,b)=>b.count-a.count||a.name.localeCompare(b.name));
 }
 function playlistCandidates(id){
+  const seen=new Set();
   return relationsFor(id,{family:"influence",use:"playlist",confidence:"confirmed"})
-    .map(r=>({relationId:r.id,entityId:r.from===id?r.to:r.from,name:(entity(r.from===id?r.to:r.from)||{}).name||"",why:r.claim}));
+    .map(r=>({relationId:r.id,entityId:counterpartFor(id,r),name:(entity(counterpartFor(id,r))||{}).name||"",why:r.claim}))
+    .filter(x=>{if(seen.has(x.entityId))return false;seen.add(x.entityId);return true;});
 }
 function quickFacts(id){
   return relationsFor(id,{use:"wat-hoor-ik",confidence:"confirmed"}).map(r=>({
     relationId:r.id,family:r.family,text:r.claim,sources:evidenceFor(r)
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,aggregateInfluence,playlistCandidates,quickFacts}};
+function quickFactBundles(id){
+  return relationshipBundles(id,{use:"wat-hoor-ik",confidence:"confirmed"}).map(b=>({
+    entityId:b.entityId,name:(b.entity||{}).name||b.entityId,
+    families:b.families,facts:b.claims,sources:b.evidence
+  }));
+}
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
