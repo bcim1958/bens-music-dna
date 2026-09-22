@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Music DNA — Relation Dossier proof V1</title>
+<style>
+:root{color-scheme:dark;--bg:#070812;--panel:#11121d;--panel2:#0c0d16;--line:#302d43;--ink:#f4efe7;--muted:#aaa7b6;--gold:#e6b65d}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#30203f,#090a14 34%,#05060c 82%);color:var(--ink);font:16px/1.5 system-ui,-apple-system,sans-serif}
+.app{max-width:760px;margin:auto;padding:18px 16px 30px}.ey{color:var(--gold);font-size:.7rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
+h1{font:700 clamp(2.35rem,10vw,4.4rem)/.96 Georgia,serif;margin:.15em 0 .18em}h2{font:700 1.45rem/1.12 Georgia,serif;margin:.25em 0}.lead{color:#ded9e4;margin:0 0 18px}.muted{color:var(--muted)}
+.card{background:linear-gradient(145deg,#151426,#0b0c14);border:1px solid var(--line);border-radius:23px;padding:18px;margin:12px 0}
+.list{display:grid;gap:10px}.relation{width:100%;text-align:left;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:14px;font:inherit;cursor:pointer}
+.relation strong{display:block;font-size:1.08rem;margin-bottom:5px}.relation .summary{display:block;color:var(--muted);font-size:.82rem;margin-top:7px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}.tag{border:1px solid #4b465f;border-radius:999px;padding:3px 8px;font-size:.7rem;color:#ddd7e2}
+.topline{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.back{border:0;background:none;color:var(--gold);font:inherit;padding:4px 0;cursor:pointer}
+.block{border-top:1px solid var(--line);padding-top:14px;margin-top:14px}.fact{background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:12px;margin:8px 0}.fact b{display:block;margin-bottom:4px}.fact p{margin:0;color:#d6d1dc}
+.source{display:block;color:var(--ink);text-decoration:none;background:var(--panel2);border:1px dashed #4a4355;border-radius:15px;padding:12px;margin:8px 0}.source b,.source span{display:block}.source span{font-size:.78rem;color:var(--muted);margin-top:3px}.storyseed{border-left:3px solid var(--gold);padding:2px 0 2px 13px;color:#e7e1e9}.status{font-size:.76rem;color:#a9d9ae}.empty{padding:18px;border:1px dashed var(--line);border-radius:16px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="app">
+<div class="ey">Relation Registry · presentatieproef · geen productie</div>
+<div id="view"></div>
+</main>
+<script src="music-dna-relation-registry-v1.js?v=20260922-2"></script>
+<script>
+(function(){
+"use strict";
+const R=window.MUSIC_DNA_RELATION_REGISTRY_V1;
+const view=document.getElementById("view");
+const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const labels={influence:"invloed",live:"live",recording:"opname/cover",personnel:"mensen/studio",place:"plaats",story:"verhaal"};
+function sourceKey(s){return s.id||s.url||s.title}
+function bundleSources(b){
+  const out=[],seen=new Set();
+  (b.evidence||[]).forEach(s=>{const k=sourceKey(s);if(!seen.has(k)){seen.add(k);out.push(s)}});
+  return out;
+}
+function bundleSummary(b){
+  const n=b.relations.length;
+  const fam=b.families.map(x=>labels[x]||x);
+  if(n===1)return "1 vastgelegd verband · "+fam.join(" · ");
+  return n+" verbanden gebundeld · "+fam.join(" · ");
+}
+function overview(){
+  const bundles=R.api.relationshipBundles("ghost",{use:"explorer",confidence:"confirmed"});
+  view.innerHTML='<h1>Ghost</h1><p class="lead">Relaties zijn hier een <b>verzamelplek</b>: iedere band of tegenpartij verschijnt één keer. Achter die ene naam zitten alle bekende relatievormen, feiten en bronnen bij elkaar.</p>'+
+  '<section class="card"><div class="ey">Verwantschap · één naam, één compleet dossier</div><h2>'+bundles.length+' gebundelde relaties</h2><p class="muted">Tik een relatie open. De rijkdom zit achter de deur; het overzicht blijft rustig.</p><div class="list">'+
+  bundles.map(b=>'<button class="relation" onclick="openBundle(\''+esc(b.entityId)+'\')"><strong>'+esc((b.entity||{}).name||b.entityId)+' →</strong><span class="tags">'+b.families.map(f=>'<span class="tag">'+esc(labels[f]||f)+'</span>').join("")+'</span><span class="summary">'+esc(bundleSummary(b))+'</span></button>').join("")+
+  '</div></section>'+
+  '<section class="card"><div class="ey">Ontwerpregel</div><h2>Niet ABBA hier en ABBA daar.</h2><p class="lead">Eén relatiepartner krijgt één complete verzamelplek. Daarbinnen mogen juist veel verschillende verbindingen, bronnen en verhaallijnen bestaan.</p></section>';
+}
+window.openBundle=function(id){
+  const bundles=R.api.relationshipBundles("ghost",{use:"explorer",confidence:"confirmed"});
+  const b=bundles.find(x=>x.entityId===id);
+  if(!b){overview();return}
+  const name=(b.entity||{}).name||id;
+  const sources=bundleSources(b);
+  const playlist=b.relations.some(r=>r.family==="influence"&&(r.uses||[]).includes("playlist"));
+  view.innerHTML='<div class="topline"><div><div class="ey">Ghost · compleet relatiedossier</div><h1>'+esc(name)+'</h1></div><button class="back" onclick="goBack()">← overzicht</button></div>'+
+  '<p class="lead">'+esc(bundleSummary(b))+'. Alles over deze verbinding wordt hier verzameld voordat Music DNA er verhalen, weetjes of luisterroutes van maakt.</p>'+
+  '<section class="card"><div class="ey">Wat verbindt ze?</div>'+
+  b.relations.map(r=>'<div class="fact"><div class="tags"><span class="tag">'+esc(labels[r.family]||r.family)+'</span><span class="tag">'+esc(r.type)+'</span></div><b>'+esc(r.claim)+'</b><p>'+esc((r.evidence||[]).length)+' bron'+((r.evidence||[]).length===1?"":"nen")+' gekoppeld · '+esc(r.confidence)+'</p></div>').join("")+
+  '</section>'+
+  '<section class="card"><div class="ey">Bronnenkast</div><h2>'+sources.length+' unieke bron'+(sources.length===1?"":"nen")+'</h2>'+
+  (sources.length?sources.map(s=>s.url?'<a class="source" href="'+esc(s.url)+'" target="_blank" rel="noopener"><b>'+esc(s.provider)+' · '+esc(s.title)+'</b><span>'+esc(s.kind)+' · originele bron ↗</span></a>':'<div class="source"><b>'+esc(s.provider)+' · '+esc(s.title)+'</b><span>'+esc(s.kind)+'</span></div>').join(""):'<div class="empty">Nog geen bron gekoppeld.</div>')+
+  '</section>'+
+  '<section class="card"><div class="ey">Verhaalkans</div><div class="storyseed"><b>Hier zit meer achter.</b><br>'+esc(name)+' is niet opnieuw een losse deur elders in Explorer: dit dossier is de grondstof voor één samenhangend verhaal over '+esc(b.families.map(x=>labels[x]||x).join(", "))+'.</div></section>'+
+  '<section class="card"><div class="ey">Wat kan Music DNA hiermee?</div><p class="lead">Explorer kan hier een verhaal uit maken. ⓘ Wat hoor ik? kan er korte weetjes uit halen. DNA Express kan het verband meetellen.'+(playlist?' De invloedlaag is bovendien beschikbaar als kandidaat voor <b>🧬 Hoor dit DNA</b>.':'')+'</p><div class="status">✓ Eén opslagplek · meerdere toepassingen · geen dubbele bandvermelding</div></section>';
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+window.goBack=function(){overview();window.scrollTo({top:0,behavior:"smooth"})}
+if(!R||!R.api){view.innerHTML='<div class="empty">Relation Registry kon niet worden geladen. Ververs de pagina één keer.</div>';return}
+overview();
+})();
+</script>
+</body>
+</html>
