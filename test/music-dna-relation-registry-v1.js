@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.11",
+  version:"2026-09-22.12",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -459,6 +459,30 @@ function discoveryStock(baseId){
   items.forEach(d=>byKind[d.kind]=(byKind[d.kind]||0)+1);
   return {total:items.length,byKind,items};
 }
+function discoveryCandidates(baseId,opts){
+  opts=opts||{};
+  const stock=discoveryStock(baseId).items;
+  const kindPriority={"new-fact":4,"nuance":3,"story-angle":2,"enriching-detail":1};
+  const counterpartCounts={};
+  stock.forEach(d=>counterpartCounts[d.counterpart]=(counterpartCounts[d.counterpart]||0)+1);
+  return stock.map(d=>{
+    const sourceCount=new Set(d.evidence||[]).size;
+    const relationCount=new Set(d.relations||[]).size;
+    const cluster=counterpartCounts[d.counterpart]||1;
+    const score=(kindPriority[d.kind]||0)*10+Math.min(sourceCount,3)*3+Math.min(relationCount,3)*2+Math.min(cluster,4);
+    return {...d,selection:{score,kindPriority:kindPriority[d.kind]||0,sourceCount,relationCount,cluster}};
+  }).sort((a,b)=>b.selection.score-a.selection.score||a.id.localeCompare(b.id));
+}
+function discoveryQueue(baseId,limit){
+  const seenCounterparts=new Set();
+  const out=[];
+  for(const d of discoveryCandidates(baseId)){
+    if(seenCounterparts.has(d.counterpart))continue;
+    seenCounterparts.add(d.counterpart);out.push(d);
+    if(limit&&out.length>=limit)break;
+  }
+  return out;
+}
 function aggregateInfluence(){
   const counts={},seen=new Set();
   registry.relations.filter(r=>r.family==="influence"&&r.confidence==="confirmed").forEach(r=>{
@@ -487,5 +511,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,discoveriesFor,discoveryStock,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
