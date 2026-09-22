@@ -1,11 +1,12 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.9",
+  version:"2026-09-22.10",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
     ghost:{type:"artist",name:"Ghost"},
+    voivod:{type:"artist",name:"Voïvod"},
     abba:{type:"artist",name:"ABBA"},
     black_sabbath:{type:"artist",name:"Black Sabbath"},
     blue_oyster_cult:{type:"artist",name:"Blue Öyster Cult"},
@@ -27,6 +28,11 @@ const registry={
     sweden:{type:"place",name:"Zweden"}
   },
   sources:{
+    voir_voivod_2019:{
+      provider:"Voir / Chanceux comme un Quêteux",kind:"primary-interview",
+      title:"Ghost : Entretien avec Tobias Forge, lors du Heavy Montréal 2019",
+      url:"https://voir.ca/chanceuxqueteux/2019/08/05/ghost-ent-tobias-forge-heavy-montreal-2019/"
+    },
     guitarworld_forge_2022:{
       provider:"Guitar World",kind:"primary-interview",
       title:"Ghost's Tobias Forge: the 10 records that changed my life / Impera interview context",
@@ -121,6 +127,13 @@ const registry={
     }
   },
   relations:[
+    {
+      id:"rel-ghost-voivod-influence",from:"ghost",to:"voivod",
+      family:"influence",type:"formative-artistic-influence",direction:"out",
+      claim:"Forge beschrijft Voïvod als een veel diepere invloed op Ghost dan oppervlakkige vergelijkingen met Mercyful Fate of Blue Öyster Cult doen vermoeden, vooral door hun eigenzinnigheid en bewuste afwijking van conventies.",
+      evidence:["voir_voivod_2019"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik","express","playlist"]
+    },
     {
       id:"rel-ghost-abba-influence",from:"ghost",to:"abba",
       family:"influence",type:"stated-songwriting-influence",direction:"out",
