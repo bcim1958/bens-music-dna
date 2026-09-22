@@ -1,42 +1,20 @@
-<!doctype html>
-<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Music DNA — Relation Registry proof V1</title>
-<style>
-body{margin:0;background:#080914;color:#f4efe7;font:16px/1.45 system-ui,-apple-system,sans-serif}
-main{max-width:760px;margin:auto;padding:18px}.card{background:#11121e;border:1px solid #343047;border-radius:22px;padding:18px;margin:12px 0}
-h1,h2{font-family:Georgia,serif}h1{font-size:2rem;margin:.2em 0}h2{font-size:1.25rem}.muted{color:#aaa7b6}.gold{color:#e6b65d}
-.row{border-top:1px solid #302d43;padding:10px 0}.pill{display:inline-block;border:1px solid #494052;border-radius:999px;padding:3px 8px;font-size:.75rem;margin-right:5px}
-b{color:#fff}
-</style></head><body><main>
-<div class="gold">MUSIC DNA · TECHNISCHE PROEF</div><h1>Relation Registry V1</h1>
-<p class="muted">Eén kleine Ghost-dataset, vier toepassingen. Geen productiecomponent.</p>
-<div id="out"></div>
-</main>
-<script src="music-dna-explorer-graph-v16.js"></script>
-<script src="music-dna-relation-registry-v1.js"></script>
-<script>
-const G=window.MUSIC_DNA_EXPLORER_GRAPH_V1,RR=window.MUSIC_DNA_RELATION_REGISTRY_V1;
-const name=id=>(G.nodes[id]&&G.nodes[id].name)||id;
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Music DNA — Relation Registry proof V1</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#070812;color:#f4efe7;font:16px/1.5 system-ui,-apple-system,sans-serif}.app{max-width:760px;margin:auto;padding:18px}.ey{color:#e6b65d;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.card{background:#11121d;border:1px solid #302d43;border-radius:22px;padding:18px;margin:12px 0}h1{font:700 2.4rem/1 Georgia,serif;margin:.2em 0}h2{font:700 1.25rem Georgia,serif;margin:.2em 0 .6em}.muted{color:#aaa7b6}.row{padding:10px 0;border-top:1px solid #2b2939}.tag{display:inline-block;border:1px solid #4b465f;border-radius:999px;padding:3px 8px;margin-right:5px;font-size:.72rem;color:#ddd7e2}.why{font-size:.85rem;color:#c9c4cf}.ok{color:#a9d9ae}.count{font-size:2rem;font-weight:850}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(max-width:600px){.grid{grid-template-columns:1fr}}</style></head><body><main class="app">
+<div class="ey">Geïsoleerde architectuurproef · geen productie</div><h1>Ghost Relation Registry</h1><p class="muted">Eén centrale set relaties, vier verschillende toepassingen. Deze pagina wijzigt W39 of Engine 29 niet.</p>
+<div id="out"></div></main><script src="music-dna-relation-registry-v1.js"></script><script>
+const R=window.MUSIC_DNA_RELATION_REGISTRY_V1,A=R.api;
 const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const ghost=RR.relationsFor("ghost");
-const featured=RR.relationsFor("ghost",{featuredExplorer:true});
-const quick=ghost.filter(r=>r.quickFact);
-const influence=RR.influenceCandidates("ghost");
-const counts=RR.incomingInfluenceCounts();
+const ghost=A.relationsFor("ghost",{confidence:"confirmed"});
+const explorer=ghost.filter(r=>(r.uses||[]).includes("explorer"));
+const facts=A.quickFacts("ghost");
+const playlist=A.playlistCandidates("ghost");
+const agg=A.aggregateInfluence();
+function relationRow(r){const other=r.from==="ghost"?r.to:r.from,n=A.entity(other);return '<div class="row"><span class="tag">'+esc(r.family)+'</span><span class="tag">'+esc(r.type)+'</span><b>'+esc(n?n.name:other)+'</b><div class="why">'+esc(r.claim)+'</div></div>'}
 document.getElementById("out").innerHTML=
-'<section class="card"><div class="gold">1 · Explorer</div><h2>Dezelfde centrale relaties leveren deuren</h2>'+
-featured.map(r=>'<div class="row"><span class="pill">'+esc((RR.relationTypes[r.type]||{}).label)+'</span><b>'+esc(name(r.to))+'</b><div class="muted">'+esc((r.explorer||{}).summary||r.claim)+'</div></div>').join("")+
-'</section>'+
-'<section class="card"><div class="gold">2 · ⓘ Wat hoor ik?</div><h2>Korte weetjes uit dezelfde records</h2>'+
-quick.slice(0,4).map(r=>'<div class="row"><b>'+esc(name(r.to))+'</b><div>'+esc(r.quickFact)+'</div></div>').join("")+
-'</section>'+
-'<section class="card"><div class="gold">3 · DNA Express / statistiek</div><h2>Relaties zijn telbaar</h2><p>'+ghost.length+' bevestigde Ghost-relaties in deze proef; '+influence.length+' daarvan zijn playlist-geschikte invloedsporen.</p>'+
-Object.entries(counts).map(([id,n])=>'<span class="pill">'+esc(name(id))+' · '+n+'</span>').join("")+
-'</section>'+
-'<section class="card"><div class="gold">4 · 🧬 Hoor dit DNA</div><h2>Invloed is selecteerbaar</h2><p class="muted">Nog geen Spotify-playlist: alleen bewijs dat de registry de juiste kandidaten kan leveren.</p>'+
-influence.map(r=>'<div class="row"><b>'+esc(name(r.to))+'</b><div class="muted">'+esc(r.claim)+'</div></div>').join("")+
-'</section>'+
-'<section class="card"><div class="gold">Bewijslaag</div><h2>Bronnen reizen met de relatie mee</h2>'+
-RR.sourcesFor(RR.relations.find(r=>r.id==="ghost-influence-abba")).map(s=>'<div class="row"><b>'+esc(s.publisher)+'</b><div class="muted">'+esc(s.title)+' · '+esc(s.kind)+'</div></div>').join("")+
-'</section>';
+'<section class="card"><div class="ey">1 · Centrale registry</div><h2>'+ghost.length+' bevestigde Ghost-relaties in deze kleine proefset</h2>'+ghost.map(relationRow).join("")+'</section>'+
+'<div class="grid"><section class="card"><div class="ey">2 · Explorer leest dezelfde data</div><div class="count">'+explorer.length+'</div><p class="muted">relaties kunnen als verklaarbare deuren dienen.</p>'+explorer.slice(0,4).map(relationRow).join("")+'</section>'+
+'<section class="card"><div class="ey">3 · ⓘ Wat hoor ik?</div><div class="count">'+facts.length+'</div><p class="muted">korte feiten zonder tweede kennisbank.</p>'+facts.slice(0,4).map(f=>'<div class="row">'+esc(f.text)+'</div>').join("")+'</section></div>'+
+'<div class="grid"><section class="card"><div class="ey">4 · Express kan tellen</div><p class="muted">Demo-aggregatie binnen uitsluitend deze proefset.</p>'+agg.map(x=>'<div class="row"><b>'+esc(x.name)+'</b> · '+x.count+'</div>').join("")+'</section>'+
+'<section class="card"><div class="ey">5 · 🧬 Hoor dit DNA</div><h2>'+playlist.length+' invloed-kandidaten</h2><p class="muted">Alleen relaties met family=influence + use=playlist.</p>'+playlist.map(x=>'<div class="row"><b>'+esc(x.name)+'</b><div class="why">'+esc(x.why)+'</div></div>').join("")+'</section></div>'+
+'<section class="card"><div class="ey ok">Resultaat</div><h2>Dezelfde relatie wordt één keer bewaard en daarna anders gebruikt.</h2><p class="muted">De proef bewijst het gegevensmodel en de uitleesroutes; hij bewijst nog geen volledige Relation Registry, AllMusic-import of productie-playlistgenerator.</p></section>';
 </script></body></html>
