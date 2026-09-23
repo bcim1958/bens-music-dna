@@ -1,5 +1,7 @@
 # Music DNA — handoff naar frisse chat — 22 september 2026
 
+> **Nieuwste vervolg:** [Shiraz Lane — eerste vul- en voorraadproef](VALIDATION-2026-09-23-SHIRAZ-LANE-REGISTRY.md). Vijf feiten, twee dossiers (persoon + band), één kort verhaal en vier nieuwe vondsten; GREEN op de bestaande Registry-API, geen nieuwe interface. De onderstaande herstelstand blijft de basis.
+
 **Bijgewerkt op 23-09-2026:** lees eerst de [canonieke stopstaat van 22 september](HANDOFF-2026-09-22-STOPSTAAT.md). Die vervangt de vroege instructies in deze handoff.
 
 - Status: **GREEN voor de gecontroleerde projectstaat/proeflijn**, geen productiepromotie.

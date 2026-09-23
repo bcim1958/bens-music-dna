@@ -1,10 +1,22 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-23.1",
+  version:"2026-09-23.2",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
+    "shiraz_lane":{
+      "type": "artist",
+      "name": "Shiraz Lane"
+    },
+    "per_aldeheim":{
+      "type": "person",
+      "name": "Per Aldeheim"
+    },
+    "lordi":{
+      "type": "artist",
+      "name": "Lordi"
+    },
     ghost:{type:"artist",name:"Ghost"},
     voivod:{type:"artist",name:"Voïvod"},
     abba:{type:"artist",name:"ABBA"},
@@ -28,6 +40,36 @@ const registry={
     sweden:{type:"place",name:"Zweden"}
   },
   sources:{
+    "metaltalk_shiraz_jani_2025":{
+      "provider": "MetalTalk",
+      "kind": "primary-interview",
+      "title": "Interview – Shiraz Lane – Jani Laine Breaks Down In Vertigo",
+      "url": "https://www.metaltalk.net/interview-shiraz-lane-jani-laine-breaks-down-in-vertigo.php",
+      "publishedAt": "2025-10-16",
+      "checkedAt": "2026-09-23",
+      "language": "en",
+      "sourceNote": "Taylor Cameron interviewt Jani Laine; passage over terugkeer naar Per Aldeheim."
+    },
+    "soundi_shiraz_2026":{
+      "provider": "Soundi",
+      "kind": "primary-interview",
+      "title": "Faktahan on, ettei englanninkielinen musiikki ole se, millä painetaan eteenpäin Suomessa – haastattelussa Shiraz Lane",
+      "url": "https://www.soundi.fi/jutut/faktahan-on-ettei-englanninkielinen-musiikki-ole-se-milla-painetaan-eteenpain-suomessa-haastattelussa-shiraz-lane/",
+      "publishedAt": "2026-01-08",
+      "checkedAt": "2026-09-23",
+      "language": "fi",
+      "sourceNote": "Elli Muurikainen interviewt Hannes Kett en Jani Laine; oorspronkelijk Soundi 10/25. Webdatum is niet de interviewdatum. Sectie Parasta pöytään; Nederlandse parafrase."
+    },
+    "grimm_shiraz_lordi_2016":{
+      "provider": "GRIMM Gent",
+      "kind": "primary-interview",
+      "title": "Shiraz Lane… 3,5 months later",
+      "url": "https://www.grimmgent.com/interviews/shiraz-lane-35-months-later/",
+      "publishedAt": "2016-12-23",
+      "checkedAt": "2026-09-23",
+      "language": "en",
+      "sourceNote": "Vaim Hull interviewt Hannes Kett en Joel Alex tijdens de Europese tour; publicatiedatum, geen exacte concertdatum."
+    },
     voir_voivod_2019:{
       provider:"Voir / Chanceux comme un Quêteux",kind:"primary-interview",
       title:"Ghost : Entretien avec Tobias Forge, lors du Heavy Montréal 2019",
@@ -94,6 +136,49 @@ const registry={
     }
   },
   stories:{
+    "shiraz_per_aldeheim":{
+      "base": "shiraz_lane",
+      "counterpart": "per_aldeheim",
+      "title": "Een vertrouwd oor naast de band",
+      "lead": "Achter een nieuwe plaat kan een samenwerking schuilgaan die al jaren meegaat.",
+      "introLabel": "De verbinding",
+      "intro": "Bij In Vertigo keerde Shiraz Lane terug naar Per Aldeheim. Zijn rol stopt niet bij de opname: hij werkte ook mee aan de songs.",
+      "sectionLabel": "Drie kanten van de samenwerking",
+      "items": [
+        {
+          "label": "Terug naar een bekende",
+          "text": "Jani Laine noemt Carnival Days als eerdere samenwerking. De keuze voor Aldeheim kwam dus niet uit het niets.",
+          "relations": [
+            "rel-shiraz-per-carnival-collaboration"
+          ],
+          "evidence": [
+            "metaltalk_shiraz_jani_2025",
+            "soundi_shiraz_2026"
+          ]
+        },
+        {
+          "label": "Aan de productiekant",
+          "text": "Zowel MetalTalk als Soundi noemt Aldeheim als producer bij In Vertigo. Twee verschillende interviews wijzen hier naar dezelfde samenwerking.",
+          "relations": [
+            "rel-shiraz-per-in-vertigo-production"
+          ],
+          "evidence": [
+            "metaltalk_shiraz_jani_2025",
+            "soundi_shiraz_2026"
+          ]
+        },
+        {
+          "label": "Ook binnen het liedje",
+          "text": "Soundi noemt hem bovendien medeschrijver. De verbinding gaat daarmee over zowel de songs als hun productie.",
+          "relations": [
+            "rel-shiraz-per-in-vertigo-writing"
+          ],
+          "evidence": [
+            "soundi_shiraz_2026"
+          ]
+        }
+      ]
+    },
     ghost_abba:{
       base:"ghost",counterpart:"abba",title:"Niet de klank, wel het liedje",
       lead:"Verschillende gesprekken vullen drie kanten van dezelfde relatie in: schrijven, plek en een concreet liedje.",
@@ -128,6 +213,69 @@ const registry={
   },
   discoveries:[
     {
+      "id": "disc-shiraz-per-two-roles",
+      "base": "shiraz_lane",
+      "counterpart": "per_aldeheim",
+      "kind": "new-fact",
+      "title": "Meer dan een producer",
+      "summary": "Bij In Vertigo werkte Per Aldeheim zowel aan productie als songwriting.",
+      "relations": [
+        "rel-shiraz-per-in-vertigo-production",
+        "rel-shiraz-per-in-vertigo-writing"
+      ],
+      "evidence": [
+        "metaltalk_shiraz_jani_2025",
+        "soundi_shiraz_2026"
+      ],
+      "status": "unread"
+    },
+    {
+      "id": "disc-shiraz-per-return",
+      "base": "shiraz_lane",
+      "counterpart": "per_aldeheim",
+      "kind": "enriching-detail",
+      "title": "Een eerdere samenwerking",
+      "summary": "De band werkte al op Carnival Days met Aldeheim.",
+      "relations": [
+        "rel-shiraz-per-carnival-collaboration"
+      ],
+      "evidence": [
+        "metaltalk_shiraz_jani_2025",
+        "soundi_shiraz_2026"
+      ],
+      "status": "unread"
+    },
+    {
+      "id": "disc-shiraz-lordi-tour",
+      "base": "shiraz_lane",
+      "counterpart": "lordi",
+      "kind": "new-fact",
+      "title": "Samen op Europese podia",
+      "summary": "Lordi had Shiraz Lane in 2016 mee als support in Europa.",
+      "relations": [
+        "rel-shiraz-lordi-support-2016"
+      ],
+      "evidence": [
+        "grimm_shiraz_lordi_2016"
+      ],
+      "status": "unread"
+    },
+    {
+      "id": "disc-shiraz-lordi-listening",
+      "base": "shiraz_lane",
+      "counterpart": "lordi",
+      "kind": "enriching-detail",
+      "title": "De tourpartner stond al in de platenkast",
+      "summary": "Kett en Alex beschreven hun eerdere luisterband met Lordi. Dat is iets anders dan een expliciete invloedclaim.",
+      "relations": [
+        "rel-shiraz-lordi-listening"
+      ],
+      "evidence": [
+        "grimm_shiraz_lordi_2016"
+      ],
+      "status": "unread"
+    },
+    {
       id:"disc-ghost-voivod-identity",
       base:"ghost",counterpart:"voivod",kind:"new-fact",
       title:"Niet de voor de hand liggende vergelijking",
@@ -157,6 +305,98 @@ const registry={
     }
   ],
   relations:[
+    {
+      "id": "rel-shiraz-per-in-vertigo-production",
+      "from": "shiraz_lane",
+      "to": "per_aldeheim",
+      "family": "production",
+      "type": "album-producer",
+      "direction": "out",
+      "claim": "Per Aldeheim produceerde Shiraz Lanes In Vertigo.",
+      "evidence": [
+        "metaltalk_shiraz_jani_2025",
+        "soundi_shiraz_2026"
+      ],
+      "confidence": "confirmed",
+      "uses": [
+        "explorer",
+        "wat-hoor-ik"
+      ],
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "rel-shiraz-per-in-vertigo-writing",
+      "from": "shiraz_lane",
+      "to": "per_aldeheim",
+      "family": "songwriting",
+      "type": "album-co-writing",
+      "direction": "out",
+      "claim": "Per Aldeheim werkte aan In Vertigo ook als medeschrijver.",
+      "evidence": [
+        "soundi_shiraz_2026"
+      ],
+      "confidence": "confirmed",
+      "uses": [
+        "explorer",
+        "wat-hoor-ik"
+      ],
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "rel-shiraz-per-carnival-collaboration",
+      "from": "shiraz_lane",
+      "to": "per_aldeheim",
+      "family": "production",
+      "type": "previous-album-collaboration",
+      "direction": "out",
+      "claim": "Shiraz Lane werkte al bij Carnival Days met Per Aldeheim samen.",
+      "evidence": [
+        "metaltalk_shiraz_jani_2025",
+        "soundi_shiraz_2026"
+      ],
+      "confidence": "confirmed",
+      "uses": [
+        "explorer",
+        "wat-hoor-ik"
+      ],
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "rel-shiraz-lordi-support-2016",
+      "from": "shiraz_lane",
+      "to": "lordi",
+      "family": "live",
+      "type": "support-act",
+      "direction": "out",
+      "claim": "Shiraz Lane toerde in 2016 door Europa als support van Lordi.",
+      "evidence": [
+        "grimm_shiraz_lordi_2016"
+      ],
+      "confidence": "confirmed",
+      "uses": [
+        "explorer",
+        "wat-hoor-ik"
+      ],
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "rel-shiraz-lordi-listening",
+      "from": "shiraz_lane",
+      "to": "lordi",
+      "family": "listening",
+      "type": "stated-listening-history",
+      "direction": "out",
+      "claim": "Hannes Kett vertelde dat de bandleden jong al naar Lordi luisterden; Joel Alex noemde zichzelf een grote fan.",
+      "evidence": [
+        "grimm_shiraz_lordi_2016"
+      ],
+      "confidence": "confirmed",
+      "uses": [
+        "explorer",
+        "wat-hoor-ik"
+      ],
+      "checkedAt": "2026-09-23"
+    },
     {
       id:"rel-ghost-voivod-influence",from:"ghost",to:"voivod",
       family:"influence",type:"formative-artistic-influence",direction:"out",
