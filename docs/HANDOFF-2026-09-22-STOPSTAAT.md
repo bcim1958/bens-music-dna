@@ -1,6 +1,6 @@
 # Music DNA — canonieke stopstaat 22 september 2026
 
-> **Vervolg 23-09-2026:** de herstelstand hieronder is behouden als checkpoint. De eerste vul- en voorraadproef met Shiraz Lane is nu vastgelegd in [Shiraz Lane — vulproef](VALIDATION-2026-09-23-SHIRAZ-LANE-REGISTRY.md). Lees die aanvulling voor de actuele inhoud, tellingen, bewijsgrenzen en hervatplek. Shiraz Lane is daarmee niet langer uitsluitend een onderzoekscontrast; er is beperkte Registry-proefinhoud, nog geen nieuwe UI. Buzzcocks blijft geparkeerd.
+> **Vervolg 23-09-2026:** de herstelstand hieronder blijft het checkpoint. Na de [Shiraz Lane-vulproef](VALIDATION-2026-09-23-SHIRAZ-LANE-REGISTRY.md) is nu de [gerichte koppeling van verhaal lezen aan vertelde vondsten](VALIDATION-2026-09-23-STORY-DISCOVERY-READING.md) beproefd. Lees die nieuwste aanvulling voor de actuele stand en hervatplek. Nog geen UI-integratie of productiepromotie; Buzzcocks blijft geparkeerd.
 
 **Hersteld en gecontroleerd:** 23-09-2026.  
 **Status:** GREEN — projectgeheugen en gecontroleerde proeflijn weer consistent. Geen productiepromotie.  

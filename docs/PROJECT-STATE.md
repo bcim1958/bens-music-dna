@@ -5,7 +5,7 @@
 
 ## Actuele canonieke ingang
 
-**Nieuwste vervolg:** [Shiraz Lane — vul- en voorraadproef 23 september](VALIDATION-2026-09-23-SHIRAZ-LANE-REGISTRY.md). Registry `2026-09-23.2`: vijf nieuwe feiten in twee dossiers, één nieuw kort verhaal en vier nieuwe vondsten. Ghost en Shiraz audits PASS; API en interface ongewijzigd. Lees de aanvulling voor de actuele hervatplek en de geconstateerde grens rond verhaaloverlap/leesstatus.
+**Nieuwste vervolg:** [Verhaal gelezen → vertelde vondsten verwerkt](VALIDATION-2026-09-23-STORY-DISCOVERY-READING.md). Registry `2026-09-23.3`: expliciete verhaalcoverage en een gecontroleerde leesstatusoperatie. Het producerverhaal verwerkt twee vondsten; Lordi en Ghost blijven beschikbaar. Audits en defectproeven PASS. De UI en W39 zijn ongewijzigd; zie de aanvulling voor de actuele hervatplek.
 
 Lees de [stopstaat van 22 september 2026](HANDOFF-2026-09-22-STOPSTAAT.md) voor de volledige huidige toestand, bewijsgrenzen, commitreeks en hervatplek. De [fresh-chat handoff](HANDOFF-2026-09-22-FRESH-CHAT.md) is de korte ingang.
 

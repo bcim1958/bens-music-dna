@@ -1,6 +1,6 @@
 # Music DNA — handoff naar frisse chat — 22 september 2026
 
-> **Nieuwste vervolg:** [Shiraz Lane — eerste vul- en voorraadproef](VALIDATION-2026-09-23-SHIRAZ-LANE-REGISTRY.md). Vijf feiten, twee dossiers (persoon + band), één kort verhaal en vier nieuwe vondsten; GREEN op de bestaande Registry-API, geen nieuwe interface. De onderstaande herstelstand blijft de basis.
+> **Nieuwste vervolg:** [Verhaal lezen en vondstenvoorraad](VALIDATION-2026-09-23-STORY-DISCOVERY-READING.md). Het producerverhaal verwerkt in een testsessie precies de twee expliciet vertelde vondsten; Lordi en Ghost blijven beschikbaar. GREEN op API-niveau, nog geen leesactie in de interface. De eerdere [Shiraz-vulproef](VALIDATION-2026-09-23-SHIRAZ-LANE-REGISTRY.md) en onderstaande herstelstand blijven de basis.
 
 **Bijgewerkt op 23-09-2026:** lees eerst de [canonieke stopstaat van 22 september](HANDOFF-2026-09-22-STOPSTAAT.md). Die vervangt de vroege instructies in deze handoff.
 

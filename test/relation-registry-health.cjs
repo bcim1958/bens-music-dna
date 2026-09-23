@@ -94,4 +94,67 @@ assert.equal(JSON.stringify(r), snapshot, "Cross-world reading must not mutate k
 assert.equal(a.discoveryStock("shiraz_lane").total, 4, "Knowledge stock remains available");
 assert.equal(a.discoveryQueueForState("shiraz_lane", a.createDiscoveryState()).length, 2, "Fresh state is independent");
 
-console.log("PASS: audit 0 errors / 0 warnings; self-test non-persistent; atomic trace; unique counterparts including persons; untold stock; deterministic queues; cross-world state isolation; no false influence candidates.");
+
+// Completed stories consume only their explicitly reviewed discoveries.
+const storyState = a.createDiscoveryState();
+const ghostBeforeStory = JSON.stringify(a.discoveryQueueForState("ghost", storyState));
+a.markDiscovery(storyState, "disc-shiraz-per-return", "shown", "earlier-shown");
+const told = a.markStoryRead(storyState, "shiraz_per_aldeheim", "completed");
+assert.equal(JSON.stringify(told), JSON.stringify(["disc-shiraz-per-two-roles", "disc-shiraz-per-return"]));
+assert.equal(storyState["disc-shiraz-per-return"].shownAt, "earlier-shown");
+for (const id of told) {
+  assert.equal(storyState[id].status, "read");
+  assert.equal(storyState[id].readAt, "completed");
+}
+for (const d of a.discoveriesFor("shiraz_lane", {counterpart:"lordi"})) {
+  assert.equal(storyState[d.id].status, "unread");
+}
+assert.equal(JSON.stringify(a.discoveryQueueForState("shiraz_lane", storyState).map(d=>d.id)), JSON.stringify(["disc-shiraz-lordi-tour"]));
+assert.equal(JSON.stringify(a.discoveryQueueForState("ghost", storyState)), ghostBeforeStory);
+const afterStory = JSON.stringify(storyState);
+a.markStoryRead(storyState, "shiraz_per_aldeheim", "reread");
+assert.equal(JSON.stringify(storyState), afterStory, "Rereading must preserve first-read timestamps");
+assert.equal(a.markStoryRead(storyState, "ghost_abba").length, 0, "Legacy stories without coverage must not infer it");
+assert.equal(JSON.stringify(storyState), afterStory);
+assert.throws(()=>a.markStoryRead(storyState, "__unknown_story__"), /Unknown story/);
+assert.equal(JSON.stringify(storyState), afterStory);
+assert.equal(JSON.stringify(r), snapshot, "Story reading changes presentation state only");
+
+function isolatedRegistry() {
+  const fixture = {window:{}};
+  vm.runInNewContext(source, fixture);
+  return fixture.window.MUSIC_DNA_RELATION_REGISTRY_V1;
+}
+// Even a new finding with exactly the same relation/source IDs stays unread unless declared.
+const fixture = isolatedRegistry();
+fixture.discoveries.push({
+  ...fixture.discoveries.find(d=>d.id==="disc-shiraz-per-return"),
+  id:"__untold_same_evidence__"
+});
+const fixtureState = fixture.api.createDiscoveryState();
+fixture.api.markStoryRead(fixtureState, "shiraz_per_aldeheim", "completed");
+assert.equal(fixtureState.__untold_same_evidence__.status, "unread");
+assert.ok(fixture.api.discoveryQueueForState("shiraz_lane", fixtureState).some(d=>d.id==="__untold_same_evidence__"));
+
+// Bad metadata must fail the audit and leave all reading state untouched.
+for (const damage of [
+  x=>x.stories.shiraz_per_aldeheim.toldDiscoveryIds.push("__missing_discovery__"),
+  x=>x.stories.shiraz_per_aldeheim.toldDiscoveryIds.push("disc-ghost-voivod-identity"),
+  x=>x.stories.shiraz_per_aldeheim.toldDiscoveryIds.push("disc-shiraz-lordi-tour"),
+  x=>x.stories.shiraz_per_aldeheim.toldDiscoveryIds.push("disc-shiraz-per-return"),
+  x=>{x.stories.shiraz_per_aldeheim.toldDiscoveryIds="not-an-array";},
+  x=>{x.stories.shiraz_per_aldeheim.items=x.stories.shiraz_per_aldeheim.items.slice(1);},
+  x=>{x.stories.shiraz_per_aldeheim.items.forEach(i=>{i.evidence=[];});}
+]) {
+  const broken = isolatedRegistry();
+  damage(broken);
+  const untouched = broken.api.createDiscoveryState();
+  const saved = JSON.stringify(untouched);
+  assert.throws(()=>broken.api.markStoryRead(untouched,"shiraz_per_aldeheim","bad"));
+  assert.equal(JSON.stringify(untouched), saved, "No partial consumption on invalid story coverage");
+  const report = broken.api.integrityReport("shiraz_lane");
+  assert.equal(report.pass, false);
+  assert.ok(report.findings.some(f=>f.code==="story-invalid-discovery-coverage"));
+}
+
+console.log("PASS: audit 0 errors / 0 warnings; self-test non-persistent; atomic trace; unique counterparts including persons; untold stock; deterministic queues; cross-world state isolation; explicit story coverage; atomic validation; no false influence candidates.");

@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-23.2",
+  version:"2026-09-23.3",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -137,6 +137,7 @@ const registry={
   },
   stories:{
     "shiraz_per_aldeheim":{
+      "toldDiscoveryIds": ["disc-shiraz-per-two-roles", "disc-shiraz-per-return"],
       "base": "shiraz_lane",
       "counterpart": "per_aldeheim",
       "title": "Een vertrouwd oor naast de band",
@@ -621,6 +622,36 @@ function storyCoverage(baseId,counterpartId){
   const available=(bundle?bundle.relations:[]).map(r=>r.id);
   return {used:[...used],available,unused:available.filter(id=>!used.has(id)),complete:available.every(id=>used.has(id))};
 }
+// Explicit editorial coverage; shared facts or sources alone do not mean a finding was told.
+function discoveriesToldByStory(story){
+  const ids=story.toldDiscoveryIds===undefined?[]:story.toldDiscoveryIds;
+  if(!Array.isArray(ids)||new Set(ids).size!==ids.length)throw new Error("Invalid toldDiscoveryIds");
+  const storyRelations=new Set((story.items||[]).flatMap(item=>item.relations||[]));
+  const storySources=new Set((story.items||[]).flatMap(item=>item.evidence||[]));
+  return ids.map(id=>{
+    const d=(registry.discoveries||[]).find(item=>item.id===id);
+    if(!d||d.base!==story.base||d.counterpart!==story.counterpart)throw new Error("Discovery outside story context: "+id);
+    if(!(d.relations||[]).length||!(d.evidence||[]).length)throw new Error("Discovery without trace: "+id);
+    const relations=d.relations.map(rid=>registry.relations.find(r=>r.id===rid));
+    if(relations.some(r=>!r||!storyRelations.has(r.id)||(r.from!==story.base&&r.to!==story.base)||counterpartFor(story.base,r)!==story.counterpart)){
+      throw new Error("Discovery fact not covered by story: "+id);
+    }
+    if(d.evidence.some(sid=>!registry.sources[sid]||!storySources.has(sid)||!relations.some(r=>(r.evidence||[]).includes(sid)))){
+      throw new Error("Discovery source not covered by story: "+id);
+    }
+    return d;
+  });
+}
+// Call only after explicit completed reading, never merely on opening/rendering a story.
+function markStoryRead(state,storyId,at){
+  if(!Object.prototype.hasOwnProperty.call(registry.stories,storyId))throw new Error("Unknown story: "+storyId);
+  const discoveries=discoveriesToldByStory(registry.stories[storyId]);
+  // Resolve every mapping before changing state, so invalid coverage cannot partly consume stock.
+  discoveries.forEach(d=>{
+    if((state[d.id]||{}).status!=="read")markDiscovery(state,d.id,"read",at);
+  });
+  return discoveries.map(d=>d.id);
+}
 function integrityReport(baseId){
   const relationById=Object.fromEntries(registry.relations.map(r=>[r.id,r]));
   const sourceIds=new Set(Object.keys(registry.sources));
@@ -636,6 +667,9 @@ function integrityReport(baseId){
   });
 
   stories.forEach(story=>{
+    try{discoveriesToldByStory(story);}catch(error){
+      findings.push({level:"error",code:"story-invalid-discovery-coverage",counterpart:story.counterpart,detail:error.message});
+    }
     (story.items||[]).forEach((item,index)=>{
       if(!(item.relations||[]).length)findings.push({level:"error",code:"story-item-no-relation",counterpart:story.counterpart,index,label:item.label});
       if(!(item.evidence||[]).length)findings.push({level:"warning",code:"story-item-no-source",counterpart:story.counterpart,index,label:item.label});
@@ -789,5 +823,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();

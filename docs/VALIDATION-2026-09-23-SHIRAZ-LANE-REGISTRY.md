@@ -1,5 +1,7 @@
 # Music DNA — Shiraz Lane: eerste vul- en voorraadproef
 
+> **Nieuwste vervolg:** [Verhaal gelezen → vertelde vondsten verwerkt](VALIDATION-2026-09-23-STORY-DISCOVERY-READING.md). De hieronder vastgelegde overlapbeperking is inmiddels voor expliciete volledige verhaalcoverage op API-niveau opgelost. Dit document bewaart het bewijs van de voorafgaande vulproef; de nieuwe aanvulling is de actuele hervatplek.
+
 **Datum:** 23-09-2026  
 **Status:** GREEN — brononderbouwde kennisproef; geen nieuwe UI of productiepromotie.  
 **Vertrekpunt:** `4f597bbe72e3904802e65202af66506dd20c896a`, de herstelde [canonieke stopstaat](HANDOFF-2026-09-22-STOPSTAAT.md).  
