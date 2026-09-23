@@ -1,5 +1,7 @@
 # Music DNA — stopstaat 21 september 2026
 
+> **HISTORISCH sinds 23-09-2026.** De actuele canonieke toestand en hervatplek staan in [Stopstaat 22 september](HANDOFF-2026-09-22-STOPSTAAT.md), inclusief de voortgang t/m `2bac0185`, het integriteitsherstel en de slotbesluiten. Onderstaande tekst en tellingen zijn historische momentopnamen; oude woorden als “actueel”, “volgende” en “open” gelden niet als nieuwe hervatinstructie. De iPhone-/schaalbewijzen in §§16–17 blijven historische bewijsregistraties.
+
 **Status:** canonieke stopstaat na Explorer Engine 30 + Relation Registry-proef V1  
 **Vastgezet:** 21-09-2026, na de bronnenregister-, trail- en iPhone-navigatiebouw  
 **Productie:** W39 blijft onaangeroerd en operationeel; Explorer blijft een geïsoleerde ontwikkel-/proeflijn.  

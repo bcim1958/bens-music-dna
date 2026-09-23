@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-22.13",
+  version:"2026-09-23.1",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -190,6 +190,13 @@ const registry={
       family:"live",type:"support-act",direction:"out",
       claim:"Ghost trok in 2017 door Noord-Amerika als support van Iron Maiden.",
       evidence:["slug_forge_2019"],confidence:"confirmed",
+      uses:["explorer","wat-hoor-ik"]
+    },
+    {
+      id:"rel-ghost-maiden-phantom-cover",from:"ghost",to:"iron_maiden",
+      family:"recording",type:"covered-song",direction:"out",
+      claim:"Ghost nam Iron Maidens Phantom of the Opera op voor Phantomime; Forge verbindt de cover met eerdere tours en zijn persoonlijke band met Iron Maiden.",
+      evidence:["rollingstone_uk_phantomime_2023"],confidence:"confirmed",
       uses:["explorer","wat-hoor-ik"]
     },
     {

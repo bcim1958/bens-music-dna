@@ -1,5 +1,7 @@
 # Music DNA — Relation Registry & invloed-playlists — V1
 
+> **Leeswijzer 23-09-2026:** dit document blijft het architectuurbesluit. De actuele implementatiestand en hervatplek staan in de [canonieke stopstaat 22 september](HANDOFF-2026-09-22-STOPSTAAT.md). De kleine Registry-/Engine 30-proeven zijn inmiddels gebouwd; §14 beschrijft de oorspronkelijke proefopdracht en is geen opdracht om die opnieuw te beginnen. Geen productiepromotie.
+
 **Datum:** 22 september 2026  
 **Status:** geaccepteerde ontwerprichting; nog niet als productiecomponent gebouwd  
 **Doel:** verbanden één keer betrouwbaar opslaan en daarna hergebruiken in Explorer, Wat hoor ik?, DNA Express, aanbevelingen, statistiek en playlistgeneratie.

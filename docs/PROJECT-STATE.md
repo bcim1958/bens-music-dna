@@ -1,5 +1,23 @@
 # Ben's Music DNA — Project State
 
+**Last updated: 2026-09-23**  
+**Status: GREEN — canonieke stopstaat hersteld; Explorer blijft proefbouw.**
+
+## Actuele canonieke ingang
+
+Lees de [stopstaat van 22 september 2026](HANDOFF-2026-09-22-STOPSTAAT.md) voor de volledige huidige toestand, bewijsgrenzen, commitreeks en hervatplek. De [fresh-chat handoff](HANDOFF-2026-09-22-FRESH-CHAT.md) is de korte ingang.
+
+- Basis: `2bac01859296b28d9a3904ea5345aa3284bcedb5` plus de geaccepteerde slotbespreking.
+- Actuele proefbuild: Engine 30; Relation Registry als kennislaag, gebundelde counterparts, Registry-verhalen, traceability, audit en discovery stock.
+- Het herstel omvat één ontbrekende bestaande Maiden-coverrelatie. Structurele audit: 0 errors / 0 warnings; self-test en leesstatusscheiding PASS.
+- Bouwstop is in deze herstelopdracht gerespecteerd: geen nieuwe productfunctionaliteit. Volgende fase na groen: **vullen en beproeven, niet opnieuw ontwerpen**.
+- W39 van 23 september is al voltooid en blijft buiten deze opdracht. Geen gebruikersopslag of weekroute gewijzigd.
+- GREEN geldt voor de vastgelegde en gecontroleerde proeflijn, niet voor productiepromotie of een nieuwe Pages-/iPhone-validatie.
+
+## Historische projectkaart — 15 september 2026
+
+Onderstaande ongewijzigde kaart bewaart de eerdere besluiten en gesloten werk. De toenmalige statuswoorden, weekstatus, focus en “Exact restart point” zijn **historisch** en vervangen de actuele stopstaat hierboven niet. Bestaande principes blijven gelden waar de nieuwe stopstaat ze niet bijwerkt.
+
 Last updated: 2026-09-15 18:55 CEST
 Status: ACTIVE DEVELOPMENT — W37 CLOSED / TAXONOMY REPAIR CLOSED / DNA EXPRESS EDITIE NUL IN UITVOERING / INFORMATION NETWORK EXPANDED
 
