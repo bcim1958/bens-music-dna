@@ -95,3 +95,34 @@ After that source migration, prioritize **B** by intersecting the accepted v3 me
 `Genre → group → subworld → artist → existing/evidenced Registry edge → free graph`.
 
 No W39 files are part of this migration. The two pre-existing missing evidence references in the general Registry health test remain outside this line.
+
+
+## Canonical classification authority — AllMusic primacy
+
+Decision confirmed with Ben on 2026-09-24:
+
+> For musical classification in Music DNA, AllMusic has primacy. Music DNA does not invent, correct, collapse or choose genre/style labels for an artist when AllMusic supplies the classification.
+
+This creates three deliberately separate layers:
+1. **Personal Genre DNA membership** — an explicit playlist fact: Ben placed/retained an artist in a named Genre-DNA playlist.
+2. **AllMusic classification** — the musical taxonomy graph: an artist may have multiple AllMusic genres/styles and every verified label remains a valid classification edge. Music DNA does not select a single “best” box.
+3. **Registry relationship evidence** — richer non-taxonomic relations such as people, influence, collaboration, production, place, scene, tour and event.
+
+Consequences for Explorer:
+- A verified AllMusic classification is itself a legitimate graph edge; an artist does not require an unrelated biographical relation merely to be walkable.
+- Multiple AllMusic labels make an artist a junction in the graph, not an ambiguity to resolve.
+- Genre-DNA playlist membership and AllMusic classification must never be presented as the same assertion.
+- Directly verified AllMusic profile data is canonical classification evidence.
+- Existing master rows marked `afgeleid volgens AllMusic-taxonomie` remain useful working metadata but must not be represented as if the artist's AllMusic profile was directly checked. They form a verification queue where direct profile confirmation is required for canonical Explorer edges.
+- If AllMusic has no usable classification for an artist, Music DNA leaves classification unknown/pending rather than inventing one.
+- Store source/provenance and verification date so later AllMusic changes can be reconciled.
+
+### Architectural correction
+
+The previous rule that a Genre-DNA artist entrance should only become useful after acquiring a non-taxonomic Registry relation was too restrictive. The target graph is instead:
+
+`personal Genre-DNA membership → artist → verified AllMusic genre/style edge(s) → other artists / richer Registry relations → free walking`.
+
+Registry remains the common walking graph, but AllMusic classification edges are first-class Registry evidence alongside (not instead of) the richer relationship families.
+
+The next implementation line must therefore ingest **directly verified AllMusic classifications first**, preserve every verified genre/style label, and explicitly distinguish them from inferred taxonomy rows. No classification may be synthesized from a Genre-DNA playlist name.
