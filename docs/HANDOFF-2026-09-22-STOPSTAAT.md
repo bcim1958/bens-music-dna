@@ -183,3 +183,39 @@ Vaste semantische regel vanaf nu: **`identity.releaseYear` = canoniek oorspronke
 W40-staging legt deze betekenis nu expliciet vast in commit `02affacf`, met een gate-notitie voor verdachte combinaties van titel/editie/jaar. Dit is de eerste structurele beveiliging; een jaartal dat numeriek plausibel is kan inhoudelijk nog steeds fout zijn. Daarom blijft vóór wekelijkse levering een inhoudelijke controle nodig voor kandidaten met signalen als `Remastered`, `Greatest Hits`, `Anthology`, `Best Of`, jubileum-/compilatietitels of een duidelijk latere digitale release.
 
 **Open vervolg:** W40 bevat zichtbaar meerdere van zulke verdachte records en moet vóór productie inhoudelijk worden doorgelicht. Niet blind massaal herschrijven: eerst per gekozen opname vaststellen of het om de oorspronkelijke opname, remake, liveversie of cover gaat. Deze controle hoort voortaan bij de wekelijkse delivery gate, vóór presentatie aan Ben.
+
+## 10. Canonieke tijdlaag voor heel Music DNA — Ontdek-DNA én Explorer
+
+De W39-regressie rond releasejaren is geen lokaal weeklijstprobleem. Dezelfde foutklasse kan DNA Explorer raken, omdat Explorer informatie uit uiteenlopende bronnen combineert: oorspronkelijke albums/singles, streamingcatalogi, remasters, heruitgaven, compilaties, jubileumedities, live-uitgaven, interviews en discografieën.
+
+Daarom geldt de releasejaarregel vanaf nu **systeemwijd**. Ontdek-DNA, DNA Explorer, playlists, verhalen/vondsten en toekomstige tijdlijnen mogen niet elk zelfstandig een jaartal interpreteren.
+
+### Objecten die uit elkaar moeten blijven
+
+1. **Werk/song** — de compositie of het muzikale werk als identiteit.
+2. **Opname/versie** — de concrete studio-opname, live-opname, remake/rerecording, remix of andere versie die wordt bedoeld.
+3. **Release/verpakking** — album, single, compilatie, remaster, box, jubileumeditie of streamingrelease waarop die opname wordt aangetroffen.
+
+Een latere verpakking verandert nooit automatisch de historische datum van het werk of de opname. Een werkelijk nieuwe opname of versie krijgt wél zijn eigen datum.
+
+### Minimale provenance voor tijdinformatie
+
+Voor datumclaims moet Music DNA kunnen bewaren:
+- canoniek oorspronkelijk releasejaar van de bedoelde opname/versie;
+- oorspronkelijke release waarop die versie verscheen, voor zover vastgesteld;
+- versie-identiteit/type wanneer relevant;
+- aangetroffen bron/release en het eventuele latere releasejaar daarvan;
+- bron/evidence voor de canonieke datering;
+- datumstatus: **bevestigd / waarschijnlijk / conflicterend / nog te onderzoeken**.
+
+De presentatie gebruikt de canonieke datum van het bedoelde muzikale object. Een Spotify-, remaster-, compilatie- of heruitgavejaar blijft provenance en mag niet stilzwijgend de zichtbare historische datum worden.
+
+### Conflictregel
+
+Wanneer betrouwbare bronnen verschillende jaren noemen, kiest Music DNA niet stilletjes één waarde. Het conflict blijft zichtbaar in de bronlaag totdat de versie-identiteit en datering voldoende zijn opgehelderd. Dit sluit aan op het ontwerpprincipe voor onderzoeksdekking: **onzeker is iets anders dan schaars of onbekend**.
+
+### Centrale invariant
+
+> **Music DNA dateert het muzikale object, niet de digitale verpakking waarin het toevallig is gevonden.**
+
+Deze invariant is gemeenschappelijk voor Ontdek-DNA en DNA Explorer. Week-specifieke controles zijn aanvullende delivery gates, geen vervanging voor deze centrale tijdlaag.
