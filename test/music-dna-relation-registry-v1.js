@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.35",
+  version:"2026-09-24.36",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -1204,7 +1204,7 @@ function explorerResearchDemandFromWeek(weekKey,day){
   const readSel=d=>{try{return JSON.parse(localStorage.getItem("bmd-week-"+weekKey+"-day"+d+"-selection-v1")||"null");}catch(e){return null;}};
   const ids=[]; for(let d=1;d<=Math.max(1,Math.min(7,Number(day)||7));d++){const s=readSel(d);if(s&&Array.isArray(s.ids))ids.push(...s.ids);}
   const names=ids.map(id=>tracks[id]?.identity?.artist).filter(Boolean);
-  return {weekKey,ready:true,...explorerResearchDemandFromNames(names,{source:"week-selection",weekKey,throughDay:day})};
+  return Object.assign({weekKey,ready:true},explorerResearchDemandFromNames(names,{source:"week-selection",weekKey,throughDay:day}));
 }
 function explorerResearchQueue(demand){
   const missing=(demand&&demand.missing)||[];
