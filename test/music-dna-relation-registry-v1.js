@@ -1,13 +1,14 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.9",
+  version:"2026-09-24.10",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
     "shiraz_lane":{
       "type": "artist",
-      "name": "Shiraz Lane"
+      "name": "Shiraz Lane",
+      "research":{"coverage":"developing","richness":"unknown","lastResearched":"2026-09-23","basis":"first sourced Registry fill; insufficient coverage for a richness class"}
     },
     "per_aldeheim":{
       "type": "person",
@@ -17,7 +18,7 @@ const registry={
       "type": "artist",
       "name": "Lordi"
     },
-    ghost:{type:"artist",name:"Ghost"},
+    ghost:{type:"artist",name:"Ghost",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"multi-source Registry proof with broad relation, story and discovery coverage"}},
     voivod:{type:"artist",name:"Voïvod"},
     abba:{type:"artist",name:"ABBA"},
     black_sabbath:{type:"artist",name:"Black Sabbath"},
@@ -639,6 +640,15 @@ function researchWorldStatus(id){
   const sufficient=["well-researched","deep"].includes(coverage);
   return {id,name:e.name,coverage,richness:sufficient?(r.richness||"unknown"):"unknown",richnessClassifiable:sufficient,lastResearched:r.lastResearched||null};
 }
+function researchCatalogSummary(){
+  const artists=Object.entries(registry.entities).filter(([,e])=>e.type==="artist");
+  const worlds=artists.map(([id])=>researchWorldStatus(id));
+  const coverage={}; registry.researchCoveragePolicy.coverageStates.forEach(x=>coverage[x]=0);
+  const richness={unknown:0}; registry.researchCoveragePolicy.richnessStates.forEach(x=>richness[x]=0);
+  worlds.forEach(w=>{coverage[w.coverage]=(coverage[w.coverage]||0)+1;richness[w.richness]=(richness[w.richness]||0)+1;});
+  return {artistWorlds:worlds.length,coverage,richness,classifiable:worlds.filter(w=>w.richnessClassifiable).length,worlds};
+}
+
 function researchIntegrityReport(){
   const issues=[];
   Object.entries(registry.entities).forEach(([id,e])=>{
@@ -936,5 +946,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchWorldStatus,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchWorldStatus,researchCatalogSummary,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
