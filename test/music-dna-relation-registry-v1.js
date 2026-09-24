@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.25",
+  version:"2026-09-24.26",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -21,6 +21,10 @@ const registry={
     ghost:{type:"artist",name:"Ghost",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"multi-source Registry proof",paths:{
 "official-primary":{status:"completed"},"interviews-primary":{status:"completed"},"independent-editorial":{status:"completed"},"discography-credits":{status:"completed"},"relationships-network":{status:"completed"},"live-tour-events":{status:"completed"},"archive-secondary":{status:"completed"}
 }},
+    celtic_frost:{type:"artist",name:"Celtic Frost"},
+    coroner:{type:"artist",name:"Coroner"},
+    ozzy_osbourne:{type:"artist",name:"Ozzy Osbourne"},
+    ozzfest:{type:"event-series",name:"Ozzfest"},
     metal_hurlant:{type:"publication",name:"Métal Hurlant"},
     motorhead:{type:"artist",name:"Motörhead"},
     hardcore_punk:{type:"genre",name:"Hardcore punk"},
@@ -144,6 +148,8 @@ const registry={
       "language": "en",
       "sourceNote": "Vaim Hull interviewt Hannes Kett en Joel Alex tijdens de Europese tour; publicatiedatum, geen exacte concertdatum."
     },
+    voivod_louder_away:{provider:"Metal Hammer / Louder",kind:"primary-interview",title:"Voivod's Away on the band's history and survival",url:"https://www.loudersound.com/features/voivod-interview-away",checkedAt:"2026-09-24"},
+    voivod_kerrang_newsted:{provider:"Kerrang!",kind:"primary-interview",title:"Michel Away Langevin on Voivod history, Jason Newsted and survival",url:"https://www.kerrang.com/voivods-michel-away-langevin-the-fear-i-had-in-the-90s-of-being-completely-forgotten-hasnt-happened-i-have-achieved-what-i-was-hoping-to-do",checkedAt:"2026-09-24"},
     voivod_metalmania_1986:{provider:"Metal Mania archive / Voivod",kind:"primary-interview",title:"1986 Metal Mania magazine interview",url:"https://voivod.net/1986/08/01/1986-metal-mania-magazine-interview/",publishedAt:"1986-08-01",checkedAt:"2026-09-24"},
     voivod_rollingstone_1990:{provider:"Rolling Stone archive / Voivod",kind:"primary-interview",title:"New Faces: Voivod",url:"https://voivod.net/1990/03/08/1990-03-08-rolling-stone-573-interview/",publishedAt:"1990-03-08",checkedAt:"2026-09-24"},
     voivod_newsted_2003:{provider:"Metal Update archive / Voivod",kind:"primary-interview",title:"Interview with Away & Jason Newsted",url:"https://voivod.net/2003/05/18/2003-05-18-metalupdate-interview-pt-1/",publishedAt:"2003-05-18",checkedAt:"2026-09-24"},
@@ -355,6 +361,8 @@ const registry={
       ],
       "status": "unread"
     },
+    {id:"disc-voivod-celtic-frost-peer",base:"voivod",counterpart:"celtic_frost",kind:"story-angle",title:"Tijdgenoten die de rand van metal opzochten",summary:"Voïvod en Celtic Frost begonnen in dezelfde vroege extreme-metalperiode, maar werden juist interessant doordat beide bands zich van vaste genreformules verwijderden.",relations:["rel-voivod-celtic-frost-peer"],evidence:["voivod_louder_away"],status:"unread"},
+    {id:"disc-voivod-ozzfest-newsted",base:"voivod",counterpart:"ozzy_osbourne",kind:"enriching-detail",title:"Met Newsted veranderde ook de schaal",summary:"De Newsted-periode bracht Voïvod onder meer naar Ozzfest: een opvallende kruising tussen hun eigenzinnige wereld en een veel grotere metalinfrastructuur.",relations:["rel-voivod-ozzfest"],evidence:["voivod_kerrang_newsted"],status:"unread"},
     {id:"disc-voivod-rush-circle",base:"voivod",counterpart:"rush",kind:"story-angle",title:"Van Neil Peart ontcijferen naar samen op tour",summary:"Away probeerde als jonge drummer Pearts partijen te doorgronden; in 1990 keek hij tijdens de gezamenlijke Rush-tour opnieuw vanaf de zijkant van het podium.",relations:["rel-voivod-rush-influence"],evidence:["voivod_rush_kerrang"],status:"unread"},
     {id:"disc-voivod-jonquiere-machine-world",base:"voivod",counterpart:"jonquiere",kind:"story-angle",title:"De fabriek werd onderdeel van de sciencefiction",summary:"De industriële omgeving van Jonquière liep via Away's verbeelding de dystopische Voïvod-wereld binnen.",relations:["rel-voivod-jonquiere-industrial"],evidence:["voivod_rollingstone_1990"],status:"unread"},
     {id:"disc-voivod-piggy-chewy-bridge",base:"voivod",counterpart:"chewy",kind:"story-angle",title:"Verdergaan zonder Piggy te kopiëren",summary:"Chewy kwam via een Piggy-tribute in beeld; de latere uitdaging was Voïvod voortzetten met een eigen chemie in plaats van imitatie.",relations:["rel-voivod-chewy-continuation"],evidence:["voivod_chewy_2013"],status:"unread"},
@@ -482,6 +490,9 @@ const registry={
       ],
       "checkedAt": "2026-09-23"
     },
+    {id:"rel-voivod-celtic-frost-peer",from:"voivod",to:"celtic_frost",family:"scene",type:"experimental-metal-peer",direction:"out",claim:"Voïvod en Celtic Frost kwamen uit dezelfde vroege extreme-metalperiode maar ontwikkelden ieder een afwijkende, experimentele taal die later als verwant werd gezien.",evidence:["voivod_louder_away"],confidence:"confirmed",uses:["explorer","wat-hoor-ik","express"]},
+    {id:"rel-voivod-coroner-peer",from:"voivod",to:"coroner",family:"scene",type:"progressive-thrash-peer",direction:"out",claim:"Coroner behoort tot de Europese technische/experimentele metalomgeving waarmee Voïvod in latere terugblikken inhoudelijk wordt verbonden.",evidence:["voivod_louder_away"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
+    {id:"rel-voivod-ozzfest",from:"voivod",to:"ozzfest",counterpart:"ozzy_osbourne",family:"live",type:"festival-professional-world",direction:"out",claim:"Voïvod trad in de Jason Newsted-periode op Ozzfest op en kwam daarmee in de professionele livewereld rond Ozzy Osbourne terecht.",evidence:["voivod_kerrang_newsted"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
     {id:"rel-voivod-metal-hurlant-world",from:"voivod",to:"metal_hurlant",family:"visual-concept",type:"formative-visual-influence",direction:"out",claim:"Away verbindt de vroege Voïvod-beeldtaal en sciencefictionwereld aan Europese sciencefictionstrips en Métal Hurlant.",evidence:["voivod_rollingstone_1990"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
     {id:"rel-voivod-motorhead-root",from:"voivod",to:"motorhead",family:"influence",type:"early-musical-root",direction:"out",claim:"Vroege Voïvod-bronnen plaatsen Motörhead tussen de harde muzikale wortels waaruit de band zijn eigen taal begon te bouwen.",evidence:["voivod_metalmania_1986"],confidence:"confirmed",uses:["explorer","wat-hoor-ik","express"]},
     {id:"rel-voivod-hardcore-root",from:"voivod",to:"hardcore_punk",family:"influence",type:"scene-musical-root",direction:"out",claim:"De vroege Voïvod-taal nam naast metal ook snelheid en houding uit hardcore/punk op.",evidence:["voivod_metalmania_1986","voivod_rollingstone_1990"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
