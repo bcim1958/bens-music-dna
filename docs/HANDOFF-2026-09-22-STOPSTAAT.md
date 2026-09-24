@@ -171,3 +171,15 @@ GREEN betekent hier: **code + geregistreerde bronnen + proefbewijs + ontwerpbesl
 - Productiepromotie, AllMusic-import, invloed-playlists en Spotify-aflevering blijven afzonderlijke latere stappen.
 
 **Volgende fase na dit groen: vullen en beproeven.** Begin bij een klein brononderbouwd dossier in de bestaande constructie; gebruik Ghost als dieptemaat, Shiraz Lane als RAAK-instroomproef en Buzzcocks als geparkeerd contrast voor breedte. Bewaar ongebruikte vondsten, toets bundeling/traceability/variatie en leg de opbrengst vast. Alleen een concreet aangetoonde blokkade rechtvaardigt een ontwerpwijziging. Geen bulkimport, automatische productiepromotie of heropening van W39.
+
+## 9. Releasejaar-integriteit — regressie gevonden en structureel afgevangen (23 september 2026)
+
+Tijdens W39 Dag 5 signaleerde Ben dat Budgie — `Breadfan` ten onrechte als 2018 werd getoond. Controle van de W39-kandidatenbron bevestigde de oorzaak: `releaseYear` kon het jaar van de Spotify-compilatie/heruitgave dragen in plaats van het canonieke oorspronkelijke releasejaar van de gekozen opname. Dit was geen geïsoleerde Budgie-fout.
+
+W39 is daarom op bronlaag gecorrigeerd in commit `838932ab`: negen kandidaten kregen hun oorspronkelijke jaar terug; waar de zichtbare release een latere verzamelaar was, is ook de oorspronkelijke release gebruikt. Voor Budgie is dat nu **1973 — Never Turn Your Back on a Friend**. De Spotify-track-ID blijft de afspeelroute en bepaalt niet langer de historische datering.
+
+Vaste semantische regel vanaf nu: **`identity.releaseYear` = canoniek oorspronkelijk releasejaar van de bedoelde opname/songversie; nooit automatisch het jaar van een Spotify-remaster, heruitgave, compilatie of latere digitale verpakking.** Een werkelijk nieuwe opname/remake/liveversie houdt uiteraard zijn eigen jaar.
+
+W40-staging legt deze betekenis nu expliciet vast in commit `02affacf`, met een gate-notitie voor verdachte combinaties van titel/editie/jaar. Dit is de eerste structurele beveiliging; een jaartal dat numeriek plausibel is kan inhoudelijk nog steeds fout zijn. Daarom blijft vóór wekelijkse levering een inhoudelijke controle nodig voor kandidaten met signalen als `Remastered`, `Greatest Hits`, `Anthology`, `Best Of`, jubileum-/compilatietitels of een duidelijk latere digitale release.
+
+**Open vervolg:** W40 bevat zichtbaar meerdere van zulke verdachte records en moet vóór productie inhoudelijk worden doorgelicht. Niet blind massaal herschrijven: eerst per gekozen opname vaststellen of het om de oorspronkelijke opname, remake, liveversie of cover gaat. Deze controle hoort voortaan bij de wekelijkse delivery gate, vóór presentatie aan Ben.
