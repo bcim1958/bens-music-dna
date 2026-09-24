@@ -17,5 +17,15 @@
       source:{master:'1.8-v3',reservoir:'w40-master-reservoir-v1',releaseYearSemantics:'canonical-original-release-year-not-spotify-edition-year'}
     };
   });
-  window.MUSIC_DNA_W40_CANDIDATES={tracks:tracks,releaseYearPolicy:{field:'identity.releaseYear',meaning:'canonical original release year of this recording/song version',forbid:'Spotify/reissue/remaster/compilation year when the recording is older',gate:'verify suspicious edition/title/year combinations before weekly delivery'}};
+  window.MUSIC_DNA_W40_CANDIDATES={tracks:tracks,
+    recordingSelectionPolicy:{
+      preferred:'original recording by the selected artist on its original Spotify release when available',
+      fallback:'the same original recording may be used from a reissue/remaster/compilation only when the original-release instance is unavailable on Spotify',
+      forbid:'do not silently substitute a live version, remix, remake or rerecording for an unavailable original recording',
+      exception:'a later live/remake/rerecording/remix is allowed only when that version itself is the intentional discovery target',
+      display:'fallback packaging never changes the canonical year of the underlying original recording',
+      gate:'verify Spotify availability and recording identity before weekly delivery'
+    },
+    releaseYearPolicy:{field:'identity.releaseYear',meaning:'canonical original release year of the selected recording/version',forbid:'Spotify/reissue/remaster/compilation package year when the underlying recording is older',gate:'verify suspicious edition/title/year combinations before weekly delivery'}
+  };
 })();
