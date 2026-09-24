@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.26",
+  version:"2026-09-24.27",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -1073,6 +1073,26 @@ function discoveryRotation(baseId,state,limit){
     read:Object.values(state).filter(x=>x.status==="read").length
   }};
 }
+function counterpartUniquenessAudit(id){
+  const bundles=relationshipBundles(id,{confidence:"confirmed"});
+  const counts={};
+  bundles.forEach(b=>{counts[b.entityId]=(counts[b.entityId]||0)+1;});
+  const duplicates=Object.entries(counts).filter(([,n])=>n>1).map(([entityId,count])=>({entityId,count,name:(entity(entityId)||{}).name||entityId}));
+  return {id,bundleCount:bundles.length,uniqueCounterparts:Object.keys(counts).length,duplicates,pass:duplicates.length===0,
+    invariant:"one visible counterpart; all atomic relations and evidence remain underneath"};
+}
+function voivodBundlingRegressionSelfTest(){
+  const audit=counterpartUniquenessAudit("voivod");
+  const bundles=relationshipBundles("voivod",{confidence:"confirmed"});
+  const by=id=>bundles.find(b=>b.entityId===id);
+  const cases=[
+    {name:"Jason Newsted appears once as person",pass:!!by("jason_newsted")&&by("jason_newsted").entity?.type==="person"},
+    {name:"Rush appears once as artist hub",pass:!!by("rush")&&by("rush").entity?.type==="artist"},
+    {name:"Ozzy context resolves once despite Ozzfest event",pass:!!by("ozzy_osbourne")},
+    {name:"Metal Hurlant appears once as publication world",pass:!!by("metal_hurlant")}
+  ];
+  return {pass:audit.pass&&cases.every(x=>x.pass),audit,cases};
+}
 function relationIdentityRegressionSelfTest(){
   const byId=id=>registry.relations.find(r=>r.id===id);
   const cases=[
@@ -1110,5 +1130,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
