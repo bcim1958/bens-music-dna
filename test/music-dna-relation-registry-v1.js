@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.8",
+  version:"2026-09-24.9",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -57,6 +57,18 @@ const registry={
     forbiddenFallbacks:["live-version","rerecording","remake","remix"],
     intentionalVersionException:"later versions are allowed when that version itself is the intended discovery object",
     displayRule:"fallback package metadata never overwrites the canonical identity or year of the underlying recording"
+  },
+  researchCoveragePolicy:{
+    invariant:"unknown is not sparse; richness may only be classified when research coverage is sufficient",
+    richnessStates:["very-rich","rich","moderate","limited","sparse"],
+    coverageStates:["unresearched","light","developing","well-researched","deep"],
+    evidenceDimensions:["independent-sources","primary-sources","time-spread","relations","events-context","discography-credits","distinct-discovery-angles"],
+    rules:[
+      "richness is not quality, popularity, taste fit or web-hit volume",
+      "copied or syndicated press material does not count as independent evidence",
+      "small, local and obscure artists are not penalized for lower exposure",
+      "insufficient coverage yields richness unknown, never sparse"
+    ]
   },
   temporalPolicy:{
     invariant:"date the musical object, not the packaging in which it was found",
@@ -620,6 +632,24 @@ function temporalRegressionSelfTest(){
   return {ok:results.every(x=>x.pass)&&semanticGuards.every(x=>x.pass),results,semanticGuards};
 }
 
+function researchWorldStatus(id){
+  const e=entity(id); if(!e)return null;
+  const r=e.research||{};
+  const coverage=r.coverage||"unresearched";
+  const sufficient=["well-researched","deep"].includes(coverage);
+  return {id,name:e.name,coverage,richness:sufficient?(r.richness||"unknown"):"unknown",richnessClassifiable:sufficient,lastResearched:r.lastResearched||null};
+}
+function researchIntegrityReport(){
+  const issues=[];
+  Object.entries(registry.entities).forEach(([id,e])=>{
+    const r=e.research;if(!r)return;
+    if(r.richness&&r.richness!=="unknown"&&!["well-researched","deep"].includes(r.coverage||"unresearched")) issues.push({severity:"integrity",entity:id,issue:"richness-classified-before-sufficient-research"});
+    if(r.richness&&r.richness!=="unknown"&&!registry.researchCoveragePolicy.richnessStates.includes(r.richness)) issues.push({severity:"integrity",entity:id,issue:"invalid-richness-state"});
+    if(r.coverage&&!registry.researchCoveragePolicy.coverageStates.includes(r.coverage)) issues.push({severity:"integrity",entity:id,issue:"invalid-coverage-state"});
+  });
+  return {ok:issues.length===0,policy:registry.researchCoveragePolicy.invariant,issues};
+}
+
 function entity(id){return registry.entities[id]||null}
 function temporalContext(id){
   const e=entity(id); if(!e)return null;
@@ -906,5 +936,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchWorldStatus,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
