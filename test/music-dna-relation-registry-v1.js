@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.3",
+  version:"2026-09-24.4",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -37,11 +37,11 @@ const registry={
     enter_sandman:{type:"work",name:"Enter Sandman",temporal:{workOriginalReleaseYear:1991,dateStatus:"confirmed"}},
     metallica_enter_sandman_1991:{type:"recording",name:"Enter Sandman — Metallica original studio recording",work:"enter_sandman",artist:"metallica",temporal:{canonicalReleaseYear:1991,versionType:"original-studio-recording",dateStatus:"confirmed"}},
     ghost_enter_sandman_2018_live:{type:"performance",name:"Enter Sandman — Ghost Polar Music Prize performance",work:"enter_sandman",artist:"ghost",temporal:{canonicalEventYear:2018,versionType:"tribute-live-performance",dateStatus:"confirmed"}},
-    ghost_enter_sandman_blacklist:{type:"recording",name:"Enter Sandman — Ghost studio cover",work:"enter_sandman",artist:"ghost",temporal:{versionType:"studio-cover",dateStatus:"needs-research",note:"Keep release/package chronology separate until source-backed canonical release date is attached."}},
-    phantom_of_the_opera:{type:"work",name:"Phantom of the Opera",temporal:{dateStatus:"needs-research"}},
-    ghost_phantom_of_the_opera_2023:{type:"recording",name:"Phantom of the Opera — Ghost cover",work:"phantom_of_the_opera",artist:"ghost",temporal:{canonicalReleaseYear:2023,versionType:"studio-cover",dateStatus:"confirmed",releasePackage:"Phantomime"}},
+    ghost_enter_sandman_blacklist:{type:"recording",name:"Enter Sandman — Ghost studio cover",work:"enter_sandman",artist:"ghost",temporal:{versionType:"studio-cover",dateStatus:"needs-research",note:"Release year intentionally unresolved in this registry until source-backed canonical release evidence is attached; do not inherit source publication/package dates."}},
+    phantom_of_the_opera:{type:"work",name:"Phantom of the Opera",temporal:{workOriginalReleaseYear:1980,dateStatus:"confirmed",originalArtist:"iron_maiden",originalRelease:"Iron Maiden"}},
+    ghost_phantom_of_the_opera_2023:{type:"recording",name:"Phantom of the Opera — Ghost cover",work:"phantom_of_the_opera",artist:"ghost",temporal:{canonicalReleaseYear:2023,versionType:"studio-cover",dateStatus:"confirmed",releasePackage:"Phantomime",releaseDate:"2023-05-19"}},
     rats:{type:"track",name:"Rats",temporal:{canonicalReleaseYear:2018,objectType:"recording",versionType:"original-studio-recording",dateStatus:"confirmed"}},
-    moscow_1989:{type:"event",name:"Moscow Music Peace Festival 1989"},
+    moscow_1989:{type:"event",name:"Moscow Music Peace Festival 1989",temporal:{canonicalEventYear:1989,dateStatus:"confirmed"}},
     sweden:{type:"place",name:"Zweden"}
   },
 
