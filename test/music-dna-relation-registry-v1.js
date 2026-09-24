@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.38",
+  version:"2026-09-24.39",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -74,6 +74,24 @@ const registry={
     sweden:{type:"place",name:"Zweden"}
   },
 
+  genreDnaTaxonomy:{
+    status:"canonical-personal-navigation",
+    principle:"Explorer Genre starts from Ben's existing DNA / Genre DNA map; playlist worlds are entry doors, never navigation fences.",
+    groups:[
+      {id:"alternative_indie",name:"Alternative & Indie",worlds:["Grunge DNA","Indie Rock DNA","Noise Rock DNA","Shoegaze DNA"]},
+      {id:"classic_heavy_metal",name:"Classic Heavy Metal",worlds:["NWOBHM DNA","Power Metal DNA"]},
+      {id:"extreme_modern_metal",name:"Extreme & Modern Metal",worlds:[]},
+      {id:"garage_rock",name:"Garage Rock",worlds:["Garage Rock DNA"]},
+      {id:"glam_rock",name:"Glam Rock",worlds:["Glam Rock DNA"]},
+      {id:"hair_metal",name:"Hair Metal",worlds:["80's Hair Metal Deep Cuts DNA","After Hair Metal DNA","Hair Metal Before Hair Metal DNA","Hair Metal DNA","Hair Metal Gekkies DNA","Modern Hair Metal Revival DNA","Scandinavian Hair Metal DNA","Sunset Strip Sleaze Metal DNA","Too Late For The Hair Metal DNA"]},
+      {id:"hard_rock_aor",name:"Hard Rock & AOR",worlds:["AOR Deep Cuts DNA","Arena Rock DNA","Blues Rock DNA","Southern Rock DNA"]},
+      {id:"prog_art_rock",name:"Prog & Art Rock",worlds:["Art Rock DNA","Avant Prog Rock DNA","Canterbury Scene DNA","Experimental Rock DNA","Krautrock DNA","Neo Prog DNA","Prog Rock DNA"]},
+      {id:"progressive_metal_group",name:"Progressive Metal",worlds:["Gothic Metal DNA","Progressive Metal DNA","Symphonic Metal DNA"]},
+      {id:"psychedelic_space_rock",name:"Psychedelic & Space Rock",worlds:["Psychedelic/Space Rock DNA"]},
+      {id:"punk_new_wave",name:"Punk & New Wave",worlds:["Dark Wave DNA","Goth rock DNA","Hardcore Punk DNA","New Wave DNA","Post Punk DNA","Power Pop DNA","Ska Revival DNA","Synth Pop DNA","UK Punk; Art, Hooks and Attitude DNA","UK Punk; Raw and Rebellious DNA"]}
+    ],
+    note:"World names are transcribed from the existing Spotify Genre DNA structure visible in the 2026-09-24 walkthrough. Empty worlds mean the group is known but its child playlists were not visible in that walkthrough; do not invent them."
+  },
   recordingSelectionPolicy:{
     invariant:"prefer the artist's original recording; packaging is a fallback, not a substitute recording",
     priority:[
@@ -1245,6 +1263,23 @@ function explorerGenreNodes(){
     const node=explorerNode(id);return {id,name:e.name,type:e.type,artistCount:((node&&node.links)||[]).filter(x=>x.type==="artist").length,linkCount:((node&&node.links)||[]).length};
   }).filter(x=>x.linkCount>0).sort((a,b)=>a.name.localeCompare(b.name));
 }
+function explorerGenreDnaGroups(){
+  return (registry.genreDnaTaxonomy.groups||[]).map(g=>({id:g.id,name:g.name,type:"genre-group",worldCount:(g.worlds||[]).length,worlds:(g.worlds||[]).slice()}));
+}
+function explorerGenreDnaGroup(id){
+  const g=(registry.genreDnaTaxonomy.groups||[]).find(x=>x.id===id);
+  return g?{id:g.id,name:g.name,type:"genre-group",worlds:(g.worlds||[]).map((name,index)=>({id:g.id+"__"+index,name,type:"genre-world"}))}:null;
+}
+function explorerGenreTaxonomyRegressionSelfTest(){
+  const groups=explorerGenreDnaGroups(),punk=explorerGenreDnaGroup("punk_new_wave"),prog=explorerGenreDnaGroup("prog_art_rock");
+  const cases=[
+    {name:"eleven personal Genre DNA groups are canonical",pass:groups.length===11},
+    {name:"Hardcore Punk lives under Punk & New Wave",pass:!!punk&&punk.worlds.some(x=>x.name==="Hardcore Punk DNA")},
+    {name:"Prog & Art Rock preserves its visible subworlds",pass:!!prog&&prog.worlds.some(x=>x.name==="Canterbury Scene DNA")},
+    {name:"unseen children are not invented",pass:(explorerGenreDnaGroup("extreme_modern_metal")||{}).worlds.length===0}
+  ];
+  return {pass:cases.every(x=>x.pass),cases,invariant:"personal Genre DNA taxonomy is the Explorer genre entrance; relation genres remain graph edges after entry"};
+}
 function explorerEntrypoints(context){
   context=context||{};
   const normalize=(type,ids,label)=>({type,label,items:(ids||[]).filter(id=>!!entity(id)).map(id=>({id,name:entity(id).name,type:entity(id).type}))});
@@ -1253,16 +1288,17 @@ function explorerEntrypoints(context){
     normalize("today",context.todayArtistIds,"Vandaag"),
     normalize("week",context.weekArtistIds,"Deze week"),
     normalize("w-list",context.latestWArtistIds,context.latestWLabel||"Recente W-lijst"),
-    normalize("genre",context.genreIds||explorerGenreNodes().map(x=>x.id),"Genre")
+    {type:"genre",label:"Genre",mode:"taxonomy",items:explorerGenreDnaGroups()}
   ];
 }
 function explorerStartFromEntry(entry,itemId){
   if(!entry||!["free","today","week","w-list","genre"].includes(entry.type))throw new Error("Unknown Explorer entry type");
+  if(entry.type==="genre")throw new Error("Genre entry opens the personal Genre DNA taxonomy before graph walking starts");
   if(entry.type!=="free"&&!(entry.items||[]).some(x=>x.id===itemId))throw new Error("Item not available in Explorer entry");
   return createExplorerWalk(itemId,{type:entry.type,label:entry.label,id:itemId});
 }
 function explorerEntrypointRegressionSelfTest(){
-  const eps=explorerEntrypoints({todayArtistIds:["ghost","voivod"],weekArtistIds:["ghost","voivod","shiraz_lane"],latestWLabel:"W-test",latestWArtistIds:["voivod","ghost"],genreIds:[]});
+  const eps=explorerEntrypoints({todayArtistIds:["ghost","voivod"],weekArtistIds:["ghost","voivod","shiraz_lane"],latestWLabel:"W-test",latestWArtistIds:["voivod","ghost"]});
   const today=eps.find(x=>x.type==="today"),week=eps.find(x=>x.type==="week"),w=eps.find(x=>x.type==="w-list");
   const walk=explorerStartFromEntry(w,"voivod"); explorerStep(walk,"rush");
   const cases=[
@@ -1270,6 +1306,7 @@ function explorerEntrypointRegressionSelfTest(){
     {name:"today is data-driven",pass:today.items.length===2},
     {name:"week is data-driven",pass:week.items.length===3},
     {name:"W-list keeps its source label",pass:w.label==="W-test"},
+    {name:"Genre uses eleven personal Genre DNA groups",pass:eps.find(x=>x.type==="genre").items.length===11},
     {name:"entry does not constrain wandering",pass:walk.trail.join(">")==="voivod>rush"}
   ];
   return {pass:cases.every(x=>x.pass),cases,invariant:"entrypoints are adapters into one Explorer graph; they never create a second navigation system"};
@@ -1343,5 +1380,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}});
+window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerGenreDnaGroups,explorerGenreDnaGroup,explorerGenreTaxonomyRegressionSelfTest,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}});
 })();
