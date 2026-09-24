@@ -263,3 +263,68 @@ Gesloten en canoniek: herstelconsolidatie 23 september; Shiraz Lane-vulproef; st
 Open maar niet blokkerend: Registry/Explorer inhoudelijk verder vullen en beproeven; Buzzcocks blijft geparkeerde lokale/historische stresstest; duurzame persoonlijke leesstatus en productiepromotie zijn nog niet gebouwd; visuele verfijning van de meter pas na echte gebruiksproef.
 
 **Hervatregel:** §§10–14 zijn de canonieke systeemlaag. Relation Registry, releasejaar-/opnameregels, W40 en DNA-rijkdom/onderzoeksdekking v1 niet opnieuw ontwerpen zonder concrete regressie. Volgende inhoudelijke bouwstap: Registry/Explorer verder vullen via de nieuwe onderzoeksbacklog; de onderzoekstank bewaakt de balans tussen bewezen en onontgonnen werelden.\n\n## 15. Onderzoeksbacklog in productie + relation identity policy (24 september 2026)\n\nNa sluiting van v1 is de onderzoeksbacklog daadwerkelijk als werkwijze gebruikt. Shiraz Lane is verder verdiept en verlaat na voldoende verdiende dekking de actieve kennislacunes. Daarna is Voïvod als volgende onderzoekswereld geopend en over alle acht onderzoekspaden onderzocht. Uitkomst: **Diep onderzocht / Zeer rijk**. De onderzoekslaag is vervolgens niet als los dossier blijven staan: bewijs is vertaald naar herbruikbare Registry-relaties en discoveries, onder meer rond Rush/Neil Peart, Jason Newsted, Piggy, Chewy en Jonquière.\n\nDe backlog selecteert voortaan alleen artiestwerelden met werkelijk ontbrekende onderzoekspaden en kan per doel aangeven of de taak bewijsleemtes sluiten, onderzoek verbreden of een nieuwe wereld openen is. Zo blijft een reeds voldoende onderzochte wereld niet kunstmatig bovenaan staan omdat zijn rijkdomslabel lager is dan dat van een andere artiest.\n\n### Relation identity policy — canoniek\n\nEen relatie wordt gekoppeld aan **de entiteit die volgens het bewijs de relatie werkelijk draagt**. Een persoon wordt niet vervangen door zijn of haar beroemdste band. Bandlidmaatschap is context tenzij de band zelf aantoonbaar deelneemt aan de relatie. Omgekeerd mag een band de zichtbare relatiehub zijn wanneer de muzikale invloed aantoonbaar bij die band hoort en een concreet lid de drager van die invloed is.\n\nCanonieke voorbeelden:\n- **Voïvod ↔ Jason Newsted** = directe persoonsrelatie; Metallica is biografische context, niet de relatiehub.\n- **Voïvod/Away → Rush, via Neil Peart** = Rush is de muzikale invloedwereld; Peart is de concrete drummer via wie Away die invloed beschrijft.\n\nDeze semantiek is in Registry-code vastgelegd in `relationIdentityPolicy` (commit `d7117100`) en geldt voortaan voor alle nieuwe relationele extracties. Een latere uitbreiding die een directe persoonsrelatie automatisch onder diens beroemdste band hangt, geldt als inhoudelijke regressie.\n\n**Actuele veilige hervatstand:** code en onderzoeksdata staan in GitHub; de canonieke totaalstopstaat loopt nu mee tot en met `d7117100`. De eerstvolgende grotere bouwslag mag hierop voortbouwen zonder de rijkdoms-, coverage-, temporal- of relation-identityregels opnieuw te ontwerpen.
+
+
+## 16. Explorer Navigation v1 + Engine 31 walk proof — canonieke stopstaat (24 september 2026, 14:06-healthcheck)
+
+Na §15 is een tweede structurele bouwsprong gemaakt. De Relation Registry is niet langer alleen opslag- en bundellaag voor rijke dossiers: zij voedt nu een generieke **Explorer Navigation v1** waarmee één verbonden muziekwereld daadwerkelijk bewandelbaar wordt.
+
+### Geaccepteerd interactieprincipe
+
+**Explorer is user-led, engine-assisted.** Ben kiest het vertrekpunt en daarna zelf iedere volgende deur. Music DNA mag binnen de gekozen wereld helpen ordenen, rijke verbindingen zichtbaar maken, herhaling voorkomen en kennislacunes signaleren, maar bepaalt niet de wandelroute.
+
+De eenvoudige gebruikerslogica is canoniek: **Kies → kijk → klik → zwerf → terug.** Er worden geen vooraf geprogrammeerde wandelroutes gebouwd. Iedere stap vraagt alleen bij welk knooppunt de gebruiker staat en welke onderbouwde verbindingen Music DNA vanaf daar kent.
+
+### Eén graph, vijf opritten
+
+De vijf geaccepteerde Explorer-ingangen zijn **Vrij kiezen, Vandaag, Deze week, Recente W-lijst en Genre**. Vandaag gebruikt artiesten uit de werkelijke dagelijkse Ontdek-DNA-selectie; Deze week gebruikt artiesten uit de werkelijke weekselecties; de W-lijst gebruikt de echte weekvoorraad/context.
+
+Deze ingangen zijn adapters naar **dezelfde relationele graph** en beperken de route na binnenkomst niet. Week-/dagdata worden gekoppeld aan de bestaande Music-DNA-weekarchitectuur (MUSIC_DNA_WEEKS, kandidaatbestanden en lokale dagselecties), niet opnieuw bijgehouden in Explorer. Ontbrekende artiestkoppelingen worden als unresolved behandeld en nooit verzonnen.
+
+### First-class knooppunten en vrije overgang
+
+Genre is canoniek een **first-class Explorer node**, niet alleen een filter. Hetzelfde model geldt in beginsel voor artiest, persoon, plaats, genre, publicatie/culturele wereld en event/event-series wanneer zulke entiteiten betrouwbaar in de Registry aanwezig zijn.
+
+Een genre is een vertrekpunt, geen grens. Een wandeling mag genre → artiest → persoon → andere artiest → plaats lopen. De structurele proef bevat onder meer Hardcore punk → Voïvod. Het kruimelpad bewaart de sessieroute; teruggaan volgt dat pad; Explorer-home heropent de opritten. De herkomst blijft context, maar dicteert de volgende stap niet.
+
+### Eén zichtbare relatiepartner, rijk dossier eronder
+
+De bundelregel blijft tijdens het zwerven gelden: **één zichtbare counterpart/deur**, ongeacht hoeveel atomaire relaties, bronnen of discovery-hoeken daaronder liggen. Onderliggende feiten en provenance blijven volledig bewaard. De person-versus-band identity policy blijft hard gelden.
+
+### Discovery en facts-to-narrative generiek
+
+Discovery-selectie en narrative-material zijn generiek gemaakt. Ongelezen discoveries kunnen per artiestwereld worden geselecteerd met maximaal één zichtbare discovery per counterpart per queue en spreiding over relationele families waar de voorraad dat toelaat. De facts-to-narrative-laag groepeert bestaande feiten, claims, evidence en discoveries per echte counterpart tot atomic, compound of rich materiaal zonder zwak bewijs kunstmatig tot een lang verhaal op te blazen.
+
+Dit is een **compositielaag**, geen vervanging van atomaire Registry-feiten: relation-, source- en discovery-ID's blijven traceerbaar.
+
+### Ontmoeting → onderzoeksbehoefte: gesloten lus
+
+Een echte Explorer-ontmoeting mag een nieuwe onderzoeksbehoefte genereren. De canonieke lus is:
+
+**Ontdek DNA → dagelijkse/weekselectie → Explorer-ingang → bekende wereld óf kennishiaat → research demand/backlog → Registry → rijkere Explorer-wereld.**
+
+Een ontbrekende artiestenwereld blokkeert de wandeling niet en wordt niet gefabriceerd. Herhaalde ontmoetingen met dezelfde ontbrekende wereld worden gededupliceerd. Research is daarmee vraaggestuurd vanuit werkelijk Music-DNA-gebruik, zonder bij iedere klik live webonderzoek af te dwingen.
+
+### Regressiepoort
+
+Explorer Navigation v1 heeft een geïntegreerde regressiepoort. Die bewaakt minimaal: vijf ingangstypen; vrije keuze in dezelfde graph; echte relationele stappen; teruggaan via sessiepad; één zichtbare deur per counterpart; genre als werkelijk bewandelbaar knooppunt; ingang beperkt later zwerven niet; ontbrekende kennis veroorzaakt research demand in plaats van fictieve inhoud; bestaande relation-identitysemantiek blijft behouden.
+
+**Explorer Navigation v1-architectuur is hiermee structureel gesloten.** Nieuwe UI of content mag deze invarianten niet omzeilen.
+
+### Engine 31 — WALK PROOF, nadrukkelijk geen productie
+
+Commit 7d260712 maakt de navigatiemotor voor het eerst zichtbaar in test/music-dna-explorer-engine-v30.html onder **ENGINE 31 · WALK PROOF**. De proef toont de vijf opritten, een gekozen wereld, echte Registry-deuren, verder wandelen, kruimelpad, terug en Explorer-home.
+
+Engine 31 is **bewijs-/proeflaag, niet productieversie**. De zichtbare Today/This week/W-list context in deze walk proof bevat nog een beperkte bekende testcontext; de onderliggende echte weekadapter bestaat wel. Deze proefdata mag niet als actuele volledige productie-inhoud worden geïnterpreteerd.
+
+De volgende stap na deze stopstaat is eerst de WALK PROOF als echte wandeling beproeven en integratieproblemen herstellen. Pas daarna worden de echte weekcontext volledig in de zichtbare proef aangesloten en presentatie/regie verder uitgewerkt.
+
+### Belangrijkste commits sinds §15
+
+De canonieke bouwlijn na e7859924 omvat: f157ae97 (Voïvod discoveries + visual/roots), 0f6ede21 (identity-regressie), 8709a16d (scene/live), 2578b2cc (bundling-regressie), d33c0dcc (generieke discovery-selectie), ce203a01 (facts-to-narrative), 46d0e5ab (Navigation v1 core), 158922e0 (entry adapters), d40b33aa (genres first-class), 952e8e46 (weekdata-brug), 0a7da3d9 (encounter → research demand), 8b2664ff (integrale regressiepoort) en 7d260712 (Engine 31 WALK PROOF).
+
+### Actuele hervatregel
+
+**Dit document is vanaf deze sectie het nieuwe canonieke totaalanker tot en met 7d260712.** Bij hervatten niet reconstrueren uit losse commits. Behoud §§10–16 als geaccepteerde systeemlaag. Eerst Engine 31/WALK PROOF functioneel beproeven; geen verdere structurele bouw vóór eventuele regressies uit die proef zijn verwerkt.
+
+**Healthcheck-status na consolidatie:** gegevensveiligheid 🟢; projectgeheugen weer gelijkgetrokken met de bouwstand. **Proof ≠ production** blijft een expliciete grens.
