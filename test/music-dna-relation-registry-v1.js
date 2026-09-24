@@ -894,7 +894,7 @@ function narrativeMaterial(baseId,counterpartId,opts){
 function narrativeCandidates(baseId){
   return relationshipBundles(baseId,{use:"explorer",confidence:"confirmed"}).map(b=>narrativeMaterial(baseId,b.entityId))
     .filter(Boolean).sort((a,b)=>({rich:3,compound:2,atomic:1}[b.strength]-({rich:3,compound:2,atomic:1}[a.strength])||
-      b.relations.length-a.relations.length||((a.entity||{}).name||"").localeCompare((b.entity||{}).name||""));
+      b.relations.length-a.relations.length||((a.entity||{}).name||"").localeCompare((b.entity||{}).name||"")));
 }
 function narrativeMaterialRegressionSelfTest(){
   const ghostMaiden=narrativeMaterial("ghost","iron_maiden");
@@ -922,7 +922,7 @@ function traceStory(baseId,counterpartId){
     ...item,
     relationRecords:(item.relations||[]).map(id=>relationById[id]).filter(Boolean),
     sourceRecords:(item.evidence||[]).map(id=>registry.sources[id]).filter(Boolean)
-  }))});
+  }))};
 }
 function storyCoverage(baseId,counterpartId){
   const traced=traceStory(baseId,counterpartId);
@@ -1343,5 +1343,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}});
 })();
