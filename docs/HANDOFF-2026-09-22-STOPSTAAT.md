@@ -242,20 +242,24 @@ Bewust gekozen latere versies blijven toegestaan wanneer de versie zelf het ontd
 **Eindstatus van deze reparatielijn: GREEN.** De ontwerp- en herstelopdracht rond releasejaar, opname-identiteit, Spotify-verpakking en Explorer-tijdprovenance is hiermee gesloten. De blijvende systeemregels staan in §§10–11 en in de gedeelde Registry/W40-policy. Nieuwe kandidaten moeten voortaan door dezelfde selectie- en provenancegate; een nieuwe heruitgavefout is een regressie, geen open ontwerpvraag.
 
 
-## 13. DNA-rijkdom en onderzoeksdekking — volgende bouwlijn (24 september 2026)
+## 13. DNA-rijkdom en onderzoeksdekking — v1 gesloten (24 september 2026)
 
-Dit is een geaccepteerd ontwerpbesluit/backlog, nog geen volledige UI. **DNA-rijkdom** beschrijft de rijkdom van de betrouwbaar gedocumenteerde muzikale wereld rond een artiest: onafhankelijke bronnen, primaire interviews, tijdspreiding, relaties, gebeurtenissen, context, credits en werkelijk verschillende verhaal-/vondsthoeken. Het is geen kwaliteits-, populariteits-, smaak- of webhit-score. Voorlopige leesbare staten: **Zeer rijk / Rijk / Redelijk / Beperkt / Schaars**; geen schijnprecisie.
+Deze bouwlijn is inhoudelijk en technisch als **v1 gesloten**. DNA-rijkdom beschrijft de rijkdom van de betrouwbaar gedocumenteerde muzikale wereld rond een artiest; onderzoeksdekking beschrijft afzonderlijk hoe grondig Music DNA die wereld werkelijk heeft onderzocht. DNA-rijkdom is geen kwaliteits-, populariteits-, smaak- of webhit-score.
 
-**Onderzoeksdekking** beschrijft afzonderlijk hoe grondig Music DNA die wereld werkelijk heeft onderzocht. Kernregel: **niet onderzocht is niet hetzelfde als onderzocht en schaars**. Kleine/lokale/obscure artiesten worden niet benadeeld door lagere media-exposure; gekopieerde persbio's tellen niet als onafhankelijke bronnen.
+Vaste rijkdomsstaten: **Zeer rijk / Rijk / Redelijk / Beperkt / Schaars**. Vaste onderzoeksstaten: **Ononderzocht / Licht / In ontwikkeling / Goed onderzocht / Diep onderzocht**. Centrale invariant: **onbekend is niet schaars; rijkdom mag pas worden geclassificeerd wanneer voldoende onderzoeksdekking is verdiend.**
 
-Op artiestniveau kan compact DNA-wereld + rijkdom + aantal ontdekkingen/ongelezen vondsten verschijnen. De odometer/cockpit krijgt uiteindelijk (1) rijkdomsverdeling onder voldoende onderzochte werelden en (2) onderzoeksdekking van de catalogus, leesbaar als **Bewezen wereld ←────────→ Onontgonnen wereld**.
+De Registry registreert werkelijk afgelegde onderzoekspaden: officiële/primaire bronnen, primaire interviews, onafhankelijke redactionele bronnen, discografie/credits, relatienetwerk, live/tourgebeurtenissen, lokale/historische bronnen en archief/secundaire bronnen. Lage media-exposure verlaagt rijkdom niet automatisch.
 
-Eerstvolgende bouwactie: datamodel + integriteitsregels, daarna kleine proef op contrasterende werelden. Ghost dient als rijke/diep onderzochte maat; Shiraz Lane als nieuwe RAAK-instroom; een derde aantoonbaar grondig onderzochte maar schaarse wereld moet worden gekozen op bewijs, niet op obscuriteit.
+Gebouwd en beproefd: research-path status + verdiende coverage gate; Ghost = Diep onderzocht/Zeer rijk; Shiraz Lane = In ontwikkeling/rijkdom onbekend; Sic Vikki, Rox Diamond en Atomic Riot verworpen als geforceerde schaarse controles; Bombshell Boys blijft onbekend; catalogus-summary + odometer; evidence-driven research backlog; aparte Explorer-onderzoekstank; Engine 30 proefmeter **Bewezen wereld ←────────→ Onontgonnen wereld**; regressietest die voorkomt dat onvoldoende onderzoek als rijkdom of schaarste wordt gepresenteerd.
+
+De Explorer-onderzoekstank staat nadrukkelijk los van de Ontdek-DNA-kandidatenvoorraad: kennisdekking versus geschikte muziekvoorraad.
+
+**Bewust later:** verdere visuele verfijning, catalogusbrede onderzoeksinvulling, productiepromotie en een eventuele werkelijk aantoonbaar schaarse referentiewereld. Geen daarvan heropent het v1-model.
 
 ## 14. Audit 24 september — gesloten versus open
 
-Tegen de commitgeschiedenis gecontroleerd en behouden/gesloten: herstelconsolidatie 23 september; Shiraz Lane-vulproef; story-reading → expliciet vertelde vondsten (`26ab7a87`); systeemwijde tijd-/releaseprovenance; versie-aware temporal context; automatische temporal-integriteitscontrole; regressietests voor packaging versus echte nieuwe versies; originele-opname-eerst Spotify-regel; W39 releasejaarherstel; W40 provenance-audit GREEN.
+Gesloten en canoniek: herstelconsolidatie 23 september; Shiraz Lane-vulproef; story-reading → expliciet vertelde vondsten; systeemwijde tijd-/releaseprovenance; temporal integrity; originele-opname-eerst; W39 releasejaarherstel; W40 provenance GREEN; **DNA-rijkdom + onderzoeksdekking v1 inclusief onderzoekspaden, gate, odometer, backlog, onderzoekstank en regressietest**.
 
-Open maar niet blokkerend: DNA-rijkdom/onderzoeksdekking bouwen; Registry/Explorer verder vullen/beproeven; Buzzcocks blijft geparkeerde lokale/historische stresstest; duurzame persoonlijke leesstatus en productiepromotie zijn nog niet gebouwd.
+Open maar niet blokkerend: Registry/Explorer inhoudelijk verder vullen en beproeven; Buzzcocks blijft geparkeerde lokale/historische stresstest; duurzame persoonlijke leesstatus en productiepromotie zijn nog niet gebouwd; visuele verfijning van de meter pas na echte gebruiksproef.
 
-**Hervatregel:** in een nieuwe chat eerst §§13–14 lezen. Volgende bouwactie is DNA-rijkdom/onderzoeksdekking; Relation Registry, releasejaarregels en W40 niet opnieuw ontwerpen zonder concrete regressie.
+**Hervatregel:** §§10–14 zijn de canonieke systeemlaag. Relation Registry, releasejaar-/opnameregels, W40 en DNA-rijkdom/onderzoeksdekking v1 niet opnieuw ontwerpen zonder concrete regressie. Volgende inhoudelijke bouwstap: Registry/Explorer verder vullen via de nieuwe onderzoeksbacklog; de onderzoekstank bewaakt de balans tussen bewezen en onontgonnen werelden.
