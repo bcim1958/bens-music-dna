@@ -250,3 +250,18 @@ Promotion creates or updates only generated classification records. It does not:
 - convert an AllMusic style into a personal Genre-DNA membership.
 
 This permits the verification programme to run independently and incrementally. Every promoted artist increases the canonical graph without requiring a migration of existing Explorer content.
+
+
+## Live AllMusic verification batch 001 — source discipline correction
+
+Direct web verification on 2026-09-24 confirms:
+- Karnivool — Genre: Pop/Rock; Styles: Alternative Metal, Progressive Metal, Alternative Pop/Rock, Heavy Metal. AllMusic artist id: mn0001422105.
+- Caligula's Horse — Genre: Pop/Rock; Styles: Progressive Metal, Heavy Metal. AllMusic artist id: mn0002880451.
+- Oceansize — Genre: Pop/Rock; Styles: Alternative/Indie Rock, Indie Rock, Post-Grunge, Post-Hardcore. AllMusic artist id: mn0000466655.
+- Earthside — Styles: Progressive Metal, Heavy Metal, Experimental Rock, Post-Rock, Art Rock. AllMusic artist id: mn0003670432.
+
+Important source rule discovered during the batch: AllMusic search/crawl output can occasionally omit the rendered Styles field for the same artist page (Oceansize produced both an empty-styles crawl and a populated crawl). A classification is promoted only when the concrete artist page result explicitly exposes the label set. Biography prose, search snippets and related-artist lists are not substitutes for the Styles field.
+
+Shared labels create canonical classification adjacency only after both endpoints have direct verification. For example, Karnivool and Caligula's Horse share Progressive Metal and Heavy Metal as directly exposed AllMusic styles. This is classification adjacency, not a claim of influence or collaboration.
+
+Batch records remain separate from personal Genre-DNA membership. An artist can be directly AllMusic-verified without thereby gaining a personal playlist membership.
