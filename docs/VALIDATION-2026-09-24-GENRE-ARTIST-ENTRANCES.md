@@ -265,3 +265,48 @@ Important source rule discovered during the batch: AllMusic search/crawl output 
 Shared labels create canonical classification adjacency only after both endpoints have direct verification. For example, Karnivool and Caligula's Horse share Progressive Metal and Heavy Metal as directly exposed AllMusic styles. This is classification adjacency, not a claim of influence or collaboration.
 
 Batch records remain separate from personal Genre-DNA membership. An artist can be directly AllMusic-verified without thereby gaining a personal playlist membership.
+
+
+## Permanent operating model — master as living Music DNA knowledge base
+
+This is a durable project rule, not a temporary AllMusic repair tactic.
+
+The definitive master is intended to evolve from a September 2026 baseline into the central provenance-aware knowledge base for Music DNA and DNA Explorer. Existing and future material follows the same lifecycle.
+
+### New-find lifecycle
+
+A new discovery enters through:
+
+`encounter → evaluation → admission/relevance → identity resolution → master record → AllMusic verification → Music-DNA provenance → Explorer availability → later enrichment`.
+
+Rules:
+- a passing reserve/encounter may be retained as encounter history without triggering full enrichment;
+- once an artist becomes materially relevant (for example RAAK, W-list inclusion, DNA-playlist inclusion, or another durable Music-DNA role), create/resolve its canonical master identity;
+- store stable identifiers where available, including Spotify identity and AllMusic artist identity;
+- retrieve and store the directly exposed AllMusic genre/main-structure/styles with source/provenance, verification date and verification status;
+- never infer personal Genre-DNA membership from AllMusic classification;
+- after direct verification, classification edges may immediately join the Explorer graph;
+- deeper people/producer/influence/place/tour/event/story relations are added later with their own evidence;
+- missing data remains unknown; conflicts remain explicit conflicts; neither is guessed away.
+
+### Four evidence states
+
+Facts in the living master must remain distinguishable as:
+1. **verified** — allowed to be presented as a sourced fact and to drive canonical graph edges;
+2. **derived** — useful for research/verification prioritization, but not presented as direct source evidence;
+3. **unknown** — intentionally unresolved; do not invent;
+4. **conflict** — sources disagree or versions are unresolved; retain the disagreement until researched.
+
+### Non-destructive history
+
+New verification does not silently erase old provenance. Where a source classification, release fact or relation changes, preserve enough provenance/history to know what was previously established, what is current, and when each state was checked.
+
+### Architecture consequence
+
+The master becomes the authoritative knowledge source; Registry/Explorer data increasingly becomes generated or projected output from that source rather than a second hand-maintained truth store.
+
+Permanent loop:
+
+`discover → evaluate → admit → verify → enrich → master → Explorer → discover`.
+
+The current 624-artist AllMusic programme is therefore a one-time catch-up migration of the existing collection into the same pipeline that future discoveries should enter automatically. Once that migration is sufficiently complete, new relevant finds should be enriched at intake instead of accumulating another future repair backlog.
