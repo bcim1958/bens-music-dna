@@ -378,3 +378,14 @@ Daaruit ontstaan drie soorten waarde:
 3. **horen** — invloed-playlists / `🧬 Hoor dit DNA`.
 
 Dit ontwerp is geaccepteerd als richting op 22 september 2026.
+
+
+## Tijd- en releaseprovenance
+
+De Relation Registry en Explorer mogen bronmetadata over releases niet gelijkstellen aan de historische identiteit van een muzikaal object. Voor muziekgerelateerde nodes en evidence geldt dezelfde systeeminvariant als voor Ontdek-DNA:
+
+> **Dateer het muzikale object, niet de verpakking waarin het is gevonden.**
+
+Maak waar relevant expliciet onderscheid tussen **werk/song**, **concrete opname/versie** en **release/verpakking**. Een remaster, heruitgave, compilatie, jubileumeditie of streamingrelease kan een latere bron-/releasedatum hebben zonder het oorspronkelijke releasejaar van de opname te veranderen. Een nieuwe live-opname, remake/rerecording of remix is daarentegen een eigen versie en kan terecht een later jaar dragen.
+
+Datumclaims die Explorer in verhalen, relaties of tijdlijnen gebruikt moeten herleidbaar blijven tot evidence. Bij betrouwbare bronconflicten wordt de datum niet stilzwijgend genormaliseerd; de status blijft **conflicterend** of **nog te onderzoeken** totdat de bedoelde versie voldoende is vastgesteld. Hiermee blijft ook historische volgorde in relatieverhalen reproduceerbaar.
