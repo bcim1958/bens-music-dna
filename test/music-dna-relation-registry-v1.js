@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.27",
+  version:"2026-09-24.28",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -1032,6 +1032,40 @@ function discoveryCandidates(baseId,opts){
     return {...d,selection:{score,kindPriority:kindPriority[d.kind]||0,sourceCount,relationCount,cluster}};
   }).sort((a,b)=>b.selection.score-a.selection.score||a.id.localeCompare(b.id));
 }
+function discoveryCounterpartId(d){return d&&d.counterpart||null;}
+function discoveryFamilyProfile(d){
+  const families=[];
+  (d.relations||[]).forEach(id=>{
+    const r=registry.relations.find(x=>x.id===id);
+    if(r&&r.family&&!families.includes(r.family))families.push(r.family);
+  });
+  return families;
+}
+function genericDiscoveryQueue(baseId,state,limit,opts){
+  opts=opts||{}; state=state||createDiscoveryState();
+  const ranked=discoveryCandidates(baseId).filter(d=>((state[d.id]||{}).status||d.status||"unread")==="unread");
+  const usedCounterparts=new Set(),usedPrimaryFamilies=new Set(),out=[],deferred=[];
+  for(const d of ranked){
+    const counterpart=discoveryCounterpartId(d); if(!counterpart||usedCounterparts.has(counterpart))continue;
+    const families=discoveryFamilyProfile(d),primary=families[0]||"other";
+    if(opts.spreadFamilies!==false&&usedPrimaryFamilies.has(primary)){deferred.push(d);continue;}
+    out.push({...d,selection:{...d.selection,families}});
+    usedCounterparts.add(counterpart);usedPrimaryFamilies.add(primary);
+    if(limit&&out.length>=limit)return out;
+  }
+  for(const d of deferred){
+    const counterpart=discoveryCounterpartId(d); if(usedCounterparts.has(counterpart))continue;
+    out.push({...d,selection:{...d.selection,families:discoveryFamilyProfile(d)}});
+    usedCounterparts.add(counterpart);
+    if(limit&&out.length>=limit)break;
+  }
+  return out;
+}
+function genericDiscoveryRegressionSelfTest(){
+  const state=createDiscoveryState(),ids=["ghost","voivod","shiraz_lane"];
+  const cases=ids.map(id=>{const q=genericDiscoveryQueue(id,state,6);const cp=q.map(discoveryCounterpartId);return {id,count:q.length,pass:cp.length===new Set(cp).size,counterparts:cp};});
+  return {pass:cases.every(x=>x.pass),cases,invariant:"fresh discoveries are selected generically, with one visible discovery per counterpart per queue and family spread where stock allows"};
+}
 function discoveryQueue(baseId,limit){
   const seenCounterparts=new Set();
   const out=[];
@@ -1130,5 +1164,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
