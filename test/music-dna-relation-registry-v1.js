@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.7",
+  version:"2026-09-24.8",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -48,6 +48,16 @@ const registry={
     sweden:{type:"place",name:"Zweden"}
   },
 
+  recordingSelectionPolicy:{
+    invariant:"prefer the artist's original recording; packaging is a fallback, not a substitute recording",
+    priority:[
+      "original recording on original Spotify release",
+      "same original recording on reissue/remaster/compilation only if original-release Spotify instance is unavailable"
+    ],
+    forbiddenFallbacks:["live-version","rerecording","remake","remix"],
+    intentionalVersionException:"later versions are allowed when that version itself is the intended discovery object",
+    displayRule:"fallback package metadata never overwrites the canonical identity or year of the underlying recording"
+  },
   temporalPolicy:{
     invariant:"date the musical object, not the packaging in which it was found",
     objectLevels:["work","recording-version","release-package"],
