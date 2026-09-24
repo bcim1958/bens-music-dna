@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.10",
+  version:"2026-09-24.11",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -64,6 +64,8 @@ const registry={
     richnessStates:["very-rich","rich","moderate","limited","sparse"],
     coverageStates:["unresearched","light","developing","well-researched","deep"],
     evidenceDimensions:["independent-sources","primary-sources","time-spread","relations","events-context","discography-credits","distinct-discovery-angles"],
+    researchPaths:["official-primary","interviews-primary","independent-editorial","discography-credits","relationships-network","live-tour-events","local-historical","archive-secondary"],
+    coverageRule:"coverage is earned from completed research paths and evidence quality; search-result scarcity alone cannot raise coverage",
     rules:[
       "richness is not quality, popularity, taste fit or web-hit volume",
       "copied or syndicated press material does not count as independent evidence",
@@ -633,10 +635,28 @@ function temporalRegressionSelfTest(){
   return {ok:results.every(x=>x.pass)&&semanticGuards.every(x=>x.pass),results,semanticGuards};
 }
 
+function researchPathStatus(id){
+  const e=entity(id); if(!e)return null;
+  const r=e.research||{}, paths=r.paths||{};
+  const expected=registry.researchCoveragePolicy.researchPaths;
+  const completed=expected.filter(x=>paths[x]&&paths[x].status==="completed");
+  const attempted=expected.filter(x=>paths[x]&&["completed","attempted"].includes(paths[x].status));
+  return {id,name:e.name,completed:completed.length,attempted:attempted.length,total:expected.length,paths};
+}
+function researchCoverageGate(id){
+  const s=researchPathStatus(id); if(!s)return null;
+  const primary=["official-primary","interviews-primary"].some(x=>s.paths[x]?.status==="completed");
+  const independent=["independent-editorial","local-historical","archive-secondary"].some(x=>s.paths[x]?.status==="completed");
+  const structural=["discography-credits","relationships-network","live-tour-events"].filter(x=>s.paths[x]?.status==="completed").length;
+  const well=s.completed>=4&&independent&&structural>=1;
+  const deep=s.completed>=6&&primary&&independent&&structural>=2;
+  return {...s,earnedCoverage:deep?"deep":well?"well-researched":s.completed>=2?"developing":s.attempted>=1?"light":"unresearched"};
+}
+
 function researchWorldStatus(id){
   const e=entity(id); if(!e)return null;
   const r=e.research||{};
-  const coverage=r.coverage||"unresearched";
+  const gate=researchCoverageGate(id); const coverage=gate?gate.earnedCoverage:(r.coverage||"unresearched");
   const sufficient=["well-researched","deep"].includes(coverage);
   return {id,name:e.name,coverage,richness:sufficient?(r.richness||"unknown"):"unknown",richnessClassifiable:sufficient,lastResearched:r.lastResearched||null};
 }
@@ -946,5 +966,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchWorldStatus,researchCatalogSummary,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
