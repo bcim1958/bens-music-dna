@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.30",
+  version:"2026-09-24.31",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -1181,6 +1181,35 @@ function playlistCandidates(id){
     .map(r=>({relationId:r.id,entityId:counterpartFor(id,r),name:(entity(counterpartFor(id,r))||{}).name||"",why:r.claim}))
     .filter(x=>{if(seen.has(x.entityId))return false;seen.add(x.entityId);return true;});
 }
+function explorerEntrypoints(context){
+  context=context||{};
+  const normalize=(type,ids,label)=>({type,label,items:(ids||[]).filter(id=>!!entity(id)).map(id=>({id,name:entity(id).name,type:entity(id).type}))});
+  return [
+    {type:"free",label:"Vrij kiezen",mode:"search",items:[]},
+    normalize("today",context.todayArtistIds,"Vandaag"),
+    normalize("week",context.weekArtistIds,"Deze week"),
+    normalize("w-list",context.latestWArtistIds,context.latestWLabel||"Recente W-lijst"),
+    normalize("genre",context.genreIds,"Genre")
+  ];
+}
+function explorerStartFromEntry(entry,itemId){
+  if(!entry||!["free","today","week","w-list","genre"].includes(entry.type))throw new Error("Unknown Explorer entry type");
+  if(entry.type!=="free"&&!(entry.items||[]).some(x=>x.id===itemId))throw new Error("Item not available in Explorer entry");
+  return createExplorerWalk(itemId,{type:entry.type,label:entry.label,id:itemId});
+}
+function explorerEntrypointRegressionSelfTest(){
+  const eps=explorerEntrypoints({todayArtistIds:["ghost","voivod"],weekArtistIds:["ghost","voivod","shiraz_lane"],latestWLabel:"W-test",latestWArtistIds:["voivod","ghost"],genreIds:[]});
+  const today=eps.find(x=>x.type==="today"),week=eps.find(x=>x.type==="week"),w=eps.find(x=>x.type==="w-list");
+  const walk=explorerStartFromEntry(w,"voivod"); explorerStep(walk,"rush");
+  const cases=[
+    {name:"five equal entry types exist",pass:eps.length===5},
+    {name:"today is data-driven",pass:today.items.length===2},
+    {name:"week is data-driven",pass:week.items.length===3},
+    {name:"W-list keeps its source label",pass:w.label==="W-test"},
+    {name:"entry does not constrain wandering",pass:walk.trail.join(">")==="voivod>rush"}
+  ];
+  return {pass:cases.every(x=>x.pass),cases,invariant:"entrypoints are adapters into one Explorer graph; they never create a second navigation system"};
+}
 function explorerNode(id){
   const e=entity(id); if(!e)return null;
   const links=relationshipBundles(id,{use:"explorer",confidence:"confirmed"}).map(b=>({
@@ -1229,5 +1258,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,quickFacts,quickFactBundles}};
 })();
