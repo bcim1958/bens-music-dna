@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.15",
+  version:"2026-09-24.16",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -719,6 +719,28 @@ function researchCatalogSummary(){
   return {artistWorlds:worlds.length,coverage,richness,classifiable:worlds.filter(w=>w.richnessClassifiable).length,worlds};
 }
 
+function researchCoverageRegressionSelfTest(){
+  const cases=[
+    {name:"unresearched-cannot-be-rich",paths:{},claimed:"very-rich",expectCoverage:"unresearched",expectClassifiable:false},
+    {name:"single-search-path-is-light",paths:{"independent-editorial":{status:"attempted"}},claimed:"sparse",expectCoverage:"light",expectClassifiable:false},
+    {name:"several-paths-without-independent-proof-stay-developing",paths:{"official-primary":{status:"completed"},"interviews-primary":{status:"completed"},"discography-credits":{status:"completed"},"relationships-network":{status:"completed"}},claimed:"rich",expectCoverage:"developing",expectClassifiable:false},
+    {name:"well-researched-needs-independent-plus-structure",paths:{"official-primary":{status:"completed"},"independent-editorial":{status:"completed"},"discography-credits":{status:"completed"},"live-tour-events":{status:"completed"}},claimed:"moderate",expectCoverage:"well-researched",expectClassifiable:true},
+    {name:"deep-needs-broad-primary-independent-structural-proof",paths:{"official-primary":{status:"completed"},"interviews-primary":{status:"completed"},"independent-editorial":{status:"completed"},"discography-credits":{status:"completed"},"relationships-network":{status:"completed"},"live-tour-events":{status:"completed"}},claimed:"very-rich",expectCoverage:"deep",expectClassifiable:true}
+  ];
+  function gate(paths){
+    const expected=registry.researchCoveragePolicy.researchPaths;
+    const completed=expected.filter(x=>paths[x]?.status==="completed"), attempted=expected.filter(x=>["completed","attempted"].includes(paths[x]?.status));
+    const primary=["official-primary","interviews-primary"].some(x=>paths[x]?.status==="completed");
+    const independent=["independent-editorial","local-historical","archive-secondary"].some(x=>paths[x]?.status==="completed");
+    const structural=["discography-credits","relationships-network","live-tour-events"].filter(x=>paths[x]?.status==="completed").length;
+    const well=completed.length>=4&&independent&&structural>=1, deep=completed.length>=6&&primary&&independent&&structural>=2;
+    const coverage=deep?"deep":well?"well-researched":completed.length>=2?"developing":attempted.length>=1?"light":"unresearched";
+    return {coverage,classifiable:["well-researched","deep"].includes(coverage)};
+  }
+  const results=cases.map(x=>{const got=gate(x.paths);return {...x,got,pass:got.coverage===x.expectCoverage&&got.classifiable===x.expectClassifiable}});
+  return {ok:results.every(x=>x.pass),invariant:"unknown is not sparse; richness requires earned research coverage",results};
+}
+
 function researchIntegrityReport(){
   const issues=[];
   Object.entries(registry.entities).forEach(([id,e])=>{
@@ -1016,5 +1038,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchOdometer,researchTank,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
