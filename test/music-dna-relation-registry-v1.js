@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.24",
+  version:"2026-09-24.25",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -1062,6 +1062,15 @@ function discoveryRotation(baseId,state,limit){
     read:Object.values(state).filter(x=>x.status==="read").length
   }};
 }
+function relationIdentityRegressionSelfTest(){
+  const byId=id=>registry.relations.find(r=>r.id===id);
+  const cases=[
+    {name:"direct person remains person",pass:counterpartFor("voivod",byId("rel-voivod-newsted-member"))==="jason_newsted"},
+    {name:"band influence remains band hub",pass:counterpartFor("voivod",byId("rel-voivod-rush-influence"))==="rush"},
+    {name:"event relation resolves canonical counterpart",pass:counterpartFor("ghost",byId("rel-ghost-maiden-live"))==="iron_maiden"}
+  ];
+  return {pass:cases.every(x=>x.pass),cases,invariant:registry.relationIdentityPolicy.invariant};
+}
 function aggregateInfluence(){
   const counts={},seen=new Set();
   registry.relations.filter(r=>r.family==="influence"&&r.confidence==="confirmed").forEach(r=>{
@@ -1090,5 +1099,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
