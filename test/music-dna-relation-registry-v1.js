@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.22",
+  version:"2026-09-24.23",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -21,10 +21,10 @@ const registry={
     ghost:{type:"artist",name:"Ghost",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"multi-source Registry proof",paths:{
 "official-primary":{status:"completed"},"interviews-primary":{status:"completed"},"independent-editorial":{status:"completed"},"discography-credits":{status:"completed"},"relationships-network":{status:"completed"},"live-tour-events":{status:"completed"},"archive-secondary":{status:"completed"}
 }},
-    jason_newsted:{type:"person",name:"Jason Newsted"},
+    jason_newsted:{type:"person",name:"Jason Newsted",context:{knownFor:["Metallica","Flotsam and Jetsam"],relationDisplayRule:"show as person for direct Voïvod relationship; band history is context"}},
     piggy:{type:"person",name:"Denis “Piggy” D’Amour"},
     chewy:{type:"person",name:"Daniel “Chewy” Mongrain"},
-    rush:{type:"artist",name:"Rush"},
+    rush:{type:"artist",name:"Rush",context:{relationCarrier:"Neil Peart",relationDisplayRule:"show Rush as influence hub; identify Neil Peart as the concrete drumming influence on Away"}},
     jonquiere:{type:"place",name:"Jonquière, Québec"},
     voivod:{type:"artist",name:"Voïvod",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"broad multi-decade primary and independent evidence across origin, influences, concept/art, discography, personnel, live history and creative network",paths:{
 "official-primary":{status:"completed","note":"official bio, discography and current archive"},
@@ -74,6 +74,16 @@ const registry={
     forbiddenFallbacks:["live-version","rerecording","remake","remix"],
     intentionalVersionException:"later versions are allowed when that version itself is the intended discovery object",
     displayRule:"fallback package metadata never overwrites the canonical identity or year of the underlying recording"
+  },
+  relationIdentityPolicy:{
+    invariant:"attach a relation to the entity that actually carries the evidenced relationship; do not replace a person by their most famous band",
+    rules:[
+      "direct person-to-artist relationships remain person entities even when the person is famous for another band",
+      "a band may be the visible hub when the evidenced musical influence belongs to that band and a member is the concrete carrier of the influence",
+      "former or current band membership is contextual metadata unless that band itself participates in the evidenced relationship",
+      "example: Voivod ↔ Jason Newsted is a direct person relationship; Metallica is context",
+      "example: Voivod/Away → Rush is the influence relationship; Neil Peart is the concrete person through whom that Rush influence is expressed"
+    ]
   },
   researchCoveragePolicy:{
     invariant:"unknown is not sparse; richness may only be classified when research coverage is sufficient",
