@@ -226,3 +226,27 @@ No existing relation is overwritten by this pipeline. A failed or changed AllMus
 ### Practical conclusion
 
 The master can supply most of the repetitive structural work. For the 674 artists already represented in the mapped Genre-DNA worlds, 625 already have some classification state and 624 have a concrete taxonomy-derived label set ready to verify. Deep Registry research can therefore be reserved for stories, people, places, events, influences and collaborations rather than basic musical classification.
+
+
+## Verification queue — ordering principle
+
+The 624 taxonomy-derived artists in the mapped personal Genre-DNA worlds form the next AllMusic verification queue. Queue order must maximize graph unlock, not artist fame or editorial preference.
+
+Priority score is derived only from master facts:
+1. number of distinct taxonomy-derived labels already attached to the artist;
+2. rarity/connectivity value of those labels inside the 624-artist queue (prefer labels that can bridge otherwise separate clusters, while retaining common-label hubs);
+3. number of personal Genre-DNA worlds in which the artist has explicit membership;
+4. unresolved identity/provenance is a blocker, never a reason to guess.
+
+A queue item is promoted only after direct AllMusic profile verification. Verification may confirm, remove or add labels; the master-derived candidate set is a research aid, not the answer.
+
+### Non-destructive promotion contract
+
+Promotion creates or updates only generated classification records. It does not:
+- change Spotify/Genre-DNA membership;
+- rewrite existing Registry relations;
+- change weekly candidates or W39/W40 state;
+- change Ben's personal taxonomy;
+- convert an AllMusic style into a personal Genre-DNA membership.
+
+This permits the verification programme to run independently and incrementally. Every promoted artist increases the canonical graph without requiring a migration of existing Explorer content.
