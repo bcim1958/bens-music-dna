@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.23",
+  version:"2026-09-24.24",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -21,6 +21,9 @@ const registry={
     ghost:{type:"artist",name:"Ghost",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"multi-source Registry proof",paths:{
 "official-primary":{status:"completed"},"interviews-primary":{status:"completed"},"independent-editorial":{status:"completed"},"discography-credits":{status:"completed"},"relationships-network":{status:"completed"},"live-tour-events":{status:"completed"},"archive-secondary":{status:"completed"}
 }},
+    metal_hurlant:{type:"publication",name:"Métal Hurlant"},
+    motorhead:{type:"artist",name:"Motörhead"},
+    hardcore_punk:{type:"genre",name:"Hardcore punk"},
     jason_newsted:{type:"person",name:"Jason Newsted",context:{knownFor:["Metallica","Flotsam and Jetsam"],relationDisplayRule:"show as person for direct Voïvod relationship; band history is context"}},
     piggy:{type:"person",name:"Denis “Piggy” D’Amour"},
     chewy:{type:"person",name:"Daniel “Chewy” Mongrain"},
@@ -352,6 +355,11 @@ const registry={
       ],
       "status": "unread"
     },
+    {id:"disc-voivod-rush-circle",base:"voivod",counterpart:"rush",kind:"story-angle",title:"Van Neil Peart ontcijferen naar samen op tour",summary:"Away probeerde als jonge drummer Pearts partijen te doorgronden; in 1990 keek hij tijdens de gezamenlijke Rush-tour opnieuw vanaf de zijkant van het podium.",relations:["rel-voivod-rush-influence"],evidence:["voivod_rush_kerrang"],status:"unread"},
+    {id:"disc-voivod-jonquiere-machine-world",base:"voivod",counterpart:"jonquiere",kind:"story-angle",title:"De fabriek werd onderdeel van de sciencefiction",summary:"De industriële omgeving van Jonquière liep via Away's verbeelding de dystopische Voïvod-wereld binnen.",relations:["rel-voivod-jonquiere-industrial"],evidence:["voivod_rollingstone_1990"],status:"unread"},
+    {id:"disc-voivod-piggy-chewy-bridge",base:"voivod",counterpart:"chewy",kind:"story-angle",title:"Verdergaan zonder Piggy te kopiëren",summary:"Chewy kwam via een Piggy-tribute in beeld; de latere uitdaging was Voïvod voortzetten met een eigen chemie in plaats van imitatie.",relations:["rel-voivod-chewy-continuation"],evidence:["voivod_chewy_2013"],status:"unread"},
+    {id:"disc-voivod-metal-hurlant",base:"voivod",counterpart:"metal_hurlant",kind:"story-angle",title:"Een bandwereld die ook getekend werd",summary:"Voïvods sciencefiction was niet alleen songtekst: Away bouwde een doorlopende visuele wereld waarin Europese SF-stripcultuur en Métal Hurlant mee resoneren.",relations:["rel-voivod-metal-hurlant-world"],evidence:["voivod_rollingstone_1990"],status:"unread"},
+    {id:"disc-voivod-roots-collision",base:"voivod",counterpart:"motorhead",kind:"story-angle",title:"Niet één stamboom maar een botsing",summary:"De vroege Voïvod-taal ontstond uit harde metalwortels én hardcore/punk; juist de botsing helpt verklaren waarom de band niet netjes in één genrelijn past.",relations:["rel-voivod-motorhead-root","rel-voivod-hardcore-root"],evidence:["voivod_metalmania_1986","voivod_rollingstone_1990"],status:"unread"},
     {
       id:"disc-ghost-voivod-identity",
       base:"ghost",counterpart:"voivod",kind:"new-fact",
@@ -474,6 +482,9 @@ const registry={
       ],
       "checkedAt": "2026-09-23"
     },
+    {id:"rel-voivod-metal-hurlant-world",from:"voivod",to:"metal_hurlant",family:"visual-concept",type:"formative-visual-influence",direction:"out",claim:"Away verbindt de vroege Voïvod-beeldtaal en sciencefictionwereld aan Europese sciencefictionstrips en Métal Hurlant.",evidence:["voivod_rollingstone_1990"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
+    {id:"rel-voivod-motorhead-root",from:"voivod",to:"motorhead",family:"influence",type:"early-musical-root",direction:"out",claim:"Vroege Voïvod-bronnen plaatsen Motörhead tussen de harde muzikale wortels waaruit de band zijn eigen taal begon te bouwen.",evidence:["voivod_metalmania_1986"],confidence:"confirmed",uses:["explorer","wat-hoor-ik","express"]},
+    {id:"rel-voivod-hardcore-root",from:"voivod",to:"hardcore_punk",family:"influence",type:"scene-musical-root",direction:"out",claim:"De vroege Voïvod-taal nam naast metal ook snelheid en houding uit hardcore/punk op.",evidence:["voivod_metalmania_1986","voivod_rollingstone_1990"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
     {id:"rel-voivod-rush-influence",from:"voivod",to:"rush",family:"influence",type:"formative-musical-influence",direction:"out",claim:"Away noemt Neil Peart en Rush als vormende invloed; Voïvod toerde in 1990 met Rush.",evidence:["voivod_rush_kerrang"],confidence:"confirmed",uses:["explorer","wat-hoor-ik","express"]},
     {id:"rel-voivod-newsted-member",from:"voivod",to:"jason_newsted",family:"personnel",type:"band-member-collaboration",direction:"out",claim:"Jason Newsted werkte al met Piggy en Away in Tarrat en sloot zich in 2002 fulltime bij Voïvod aan.",evidence:["voivod_newsted_2003"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
     {id:"rel-voivod-piggy-core",from:"voivod",to:"piggy",family:"personnel",type:"founding-creative-core",direction:"out",claim:"Piggy was medeoprichter en centrale muzikale schrijver van Voïvod tot zijn overlijden in 2005.",evidence:["voivod_metalmania_1986","voivod_newsted_2003"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
