@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.37",
+  version:"2026-09-24.38",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -1203,7 +1203,7 @@ function explorerResearchDemandFromWeek(weekKey,day){
   const pool=window[week.candidateGlobal]||{},tracks=pool.tracks||pool;
   const readSel=d=>{try{return JSON.parse(localStorage.getItem("bmd-week-"+weekKey+"-day"+d+"-selection-v1")||"null");}catch(e){return null;}};
   const ids=[]; for(let d=1;d<=Math.max(1,Math.min(7,Number(day)||7));d++){const s=readSel(d);if(s&&Array.isArray(s.ids))ids.push(...s.ids);}
-  const names=ids.map(id=>tracks[id]?.identity?.artist).filter(Boolean);
+  const names=ids.map(id=>tracks[id]&&tracks[id].identity&&tracks[id].identity.artist).filter(Boolean);
   return Object.assign({weekKey,ready:true},explorerResearchDemandFromNames(names,{source:"week-selection",weekKey,throughDay:day}));
 }
 function explorerResearchQueue(demand){
@@ -1232,17 +1232,17 @@ function explorerWeekContext(weekKey,day){
   const pool=window[week.candidateGlobal]||{};
   const tracks=pool.tracks||pool;
   const selection=(d)=>{try{return JSON.parse(localStorage.getItem("bmd-week-"+weekKey+"-day"+d+"-selection-v1")||"null");}catch(e){return null;}};
-  const idsToArtists=(ids)=>(ids||[]).map(id=>tracks[id]?.identity?.artist).map(explorerArtistIdByName).filter(Boolean);
+  const idsToArtists=(ids)=>(ids||[]).map(id=>tracks[id]&&tracks[id].identity&&tracks[id].identity.artist).map(explorerArtistIdByName).filter(Boolean);
   const today=idsToArtists((selection(day)||{}).ids);
   const through=[]; for(let d=1;d<=7;d++){const s=selection(d);if(s&&Array.isArray(s.ids))through.push(...idsToArtists(s.ids));}
-  const all=Object.values(tracks).map(t=>explorerArtistIdByName(t?.identity?.artist)).filter(Boolean);
+  const all=Object.values(tracks).map(t=>explorerArtistIdByName(t&&t.identity&&t.identity.artist)).filter(Boolean);
   const unique=a=>[...new Set(a)];
   return {weekKey,ready:true,label:week.display,todayArtistIds:unique(today),weekArtistIds:unique(through),latestWArtistIds:unique(all),
     unresolved:{today:((selection(day)||{}).ids||[]).length-unique(today).length,week:through.length-unique(through).length,full:Object.values(tracks).length-unique(all).length}};
 }
 function explorerGenreNodes(){
   return Object.entries(registry.entities).filter(([,e])=>e.type==="genre").map(([id,e])=>{
-    const node=explorerNode(id);return {id,name:e.name,type:e.type,artistCount:(node?.links||[]).filter(x=>x.type==="artist").length,linkCount:(node?.links||[]).length};
+    const node=explorerNode(id);return {id,name:e.name,type:e.type,artistCount:((node&&node.links)||[]).filter(x=>x.type==="artist").length,linkCount:((node&&node.links)||[]).length};
   }).filter(x=>x.linkCount>0).sort((a,b)=>a.name.localeCompare(b.name));
 }
 function explorerEntrypoints(context){
