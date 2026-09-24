@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.2",
+  version:"2026-09-24.3",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -39,7 +39,7 @@ const registry={
     ghost_enter_sandman_2018_live:{type:"performance",name:"Enter Sandman — Ghost Polar Music Prize performance",work:"enter_sandman",artist:"ghost",temporal:{canonicalEventYear:2018,versionType:"tribute-live-performance",dateStatus:"confirmed"}},
     ghost_enter_sandman_blacklist:{type:"recording",name:"Enter Sandman — Ghost studio cover",work:"enter_sandman",artist:"ghost",temporal:{versionType:"studio-cover",dateStatus:"needs-research",note:"Keep release/package chronology separate until source-backed canonical release date is attached."}},
     phantom_of_the_opera:{type:"work",name:"Phantom of the Opera",temporal:{dateStatus:"needs-research"}},
-    ghost_phantom_of_the_opera_2023:{type:"recording",name:"Phantom of the Opera — Ghost cover",work:"phantom_of_the_opera",artist:"ghost",temporal:{canonicalReleaseYear:2023,versionType:"studio-cover",dateStatus:"confirmed",releasePackage:"Phantomime"}}
+    ghost_phantom_of_the_opera_2023:{type:"recording",name:"Phantom of the Opera — Ghost cover",work:"phantom_of_the_opera",artist:"ghost",temporal:{canonicalReleaseYear:2023,versionType:"studio-cover",dateStatus:"confirmed",releasePackage:"Phantomime"}},
     rats:{type:"track",name:"Rats",temporal:{canonicalReleaseYear:2018,objectType:"recording",versionType:"original-studio-recording",dateStatus:"confirmed"}},
     moscow_1989:{type:"event",name:"Moscow Music Peace Festival 1989"},
     sweden:{type:"place",name:"Zweden"}
@@ -570,6 +570,7 @@ function temporalIntegrityReport(){
   Object.entries(registry.entities).forEach(([id,e])=>{
     if((["track","work","recording","performance","album"].includes(e.type))&&!e.temporal) issues.push({severity:"needs-research",entity:id,issue:"missing-temporal-provenance"});
     if(e.temporal&&e.temporal.versionDateStatus==="needs-version-resolution") issues.push({severity:"needs-research",entity:id,issue:"version-date-unresolved"});
+    if(e.temporal&&e.temporal.dateStatus==="needs-research") issues.push({severity:"needs-research",entity:id,issue:"canonical-date-needs-research"});
   });
   registry.relations.filter(r=>r.family==="recording").forEach(r=>{
     const target=registry.entities[r.to];
@@ -580,6 +581,17 @@ function temporalIntegrityReport(){
 }
 
 function entity(id){return registry.entities[id]||null}
+function temporalContext(id){
+  const e=entity(id); if(!e)return null;
+  const t=e.temporal||null;
+  const work=e.work?entity(e.work):null;
+  const artist=e.artist?entity(e.artist):null;
+  return {id,type:e.type,name:e.name,artist:artist?{id:e.artist,name:artist.name}:null,work:work?{id:e.work,name:work.name,temporal:work.temporal||null}:null,temporal:t};
+}
+function versionFamily(workId){
+  return Object.entries(registry.entities).filter(([id,e])=>id===workId||e.work===workId).map(([id])=>temporalContext(id));
+}
+
 function relationsFor(id,opts){
   opts=opts||{};
   return registry.relations.filter(r=>{
@@ -854,5 +866,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
