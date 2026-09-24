@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.4",
+  version:"2026-09-24.5",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -37,11 +37,14 @@ const registry={
     enter_sandman:{type:"work",name:"Enter Sandman",temporal:{workOriginalReleaseYear:1991,dateStatus:"confirmed"}},
     metallica_enter_sandman_1991:{type:"recording",name:"Enter Sandman — Metallica original studio recording",work:"enter_sandman",artist:"metallica",temporal:{canonicalReleaseYear:1991,versionType:"original-studio-recording",dateStatus:"confirmed"}},
     ghost_enter_sandman_2018_live:{type:"performance",name:"Enter Sandman — Ghost Polar Music Prize performance",work:"enter_sandman",artist:"ghost",temporal:{canonicalEventYear:2018,versionType:"tribute-live-performance",dateStatus:"confirmed"}},
-    ghost_enter_sandman_blacklist:{type:"recording",name:"Enter Sandman — Ghost studio cover",work:"enter_sandman",artist:"ghost",temporal:{versionType:"studio-cover",dateStatus:"needs-research",note:"Release year intentionally unresolved in this registry until source-backed canonical release evidence is attached; do not inherit source publication/package dates."}},
+    ghost_enter_sandman_blacklist:{type:"recording",name:"Enter Sandman — Ghost studio cover",work:"enter_sandman",artist:"ghost",temporal:{canonicalReleaseYear:2021,releaseDate:"2021-09-10",versionType:"studio-cover",dateStatus:"confirmed",releasePackage:"The Metallica Blacklist",note:"Canonical date belongs to Ghost recording; later physical packaging does not overwrite it."}},
     phantom_of_the_opera:{type:"work",name:"Phantom of the Opera",temporal:{workOriginalReleaseYear:1980,dateStatus:"confirmed",originalArtist:"iron_maiden",originalRelease:"Iron Maiden"}},
     ghost_phantom_of_the_opera_2023:{type:"recording",name:"Phantom of the Opera — Ghost cover",work:"phantom_of_the_opera",artist:"ghost",temporal:{canonicalReleaseYear:2023,versionType:"studio-cover",dateStatus:"confirmed",releasePackage:"Phantomime",releaseDate:"2023-05-19"}},
     rats:{type:"track",name:"Rats",temporal:{canonicalReleaseYear:2018,objectType:"recording",versionType:"original-studio-recording",dateStatus:"confirmed"}},
     moscow_1989:{type:"event",name:"Moscow Music Peace Festival 1989",temporal:{canonicalEventYear:1989,dateStatus:"confirmed"}},
+    ghost_maiden_na_2017:{type:"event",name:"Ghost supporting Iron Maiden — North America",temporal:{canonicalEventYear:2017,eventType:"tour-support",dateStatus:"confirmed"}},
+    ghost_metallica_europe_2019:{type:"event",name:"Ghost supporting Metallica — Europe",temporal:{canonicalEventYear:2019,eventType:"tour-support",dateStatus:"confirmed"}},
+    impera_recording_sessions:{type:"event",name:"Impera recording collaboration — Fredrik Åkesson",temporal:{eventType:"recording-session",dateStatus:"confirmed",relatedReleaseYear:2022,note:"Do not substitute the 2022 interview/publication date for the recording-session chronology."}},
     sweden:{type:"place",name:"Zweden"}
   },
 
@@ -444,7 +447,7 @@ const registry={
       uses:["explorer","wat-hoor-ik","express","playlist"]
     },
     {
-      id:"rel-ghost-maiden-live",from:"ghost",to:"iron_maiden",
+      id:"rel-ghost-maiden-live",from:"ghost",to:"ghost_maiden_na_2017",counterpart:"iron_maiden",
       family:"live",type:"support-act",direction:"out",
       claim:"Ghost trok in 2017 door Noord-Amerika als support van Iron Maiden.",
       evidence:["slug_forge_2019"],confidence:"confirmed",
@@ -472,7 +475,7 @@ const registry={
       uses:["explorer","wat-hoor-ik"]
     },
     {
-      id:"rel-ghost-metallica-live",from:"ghost",to:"metallica",
+      id:"rel-ghost-metallica-live",from:"ghost",to:"ghost_metallica_europe_2019",counterpart:"metallica",
       family:"live",type:"support-act",direction:"out",
       claim:"Ghost ging in 2019 mee als support op Metallica's Europese stadiontour.",
       evidence:["slug_forge_2019"],confidence:"confirmed",
