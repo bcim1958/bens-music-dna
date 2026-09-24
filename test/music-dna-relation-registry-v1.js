@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.28",
+  version:"2026-09-24.29",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -874,6 +874,34 @@ function relationshipBundles(id,opts){
     return an.localeCompare(bn);
   });
 }
+function narrativeMaterial(baseId,counterpartId,opts){
+  opts=opts||{use:"explorer",confidence:"confirmed"};
+  const bundle=relationshipBundles(baseId,opts).find(b=>b.entityId===counterpartId)||null;
+  if(!bundle)return null;
+  const discoveries=(registry.discoveries||[]).filter(d=>d.base===baseId&&d.counterpart===counterpartId);
+  const relationIds=bundle.relations.map(r=>r.id),sourceIds=bundle.evidence.map(s=>s.id);
+  const angles=[...new Set(discoveries.map(d=>d.kind))];
+  const strength=(relationIds.length>=3||sourceIds.length>=3||discoveries.length>=2)?"rich":
+    (relationIds.length>=2||sourceIds.length>=2||discoveries.length>=1)?"compound":"atomic";
+  return {baseId,counterpartId,entity:bundle.entity,strength,families:bundle.families,
+    relations:bundle.relations,claims:bundle.claims,evidence:bundle.evidence,discoveries,angles,
+    trace:{relationIds,sourceIds,discoveryIds:discoveries.map(d=>d.id)}};
+}
+function narrativeCandidates(baseId){
+  return relationshipBundles(baseId,{use:"explorer",confidence:"confirmed"}).map(b=>narrativeMaterial(baseId,b.entityId))
+    .filter(Boolean).sort((a,b)=>({rich:3,compound:2,atomic:1}[b.strength]-({rich:3,compound:2,atomic:1}[a.strength])||
+      b.relations.length-a.relations.length||((a.entity||{}).name||"").localeCompare((b.entity||{}).name||""));
+}
+function narrativeMaterialRegressionSelfTest(){
+  const ghostMaiden=narrativeMaterial("ghost","iron_maiden");
+  const voivodNewsted=narrativeMaterial("voivod","jason_newsted");
+  const cases=[
+    {name:"multi-fact relation becomes one narrative packet",pass:!!ghostMaiden&&ghostMaiden.relations.length>1&&ghostMaiden.strength!=="atomic"},
+    {name:"single-counterpart packet preserves direct person identity",pass:!!voivodNewsted&&voivodNewsted.entity?.type==="person"},
+    {name:"trace retains all packet relations and sources",pass:!!ghostMaiden&&ghostMaiden.trace.relationIds.length===ghostMaiden.relations.length&&ghostMaiden.trace.sourceIds.length===ghostMaiden.evidence.length}
+  ];
+  return {pass:cases.every(x=>x.pass),cases,invariant:"narrative composition groups facts by real counterpart without deleting atomic relations, evidence or discovery provenance"};
+}
 function storyFor(baseId,counterpartId){
   return Object.values(registry.stories||{}).find(s=>s.base===baseId&&s.counterpart===counterpartId)||null;
 }
@@ -1164,5 +1192,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
