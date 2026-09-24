@@ -219,3 +219,16 @@ Wanneer betrouwbare bronnen verschillende jaren noemen, kiest Music DNA niet sti
 > **Music DNA dateert het muzikale object, niet de digitale verpakking waarin het toevallig is gevonden.**
 
 Deze invariant is gemeenschappelijk voor Ontdek-DNA en DNA Explorer. Week-specifieke controles zijn aanvullende delivery gates, geen vervanging voor deze centrale tijdlaag.
+
+## 11. Spotify-selectieregel — originele opname eerst (24 september 2026)
+
+Ben heeft de versievoorkeur aangescherpt tot een harde Music-DNA-regel. De standaard is niet simpelweg “de versie die beschikbaar is”, maar **de oorspronkelijke opname van de betreffende artiest**.
+
+Selectievolgorde:
+1. Is de oorspronkelijke opname op Spotify beschikbaar via de oorspronkelijke release, dan wordt die Spotify-instance gebruikt.
+2. Is die oorspronkelijke release-instance niet beschikbaar, maar exact dezelfde oorspronkelijke opname wel via een heruitgave, remaster of compilatie, dan mag die instance als technische fallback worden gebruikt.
+3. De fallback-verpakking verandert nooit de canonieke identiteit of het oorspronkelijke jaar van de opname.
+4. Een liveversie, remake, rerecording of remix is een andere muzikale versie en mag niet stilzwijgend de ontbrekende oorspronkelijke opname vervangen.
+5. Zo’n latere versie mag wel worden gekozen wanneer juist die versie bewust het ontdekkingsobject is; dan krijgt zij haar eigen versie-identiteit en datum.
+
+Dit is een gedeelde selectie-invariant voor Ontdek-DNA en de centrale bron-/provenancelaag. W40 bevat vanaf nu dezelfde policy als delivery gate. De nog uit te voeren W40-audit moet daarom twee vragen beantwoorden: **(a) hebben we de oorspronkelijke opname gekozen? (b) hebben we, indien mogelijk, ook de oorspronkelijke Spotify-release-instance gekozen?** Alleen daarna volgen jaar- en verpakkingscontrole.
