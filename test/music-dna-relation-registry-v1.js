@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.20",
+  version:"2026-09-24.21",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -21,7 +21,16 @@ const registry={
     ghost:{type:"artist",name:"Ghost",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"multi-source Registry proof",paths:{
 "official-primary":{status:"completed"},"interviews-primary":{status:"completed"},"independent-editorial":{status:"completed"},"discography-credits":{status:"completed"},"relationships-network":{status:"completed"},"live-tour-events":{status:"completed"},"archive-secondary":{status:"completed"}
 }},
-    voivod:{type:"artist",name:"Voïvod",research:{coverage:"light",richness:"unknown",lastResearched:"2026-09-24",basis:"existing sourced relation/discovery proof; dedicated world research not yet completed",paths:{"relationships-network":{status:"completed","note":"existing Registry relation evidence"},"independent-editorial":{status:"attempted","note":"initial source layer exists; dedicated breadth pass still required"}}}},
+    voivod:{type:"artist",name:"Voïvod",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"broad multi-decade primary and independent evidence across origin, influences, concept/art, discography, personnel, live history and creative network",paths:{
+"official-primary":{status:"completed","note":"official bio, discography and current archive"},
+"interviews-primary":{status:"completed","note":"Away/Snake/Chewy interviews spanning 1986-2026"},
+"independent-editorial":{status:"completed","note":"Rolling Stone, Sounds, Creem, Kerrang, Louder and other editorial coverage"},
+"discography-credits":{status:"completed","note":"multi-era album and recording history established"},
+"relationships-network":{status:"completed","note":"Rush, Celtic Frost, Coroner, Jason Newsted, Ozzy/Ozzfest, producers and influence network"},
+"live-tour-events":{status:"completed","note":"multi-decade touring plus 2025 Quebec Symphony event"},
+"local-historical":{status:"completed","note":"Jonquiere/Quebec origin and local industrial-cultural context"},
+"archive-secondary":{status:"completed","note":"official historical press archive preserves contemporary interviews"}
+}}}},
     abba:{type:"artist",name:"ABBA"},
     black_sabbath:{type:"artist",name:"Black Sabbath"},
     blue_oyster_cult:{type:"artist",name:"Blue Öyster Cult"},
