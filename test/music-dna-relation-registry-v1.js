@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.32",
+  version:"2026-09-24.33",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -1185,6 +1185,25 @@ function playlistCandidates(id){
     .map(r=>({relationId:r.id,entityId:counterpartFor(id,r),name:(entity(counterpartFor(id,r))||{}).name||"",why:r.claim}))
     .filter(x=>{if(seen.has(x.entityId))return false;seen.add(x.entityId);return true;});
 }
+function explorerArtistIdByName(name){
+  const n=String(name||"").trim().toLocaleLowerCase();
+  const hit=Object.entries(registry.entities).find(([,e])=>e.type==="artist"&&String(e.name||"").trim().toLocaleLowerCase()===n);
+  return hit?hit[0]:null;
+}
+function explorerWeekContext(weekKey,day){
+  const week=window.MUSIC_DNA_WEEKS&&MUSIC_DNA_WEEKS.get?MUSIC_DNA_WEEKS.get(weekKey):null;
+  if(!week)return {weekKey,ready:false,reason:"week-unavailable",todayArtistIds:[],weekArtistIds:[],latestWArtistIds:[]};
+  const pool=window[week.candidateGlobal]||{};
+  const tracks=pool.tracks||pool;
+  const selection=(d)=>{try{return JSON.parse(localStorage.getItem("bmd-week-"+weekKey+"-day"+d+"-selection-v1")||"null");}catch(e){return null;}};
+  const idsToArtists=(ids)=>(ids||[]).map(id=>tracks[id]?.identity?.artist).map(explorerArtistIdByName).filter(Boolean);
+  const today=idsToArtists((selection(day)||{}).ids);
+  const through=[]; for(let d=1;d<=7;d++){const s=selection(d);if(s&&Array.isArray(s.ids))through.push(...idsToArtists(s.ids));}
+  const all=Object.values(tracks).map(t=>explorerArtistIdByName(t?.identity?.artist)).filter(Boolean);
+  const unique=a=>[...new Set(a)];
+  return {weekKey,ready:true,label:week.display,todayArtistIds:unique(today),weekArtistIds:unique(through),latestWArtistIds:unique(all),
+    unresolved:{today:((selection(day)||{}).ids||[]).length-unique(today).length,week:through.length-unique(through).length,full:Object.values(tracks).length-unique(all).length}};
+}
 function explorerGenreNodes(){
   return Object.entries(registry.entities).filter(([,e])=>e.type==="genre").map(([id,e])=>{
     const node=explorerNode(id);return {id,name:e.name,type:e.type,artistCount:(node?.links||[]).filter(x=>x.type==="artist").length,linkCount:(node?.links||[]).length};
@@ -1267,5 +1286,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerGenreNodes,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,quickFacts,quickFactBundles}};
 })();
