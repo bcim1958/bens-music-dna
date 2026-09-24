@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.39",
+  version:"2026-09-24.40",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -1317,6 +1317,18 @@ function explorerNode(id){
     id:b.entityId,name:(b.entity||{}).name||b.entityId,type:(b.entity||{}).type||"unknown",
     families:b.families,relationCount:b.relations.length,narrative:narrativeMaterial(id,b.entityId)
   }));
+  // A contextual counterpart (e.g. Ozzy via Ozzfest) is already an Explorer
+  // destination. Expose the same evidenced relation when entering that end.
+  const incoming=registry.relations.filter(r=>r.counterpart===id&&r.from!==id&&r.to!==id&&r.confidence==="confirmed"&&(r.uses||[]).includes("explorer"));
+  for(const from of [...new Set(incoming.map(r=>r.from))]){
+    const other=entity(from);if(!other)continue;
+    const relations=incoming.filter(r=>r.from===from);
+    const existing=links.find(x=>x.id===from);
+    if(existing){
+      existing.relationCount+=relations.length;
+      existing.families=[...new Set(existing.families.concat(relations.map(r=>r.family)))];
+    }else links.push({id:from,name:other.name,type:other.type,families:[...new Set(relations.map(r=>r.family))],relationCount:relations.length,narrative:narrativeMaterial(from,id)});
+  }
   return {id,name:e.name,type:e.type,research:e.research||null,links};
 }
 function createExplorerWalk(startId,entry){

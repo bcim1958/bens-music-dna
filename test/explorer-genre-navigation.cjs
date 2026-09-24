@@ -38,8 +38,9 @@ for (const group of registry.genreDnaTaxonomy.groups) {
     count++;
     assert.equal(run('path.at(-1).kind'), 'genreworld');
     assert.equal(run('path.at(-1).label'), world);
-    assert.match(elements.view.innerHTML, /nog geen artiesten/);
-    assert.equal(buttons().length, 0, 'No invented graph links');
+    const mapping = run('window.musicDnaGenreArtists(RR,window.MUSIC_DNA_GENRE_MEMBERSHIPS_V1,path.at(-1).groupId,path.at(-1).id)');
+    assert.equal(buttons().length, mapping.artists.length);
+    if (!mapping.artists.length) assert.match(elements.view.innerHTML, /nog geen artiesten/);
     assert.ok(decode(elements.crumbs.innerHTML).includes(world.replace(/&/g, '&')));
     run('back()');
     assert.equal(run('path.at(-1).label'), group.name);
@@ -48,6 +49,41 @@ for (const group of registry.genreDnaTaxonomy.groups) {
   assert.equal(buttons().length, 11);
 }
 assert.equal(count, 42);
+// Real source-backed entrance reuses the existing Registry renderer and graph.
+click('Classic Heavy Metal →');
+click('NWOBHM DNA →');
+assert.deepEqual(buttons().map(b => b.text), ['Ozzy Osbourne →']);
+click('Ozzy Osbourne →');
+assert.equal(run('path.at(-1).kind'), 'explorerworld');
+const viaGenre = elements.view.innerHTML;
+assert.ok(buttons().length > 0, 'Real artist must expose existing graph relations');
+click('Voïvod →');
+click('Rush →');
+run('back()');
+assert.equal(run('path.at(-1).kind'), 'explorerworld');
+run('back()');
+assert.equal(elements.view.innerHTML, viaGenre);
+assert.deepEqual(buttons('crumbs').map(b => b.text.replace(/^› /, '')), ['Explorer', 'Genre', 'Classic Heavy Metal', 'NWOBHM DNA', 'Ozzy Osbourne']);
+run('back()');
+assert.equal(run('path.at(-1).label'), 'NWOBHM DNA');
+run('openExplorerWorld("ozzy_osbourne")');
+assert.equal(elements.view.innerHTML, viaGenre, 'Same artist graph regardless of entrance');
+run(buttons('crumbs')[1].action);
+assert.equal(buttons().length, 11);
+// Ambiguous identities and duplicate source rows cannot invent extra doors.
+run('RR.entities.ozzy_duplicate = {type:"artist",name:"Ozzy Osbourne"}');
+assert.equal(run('window.musicDnaGenreArtists(RR,window.MUSIC_DNA_GENRE_MEMBERSHIPS_V1,"classic_heavy_metal","classic_heavy_metal__0").artists.length'), 0);
+run('delete RR.entities.ozzy_duplicate');
+const memberSnapshot = run('JSON.stringify(window.MUSIC_DNA_GENRE_MEMBERSHIPS_V1)');
+run('window.MUSIC_DNA_GENRE_MEMBERSHIPS_V1.memberships["NWOBHM DNA"].push(...window.MUSIC_DNA_GENRE_MEMBERSHIPS_V1.memberships["NWOBHM DNA"].filter(x=>x.artist==="Ozzy Osbourne"))');
+assert.equal(run('window.musicDnaGenreArtists(RR,window.MUSIC_DNA_GENRE_MEMBERSHIPS_V1,"classic_heavy_metal","classic_heavy_metal__0").artists.length'), 1);
+run('window.MUSIC_DNA_GENRE_MEMBERSHIPS_V1 = ' + memberSnapshot);
+// Unknown data, absent payload and unrelated labels may never fabricate membership.
+assert.equal(run('window.musicDnaGenreArtists(RR,null,"classic_heavy_metal","classic_heavy_metal__0").artists.length'), 0);
+assert.equal(run('window.musicDnaGenreArtists(RR,window.MUSIC_DNA_GENRE_MEMBERSHIPS_V1,"missing","missing").artists.length'), 0);
+assert.equal(run('window.musicDnaGenreArtists(RR,{memberships:{"NWOBHM DNA":[{artist:"Ghost",genre:"NWOBHM DNA"}]}},"classic_heavy_metal","classic_heavy_metal__0").artists.length'), 0);
+assert.equal(run('window.musicDnaGenreArtists(RR,window.MUSIC_DNA_GENRE_MEMBERSHIPS_V1,"punk_new_wave","punk_new_wave__9").unresolved.length'), 30);
+assert.equal(run('window.musicDnaGenreArtists(RR,window.MUSIC_DNA_GENRE_MEMBERSHIPS_V1,"punk_new_wave","punk_new_wave__8").unresolved.length'), 30);
 click('Punk & New Wave →');
 click('Hardcore Punk DNA →');
 const crumbs = buttons('crumbs');
@@ -81,5 +117,10 @@ click('Voïvod →');
 click('Rush →');
 assert.equal(run('path.at(-1).id'), 'rush');
 for (const name of ['explorerGenreTaxonomyRegressionSelfTest', 'explorerIntegrationSelfTest']) assert.equal(registry.api[name]().pass, true, name);
+const walk = registry.api.createExplorerWalk('ozzy_osbourne');
+registry.api.explorerStep(walk, 'voivod');
+registry.api.explorerStep(walk, 'rush');
+assert.equal(walk.trail.join('>'), 'ozzy_osbourne>voivod>rush');
+assert.equal(registry.api.explorerNode('ozzy_osbourne').links[0].relationCount, 1);
 assert.equal(JSON.stringify(registry), snapshot, 'Navigation must not mutate Registry knowledge');
 console.log('PASS: 11 groups, all 42 visible worlds, empty group, actual button handlers, breadcrumbs/back, dynamic data and escaping, no fabricated links, four existing entries and unrestricted graph walking.');
