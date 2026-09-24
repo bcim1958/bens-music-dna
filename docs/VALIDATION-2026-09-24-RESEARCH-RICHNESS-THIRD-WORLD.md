@@ -27,3 +27,27 @@ De eerste zoekslag levert vooral album-/trackmetadata en playlistvermelding. Ook
 **Nog geen derde wereld als Schaars vastleggen.** Bombshell Boys en Atomic Riot gaan naar een gerichte tweede onderzoeksronde. Tot die tijd blijft hun rijkdom **unknown** en hun dekking maximaal **light/developing**.
 
 Dit is een geslaagde test van de nieuwe invariant: lage webzichtbaarheid veroorzaakt niet automatisch een lage DNA-rijkdomscore.
+
+
+## Tweede onderzoeksronde — resultaat
+
+### Atomic Riot — definitief afgewezen als schaarse referentiewereld
+
+Gericht vervolgonderzoek vond een substantieel primair interview met frontman Ash Lightning (Sleaze Roxx, 29-01-2018). Daarin staan de ontstaansgeschiedenis, bandleden en eerdere bands, livefilosofie, concrete muzikale/performance-invloeden, opnameproces met Chris Themelco/Monolith Studios en de rol van jaren-80-popcultuur. Aanvullend is de latere ontwikkeling naar het debuutalbum van 2022 gedocumenteerd, plus live-context in Melbourne in 2025.
+
+Conclusie: Atomic Riot heeft aantoonbaar meerdere bruikbare DNA-hoeken en is geen goede negatieve controlegroep. De eerdere lage zichtbaarheid was een zoek-/dekkingseffect.
+
+### Bombshell Boys — nog niet classificeren
+
+De tweede zoekslag bevestigt discografische activiteit en levert historische context op dat Bombshell Boys uit Sint-Petersburg voortkomt uit/wordt aangeduid als ex-Gang Bang Starz. De gevonden narratieve bronbasis blijft echter te dun en te weinig onafhankelijk om zowel "schaars" als een rijkere classificatie betrouwbaar vast te leggen.
+
+Conclusie: rijkdom blijft **unknown**. Onderzoeksdekking mag niet kunstmatig naar "well-researched" worden gezet alleen omdat algemene zoekmachines weinig meer tonen.
+
+## Methodologische uitkomst
+
+De negatieve controle wordt niet geforceerd. Twee opeenvolgende rondes hebben laten zien dat:
+1. Atomic Riot bij verdiepend zoeken juist een bruikbare wereld opent;
+2. Bombshell Boys nog te weinig bewijs heeft om te weten of de wereld werkelijk schaars is;
+3. "geen zoekresultaten meer gevonden" niet hetzelfde is als "grondig onderzocht".
+
+Daarom blijft de derde referentiewereld open totdat een artiest via voldoende onafhankelijke onderzoekspaden aantoonbaar weinig verschillende bruikbare DNA-hoeken oplevert.
