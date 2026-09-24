@@ -70,3 +70,28 @@ Zero evidence means no accepted mapping in these sources, not that the actual pl
 | Synth Pop DNA | 11 | — | 11 |
 | UK Punk; Art, Hooks and Attitude DNA | 30 | — | 30 |
 | UK Punk; Raw and Rebellious DNA | 30 | — | 30 |
+
+
+## Definitive master 2026-09-10 v3 investigation — 2026-09-24
+
+The authoritative workbook was recovered from the project Library as `Ben_Master_Music_DNA_Database_1.8_Taxonomie_Reparatie_2026-09-10_v3.xlsx`. The current repository builder still uses the older 2026-09-04 v2 production export, so the generated entrance payload must not yet be described as fully synchronized with the definitive master.
+
+The workbook's `Spotify-snapshot 2026-08-25` contains 48 definitive DNA playlists × 30 positions = 1,440 playlist memberships. Exact matching against the 42 personal Genre-DNA subworlds, with only two explicit title reconciliations (`Psychedelic Space Rock DNA` → `Psychedelic/Space Rock DNA`; `Sla Revival DNA` → `Ska Revival DNA`), yields 690 explicit memberships across 23 subworlds. Adding the two separately confirmed UK Punk playlists contributes 60 memberships across two further subworlds. Therefore the accepted source layer can cover 25/42 subworlds once the v3 snapshot is ingested; 17/42 still lack accepted playlist mapping data.
+
+This changes the diagnosis materially:
+- **Missing playlist mapping (A):** 17 subworlds after v3 + confirmed UK Punk ingestion.
+- **Mapped artist but missing Registry world (B):** the dominant bottleneck. The v3 snapshot supplies hundreds of explicit artist memberships, but most artists still have no Registry artist entity/world.
+- The existing NWOBHM → Ozzy Osbourne entrance remains valid.
+- Artist-DNA playlists in the same workbook (Ghost DNA, Rush DNA, Metallica DNA, etc.) are not converted into Genre-DNA membership.
+- No artist is admitted from AllMusic genre/style classification alone; only explicit playlist membership is an entrance fact.
+
+The v3 workbook also confirms examples such as Progressive Metal DNA containing TOOL, Opeth, Jinjer and others, and Symphonic Metal DNA containing Nemesea, Nightwish and others. These are valid **playlist memberships**, but they are not clickable Explorer entrances until the corresponding artist has a Registry world and at least one genuine Registry relation for continued walking.
+
+### Next implementation step
+
+Replace the v2-derived Genre membership source with a reproducible repository snapshot extracted from the authoritative v3 workbook, preserving workbook/sheet/row provenance and the two explicit title reconciliations above. Keep the two confirmed UK Punk checkpoint sources as separate provenance. Rebuild the generated membership payload and navigation regression from that source before creating additional Registry artist worlds.
+
+After that source migration, prioritize **B** by intersecting the accepted v3 memberships with existing or independently evidenced artist relationship data. Create a Registry artist world only when real relation evidence exists; do not create hollow artist worlds merely to increase entrance counts. Every newly admitted route must prove:
+`Genre → group → subworld → artist → existing/evidenced Registry edge → free graph`.
+
+No W39 files are part of this migration. The two pre-existing missing evidence references in the general Registry health test remain outside this line.
