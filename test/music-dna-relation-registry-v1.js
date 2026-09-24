@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-23.3",
+  version:"2026-09-24.1",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -33,11 +33,23 @@ const registry={
     tobias_forge:{type:"person",name:"Tobias Forge"},
     fredrik_akesson:{type:"person",name:"Fredrik Åkesson"},
     klas_ahlund:{type:"person",name:"Klas Åhlund"},
-    impera:{type:"album",name:"Impera"},
-    enter_sandman:{type:"track",name:"Enter Sandman"},
-    rats:{type:"track",name:"Rats"},
+    impera:{type:"album",name:"Impera",temporal:{canonicalReleaseYear:2022,objectType:"release",versionType:"original-studio-album",dateStatus:"confirmed"}},
+    enter_sandman:{type:"track",name:"Enter Sandman",temporal:{workOriginalReleaseYear:1991,versionDateStatus:"needs-version-resolution",note:"Entity can denote the Metallica original while Ghost relation denotes a later cover; never inherit a packaging year across versions."}},
+    rats:{type:"track",name:"Rats",temporal:{canonicalReleaseYear:2018,objectType:"recording",versionType:"original-studio-recording",dateStatus:"confirmed"}},
     moscow_1989:{type:"event",name:"Moscow Music Peace Festival 1989"},
     sweden:{type:"place",name:"Zweden"}
+  },
+
+  temporalPolicy:{
+    invariant:"date the musical object, not the packaging in which it was found",
+    objectLevels:["work","recording-version","release-package"],
+    dateStatus:["confirmed","probable","conflicting","needs-research"],
+    rules:[
+      "source publication date is evidence metadata, never automatically a music release date",
+      "reissue/remaster/compilation/streaming package dates never overwrite an older recording date",
+      "live recordings, remakes, rerecordings and remixes are distinct versions and may carry later canonical dates",
+      "cross-version relations must resolve the intended version before a year is presented as canonical"
+    ]
   },
   sources:{
     "metaltalk_shiraz_jani_2025":{
@@ -548,6 +560,19 @@ const registry={
   ]
 };
 
+function temporalIntegrityReport(){
+  const issues=[];
+  Object.entries(registry.entities).forEach(([id,e])=>{
+    if((e.type==="track"||e.type==="album")&&!e.temporal) issues.push({severity:"needs-research",entity:id,issue:"missing-temporal-provenance"});
+    if(e.temporal&&e.temporal.versionDateStatus==="needs-version-resolution") issues.push({severity:"needs-research",entity:id,issue:"version-date-unresolved"});
+  });
+  registry.relations.filter(r=>r.family==="recording").forEach(r=>{
+    const target=registry.entities[r.to];
+    if(target&&target.type==="track"&&target.temporal&&target.temporal.versionDateStatus==="needs-version-resolution") issues.push({severity:"needs-research",relation:r.id,entity:r.to,issue:"recording-relation-needs-version-specific-date"});
+  });
+  return {ok:issues.length===0,policy:registry.temporalPolicy.invariant,issues};
+}
+
 function entity(id){return registry.entities[id]||null}
 function relationsFor(id,opts){
   opts=opts||{};
@@ -823,5 +848,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
