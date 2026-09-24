@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.18",
+  version:"2026-09-24.19",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -672,7 +672,14 @@ function researchBacklog(){
     return {id,name:e.name,coverage:status.coverage,richness:status.richness,missingResearchPaths:missing,knownRelations:relations,knownDiscoveries:discoveries};
   }).filter(x=>x.coverage!=="deep").sort((a,b)=>(rank[b.coverage]-rank[a.coverage])||(b.knownRelations+b.knownDiscoveries-a.knownRelations-a.knownDiscoveries)||a.name.localeCompare(b.name));
 }
-function nextResearchTargets(limit=5){return researchBacklog().slice(0,limit)}
+function nextResearchTargets(limit=5){
+  return researchBacklog().filter(x=>x.missingResearchPaths.length>0).slice(0,limit);
+}
+function researchTargetReason(id){
+  const x=researchBacklog().find(y=>y.id===id); if(!x)return null;
+  return {id:x.id,name:x.name,coverage:x.coverage,missing:x.missingResearchPaths,
+    reason:x.coverage==="developing"?"close-evidence-gaps":x.coverage==="light"?"broaden-research-routes":"open-new-world"};
+}
 
 function researchTank(){
   const o=researchOdometer(), backlog=researchBacklog(), total=o.catalog.artistWorlds||1;
@@ -1038,5 +1045,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
