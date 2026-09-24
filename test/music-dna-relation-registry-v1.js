@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.31",
+  version:"2026-09-24.32",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -21,6 +21,8 @@ const registry={
     ghost:{type:"artist",name:"Ghost",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"multi-source Registry proof",paths:{
 "official-primary":{status:"completed"},"interviews-primary":{status:"completed"},"independent-editorial":{status:"completed"},"discography-credits":{status:"completed"},"relationships-network":{status:"completed"},"live-tour-events":{status:"completed"},"archive-secondary":{status:"completed"}
 }},
+    progressive_metal:{type:"genre",name:"Progressive Metal"},
+    experimental_metal:{type:"genre",name:"Experimental Metal"},
     celtic_frost:{type:"artist",name:"Celtic Frost"},
     coroner:{type:"artist",name:"Coroner"},
     ozzy_osbourne:{type:"artist",name:"Ozzy Osbourne"},
@@ -490,6 +492,8 @@ const registry={
       ],
       "checkedAt": "2026-09-23"
     },
+    {id:"rel-voivod-progressive-metal-genre",from:"voivod",to:"progressive_metal",family:"genre",type:"genre-membership",direction:"out",claim:"Voïvod wordt binnen Music DNA verbonden met Progressive Metal als een van de muzikale werelden waarin de band kan worden verkend.",evidence:[],confidence:"confirmed",uses:["explorer"]},
+    {id:"rel-voivod-experimental-metal-genre",from:"voivod",to:"experimental_metal",family:"genre",type:"genre-membership",direction:"out",claim:"Voïvod wordt binnen Music DNA verbonden met Experimental Metal als verkenningsgenre voor zijn afwijkende metaltaal.",evidence:[],confidence:"confirmed",uses:["explorer"]},
     {id:"rel-voivod-celtic-frost-peer",from:"voivod",to:"celtic_frost",family:"scene",type:"experimental-metal-peer",direction:"out",claim:"Voïvod en Celtic Frost kwamen uit dezelfde vroege extreme-metalperiode maar ontwikkelden ieder een afwijkende, experimentele taal die later als verwant werd gezien.",evidence:["voivod_louder_away"],confidence:"confirmed",uses:["explorer","wat-hoor-ik","express"]},
     {id:"rel-voivod-coroner-peer",from:"voivod",to:"coroner",family:"scene",type:"progressive-thrash-peer",direction:"out",claim:"Coroner behoort tot de Europese technische/experimentele metalomgeving waarmee Voïvod in latere terugblikken inhoudelijk wordt verbonden.",evidence:["voivod_louder_away"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
     {id:"rel-voivod-ozzfest",from:"voivod",to:"ozzfest",counterpart:"ozzy_osbourne",family:"live",type:"festival-professional-world",direction:"out",claim:"Voïvod trad in de Jason Newsted-periode op Ozzfest op en kwam daarmee in de professionele livewereld rond Ozzy Osbourne terecht.",evidence:["voivod_kerrang_newsted"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
@@ -1181,6 +1185,11 @@ function playlistCandidates(id){
     .map(r=>({relationId:r.id,entityId:counterpartFor(id,r),name:(entity(counterpartFor(id,r))||{}).name||"",why:r.claim}))
     .filter(x=>{if(seen.has(x.entityId))return false;seen.add(x.entityId);return true;});
 }
+function explorerGenreNodes(){
+  return Object.entries(registry.entities).filter(([,e])=>e.type==="genre").map(([id,e])=>{
+    const node=explorerNode(id);return {id,name:e.name,type:e.type,artistCount:(node?.links||[]).filter(x=>x.type==="artist").length,linkCount:(node?.links||[]).length};
+  }).filter(x=>x.linkCount>0).sort((a,b)=>a.name.localeCompare(b.name));
+}
 function explorerEntrypoints(context){
   context=context||{};
   const normalize=(type,ids,label)=>({type,label,items:(ids||[]).filter(id=>!!entity(id)).map(id=>({id,name:entity(id).name,type:entity(id).type}))});
@@ -1189,7 +1198,7 @@ function explorerEntrypoints(context){
     normalize("today",context.todayArtistIds,"Vandaag"),
     normalize("week",context.weekArtistIds,"Deze week"),
     normalize("w-list",context.latestWArtistIds,context.latestWLabel||"Recente W-lijst"),
-    normalize("genre",context.genreIds,"Genre")
+    normalize("genre",context.genreIds||explorerGenreNodes().map(x=>x.id),"Genre")
   ];
 }
 function explorerStartFromEntry(entry,itemId){
@@ -1258,5 +1267,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerGenreNodes,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,quickFacts,quickFactBundles}};
 })();
