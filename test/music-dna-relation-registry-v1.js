@@ -1,14 +1,14 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.16",
+  version:"2026-09-24.17",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
     "shiraz_lane":{
       "type": "artist",
       "name": "Shiraz Lane",
-      "research":{"coverage":"developing","richness":"unknown","lastResearched":"2026-09-23","basis":"first sourced Registry fill; insufficient coverage for a richness class","paths":{"official-primary":{"status":"completed"},"interviews-primary":{"status":"completed"},"independent-editorial":{"status":"attempted"},"discography-credits":{"status":"completed"},"relationships-network":{"status":"attempted"},"live-tour-events":{"status":"completed"}}}
+      "research":{"coverage":"developing","richness":"unknown","lastResearched":"2026-09-23","basis":"first sourced Registry fill; insufficient coverage for a richness class","paths":{"official-primary":{"status":"completed"},"interviews-primary":{"status":"completed"},"independent-editorial":{"status":"completed","note":"Yle 2015; Teosto 2016; Soundi 2022/2026 independent interviews/features"},"discography-credits":{"status":"completed"},"relationships-network":{"status":"completed","note":"Per Aldeheim; Jean Beauvoir; Joonas Parkkonen; Lordi and Finnish-scene links independently documented"},"live-tour-events":{"status":"completed"}}}
     },
     "per_aldeheim":{
       "type": "person",
