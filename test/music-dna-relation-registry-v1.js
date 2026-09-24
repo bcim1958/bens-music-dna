@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.12",
+  version:"2026-09-24.13",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -662,6 +662,26 @@ function researchWorldStatus(id){
   const sufficient=["well-researched","deep"].includes(coverage);
   return {id,name:e.name,coverage,richness:sufficient?(r.richness||"unknown"):"unknown",richnessClassifiable:sufficient,lastResearched:r.lastResearched||null};
 }
+function researchOdometer(){
+  const s=researchCatalogSummary(), total=s.artistWorlds||1;
+  const coverageOrder=registry.researchCoveragePolicy.coverageStates;
+  const proven=s.classifiable;
+  const explored=s.worlds.filter(w=>["well-researched","deep"].includes(w.coverage)).length;
+  const frontier=s.worlds.filter(w=>["unresearched","light","developing"].includes(w.coverage)).length;
+  const pct=n=>Math.round((n/total)*100);
+  return {
+    catalog:{artistWorlds:s.artistWorlds,explored,frontier,exploredPercent:pct(explored),frontierPercent:pct(frontier)},
+    axis:{left:"proven-world",right:"unexplored-world",positionPercentFromLeft:pct(explored)},
+    coverage:coverageOrder.map(state=>({state,count:s.coverage[state]||0,percent:pct(s.coverage[state]||0)})),
+    richness:{
+      eligibleWorlds:proven,
+      excludedUntilResearched:s.artistWorlds-proven,
+      distribution:Object.entries(s.richness).filter(([k])=>k!=="unknown").map(([state,count])=>({state,count}))
+    },
+    rule:"richness distribution excludes worlds whose research coverage is not yet sufficient"
+  };
+}
+
 function researchCatalogSummary(){
   const artists=Object.entries(registry.entities).filter(([,e])=>e.type==="artist");
   const worlds=artists.map(([id])=>researchWorldStatus(id));
@@ -968,5 +988,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchOdometer,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
