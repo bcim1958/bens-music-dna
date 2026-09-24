@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.6",
+  version:"2026-09-24.7",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -594,6 +594,22 @@ function temporalIntegrityReport(){
   return {ok:!unique.some(x=>x.severity==="integrity"),researchOpen:unique.some(x=>x.severity==="needs-research"),policy:registry.temporalPolicy.invariant,issues:unique};
 }
 
+function temporalRegressionSelfTest(){
+  const cases=[
+    {name:"remaster-does-not-redate-recording",recordingYear:1973,packageYear:2018,versionType:"remaster-or-reissue",expected:1973},
+    {name:"compilation-does-not-redate-recording",recordingYear:1988,packageYear:2001,versionType:"compilation",expected:1988},
+    {name:"live-recording-may-have-own-later-date",workYear:1980,recordingYear:1985,versionType:"live-recording",expected:1985},
+    {name:"rerecording-may-have-own-later-date",workYear:1980,recordingYear:2020,versionType:"rerecording",expected:2020}
+  ];
+  const resolve=x=>["remaster-or-reissue","compilation"].includes(x.versionType)?x.recordingYear:x.recordingYear;
+  const results=cases.map(x=>({...x,actual:resolve(x),pass:resolve(x)===x.expected}));
+  const semanticGuards=[
+    {name:"package-year-must-not-overwrite",pass:cases[0].packageYear!==cases[0].expected&&cases[1].packageYear!==cases[1].expected},
+    {name:"new-version-may-carry-later-year",pass:cases[2].expected!==cases[2].workYear&&cases[3].expected!==cases[3].workYear}
+  ];
+  return {ok:results.every(x=>x.pass)&&semanticGuards.every(x=>x.pass),results,semanticGuards};
+}
+
 function entity(id){return registry.entities[id]||null}
 function temporalContext(id){
   const e=entity(id); if(!e)return null;
@@ -880,5 +896,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
 })();
