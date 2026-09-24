@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.1",
+  version:"2026-09-24.2",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -34,7 +34,12 @@ const registry={
     fredrik_akesson:{type:"person",name:"Fredrik Åkesson"},
     klas_ahlund:{type:"person",name:"Klas Åhlund"},
     impera:{type:"album",name:"Impera",temporal:{canonicalReleaseYear:2022,objectType:"release",versionType:"original-studio-album",dateStatus:"confirmed"}},
-    enter_sandman:{type:"track",name:"Enter Sandman",temporal:{workOriginalReleaseYear:1991,versionDateStatus:"needs-version-resolution",note:"Entity can denote the Metallica original while Ghost relation denotes a later cover; never inherit a packaging year across versions."}},
+    enter_sandman:{type:"work",name:"Enter Sandman",temporal:{workOriginalReleaseYear:1991,dateStatus:"confirmed"}},
+    metallica_enter_sandman_1991:{type:"recording",name:"Enter Sandman — Metallica original studio recording",work:"enter_sandman",artist:"metallica",temporal:{canonicalReleaseYear:1991,versionType:"original-studio-recording",dateStatus:"confirmed"}},
+    ghost_enter_sandman_2018_live:{type:"performance",name:"Enter Sandman — Ghost Polar Music Prize performance",work:"enter_sandman",artist:"ghost",temporal:{canonicalEventYear:2018,versionType:"tribute-live-performance",dateStatus:"confirmed"}},
+    ghost_enter_sandman_blacklist:{type:"recording",name:"Enter Sandman — Ghost studio cover",work:"enter_sandman",artist:"ghost",temporal:{versionType:"studio-cover",dateStatus:"needs-research",note:"Keep release/package chronology separate until source-backed canonical release date is attached."}},
+    phantom_of_the_opera:{type:"work",name:"Phantom of the Opera",temporal:{dateStatus:"needs-research"}},
+    ghost_phantom_of_the_opera_2023:{type:"recording",name:"Phantom of the Opera — Ghost cover",work:"phantom_of_the_opera",artist:"ghost",temporal:{canonicalReleaseYear:2023,versionType:"studio-cover",dateStatus:"confirmed",releasePackage:"Phantomime"}}
     rats:{type:"track",name:"Rats",temporal:{canonicalReleaseYear:2018,objectType:"recording",versionType:"original-studio-recording",dateStatus:"confirmed"}},
     moscow_1989:{type:"event",name:"Moscow Music Peace Festival 1989"},
     sweden:{type:"place",name:"Zweden"}
@@ -446,7 +451,7 @@ const registry={
       uses:["explorer","wat-hoor-ik"]
     },
     {
-      id:"rel-ghost-maiden-phantom-cover",from:"ghost",to:"iron_maiden",
+      id:"rel-ghost-maiden-phantom-cover",from:"ghost",to:"ghost_phantom_of_the_opera_2023",counterpart:"iron_maiden",
       family:"recording",type:"covered-song",direction:"out",
       claim:"Ghost nam Iron Maidens Phantom of the Opera op voor Phantomime; Forge verbindt de cover met eerdere tours en zijn persoonlijke band met Iron Maiden.",
       evidence:["rollingstone_uk_phantomime_2023"],confidence:"confirmed",
@@ -460,7 +465,7 @@ const registry={
       uses:["explorer","wat-hoor-ik","express","playlist"]
     },
     {
-      id:"rel-ghost-metallica-polar",from:"ghost",to:"metallica",
+      id:"rel-ghost-metallica-polar",from:"ghost",to:"ghost_enter_sandman_2018_live",counterpart:"metallica",
       family:"event",type:"tribute-performance",direction:"out",
       claim:"Ghosts Enter Sandman-route begon bij Metallica's Polar Music Prize in 2018, waar Forge werd gevraagd juist die song als eerbetoon uit te voeren.",
       evidence:["louder_metallica_2022","guitarworld_blacklist_2021"],confidence:"confirmed",
@@ -474,7 +479,7 @@ const registry={
       uses:["explorer","wat-hoor-ik"]
     },
     {
-      id:"rel-ghost-metallica-cover",from:"ghost",to:"enter_sandman",counterpart:"metallica",
+      id:"rel-ghost-metallica-cover",from:"ghost",to:"ghost_enter_sandman_blacklist",counterpart:"metallica",
       family:"recording",type:"covered-song",direction:"out",
       claim:"Ghost nam Enter Sandman op voor The Metallica Blacklist.",
       evidence:["louder_metallica_2022"],confidence:"confirmed",
@@ -563,12 +568,13 @@ const registry={
 function temporalIntegrityReport(){
   const issues=[];
   Object.entries(registry.entities).forEach(([id,e])=>{
-    if((e.type==="track"||e.type==="album")&&!e.temporal) issues.push({severity:"needs-research",entity:id,issue:"missing-temporal-provenance"});
+    if((["track","work","recording","performance","album"].includes(e.type))&&!e.temporal) issues.push({severity:"needs-research",entity:id,issue:"missing-temporal-provenance"});
     if(e.temporal&&e.temporal.versionDateStatus==="needs-version-resolution") issues.push({severity:"needs-research",entity:id,issue:"version-date-unresolved"});
   });
   registry.relations.filter(r=>r.family==="recording").forEach(r=>{
     const target=registry.entities[r.to];
-    if(target&&target.type==="track"&&target.temporal&&target.temporal.versionDateStatus==="needs-version-resolution") issues.push({severity:"needs-research",relation:r.id,entity:r.to,issue:"recording-relation-needs-version-specific-date"});
+    if(target&&target.temporal&&target.temporal.dateStatus==="needs-research") issues.push({severity:"needs-research",relation:r.id,entity:r.to,issue:"recording-relation-needs-canonical-date"});
+    if(target&&target.type==="work") issues.push({severity:"needs-research",relation:r.id,entity:r.to,issue:"recording-relation-points-to-work-not-version"});
   });
   return {ok:issues.length===0,policy:registry.temporalPolicy.invariant,issues};
 }
