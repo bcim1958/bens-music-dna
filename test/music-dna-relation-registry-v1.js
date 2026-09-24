@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.5",
+  version:"2026-09-24.6",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -568,19 +568,30 @@ const registry={
   ]
 };
 
+function canonicalTemporalValue(e){
+  if(!e||!e.temporal)return null;
+  const t=e.temporal;
+  return t.canonicalReleaseYear||t.canonicalEventYear||t.workOriginalReleaseYear||null;
+}
 function temporalIntegrityReport(){
   const issues=[];
+  const datedTypes=["track","work","recording","performance","album","event"];
   Object.entries(registry.entities).forEach(([id,e])=>{
-    if((["track","work","recording","performance","album"].includes(e.type))&&!e.temporal) issues.push({severity:"needs-research",entity:id,issue:"missing-temporal-provenance"});
+    if(datedTypes.includes(e.type)&&!e.temporal) issues.push({severity:"needs-research",entity:id,issue:"missing-temporal-provenance"});
     if(e.temporal&&e.temporal.versionDateStatus==="needs-version-resolution") issues.push({severity:"needs-research",entity:id,issue:"version-date-unresolved"});
     if(e.temporal&&e.temporal.dateStatus==="needs-research") issues.push({severity:"needs-research",entity:id,issue:"canonical-date-needs-research"});
+    if(e.temporal&&e.temporal.dateStatus==="confirmed"&&!canonicalTemporalValue(e)&&!e.temporal.relatedReleaseYear) issues.push({severity:"integrity",entity:id,issue:"confirmed-without-canonical-time"});
   });
-  registry.relations.filter(r=>r.family==="recording").forEach(r=>{
+  registry.relations.forEach(r=>{
     const target=registry.entities[r.to];
-    if(target&&target.temporal&&target.temporal.dateStatus==="needs-research") issues.push({severity:"needs-research",relation:r.id,entity:r.to,issue:"recording-relation-needs-canonical-date"});
-    if(target&&target.type==="work") issues.push({severity:"needs-research",relation:r.id,entity:r.to,issue:"recording-relation-points-to-work-not-version"});
+    if(["recording","event","live","story"].includes(r.family)){
+      if(target&&datedTypes.includes(target.type)&&(!target.temporal||target.temporal.dateStatus==="needs-research")) issues.push({severity:"needs-research",relation:r.id,entity:r.to,issue:"dated-relation-target-needs-canonical-time"});
+    }
+    if(r.family==="recording"&&target&&target.type==="work") issues.push({severity:"integrity",relation:r.id,entity:r.to,issue:"recording-relation-points-to-work-not-version"});
+    if(/\b(19|20)\d{2}\b/.test(r.claim||"")&&target&&datedTypes.includes(target.type)&&!canonicalTemporalValue(target)&&!((target.temporal||{}).relatedReleaseYear)) issues.push({severity:"integrity",relation:r.id,entity:r.to,issue:"claim-shows-year-without-canonical-target-time"});
   });
-  return {ok:issues.length===0,policy:registry.temporalPolicy.invariant,issues};
+  const unique=issues.filter((x,i,a)=>a.findIndex(y=>JSON.stringify(y)===JSON.stringify(x))===i);
+  return {ok:!unique.some(x=>x.severity==="integrity"),researchOpen:unique.some(x=>x.severity==="needs-research"),policy:registry.temporalPolicy.invariant,issues:unique};
 }
 
 function entity(id){return registry.entities[id]||null}
