@@ -126,3 +126,43 @@ The previous rule that a Genre-DNA artist entrance should only become useful aft
 Registry remains the common walking graph, but AllMusic classification edges are first-class Registry evidence alongside (not instead of) the richer relationship families.
 
 The next implementation line must therefore ingest **directly verified AllMusic classifications first**, preserve every verified genre/style label, and explicitly distinguish them from inferred taxonomy rows. No classification may be synthesized from a Genre-DNA playlist name.
+
+
+## First AllMusic-direct harvest from definitive master
+
+The definitive v3 workbook contains a dedicated `AllMusic-classificatie` sheet with artist, AllMusic main genre, main structure, styles, classification status and taxonomy source. The classification overview records 98 unique artist mentions as `rechtstreeks AllMusic`; 2,862 remain `afgeleid volgens AllMusic-taxonomie`, 324 have insufficient source metadata and 49 are not yet classified.
+
+Direct rows are usable as canonical classification evidence because their genre/styles were checked on an AllMusic artist profile. Examples already present in the master include:
+- AC/DC — Album Rock; Aussie Rock; Hard Rock; Heavy Metal; Arena Rock.
+- Halestorm — Alternative Metal; Hard Rock; Heavy Metal; Post-Grunge.
+- Survivor — Album Rock; Contemporary Pop/Rock; Arena Rock; Rock & Roll; Hard Rock.
+- Michael Schenker — Guitar Virtuoso; Hard Rock; Heavy Metal; Neo-Classical Metal.
+- Billy Idol — Contemporary Pop/Rock; Dance-Rock; Hard Rock; Punk; Punk/New Wave; New Wave; Album Rock.
+- Blondie — New Wave; Punk/New Wave; Contemporary Pop/Rock; Dance-Rock; Punk; American Punk; New York Punk.
+- No Doubt — Adult Alternative Pop/Rock; Alternative Pop/Rock; Alternative/Indie Rock; Ska-Punk; Third Wave Ska Revival; Dance-Rock; Pop.
+- Biffy Clyro — Alternative/Indie Rock; Pop Punk; Punk Revival; Neo-Prog; Post-Grunge.
+
+These examples demonstrate why classification must be multi-label: collapsing them to one bucket would discard canonical AllMusic information and remove legitimate Explorer junctions.
+
+### Data-model requirement
+
+Canonical AllMusic edges must carry at least:
+- artist identity;
+- label text;
+- label level (`genre`, `main-structure`, or `style`);
+- classification status = `direct-allmusic`;
+- source = the concrete AllMusic artist profile when available;
+- verification/audit date from the master repair row.
+
+Rows marked `afgeleid volgens AllMusic-taxonomie` may be queued for direct verification but must not generate canonical AllMusic graph edges yet.
+
+### Immediate build order
+
+1. Preserve the v3 `AllMusic-classificatie` sheet as a reproducible classification source payload in the repository.
+2. Generate first-class artist ↔ AllMusic-label edges only for `rechtstreeks AllMusic`.
+3. Intersect those direct artists with the accepted Genre-DNA membership payload.
+4. Admit each exact intersection as an Explorer artist entrance, even when it has no biographical Registry relation, because its verified AllMusic edge provides the next valid walking step.
+5. From an AllMusic label node, expose all other directly verified Registry artists carrying the same label; never include inferred rows in that canonical neighbor set.
+6. Keep inferred rows as a visible verification backlog rather than silently discarding them.
+
+This is the scalable musical backbone; richer Registry evidence remains additive.
