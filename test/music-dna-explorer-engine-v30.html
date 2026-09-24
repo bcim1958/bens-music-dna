@@ -106,7 +106,21 @@ const restoreY=restoreExplorer();
 function explorerHome(){path=[{kind:"explorerhome",id:"explorerhome",label:"Explorer"}];render()}
 function explorerEntryButton(e){let detail=e.mode==="search"?"Kies zelf een bekende artiest":(e.items.length?e.items.length+" beschikbare wereld"+(e.items.length===1?"":"en"):"Nog geen gekoppelde wereld");return '<button class="door" onclick="openExplorerEntry(\''+e.type+'\')"><span>Vertrekpunt</span><strong>'+esc(e.label)+' →</strong><span>'+esc(detail)+'</span></button>'}
 function explorerContext(){return {todayArtistIds:["ghost","voivod"],weekArtistIds:["ghost","voivod","shiraz_lane"],latestWLabel:"Recente W-lijst",latestWArtistIds:["voivod","ghost"]}}
-function explorerHomeView(){let es=RR.api.explorerEntrypoints(explorerContext());return '<section class="card"><div class="eyebrow">DNA Explorer · wandelproef</div><h1>Waar wil je beginnen?</h1><p class="lead">Vijf opritten, daarna één en dezelfde muziekwereld. Geen vaste route.</p><div class="doors">'+es.map(explorerEntryButton).join("")+'</div></section>'}
+function explorerHomeView(){
+  const fallback=[
+    {type:"free",label:"Vrij kiezen",mode:"search",items:[]},
+    {type:"today",label:"Vandaag",items:[{id:"ghost"},{id:"voivod"}]},
+    {type:"week",label:"Deze week",items:[{id:"ghost"},{id:"voivod"},{id:"shiraz_lane"}]},
+    {type:"w-list",label:"Recente W-lijst",items:[{id:"voivod"},{id:"ghost"}]},
+    {type:"genre",label:"Genre",items:[]}
+  ];
+  let es=fallback,notice="";
+  try{
+    if(RR&&RR.api&&typeof RR.api.explorerEntrypoints==="function")es=RR.api.explorerEntrypoints(explorerContext());
+    else notice="Registry-ingangen nog niet beschikbaar; veilige proefingangen actief.";
+  }catch(err){notice="Registry-ingangen konden niet worden opgebouwd; veilige proefingangen actief.";}
+  return '<section class="card"><div class="eyebrow">DNA Explorer · wandelproef</div><h1>Waar wil je beginnen?</h1><p class="lead">Vijf opritten, daarna één en dezelfde muziekwereld. Geen vaste route.</p>'+(notice?'<p class="small">'+esc(notice)+'</p>':"")+'<div class="doors">'+es.map(explorerEntryButton).join("")+'</div></section>';
+}
 function openExplorerEntry(type){let e=RR.api.explorerEntrypoints(explorerContext()).find(x=>x.type===type);path.push({kind:"explorerentry",id:type,label:e.label});render()}
 function explorerEntryView(type){let e=RR.api.explorerEntrypoints(explorerContext()).find(x=>x.type===type);let items=e.items;if(type==="free")items=[{id:"ghost",name:"Ghost",type:"artist"},{id:"voivod",name:"Voïvod",type:"artist"},{id:"shiraz_lane",name:"Shiraz Lane",type:"artist"}];return '<section class="card"><div class="eyebrow">'+esc(e.label)+'</div><h1>Kies een wereld</h1><div class="doors">'+items.map(x=>'<button class="door" onclick="openExplorerWorld(\''+x.id+'\')"><span>'+esc(x.type)+'</span><strong>'+esc(x.name)+' →</strong></button>').join("")+'</div></section>'}
 function openExplorerWorld(id){let n=RR.api.explorerNode(id);if(!n)return;path.push({kind:"explorerworld",id,label:n.name});render()}
