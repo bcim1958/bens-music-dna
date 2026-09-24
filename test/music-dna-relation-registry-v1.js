@@ -20,7 +20,7 @@ const registry={
     },
     ghost:{type:"artist",name:"Ghost",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"multi-source Registry proof",paths:{
 "official-primary":{status:"completed"},"interviews-primary":{status:"completed"},"independent-editorial":{status:"completed"},"discography-credits":{status:"completed"},"relationships-network":{status:"completed"},"live-tour-events":{status:"completed"},"archive-secondary":{status:"completed"}
-}},
+}}},
     progressive_metal:{type:"genre",name:"Progressive Metal"},
     experimental_metal:{type:"genre",name:"Experimental Metal"},
     celtic_frost:{type:"artist",name:"Celtic Frost"},
@@ -44,7 +44,7 @@ const registry={
 "live-tour-events":{status:"completed","note":"multi-decade touring plus 2025 Quebec Symphony event"},
 "local-historical":{status:"completed","note":"Jonquiere/Quebec origin and local industrial-cultural context"},
 "archive-secondary":{status:"completed","note":"official historical press archive preserves contemporary interviews"}
-}}}},
+}}},
     abba:{type:"artist",name:"ABBA"},
     black_sabbath:{type:"artist",name:"Black Sabbath"},
     blue_oyster_cult:{type:"artist",name:"Blue Öyster Cult"},
