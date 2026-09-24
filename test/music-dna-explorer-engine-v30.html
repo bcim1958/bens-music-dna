@@ -111,6 +111,28 @@ function openExplorerEntry(type){let e=RR.api.explorerEntrypoints(explorerContex
 function explorerEntryView(type){let e=RR.api.explorerEntrypoints(explorerContext()).find(x=>x.type===type);let items=e.items;if(type==="free")items=[{id:"ghost",name:"Ghost",type:"artist"},{id:"voivod",name:"Voïvod",type:"artist"},{id:"shiraz_lane",name:"Shiraz Lane",type:"artist"}];return '<section class="card"><div class="eyebrow">'+esc(e.label)+'</div><h1>Kies een wereld</h1><div class="doors">'+items.map(x=>'<button class="door" onclick="openExplorerWorld(\''+x.id+'\')"><span>'+esc(x.type)+'</span><strong>'+esc(x.name)+' →</strong></button>').join("")+'</div></section>'}
 function openExplorerWorld(id){let n=RR.api.explorerNode(id);if(!n)return;path.push({kind:"explorerworld",id,label:n.name});render()}
 function explorerWorldView(id){let n=RR.api.explorerNode(id);if(!n)return '<section class="card"><h1>Wereld niet gevonden</h1></section>';let doors=n.links.map(x=>'<button class="door" onclick="openExplorerWorld(\''+x.id+'\')"><span>'+esc((x.families||[]).join(" · ")||x.type)+'</span><strong>'+esc(x.name)+' →</strong><span>'+x.relationCount+' onderbouwd verband'+(x.relationCount===1?"":"en")+'</span></button>').join("");return '<section class="card"><div class="eyebrow">'+esc(n.type)+' · vrije wandeling</div><h1>'+esc(n.name)+'</h1><p class="lead">Kies zelf welke deur je nu wilt openen.</p><div class="doors">'+(doors||'<div class="fact"><b>Nog geen deuren</b><span>Deze wereld kan naar de researchvoorraad.</span></div>')+'</div></section>'}
-function render(){crumbs();let x=path[path.length-1];document.getElementById("view").innerHTML=x.kind==="explorerhome"?explorerHomeView():(x.kind==="explorerentry"?explorerEntryView(x.id):(x.kind==="explorerworld"?explorerWorldView(x.id):((x.kind==="artist"||x.kind==="tab")?artist():(x.kind==="shelf"?shelf(x.id):(x.kind==="album"?album(x.id):(x.kind==="track"?track(x.id):(x.kind==="trackstory"?trackStory():(x.kind==="sources"?sources():(x.kind==="trail"?trail(x.id):(x.kind==="trailsources"?trailSources(x.id):(x.kind==="storysources"?storySources(x.id):(x.kind==="relationbundle"?relationBundle(x.id):node(x.id))))))))))));scrollTo(0,0)}explorerHome();if(restoreY)requestAnimationFrame(()=>scrollTo(0,restoreY));
+function render(){
+  crumbs();
+  const x=path[path.length-1];
+  let html="";
+  if(x.kind==="explorerhome") html=explorerHomeView();
+  else if(x.kind==="explorerentry") html=explorerEntryView(x.id);
+  else if(x.kind==="explorerworld") html=explorerWorldView(x.id);
+  else if(x.kind==="artist"||x.kind==="tab") html=artist();
+  else if(x.kind==="shelf") html=shelf(x.id);
+  else if(x.kind==="album") html=album(x.id);
+  else if(x.kind==="track") html=track(x.id);
+  else if(x.kind==="trackstory") html=trackStory();
+  else if(x.kind==="sources") html=sources();
+  else if(x.kind==="trail") html=trail(x.id);
+  else if(x.kind==="trailsources") html=trailSources(x.id);
+  else if(x.kind==="storysources") html=storySources(x.id);
+  else if(x.kind==="relationbundle") html=relationBundle(x.id);
+  else html=node(x.id);
+  document.getElementById("view").innerHTML=html;
+  scrollTo(0,0);
+}
+explorerHome();
+if(restoreY)requestAnimationFrame(()=>scrollTo(0,restoreY));
 </script></body></html>
 <!-- Engine 29 · iPhone reading-safe navigation · 2026-09-21 -->
