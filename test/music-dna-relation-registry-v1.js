@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.33",
+  version:"2026-09-24.34",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -1185,6 +1185,42 @@ function playlistCandidates(id){
     .map(r=>({relationId:r.id,entityId:counterpartFor(id,r),name:(entity(counterpartFor(id,r))||{}).name||"",why:r.claim}))
     .filter(x=>{if(seen.has(x.entityId))return false;seen.add(x.entityId);return true;});
 }
+function explorerResearchDemandFromNames(names,context){
+  context=context||{};
+  const seen=new Set(),known=[],missing=[];
+  (names||[]).forEach(raw=>{
+    const name=String(raw||"").trim(); if(!name)return;
+    const key=name.toLocaleLowerCase(); if(seen.has(key))return; seen.add(key);
+    const id=explorerArtistIdByName(name);
+    if(id)known.push({id,name:entity(id).name,status:"known"});
+    else missing.push({name,status:"missing-world",reason:"encountered-in-explorer",context});
+  });
+  return {known,missing,total:seen.size};
+}
+function explorerResearchDemandFromWeek(weekKey,day){
+  const week=window.MUSIC_DNA_WEEKS&&MUSIC_DNA_WEEKS.get?MUSIC_DNA_WEEKS.get(weekKey):null;
+  if(!week)return {weekKey,ready:false,reason:"week-unavailable",known:[],missing:[]};
+  const pool=window[week.candidateGlobal]||{},tracks=pool.tracks||pool;
+  const readSel=d=>{try{return JSON.parse(localStorage.getItem("bmd-week-"+weekKey+"-day"+d+"-selection-v1")||"null");}catch(e){return null;}};
+  const ids=[]; for(let d=1;d<=Math.max(1,Math.min(7,Number(day)||7));d++){const s=readSel(d);if(s&&Array.isArray(s.ids))ids.push(...s.ids);}
+  const names=ids.map(id=>tracks[id]?.identity?.artist).filter(Boolean);
+  return {weekKey,ready:true,...explorerResearchDemandFromNames(names,{source:"week-selection",weekKey,throughDay:day})};
+}
+function explorerResearchQueue(demand){
+  const missing=(demand&&demand.missing)||[];
+  return missing.map((x,i)=>({...x,priority:i+1,action:"research-world"}));
+}
+function explorerClosedLoopRegressionSelfTest(){
+  const demand=explorerResearchDemandFromNames(["Voïvod","Imaginary Test Artist","Voïvod"],{source:"regression"});
+  const queue=explorerResearchQueue(demand);
+  const cases=[
+    {name:"known world is reused",pass:demand.known.length===1&&demand.known[0].id==="voivod"},
+    {name:"missing world becomes research demand",pass:demand.missing.length===1&&demand.missing[0].name==="Imaginary Test Artist"},
+    {name:"repeat encounter does not duplicate demand",pass:demand.total===2},
+    {name:"research queue is explicit but non-blocking",pass:queue.length===1&&queue[0].action==="research-world"}
+  ];
+  return {pass:cases.every(x=>x.pass),cases,invariant:"real Explorer encounters may create research demand; missing knowledge never blocks wandering and never fabricates a world"};
+}
 function explorerArtistIdByName(name){
   const n=String(name||"").trim().toLocaleLowerCase();
   const hit=Object.entries(registry.entities).find(([,e])=>e.type==="artist"&&String(e.name||"").trim().toLocaleLowerCase()===n);
@@ -1286,5 +1322,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,quickFacts,quickFactBundles}};
 })();
