@@ -203,3 +203,26 @@ The master can become the primary content engine, but two statuses must remain d
 This turns the 690 personal Genre-DNA membership rows into a targeted AllMusic verification programme. Every newly verified artist can immediately add multiple style doors and, as labels overlap, artist-to-style-to-artist walking routes. Rich Registry research is then only needed for deeper stories and non-taxonomic relations, not for basic musical connectivity.
 
 The two confirmed UK Punk checkpoint playlists remain a separate accepted source layer and are not silently counted in the 690-row v3 intersection above.
+
+
+## Safety boundary and master leverage measurement
+
+This work is additive and does not alter W39, weekly selection logic, Spotify playlists, existing Registry facts, or the personal Genre-DNA taxonomy. The master workbook remains read-only source material. Generated Explorer classification data must live in a separate derived layer and may only be promoted to canonical graph edges after the provenance gate passes.
+
+Exact v3 measurement inside the 690 currently mapped Genre-DNA membership rows:
+- 674 unique artists;
+- 624 unique artists already carry `afgeleid volgens AllMusic-taxonomie` working classifications;
+- 49 unique artists have no matching row in the current AllMusic-classification sheet and therefore remain unresolved;
+- 1 unique artist (*shels) is already `rechtstreeks AllMusic`.
+
+The 624 taxonomy-derived Genre-DNA artists already carry **1,984 style assignments across 76 distinct AllMusic-taxonomy labels**. These assignments are not yet canonical artist-profile evidence, but they are an unusually strong verification queue: direct profile checking can confirm/correct the existing labels rather than beginning classification from a blank page.
+
+This establishes the non-destructive pipeline:
+
+`read-only master → generated candidate layer → direct AllMusic verification gate → canonical classification layer → Explorer graph`.
+
+No existing relation is overwritten by this pipeline. A failed or changed AllMusic verification updates only the candidate/classification record for that artist; personal playlist membership remains an independent fact.
+
+### Practical conclusion
+
+The master can supply most of the repetitive structural work. For the 674 artists already represented in the mapped Genre-DNA worlds, 625 already have some classification state and 624 have a concrete taxonomy-derived label set ready to verify. Deep Registry research can therefore be reserved for stories, people, places, events, influences and collaborations rather than basic musical classification.
