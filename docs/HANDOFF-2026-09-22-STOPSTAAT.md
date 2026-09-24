@@ -232,3 +232,13 @@ Selectievolgorde:
 5. Zo’n latere versie mag wel worden gekozen wanneer juist die versie bewust het ontdekkingsobject is; dan krijgt zij haar eigen versie-identiteit en datum.
 
 Dit is een gedeelde selectie-invariant voor Ontdek-DNA en de centrale bron-/provenancelaag. W40 bevat vanaf nu dezelfde policy als delivery gate. De nog uit te voeren W40-audit moet daarom twee vragen beantwoorden: **(a) hebben we de oorspronkelijke opname gekozen? (b) hebben we, indien mogelijk, ook de oorspronkelijke Spotify-release-instance gekozen?** Alleen daarna volgen jaar- en verpakkingscontrole.
+
+## 12. W40 provenance-audit afgerond — GREEN (24 september 2026)
+
+De bestaande W40-pool is na invoering van de regel **originele opname eerst** opnieuw gecontroleerd op zichtbare heruitgave-, remaster-, compilatie-, anniversary-, anthology- en best-of-signalen. Waar brononderzoek een oudere oorspronkelijke opname/release aantoonde, is de canonieke metadata hersteld. Waar Spotify een oorspronkelijke album-instance aantoonbaar aanbiedt, is die waar nodig als Spotify-target gekozen.
+
+Herstelde gevallen omvatten onder meer Aviator, Rox Diamond, Sic Vikki, Andy Timmons, Diamond Rexx, Billy Idol, Donnie Iris, Talking Heads, The Police, Berlin, Alien Sex Fiend, Fad Gadget, Ausgang, Screaming Dead, Skeletal Family, Two Witches, Phenomena/John Wetton, Ange, Argent, Armageddon en M/Robin Scott. INXS en Blondie zijn van remaster-instances naar de op Spotify aanwezige oorspronkelijke album-instance gezet. Nelson blijft met canoniek jaar 1990 op de beschikbare remasterpresentatie; dit is toegestaan als technische verpakking van dezelfde oorspronkelijke opname en verandert de historische datering niet.
+
+Bewust gekozen latere versies blijven toegestaan wanneer de versie zelf het ontdekkingsobject is. In W40 zijn titels die expliciet een remix of live-uitvoering benoemen daarom niet automatisch teruggezet naar het jaar van het onderliggende werk.
+
+**Eindstatus van deze reparatielijn: GREEN.** De ontwerp- en herstelopdracht rond releasejaar, opname-identiteit, Spotify-verpakking en Explorer-tijdprovenance is hiermee gesloten. De blijvende systeemregels staan in §§10–11 en in de gedeelde Registry/W40-policy. Nieuwe kandidaten moeten voortaan door dezelfde selectie- en provenancegate; een nieuwe heruitgavefout is een regressie, geen open ontwerpvraag.
