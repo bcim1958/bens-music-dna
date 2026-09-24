@@ -166,3 +166,40 @@ Rows marked `afgeleid volgens AllMusic-taxonomie` may be queued for direct verif
 6. Keep inferred rows as a visible verification backlog rather than silently discarding them.
 
 This is the scalable musical backbone; richer Registry evidence remains additive.
+
+
+## Exact v3 intersection — direct AllMusic × personal Genre DNA
+
+Programmatic cross-check of the definitive 2026-09-10 v3 workbook gives the first hard result.
+
+Scope:
+- only the 42 canonical personal Genre-DNA world names;
+- exact v3 playlist membership from `Spotify-snapshot 2026-08-25`;
+- the two known v3 title reconciliations (`Psychedelic Space Rock DNA` → `Psychedelic/Space Rock DNA`; `Sla Revival DNA` → `Ska Revival DNA`);
+- Band-DNA playlists excluded;
+- only `Classificatiestatus = rechtstreeks AllMusic`;
+- exact artist-name identity; no alias guessing.
+
+Result from the v3 snapshot:
+- 690 explicit Genre-DNA membership rows;
+- 23 of the 42 personal subworlds represented in that snapshot;
+- 98 directly AllMusic-verified artists in the master overall;
+- **1 exact intersection** between those 690 Genre-DNA rows and the 98 direct-AllMusic artists;
+- that intersection is **Progressive Metal DNA → *shels**;
+- direct AllMusic styles for *shels: **Heavy Metal; Progressive Metal**.
+
+Therefore the first canonical taxonomy walk available from the definitive v3 snapshot is:
+
+`Genre → Progressive Metal → Progressive Metal DNA → *shels → Heavy Metal / Progressive Metal`.
+
+This small immediate intersection is not evidence that the master is poor. It shows that the current direct-AllMusic verification set was created mainly as a metadata-repair sample rather than as systematic coverage of Ben's Genre-DNA playlists. The master already contains the large working classification layer for 2,862 artists; the scalable next move is to use the Genre-DNA membership set to **prioritize direct AllMusic verification**, rather than researching artists in arbitrary order.
+
+### Consequence
+
+The master can become the primary content engine, but two statuses must remain distinct:
+- **available now as canonical Explorer content**: exact playlist membership + direct AllMusic profile verification;
+- **high-value verification queue**: exact playlist membership + taxonomy-derived classification.
+
+This turns the 690 personal Genre-DNA membership rows into a targeted AllMusic verification programme. Every newly verified artist can immediately add multiple style doors and, as labels overlap, artist-to-style-to-artist walking routes. Rich Registry research is then only needed for deeper stories and non-taxonomic relations, not for basic musical connectivity.
+
+The two confirmed UK Punk checkpoint playlists remain a separate accepted source layer and are not silently counted in the 690-row v3 intersection above.
