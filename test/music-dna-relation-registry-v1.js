@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.21",
+  version:"2026-09-24.22",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -21,6 +21,11 @@ const registry={
     ghost:{type:"artist",name:"Ghost",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"multi-source Registry proof",paths:{
 "official-primary":{status:"completed"},"interviews-primary":{status:"completed"},"independent-editorial":{status:"completed"},"discography-credits":{status:"completed"},"relationships-network":{status:"completed"},"live-tour-events":{status:"completed"},"archive-secondary":{status:"completed"}
 }},
+    jason_newsted:{type:"person",name:"Jason Newsted"},
+    piggy:{type:"person",name:"Denis “Piggy” D’Amour"},
+    chewy:{type:"person",name:"Daniel “Chewy” Mongrain"},
+    rush:{type:"artist",name:"Rush"},
+    jonquiere:{type:"place",name:"Jonquière, Québec"},
     voivod:{type:"artist",name:"Voïvod",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"broad multi-decade primary and independent evidence across origin, influences, concept/art, discography, personnel, live history and creative network",paths:{
 "official-primary":{status:"completed","note":"official bio, discography and current archive"},
 "interviews-primary":{status:"completed","note":"Away/Snake/Chewy interviews spanning 1986-2026"},
@@ -126,6 +131,11 @@ const registry={
       "language": "en",
       "sourceNote": "Vaim Hull interviewt Hannes Kett en Joel Alex tijdens de Europese tour; publicatiedatum, geen exacte concertdatum."
     },
+    voivod_metalmania_1986:{provider:"Metal Mania archive / Voivod",kind:"primary-interview",title:"1986 Metal Mania magazine interview",url:"https://voivod.net/1986/08/01/1986-metal-mania-magazine-interview/",publishedAt:"1986-08-01",checkedAt:"2026-09-24"},
+    voivod_rollingstone_1990:{provider:"Rolling Stone archive / Voivod",kind:"primary-interview",title:"New Faces: Voivod",url:"https://voivod.net/1990/03/08/1990-03-08-rolling-stone-573-interview/",publishedAt:"1990-03-08",checkedAt:"2026-09-24"},
+    voivod_newsted_2003:{provider:"Metal Update archive / Voivod",kind:"primary-interview",title:"Interview with Away & Jason Newsted",url:"https://voivod.net/2003/05/18/2003-05-18-metalupdate-interview-pt-1/",publishedAt:"2003-05-18",checkedAt:"2026-09-24"},
+    voivod_chewy_2013:{provider:"Metal Forces",kind:"primary-interview",title:"Voivod – Warchaic",url:"https://www.metalforcesmagazine.com/site/feature-voivod-01-13/",publishedAt:"2013-01",checkedAt:"2026-09-24"},
+    voivod_rush_kerrang:{provider:"Kerrang!",kind:"primary-interview",title:"Michel Away Langevin: the fear I had...",url:"https://www.kerrang.com/voivods-michel-away-langevin-the-fear-i-had-in-the-90s-of-being-completely-forgotten-hasnt-happened-i-have-achieved-what-i-was-hoping-to-do",checkedAt:"2026-09-24"},
     voir_voivod_2019:{
       provider:"Voir / Chanceux comme un Quêteux",kind:"primary-interview",
       title:"Ghost : Entretien avec Tobias Forge, lors du Heavy Montréal 2019",
@@ -454,6 +464,11 @@ const registry={
       ],
       "checkedAt": "2026-09-23"
     },
+    {id:"rel-voivod-rush-influence",from:"voivod",to:"rush",family:"influence",type:"formative-musical-influence",direction:"out",claim:"Away noemt Neil Peart en Rush als vormende invloed; Voïvod toerde in 1990 met Rush.",evidence:["voivod_rush_kerrang"],confidence:"confirmed",uses:["explorer","wat-hoor-ik","express"]},
+    {id:"rel-voivod-newsted-member",from:"voivod",to:"jason_newsted",family:"personnel",type:"band-member-collaboration",direction:"out",claim:"Jason Newsted werkte al met Piggy en Away in Tarrat en sloot zich in 2002 fulltime bij Voïvod aan.",evidence:["voivod_newsted_2003"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
+    {id:"rel-voivod-piggy-core",from:"voivod",to:"piggy",family:"personnel",type:"founding-creative-core",direction:"out",claim:"Piggy was medeoprichter en centrale muzikale schrijver van Voïvod tot zijn overlijden in 2005.",evidence:["voivod_metalmania_1986","voivod_newsted_2003"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
+    {id:"rel-voivod-chewy-continuation",from:"voivod",to:"chewy",family:"personnel",type:"creative-continuation",direction:"out",claim:"Na een Piggy-tribute bleek Chewy de Voïvod-taal overtuigend te beheersen; vanaf 2008 hielp hij de band verder zonder Piggy simpelweg te imiteren.",evidence:["voivod_chewy_2013"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
+    {id:"rel-voivod-jonquiere-industrial",from:"voivod",to:"jonquiere",family:"place",type:"formative-local-context",direction:"out",claim:"Voïvod ontstond in Jonquière; Away verbond de industriële omgeving expliciet met de dystopische beeld- en verhaalwereld van de band.",evidence:["voivod_metalmania_1986","voivod_rollingstone_1990"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"]},
     {
       id:"rel-ghost-voivod-influence",from:"ghost",to:"voivod",
       family:"influence",type:"formative-artistic-influence",direction:"out",
