@@ -1,14 +1,14 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.11",
+  version:"2026-09-24.12",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
     "shiraz_lane":{
       "type": "artist",
       "name": "Shiraz Lane",
-      "research":{"coverage":"developing","richness":"unknown","lastResearched":"2026-09-23","basis":"first sourced Registry fill; insufficient coverage for a richness class"}
+      "research":{"coverage":"developing","richness":"unknown","lastResearched":"2026-09-23","basis":"first sourced Registry fill; insufficient coverage for a richness class","paths":{"official-primary":{"status":"completed"},"interviews-primary":{"status":"completed"},"independent-editorial":{"status":"attempted"},"discography-credits":{"status":"completed"},"relationships-network":{"status":"attempted"},"live-tour-events":{"status":"completed"}}}
     },
     "per_aldeheim":{
       "type": "person",
@@ -18,7 +18,9 @@ const registry={
       "type": "artist",
       "name": "Lordi"
     },
-    ghost:{type:"artist",name:"Ghost",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"multi-source Registry proof with broad relation, story and discovery coverage"}},
+    ghost:{type:"artist",name:"Ghost",research:{coverage:"deep",richness:"very-rich",lastResearched:"2026-09-24",basis:"multi-source Registry proof",paths:{
+"official-primary":{status:"completed"},"interviews-primary":{status:"completed"},"independent-editorial":{status:"completed"},"discography-credits":{status:"completed"},"relationships-network":{status:"completed"},"live-tour-events":{status:"completed"},"archive-secondary":{status:"completed"}
+}},
     voivod:{type:"artist",name:"Voïvod"},
     abba:{type:"artist",name:"ABBA"},
     black_sabbath:{type:"artist",name:"Black Sabbath"},
