@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.36",
+  version:"2026-09-24.37",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -689,7 +689,7 @@ function temporalRegressionSelfTest(){
     {name:"rerecording-may-have-own-later-date",workYear:1980,recordingYear:2020,versionType:"rerecording",expected:2020}
   ];
   const resolve=x=>["remaster-or-reissue","compilation"].includes(x.versionType)?x.recordingYear:x.recordingYear;
-  const results=cases.map(x=>({...x,actual:resolve(x),pass:resolve(x)===x.expected}));
+  const results=cases.map(x=>Object.assign({},x,{actual:resolve(x),pass:resolve(x)===x.expected}));
   const semanticGuards=[
     {name:"package-year-must-not-overwrite",pass:cases[0].packageYear!==cases[0].expected&&cases[1].packageYear!==cases[1].expected},
     {name:"new-version-may-carry-later-year",pass:cases[2].expected!==cases[2].workYear&&cases[3].expected!==cases[3].workYear}
@@ -712,7 +712,7 @@ function researchCoverageGate(id){
   const structural=["discography-credits","relationships-network","live-tour-events"].filter(x=>s.paths[x]?.status==="completed").length;
   const well=s.completed>=4&&independent&&structural>=1;
   const deep=s.completed>=6&&primary&&independent&&structural>=2;
-  return {...s,earnedCoverage:deep?"deep":well?"well-researched":s.completed>=2?"developing":s.attempted>=1?"light":"unresearched"};
+  return Object.assign({},s,{earnedCoverage:deep?"deep":well?"well-researched":s.completed>=2?"developing":s.attempted>=1?"light":"unresearched"});
 }
 
 function researchWorldStatus(id){
@@ -804,7 +804,7 @@ function researchCoverageRegressionSelfTest(){
     const coverage=deep?"deep":well?"well-researched":completed.length>=2?"developing":attempted.length>=1?"light":"unresearched";
     return {coverage,classifiable:["well-researched","deep"].includes(coverage)};
   }
-  const results=cases.map(x=>{const got=gate(x.paths);return {...x,got,pass:got.coverage===x.expectCoverage&&got.classifiable===x.expectClassifiable}});
+  const results=cases.map(x=>{const got=gate(x.paths);return Object.assign({},x,{got,pass:got.coverage===x.expectCoverage&&got.classifiable===x.expectClassifiable})});
   return {ok:results.every(x=>x.pass),invariant:"unknown is not sparse; richness requires earned research coverage",results};
 }
 
@@ -844,7 +844,7 @@ function relationsFor(id,opts){
   });
 }
 function evidenceFor(rel){
-  return (rel.evidence||[]).map(id=>({id,...registry.sources[id]})).filter(Boolean);
+  return (rel.evidence||[]).map(id=>Object.assign({id},registry.sources[id]||{})).filter(Boolean);
 }
 function counterpartFor(baseId,rel){
   if(rel.counterpart)return rel.counterpart;
@@ -922,7 +922,7 @@ function traceStory(baseId,counterpartId){
     ...item,
     relationRecords:(item.relations||[]).map(id=>relationById[id]).filter(Boolean),
     sourceRecords:(item.evidence||[]).map(id=>registry.sources[id]).filter(Boolean)
-  }))};
+  }))});
 }
 function storyCoverage(baseId,counterpartId){
   const traced=traceStory(baseId,counterpartId);
@@ -1208,7 +1208,7 @@ function explorerResearchDemandFromWeek(weekKey,day){
 }
 function explorerResearchQueue(demand){
   const missing=(demand&&demand.missing)||[];
-  return missing.map((x,i)=>({...x,priority:i+1,action:"research-world"}));
+  return missing.map((x,i)=>Object.assign({},x,{priority:i+1,action:"research-world"}));
 }
 function explorerClosedLoopRegressionSelfTest(){
   const demand=explorerResearchDemandFromNames(["Voïvod","Imaginary Test Artist","Voïvod"],{source:"regression"});
@@ -1343,5 +1343,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}};
 })();
