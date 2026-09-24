@@ -1,11 +1,9 @@
-# Music DNA — canonieke stopstaat 22 september 2026
+# Music DNA — canonieke stopstaat t/m 24 september 2026
 
-> **Vervolg 23-09-2026:** de herstelstand hieronder blijft het checkpoint. Na de [Shiraz Lane-vulproef](VALIDATION-2026-09-23-SHIRAZ-LANE-REGISTRY.md) is nu de [gerichte koppeling van verhaal lezen aan vertelde vondsten](VALIDATION-2026-09-23-STORY-DISCOVERY-READING.md) beproefd. Lees die nieuwste aanvulling voor de actuele stand en hervatplek. Nog geen UI-integratie of productiepromotie; Buzzcocks blijft geparkeerd.
+> **Actuele hervatplek (24-09-2026):** projectgeheugen, Relation Registry/Explorer-proeflijn en release-/tijdprovenance zijn geconsolideerd. W40 provenance-audit is GREEN. De eerstvolgende inhoudelijke bouwlijn is **DNA-rijkdom + onderzoeksdekking** als metadata op artiestniveau en geaggregeerd in odometer/cockpit. Geen heropening van de afgesloten releasejaarreparatie zonder aangetoonde regressie.
 
-**Hersteld en gecontroleerd:** 23-09-2026.  
-**Status:** GREEN — projectgeheugen en gecontroleerde proeflijn weer consistent. Geen productiepromotie.  
-**Gereconstrueerde basis:** main t/m `2bac01859296b28d9a3904ea5345aa3284bcedb5`, plus de geaccepteerde afsluitende bespreking van 22 september.  
-**Herstel bovenop die basis:** uitsluitend deze consolidatie, verwijzingen, één ontbrekend bestaand relatiefeit en een regressiecontrole. Geen nieuwe productfunctionaliteit.
+**Status:** GREEN — canonieke hervatstand actueel. Geen productiepromotie.
+**Actieve proefbasis:** Engine 30 + Relation Registry V1; Shiraz Lane-vulproef en story/discovery-reading-proef behouden; weekmotor blijft afzonderlijke deliverylijn.
 
 ## 1. Autoriteit, scope en bouwstop
 
@@ -242,3 +240,22 @@ Herstelde gevallen omvatten onder meer Aviator, Rox Diamond, Sic Vikki, Andy Tim
 Bewust gekozen latere versies blijven toegestaan wanneer de versie zelf het ontdekkingsobject is. In W40 zijn titels die expliciet een remix of live-uitvoering benoemen daarom niet automatisch teruggezet naar het jaar van het onderliggende werk.
 
 **Eindstatus van deze reparatielijn: GREEN.** De ontwerp- en herstelopdracht rond releasejaar, opname-identiteit, Spotify-verpakking en Explorer-tijdprovenance is hiermee gesloten. De blijvende systeemregels staan in §§10–11 en in de gedeelde Registry/W40-policy. Nieuwe kandidaten moeten voortaan door dezelfde selectie- en provenancegate; een nieuwe heruitgavefout is een regressie, geen open ontwerpvraag.
+
+
+## 13. DNA-rijkdom en onderzoeksdekking — volgende bouwlijn (24 september 2026)
+
+Dit is een geaccepteerd ontwerpbesluit/backlog, nog geen volledige UI. **DNA-rijkdom** beschrijft de rijkdom van de betrouwbaar gedocumenteerde muzikale wereld rond een artiest: onafhankelijke bronnen, primaire interviews, tijdspreiding, relaties, gebeurtenissen, context, credits en werkelijk verschillende verhaal-/vondsthoeken. Het is geen kwaliteits-, populariteits-, smaak- of webhit-score. Voorlopige leesbare staten: **Zeer rijk / Rijk / Redelijk / Beperkt / Schaars**; geen schijnprecisie.
+
+**Onderzoeksdekking** beschrijft afzonderlijk hoe grondig Music DNA die wereld werkelijk heeft onderzocht. Kernregel: **niet onderzocht is niet hetzelfde als onderzocht en schaars**. Kleine/lokale/obscure artiesten worden niet benadeeld door lagere media-exposure; gekopieerde persbio's tellen niet als onafhankelijke bronnen.
+
+Op artiestniveau kan compact DNA-wereld + rijkdom + aantal ontdekkingen/ongelezen vondsten verschijnen. De odometer/cockpit krijgt uiteindelijk (1) rijkdomsverdeling onder voldoende onderzochte werelden en (2) onderzoeksdekking van de catalogus, leesbaar als **Bewezen wereld ←────────→ Onontgonnen wereld**.
+
+Eerstvolgende bouwactie: datamodel + integriteitsregels, daarna kleine proef op contrasterende werelden. Ghost dient als rijke/diep onderzochte maat; Shiraz Lane als nieuwe RAAK-instroom; een derde aantoonbaar grondig onderzochte maar schaarse wereld moet worden gekozen op bewijs, niet op obscuriteit.
+
+## 14. Audit 24 september — gesloten versus open
+
+Tegen de commitgeschiedenis gecontroleerd en behouden/gesloten: herstelconsolidatie 23 september; Shiraz Lane-vulproef; story-reading → expliciet vertelde vondsten (`26ab7a87`); systeemwijde tijd-/releaseprovenance; versie-aware temporal context; automatische temporal-integriteitscontrole; regressietests voor packaging versus echte nieuwe versies; originele-opname-eerst Spotify-regel; W39 releasejaarherstel; W40 provenance-audit GREEN.
+
+Open maar niet blokkerend: DNA-rijkdom/onderzoeksdekking bouwen; Registry/Explorer verder vullen/beproeven; Buzzcocks blijft geparkeerde lokale/historische stresstest; duurzame persoonlijke leesstatus en productiepromotie zijn nog niet gebouwd.
+
+**Hervatregel:** in een nieuwe chat eerst §§13–14 lezen. Volgende bouwactie is DNA-rijkdom/onderzoeksdekking; Relation Registry, releasejaarregels en W40 niet opnieuw ontwerpen zonder concrete regressie.
