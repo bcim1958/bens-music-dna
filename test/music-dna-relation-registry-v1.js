@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.29",
+  version:"2026-09-24.30",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -1181,6 +1181,43 @@ function playlistCandidates(id){
     .map(r=>({relationId:r.id,entityId:counterpartFor(id,r),name:(entity(counterpartFor(id,r))||{}).name||"",why:r.claim}))
     .filter(x=>{if(seen.has(x.entityId))return false;seen.add(x.entityId);return true;});
 }
+function explorerNode(id){
+  const e=entity(id); if(!e)return null;
+  const links=relationshipBundles(id,{use:"explorer",confidence:"confirmed"}).map(b=>({
+    id:b.entityId,name:(b.entity||{}).name||b.entityId,type:(b.entity||{}).type||"unknown",
+    families:b.families,relationCount:b.relations.length,narrative:narrativeMaterial(id,b.entityId)
+  }));
+  return {id,name:e.name,type:e.type,research:e.research||null,links};
+}
+function createExplorerWalk(startId,entry){
+  if(!entity(startId))throw new Error("Unknown Explorer start: "+startId);
+  return {entry:entry||{type:"free",id:startId},trail:[startId],cursor:0};
+}
+function explorerStep(walk,nextId){
+  if(!walk||!Array.isArray(walk.trail))throw new Error("Invalid Explorer walk");
+  const current=walk.trail[walk.cursor],node=explorerNode(current);
+  if(!node||!node.links.some(x=>x.id===nextId))throw new Error("No Explorer edge: "+current+" -> "+nextId);
+  walk.trail=walk.trail.slice(0,walk.cursor+1).concat(nextId);walk.cursor++;return explorerNode(nextId);
+}
+function explorerBack(walk){
+  if(walk.cursor>0)walk.cursor--; return explorerNode(walk.trail[walk.cursor]);
+}
+function explorerBreadcrumb(walk){
+  return walk.trail.slice(0,walk.cursor+1).map(id=>({id,name:(entity(id)||{}).name||id,type:(entity(id)||{}).type||"unknown"}));
+}
+function explorerNavigationRegressionSelfTest(){
+  const w=createExplorerWalk("voivod",{type:"free",id:"voivod"});
+  explorerStep(w,"rush"); const atRush=w.trail[w.cursor]==="rush"; explorerBack(w);
+  const back=w.trail[w.cursor]==="voivod";
+  const unique=explorerNode("voivod").links.map(x=>x.id); 
+  const cases=[
+    {name:"free start creates node",pass:w.trail[0]==="voivod"},
+    {name:"walk follows real relation edge",pass:atRush},
+    {name:"back returns through breadcrumb",pass:back},
+    {name:"visible doors are unique counterparts",pass:unique.length===new Set(unique).size}
+  ];
+  return {pass:cases.every(x=>x.pass),cases,invariant:"choose -> view -> follow a real edge -> back; entry source never constrains later wandering"};
+}
 function quickFacts(id){
   return relationsFor(id,{use:"wat-hoor-ik",confidence:"confirmed"}).map(r=>({
     relationId:r.id,family:r.family,text:r.claim,sources:evidenceFor(r)
@@ -1192,5 +1229,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,quickFacts,quickFactBundles}};
+window.MUSIC_DNA_RELATION_REGISTRY_V1={...registry,api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,quickFacts,quickFactBundles}};
 })();
