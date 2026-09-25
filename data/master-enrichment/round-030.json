@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-030",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 1,
+  "method": "Second-pass batch across unresolved targeted and profile/credit cases. Exact identity plus accepted AllMusic Genre/Styles required. Repeated no-result cases remain open as source-sparse candidates.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:51e3d2d96ff9f337a91363b1",
+      "displayName": "Dumpy's Rusty Nuts (DRN)",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Rock City",
+        "album": "Boxhill or Bust"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Exact AllMusic profile verified: Genre Pop/Rock; Styles Boogie Rock, Hard Rock; playlist identity matches Dumpy's Rusty Nuts/DRN."
+    },
+    {
+      "musicDnaId": "mdna:mention:18e99c9018634e41afb58baf",
+      "displayName": "F.I.G.H.T.E.R",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Panic Attack",
+        "album": "American Made"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:9a12dbce550dace01d1f3977",
+      "displayName": "Face of a Stranger",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Human After All",
+        "album": "Human After All"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:293d0faacf4e1c02851078c5",
+      "displayName": "Feast!",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hail! To Saturday Nite!",
+        "album": "Feast!"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:2adc45c63ae66c1f1c53f5e5",
+      "displayName": "Fish in a Birdcage",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rule #4 - Fish in a Birdcage",
+        "album": "Fish in a Birdcage"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:e3186aa068f36f0a065f08b1",
+      "displayName": "Forsaken Throne",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "21 Guns",
+        "album": "The Metaphysical"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:650e29ad896f26736e08e473",
+      "displayName": "Four Trips Ahead",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Escape",
+        "album": "…And The Fire Within"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:29bb75f167eaec1b40625932",
+      "displayName": "Gog Magog",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Metal Medley",
+        "album": "Metal Medley"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:a4ea2697c476853d3807be86",
+      "displayName": "Gwyllion",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Rock Rolls On",
+        "album": "The Crimson Covers a Tribute to W.A.S.P."
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:84305117925e27dade094612",
+      "displayName": "Hank Of Sweden",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Love The Way It Burns",
+        "album": "Diamonds and Pearls"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:9c2b6ed2fa382e2d835b2195",
+      "displayName": "Hell's Addiction",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "What You Gonna Do?",
+        "album": "Broken"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:7ffb1e4b291cf5304768cb9f",
+      "displayName": "Hellsbelles",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rock & Roll Damnation",
+        "album": "Highway To Hell: A Tribute To Bon Scott And Ac/dc"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:09e81144fb462e90ea5fd704",
+      "displayName": "Human Flesh",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Balls to the Wall",
+        "album": "Human Flesh"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:e1af373a4b203e8f81ed4b1f",
+      "displayName": "Just Off the Grid",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Shot Gun",
+        "album": "Dirty Little Ditties"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:1cc264241c47edcdb7a8fe5f",
+      "displayName": "Kult of the Skull God",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "One More Try",
+        "album": "The Great Magini"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:0a9157de98bb22a661ef5d32",
+      "displayName": "Michael Garrett",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bad Ass",
+        "album": "We've Arrived"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:fd4a7c3bb4ff24143f530925",
+      "displayName": "Omega Tribe",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Is This A Future?",
+        "album": "Angry Songs"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:04164daf36c82df2ebfda5f5",
+      "displayName": "Out of Gravity",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "From Dusk Till Dawn",
+        "album": "2024"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:a07c642a6993f7272f741c82",
+      "displayName": "Sardis",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Sensational Society",
+        "album": "Viral"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:4f82da918754733cbcb22de3",
+      "displayName": "The Mood",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Boozing, Dancing, and a Chance of Romancing",
+        "album": "Boozing, Dancing, and a Chance of Romancing"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:351d67fedbf8c3cfe581ed12",
+      "displayName": "The System",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Thought Control",
+        "album": "Is Still Murder"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:7af0511a4fa7ba8f475e6fed",
+      "displayName": "Nathan James",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Hanged Man",
+        "album": "The Hanged Man"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:90f31eb99eeb1f63a66edcc4",
+      "displayName": "Pendragon",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Lost Reason",
+        "album": "Pop: Korn! the Best of Pop & Rock"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:e614eeb9bf3ffeb4b810a590",
+      "displayName": "SHOUT",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "People of the Night",
+        "album": "People of the Night"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:6e21ba6f0b3527e04b868ab8",
+      "displayName": "Supercharger",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Blood Red Lips",
+        "album": "Broken Hearts and Fallaparts"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain open/source-sparse candidate."
+    }
+  ]
+}
