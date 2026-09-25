@@ -1,0 +1,311 @@
+# Music DNA — overzicht van 282 open brongevallen
+
+Stand na gezamenlijke controle 004. Master: 3.333 / 3.333. Dit zijn onderzoeksgevallen, niet 282 bewezen fouten.
+
+## Profiel of credit gericht controleren — 11
+
+Een gevonden profiel of de solo/band-credit vraagt nadere controle. Dit is geen lijst van bewezen fouten.
+
+- **Aria** — Multiple same-name artist profiles; electronic/goth candidates not yet linked to Russian-language playlist release. — [bron](https://music.apple.com/us/song/819701706)
+- **Green Machine** — Same-name profile remains unlinked to Horse; name alone insufficient.
+- **Joan Jett & the Blackhearts** — Official-channel recording credits Bad Reputation to Joan Jett solo; playlist uses band credit. Retain original and review relationship.
+- **Midnight City** — Electronic/house candidate not yet linked to playlist EP and song.
+- **Nathan James** — Classical and blues candidates not yet linked to The Hanged Man. — [bron](https://open.spotify.com/track/3aAbH1E9MxcLXutvmFgALt)
+- **Pendragon** — Prog-rock profile not yet linked to Lost Reason compilation credit.
+- **SHOUT** — Stage & Screen candidate not linked to People of the Night. — [bron](https://music.amazon.in/albums/B07KNWN2XM)
+- **Supercharger** — Existing profile not yet linked to Blood Red Lips; same-name bands require review. — [bron](https://open.spotify.com/album/5hUWgIr1ugYLooiDBdNFM9)
+- **The Mood** — Power-pop candidate not yet linked to playlist single.
+- **The System** — R&B candidate not linked to Thought Control; inverted search result rejected.
+- **The Warriors** — Metal and British Invasion candidates not linked to the Oi! live credit.
+
+## Samenwerkingen/remixcredits uitwerken — 30
+
+Meerdere bijdragers of remixrollen; oorspronkelijke vermelding blijft intact.
+
+- **Asrai; Sascha Paeth**
+- **Axl Rose;Izzy Stradlin** — [bron](https://open.spotify.com/track/0m0OWhqRZCmnWsLUV17sV8)
+- **Beth Hart, Joe Bonamassa** — [bron](https://music.apple.com/us/song/465883281)
+- **Bombay Dub Orchestra;Tom Bailey**
+- **Chris Jericho;Paul Gilbert;Bob Kulick;Mike Inez;Brent Fitz** — [bron](https://music.apple.com/us/song/261071641)
+- **Collide; Blue Stahli** — [bron](https://open.spotify.com/track/2FJods2O7omQmAuYW5kX6e)
+- **Cruel Juno;Fabio Lione** — [bron](https://music.apple.com/us/album/a-little-punctuation-feat-fabio-lione-single/1459706355)
+- **Daniel Licht;Jon Licht** — [bron](https://music.apple.com/us/song/1534025783)
+- **Dexys Midnight Runners;Kevin Rowland**
+- **Euge Valovirta;Nico Hartonen** — [bron](https://music.apple.com/ca/album/feed-the-fire-feat-nico-hartonen-single/1327380330)
+- **Eurythmics; Annie Lennox; Dave Stewart**
+- **Hollywood Roses;Axl Rose** — [bron](https://music.apple.com/us/song/318857262)
+- **It's Alive;Max Martin**
+- **Jason Payne & The Black Leather Riders;Daisy Pepper**
+- **M83;Cyann & Ben** — [bron](https://open.spotify.com/track/7zY4p900njFlt0gg8f9RIy)
+- **My Darkest Days;Chad Kroeger;Zakk Wylde**
+- **Nerved;Thobbe Englund;MAD-A** — [bron](https://open.spotify.com/intl-pt/track/3twORF433mSfnO2muNjYXx)
+- **Paul McCartney;Wings**
+- **Plainview;Kalie Wolfe** — [bron](https://music.apple.com/us/song/1685385785)
+- **Shopan Entesari;Mike Slamer** — [bron](https://music.apple.com/us/song/320557029)
+- **Sirenia; Mortemia**
+- **Sophie Lloyd;Cole Rolland**
+- **Sophie Lloyd;Inglorious;Nathan James** — [bron](https://music.apple.com/us/song/1710649409)
+- **Steven Tyler;Nuno Bettencourt** — [bron](https://music.apple.com/us/song/1432733758)
+- **Subvision;Tobias Forge;Gustav Holvfasth;Thomas Daun** — [bron](https://music.apple.com/us/song/1439005642)
+- **Testarossa;Danny Worsnop** — [bron](https://music.apple.com/us/album/mother-lover-feat-danny-worsnop-single/1496073275)
+- **The dB's; Don Dixon**
+- **The Style Council;Jay Mark**
+- **Vambier;Tobias Regner** — [bron](https://music.apple.com/us/song/1591189669)
+- **VIERSPURIG;Waldemar Sorychta**
+
+## Artiest bevestigd, profielvelden onvolledig — 11
+
+Juiste artiest bekend; genre of stijlen nog niet volledig bevestigd.
+
+- **Apollo** — Ontbreekt: styles
+- **Crash Test Dummies** — Ontbreekt: styles
+- **Deya Dova** — Ontbreekt: styles — [bron](https://music.apple.com/us/song/1631435127)
+- **Early Winters** — Ontbreekt: styles — [bron](https://music.apple.com/us/song/491211777)
+- **La Fuga** — Ontbreekt: styles — [bron](https://music.apple.com/us/song/140838436)
+- **LSD and the Search for God** — Ontbreekt: styles — [bron](https://music.apple.com/us/song/1077867823?l=en-US)
+- **Nick Kamen** — Ontbreekt: styles — [bron](https://music.amazon.ca/tracks/B0GR537D81)
+- **Skunk Anansie** — Ontbreekt: genre — [bron](https://open.spotify.com/track/5pDo8AChRUOoUGvktauiwf)
+- **Taking Dawn** — Ontbreekt: genre — [bron](https://music.apple.com/us/song/350135471)
+- **Them Evils** — Ontbreekt: styles — [bron](https://music.apple.com/us/album/where-ya-gonna-crash-tonight-single/1554956540)
+- **Ugly Kid Joe** — Ontbreekt: genre
+
+## Catalogus/bronvermelding gevonden, profiel nog koppelen — 124
+
+Een nummer/release en credit zijn teruggevonden; dat bevestigt nog niet automatisch een AllMusic-profiel.
+
+- **5 Star Hooker** — [bron](https://music.amazon.in/albums/B08YMCTJYC)
+- **Airtrain** — [bron](https://music.apple.com/mx/album/black-chapter-single/1516725240)
+- **Amber Myst** — [bron](https://music.amazon.co.uk/albums/B0F9F1TG3W)
+- **Ammotrack** — [bron](https://music.amazon.com/tracks/B0713RZ6RJ)
+- **Any Miracle** — [bron](https://music.apple.com/us/song/1800099112)
+- **Aron Scott Earthquake** — [bron](https://music.amazon.in/albums/B08CBNBXTR)
+- **Ashes to Omens** — [bron](https://music.apple.com/us/song/1771051760)
+- **Atomic Drive** — [bron](https://music.apple.com/us/album/wires-single/1649030801)
+- **Bad Actress** — [bron](https://open.spotify.com/track/0t0ctfJ1JBrWj1YpHvpiFQ)
+- **Bad Bones** — [bron](https://open.spotify.com/track/6P2SKXpngBE6SzQaVhO7Ly)
+- **Black City** — [bron](https://open.spotify.com/track/5PcvqDI0ZsoS6JMaMK9F5U)
+- **Blood Command** — [bron](https://open.spotify.com/track/1Kp80mQhmtLSJCJwzLrnXP)
+- **Box Of Toys** — [bron](https://open.spotify.com/track/1Sg2HUyyen1uSjgVNLdFKf)
+- **Broken Peach** — [bron](https://music.apple.com/us/album/tainted-love-single/1590103983)
+- **Bullseye** — [bron](https://music.apple.com/us/album/count-on-me-ep/375722173)
+- **Burn The Ballroom** — [bron](https://open.spotify.com/track/3SRngdnXshmXPkqYLBfqiV)
+- **Camu** — [bron](https://music.apple.com/us/album/bamboo-road-single/1514392845)
+- **CHRIS HICKS PROJECT** — [bron](https://music.apple.com/jp/song/1679067253)
+- **Chrome Division** — [bron](https://music.apple.com/ch/song/1456964075)
+- **Cincinnati Sinners** — [bron](https://music.apple.com/ca/song/501863213)
+- **cleopatrick** — [bron](https://open.spotify.com/track/6ikRLztllCPsloUL2jCYpJ)
+- **CobraKill** — [bron](https://music.apple.com/gb/song/1713246398)
+- **Cryoshell** — [bron](https://music.apple.com/us/album/creeping-in-my-soul-single/340829456)
+- **Crystal Steel** — [bron](https://music.apple.com/us/album/crystalized-single/1785925782)
+- **Cynical Sons** — [bron](https://music.apple.com/fr/album/danger-xone-single/1704296638)
+- **Cöntraband** — [bron](https://music.apple.com/us/album/mamarracho-single/1765766035)
+- **David Baechler** — [bron](https://music.apple.com/fr/song/1534005967)
+- **Dead Posey** — [bron](https://music.apple.com/us/song/1817247030)
+- **Dead Union Social Theory** — [bron](https://music.amazon.com/tracks/B0993PFTLP)
+- **Deadland Ritual** — [bron](https://music.apple.com/gb/song/1445706227)
+- **Deaf Rat** — [bron](https://music.apple.com/us/song/1471962924)
+- **Devilskin** — [bron](https://music.apple.com/ca/album/corrode-single/1774606757)
+- **Dizzy Reed** — [bron](https://music.apple.com/us/album/this-dont-look-like-vegas-single/1755381155)
+- **Dress the Dead** — [bron](https://music.amazon.com/tracks/B07XWV61L6)
+- **Ei siis on siis** — [bron](https://music.amazon.com/tracks/B0FCJ72P2T)
+- **Electric Temple** — [bron](https://www.eonianrecords.com/electric-temple/)
+- **Ember Falls** — [bron](https://music.apple.com/au/song/1442953573)
+- **Eye Tea** — [bron](https://open.spotify.com/track/1pXJTOHTCpxwFt6JpAitav)
+- **Fate DeStroyed** — [bron](https://music.apple.com/us/album/crave-single/1512175275)
+- **FEARLESS** — [bron](https://music.amazon.com.au/albums/B074ZPG5SP)
+- **Formosa** — [bron](https://music.apple.com/bg/song/1822314168)
+- **Frank Klepacki** — [bron](https://open.spotify.com/track/60Ewn89MMz4OWmsoiO4wK2)
+- **Freaky Things** — [bron](https://music.apple.com/us/song/1719406242)
+- **Frontback** — [bron](https://music.amazon.ca/tracks/B01M34G99O)
+- **Game On** — [bron](https://music.amazon.com/tracks/B0FVL8CX38)
+- **Hollowstar** — [bron](https://music.amazon.co.uk/tracks/B07P682J3H)
+- **Hvalross** — [bron](https://music.apple.com/gb/song/1825933384)
+- **JC Crash (Johnny Crash)** — [bron](https://music.amazon.fr/tracks/B019341PFM)
+- **Johnny Deathshadow** — [bron](https://music.apple.com/es/album/the-devils-own-single/1569361569)
+- **Joy in Motion** — [bron](https://music.apple.com/us/album/wasting-away-single/1696395430)
+- **Kill City** — [bron](https://music.amazon.co.jp/albums/B0CZ6ZTYHR)
+- **Killit** — [bron](https://music.amazon.com/tracks/B00T8O09ZK)
+- **Krieger** — [bron](https://music.apple.com/us/song/514648888)
+- **Kung Fu Hotline** — [bron](https://music.amazon.com/tracks/B0BZ1W2QH7)
+- **Kurator** — [bron](https://music.apple.com/us/album/black-from-ashes-single/1546189702)
+- **Lake Domain** — [bron](https://music.apple.com/us/song/1500024209)
+- **Lanzer** — [bron](https://music.apple.com/us/song/475758975)
+- **Laurenne / Louhimo** — [bron](https://music.apple.com/us/album/the-reckoning/1562910382)
+- **Leviticus** — [bron](https://music.apple.com/de/song/1102516798)
+- **Liliac** — [bron](https://music.apple.com/us/song/1436780238)
+- **Liv Sin** — [bron](https://music.apple.com/gb/album/slave-to-the-machine-single/1527188228)
+- **Mad Dogs** — [bron](https://music.apple.com/us/album/never-too-late/1816935838)
+- **Mainline** — [bron](https://music.apple.com/us/album/in-nothing-we-trust-22-version-single/1651055625)
+- **MCC [Magna Carta Cartel]** — [bron](https://music.apple.com/us/song/1634022192)
+- **Metalsteel** — [bron](https://music.amazon.com/tracks/B0F2C6YNTH)
+- **MILE** — [bron](https://music.apple.com/us/album/crying-in-your-sleep-single/1315611270)
+- **Misery's Smile** — [bron](https://music.apple.com/us/album/my-misery-single/1580369930)
+- **NitroDive** — [bron](https://music.amazon.ca/tracks/B071HR6XGD)
+- **Noora Louhimo Experience** — [bron](https://music.apple.com/us/album/eternal-wheel-of-time-and-space/1785257535)
+- **Nova Nights** — [bron](https://music.apple.com/us/album/sweet-cigarella-single/1780394022)
+- **Osmi Putnik** — [bron](https://music.apple.com/rs/song/1796832623)
+- **Overloaded** — [bron](https://music.amazon.com/tracks/B001957QMA)
+- **Oxidize** — [bron](https://music.apple.com/us/album/extremist-single/1779816279)
+- **Panama Kinal** — [bron](https://music.amazon.com/tracks/B09WZKQK56)
+- **Paul Gilbert** — [bron](https://music.apple.com/us/album/fuzz-universe/1049053995)
+- **Ph.D.** — [bron](https://open.spotify.com/track/1NXHwS75sCmkMZAE0zvwl0)
+- **Pink Velvet Krush** — [bron](https://music.amazon.com.au/albums/B0866BLST5)
+- **Private Line** — [bron](https://music.amazon.com/albums/B005GQ10ZC)
+- **Promises** — [bron](https://music.amazon.com/tracks/B07FQSD11C)
+- **RADIO TAPOK** — [bron](https://music.apple.com/us/song/1527528742)
+- **Redemption Switch** — [bron](https://music.amazon.in/albums/B0DMKKYYBH)
+- **RedScool** — [bron](https://music.apple.com/pl/album/stare-single/1570732612)
+- **Rise of Utopia** — [bron](https://music.amazon.com/albums/B0DFZ6JJLD)
+- **Roah** — [bron](https://music.amazon.fr/albums/B08DD9BBXJ)
+- **Rockborn** — [bron](https://music.amazon.es/albums/B098D6DNCK)
+- **Rusty Nail** — [bron](https://music.amazon.com/tracks/B0D7QBNR4F)
+- **Saint** — [bron](https://open.spotify.com/album/1AxhwaHbews98wpy8R7H3D)
+- **September Mourning** — [bron](https://music.apple.com/us/song/1698645673)
+- **Sershen&Zaritskaya** — [bron](https://music.apple.com/us/album/separate-ways-worlds-apart-single/1440551958)
+- **Sex Slaves** — [bron](https://music.apple.com/us/song/1464871353)
+- **Shereign** — [bron](https://music.amazon.in/albums/B0BQPGKQLR)
+- **Skarlett Riot** — [bron](https://music.apple.com/us/song/1550219023)
+- **Smackbound** — [bron](https://music.apple.com/fi/song/1499901736)
+- **Soldato** — [bron](https://music.apple.com/gb/album/holy-man-single/1540433326)
+- **Sons Of Sounds** — [bron](https://music.apple.com/ng/album/sound-of-hope-single/1705705794)
+- **Sorrow & The Spire** — [bron](https://open.spotify.com/track/2IeLMi6i5EsVXSxfUAdVQl)
+- **Sparzanza** — [bron](https://music.amazon.ca/tracks/B01DLOOAWA)
+- **Speed Parade** — [bron](https://music.apple.com/ru/album/wicked-vikki-ep/1542968255)
+- **StoneRowe** — [bron](https://music.apple.com/ca/album/higher-single/1462465529)
+- **Stryken** — [bron](https://open.spotify.com/track/5vbqZYLDcSmow1ckY0YVuA)
+- **Subvision** — [bron](https://music.apple.com/us/song/1438969543)
+- **Sunday Riot Club** — [bron](https://music.apple.com/us/song/1746200650)
+- **Terratomorf** — [bron](https://music.amazon.com/tracks/B0G4DFPSW9)
+- **Tester** — [bron](https://music.apple.com/us/album/king-of-the-world/415517537)
+- **The Ben Cote Band** — [bron](https://music.amazon.com.br/albums/B0DLLSQ84S)
+- **The Blanko** — [bron](https://music.apple.com/us/album/electric-desire-single/1439362093)
+- **The Faithless** — [bron](https://music.amazon.com/tracks/B07NCL1ZC7)
+- **The Fallen State** — [bron](https://open.spotify.com/track/14oHybgp6z9zegbbDxUg8b)
+- **The Killbilly 5'ers** — [bron](https://music.amazon.com/tracks/B0097WWDGQ)
+- **Tomorrow Is Lost** — [bron](https://www.eclipserecords.com/band/tomorrow-is-lost/)
+- **Track of Rock** — [bron](https://music.apple.com/gb/album/lets-rock-single/1470465316)
+- **TRUCKER DIABLO** — [bron](https://music.apple.com/us/song/1163170008)
+- **Twin Tribes** — [bron](https://music.apple.com/us/song/1477878203)
+- **Two Places at Once** — [bron](https://music.apple.com/us/song/1071620865)
+- **Tyranuke** — [bron](https://music.apple.com/de/album/join-me-i-die-ep/1520215115)
+- **Vixen X** — [bron](https://music.apple.com/us/album/die-for-you-single/1581470649)
+- **Voltedge** — [bron](https://music.amazon.in/albums/B0CKPH5SKK)
+- **Vonavibe** — [bron](https://music.apple.com/us/album/run-n-hide-single/1669517277)
+- **WARGASM (UK)** — [bron](https://music.apple.com/us/song/1641824116)
+- **We're Wolves** — [bron](https://music.apple.com/us/song/1510461124)
+- **Wirefall** — [bron](https://music.apple.com/ca/song/1680796153)
+- **Witche’s Brew** — [bron](https://music.amazon.in/albums/B089PS4BJ8)
+- **Wolf & Chain** — [bron](https://music.amazon.com/tracks/B0C7VDPDGJ)
+- **Year Gone** — [bron](https://music.apple.com/us/album/set-my-soul-single/886565835)
+
+## Gericht brononderzoek nodig — 106
+
+Nog geen geselecteerde bronkoppeling; opgeslagen aanwijzingen helpen verder zoeken.
+
+- **666packs**
+- **Argos**
+- **Aventyr**
+- **Beyond Your Reach**
+- **Big Clyde**
+- **Big Guns**
+- **BlackBeer**
+- **Blakk Ledd**
+- **Bolt**
+- **Bomber Alley**
+- **Bonedryver**
+- **Cocaine Cowboys**
+- **Crimson**
+- **Crystal Tears**
+- **D'OR**
+- **Deathlike Silence**
+- **Ded Ringer**
+- **Dream Patrol**
+- **Drift Mothership**
+- **Dull of Down**
+- **Dumpy's Rusty Nuts (DRN)**
+- **F.I.G.H.T.E.R**
+- **Face of a Stranger**
+- **Feast!**
+- **Fish in a Birdcage**
+- **Forsaken Throne**
+- **Four Trips Ahead**
+- **Get Into Gear**
+- **Goddo**
+- **Gog Magog**
+- **Gwyllion**
+- **Hank Of Sweden**
+- **Hell's Addiction**
+- **Hellsbelles**
+- **Human Flesh**
+- **Igel vs. Shark**
+- **Into the Zoid**
+- **Just Off the Grid**
+- **King of Bones**
+- **Kult of the Skull God**
+- **Lawlezz**
+- **Lethal Dose**
+- **Loanshark**
+- **Los Bastardos Finlandeses**
+- **Megasonic**
+- **Michael Garrett**
+- **Motordrunk**
+- **Nemo!**
+- **NEMOPHILA**
+- **Noise4Nothing**
+- **Non Divide**
+- **Nowhere's Home**
+- **Omega Tribe**
+- **Out of Gravity**
+- **Primal Sinner**
+- **Ranter**
+- **Raphael Gazal**
+- **Rash Panzer**
+- **Ratchet Dolls**
+- **Rattlesquad**
+- **Re-Machined**
+- **Revolution Rebels**
+- **Rinderwahnsinn**
+- **Roadhouse Diet**
+- **S.O.R.M**
+- **Saint Renascence**
+- **Sardis**
+- **Seraina Telli**
+- **Seventh Rize**
+- **Shadow Bullets**
+- **Shawn Michael Perry**
+- **Sinisis**
+- **Sixxxten**
+- **Sleeping Bear**
+- **Stained Red**
+- **Stallion four**
+- **State Of Emergency**
+- **Statement**
+- **Stereosuckers**
+- **Steve Strange**
+- **Steve Whiteman**
+- **Stone Division**
+- **Stryke Lightning**
+- **Taletellers**
+- **The Addicts**
+- **The Babysitters**
+- **The Baker Gurvitz Army**
+- **The Dirty Marmaduke Flute Squad**
+- **the inner me**
+- **The Jolt**
+- **The L.A. Maybe**
+- **The Reconciled**
+- **The Ruckus**
+- **The Starks**
+- **The Svengalis**
+- **THE VALVES**
+- **The Wicked Jackals**
+- **UNFORCED 5**
+- **Vandal**
+- **Vanity Insanity**
+- **VELLEN**
+- **Venus Mountains**
+- **Villain Press**
+- **Whiskey River Gun Club**
+- **White Void**
+- **Yellow Dog Conspiracy**
+

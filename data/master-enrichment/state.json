@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 84,
-  "remainingOpenCount": 327,
+  "sourceSupportedCount": 129,
+  "remainingOpenCount": 282,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -20,9 +20,21 @@
     {
       "path": "data/master-enrichment/round-003.json",
       "sha256": "c638597ea4a87f55c1abcc26e411eb150ddf7b1ca49436f270a7303b16e0a04d"
+    },
+    {
+      "path": "data/master-enrichment/round-004.json",
+      "sha256": "bb63b2f034de3ea1dd2729953707594e8c0660a2855c5b8b417d0bd837c487b7"
     }
   ],
-  "nextAction": "Continue targeted primary-source identity checks for remaining open cases. Ten profiles retain partial evidence; three parent-genre proposals are derived, not direct profile fields.",
-  "lastCompletedRound": "ENRICH-003",
-  "partialEvidenceOpenCount": 10
+  "nextAction": "Continue by workstream across all remaining records: profile/credit review, provider metadata, composite roles, and targeted source follow-up. Reuse saved leads and historical candidates; report consolidated progress instead of stopping after small wins.",
+  "lastCompletedRound": "ENRICH-004",
+  "partialEvidenceOpenCount": 11,
+  "latestRoundReviewedCount": 327,
+  "openTriageCounts": {
+    "release-credit-found-profile-pending": 124,
+    "identity-confirmed-metadata-incomplete": 11,
+    "targeted-research-needed": 106,
+    "profile-or-credit-review": 11,
+    "composite-credit": 30
+  }
 }
