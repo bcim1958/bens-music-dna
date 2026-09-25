@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "classification": "TERMINAL-CLASSIFICATION-001",
+  "classification": "TERMINAL-CLASSIFICATION-002",
   "date": "2026-09-25",
   "baseline": {
     "originalCases": 411,
@@ -14,15 +14,31 @@
     "researchable": "A concrete unexhausted source/profile lead remains."
   },
   "openClassification": {
-    "sourceSparse": 0,
+    "sourceSparse": 14,
     "identityUnresolved": 30,
-    "researchable": 195,
+    "researchable": 181,
     "provisional": true,
-    "explanation": "Conservative first overlay: no case is terminally marked source-sparse solely from old triage labels. The 9 profile-or-credit-review plus 21 composite-credit cases seed identity-unresolved; all other 195 open cases remain researchable until review history is explicitly exhausted."
+    "explanation": "History pass applied: 14 open cases had repeated documented second-pass reviews without a later supported promotion. Identity-ambiguous cases remain separate."
   },
   "arithmetic": [
-    "186 + 0 + 30 + 195 = 411",
-    "0 + 30 + 195 = 225"
+    "186 + 14 + 30 + 181 = 411",
+    "14 + 30 + 181 = 225"
   ],
-  "nextPass": "Promote cases from researchable to source-sparse only from explicit repeated-search history; do not rerun searches already documented as exhausted."
+  "nextPass": "Continue history-based review of the remaining 181 researchable cases; do not repeat searches already exhausted.",
+  "sourceSparseCaseNames": [
+    "Bad Bones",
+    "CobraKill",
+    "Deaf Rat",
+    "Formosa",
+    "Frontback",
+    "Sons Of Sounds",
+    "Freaky Things",
+    "Get Into Gear",
+    "Igel vs. Shark",
+    "Into the Zoid",
+    "King of Bones",
+    "Lawlezz",
+    "Lethal Dose",
+    "Sardis"
+  ]
 }
