@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 182,
-  "remainingOpenCount": 229,
+  "sourceSupportedCount": 184,
+  "remainingOpenCount": 227,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -89,14 +89,17 @@
     },
     {
       "path": "data/master-enrichment/round-025.json"
+    },
+    {
+      "path": "data/master-enrichment/round-026.json"
     }
   ],
-  "nextAction": "Continue second-pass hard cases in 25-case batches. Mark repeated no-result cases as source-sparse candidates while preserving open status under strict AllMusic rules.",
-  "lastCompletedRound": "ENRICH-025",
+  "nextAction": "Continue 25-case second-pass batches, but begin tagging repeated identity-safe no-result cases as source-sparse candidates so exhausted searches are not repeated indefinitely.",
+  "lastCompletedRound": "ENRICH-026",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
   "openTriageCounts": {
-    "release-credit-found-profile-pending": 89,
+    "release-credit-found-profile-pending": 87,
     "identity-confirmed-metadata-incomplete": 6,
     "targeted-research-needed": 104,
     "profile-or-credit-review": 10,
