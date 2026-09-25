@@ -14,7 +14,10 @@
       sourceClaimEvidenceSeparated: true,
       treatmentCompleteDoesNotMeanFullyFilled: true,
       unknownIsNotSparse: true,
-      derivedInsightsAreNotSourceFacts: true
+      derivedInsightsAreNotSourceFacts: true,
+      artistCreditsAreOccurrencesNotEntities: true,
+      conflictsAreNonDestructive: true,
+      releasePackagingDoesNotRedateRecording: true
     },
 
     entities: {
@@ -71,7 +74,9 @@
       "mdna:style:hard-rock": {musicDnaId:"mdna:style:hard-rock",entityType:"genre-style",canonicalName:"Hard Rock"},
       "mdna:style:prog-rock": {musicDnaId:"mdna:style:prog-rock",entityType:"genre-style",canonicalName:"Prog-Rock"},
       "mdna:style:arena-rock": {musicDnaId:"mdna:style:arena-rock",entityType:"genre-style",canonicalName:"Arena Rock"},
-      "mdna:style:heavy-metal": {musicDnaId:"mdna:style:heavy-metal",entityType:"genre-style",canonicalName:"Heavy Metal"}
+      "mdna:style:heavy-metal": {musicDnaId:"mdna:style:heavy-metal",entityType:"genre-style",canonicalName:"Heavy Metal"},
+      "mdna:recording:example-original": {musicDnaId:"mdna:recording:example-original",entityType:"recording",canonicalName:"Example Song",canonicalYear:1984},
+      "mdna:artist:ambiguous-fixture": {musicDnaId:"mdna:artist:ambiguous-fixture",entityType:"group",canonicalName:"Same Name",identityResolution:"ambiguous",treatmentStatus:"verification-in-progress"}
     },
 
     sources: {
@@ -103,6 +108,44 @@
       {claimId:"cl:shiraz:style:hard-rock",subjectId:"mdna:artist:shiraz-lane",predicate:"allmusic-style",objectId:"mdna:style:hard-rock",assertionStatus:"verified",currentness:"current"},
       {claimId:"cl:shiraz:style:heavy-metal",subjectId:"mdna:artist:shiraz-lane",predicate:"allmusic-style",objectId:"mdna:style:heavy-metal",assertionStatus:"verified",currentness:"current"}
     ],
+
+    artistCredits: {
+      "credit:holy-ghost:picturebooks-jon-harvey": {
+        artistCreditId:"credit:holy-ghost:picturebooks-jon-harvey",
+        displayCredit:"The Picturebooks feat. Jon Harvey [Monster Truck]",
+        parts:[
+          {entityId:null, creditedName:"The Picturebooks", joinPhrase:" feat. ", identityStatus:"unresolved"},
+          {entityId:null, creditedName:"Jon Harvey", joinPhrase:"", identityStatus:"unresolved"}
+        ],
+        contextOnly:[{entityId:null, creditedName:"Monster Truck", relationHint:"member-context", identityStatus:"unresolved"}],
+        identityStatus:"unresolved",
+        note:"Literal credit preserved; component identities must be verified before graph promotion."
+      }
+    },
+
+    providerOccurrences: {
+      "occurrence:reissue-proof": {
+        occurrenceId:"occurrence:reissue-proof",
+        provider:"fixture",
+        providerTrackId:"reissue-proof",
+        displayedTitle:"Example Song - Remaster",
+        displayedRelease:"Example Reissue",
+        displayedReleaseYear:2018,
+        recordingId:"mdna:recording:example-original",
+        observedAt:"2026-09-25",
+        note:"Provider packaging date must not become recording date."
+      }
+    },
+
+    conflictSets: {
+      "conflict:example-formed-year": {
+        conflictSetId:"conflict:example-formed-year",
+        subjectId:"mdna:artist:ambiguous-fixture",
+        predicate:"formed-year",
+        candidateClaimIds:["cl:conflict:formed-1989","cl:conflict:formed-1990"],
+        resolutionStatus:"open"
+      }
+    },
 
     evidence: [],
 
