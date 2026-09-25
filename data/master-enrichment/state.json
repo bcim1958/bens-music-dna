@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 172,
-  "remainingOpenCount": 239,
+  "sourceSupportedCount": 174,
+  "remainingOpenCount": 237,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -77,15 +77,18 @@
     },
     {
       "path": "data/master-enrichment/round-021.json"
+    },
+    {
+      "path": "data/master-enrichment/round-022.json"
     }
   ],
-  "nextAction": "Composite-credit original queue has now been fully reviewed. Continue unresolved profile/metadata and previously reviewed open release-credit cases in batches of 25, excluding already-supported records.",
-  "lastCompletedRound": "ENRICH-021",
+  "nextAction": "Continue second-pass hard cases in batches of 25, prioritizing records with a plausible new AllMusic lead and avoiding unchanged searches already exhausted.",
+  "lastCompletedRound": "ENRICH-022",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
   "openTriageCounts": {
     "release-credit-found-profile-pending": 97,
-    "identity-confirmed-metadata-incomplete": 7,
+    "identity-confirmed-metadata-incomplete": 6,
     "targeted-research-needed": 104,
     "profile-or-credit-review": 10,
     "composite-credit": 21
