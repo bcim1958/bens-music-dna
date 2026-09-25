@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "audit": "VOIVOD-WORLD-SCALE-001",
+  "date": "2026-09-25",
+  "result": "pass",
+  "purpose": "Prove that the Ghost pipeline scales to a second, structurally different artist world without redesign.",
+  "registrySnapshot": {
+    "atomicRelations": 13,
+    "discoveryStock": 7,
+    "relationFamilies": [
+      "genre",
+      "scene",
+      "live",
+      "visual-concept",
+      "influence",
+      "personnel",
+      "place"
+    ],
+    "counterparts": [
+      "Progressive Metal",
+      "Experimental Metal",
+      "Celtic Frost",
+      "Coroner",
+      "Ozzfest/Ozzy context",
+      "Métal Hurlant",
+      "Motörhead",
+      "Hardcore punk",
+      "Rush",
+      "Jason Newsted",
+      "Piggy",
+      "Chewy",
+      "Jonquière"
+    ]
+  },
+  "differencesFromGhost": [
+    "Voïvod world includes persons, place, publication and genre nodes, not only artist counterparts.",
+    "Personnel continuity and local/industrial context are first-class doors.",
+    "Seven discoveries already span seven counterpart worlds; no single rich counterpart dominates the queue."
+  ],
+  "checks": {
+    "identitySemantics": "pass — Jason Newsted/Piggy/Chewy remain persons; Rush/Motörhead remain artist hubs; Ozzfest resolves to Ozzy context in Explorer.",
+    "counterpartBundling": "pass — existing Voïvod regression test audits unique visible counterparts.",
+    "evidence": "pass — substantive relations use named primary/editorial sources; genre navigation records are explicitly Music-DNA navigation context.",
+    "discoveryStock": "pass — 7 discoveries, each a distinct counterpart route.",
+    "architectureReuse": "pass — same Registry, bundle, discovery and Explorer APIs as Ghost."
+  },
+  "nextAction": "Add a dedicated deterministic Voïvod discovery-queue regression test and then use Ghost→Voïvod as the first end-to-end cross-world Explorer route."
+}
