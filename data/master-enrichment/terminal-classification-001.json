@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "classification": "TERMINAL-CLASSIFICATION-006",
+  "classification": "TERMINAL-CLASSIFICATION-007",
   "date": "2026-09-25",
   "baseline": {
     "originalCases": 411,
@@ -14,17 +14,17 @@
     "researchable": "A concrete unexhausted source/profile lead remains."
   },
   "openClassification": {
-    "sourceSparse": 114,
+    "sourceSparse": 139,
     "identityUnresolved": 30,
-    "researchable": 81,
+    "researchable": 56,
     "provisional": true,
-    "explanation": "Sixth history pass: 25 further open cases show repeated documented research without a later supported promotion."
+    "explanation": "Seventh history pass: 25 additional repeatedly researched open cases had no later supported promotion."
   },
   "arithmetic": [
-    "186 + 114 + 30 + 81 = 411",
-    "114 + 30 + 81 = 225"
+    "186 + 139 + 30 + 56 = 411",
+    "139 + 30 + 56 = 225"
   ],
-  "nextPass": "Continue history classification; 81 cases remain researchable.",
+  "nextPass": "Continue history classification; 56 cases remain researchable.",
   "sourceSparseCaseNames": [
     "Bad Bones",
     "CobraKill",
@@ -139,6 +139,31 @@
     "Lanzer",
     "Mainline",
     "Metalsteel",
-    "MILE"
+    "MILE",
+    "Misery's Smile",
+    "NitroDive",
+    "Noora Louhimo Experience",
+    "Nova Nights",
+    "Overloaded",
+    "Oxidize",
+    "Panama Kinal",
+    "Pink Velvet Krush",
+    "RADIO TAPOK",
+    "Redemption Switch",
+    "RedScool",
+    "Rise of Utopia",
+    "Roah",
+    "Rusty Nail",
+    "Sershen&Zaritskaya",
+    "Shereign",
+    "Soldato",
+    "Sorrow & The Spire",
+    "Speed Parade",
+    "StoneRowe",
+    "Stryken",
+    "Sunday Riot Club",
+    "Terratomorf",
+    "Tester",
+    "The Ben Cote Band"
   ]
 }
