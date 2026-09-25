@@ -1,0 +1,11 @@
+const fs=require("fs"),vm=require("vm"),performance=require("perf_hooks").performance;
+const ctx={globalThis:{}};vm.createContext(ctx);
+for(const p of ["test/music-dna-master-100-engine-v1.js","test/music-dna-master-batch-001.js"]) vm.runInContext(fs.readFileSync(p,"utf8"),ctx);
+const E=ctx.globalThis.musicDnaMaster100EngineV1,b=ctx.globalThis.musicDnaMasterBatch001,fail=m=>{throw new Error(m)};
+const errs=E.validate(b); if(errs.length) fail(JSON.stringify(errs));
+const p=E.progress(b); if(p.treated!==5||p.total!==5||p.remaining!==0) fail("commissioning progress wrong");
+const bad=E.createBatch({batchId:"BAD",scope:{},records:[{musicDnaId:"x",displayName:"x",treatmentStatus:"treated-verified"}]});
+if(!E.validate(bad).some(x=>x.code==="verified-without-evidence")) fail("evidence gate failed");
+const N=3333, synthetic=E.createBatch({batchId:"SPEED-3333",scope:{kind:"synthetic-throughput-test"},records:Array.from({length:N},(_,i)=>({musicDnaId:"speed:"+i,displayName:"Artist "+i,treatmentStatus:i%7===0?"treated-unresolved":"treated-verified",identityStatus:"exact",sourceRefs:["s:"+i],evidenceRefs:["e:"+i]}))});
+const t0=performance.now(); for(let i=0;i<100;i++){E.validate(synthetic);E.progress(synthetic)} const ms=performance.now()-t0;
+console.log("Master 100 engine v1: PASS",{commissioning:p,syntheticRecords:N,cycles:100,elapsedMs:Math.round(ms*10)/10,avgMsPerFullCycle:Math.round(ms/100*1000)/1000});
