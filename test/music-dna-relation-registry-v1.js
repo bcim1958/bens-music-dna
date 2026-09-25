@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-25.46",
+  version:"2026-09-25.47",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -13,6 +13,8 @@ const registry={
     "the_smiths":{type:"artist",name:"The Smiths"},
     "bert_jansch":{type:"person",name:"Bert Jansch"},
     "nile_rodgers":{type:"person",name:"Nile Rodgers"},
+    "chic":{type:"artist",name:"Chic"},
+    "david_bowie":{type:"artist",name:"David Bowie"},
     "radiohead":{type:"artist",name:"Radiohead"},
     "ed_obrien":{type:"person",name:"Ed O’Brien"},
     "jonny_greenwood":{type:"person",name:"Jonny Greenwood"},
@@ -265,6 +267,7 @@ const registry={
     },
     soundonsound_spiral_scratch_2015:{provider:"Sound On Sound",kind:"independent-technical-history-with-interviews",title:"Classic Tracks: Buzzcocks Spiral Scratch",url:"https://www.soundonsound.com/techniques/classic-tracks-buzzcocks-spiral-scratch",publishedAt:"2015-12",checkedAt:"2026-09-25"},
     allmusic_magazine_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Magazine Biography",url:"https://www.allmusic.com/artist/magazine-mn0000229157",checkedAt:"2026-09-25"},
+    guitarworld_marr_rodgers_2022:{provider:"Guitar World",kind:"primary-interview",title:"Johnny Marr on Nile Rodgers and rhythm guitar",url:"https://www.guitarworld.com/features/johnny-marr-nile-rodgers",checkedAt:"2026-09-25"},
     guitarworld_marr_influences_2023:{provider:"Guitar World",kind:"primary-interview",title:"Johnny Marr names 10 guitarists who shaped his sound",url:"https://www.guitarworld.com/features/johnny-marr-guitar-influences",checkedAt:"2026-09-25"},
     musicradar_obrien_mcgeoch_2017:{provider:"MusicRadar",kind:"primary-interview",title:"Radiohead’s Ed O’Brien: I was always drawn to sounds that didn’t sound like the guitar",url:"https://www.musicradar.com/news/radioheads-ed-obrien-i-was-always-drawn-to-sounds-that-didnt-sound-like-the-guitar",checkedAt:"2026-09-25"},
     johnmcgeoch_bio:{provider:"JohnMcGeoch.com",kind:"artist-archive-biography",title:"John McGeoch – Bio",url:"https://www.johnmcgeoch.com/bio",checkedAt:"2026-09-25"},
@@ -356,6 +359,7 @@ const registry={
   },
   discoveries:[
     {id:"disc-magazine-shot-both-sides",base:"magazine",counterpart:"buzzcocks",kind:"continuity-door",title:"Een Buzzcocks-lied steekt de grens over",summary:"Magazine debuutsingle Shot by Both Sides was door Howard Devoto samen met zijn voormalige Buzzcocks-partner Pete Shelley geschreven.",relations:["rel-magazine-shot-both-sides-shelley"],evidence:["allmusic_magazine_bio"],status:"unread"},
+    {id:"disc-marr-rodgers-rhythm-door",base:"johnny_marr",counterpart:"nile_rodgers",kind:"influence-door",title:"Van postpunk naar de dansvloer",summary:"Marrs waardering voor Nile Rodgers opent een zijroute waarin ritmegitaar belangrijker wordt dan de traditionele gitaarsolo.",relations:["rel-rodgers-marr-influence","rel-rodgers-chic-identity","rel-rodgers-bowie-lets-dance"],evidence:["guitarworld_marr_influences_2023","guitarworld_marr_rodgers_2022"],status:"unread"},
     {id:"disc-marr-influence-crossroads",base:"johnny_marr",counterpart:"the_smiths",kind:"identity-door",title:"Van invloed naar herkenbaar geluid",summary:"Bij Johnny Marr komen verschillende gitaarwerelden samen in het geluid waarmee hij bij The Smiths bekend werd.",relations:["rel-marr-smiths-guitar","rel-jansch-marr-influence","rel-rodgers-marr-influence","rel-mcgeoch-marr-influence"],evidence:["guitarworld_marr_influences_2023","guardian_mcgeoch_2022"],status:"unread"},
     {id:"disc-mcgeoch-radiohead",base:"john_mcgeoch",counterpart:"radiohead",kind:"influence-door",title:"De gitaar verdwijnt bijna als gitaar",summary:"Ed O’Brien noemt McGeoch expliciet een grote invloed omdat zijn spel om klank en song draaide, niet om traditionele leadgitaar; ook Jonny Greenwood wordt in McGeochs nalatenschap met die invloed verbonden.",relations:["rel-mcgeoch-ed-obrien-influence","rel-mcgeoch-jonny-greenwood-influence"],evidence:["musicradar_obrien_mcgeoch_2017","johnmcgeoch_bio"],status:"unread"},
     {id:"disc-mcgeoch-influence-branches",base:"john_mcgeoch",counterpart:"johnny_marr",kind:"influence-door",title:"McGeoch wordt zelf een wegwijzer",summary:"Johnny Marr noemt McGeoch een bepalende moderne gitarist; ook James Dean Bradfield koppelt zijn spel rechtstreeks aan The Holy Bible.",relations:["rel-mcgeoch-marr-influence","rel-mcgeoch-manic-street-preachers-influence"],evidence:["guardian_mcgeoch_2022"],status:"unread"},
