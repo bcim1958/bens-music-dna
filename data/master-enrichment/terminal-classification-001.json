@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "classification": "TERMINAL-CLASSIFICATION-004",
+  "classification": "TERMINAL-CLASSIFICATION-005",
   "date": "2026-09-25",
   "baseline": {
     "originalCases": 411,
@@ -14,17 +14,17 @@
     "researchable": "A concrete unexhausted source/profile lead remains."
   },
   "openClassification": {
-    "sourceSparse": 64,
+    "sourceSparse": 89,
     "identityUnresolved": 30,
-    "researchable": 131,
+    "researchable": 106,
     "provisional": true,
-    "explanation": "Fourth history pass: 25 additional open cases have repeated documented research rounds without a later supported promotion."
+    "explanation": "Fifth history pass: 25 more open cases have repeated documented research rounds without a later supported promotion."
   },
   "arithmetic": [
-    "186 + 64 + 30 + 131 = 411",
-    "64 + 30 + 131 = 225"
+    "186 + 89 + 30 + 106 = 411",
+    "89 + 30 + 106 = 225"
   ],
-  "nextPass": "Continue 25-case history classification before initiating any new searches.",
+  "nextPass": "Continue history classification in 25-case batches; new web research only for cases that remain genuinely unexhausted.",
   "sourceSparseCaseNames": [
     "Bad Bones",
     "CobraKill",
@@ -89,6 +89,31 @@
     "Rinderwahnsinn",
     "Roadhouse Diet",
     "S.O.R.M",
-    "Saint Renascence"
+    "Saint Renascence",
+    "Seraina Telli",
+    "Seventh Rize",
+    "Shadow Bullets",
+    "Shawn Michael Perry",
+    "Sinisis",
+    "Sixxxten",
+    "Sleeping Bear",
+    "Stained Red",
+    "Stallion four",
+    "State Of Emergency",
+    "Statement",
+    "Stereosuckers",
+    "Steve Strange",
+    "Stone Division",
+    "Stryke Lightning",
+    "Taletellers",
+    "The Addicts",
+    "The Babysitters",
+    "The Dirty Marmaduke Flute Squad",
+    "the inner me",
+    "The Jolt",
+    "The L.A. Maybe",
+    "The Reconciled",
+    "The Ruckus",
+    "The Starks"
   ]
 }
