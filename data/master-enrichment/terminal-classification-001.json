@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "classification": "TERMINAL-CLASSIFICATION-002",
+  "classification": "TERMINAL-CLASSIFICATION-003",
   "date": "2026-09-25",
   "baseline": {
     "originalCases": 411,
@@ -14,17 +14,17 @@
     "researchable": "A concrete unexhausted source/profile lead remains."
   },
   "openClassification": {
-    "sourceSparse": 14,
+    "sourceSparse": 39,
     "identityUnresolved": 30,
-    "researchable": 181,
+    "researchable": 156,
     "provisional": true,
-    "explanation": "History pass applied: 14 open cases had repeated documented second-pass reviews without a later supported promotion. Identity-ambiguous cases remain separate."
+    "explanation": "Third history pass: 25 additional targeted-research cases have two documented research rounds without a later supported promotion; they are removed from repeated active searching."
   },
   "arithmetic": [
-    "186 + 14 + 30 + 181 = 411",
-    "14 + 30 + 181 = 225"
+    "186 + 39 + 30 + 156 = 411",
+    "39 + 30 + 156 = 225"
   ],
-  "nextPass": "Continue history-based review of the remaining 181 researchable cases; do not repeat searches already exhausted.",
+  "nextPass": "Continue in 25-case history batches through remaining researchable records, reserving new web research for genuinely unexhausted leads.",
   "sourceSparseCaseNames": [
     "Bad Bones",
     "CobraKill",
@@ -39,6 +39,31 @@
     "King of Bones",
     "Lawlezz",
     "Lethal Dose",
-    "Sardis"
+    "Sardis",
+    "Argos",
+    "666packs",
+    "Aventyr",
+    "Beyond Your Reach",
+    "Big Clyde",
+    "Big Guns",
+    "BlackBeer",
+    "Blakk Ledd",
+    "Bolt",
+    "Bomber Alley",
+    "Bonedryver",
+    "Cocaine Cowboys",
+    "Crimson",
+    "Crystal Tears",
+    "D'OR",
+    "Deathlike Silence",
+    "F.I.G.H.T.E.R",
+    "Face of a Stranger",
+    "Feast!",
+    "Fish in a Birdcage",
+    "Forsaken Throne",
+    "Four Trips Ahead",
+    "Gog Magog",
+    "Gwyllion",
+    "Hank Of Sweden"
   ]
 }
