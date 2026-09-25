@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-012",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 0,
+  "additionalEvidenceRecordCount": 6,
+  "method": "Third batch of 25 targeted-research-needed cases. Exact identity and AllMusic genre/style completion required for promotion.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:b2f28c32d1f281b83c642eb4",
+      "displayName": "Non Divide",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "I Could Be",
+        "album": "Incipient Rising"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:e53e3eb8cf33c2ab26ec061d",
+      "displayName": "Nowhere's Home",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Speechless",
+        "album": "In God We Trust"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:fd4a7c3bb4ff24143f530925",
+      "displayName": "Omega Tribe",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Is This A Future?",
+        "album": "Angry Songs"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://www.allmusic.com/artist/omega-tribe-mn0000466050",
+        "fact": "AllMusic profile identity found for the UK anarcho-punk band; exact Angry Songs / Is This A Future? linkage is consistent, but complete artist genre/style fields were not accepted in this pass."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:04164daf36c82df2ebfda5f5",
+      "displayName": "Out of Gravity",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "From Dusk Till Dawn",
+        "album": "2024"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:d692c3cac35b92dc7f4fee9c",
+      "displayName": "Primal Sinner",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Red Horn Calls",
+        "album": "Dying Like the Sun in the West"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:7a7dae6a59e624b4d61bec1a",
+      "displayName": "Ranter",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Out of the Badlands",
+        "album": "We've Had It"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:5ee4ff497ae94fbf607df9db",
+      "displayName": "Raphael Gazal",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Riding With The Angels",
+        "album": "Riding With The Angels"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:c582184ed9b923b3078c1b7f",
+      "displayName": "Rash Panzer",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Fight",
+        "album": "Born to Rock ´n´Roll"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://www.metal-archives.com/bands/Rash_Panzer/3540268418",
+        "fact": "Release/band identity corroborated for Swiss hard rock/heavy metal act and Born to Rock 'n' Roll; not substituted for strict AllMusic fields."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:b78bb408ecdb996f3b73595c",
+      "displayName": "Ratchet Dolls",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Loud! Loud! Loud!",
+        "album": "Bring The Noize"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:16b978646953e303653797e8",
+      "displayName": "Rattlesquad",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Leave",
+        "album": "1233"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:60cba58804248ccf6dc0ae15",
+      "displayName": "Re-Machined",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Heart on Fire",
+        "album": "Wheels of Time"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:8a9967889d091cb975383ca0",
+      "displayName": "Revolution Rebels",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Edge of the Spotlight",
+        "album": "Edge of the Spotlight"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:bb430eb5b8b9fc81f06d95da",
+      "displayName": "Rinderwahnsinn",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Der Punkt",
+        "album": "Herrscher"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:a6ae6c680812adf40932dedd",
+      "displayName": "Roadhouse Diet",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Evil's Got A Hold On Me",
+        "album": "Electric Devilry"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://roadhousediet.bandcamp.com/",
+        "fact": "Artist source corroborates Swedish hard-rock/blues-rock identity and Electric Devilry; retained as attributed evidence, not AllMusic taxonomy."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:d85125c58ea3529008f22580",
+      "displayName": "S.O.R.M",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hellride",
+        "album": "Under My Skin"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://www.noble-demon.com/sorm",
+        "fact": "Label/artist material corroborates Swedish hard-rock trio S.O.R.M and Hellride-era identity; retained as provider evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:59f4a8b8cf69cf2c8b942308",
+      "displayName": "Saint Renascence",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Kneel for the Saint",
+        "album": "Saint Renascence"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:a07c642a6993f7272f741c82",
+      "displayName": "Sardis",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Sensational Society",
+        "album": "Viral"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:ea9854ae911497b29146c766",
+      "displayName": "Seraina Telli",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Addicted to Color - Radio Edit",
+        "album": "Addicted to Color (Radio Edit)"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://www.allmusic.com/artist/seraina-telli-mn0003912387",
+        "fact": "AllMusic artist identity found and matched to the Swiss singer/guitarist; exact Addicted to Color release identity reviewed. Complete strict fields not promoted in this pass."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:a3995e98cf670bb175b7a532",
+      "displayName": "Seventh Rize",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Roller Coaster",
+        "album": "Full Moon"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:49561f15af10d26abb897643",
+      "displayName": "Shadow Bullets",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Death´s a Clown",
+        "album": "House of Mirrors: Shot B"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:83e2bd2edf2b57c3c6f86f57",
+      "displayName": "Shawn Michael Perry",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "ROCK Steady",
+        "album": "Kryp II Knight, Vol. IV"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:7bf9c5f01846cb4b527f7790",
+      "displayName": "Sinisis",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Beyond the Sun",
+        "album": "I Am Me"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:a750247451814c52536e6a56",
+      "displayName": "Sixxxten",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dr. Seltsam",
+        "album": "Jugend Violencia"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:0ea1cec82aec305700816d32",
+      "displayName": "Sleeping Bear",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "When Rivers Become a Waterfall",
+        "album": "Vorokhtah"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://sleepingbear.bandcamp.com/",
+        "fact": "Artist Bandcamp corroborates Ukrainian instrumental/post-rock identity and Vorokhtah; strict AllMusic taxonomy remains unavailable."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:a2568ea14301164f3ba8dc0a",
+      "displayName": "Stained Red",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Too Cold to Love",
+        "album": "Stained Red 2022 EP"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open and do not infer from same-name, release-only, or weak secondary results."
+      }
+    }
+  ]
+}
