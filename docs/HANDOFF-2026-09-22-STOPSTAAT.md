@@ -400,3 +400,125 @@ Hun huidige claims beschrijven Music-DNA-verkenningsgenres en mogen niet achtera
 5. Explorer-opmaak en verdere harvest zijn ondergeschikt aan deze fundering; Ontdek DNA blijft ondertussen zijn eigen dagelijkse cyclus volgen.
 
 **Klus-0-status:** gegevensveiligheid GREEN. Canonieke projectkaart is met deze sectie weer bij. Het Voïvod-punt is niet weggepoetst maar expliciet als evidence debt afgebakend; inhoudelijk herstel ervan hoort vóór classificatiebulk of tijdens de eerste Klus-1 provenance-test, niet door bronloze claims te legitimeren.
+
+
+## 21. Consolidatie 25 september — slimme wandeling, Personal DNA en multi-type Explorer
+
+Deze sectie is het nieuwe canonieke totaalanker na de bouw- en wandelslag van 25 september 2026. Zij consolideert de geaccepteerde betekenis van de bouwlijn tot en met commit `7d90400297f16347991ef66eb90de08feb62e570`. Bij strijd met oudere hervatinstructies in dit document heeft deze sectie voorrang. De onderliggende commits en auditbestanden blijven de technische bron van detail.
+
+### 21.1 Van Registry naar slimme wandeling
+
+DNA Explorer is niet bedoeld als encyclopedische artiestenbrowser of routeplanner, maar als een betrouwbaar wandelgebied voor muzikale nieuwsgierigheid. De bouw van 25 september heeft bewezen dat een vrije wandeling over afzonderlijk onderbouwde relaties meerdere werelden kan verbinden zonder een vooraf geschreven route. De organisch gevolgde proeflijn liep onder meer via Buzzcocks → Magazine → John McGeoch → Johnny Marr → Nile Rodgers → Phil Manzanera → 801 → Brian Eno → Talking Heads → Adrian Belew → King Crimson → Greg Lake → Emerson, Lake & Palmer → Olympic Stadium Montréal.
+
+De betekenis van die proef is niet dat deze route canoniek moet worden afgespeeld. Zij bewijst juist dat lange, meanderende paden kunnen ontstaan uit losse betrouwbare deuren. Explorer moet zulke paden kunnen voortzetten, teruglopen en onderweg nieuwe vergezichten tonen zonder fictieve verbindingen te maken.
+
+### 21.2 Relation Evidence en Personal DNA Evidence blijven strikt gescheiden
+
+Vaste invariant:
+
+> **Persoonlijke relevantie bewijst nooit een muziekhistorische relatie.**
+
+De Relation Registry beantwoordt: **bestaat deze relatie en welk bewijs draagt haar?** Personal DNA Evidence beantwoordt: **welke betekenis of herkenning heeft dit knooppunt al binnen Bens muziekwereld?**
+
+Personal evidence kan afkomstig zijn uit favorieten, Music Maps en later expliciete beoordelingen zoals RAAK. Playlist-co-occurrence, favorietstatus of persoonlijke herkenning mag nooit automatisch influence, collaboration, membership, tour, production of een andere relationele claim creëren. Omgekeerd mag een relationeel bewezen deur bestaan zonder persoonlijke smaakbevestiging.
+
+Chic is de eerste expliciete Personal-DNA-pilot: `Le Freak` in `Ben's Disco favorites` bewijst persoonlijke bekendheid/waardering, niet een relatie met de artiestwereld waarlangs Explorer bij Chic arriveert. De relationele route en de persoonlijke herkenningslaag worden pas in presentatie gecombineerd.
+
+### 21.3 Persoonlijke archipel en discovery-firewall
+
+Bens muziekwereld wordt als een groeiende archipel behandeld. Een bekend of gewaardeerd eiland hoeft niet automatisch brongebied voor Ontdek DNA te worden.
+
+Vaste regel:
+
+> **“Ik kan hiervan genieten” ≠ “zoek meer hiervan voor mij.”**
+
+Hoofdroute, spin-off, uitstapje en brug naar bekend terrein beschrijven de positie van een knooppunt in de actuele reis. Zij zijn geen kwaliteitslabels en geen automatische discovery-opdracht. Geïsoleerde persoonlijke eilanden mogen geïsoleerd blijven. Nieuwe positieve discovery-evidence kan de archipel later uitbreiden, maar één favoriet of toevallige route mag de Ontdek-DNA-motor niet ongemerkt herprogrammeren.
+
+### 21.4 Explorer floating, Express fixed
+
+De in §17 vastgelegde informatielevenscyclus blijft hard gelden:
+
+> **De feiten zijn stabiel; de vertelling mag bewegen.**
+
+Explorer bewaart identiteit, atomaire feiten, relaties, evidence/provenance en relevante state, maar geen canonieke volledige Nederlandse artikelen of vertaalde interviews. De vertelling mag per bezoek verschillen door ingang, route, reeds geziene informatie en nieuwe bewezen kennis.
+
+DNA Express is de bewaarlaag. Een bewust samengestelde editie legt tekst, volgorde, bronnen, beeldkeuzes, datum en editie-identiteit vast en wordt niet stilzwijgend herschreven wanneer Explorer later rijker wordt.
+
+### 21.5 Verstandig dwalen: plaatsen kost geen afslag
+
+De in §18 vastgelegde contextkaart is onderdeel van de slimme wandeling. Een onbekende naam, persoon, album, track, label, genre, plaats, venue of gebeurtenis moet kort geplaatst kunnen worden zonder route-event.
+
+Vaste invariant:
+
+> **Plaatsen kost geen afslag.**
+
+Alleen een expliciete keuze zoals **Neem deze afslag** verandert de actieve route. Openen/sluiten van een contextkaart telt niet als gekozen deur, gelezen route of discovery. Het bestaande prototype met `explorerPlaceCard` is bewijslaag; verdere visuele/iPhone-validatie blijft nodig.
+
+### 21.6 Multi-type knooppunten en vergezichten
+
+Explorer-paden zijn niet beperkt tot artiesten. De Montréal-proef maakt venue/event als reële bestemming expliciet. De gewenste graph kan onderbouwd bewegen als:
+
+`band → persoon → band → track/werk → concert/event → venue/plaats → andere bewezen deur`.
+
+Albums, tracks, setlists, producers, labels, tours, gebeurtenissen, ontmoetingen en locaties mogen volwaardige knooppunten worden wanneer identiteit en evidence voldoende zijn. Een venue kan bijvoorbeeld aanleiding geven tot de vraag welke andere artiesten uit de persoonlijke muziekwereld daar speelden; het antwoord creëert alleen deuren voor werkelijk bewezen events.
+
+### 21.7 “Even weten” — kennis zonder routewijziging
+
+De wandeling heeft behoefte aan een lichte, niet-navigerende kennisactie voor spontane vragen die interessant zijn maar geen nieuwe reisrichting hoeven te worden. Werknaam:
+
+**💡 Even weten**
+
+Voorbeeld: de vraag of Rush in het algemeen stadions speelde. Een antwoord mag context en een interessant feit geven zonder de actieve Explorer-route te wijzigen. Als voor de gevraagde specifieke verbinding geen bewijs bestaat, zegt Explorer dat expliciet; een mislukte zoekvraag wordt nooit tot relationele edge gepromoveerd. Een eventueel bewezen vervolg kan daarna als bewuste afslag worden aangeboden.
+
+Deze functie is conceptueel geaccepteerd maar nog niet als afgeronde productfunctie gebouwd.
+
+### 21.8 Setlists en persoonlijke tijd-/albumankers
+
+Een concertjaar alleen bepaalt niet de persoonlijke relevantie. Een later concert kan voor Ben interessant zijn doordat de setlist ouder, sterk verankerd repertoire bevat. Explorer moet daarom waar bronnen dit toelaten kunnen redeneren via:
+
+`event → setlist → track/medley → album/periode → Personal DNA anchor`.
+
+Vroege/progressieve Genesis is een sterk persoonlijk anker, met `Selling England by the Pound` en `Dancing with the Moonlit Knight` als duidelijke voorbeelden; dit wordt niet omgezet in de starre regel “Genesis na 1980 is niet interessant”. Latere optredens en muziek worden op hun eigen inhoud beoordeeld. Persoonlijke ankers helpen relevantie duiden maar bewijzen geen historische relatie.
+
+### 21.9 Human interest: de mens in en voor het collectief
+
+Explorer en Express mogen menselijke emotie, waardering, conflict, ego, loyaliteit en controverse gebruiken wanneer die betekenis hebben voor het muzikale collectief of zijn werk. Privéleven op zichzelf is geen doel.
+
+De redactionele vraag is:
+
+> **Wat betekende deze individuele mens voor het collectief — en wat zeggen de betrokken mensen daar zelf over?**
+
+Voor Explorer kan één betrouwbaar feit of een kort, goed geattribueerd interviewfragment genoeg zijn: bijvoorbeeld ervaren waardering van een ingehuurde/touring muzikant, een personeelswisseling of een aantoonbare creatieve spanning. Voor Express mag dezelfde bronnenlaag veel dieper worden uitgewerkt.
+
+Bij controverses blijven verschillende stemmen afzonderlijk. Een uitspraak van een betrokkene wordt als diens perspectief opgeslagen/gepresenteerd, niet als objectieve psychologische diagnose. Explorer/Express mag niet zelfstandig concluderen dat iemand ijdel, rancuneus, dominant of anderszins psychologisch gedreven **is**. Wel mogen gedocumenteerde uitspraken, botsende herinneringen en aantoonbare muzikale/zakelijke gevolgen naast elkaar worden gezet. De journalistieke keten is:
+
+`wat gebeurde aantoonbaar → wat zeggen betrokkenen zelf → waar verschillen hun perspectieven → welk muzikaal/zakelijk gevolg is aantoonbaar → terug naar de muziek`.
+
+Chester Thompson/Genesis is een voorbeeld van een “shadow figure”: een persoon buiten de headline-kern kan historisch/muzikaal belangrijk zijn en daarom een waardevolle Explorer-deur vormen. Pink Floyd (Waters/Gilmour) en Vinnie Vincent versus Paul Stanley/Gene Simmons zijn redactionele voorbeelden voor toekomstige bronrijke controverse-artikelen; deze vermelding creëert op zichzelf geen Registry-feiten.
+
+### 21.10 Correcteerbaarheid en fouttolerantie
+
+Explorer streeft naar hoge betrouwbaarheid maar pretendeert geen foutloos medium te zijn. De architectuur moet correctie goedkoop en lokaal houden. Feiten, relations, evidence en vertelling blijven daarom gescheiden. Een foutieve claim of edge wordt op de bron-/feit-/relatielaag gecorrigeerd; toekomstige floating Explorer-vertellingen gebruiken daarna de verbeterde toestand. Een reeds gepubliceerde Express-editie blijft als historische editie vast en kan zo nodig een correctie of nieuwe editie krijgen.
+
+Onzekerheid is een geldige uitkomst. **Geen bewijs = geen feitelijke deur.** Conflicterende betrouwbare bronnen blijven als conflict/verschillende perspectieven zichtbaar in plaats van stil genormaliseerd.
+
+### 21.11 Wat op 25 september daadwerkelijk gebouwd en opgeslagen is
+
+De bouwlijn na de eerdere Navigation-v1 basis omvat onder meer: identity-quarantine en afsluiting van de probleemgevallen; evidence-led Registry filling; floating Explorer/fixed Express; Shiraz Lane floating-world proof; Buzzcocks-netwerkseed en organische uitbreiding via Magazine/McGeoch; McGeoch-invloeddeuren naar Johnny Marr en Radiohead; smart-wandering/contextkaart; Personal-DNA evidence-index met Chic-pilot; hoofdroute/spin-off/uitstapje/archipelregels; Manzanera/Roxy Music; 801/Brian Eno; Talking Heads; Tom Tom Club; Adrian Belew/King Crimson; en Greg Lake/ELP/Olympic Stadium Montréal.
+
+De huidige technische kop bij deze consolidatie is `7d90400297f16347991ef66eb90de08feb62e570`. Dit is proof/testbouw en inhoudelijke Registry-groei; geen productiepromotie en geen nieuwe volledige iPhone-validatie van alle latere functies.
+
+### 21.12 Exacte hervatplek
+
+**Deze §21 is de nieuwe canonieke totaalstopstaat voor DNA Explorer na de werkdag van 25 september 2026.** Bij hervatten niet terugvallen op de healthcheck die `8b4e7641` als kop zag; die controle is door de latere bouw ingehaald.
+
+Volgende ontwikkelrichting: de slimme wandeling verder instrumenteren in plaats van eerst een encyclopedische database af te vullen. Prioriteit bij hervatten:
+1. multi-type event/venue/track/setlist-knooppunten verder operationaliseren;
+2. **Even weten** als niet-navigerende kennisactie;
+3. Personal-DNA album-/periodeankers bruikbaar maken voor context, zonder relation evidence te besmetten;
+4. human-interest/interview-perspectief als bronrijke maar strikt geattribueerde laag;
+5. daarna opnieuw echt wandelen en alleen concrete tekortkomingen repareren.
+
+Werkritme blijft: **bouwen → wandelen → nieuwsgierigheid observeren → ontbrekend instrument bouwen → netwerk uitbreiden → opnieuw wandelen.**
+
+**Healthcheck-status na deze consolidatie:** gegevens/code 🟢; projectgeheugen 🟢; Relation Evidence ↔ Personal DNA Evidence 🟢 conceptueel gescheiden; slimme meerstapswandeling 🟢 structureel bewezen; nieuwste UX/redactionele lagen 🟠 deels nog te operationaliseren; productie/iPhone-eindvalidatie blijft open. **Proof ≠ production.**
