@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 132,
-  "remainingOpenCount": 279,
+  "sourceSupportedCount": 133,
+  "remainingOpenCount": 278,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -35,17 +35,20 @@
     },
     {
       "path": "data/master-enrichment/round-007.json"
+    },
+    {
+      "path": "data/master-enrichment/round-008.json"
     }
   ],
-  "nextAction": "Continue the remaining 11 profile-or-credit-review cases, then targeted-research-needed. Preserve same-name exclusions from ENRICH-007; do not apply taxonomy across unproven identities.",
-  "lastCompletedRound": "ENRICH-007",
+  "nextAction": "Continue remaining profile-or-credit-review cases, prioritizing exact identity links; then move to targeted-research-needed. Preserve namesake exclusions.",
+  "lastCompletedRound": "ENRICH-008",
   "partialEvidenceOpenCount": 13,
-  "latestRoundReviewedCount": 8,
+  "latestRoundReviewedCount": 4,
   "openTriageCounts": {
     "release-credit-found-profile-pending": 119,
     "identity-confirmed-metadata-incomplete": 13,
     "targeted-research-needed": 106,
-    "profile-or-credit-review": 11,
+    "profile-or-credit-review": 10,
     "composite-credit": 30
   }
 }
