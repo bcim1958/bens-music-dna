@@ -1,0 +1,34 @@
+{
+  "schema": "music-dna-personal-evidence-index-v1",
+  "status": "seeded-from-exportify-analysis",
+  "generatedAt": "2026-09-25",
+  "sourceSet": {
+    "musicMaps": 13,
+    "favoritePlaylists": 1,
+    "totalSources": 14
+  },
+  "analysis": {
+    "uniqueArtistNames": 628,
+    "evidenceOccurrences": 726
+  },
+  "rules": {
+    "favorite": "explicit personal taste evidence; never relational evidence",
+    "musicMap": "personal musical-neighbourhood evidence; never relational evidence",
+    "relationEvidence": "must remain independently sourced in Relation Registry"
+  },
+  "pilot": {
+    "artist": "CHIC",
+    "normalizedId": "chic",
+    "personalEvidence": [
+      {
+        "kind": "favorite",
+        "source": "Ben's Disco favorites",
+        "track": "Le Freak",
+        "spotifyTrackUri": "spotify:track:4qL9VYPB4XwJKAOq4xn2Mh"
+      }
+    ],
+    "explorerInterpretation": "bekender terrein dan gedacht",
+    "relationalDoor": "johnny_marr -> nile_rodgers -> chic"
+  },
+  "next": "Build full per-artist import from the 14 Exportify source files without promoting playlist co-occurrence to factual relations."
+}
