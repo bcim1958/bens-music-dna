@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "audit": "GHOST-EVIDENCE-ENRICHMENT-001",
+  "date": "2026-09-25",
+  "result": "pass",
+  "changes": {
+    "newAtomicRelations": 0,
+    "ghostAtomicRelationsAfter": 19,
+    "duplicateRelationIds": 0,
+    "evidenceAttached": [
+      {
+        "relation": "rel-ghost-maiden-learning",
+        "addedSource": "loudwire_maiden_2018",
+        "reason": "direct Forge interview on Live After Death, touring model and arena lessons"
+      },
+      {
+        "relation": "rel-ghost-metallica-learning",
+        "addedSource": "louder_metallica_ambition_2022",
+        "reason": "direct Forge quote on wanting Ghost to reach the theatrical/arena model of 1980s Metallica"
+      }
+    ],
+    "alreadyAdequatelyMultiSourced": [
+      {
+        "relation": "rel-ghost-abba-influence",
+        "decision": "retain current evidence; no duplicate edge"
+      },
+      {
+        "relation": "rel-ghost-black-sabbath-guitar",
+        "decision": "retain existing Guitar World primary evidence; external cross-check corroborates but does not justify duplicate edge"
+      }
+    ]
+  },
+  "integrity": {
+    "counterpartRule": "preserved",
+    "semanticAtomicity": "preserved",
+    "sourceFoundation": "preserved"
+  },
+  "nextAction": "Refresh Ghost discovery stock from the enriched Registry, prioritizing genuinely new angles rather than retelling ABBA/Maiden/Metallica facts already represented in stories."
+}
