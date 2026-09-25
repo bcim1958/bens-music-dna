@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "audit": "IDENTITY-QUARANTINE-001",
+  "date": "2026-09-25",
+  "policy": "Stop spending research time on ambiguous/problematic identity cases. Exclude them from downstream Relation Registry / DNA Explorer derivation unless later exact evidence resolves them.",
+  "lastAttempt": {
+    "result": "closed-with-quarantine",
+    "finding": "The apparent 33-case identity pool was inflated by Daniel Licht;Jon Licht being counted again in ENRICH-033 after already belonging to the earlier ambiguous pool. identity-001 plus identity-002 contain 33 rows but 32 unique musicDnaIds because Daniel is present in both. No additional identity case is inferred or invented."
+  },
+  "repairs": [
+    {
+      "case": "M83;Cyann & Ben",
+      "action": "Corrected mistyped musicDnaId in identity-001 to canonical round-001/round-004 id.",
+      "musicDnaId": "mdna:mention:15c63738567ed38868ff7d60"
+    }
+  ],
+  "quarantine": [
+    {
+      "musicDnaId": "mdna:mention:6015818b0518900d1848020d",
+      "displayName": "Green Machine",
+      "reason": "Exact one-to-one identity remains unsafe."
+    },
+    {
+      "musicDnaId": "mdna:mention:90f31eb99eeb1f63a66edcc4",
+      "displayName": "Pendragon",
+      "reason": "Exact one-to-one identity remains unsafe."
+    }
+  ],
+  "administrativeCaution": {
+    "identityReconcile001": "Do not use its reviewed=33/resolved=31 arithmetic as a unique-ID integrity proof; the source identity files contain a duplicate Daniel Licht;Jon Licht row.",
+    "terminalClassification011": "Its global 411 arithmetic remains the terminal source-classification ledger, but identity-resolution counters are not a unique-ID audit. Downstream work must use quarantine, not force resolution."
+  },
+  "downstreamRule": "Green Machine and Pendragon are out of play. Do not create factual Registry/Explorer relations from them. Do not reopen identity research during normal Explorer filling. Daniel Licht;Jon Licht may remain identity-resolved as a collaboration, but its duplicate audit row must never count twice.",
+  "nextAction": "Return to Relation Registry / DNA Explorer filling with clean, non-quarantined identities."
+}
