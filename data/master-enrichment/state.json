@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 174,
-  "remainingOpenCount": 237,
+  "sourceSupportedCount": 177,
+  "remainingOpenCount": 234,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -80,14 +80,17 @@
     },
     {
       "path": "data/master-enrichment/round-022.json"
+    },
+    {
+      "path": "data/master-enrichment/round-023.json"
     }
   ],
-  "nextAction": "Continue second-pass hard cases in batches of 25, prioritizing records with a plausible new AllMusic lead and avoiding unchanged searches already exhausted.",
-  "lastCompletedRound": "ENRICH-022",
+  "nextAction": "Continue second-pass hard cases in 25-case batches. Prefer records with new identity-safe profile leads; do not weaken strict AllMusic taxonomy completion criteria.",
+  "lastCompletedRound": "ENRICH-023",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
   "openTriageCounts": {
-    "release-credit-found-profile-pending": 97,
+    "release-credit-found-profile-pending": 94,
     "identity-confirmed-metadata-incomplete": 6,
     "targeted-research-needed": 104,
     "profile-or-credit-review": 10,
