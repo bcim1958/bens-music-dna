@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-025",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 2,
+  "method": "Second-pass hard-case review of unresolved release-profile records; exact identity plus accepted AllMusic taxonomy required. Source-sparse results remain open.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:061050ec110b3138b4874415",
+      "displayName": "Vonavibe",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Run n' Hide",
+        "album": "Bleed To Life"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:2ba3123542afc3346b9397de",
+      "displayName": "We're Wolves",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bodies",
+        "album": "Bodies"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:8efc2fbff3eff057c5817e2b",
+      "displayName": "Wirefall",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Soy Sauce",
+        "album": "Retina"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:1d2950711ca56b4801a51391",
+      "displayName": "Witche’s Brew",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Find A Way",
+        "album": "Chronicles of Electric Sorcery"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:a9b3a1e2e3d92aad6a80497e",
+      "displayName": "Wolf & Chain",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Phantom",
+        "album": "Phantom"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b6e37b74213e710b4d32129b",
+      "displayName": "Year Gone",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Set My Soul",
+        "album": "Set My Soul"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:08f6e7771de6f04f6422c551",
+      "displayName": "Ashes to Omens",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Vultures",
+        "album": "Vultures"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:d52aab6fa58bfd9bdaf50aa6",
+      "displayName": "Atomic Drive",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Wires",
+        "album": "Wires"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:37b3a3073bb3a700b227f4ba",
+      "displayName": "Bad Actress",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Outta My Head - 2024 Version",
+        "album": "Outta My Head (2024 Version)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:56b72a6de73c1d4adade00fd",
+      "displayName": "Bad Bones",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Don't Stop Believin' [Cover Version]",
+        "album": "Snakes And Bones (Deluxe Edition)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:e7f423f9dcf59775c7fd449a",
+      "displayName": "Black City",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Day My Hero Died",
+        "album": "Fire"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b13ea6662c2cb0c1a259fec6",
+      "displayName": "Box Of Toys",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "I'm Thinking Of You Now",
+        "album": "Revolutionary Spirit: The Sound Of Liverpool 1976-1988"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact artist/release identity and accepted AllMusic genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:962ba1bd710f5985549d4725",
+      "displayName": "Broken Peach",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Tainted Love",
+        "album": "Tainted Love"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:985ee2c78a4294e55afbd75a",
+      "displayName": "Bullseye",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Count On Me",
+        "album": "Count On Me"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b96d0205c240e0eb583165e5",
+      "displayName": "Burn The Ballroom",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Kiss Me You Animal",
+        "album": "Kiss Me You Animal"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b99bf53981de2e1657058ff1",
+      "displayName": "Camu",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bamboo Road",
+        "album": "Bamboo Road"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:dab42921e5e148eb99bb4b89",
+      "displayName": "CHRIS HICKS PROJECT",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dancing Girl",
+        "album": "Dancing Girl"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:3973cc01cf56052daaa019e3",
+      "displayName": "Cincinnati Sinners",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Its Only Rock n Roll",
+        "album": "Cincinnati Sinners 6Pak"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:6bb0676ec9638b334b365b2b",
+      "displayName": "CobraKill",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Same Ol' Nasty Rock N' Roll",
+        "album": "Serpent's Kiss"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:83b0cc20b6807cd0bf1a427d",
+      "displayName": "Cryoshell",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Creeping in My Soul",
+        "album": "Cryoshell"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact artist/release identity and accepted AllMusic genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:34b484c92c391c1137a565ae",
+      "displayName": "Crystal Steel",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Crystalized",
+        "album": "Crystalized"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:a3b46e5c3cd982878e925698",
+      "displayName": "Cynical Sons",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Danger Xone",
+        "album": "Danger Xone"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:3d2e31f21af953defd0bc40d",
+      "displayName": "Deaf Rat",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Fallen Angels",
+        "album": "Ban the Light"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:d7ee0dfb8423c1a3da9d6491",
+      "displayName": "Ember Falls",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Shut Down With Me",
+        "album": "Welcome To Ember Falls"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:2193c606a48955e184bb7edb",
+      "displayName": "Fate DeStroyed",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Crave",
+        "album": "Crave"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    }
+  ]
+}
