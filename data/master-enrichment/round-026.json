@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-026",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 2,
+  "method": "Second-pass hard-case review across unresolved release-profile and targeted cases. Repeated no-result cases are retained open as source-sparse candidates; strict AllMusic completion rule unchanged.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:c13a00bc01b5a11fe55f03e8",
+      "displayName": "Formosa",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Her Mama",
+        "album": "Her Mama"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:54888920f774ab46b68d601e",
+      "displayName": "Frontback",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dead Man on the Road",
+        "album": "Heart of a Lion"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:e11116a2e673a8a27eba66c5",
+      "displayName": "Game On",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Fox on the run",
+        "album": "Fox on the run"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:760fbc70ed95e7b7836424d0",
+      "displayName": "Hollowstar",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "All I Gotta Say",
+        "album": "Hollowstar"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact artist/release identity and accepted AllMusic genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:d39fe0ad602d229aaf53cb95",
+      "displayName": "Hvalross",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Ancient Gods",
+        "album": "Ancient Gods"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:76624946e19c61404dc0762c",
+      "displayName": "JC Crash (Johnny Crash)",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "She's no angel",
+        "album": "Electrified"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b92ebb42ef8504492d9fb88a",
+      "displayName": "Johnny Deathshadow",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Devils Own",
+        "album": "The Devils Own"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:2d72abab6f48d7fd3e082a67",
+      "displayName": "Joy in Motion",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Wasting Away",
+        "album": "Wasting Away"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:36d35558eb9e405f3e780081",
+      "displayName": "Cöntraband",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Mamarracho",
+        "album": "Mamarracho"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:06f60d074faa05292332bcee",
+      "displayName": "David Baechler",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Tu penses trop",
+        "album": "Tu penses trop"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:0ea9bd2d15167fcf203bfc5f",
+      "displayName": "Dead Union Social Theory",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Machine",
+        "album": "The Machine"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:3d2e31f21af953defd0bc40d",
+      "displayName": "Deaf Rat",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Fallen Angels",
+        "album": "Ban the Light"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:8210d8cd90c8d9d48aa21826",
+      "displayName": "Dress the Dead",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "You Only Get off When I Cry",
+        "album": "You Only Get off When I Cry"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:29c986e6380ba32ff4297cd4",
+      "displayName": "Ei siis on siis",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hell Bells",
+        "album": "Letut ja rocka"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:05ea318ef77cabd3aa5eebb5",
+      "displayName": "Electric Temple",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "DEATH WISH",
+        "album": "HIGH VOLTAGE SALVATION"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:d7ee0dfb8423c1a3da9d6491",
+      "displayName": "Ember Falls",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Shut Down With Me",
+        "album": "Welcome To Ember Falls"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact artist/release identity and accepted AllMusic genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:0eebb1e3ec3dac58a1c895ca",
+      "displayName": "Eye Tea",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The King Is Dead",
+        "album": "The King Is Dead"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b03196e8e5d280c6ca4a7438",
+      "displayName": "FEARLESS",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hillbilly for Life",
+        "album": "Hillbilly for Life"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:bd78bb285b35f10640399d51",
+      "displayName": "Freaky Things",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Nightmare",
+        "album": "Tales of the Lovesick Sleepwalkers"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:ae07dbbefa8a6bc28643c407",
+      "displayName": "Get Into Gear",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Live to Die",
+        "album": "Live to Die"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b6e325fd37b872a87a27c970",
+      "displayName": "Igel vs. Shark",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Don’t Steal My Thunder",
+        "album": "500,000 Miles"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:db82ef19c2194ed8c121b591",
+      "displayName": "Into the Zoid",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Albino",
+        "album": "Voidgazer"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:361d99ac76e0fc112c385260",
+      "displayName": "King of Bones",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hold Me Closer",
+        "album": "Don't Mess with the King"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:fd69739c782828b9ad3475da",
+      "displayName": "Lawlezz",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Losing Control",
+        "album": "Losing Control"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:44ee2abd32172e06c72eca64",
+      "displayName": "Lethal Dose",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hard to Swallow",
+        "album": "The Clan of Lethal Skulls"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    }
+  ]
+}
