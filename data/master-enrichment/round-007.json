@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-007",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 8,
+  "newSupportedCount": 1,
+  "method": "Targeted profile/credit review. Exact release/track identity checked before applying AllMusic taxonomy. Same-name profiles explicitly rejected where mismatched.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:c3b4f6dbbd887f77b19d42f3",
+      "displayName": "The Warriors",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Working Class Kids - Live, Cardiff, March 1996",
+        "album": "Maximum Oi! (Live)"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "AllMusic",
+          "url": "https://www.allmusic.com/artist/the-warriors-mn0000240854",
+          "fact": "AllMusic profile matches Maximum Oi! and Working Class Kids; genre Pop/Rock; styles Alternative/Indie Rock, Oi!, Punk Revival, Punk/New Wave."
+        },
+        {
+          "provider": "Amazon Music",
+          "url": "https://music.amazon.ca/albums/B09Q698VQ1",
+          "fact": "Maximum Oi! (Live) credits Working Class Kids (Live, Cardiff, March 1996) to The Warriors."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:351d67fedbf8c3cfe581ed12",
+      "displayName": "The System",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Thought Control",
+        "album": "Is Still Murder"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "AllMusic",
+          "url": "https://www.allmusic.com/album/is-still-murder-mw0000404278",
+          "fact": "Exact album/track and members confirmed; album genre Pop/Rock. Artist-style completion remains unavailable."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:7af0511a4fa7ba8f475e6fed",
+      "displayName": "Nathan James",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Hanged Man",
+        "album": "The Hanged Man"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Spotify/Apple Music",
+          "url": "https://open.spotify.com/track/3aAbH1E9MxcLXutvmFgALt",
+          "fact": "Exact 2023 Nathan James release identity confirmed; classical/blues namesakes excluded. Strict AllMusic taxonomy still incomplete."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:90f31eb99eeb1f63a66edcc4",
+      "displayName": "Pendragon",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Lost Reason",
+        "album": "Pop: Korn! the Best of Pop & Rock"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Amazon Music/Qobuz",
+          "url": "https://music.amazon.com/albums/B073JTW27H",
+          "fact": "Lost Reason belongs to the 2012 Excalibur release credited to Pendragon with Günter Bock copyright/composition context; do not attach the British prog-band AllMusic profile without further proof."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:e614eeb9bf3ffeb4b810a590",
+      "displayName": "SHOUT",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "People of the Night",
+        "album": "People of the Night"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Lightning Records/Spotify",
+          "url": "https://lightningrecords.se/releases/shout-people-of-the-night/",
+          "fact": "Exact Swedish SHOUT album, track and lineup confirmed. AllMusic artist taxonomy not established."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:6e21ba6f0b3527e04b868ab8",
+      "displayName": "Supercharger",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Blood Red Lips",
+        "album": "Broken Hearts and Fallaparts"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Apple Music",
+          "url": "https://music.apple.com/us/artist/supercharger/28400325",
+          "fact": "Exact Danish band confirmed: formed 2006, Rock; Blood Red Lips listed. AllMusic same-name San Francisco garage-punk profile explicitly rejected."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:6015818b0518900d1848020d",
+      "displayName": "Green Machine",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Horse",
+        "album": "Horse"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "url": "https://open.spotify.com/artist/2DzKySvozyCRj9EoNEbnyR",
+          "fact": "Exact Green Machine profile lists Horse (2020). Strict AllMusic taxonomy still unestablished."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:4f82da918754733cbcb22de3",
+      "displayName": "The Mood",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Boozing, Dancing, and a Chance of Romancing",
+        "album": "Boozing, Dancing, and a Chance of Romancing"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "url": "https://open.spotify.com/artist/4jTo45pAloDDTz4O6K8nJp",
+          "fact": "Playlist identity is Birmingham DIY indie-rock band emerged 2019. AllMusic power-pop The Mood from Florida/New York is a different act and is rejected."
+        }
+      ]
+    }
+  ]
+}
