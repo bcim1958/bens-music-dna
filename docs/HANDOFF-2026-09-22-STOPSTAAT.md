@@ -1,6 +1,6 @@
-# Music DNA — canonieke stopstaat t/m 24 september 2026
+# Music DNA — canonieke stopstaat t/m 25 september 2026
 
-> **Actuele hervatplek (24-09-2026):** projectgeheugen, Relation Registry/Explorer-proeflijn en release-/tijdprovenance zijn geconsolideerd. W40 provenance-audit is GREEN. De eerstvolgende inhoudelijke bouwlijn is **DNA-rijkdom + onderzoeksdekking** als metadata op artiestniveau en geaggregeerd in odometer/cockpit. Geen heropening van de afgesloten releasejaarreparatie zonder aangetoonde regressie.
+> **Actuele hervatplek (25-09-2026):** de keten **Genre DNA → Living Master → bronverificatie → Relation Registry → DNA Explorer / DNA Express** is de canonieke data-architectuur. AllMusic heeft primaat voor muzikale classificatie; de Master is de levende, provenance-bewuste kennisbron; verificatie is niet-destructief. De eerstvolgende bouwlijn is **Master 100% / het hart van de machine**: identiteit, bronrecords, feiten, bewijs/provenance, relaties, dekking/betrouwbaarheid en derived insights. Ontdek DNA/W39 blijft een afzonderlijke dagelijkse deliverylijn.
 
 **Status:** GREEN — canonieke hervatstand actueel. Geen productiepromotie.
 **Actieve proefbasis:** Engine 30 + Relation Registry V1; Shiraz Lane-vulproef en story/discovery-reading-proef behouden; weekmotor blijft afzonderlijke deliverylijn.
@@ -328,3 +328,75 @@ De canonieke bouwlijn na e7859924 omvat: f157ae97 (Voïvod discoveries + visual/
 **Dit document is vanaf deze sectie het nieuwe canonieke totaalanker tot en met 7d260712.** Bij hervatten niet reconstrueren uit losse commits. Behoud §§10–16 als geaccepteerde systeemlaag. Eerst Engine 31/WALK PROOF functioneel beproeven; geen verdere structurele bouw vóór eventuele regressies uit die proef zijn verwerkt.
 
 **Healthcheck-status na consolidatie:** gegevensveiligheid 🟢; projectgeheugen weer gelijkgetrokken met de bouwstand. **Proof ≠ production** blijft een expliciete grens.
+
+
+## 16. Consolidatie 25 september — het hart van de machine
+
+Deze sectie consolideert de tien commits na `b6733806` tot en met `a8ab836e`, plus de scopecorrectie `d5479dcd`. Bij strijd met oudere hervatinstructies in dit document heeft deze sectie voorrang.
+
+### Permanente architectuur
+
+De nieuwe vaste keten is:
+
+`Ontdek DNA / andere encounters → Living Master → bronverificatie en verrijking → Relation Registry/projecties → DNA Explorer → DNA Express → nieuwe ontdekking`.
+
+Rolverdeling:
+- **Ontdek DNA** = dagelijks muzikaal plezier en nieuwe instroom; de weekmotor blijft onafhankelijk van de Registry-bouw.
+- **Living Master** = het hart van de machine en de gezaghebbende, provenance-bewuste kennisbron.
+- **Relation Registry** = relationele/projectielaag; steeds minder een tweede handmatig onderhouden waarheid.
+- **DNA Explorer** = aantrekkelijke dagelijkse diepte: feiten, weetjes, verhalen, vrije graph-walks, belletjes en meters.
+- **DNA Express** = wekelijkse redactionele/projectielaag uit dezelfde kennisbasis.
+
+De vaste identiteitsrichting voor het komende datamodel is een eigen Music-DNA-ID met externe identifiers waar beschikbaar, in het bijzonder Spotify ID, MusicBrainz ID en AllMusic ID. Gespecialiseerde bronnen zoals Discogs, Metal Archives, setlist.fm, WhoSampled en journalistieke/biografische bronnen zijn aanvullende bronmodules; hun claims blijven bron- en tijdgebonden en worden niet tot één ongedifferentieerde waarheid samengevoegd.
+
+### AllMusic en classificatie
+
+AllMusic heeft het primaat voor muzikale classificatie. Genre/style-labels worden niet door Music DNA verzonnen, gecorrigeerd of tot één voorkeursvak gereduceerd wanneer AllMusic ze rechtstreeks levert. Persoonlijk Genre-DNA-lidmaatschap blijft een andere bewering dan AllMusic-classificatie.
+
+Direct geverifieerde AllMusic-profieldata kan canonieke classificatie-edges voeden. `afgeleid volgens AllMusic-taxonomie` blijft derived werkmetadata totdat de concrete artiestpagina direct is geverifieerd. Verificatie kan bevestigen, verwijderen of uitbreiden en mag persoonlijke playlistmembership, W39/W40 of bestaande onafhankelijke Registry-feiten niet stilzwijgend herschrijven.
+
+De eerste live verificatiebatch (Karnivool, Caligula's Horse, Oceansize, Earthside) heeft bovendien de bronregel aangescherpt: een concrete AllMusic-artiestpagina moet het label expliciet tonen; zoek-/crawloutput, biografieproza of related-artist-lijsten vervangen het Styles-veld niet.
+
+### Master 100% — juiste schaal
+
+De eerder vastgelegde 624 artiesten zijn **niet** de volledige migratie. Zij zijn de eerste geprioriteerde Genre-DNA-tranche. De definitieve v3-classificatie-inventaris bevat 3.333 unieke artiestvermeldingen:
+- 98 rechtstreeks AllMusic;
+- 2.862 afgeleid volgens AllMusic-taxonomie;
+- 324 met onvoldoende bronmetadata;
+- 49 nog ongeclassificeerd.
+
+Daarnaast bestaat een afzonderlijke maar gekoppelde track/music-objectmigratie van circa 3.480 objecten na Spotify-reconciliatie. Artiestidentiteit/classificatie en recording/release/version-provenance mogen niet als één probleem worden samengevouwen.
+
+**100% behandeld is niet 100% gevuld.** Een record is volledig behandeld wanneer het een expliciete eindstatus met provenance heeft: verified, genuinely unknown/unresolved, of conflict met bewaarde tegenspraak. Inhoudelijke rijkdom is geen voltooiingscriterium. Rush mag zeer rijk zijn en Shiraz Lane compacter terwijl beide volledig behandeld zijn. Onderzoeksdekking en informatierijkdom blijven afzonderlijke dimensies.
+
+### Bron → inzicht
+
+Het doelmodel moet de volgende keten expliciet kunnen dragen:
+
+`bron → bronrecord → identiteit → Music-DNA-entiteit → atomair feit → bewijs/provenance → relatie → derived insight → meter/vergelijking → verhaal/presentatie`.
+
+Derived insights zijn afgeleide, reproduceerbare Music-DNA-uitkomsten en geen bronfeiten. Een toekomstige tourfrequentie/live-intensiteitsmeter kan bijvoorbeeld setlist.fm-registraties combineren met actieve periode, maar moet onder water bron, peildatum, dekking, berekening, vergelijkingsgroep en betrouwbaarheid bewaren. Een exact getal uit onvolledige brondekking mag geen schijnnauwkeurigheid worden.
+
+### Genre DNA als ingang
+
+De 11 persoonlijke groepen / 42 Genre-DNA-werelden blijven de canonieke persoonlijke genre-ingang. De definitieve v3-snapshot levert 690 expliciete memberships over 23 werelden; de twee bevestigde UK-Punk-checkpoints voegen twee afzonderlijke werelden toe. Artist-DNA-playlists worden niet tot Genre-DNA-lidmaatschap omgevormd.
+
+AllMusic-classificatie kan na directe verificatie wél een eerste echte graph-edge zijn. Een artiest hoeft dus niet eerst een willekeurige biografische relatie te krijgen om vanuit een persoonlijke Genre-DNA-ingang verder bewandelbaar te worden.
+
+### Open technisch health-punt — Voïvod
+
+Twee bestaande Registry-relaties zijn inhoudelijk als `confirmed` gemarkeerd maar hebben nog geen evidence-record:
+- `rel-voivod-progressive-metal-genre`
+- `rel-voivod-experimental-metal-genre`
+
+Hun huidige claims beschrijven Music-DNA-verkenningsgenres en mogen niet achteraf van een verzonnen bron worden voorzien. Ze blijven daarom een **gedocumenteerde technische uitzondering / evidence debt** totdat hun semantiek is herbeslist: óf brononderbouwde classificatie met echte evidence, óf expliciet persoonlijke/afgeleide navigatie in een laag die geen `confirmed` bronfeit pretendeert. Geen verdere classificatiebulk mag deze twee gaten verbergen of als precedent kopiëren.
+
+### Exacte hervatvolgorde
+
+1. **Klus 0 — consolidatie:** deze stopstaat en de Master-100%-scopecorrectie vastleggen; Voïvod-evidence debt expliciet zichtbaar houden. Dit is administratief/data-architectonisch herstel en wijzigt W39/W40 niet.
+2. **Klus 1 — hart van de machine:** definitief datamodel voor IDs, entiteiten, bronrecords, feiten, provenance, relaties, actualiteit, betrouwbaarheid/dekking, deduplicatie en derived insights.
+3. **Pilot:** representatieve artiestset, met minimaal een zeer rijke wereld (Rush) en een compactere volledig behandelde wereld (Shiraz Lane), plus solo/obscuur/ambigu/many-members/incomplete cases.
+4. **Pas na geslaagde pilot:** restartbare masterbrede batches en structurele verrijking. Nieuwe relevante vondsten gaan vanaf intake door hetzelfde model zodat geen nieuwe achterstand ontstaat.
+5. Explorer-opmaak en verdere harvest zijn ondergeschikt aan deze fundering; Ontdek DNA blijft ondertussen zijn eigen dagelijkse cyclus volgen.
+
+**Klus-0-status:** gegevensveiligheid GREEN. Canonieke projectkaart is met deze sectie weer bij. Het Voïvod-punt is niet weggepoetst maar expliciet als evidence debt afgebakend; inhoudelijk herstel ervan hoort vóór classificatiebulk of tijdens de eerste Klus-1 provenance-test, niet door bronloze claims te legitimeren.
