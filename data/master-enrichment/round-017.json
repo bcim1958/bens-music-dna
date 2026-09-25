@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-017",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 5,
+  "method": "Third 25-case release-credit profile follow-up. Existing release identity reused; exact matching AllMusic profile taxonomy required for promotion.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:8f91b811033e02a21b9a5824",
+      "displayName": "Kill City",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bitter Smile",
+        "album": "Darker Days"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:43b3ee6cdb2ac7cbf74b3749",
+      "displayName": "Killit",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Shut It Down",
+        "album": "Shut It Down"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:4b60952f4cab8722dfe87bae",
+      "displayName": "Krieger",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Wenn du mich küsst",
+        "album": "Krieger"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:4fa6b573a2d5515637a003e3",
+      "displayName": "Kung Fu Hotline",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Moving to the City",
+        "album": "Moving to the City"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:d341254bca4136849cb05266",
+      "displayName": "Kurator",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Black from Ashes",
+        "album": "Black from Ashes"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:c35d6dae1465a76d11414c9c",
+      "displayName": "Lake Domain",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Heroes",
+        "album": "Heroes"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:b64aca10c037a40757a43a91",
+      "displayName": "Lanzer",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Warriors of the World - Live",
+        "album": "Greatest Rock Hits Live"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:08cc0f1b1167b64bbdc52e77",
+      "displayName": "Laurenne / Louhimo",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Reckoning",
+        "album": "The Reckoning"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:8fbea01a5a9b8e474b687152",
+      "displayName": "Leviticus",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Over the Hills",
+        "album": "Knights of Heaven"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile accepted; Knights of Heaven / Over the Hills identity and genre/style taxonomy align."
+    },
+    {
+      "musicDnaId": "mdna:mention:da37328c6ae25485880f6c7b",
+      "displayName": "Liliac",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Trooper",
+        "album": "The Trooper"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:bc88958544cc96dfda5cea28",
+      "displayName": "Liv Sin",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Slave to the Machine",
+        "album": "Burning Sermons"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile accepted; Burning Sermons / Slave to the Machine identity and genre/style taxonomy align."
+    },
+    {
+      "musicDnaId": "mdna:mention:6527f502a771764f3869b4a0",
+      "displayName": "Mad Dogs",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Never Too Late",
+        "album": "Never Too Late"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:3cd646e7afff45cd4af0d4af",
+      "displayName": "Mainline",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "In Nothing We Trust - '22 Version",
+        "album": "In Nothing We Trust ('22 Version)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:8f69f2d2b3b556352c2c4074",
+      "displayName": "MCC [Magna Carta Cartel]",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Turn",
+        "album": "The Demon King EP"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic profile for Magna Carta Cartel accepted; The Demon King EP / Turn identity and taxonomy align."
+    },
+    {
+      "musicDnaId": "mdna:mention:7014a7fbf8c47d6f4314b48e",
+      "displayName": "Metalsteel",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "This Is Your Revelation",
+        "album": "This Is Your Revelation"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:b248d2c758542345928c37f2",
+      "displayName": "MILE",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Crying in Your Sleep",
+        "album": "The World in Focus"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:cbca3a65f13ccb60a55e8a36",
+      "displayName": "Misery's Smile",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "My Misery",
+        "album": "My Misery"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:95575e5bcd89af4b7f521ae4",
+      "displayName": "NitroDive",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bad Blood",
+        "album": "Re-Evolution"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:16be4d9847b3a6e3381ea4fe",
+      "displayName": "Noora Louhimo Experience",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Eternal Wheel Of Time And Space",
+        "album": "Eternal Wheel Of Time And Space"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:bbb2221343983bd9a476cc6a",
+      "displayName": "Nova Nights",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Sweet Cigarella",
+        "album": "Sweet Cigarella"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:ef2da96c29a8bf1b13d3e2e0",
+      "displayName": "Osmi Putnik",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Glasno, Glasnije - 2005",
+        "album": "Živ I Ponosan"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist identity and accepted genre/style taxonomy found; Živ I Ponosan identity aligns."
+    },
+    {
+      "musicDnaId": "mdna:mention:b991604729c6632e280a4f14",
+      "displayName": "Overloaded",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hellfire",
+        "album": "Overloaded"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:886546f7e70c885e83ab8670",
+      "displayName": "Oxidize",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Extremist",
+        "album": "Extremist"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:b698d9cba3caf554b2f1935f",
+      "displayName": "Panama Kinal",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Any Other Way",
+        "album": "Any Other Way"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:2ed2858fef4ab52850abb783",
+      "displayName": "Paul Gilbert",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Fuzz Universe",
+        "album": "Fuzz Universe"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile accepted; Fuzz Universe identity and genre/style taxonomy align."
+    }
+  ]
+}
