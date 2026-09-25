@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 188,
-  "remainingOpenCount": 223,
+  "sourceSupportedCount": 186,
+  "remainingOpenCount": 225,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -114,12 +114,12 @@
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
   "openTriageCounts": {
-    "release-credit-found-profile-pending": 87,
-    "identity-confirmed-metadata-incomplete": 6,
+    "release-credit-found-profile-pending": 92,
+    "identity-confirmed-metadata-incomplete": 3,
     "targeted-research-needed": 100,
-    "profile-or-credit-review": 10,
+    "profile-or-credit-review": 9,
     "composite-credit": 21
   },
-  "lastReconciliation": "RECONCILE-001",
-  "reconciliationPath": "data/master-enrichment/reconcile-001.json"
+  "lastReconciliation": "RECONCILE-002",
+  "reconciliationPath": "data/master-enrichment/reconcile-002.json"
 }
