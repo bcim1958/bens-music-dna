@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "reconciliation": "RECONCILE-002",
+  "date": "2026-09-25",
+  "previousState": {"supported":188,"open":223},
+  "correctedUniqueCaseState": {"supported":186,"open":225,"total":411},
+  "duplicatePromotionCases": ["Chrome Division","Sex Slaves"],
+  "note": "Both cases were supported in ENRICH-005 and later appeared again as newly supported. Evidence remains valid; the unique-case counter must count each musicDnaId once.",
+  "correctedOpenTriageCounts": {
+    "release-credit-found-profile-pending": 92,
+    "identity-confirmed-metadata-incomplete": 3,
+    "targeted-research-needed": 100,
+    "profile-or-credit-review": 9,
+    "composite-credit": 21
+  },
+  "checks": ["186 + 225 = 411","92 + 3 + 100 + 9 + 21 = 225"]
+}
