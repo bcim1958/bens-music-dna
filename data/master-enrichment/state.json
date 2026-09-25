@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 187,
-  "remainingOpenCount": 224,
+  "sourceSupportedCount": 188,
+  "remainingOpenCount": 223,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -108,12 +108,13 @@
     {
       "path": "data/master-enrichment/round-031.json"
     },
-    "round-032.json"
+    "round-032.json",
+    "round-033.json"
   ],
-  "nextAction": "Audit the remaining 19 researchable cases individually; keep identity-unresolved cases separate unless exact identity linkage becomes safe.",
-  "lastCompletedRound": "ENRICH-032",
+  "nextAction": "Run final 411-case terminal integrity audit; after closure, treat identity-unresolved cases only as a separate identity-resolution workstream.",
+  "lastCompletedRound": "ENRICH-033",
   "partialEvidenceOpenCount": 13,
-  "latestRoundReviewedCount": 25,
+  "latestRoundReviewedCount": 19,
   "openTriageCounts": {
     "release-credit-found-profile-pending": 91,
     "identity-confirmed-metadata-incomplete": 3,
@@ -125,9 +126,9 @@
   "reconciliationPath": "data/master-enrichment/reconcile-002.json",
   "terminalClassificationPath": "data/master-enrichment/terminal-classification-001.json",
   "terminalClassificationCounts": {
-    "supported": 187,
-    "sourceSparse": 175,
-    "identityUnresolved": 30,
-    "researchable": 19
+    "supported": 188,
+    "sourceSparse": 190,
+    "identityUnresolved": 33,
+    "researchable": 0
   }
 }
