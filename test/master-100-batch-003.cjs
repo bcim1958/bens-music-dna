@@ -1,0 +1,10 @@
+const fs=require("fs"),vm=require("vm");
+const ctx={globalThis:{}};vm.createContext(ctx);
+for(const p of ["test/music-dna-master-100-engine-v1.js","test/music-dna-master-batch-003.js"]) vm.runInContext(fs.readFileSync(p,"utf8"),ctx);
+const E=ctx.globalThis.musicDnaMaster100EngineV1,b=ctx.globalThis.musicDnaMasterBatch003,fail=m=>{throw new Error(m)};
+const errs=E.validate(b),p=E.progress(b);if(errs.length)fail(JSON.stringify(errs));
+if(p.total!==4||p.treated!==4||p.remaining!==0||p.percent!==100)fail("batch incomplete");
+if(p.counts["treated-verified"]!==3||p.counts["treated-conflict"]!==1)fail("terminal mix wrong");
+const soen=b.records.find(r=>r.displayName==="Soen");
+if(!soen||!soen.errorRefs.some(x=>x.includes("profile-2010-vs-biography-2004")))fail("Soen conflict lost");
+console.log("Master 100 batch 003: PASS",p);
