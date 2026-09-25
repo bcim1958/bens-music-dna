@@ -215,6 +215,16 @@ const registry={
       title:"Fredrik Åkesson on recording guitars for Ghost's Impera",
       url:"https://www.guitarworld.com/features/fredrick-akesson-ghost-opeth-impera"
     },
+    loudwire_maiden_2018:{
+      provider:"Loudwire",kind:"primary-interview",
+      title:"Tobias Forge: How Iron Maiden Influenced Ghost",
+      url:"https://loudwire.com/tobias-forge-ghost-iron-maiden-influence/"
+    },
+    louder_metallica_ambition_2022:{
+      provider:"Metal Hammer / Louder",kind:"primary-interview",
+      title:"Tobias Forge wanted Ghost to be what Metallica was in the '80s",
+      url:"https://www.loudersound.com/news/tobias-forge-wanted-ghost-to-be-what-metallica-was-in-the-80s"
+    },
     louder_opus_2021:{
       provider:"Metal Hammer / Louder",kind:"primary-interview",
       title:"Ghost’s Opus Eponymous: the story behind the album",
@@ -548,7 +558,7 @@ const registry={
       id:"rel-ghost-maiden-learning",from:"ghost",to:"iron_maiden",
       family:"influence",type:"formative-professional-influence",direction:"out",
       claim:"Forge beschrijft Iron Maiden als een jeugdvoorbeeld en latere professionele leerschool.",
-      evidence:["slug_forge_2019"],confidence:"confirmed",
+      evidence:["slug_forge_2019","loudwire_maiden_2018"],confidence:"confirmed",
       uses:["explorer","wat-hoor-ik","express","playlist"]
     },
     {
@@ -569,7 +579,7 @@ const registry={
       id:"rel-ghost-metallica-learning",from:"ghost",to:"metallica",
       family:"influence",type:"formative-professional-influence",direction:"out",
       claim:"Forge beschrijft Metallica als voorbeeld en professionele leerschool.",
-      evidence:["slug_forge_2019","louder_metallica_2022"],confidence:"confirmed",
+      evidence:["slug_forge_2019","louder_metallica_2022","louder_metallica_ambition_2022"],confidence:"confirmed",
       uses:["explorer","wat-hoor-ik","express","playlist"]
     },
     {
