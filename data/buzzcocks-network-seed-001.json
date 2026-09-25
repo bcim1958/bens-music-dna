@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "audit": "BUZZCOCKS-NETWORK-SEED-001",
+  "date": "2026-09-25",
+  "result": "pass-seed",
+  "principle": "Add reliable waypoints, not an encyclopedic dossier.",
+  "base": "buzzcocks",
+  "newEntities": [
+    "buzzcocks",
+    "sex_pistols",
+    "howard_devoto",
+    "martin_hannett"
+  ],
+  "newRelations": [
+    "rel-buzzcocks-pistols-origin",
+    "rel-buzzcocks-pistols-manchester",
+    "rel-buzzcocks-hannett-spiral-scratch"
+  ],
+  "newDiscoveryDoors": [
+    "disc-buzzcocks-pistols-spark",
+    "disc-buzzcocks-hannett-spiral"
+  ],
+  "evidence": [
+    "guardian_buzzcocks_indie_2017",
+    "quietus_shelley_2014"
+  ],
+  "semanticNotes": [
+    "Formative catalyst is stored separately from organising/live-event history.",
+    "Martin Hannett production/recording connection is not treated as musical influence.",
+    "No claim about Stiff Little Fingers is added without evidence."
+  ],
+  "next": "Let Buzzcocks grow lazily from these doors; investigate an adjacent punk/regional door only when evidence supports it."
+}
