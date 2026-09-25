@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 129,
-  "remainingOpenCount": 282,
+  "sourceSupportedCount": 131,
+  "remainingOpenCount": 280,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -24,17 +24,21 @@
     {
       "path": "data/master-enrichment/round-004.json",
       "sha256": "bb63b2f034de3ea1dd2729953707594e8c0660a2855c5b8b417d0bd837c487b7"
+    },
+    {
+      "path": "data/master-enrichment/round-005.json",
+      "sha256": "66b76fe8be20c8a17b199fd144b00b61f6723e28f9bef279fc7a0d98e7281370"
     }
   ],
-  "nextAction": "Continue by workstream across all remaining records: profile/credit review, provider metadata, composite roles, and targeted source follow-up. Reuse saved leads and historical candidates; report consolidated progress instead of stopping after small wins.",
-  "lastCompletedRound": "ENRICH-004",
-  "partialEvidenceOpenCount": 11,
-  "latestRoundReviewedCount": 327,
+  "nextAction": "Continue remaining release-credit cases using primary artist/label sources. Reuse round005 reviews; do not repeat failed or incomplete AllMusic checks without a new lead. Keep provider descriptions separate from strict AllMusic completion.",
+  "lastCompletedRound": "ENRICH-005",
+  "partialEvidenceOpenCount": 13,
+  "latestRoundReviewedCount": 21,
   "openTriageCounts": {
-    "release-credit-found-profile-pending": 124,
-    "identity-confirmed-metadata-incomplete": 11,
+    "release-credit-found-profile-pending": 119,
+    "identity-confirmed-metadata-incomplete": 13,
     "targeted-research-needed": 106,
-    "profile-or-credit-review": 11,
+    "profile-or-credit-review": 12,
     "composite-credit": 30
   }
 }

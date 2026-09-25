@@ -1,14 +1,13 @@
-# Music DNA — overzicht van 282 open brongevallen
+# Music DNA — overzicht van 280 open brongevallen
 
-Stand na gezamenlijke controle 004. Master: 3.333 / 3.333. Dit zijn onderzoeksgevallen, niet 282 bewezen fouten.
+Stand na broncontrole 005. Master: 3.333 / 3.333. Open bronvragen zijn geen bewezen fouten.
 
-## Profiel of credit gericht controleren — 11
-
-Een gevonden profiel of de solo/band-credit vraagt nadere controle. Dit is geen lijst van bewezen fouten.
+## Profiel of credit gericht controleren — 12
 
 - **Aria** — Multiple same-name artist profiles; electronic/goth candidates not yet linked to Russian-language playlist release. — [bron](https://music.apple.com/us/song/819701706)
 - **Green Machine** — Same-name profile remains unlinked to Horse; name alone insufficient.
 - **Joan Jett & the Blackhearts** — Official-channel recording credits Bad Reputation to Joan Jett solo; playlist uses band credit. Retain original and review relationship.
+- **Mad Dogs** — Retrieved profile does not link Never Too Late; displayed credits span disparate releases and require namesake/aggregation review. — [bron](https://music.apple.com/us/album/never-too-late/1816935838)
 - **Midnight City** — Electronic/house candidate not yet linked to playlist EP and song.
 - **Nathan James** — Classical and blues candidates not yet linked to The Hanged Man. — [bron](https://open.spotify.com/track/3aAbH1E9MxcLXutvmFgALt)
 - **Pendragon** — Prog-rock profile not yet linked to Lost Reason compilation credit.
@@ -19,8 +18,6 @@ Een gevonden profiel of de solo/band-credit vraagt nadere controle. Dit is geen 
 - **The Warriors** — Metal and British Invasion candidates not linked to the Oi! live credit.
 
 ## Samenwerkingen/remixcredits uitwerken — 30
-
-Meerdere bijdragers of remixrollen; oorspronkelijke vermelding blijft intact.
 
 - **Asrai; Sascha Paeth**
 - **Axl Rose;Izzy Stradlin** — [bron](https://open.spotify.com/track/0m0OWhqRZCmnWsLUV17sV8)
@@ -53,9 +50,7 @@ Meerdere bijdragers of remixrollen; oorspronkelijke vermelding blijft intact.
 - **Vambier;Tobias Regner** — [bron](https://music.apple.com/us/song/1591189669)
 - **VIERSPURIG;Waldemar Sorychta**
 
-## Artiest bevestigd, profielvelden onvolledig — 11
-
-Juiste artiest bekend; genre of stijlen nog niet volledig bevestigd.
+## Artiest bevestigd, profielvelden onvolledig — 13
 
 - **Apollo** — Ontbreekt: styles
 - **Crash Test Dummies** — Ontbreekt: styles
@@ -64,14 +59,14 @@ Juiste artiest bekend; genre of stijlen nog niet volledig bevestigd.
 - **La Fuga** — Ontbreekt: styles — [bron](https://music.apple.com/us/song/140838436)
 - **LSD and the Search for God** — Ontbreekt: styles — [bron](https://music.apple.com/us/song/1077867823?l=en-US)
 - **Nick Kamen** — Ontbreekt: styles — [bron](https://music.amazon.ca/tracks/B0GR537D81)
+- **Paul Gilbert** — Ontbreekt: genre — [bron](https://music.apple.com/us/album/fuzz-universe/1049053995)
 - **Skunk Anansie** — Ontbreekt: genre — [bron](https://open.spotify.com/track/5pDo8AChRUOoUGvktauiwf)
 - **Taking Dawn** — Ontbreekt: genre — [bron](https://music.apple.com/us/song/350135471)
 - **Them Evils** — Ontbreekt: styles — [bron](https://music.apple.com/us/album/where-ya-gonna-crash-tonight-single/1554956540)
+- **Twin Tribes** — Ontbreekt: styles — [bron](https://music.apple.com/us/song/1477878203)
 - **Ugly Kid Joe** — Ontbreekt: genre
 
-## Catalogus/bronvermelding gevonden, profiel nog koppelen — 124
-
-Een nummer/release en credit zijn teruggevonden; dat bevestigt nog niet automatisch een AllMusic-profiel.
+## Bronvermelding gevonden, profiel nog koppelen — 119
 
 - **5 Star Hooker** — [bron](https://music.amazon.in/albums/B08YMCTJYC)
 - **Airtrain** — [bron](https://music.apple.com/mx/album/black-chapter-single/1516725240)
@@ -84,14 +79,13 @@ Een nummer/release en credit zijn teruggevonden; dat bevestigt nog niet automati
 - **Bad Actress** — [bron](https://open.spotify.com/track/0t0ctfJ1JBrWj1YpHvpiFQ)
 - **Bad Bones** — [bron](https://open.spotify.com/track/6P2SKXpngBE6SzQaVhO7Ly)
 - **Black City** — [bron](https://open.spotify.com/track/5PcvqDI0ZsoS6JMaMK9F5U)
-- **Blood Command** — [bron](https://open.spotify.com/track/1Kp80mQhmtLSJCJwzLrnXP)
+- **Blood Command** — [bron](https://www.bloodcommand.net/music/blood-command-a-villains-monologue/)
 - **Box Of Toys** — [bron](https://open.spotify.com/track/1Sg2HUyyen1uSjgVNLdFKf)
 - **Broken Peach** — [bron](https://music.apple.com/us/album/tainted-love-single/1590103983)
 - **Bullseye** — [bron](https://music.apple.com/us/album/count-on-me-ep/375722173)
 - **Burn The Ballroom** — [bron](https://open.spotify.com/track/3SRngdnXshmXPkqYLBfqiV)
 - **Camu** — [bron](https://music.apple.com/us/album/bamboo-road-single/1514392845)
 - **CHRIS HICKS PROJECT** — [bron](https://music.apple.com/jp/song/1679067253)
-- **Chrome Division** — [bron](https://music.apple.com/ch/song/1456964075)
 - **Cincinnati Sinners** — [bron](https://music.apple.com/ca/song/501863213)
 - **cleopatrick** — [bron](https://open.spotify.com/track/6ikRLztllCPsloUL2jCYpJ)
 - **CobraKill** — [bron](https://music.apple.com/gb/song/1713246398)
@@ -102,9 +96,9 @@ Een nummer/release en credit zijn teruggevonden; dat bevestigt nog niet automati
 - **David Baechler** — [bron](https://music.apple.com/fr/song/1534005967)
 - **Dead Posey** — [bron](https://music.apple.com/us/song/1817247030)
 - **Dead Union Social Theory** — [bron](https://music.amazon.com/tracks/B0993PFTLP)
-- **Deadland Ritual** — [bron](https://music.apple.com/gb/song/1445706227)
+- **Deadland Ritual** — [bron](https://www.geezerbutler.com/about/)
 - **Deaf Rat** — [bron](https://music.apple.com/us/song/1471962924)
-- **Devilskin** — [bron](https://music.apple.com/ca/album/corrode-single/1774606757)
+- **Devilskin** — [bron](https://devilskin.co.nz/products/red-album)
 - **Dizzy Reed** — [bron](https://music.apple.com/us/album/this-dont-look-like-vegas-single/1755381155)
 - **Dress the Dead** — [bron](https://music.amazon.com/tracks/B07XWV61L6)
 - **Ei siis on siis** — [bron](https://music.amazon.com/tracks/B0FCJ72P2T)
@@ -133,8 +127,7 @@ Een nummer/release en credit zijn teruggevonden; dat bevestigt nog niet automati
 - **Laurenne / Louhimo** — [bron](https://music.apple.com/us/album/the-reckoning/1562910382)
 - **Leviticus** — [bron](https://music.apple.com/de/song/1102516798)
 - **Liliac** — [bron](https://music.apple.com/us/song/1436780238)
-- **Liv Sin** — [bron](https://music.apple.com/gb/album/slave-to-the-machine-single/1527188228)
-- **Mad Dogs** — [bron](https://music.apple.com/us/album/never-too-late/1816935838)
+- **Liv Sin** — [bron](https://despotz.se/releases/)
 - **Mainline** — [bron](https://music.apple.com/us/album/in-nothing-we-trust-22-version-single/1651055625)
 - **MCC [Magna Carta Cartel]** — [bron](https://music.apple.com/us/song/1634022192)
 - **Metalsteel** — [bron](https://music.amazon.com/tracks/B0F2C6YNTH)
@@ -147,7 +140,6 @@ Een nummer/release en credit zijn teruggevonden; dat bevestigt nog niet automati
 - **Overloaded** — [bron](https://music.amazon.com/tracks/B001957QMA)
 - **Oxidize** — [bron](https://music.apple.com/us/album/extremist-single/1779816279)
 - **Panama Kinal** — [bron](https://music.amazon.com/tracks/B09WZKQK56)
-- **Paul Gilbert** — [bron](https://music.apple.com/us/album/fuzz-universe/1049053995)
 - **Ph.D.** — [bron](https://open.spotify.com/track/1NXHwS75sCmkMZAE0zvwl0)
 - **Pink Velvet Krush** — [bron](https://music.amazon.com.au/albums/B0866BLST5)
 - **Private Line** — [bron](https://music.amazon.com/albums/B005GQ10ZC)
@@ -159,17 +151,16 @@ Een nummer/release en credit zijn teruggevonden; dat bevestigt nog niet automati
 - **Roah** — [bron](https://music.amazon.fr/albums/B08DD9BBXJ)
 - **Rockborn** — [bron](https://music.amazon.es/albums/B098D6DNCK)
 - **Rusty Nail** — [bron](https://music.amazon.com/tracks/B0D7QBNR4F)
-- **Saint** — [bron](https://open.spotify.com/album/1AxhwaHbews98wpy8R7H3D)
+- **Saint** — [bron](https://roxxrecords.com/products/saint-immortalizer-cd-2024-pre-order)
 - **September Mourning** — [bron](https://music.apple.com/us/song/1698645673)
 - **Sershen&Zaritskaya** — [bron](https://music.apple.com/us/album/separate-ways-worlds-apart-single/1440551958)
-- **Sex Slaves** — [bron](https://music.apple.com/us/song/1464871353)
 - **Shereign** — [bron](https://music.amazon.in/albums/B0BQPGKQLR)
 - **Skarlett Riot** — [bron](https://music.apple.com/us/song/1550219023)
-- **Smackbound** — [bron](https://music.apple.com/fi/song/1499901736)
+- **Smackbound** — [bron](https://www.frontiers.it/news/11116)
 - **Soldato** — [bron](https://music.apple.com/gb/album/holy-man-single/1540433326)
 - **Sons Of Sounds** — [bron](https://music.apple.com/ng/album/sound-of-hope-single/1705705794)
 - **Sorrow & The Spire** — [bron](https://open.spotify.com/track/2IeLMi6i5EsVXSxfUAdVQl)
-- **Sparzanza** — [bron](https://music.amazon.ca/tracks/B01DLOOAWA)
+- **Sparzanza** — [bron](https://despotz.se/2017/04/13/new-signing-sparzanza/)
 - **Speed Parade** — [bron](https://music.apple.com/ru/album/wicked-vikki-ep/1542968255)
 - **StoneRowe** — [bron](https://music.apple.com/ca/album/higher-single/1462465529)
 - **Stryken** — [bron](https://open.spotify.com/track/5vbqZYLDcSmow1ckY0YVuA)
@@ -185,7 +176,6 @@ Een nummer/release en credit zijn teruggevonden; dat bevestigt nog niet automati
 - **Tomorrow Is Lost** — [bron](https://www.eclipserecords.com/band/tomorrow-is-lost/)
 - **Track of Rock** — [bron](https://music.apple.com/gb/album/lets-rock-single/1470465316)
 - **TRUCKER DIABLO** — [bron](https://music.apple.com/us/song/1163170008)
-- **Twin Tribes** — [bron](https://music.apple.com/us/song/1477878203)
 - **Two Places at Once** — [bron](https://music.apple.com/us/song/1071620865)
 - **Tyranuke** — [bron](https://music.apple.com/de/album/join-me-i-die-ep/1520215115)
 - **Vixen X** — [bron](https://music.apple.com/us/album/die-for-you-single/1581470649)
@@ -199,8 +189,6 @@ Een nummer/release en credit zijn teruggevonden; dat bevestigt nog niet automati
 - **Year Gone** — [bron](https://music.apple.com/us/album/set-my-soul-single/886565835)
 
 ## Gericht brononderzoek nodig — 106
-
-Nog geen geselecteerde bronkoppeling; opgeslagen aanwijzingen helpen verder zoeken.
 
 - **666packs**
 - **Argos**

@@ -1,0 +1,2007 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-005",
+  "checkedAt": "2026-09-25",
+  "baselineSourceSha256": "b9b2dd9444bd42714bb19a51d36e55408c046536aede988a323662276b698ec8",
+  "method": "Targeted follow-up of 21 release-credit cases: direct profile retrieval, named-recording linkage and primary artist/label evidence. Prior rounds immutable. Strict AllMusic completion criterion retained.",
+  "reviewedCount": 21,
+  "newSupportedCount": 2,
+  "newPartialIdentityCount": 2,
+  "newProviderEvidenceCount": 6,
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:b38dd80a0afb77e4105bf1f8",
+      "displayName": "Blood Command",
+      "status": "open",
+      "query": "Blood Command A Villain's Monologue A Villain's Monologue",
+      "playlistIdentity": {
+        "track": "A Villain's Monologue",
+        "album": "A Villain's Monologue"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/blood-command-mn0002550361",
+          "title": "Blood Command",
+          "genre": "Pop/Rock",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Record/Release: A Villain's Monologue - Blood Command (2021) - Album/EP, CD, Vinyl, Digital - Blood Command - Deathpop - Bergen, Norway.",
+            "url": "https://www.bloodcommand.net/music/blood-command-a-villains-monologue/"
+          },
+          {
+            "title": "A Villain's Monologue | Blood Command",
+            "url": "https://bloodcommand.bandcamp.com/track/a-villains-monologue"
+          },
+          {
+            "title": "A Villain's Monologue | Blood Command",
+            "url": "https://bloodcommand.bandcamp.com/track/a-villains-monologue-2"
+          },
+          {
+            "title": "Blood Command - A Villain's Monologue",
+            "url": "https://orcd.co/avillainsmonologue"
+          },
+          {
+            "title": "A Villain's Monologue - song and lyrics by Blood Command | Spotify",
+            "url": "https://open.spotify.com/track/1Kp80mQhmtLSJCJwzLrnXP"
+          },
+          {
+            "title": "A Villain's Monologue, Blood Command - Qobuz",
+            "url": "https://www.qobuz.com/us-en/album/a-villains-monologue-blood-command/s68qsme441kub"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "A Villain's Monologue - song and lyrics by Blood Command | Spotify",
+          "url": "https://open.spotify.com/track/1Kp80mQhmtLSJCJwzLrnXP",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "A Villain's Monologue - song and lyrics by Blood Command | Spotify",
+          "url": "https://open.spotify.com/track/1XqdEND1RQpxLfDr3Mr9PY",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "providerEvidence": {
+        "url": "https://www.bloodcommand.net/music/blood-command-a-villains-monologue/",
+        "provider": "Official artist site",
+        "fact": "Official single page identifies A Villain’s Monologue and labels artist Deathpop.",
+        "artistDescriptionTerms": [
+          "Deathpop"
+        ],
+        "checkedAt": "2026-09-25",
+        "scope": "Provider-specific prose/self-description; not AllMusic taxonomy."
+      },
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/blood-command-mn0002550361",
+        "result": "fetch-failed",
+        "note": "Artist profile failed to fetch. Earlier official A Villain’s Monologue evidence retained.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:927cab2878e1c98ec1998c7a",
+      "displayName": "Chrome Division",
+      "status": "supported",
+      "query": "Chrome Division Sharp Dressed Man Booze, Broads & Beelzebub",
+      "playlistIdentity": {
+        "track": "Sharp Dressed Man",
+        "album": "Booze, Broads & Beelzebub"
+      },
+      "candidates": [],
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/chrome-division-mn0000717365",
+          "title": "Chrome Division",
+          "genre": "Pop/Rock",
+          "styles": "### Related Artists",
+          "albums": [
+            "Doomsday Rock 'n Roll Doomsday Rock 'n Roll Nuclear Blast",
+            "Booze, Broads & Beelzebub Booze, Broads & Beelzebub Nuclear Blast",
+            "Infernal Rock Eternal Infernal Rock Eternal Nuclear Blast",
+            "One Last Ride One Last Ride Nuclear Blast"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25",
+          "validation": "Rejected: section heading parsed as styles; not a taxonomy value."
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "supported",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "CHROME DIVISION Official Website - www.chromedivision.com",
+            "url": "https://www.chromedivision.com/discography.html"
+          },
+          {
+            "title": "Sharp Dressed Man (Live from Los Angeles) - ZZ Top: Song Lyrics, Music Videos & Concerts",
+            "url": "https://www.shazam.com/song/1122501813/sharp-dressed-man-live-from-los-angeles"
+          },
+          {
+            "title": "Chrome Division - Sharp Dressed Man - tekst i tłumaczenie piosenki - Tekstowo.pl",
+            "url": "https://www.tekstowo.pl/chrome-division/sharp-dressed-man"
+          },
+          {
+            "title": "Song “Sharp Dressed Man” - MusicBrainz",
+            "url": "https://musicbrainz.org/work/2930aae0-0819-3b5f-964a-57c3ab0fd969"
+          },
+          {
+            "title": "Chrome Division on Coub — 8 coubs",
+            "url": "https://coub.com/music/chrome-division"
+          },
+          {
+            "title": "‎Sharp Dressed Man – Titel von Chrome Division – Apple Music",
+            "url": "https://music.apple.com/ch/song/1456964075"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Sharp Dressed Man – Titel von Chrome Division – Apple Music",
+          "url": "https://music.apple.com/ch/song/1456964075",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Sharp Dressed Man – Song by Chrome Division – Apple Music",
+          "url": "https://music.apple.com/pl/song/1456964075",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "providerEvidence": {
+        "url": "https://www.chromedivision.com/discography.html",
+        "provider": "Official artist site",
+        "fact": "Official discography lists Sharp Dressed Man on Booze, Broads and Beelzebub.",
+        "artistDescriptionTerms": [],
+        "checkedAt": "2026-09-25",
+        "scope": "Provider-specific prose/self-description; not AllMusic taxonomy."
+      },
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/chrome-division-mn0000717365",
+        "genre": "Pop/Rock",
+        "styles": "Heavy Metal",
+        "identity": "Artist profile lists playlist album Booze, Broads & Beelzebub; previously verified official discography links Sharp Dressed Man.",
+        "result": "supported",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "identityEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/chrome-division-mn0000717365",
+          "fact": "Artist profile lists playlist album Booze, Broads & Beelzebub; previously verified official discography links Sharp Dressed Man."
+        }
+      ],
+      "sourceEvidence": {
+        "url": "https://www.allmusic.com/artist/chrome-division-mn0000717365",
+        "genre": "Pop/Rock",
+        "styles": "Heavy Metal",
+        "title": "Chrome Division",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence.",
+        "identityEvidence": [
+          {
+            "url": "https://www.allmusic.com/artist/chrome-division-mn0000717365",
+            "fact": "Artist profile lists playlist album Booze, Broads & Beelzebub; previously verified official discography links Sharp Dressed Man."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "predicate": "genre",
+          "values": [
+            "Pop/Rock"
+          ],
+          "status": "source-supported",
+          "sourceUrl": "https://www.allmusic.com/artist/chrome-division-mn0000717365"
+        },
+        {
+          "predicate": "styles",
+          "values": [
+            "Heavy Metal"
+          ],
+          "status": "source-supported",
+          "sourceUrl": "https://www.allmusic.com/artist/chrome-division-mn0000717365"
+        }
+      ],
+      "scope": "artist genre-and-styles; recording edition and internal mainStructure not inferred"
+    },
+    {
+      "musicDnaId": "mdna:mention:3973cc01cf56052daaa019e3",
+      "displayName": "Cincinnati Sinners",
+      "status": "open",
+      "query": "Cincinnati Sinners Its Only Rock n Roll Cincinnati Sinners 6Pak",
+      "playlistIdentity": {
+        "track": "Its Only Rock n Roll",
+        "album": "Cincinnati Sinners 6Pak"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/cincinnati-sinners-mn0003032192",
+          "title": "Cincinnati Sinners",
+          "genre": "Pop/Rock",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/cincinnati-sinners-mn0003032192",
+          "title": "Cincinnati Sinners",
+          "genre": "Pop/Rock",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "‎Its Only Rock n Roll – Song by Cincinnati Sinners – Apple Music",
+            "url": "https://music.apple.com/ca/song/501863213"
+          },
+          {
+            "title": "‎Its Only Rock n Roll – Song by Cincinnati Sinners – Apple Music",
+            "url": "https://music.apple.com/gb/song/501863213"
+          },
+          {
+            "title": "‎Its Only Rock n Roll - Cincinnati Sinnersの曲 - Apple Music",
+            "url": "https://music.apple.com/jp/song/501863213"
+          },
+          {
+            "title": "Cincinnati Sinners – 6-Pak - Sleaze Roxx",
+            "url": "https://sleazeroxx.com/reviews/cincinnati-sinners-6-pak/"
+          },
+          {
+            "title": "BPM and key for songs by Cincinnati Sinners | Tempo for Cincinnati Sinners songs | SongBPM | songbpm.com",
+            "url": "https://songbpm.com/%40cincinnati-sinners"
+          },
+          {
+            "title": "Its Only Rock N Roll — Cincinnati Sinners | Текст, слушать онлайн, скачать mp3 | Musify",
+            "url": "https://musify.club/track/cincinnati-sinners-its-only-rock-n-roll-6629667"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Its Only Rock n Roll – Song by Cincinnati Sinners – Apple Music",
+          "url": "https://music.apple.com/ca/song/501863213",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Its Only Rock n Roll – Song by Cincinnati Sinners – Apple Music",
+          "url": "https://music.apple.com/gb/song/501863213",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/cincinnati-sinners-mn0003032192",
+        "genre": "Pop/Rock",
+        "result": "candidate",
+        "note": "Retrieved page lacks styles and recording links; artist-name match alone not accepted.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:67887040cbf6bf4db1c325f4",
+      "displayName": "cleopatrick",
+      "status": "open",
+      "query": "cleopatrick Lost Lost",
+      "playlistIdentity": {
+        "track": "Lost",
+        "album": "Lost"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/cleopatrick-mn0003822560",
+          "title": "Cleopatrick",
+          "styles": "Alternative/Indie Rock, Indie Rock",
+          "albums": [
+            "Bummer Bummer Nowhere Special Recordings"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/cleopatrick-mn0003822560",
+          "title": "Cleopatrick",
+          "styles": "Alternative/Indie Rock, Indie Rock",
+          "albums": [
+            "Bummer Bummer Nowhere Special Recordings"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Lost - song and lyrics by cleopatrick | Spotify",
+            "url": "https://open.spotify.com/track/6ikRLztllCPsloUL2jCYpJ"
+          },
+          {
+            "title": "Lost [Explicit] song by cleopatrick from Lost on Amazon Music",
+            "url": "https://music.amazon.com/tracks/B0C2B2B1VC"
+          },
+          {
+            "title": "",
+            "url": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO46c6Lb?wmode=opaque"
+          },
+          {
+            "title": "Lost by cleopatrick: Listen on Audiomack",
+            "url": "https://audiomack.com/cleopatrick-1/song/lost-1243314"
+          },
+          {
+            "title": "Paroles de Chansons : cleopatrick - Lost Lyrics & traduction",
+            "url": "https://paroles2chansons.lemonde.fr/paroles-cleopatrick/paroles-lost.html"
+          },
+          {
+            "title": "CLEOPATRICK - Lost (Frank Ocean Cover) | Single | Rock",
+            "url": "https://hashbrandnew.com/Artists/Cleopatrick/Albums/Lost"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "Lost - song and lyrics by cleopatrick | Spotify",
+          "url": "https://open.spotify.com/track/6ikRLztllCPsloUL2jCYpJ",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "Lost [Explicit] song by cleopatrick from Lost on Amazon Music",
+          "url": "https://music.amazon.com/tracks/B0C2B2B1VC",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/cleopatrick-mn0003822560",
+        "styles": "Alternative/Indie Rock, Indie Rock",
+        "result": "candidate",
+        "note": "Artist page still lacks genre and does not list playlist song Lost; profile-to-recording linkage remains pending.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:84d84054957d6f61dd2bc230",
+      "displayName": "Deadland Ritual",
+      "status": "open",
+      "query": "Deadland Ritual Down in Flames Down in Flames",
+      "playlistIdentity": {
+        "track": "Down in Flames",
+        "album": "Down in Flames"
+      },
+      "candidates": [],
+      "nextAction": "Primary/catalog source now identifies release or artist. Find and link full artist taxonomy; retain provider-specific description separately.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Deadland Ritual - Down In Flames [Official Video] - YouTube",
+            "url": "https://www.youtube.com/watch?v=ep5NHWELz04"
+          },
+          {
+            "title": "Deadland Ritual",
+            "url": "https://en.wikipedia.org/wiki/Deadland_Ritual"
+          },
+          {
+            "title": "Deadland Ritual Releases Debut Song & Video DOWN IN FLAMES",
+            "url": "https://www.broadwayworld.com/bwwmusic/article/Deadland-Ritual-Releases-Debut-Song-Video-DOWN-IN-FLAMES-20181210"
+          },
+          {
+            "title": "Deadland Ritual Share Debut Song, \"Down In Flames\" | Guitar World",
+            "url": "https://www.guitarworld.com/news/deadland-ritual-share-debut-song-down-in-flames"
+          },
+          {
+            "title": "DEADLAND RITUAL Feat. GEEZER BUTLER, MATT SORUM, STEVE STEVENS: 'Down In Flames' Video - BLABBERMOUTH.NET",
+            "url": "https://blabbermouth.net/news/deadland-ritual-feat-geezer-butler-matt-sorum-steve-stevens-down-in-flames-video"
+          },
+          {
+            "title": "Deadland Ritual - Wikipedia",
+            "url": "https://webfiddle.net/asimov-platform/en.wikipedia.org/wiki/Deadland_Ritual"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Down in Flames – Song by Deadland Ritual – Apple Music",
+          "url": "https://music.apple.com/gb/song/1445706227",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Down in Flames – Song by Deadland Ritual – Apple Music",
+          "url": "https://music.apple.com/be/song/1445706227",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "result": "provider",
+        "provider": {
+          "url": "https://www.geezerbutler.com/about/",
+          "provider": "Official Geezer Butler site",
+          "fact": "Band member's biography identifies Deadland Ritual members and debut Down In Flames. Geezer Butler solo taxonomy is not inherited.",
+          "artistDescriptionTerms": []
+        },
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "providerEvidence": {
+        "url": "https://www.geezerbutler.com/about/",
+        "provider": "Official Geezer Butler site",
+        "fact": "Band member's biography identifies Deadland Ritual members and debut Down In Flames. Geezer Butler solo taxonomy is not inherited.",
+        "artistDescriptionTerms": [],
+        "checkedAt": "2026-09-25",
+        "method": "Indexed web source inspected in round 005",
+        "scope": "Provider-specific artist description and/or release identification; not literal AllMusic taxonomy."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:5e64ad30b738f4ab4315c405",
+      "displayName": "Devilskin",
+      "status": "open",
+      "query": "Devilskin Corrode Corrode",
+      "playlistIdentity": {
+        "track": "Corrode",
+        "album": "Corrode"
+      },
+      "candidates": [],
+      "nextAction": "Primary/catalog source now identifies release or artist. Find and link full artist taxonomy; retain provider-specific description separately.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "DEVILSKIN | TruRockRevival",
+            "url": "https://www.trurockrevival.com/devilskin"
+          },
+          {
+            "title": "Devilskin",
+            "url": "https://en.wikipedia.org/wiki/Devilskin"
+          },
+          {
+            "title": "Devilskin - Top tracks | Spotify",
+            "url": "https://open.spotify.com/embed/artist/3TIlROeJjCAhax6c000Pcd"
+          },
+          {
+            "title": "Corrode - DevilSkin (letra da música) - Cifra Club",
+            "url": "https://www.cifraclub.com.br/devilskin/corrode/letra/"
+          },
+          {
+            "title": "DEVILSKIN release official music video for 'Corrode' • GRIMM Gent",
+            "url": "https://www.grimmgent.com/devilskin-release-official-music-video-for-corrode/"
+          },
+          {
+            "title": "‎Corrode - Single - Album by Devilskin - Apple Music",
+            "url": "https://music.apple.com/ca/album/corrode-single/1774606757"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Corrode - Single - Album by Devilskin - Apple Music",
+          "url": "https://music.apple.com/ca/album/corrode-single/1774606757",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Corrode - Single - Album by Devilskin - Apple Music",
+          "url": "https://music.apple.com/au/album/corrode-single/1774606757",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "result": "provider",
+        "provider": {
+          "url": "https://devilskin.co.nz/products/red-album",
+          "provider": "Official artist store",
+          "fact": "Official RED track listing includes Corrode. This confirms artist/song linkage, not the playlist single edition.",
+          "artistDescriptionTerms": []
+        },
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "providerEvidence": {
+        "url": "https://devilskin.co.nz/products/red-album",
+        "provider": "Official artist store",
+        "fact": "Official RED track listing includes Corrode. This confirms artist/song linkage, not the playlist single edition.",
+        "artistDescriptionTerms": [],
+        "checkedAt": "2026-09-25",
+        "method": "Indexed web source inspected in round 005",
+        "scope": "Provider-specific artist description and/or release identification; not literal AllMusic taxonomy."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:d7ee0dfb8423c1a3da9d6491",
+      "displayName": "Ember Falls",
+      "status": "open",
+      "query": "Ember Falls Shut Down With Me Welcome To Ember Falls",
+      "playlistIdentity": {
+        "track": "Shut Down With Me",
+        "album": "Welcome To Ember Falls"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/ember-falls-mn0003512993",
+          "title": "Ember Falls",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Ember Falls",
+            "url": "https://emberfalls.com/"
+          },
+          {
+            "title": "Ember Falls",
+            "url": "https://en.wikipedia.org/wiki/Ember_Falls"
+          },
+          {
+            "title": "Shut Down With Me - Ember Falls - OUVIR MÚSICA",
+            "url": "https://www.ouvirmusica.com.br/ember-falls/shut-down-with-me/"
+          },
+          {
+            "title": "‎Shut Down with Me – Song by Ember Falls – Apple Music",
+            "url": "https://music.apple.com/au/song/1442953573"
+          },
+          {
+            "title": "‎Shut Down with Me – Titel von Ember Falls – Apple Music",
+            "url": "https://music.apple.com/at/song/1442953573"
+          },
+          {
+            "title": "Shut Down With Me - Ember Falls - Cifra Club",
+            "url": "https://www.cifraclub.com.br/ember-falls/shut-down-with-me/"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Shut Down with Me – Song by Ember Falls – Apple Music",
+          "url": "https://music.apple.com/au/song/1442953573",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Shut Down with Me – Titel von Ember Falls – Apple Music",
+          "url": "https://music.apple.com/at/song/1442953573",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/ember-falls-mn0003512993",
+        "result": "fetch-failed",
+        "note": "Artist profile failed to fetch; no evidence of absent artist.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:2193c606a48955e184bb7edb",
+      "displayName": "Fate DeStroyed",
+      "status": "open",
+      "query": "Fate DeStroyed Crave Crave",
+      "playlistIdentity": {
+        "track": "Crave",
+        "album": "Crave"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/fate-destroyed-mn0004122942",
+          "title": "Fate DeStroyed",
+          "genre": "Pop/Rock",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/fate-destroyed-mn0004122942",
+          "title": "Fate DeStroyed",
+          "genre": "Pop/Rock",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Crave | Fate DeStroyed",
+            "url": "https://fatedestroyed.bandcamp.com/track/crave"
+          },
+          {
+            "title": "Wolfe Studios. Recording, Mixing, Mastering in California.",
+            "url": "https://wolfestudiosca.com/"
+          },
+          {
+            "title": "Video | Fate Destroyed",
+            "url": "https://fatedestroyedkhz.bandcamp.com/video"
+          },
+          {
+            "title": "Stream Fate Destroyed - Crave by KnucklehedzInc | Listen online for free on SoundCloud",
+            "url": "https://m.soundcloud.com/knucklehedzinc/fate-destroyed-crave"
+          },
+          {
+            "title": "",
+            "url": "https://open.spotify.com/embed/playlist/1jTL5EF4cT4pl1g3KKUxDz"
+          },
+          {
+            "title": "Fate Destroyed | fiveringsproductions",
+            "url": "https://www.fiveringsproductions.com/fate-destroyed"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Crave - Single - Album by Fate DeStroyed - Apple Music",
+          "url": "https://music.apple.com/us/album/crave-single/1512175275",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Crave – Song by Fate DeStroyed – Apple Music",
+          "url": "https://music.apple.com/ca/song/1512175279",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/fate-destroyed-mn0004122942",
+        "genre": "Pop/Rock",
+        "result": "candidate",
+        "note": "Retrieved page lacks styles and Crave linkage.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:43b3ee6cdb2ac7cbf74b3749",
+      "displayName": "Killit",
+      "status": "open",
+      "query": "Killit Shut It Down Shut It Down",
+      "playlistIdentity": {
+        "track": "Shut It Down",
+        "album": "Shut It Down"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/killit-mn0003546917",
+          "title": "Killit",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Shut It Down song by Killit from Shut It Down on Amazon Music",
+            "url": "https://music.amazon.com/tracks/B00T8O09ZK"
+          },
+          {
+            "title": "KILLIT: ‘Shut It Down’",
+            "url": "https://www.metaltalk.net/201623397.php"
+          },
+          {
+            "title": "KILLIT – Shut It Down – Eternal Terror Live",
+            "url": "https://eternal-terror.com/2016/07/25/killit-shut-it-down/"
+          },
+          {
+            "title": "About - KilliT",
+            "url": "https://www.musicglue.com/killit/about"
+          },
+          {
+            "title": "Killit - Shut It Down - Metal Temple Magazine",
+            "url": "https://metal-temple.com/review/killit-shut-it-down/"
+          },
+          {
+            "title": "Shut It Down by Killit Stats and Listeners – volt.fm",
+            "url": "https://volt.fm/track/265226704/shut-it-down-by-killit"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "Shut It Down song by Killit from Shut It Down on Amazon Music",
+          "url": "https://music.amazon.com/tracks/B00T8O09ZK",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/killit-mn0003546917",
+        "genre": "Pop/Rock",
+        "result": "candidate",
+        "note": "Retrieved page provides genre only, without Shut It Down linkage.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:bc88958544cc96dfda5cea28",
+      "displayName": "Liv Sin",
+      "status": "open",
+      "query": "Liv Sin Slave to the Machine Burning Sermons",
+      "playlistIdentity": {
+        "track": "Slave to the Machine",
+        "album": "Burning Sermons"
+      },
+      "candidates": [],
+      "nextAction": "Primary/catalog source now identifies release or artist. Find and link full artist taxonomy; retain provider-specific description separately.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Liv Sin - Slave to the Machine - Encyclopaedia Metallum: The Metal Archives",
+            "url": "https://www.metal-archives.com/albums/Liv_Sin/Slave_to_the_Machine/780209"
+          },
+          {
+            "title": "Liv Sin - Slave To The Machine (Lyric Video) - YouTube",
+            "url": "https://www.youtube.com/watch?v=Wz_RCfE92-g"
+          },
+          {
+            "title": "Paroles de Chansons : Liv Sin - Slave to the Machine Lyrics & traduction",
+            "url": "https://paroles2chansons.lemonde.fr/paroles-liv-sin/paroles-slave-to-the-machine.html"
+          },
+          {
+            "title": "",
+            "url": "https://open.spotify.com/embed/artist/7aetQGX0sd3swXqUIWurrE?auto_play=false&buying=true&color=&download=true&liking=true&sharing=true&show_artwork=true&show_comments=true&show_playcount=true&show_user=true"
+          },
+          {
+            "title": "Music | Liv Sin",
+            "url": "https://livsin.bandcamp.com/music"
+          },
+          {
+            "title": "",
+            "url": "https://open.spotify.com/embed/playlist/5kZ8kGO9umgnkB3kICpTsI"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Slave to the Machine - Single - Album by Liv Sin - Apple Music",
+          "url": "https://music.apple.com/gb/album/slave-to-the-machine-single/1527188228",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Slave to the Machine - Single - Liv Sinのアルバム - Apple Music",
+          "url": "https://music.apple.com/jp/album/slave-to-the-machine-single/1527188228",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "result": "provider",
+        "provider": {
+          "url": "https://despotz.se/releases/",
+          "provider": "Despotz Records",
+          "fact": "Label catalog credits Burning Sermons and Slave To The Machine to Liv Sin. Sister Sin profile fields are not inherited.",
+          "artistDescriptionTerms": []
+        },
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "providerEvidence": {
+        "url": "https://despotz.se/releases/",
+        "provider": "Despotz Records",
+        "fact": "Label catalog credits Burning Sermons and Slave To The Machine to Liv Sin. Sister Sin profile fields are not inherited.",
+        "artistDescriptionTerms": [],
+        "checkedAt": "2026-09-25",
+        "method": "Indexed web source inspected in round 005",
+        "scope": "Provider-specific artist description and/or release identification; not literal AllMusic taxonomy."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:6527f502a771764f3869b4a0",
+      "displayName": "Mad Dogs",
+      "status": "open",
+      "query": "Mad Dogs Never Too Late Never Too Late",
+      "playlistIdentity": {
+        "track": "Never Too Late",
+        "album": "Never Too Late"
+      },
+      "candidates": [],
+      "nextAction": "Resolve same-name profile/recording linkage before accepting taxonomy.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/mad-dogs-mn0000233999",
+          "title": "Mad Dogs",
+          "genre": "Pop/Rock",
+          "albums": [
+            "Fuckin' Rotten Society Fuckin' Rotten Society Vivid Sound"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "profile-or-credit-review",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "‎MAD DOGS - Apple Music",
+            "url": "https://music.apple.com/us/artist/mad-dogs/262846803"
+          },
+          {
+            "title": "NEVER TOO LATE | MAD DOGS",
+            "url": "https://maddogscolombia.bandcamp.com/album/never-too-late"
+          },
+          {
+            "title": "‎Never too late - Album by MAD DOGS - Apple Music",
+            "url": "https://music.apple.com/us/album/never-too-late/1816935838"
+          },
+          {
+            "title": "Never too late | MAD DOGS",
+            "url": "https://maddogscolombia.bandcamp.com/track/never-too-late"
+          },
+          {
+            "title": "Never too late - Mad Dogs | Spotify",
+            "url": "https://open.spotify.com/embed/album/4zZA1jC8AAbfmIi16yrb0N"
+          },
+          {
+            "title": "«",
+            "url": "https://www.idartes.gov.co/sites/default/files/2023-05/RESOLUCION%20668-2023%20ANEXOS.pdf"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Never too late - Album by MAD DOGS - Apple Music",
+          "url": "https://music.apple.com/us/album/never-too-late/1816935838",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "Never too late - Mad Dogs | Spotify",
+          "url": "https://open.spotify.com/embed/album/4zZA1jC8AAbfmIi16yrb0N",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/mad-dogs-mn0000233999",
+        "genre": "Pop/Rock",
+        "result": "review",
+        "note": "Retrieved profile does not link Never Too Late; displayed credits span disparate releases and require namesake/aggregation review.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "reviewReason": "Retrieved profile does not link Never Too Late; displayed credits span disparate releases and require namesake/aggregation review."
+    },
+    {
+      "musicDnaId": "mdna:mention:b248d2c758542345928c37f2",
+      "displayName": "MILE",
+      "status": "open",
+      "query": "MILE Crying in Your Sleep The World in Focus",
+      "playlistIdentity": {
+        "track": "Crying in Your Sleep",
+        "album": "The World in Focus"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/mile-mn0003466595",
+          "title": "Mile",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "MILE | Spotify",
+            "url": "https://open.spotify.com/artist/1RJjGMtpno6amyvbk1zX6G"
+          },
+          {
+            "title": "‎Crying in Your Sleep - Single - Album by Mile - Apple Music",
+            "url": "https://music.apple.com/us/album/crying-in-your-sleep-single/1315611270"
+          },
+          {
+            "title": "Crying in Your Sleep - Mile - VAGALUME",
+            "url": "https://www.vagalume.com.br/mile/crying-in-your-sleep.html"
+          },
+          {
+            "title": "Mile - complete achievements",
+            "url": "https://www.spirit-of-metal.com/en/discography/Mile/1"
+          },
+          {
+            "title": "",
+            "url": "https://open.spotify.com/embed/playlist/37RVu4A3LRyDK4DnNNpbkk?theme=0"
+          },
+          {
+            "title": "This Is MILE | Spotify Playlist",
+            "url": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO139Oei"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Crying in Your Sleep - Single - Album by Mile - Apple Music",
+          "url": "https://music.apple.com/us/album/crying-in-your-sleep-single/1315611270",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Crying in Your Sleep – Titel von Mile – Apple Music",
+          "url": "https://music.apple.com/de/song/1328273070",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/mile-mn0003466595",
+        "result": "fetch-failed",
+        "note": "Artist profile failed to fetch.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:2ed2858fef4ab52850abb783",
+      "displayName": "Paul Gilbert",
+      "status": "open",
+      "query": "Paul Gilbert Fuzz Universe Fuzz Universe",
+      "playlistIdentity": {
+        "track": "Fuzz Universe",
+        "album": "Fuzz Universe"
+      },
+      "candidates": [
+        {
+          "url": "https://www.allmusic.com/artist/paul-gilbert-mn0000747761",
+          "title": "Paul Gilbert",
+          "styles": "Guitar Virtuoso, Hard Rock, Heavy Metal",
+          "matchedTrackLines": [],
+          "albums": [
+            {
+              "year": "1994",
+              "entry": "Hendrix Tribute Hendrix Tribute Munich Guitar"
+            },
+            {
+              "year": "1998",
+              "entry": "King of Clubs King of Clubs Mayhem"
+            },
+            {
+              "year": "1999",
+              "entry": "Flying Dog Flying Dog Import"
+            },
+            {
+              "year": "1999",
+              "entry": "Beehive Live Beehive Live Shrapnel"
+            },
+            {
+              "year": "2000",
+              "entry": "Alligator Farm Alligator Farm Polygram"
+            },
+            {
+              "year": "2001",
+              "entry": "Individually Twisted Individually Twisted Universal / Polygram"
+            },
+            {
+              "year": "2002",
+              "entry": "Raw Blues Power Raw Blues Power Blues Bureau International / Rock Empire"
+            },
+            {
+              "year": "2002",
+              "entry": "Burning Organ Burning Organ Shrapnel"
+            },
+            {
+              "year": "2003",
+              "entry": "Gilbert Hotel Gilbert Hotel HIMALAYA"
+            },
+            {
+              "year": "2003",
+              "entry": "Acoustic Samurai Acoustic Samurai Virtuoso"
+            },
+            {
+              "year": "2004",
+              "entry": "Guitar Wars Guitar Wars Universal Distribution"
+            },
+            {
+              "year": "2005",
+              "entry": "Spaceship One Spaceship One Shrapnel"
+            },
+            {
+              "year": "2006",
+              "entry": "Get Out of My Yard Get Out of My Yard Shrapnel"
+            },
+            {
+              "year": "2008",
+              "entry": "Silence Followed by a Deafening Roar Silence Followed by a Deafenin… Shrapnel"
+            },
+            {
+              "year": "2009",
+              "entry": "United States United States Megaforce / Mascot Music"
+            },
+            {
+              "year": "2010",
+              "entry": "Fuzz Universe Fuzz Universe Shrapnel"
+            },
+            {
+              "year": "2014",
+              "entry": "Stone Pushing Uphill Man Stone Pushing Uphill Man Shrapnel"
+            },
+            {
+              "year": "2016",
+              "entry": "I Can Destroy I Can Destroy Pronghorn Recordings"
+            },
+            {
+              "year": "2019",
+              "entry": "Behold Electric Guitar Behold Electric Guitar MMT / Music Theories"
+            }
+          ],
+          "method": "AllMusic indexed artist page; exact track line in Songs section",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "nextAction": "Complete missing artist-profile fields; preserve verified partial evidence. Do not substitute album taxonomy.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/paul-gilbert-mn0000747761",
+          "title": "Paul Gilbert",
+          "styles": "Guitar Virtuoso, Hard Rock, Heavy Metal",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/paul-gilbert-mn0004373025",
+          "title": "Paul Gilbert",
+          "genre": "Comedy/Spoken",
+          "albums": [
+            "The Split Personality of Paul Gilbert The Split Personality of Paul … Essential Media",
+            "Confessions of a Las Vegas Loser Confessions of a Las Vegas Los… K-Tel"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [
+        {
+          "url": "https://www.allmusic.com/album/fuzz-universe-mw0002008316",
+          "artist": "Paul Gilbert",
+          "album": "Fuzz Universe",
+          "method": "AllMusic album heading retrieved through search index",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Fuzz Universe | Shrapnel Label Group, Inc",
+            "url": "https://www.shrapnelrecords.com/paul-gilbert/fuzz-universe"
+          },
+          {
+            "title": "Paul Gilbert - Fuzz Universe (Official Audio) - YouTube",
+            "url": "https://www.youtube.com/watch?v=UVlic5NXpzw"
+          },
+          {
+            "title": "Fuzz Universe",
+            "url": "https://en.wikipedia.org/wiki/Fuzz_Universe"
+          },
+          {
+            "title": "Paul Gilbert",
+            "url": "https://en.wikipedia.org/wiki/Paul_Gilbert"
+          },
+          {
+            "title": "‎Fuzz Universe - Album by Paul Gilbert - Apple Music",
+            "url": "https://music.apple.com/us/album/fuzz-universe/1049053995"
+          },
+          {
+            "title": "PAUL GILBERT – “Fuzz Universe”",
+            "url": "https://themetalden.com/paul-gilbert-fuzz-universe/"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Fuzz Universe - Album by Paul Gilbert - Apple Music",
+          "url": "https://music.apple.com/us/album/fuzz-universe/1049053995",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Fuzz Universe - Song by Paul Gilbert - Apple Music",
+          "url": "https://music.apple.com/us/song/1059781750",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/paul-gilbert-mn0000747761",
+        "styles": "Guitar Virtuoso, Hard Rock, Heavy Metal",
+        "identity": "Previously captured profile discography includes Fuzz Universe. Correct guitarist profile; comedy namesake mn0004373025 excluded.",
+        "result": "partial",
+        "missing": [
+          "genre"
+        ],
+        "method": "Retained earlier indexed artist evidence; current direct opening failed (403); no fresh field confirmation.",
+        "checkedAt": "2026-09-25"
+      },
+      "identityEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/paul-gilbert-mn0000747761",
+          "fact": "Previously captured profile discography includes Fuzz Universe. Correct guitarist profile; comedy namesake mn0004373025 excluded."
+        }
+      ],
+      "partialClaims": [
+        {
+          "predicate": "styles",
+          "values": [
+            "Guitar Virtuoso",
+            "Hard Rock",
+            "Heavy Metal"
+          ],
+          "status": "source-supported",
+          "sourceUrl": "https://www.allmusic.com/artist/paul-gilbert-mn0000747761"
+        }
+      ],
+      "missingFields": [
+        "genre"
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:c6a7b417e661437552966963",
+      "displayName": "Ph.D.",
+      "status": "open",
+      "query": "Ph.D. I Won't Let You Down Love on Pop (Unforgettable Songs)",
+      "playlistIdentity": {
+        "track": "I Won't Let You Down",
+        "album": "Love on Pop (Unforgettable Songs)"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "I Won't Let You Down (Ph.D. song)",
+            "url": "https://en.wikipedia.org/wiki/I_Won%27t_Let_You_Down_%28Ph.D._song%29"
+          },
+          {
+            "title": "I Won't Let You Down - Ph.D - VAGALUME",
+            "url": "https://www.vagalume.com.br/p-h-d/i-wont-let-you-down.html"
+          },
+          {
+            "title": "Ph.D.: I Won't Let You Down (Version 1) (Music Video 1982) - IMDb",
+            "url": "https://www.imdb.com/title/tt11147998/"
+          },
+          {
+            "title": "Scanned Image",
+            "url": "https://www.worldradiohistory.com/UK/Record-Business-UK/1982/Record-Business-1982-05-03-S-OCR.pdf"
+          },
+          {
+            "title": "Ph.D. - I Won't Let You Down - tekst i tłumaczenie piosenki - Tekstowo.pl",
+            "url": "https://www.tekstowo.pl/ph-d/i-won-t-let-you-down"
+          },
+          {
+            "title": "Ph.D. (band)",
+            "url": "https://en.wikipedia.org/wiki/Ph.D._%28band%29"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "I Won't Let You Down - song and lyrics by Ph.D. | Spotify",
+          "url": "https://open.spotify.com/track/1NXHwS75sCmkMZAE0zvwl0",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "I Won't Let You Down - song and lyrics by Ph.D. | Spotify",
+          "url": "https://open.spotify.com/track/0AHUMRnWB3YL1bQXcc1XfH",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "result": "search-inconclusive",
+        "note": "Targeted AllMusic search mainly surfaced unrelated academic names and Jim Diamond/Tony Hymas individual profiles. No band taxonomy accepted.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:bb32d1dd2dad1ef0e66fc46d",
+      "displayName": "RADIO TAPOK",
+      "status": "open",
+      "query": "RADIO TAPOK Монстр Монстр",
+      "playlistIdentity": {
+        "track": "Монстр",
+        "album": "Монстр"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/radio-tapok-mn0004219755",
+          "title": "Radio Tapok",
+          "genre": "Pop/Rock",
+          "albums": [
+            "Naslediye Naslediye Radio Tapok",
+            "Epokha Imperiy Epokha Imperiy Insight"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/radio-tapok-mn0004219755",
+          "title": "Radio Tapok",
+          "genre": "Pop/Rock",
+          "albums": [
+            "Naslediye Naslediye Radio Tapok",
+            "Epokha Imperiy Epokha Imperiy Insight"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Монстр - YouTube",
+            "url": "https://www.youtube.com/watch?v=8xkVmwWQwEM"
+          },
+          {
+            "title": "Скачать песню Radio Tapok - Монстр - слушать онлайн на Мега Хит.org",
+            "url": "https://megahit.org/year/2020/257198-radio-tapok-monstr.html"
+          },
+          {
+            "title": "‎Монстр - Song by RADIO TAPOK - Apple Music",
+            "url": "https://music.apple.com/us/song/1527528742"
+          },
+          {
+            "title": "‎Монстр - Single - Album by RADIO TAPOK - Apple Music",
+            "url": "https://music.apple.com/us/album/%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80-single/1527528740"
+          },
+          {
+            "title": "Radio Tapok — Монстр текст",
+            "url": "https://tekst-pesni.com/radio-tapok-monstr/"
+          },
+          {
+            "title": "[ AMV | Токийский Гуль ] \"Я МОНСТР\" ๑︎ Аниме Клип ๑︎ - смотреть видео онлайн от «ANDERKWIN» в хорошем качестве, бесплатно опубликованное 4 сентября 2023 года в 19:51:24 00:02:58.",
+            "url": "https://rutube.ru/video/7958161fd0f2a6364e5e140c83e25779/"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Монстр - Song by RADIO TAPOK - Apple Music",
+          "url": "https://music.apple.com/us/song/1527528742",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Монстр - Single - Album by RADIO TAPOK - Apple Music",
+          "url": "https://music.apple.com/us/album/%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80-single/1527528740",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/radio-tapok-mn0004219755",
+        "result": "fetch-failed",
+        "note": "Artist profile failed to fetch.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:4ab07918acb193361e69cb3f",
+      "displayName": "Saint",
+      "status": "open",
+      "query": "Saint Immortalizer Immortalizer",
+      "playlistIdentity": {
+        "track": "Immortalizer",
+        "album": "Immortalizer"
+      },
+      "candidates": [],
+      "nextAction": "Primary/catalog source now identifies release or artist. Find and link full artist taxonomy; retain provider-specific description separately.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/saint-mn0002082577",
+          "title": "Saint",
+          "genre": "Pop/Rock",
+          "albums": [
+            "Time's End Time's End Amplified Media Services / Retroactive",
+            "In the Battle In the Battle Amplified Media Services / Armor",
+            "Crime Scene Earth Crime Scene Earth Armor",
+            "LNV LNV High Class Ent"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Immortalizer - Album by Saint | Spotify",
+            "url": "https://open.spotify.com/album/1AxhwaHbews98wpy8R7H3D"
+          },
+          {
+            "title": "SAINT | FullMetal Osthessen – 13. FMO 2026",
+            "url": "https://www.fullmetal-osthessen.de/2025_saint/"
+          },
+          {
+            "title": "SAINT - Immortalizer - Heaven's Metal Magazine",
+            "url": "https://heavensmetalmagazine.com/index.php/2024/08/09/saint-immortalizer/"
+          },
+          {
+            "title": "Saint (band)",
+            "url": "https://en.wikipedia.org/wiki/Saint_%28band%29"
+          },
+          {
+            "title": "SAINT: Immortalizer CD - NORDIC MISSION",
+            "url": "https://www.nordicmission.net/en/products/saint-immortalizer-cd-pre-order"
+          },
+          {
+            "title": "The Metal Crypt - Review of Saint - Immortalizer",
+            "url": "https://www.metalcrypt.com/reviews/15461"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "Immortalizer - Album by Saint | Spotify",
+          "url": "https://open.spotify.com/album/1AxhwaHbews98wpy8R7H3D",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "Play Immortalizer by Saint on Amazon Music Unlimited",
+          "url": "https://music.amazon.com/albums/B0DD29288R",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/saint-mn0002082577",
+        "result": "provider",
+        "note": "AllMusic profile failed to fetch; release identity corroborated by retailer/label catalog.",
+        "provider": {
+          "url": "https://roxxrecords.com/products/saint-immortalizer-cd-2024-pre-order",
+          "provider": "Roxx Records catalog (release issued by Armor Records)",
+          "fact": "Catalog identifies Saint's Immortalizer album and title track, describes Saint as Christian heavy metal.",
+          "artistDescriptionTerms": [
+            "Christian heavy metal"
+          ]
+        },
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "providerEvidence": {
+        "url": "https://roxxrecords.com/products/saint-immortalizer-cd-2024-pre-order",
+        "provider": "Roxx Records catalog (release issued by Armor Records)",
+        "fact": "Catalog identifies Saint's Immortalizer album and title track, describes Saint as Christian heavy metal.",
+        "artistDescriptionTerms": [
+          "Christian heavy metal"
+        ],
+        "checkedAt": "2026-09-25",
+        "method": "Indexed web source inspected in round 005",
+        "scope": "Provider-specific artist description and/or release identification; not literal AllMusic taxonomy."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:7d16b7fe7680b32bc3c69a60",
+      "displayName": "September Mourning",
+      "status": "open",
+      "query": "September Mourning Wake The Dead Wake The Dead",
+      "playlistIdentity": {
+        "track": "Wake The Dead",
+        "album": "Wake The Dead"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/september-mourning-mn0002909744",
+          "title": "September Mourning",
+          "styles": "Goth Metal, Heavy Metal",
+          "albums": [
+            "Volume II Volume II Sumerian Records"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "SEPTEMBER MOURNING - WAKE THE DEAD - YouTube",
+            "url": "https://www.youtube.com/watch?v=ycjorOei0pk"
+          },
+          {
+            "title": "‎Wake the Dead - Song by September Mourning - Apple Music",
+            "url": "https://music.apple.com/us/song/1698645673"
+          },
+          {
+            "title": "Wake the Dead (feat. Black Dave) lyrics by September Mourning on Paroles-musique.com",
+            "url": "https://www.paroles-musique.com/eng/September-Mourning-Wake-the-Dead-feat-Black-Dave-lyrics%2Cp8250244"
+          },
+          {
+            "title": "September Mourning",
+            "url": "https://en.wikipedia.org/wiki/September_Mourning"
+          },
+          {
+            "title": "‎Wake the Dead (feat. Black Dave) - Song by September Mourning - Apple Music",
+            "url": "https://music.apple.com/us/song/1664324514"
+          },
+          {
+            "title": "Paroles de September Mourning - Wake the Dead (feat. Black Dave) lyrics sur Paroles-musique.com",
+            "url": "https://www.paroles-musique.com/paroles-September-Mourning-Wake-the-Dead-feat-Black-Dave-lyrics%2Cp8250244"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Wake the Dead - Song by September Mourning - Apple Music",
+          "url": "https://music.apple.com/us/song/1698645673",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Wake the Dead (feat. Black Dave) - Song by September Mourning - Apple Music",
+          "url": "https://music.apple.com/us/song/1664324514",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/september-mourning-mn0002909744",
+        "styles": "Goth Metal, Heavy Metal",
+        "result": "candidate",
+        "note": "Artist page still lacks genre and does not list Wake The Dead; no band-member or album taxonomy inheritance.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:ad7305d545ea59bb06413de6",
+      "displayName": "Sex Slaves",
+      "status": "supported",
+      "query": "Sex Slaves Thank God For Jack Daniels Bite Your Tongue",
+      "playlistIdentity": {
+        "track": "Thank God For Jack Daniels",
+        "album": "Bite Your Tongue"
+      },
+      "candidates": [],
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/sex-slaves-mn0000391062",
+          "title": "Sex Slaves",
+          "albums": [
+            "Bite Your Tongue Bite Your Tongue Radical Records",
+            "Wasted Angel Wasted Angel Loch Ness Records"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/sex-slaves-mn0000391062",
+          "title": "Sex Slaves",
+          "albums": [
+            "Bite Your Tongue Bite Your Tongue Radical Records",
+            "Wasted Angel Wasted Angel Loch Ness Records"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [
+        {
+          "url": "https://www.allmusic.com/album/bite-your-tongue-mw0000352294",
+          "artist": "Sex Slaves",
+          "album": "Bite Your Tongue",
+          "method": "AllMusic album heading retrieved through search index",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "triageCategory": "supported",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "‎Thank God for Jack Daniels - Song by Sex Slaves - Apple Music",
+            "url": "https://music.apple.com/us/song/1464871353"
+          },
+          {
+            "title": "Thank God for Jack Daniels Vocal Tab by Sex Slaves | Songsterr Tabs with Rhythm",
+            "url": "https://www.songsterr.com/a/wsa/sex-slaves-thank-god-for-jack-daniels-vocal-tab-s3866290"
+          },
+          {
+            "title": "Thank God For Jack Daniels - Sex Slaves - Cifra Club",
+            "url": "https://www.cifraclub.com.br/sex-slaves/thank-god-for-jack-daniels/"
+          },
+          {
+            "title": "WFMU: Bitslap with KBC: Playlist from November 18, 2014",
+            "url": "https://www.wfmu.org/playlists/shows/58140"
+          },
+          {
+            "title": "sex slaves (- jack daniels) - Flashback Forum",
+            "url": "https://www.flashback.org/t606633"
+          },
+          {
+            "title": "Sex Slaves \"Bite Your Tongue\" [LP/CD] – Creep Records",
+            "url": "https://shopcreep.com/products/sex-slaves-bite-your-tounge-lp"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Thank God for Jack Daniels - Song by Sex Slaves - Apple Music",
+          "url": "https://music.apple.com/us/song/1464871353",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Thank God for Jack Daniels – Låt av Sex Slaves – Apple Music",
+          "url": "https://music.apple.com/se/song/1464871353",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/sex-slaves-mn0000391062",
+        "genre": "Pop/Rock",
+        "styles": "Hard Rock, Alternative/Indie Rock, Punk Revival",
+        "identity": "Artist biography and discography identify playlist album Bite Your Tongue.",
+        "result": "supported",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "identityEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/sex-slaves-mn0000391062",
+          "fact": "Artist biography and discography identify playlist album Bite Your Tongue."
+        }
+      ],
+      "sourceEvidence": {
+        "url": "https://www.allmusic.com/artist/sex-slaves-mn0000391062",
+        "genre": "Pop/Rock",
+        "styles": "Hard Rock, Alternative/Indie Rock, Punk Revival",
+        "title": "Sex Slaves",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence.",
+        "identityEvidence": [
+          {
+            "url": "https://www.allmusic.com/artist/sex-slaves-mn0000391062",
+            "fact": "Artist biography and discography identify playlist album Bite Your Tongue."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "predicate": "genre",
+          "values": [
+            "Pop/Rock"
+          ],
+          "status": "source-supported",
+          "sourceUrl": "https://www.allmusic.com/artist/sex-slaves-mn0000391062"
+        },
+        {
+          "predicate": "styles",
+          "values": [
+            "Hard Rock",
+            "Alternative/Indie Rock",
+            "Punk Revival"
+          ],
+          "status": "source-supported",
+          "sourceUrl": "https://www.allmusic.com/artist/sex-slaves-mn0000391062"
+        }
+      ],
+      "scope": "artist genre-and-styles; recording edition and internal mainStructure not inferred"
+    },
+    {
+      "musicDnaId": "mdna:mention:539801f10203b9e51d953858",
+      "displayName": "Smackbound",
+      "status": "open",
+      "query": "Smackbound Drive It Like You Stole It 20/20",
+      "playlistIdentity": {
+        "track": "Drive It Like You Stole It",
+        "album": "20/20"
+      },
+      "candidates": [],
+      "nextAction": "Primary/catalog source now identifies release or artist. Find and link full artist taxonomy; retain provider-specific description separately.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Smackbound - \"Drive It Like You Stole It\" - Official Music Video - YouTube",
+            "url": "https://www.youtube.com/watch?v=bakdeYSBG3w"
+          },
+          {
+            "title": "BPM and key for Drive It Like You Stole It by Smackbound | Tempo for Drive It Like You Stole It | SongBPM | songbpm.com",
+            "url": "https://songbpm.com/%40smackbound/drive-it-like-you-stole-it"
+          },
+          {
+            "title": "Drive it like you stole it | Kansalliskirjasto | Kansalliskirjaston hakupalvelu",
+            "url": "https://kansalliskirjasto.finna.fi/Record/fikka.5886644"
+          },
+          {
+            "title": "Drive It Like You Stole It - Smackbound - OUVIR MÚSICA",
+            "url": "https://www.ouvirmusica.com.br/smackbound/drive-it-like-you-stole-it/"
+          },
+          {
+            "title": "‎Drive It Like You Stole It – Song by Smackbound – Apple Music",
+            "url": "https://music.apple.com/fi/song/1499901736"
+          },
+          {
+            "title": "Interview with Smackbound - “Nothing limits you in being whatever you wanna be.” • Tuonela Magazine",
+            "url": "https://tuonelamagazine.com/interview-with-smackbound-nothing-limits-you-in-being-whatever-you-wanna-be/"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Drive It Like You Stole It – Song by Smackbound – Apple Music",
+          "url": "https://music.apple.com/fi/song/1499901736",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "result": "provider",
+        "provider": {
+          "url": "https://www.frontiers.it/news/11116",
+          "provider": "Frontiers Music",
+          "fact": "Label identifies Smackbound as Finnish hard rock/metal band and links Drive It Like You Stole It to debut 20/20.",
+          "artistDescriptionTerms": [
+            "hard rock",
+            "metal"
+          ]
+        },
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "providerEvidence": {
+        "url": "https://www.frontiers.it/news/11116",
+        "provider": "Frontiers Music",
+        "fact": "Label identifies Smackbound as Finnish hard rock/metal band and links Drive It Like You Stole It to debut 20/20.",
+        "artistDescriptionTerms": [
+          "hard rock",
+          "metal"
+        ],
+        "checkedAt": "2026-09-25",
+        "method": "Indexed web source inspected in round 005",
+        "scope": "Provider-specific artist description and/or release identification; not literal AllMusic taxonomy."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:55a22071a8afb2c06ece1969",
+      "displayName": "Sparzanza",
+      "status": "open",
+      "query": "Sparzanza Temple of the Red-Eyed Pigs Folie à Cinq",
+      "playlistIdentity": {
+        "track": "Temple of the Red-Eyed Pigs",
+        "album": "Folie à Cinq"
+      },
+      "candidates": [],
+      "nextAction": "Primary/catalog source now identifies release or artist. Find and link full artist taxonomy; retain provider-specific description separately.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Temple of the Red-Eyed Pigs - Sparzanza: Song Lyrics, Music Videos & Concerts",
+            "url": "https://www.shazam.com/track/53171084/temple-of-the-red-eyed-pigs"
+          },
+          {
+            "title": "Folie à Cinq | Sparzanza",
+            "url": "https://www.sparzanza.com/about-us/discography/folie-a-cinq/"
+          },
+          {
+            "title": "Twenty Years Of Sin | Sparzanza",
+            "url": "https://www.sparzanza.com/about-us/discography/twenty-years-of-sin/"
+          },
+          {
+            "title": "Singles | Sparzanza",
+            "url": "https://www.sparzanza.com/about-us/discography/singles/"
+          },
+          {
+            "title": "Tabs | Sparzanza",
+            "url": "https://www.sparzanza.com/fanzone/tabs/"
+          },
+          {
+            "title": "‎Sparzanza - Apple Music",
+            "url": "https://music.apple.com/us/artist/sparzanza/253978869"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "Temple of the Red-Eyed Pigs song by Sparzanza from Twenty Years of Sin on Amazon Music",
+          "url": "https://music.amazon.ca/tracks/B01DLOOAWA",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "result": "provider",
+        "provider": {
+          "url": "https://despotz.se/2017/04/13/new-signing-sparzanza/",
+          "provider": "Despotz Records",
+          "fact": "Label identifies Swedish hard rock band and lists Folie á Cinq in its discography.",
+          "artistDescriptionTerms": [
+            "Hard Rock"
+          ]
+        },
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "providerEvidence": {
+        "url": "https://despotz.se/2017/04/13/new-signing-sparzanza/",
+        "provider": "Despotz Records",
+        "fact": "Label identifies Swedish hard rock band and lists Folie á Cinq in its discography.",
+        "artistDescriptionTerms": [
+          "Hard Rock"
+        ],
+        "checkedAt": "2026-09-25",
+        "method": "Indexed web source inspected in round 005",
+        "scope": "Provider-specific artist description and/or release identification; not literal AllMusic taxonomy."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:9d51984634ceb868f5066129",
+      "displayName": "Twin Tribes",
+      "status": "open",
+      "query": "Twin Tribes Fantasmas Ceremony",
+      "playlistIdentity": {
+        "track": "Fantasmas",
+        "album": "Ceremony"
+      },
+      "candidates": [],
+      "nextAction": "Complete missing artist-profile fields; preserve verified partial evidence. Do not substitute album taxonomy.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/twin-tribes-mn0003884294",
+          "title": "Twin Tribes",
+          "genre": "Pop/Rock",
+          "albums": [
+            "Pendulum Pendulum Beso De Muerte Records"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Fantasmas | Twin Tribes",
+            "url": "https://twintribesngp.bandcamp.com/track/fantasmas"
+          },
+          {
+            "title": "‎Fantasmas - Song with Lyrics by Twin Tribes - Apple Music",
+            "url": "https://music.apple.com/us/song/1477878203"
+          },
+          {
+            "title": "Twin Tribes - Fantasmas - tekst i tłumaczenie piosenki - Tekstowo.pl",
+            "url": "https://www.tekstowo.pl/twin-tribes/fantasmas"
+          },
+          {
+            "title": "Fantasmas - Twin Tribes - OUVIR MÚSICA",
+            "url": "https://www.ouvirmusica.com.br/twin-tribes/fantasmas/"
+          },
+          {
+            "title": "‎Fantasmas - Song by Twin Tribes - Apple Music",
+            "url": "https://music.apple.com/us/song/1495764889"
+          },
+          {
+            "title": "Fantasmas - Twin Tribes - Cifra Club",
+            "url": "https://www.cifraclub.com/twin-tribes/fantasmas/"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Fantasmas - Song with Lyrics by Twin Tribes - Apple Music",
+          "url": "https://music.apple.com/us/song/1477878203",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Fantasmas - Song by Twin Tribes - Apple Music",
+          "url": "https://music.apple.com/us/song/1495764889",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/twin-tribes-mn0003884294",
+        "genre": "Pop/Rock",
+        "identity": "Artist page lists both Ceremony and Fantasmas.",
+        "result": "partial",
+        "missing": [
+          "styles"
+        ],
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "identityEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/twin-tribes-mn0003884294",
+          "fact": "Artist page lists both Ceremony and Fantasmas."
+        }
+      ],
+      "partialClaims": [
+        {
+          "predicate": "genre",
+          "values": [
+            "Pop/Rock"
+          ],
+          "status": "source-supported",
+          "sourceUrl": "https://www.allmusic.com/artist/twin-tribes-mn0003884294"
+        }
+      ],
+      "missingFields": [
+        "styles"
+      ]
+    }
+  ]
+}
