@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-022",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 2,
+  "method": "Hard-case second pass across remaining metadata/profile and selected release-profile cases. Prior evidence reused; only genuinely new identity-safe AllMusic evidence can promote.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:5cd51939cf68c432557f4975",
+      "displayName": "Apollo",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Chasing Shadows",
+        "album": "Waterdevils"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:c7fc32ca2bbd899117b3dfc8",
+      "displayName": "Deya Dova",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Women & Children",
+        "album": "So Bravely Human"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "note": "AllMusic exact artist profile confirms So Bravely Human and Women & Children; Pop/Rock genre accepted."
+    },
+    {
+      "musicDnaId": "mdna:mention:ff9f35eddc8ba93e4f7cf529",
+      "displayName": "Early Winters",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Count Me In",
+        "album": "Early Winters"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:3fffedd0b6b0f0a97165635c",
+      "displayName": "La Fuga",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Buscando en la basura",
+        "album": "Negociando gasolina"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "note": "Exact AllMusic artist/release identity and accepted genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:68d2683b0fe6007c3addb9c2",
+      "displayName": "Them Evils",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Where Ya Gonna Crash Tonight?",
+        "album": "Where Ya Gonna Crash Tonight?"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:736001faca59e88731c65f78",
+      "displayName": "Aria",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Встань, страх преодолей",
+        "album": "С кем ты?"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:6015818b0518900d1848020d",
+      "displayName": "Green Machine",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Horse",
+        "album": "Horse"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:2362fc3b34cbe7ffdb0cfe60",
+      "displayName": "Midnight City",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Escape Into the Night",
+        "album": "Midnight City - EP"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:7af0511a4fa7ba8f475e6fed",
+      "displayName": "Nathan James",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Hanged Man",
+        "album": "The Hanged Man"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:90f31eb99eeb1f63a66edcc4",
+      "displayName": "Pendragon",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Lost Reason",
+        "album": "Pop: Korn! the Best of Pop & Rock"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:e614eeb9bf3ffeb4b810a590",
+      "displayName": "SHOUT",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "People of the Night",
+        "album": "People of the Night"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:6e21ba6f0b3527e04b868ab8",
+      "displayName": "Supercharger",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Blood Red Lips",
+        "album": "Broken Hearts and Fallaparts"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:4f82da918754733cbcb22de3",
+      "displayName": "The Mood",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Boozing, Dancing, and a Chance of Romancing",
+        "album": "Boozing, Dancing, and a Chance of Romancing"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:351d67fedbf8c3cfe581ed12",
+      "displayName": "The System",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Thought Control",
+        "album": "Is Still Murder"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:2dd96c47d4d25cb61a23016e",
+      "displayName": "Ammotrack",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Raise Your Hands",
+        "album": "Raise Your Hands"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:56b72a6de73c1d4adade00fd",
+      "displayName": "Bad Bones",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Don't Stop Believin' [Cover Version]",
+        "album": "Snakes And Bones (Deluxe Edition)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:6bb0676ec9638b334b365b2b",
+      "displayName": "CobraKill",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Same Ol' Nasty Rock N' Roll",
+        "album": "Serpent's Kiss"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:3d2e31f21af953defd0bc40d",
+      "displayName": "Deaf Rat",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Fallen Angels",
+        "album": "Ban the Light"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:d7ee0dfb8423c1a3da9d6491",
+      "displayName": "Ember Falls",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Shut Down With Me",
+        "album": "Welcome To Ember Falls"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:c13a00bc01b5a11fe55f03e8",
+      "displayName": "Formosa",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Her Mama",
+        "album": "Her Mama"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:54888920f774ab46b68d601e",
+      "displayName": "Frontback",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dead Man on the Road",
+        "album": "Heart of a Lion"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:760fbc70ed95e7b7836424d0",
+      "displayName": "Hollowstar",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "All I Gotta Say",
+        "album": "Hollowstar"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:16be4d9847b3a6e3381ea4fe",
+      "displayName": "Noora Louhimo Experience",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Eternal Wheel Of Time And Space",
+        "album": "Eternal Wheel Of Time And Space"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:4ad91d47d465db8475893fbb",
+      "displayName": "Sons Of Sounds",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Sound of Hope",
+        "album": "Seven"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    },
+    {
+      "musicDnaId": "mdna:mention:4447fde7c5349f84840ecd86",
+      "displayName": "Private Line",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dead Decade",
+        "album": "Dead Decade"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted follow-up completed; no new complete accepted AllMusic taxonomy or identity-safe closure."
+    }
+  ]
+}
