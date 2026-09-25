@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-008",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 4,
+  "newSupportedCount": 1,
+  "method": "Focused follow-up on remaining profile-or-credit-review cases; exact track, release and artist identity checked before promotion.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:8434aa45513ac7b6c9aaaf28",
+      "displayName": "Joan Jett & the Blackhearts",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Bad Reputation",
+        "album": "Bad Reputation (Expanded Edition)"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "AllMusic artist",
+          "url": "https://www.allmusic.com/artist/joan-jett-the-blackhearts-mn0000135054",
+          "fact": "Group profile gives Pop/Rock and styles Album Rock, Hard Rock, Contemporary Pop/Rock, Rock & Roll, Arena Rock; discography includes Bad Reputation."
+        },
+        {
+          "provider": "AllMusic song",
+          "url": "https://www.allmusic.com/song/bad-reputation-mt0009968107",
+          "fact": "Song page lists Bad Reputation under Joan Jett & the Blackhearts and styles Hard Rock, Album Rock, Punk, Punk/New Wave, Arena Rock."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:6e21ba6f0b3527e04b868ab8",
+      "displayName": "Supercharger",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Blood Red Lips",
+        "album": "Broken Hearts and Fallaparts"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Apple Music",
+          "url": "https://music.apple.com/us/artist/supercharger/28400325",
+          "fact": "Correct artist confirmed as Denmark, formed 2006, genre Rock; Blood Red Lips listed. Strict AllMusic taxonomy remains incomplete."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:4f82da918754733cbcb22de3",
+      "displayName": "The Mood",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Boozing, Dancing, and a Chance of Romancing",
+        "album": "Boozing, Dancing, and a Chance of Romancing"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "url": "https://open.spotify.com/artist/4jTo45pAloDDTz4O6K8nJp",
+          "fact": "Correct act confirmed as British Indie Rock DIY from Birmingham; exact 2024 single listed. Same-name catalog contamination remains a risk."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:736001faca59e88731c65f78",
+      "displayName": "Aria",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Встань, страх преодолей",
+        "album": "С кем ты?"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "review",
+          "fact": "No sufficiently specific new profile linkage accepted in this pass; retained open."
+        }
+      ]
+    }
+  ]
+}
