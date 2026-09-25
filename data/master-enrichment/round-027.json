@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-027",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 0,
+  "method": "Non-duplicate second-pass batch focused on unresolved targeted/source-sparse candidates. Strict exact-identity AllMusic taxonomy rule unchanged; no promotions without complete evidence.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:bd78bb285b35f10640399d51",
+      "displayName": "Freaky Things",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Nightmare",
+        "album": "Tales of the Lovesick Sleepwalkers"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:ae07dbbefa8a6bc28643c407",
+      "displayName": "Get Into Gear",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Live to Die",
+        "album": "Live to Die"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:b6e325fd37b872a87a27c970",
+      "displayName": "Igel vs. Shark",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Don’t Steal My Thunder",
+        "album": "500,000 Miles"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:db82ef19c2194ed8c121b591",
+      "displayName": "Into the Zoid",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Albino",
+        "album": "Voidgazer"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:361d99ac76e0fc112c385260",
+      "displayName": "King of Bones",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hold Me Closer",
+        "album": "Don't Mess with the King"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:fd69739c782828b9ad3475da",
+      "displayName": "Lawlezz",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Losing Control",
+        "album": "Losing Control"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:44ee2abd32172e06c72eca64",
+      "displayName": "Lethal Dose",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hard to Swallow",
+        "album": "The Clan of Lethal Skulls"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:ba419f99d9d355a7afbdf0c7",
+      "displayName": "Loanshark",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Queen of Hearts",
+        "album": "The Queen of Hearts"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:b99e3582c604070e292fbd16",
+      "displayName": "Motordrunk",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Motordrunk",
+        "album": "Motordrunk"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:b68c4d54f58607de93cd72f9",
+      "displayName": "Nemo!",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Way I Do",
+        "album": "Emotional Metastasis"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:d12d2f8bc620bd6be3e9befa",
+      "displayName": "Noise4Nothing",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Rain",
+        "album": "Point of No Return"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:b2f28c32d1f281b83c642eb4",
+      "displayName": "Non Divide",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "I Could Be",
+        "album": "Incipient Rising"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:e53e3eb8cf33c2ab26ec061d",
+      "displayName": "Nowhere's Home",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Speechless",
+        "album": "In God We Trust"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:d692c3cac35b92dc7f4fee9c",
+      "displayName": "Primal Sinner",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Red Horn Calls",
+        "album": "Dying Like the Sun in the West"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:7a7dae6a59e624b4d61bec1a",
+      "displayName": "Ranter",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Out of the Badlands",
+        "album": "We've Had It"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:5ee4ff497ae94fbf607df9db",
+      "displayName": "Raphael Gazal",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Riding With The Angels",
+        "album": "Riding With The Angels"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:b78bb408ecdb996f3b73595c",
+      "displayName": "Ratchet Dolls",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Loud! Loud! Loud!",
+        "album": "Bring The Noize"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:16b978646953e303653797e8",
+      "displayName": "Rattlesquad",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Leave",
+        "album": "1233"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:60cba58804248ccf6dc0ae15",
+      "displayName": "Re-Machined",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Heart on Fire",
+        "album": "Wheels of Time"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:8a9967889d091cb975383ca0",
+      "displayName": "Revolution Rebels",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Edge of the Spotlight",
+        "album": "Edge of the Spotlight"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:bb430eb5b8b9fc81f06d95da",
+      "displayName": "Rinderwahnsinn",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Der Punkt",
+        "album": "Herrscher"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:a6ae6c680812adf40932dedd",
+      "displayName": "Roadhouse Diet",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Evil's Got A Hold On Me",
+        "album": "Electric Devilry"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:d85125c58ea3529008f22580",
+      "displayName": "S.O.R.M",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hellride",
+        "album": "Under My Skin"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:59f4a8b8cf69cf2c8b942308",
+      "displayName": "Saint Renascence",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Kneel for the Saint",
+        "album": "Saint Renascence"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    },
+    {
+      "musicDnaId": "mdna:mention:a07c642a6993f7272f741c82",
+      "displayName": "Sardis",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Sensational Society",
+        "album": "Viral"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no new sufficiently complete identity-safe AllMusic genre/style taxonomy found. Retain as open/source-sparse candidate where searches are repeatedly empty."
+    }
+  ]
+}
