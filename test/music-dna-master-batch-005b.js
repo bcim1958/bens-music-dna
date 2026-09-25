@@ -1,0 +1,21 @@
+// Master 100 — Batch 005B — remaining 15/25 fresh AllMusic profiles
+(function(root){"use strict";const E=root.musicDnaMaster100EngineV1;
+const V=(id,name,am,facts,notes=[])=>({musicDnaId:id,displayName:name,inputRef:"fresh-allmusic-2026-09-25",treatmentStatus:"treated-verified",identityStatus:"exact",sourceRefs:["allmusic:"+am],claimRefs:facts,evidenceRefs:["direct-allmusic-profile:2026-09-25"],errorRefs:notes});
+const batch=E.createBatch({batchId:"MASTER-005B-ALLMUSIC",scope:{kind:"fresh-source-verification",source:"AllMusic",parentTarget:25,subBatch:"B",records:15},records:[
+V("mdna:artist:dream-theater","Dream Theater","mn0000803544",["formed:1985","place:New York, NY","genre:Pop/Rock","style:Art Rock","style:Heavy Metal","style:Neo-Prog","style:Progressive Metal","style:Hard Rock","style:Album Rock"]),
+V("mdna:artist:between-buried-me","Between the Buried and Me","mn0000399190",["formed:2000","place:Raleigh, NC","genre:Pop/Rock","style:Heavy Metal","style:Metalcore","style:Alternative/Indie Rock","style:Death Metal","style:Progressive Metal"]),
+V("mdna:artist:queensryche","Queensrÿche","mn0000315339",["formed:1981","place:Bellevue, WA","genre:Pop/Rock","style:Heavy Metal","style:Prog-Rock","style:Progressive Metal","style:Hard Rock","style:Album Rock","style:Arena Rock"]),
+V("mdna:artist:fates-warning","Fates Warning","mn0000160975",["formed:1982","place:Hartford, CT","genre:Pop/Rock","style:Heavy Metal","style:Progressive Metal"]),
+V("mdna:artist:symphony-x","Symphony X","mn0000000343",["formed:1994","place:Middletown, NJ","genre:Pop/Rock","style:Heavy Metal","style:Neo-Classical Metal","style:Progressive Metal","style:Power Metal","style:Speed/Thrash Metal"]),
+V("mdna:artist:periphery","Periphery","mn0002681783",["formed:2005","place:Washington, D.C.","genre:Pop/Rock","style:Heavy Metal","style:Progressive Metal","style:Alternative Metal"]),
+V("mdna:artist:animals-as-leaders","Animals as Leaders","mn0001057593",["formed:2007","place:Washington, D.C.","genre:Pop/Rock","style:Progressive Metal","style:Heavy Metal"]),
+V("mdna:artist:meshuggah","Meshuggah","mn0000453041",["formed:1987","place:Umeå, Sweden","genre:Pop/Rock","style:Heavy Metal","style:Progressive Metal","style:Scandinavian Metal","style:Black Metal","style:Alternative Metal","style:Death Metal"]),
+V("mdna:artist:mars-volta","The Mars Volta","mn0000045560",["formed:2001","place:El Paso, TX","genre:Pop/Rock","style:Alternative/Indie Rock","style:Experimental Rock","style:Heavy Metal","style:Progressive Metal","style:Post-Hardcore","style:Post-Rock","style:Neo-Psychedelia","style:Punk Metal"]),
+V("mdna:artist:king-crimson","King Crimson","mn0000076057",["formed:1968","place:London, England","disbanded:2021","genre:Pop/Rock","style:Art Rock","style:Prog-Rock","style:Album Rock","alias:Discipline"]),
+V("mdna:artist:gentle-giant","Gentle Giant","mn0000165162",["formed:1970","place:London, England","disbanded:1980","genre:Pop/Rock","style:Art Rock","style:Prog-Rock"]),
+V("mdna:artist:yes","Yes","mn0000685647",["formed:1968","place:London, England","genre:Pop/Rock","style:Album Rock","style:Art Rock","style:British Psychedelia","style:Prog-Rock","style:Psychedelic/Garage","style:Contemporary Pop/Rock"]),
+V("mdna:artist:coheed-cambria","Coheed and Cambria","mn0000105030",["formed:1995","place:Nyack, NY","genre:Pop/Rock","style:Neo-Prog","style:Heavy Metal","style:Progressive Metal","style:Alternative/Indie Rock"]),
+V("mdna:artist:cynic-metal","Cynic","p350721",["formed:1987","genre:Pop/Rock","style:Progressive Metal","style:Heavy Metal","style:Post-Metal","style:Technical Death Metal"],["same-name-provider-entity:allmusic:mn0001003688"]),
+V("mdna:artist:camel-prog","Camel","p3821",["formed:1971","place:Surrey, England","genre:Pop/Rock","style:Art Rock","style:Prog-Rock"],["same-name-provider-entity:allmusic:mn0004283586"])
+]});batch.checkpoints=[E.checkpoint(batch,"batch-005B-complete")];root.musicDnaMasterBatch005B=batch;
+})(typeof window!=="undefined"?window:globalThis);
