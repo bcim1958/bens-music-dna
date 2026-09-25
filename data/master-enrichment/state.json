@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 186,
-  "remainingOpenCount": 225,
+  "sourceSupportedCount": 187,
+  "remainingOpenCount": 224,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -98,16 +98,19 @@
     },
     {
       "path": "data/master-enrichment/round-028.json"
+    },
+    {
+      "path": "data/master-enrichment/round-029.json"
     }
   ],
-  "nextAction": "Continue non-duplicate second-pass batches of 25. Prioritize plausible new leads; repeated exact-search no-result records should move toward a source-sparse terminal review rather than another identical pass.",
-  "lastCompletedRound": "ENRICH-028",
+  "nextAction": "Continue non-duplicate second-pass batches of 25. Source-sparse population is now dominant; prioritize genuinely new AllMusic leads and prepare a terminal source-sparse classification after remaining plausible leads are exhausted.",
+  "lastCompletedRound": "ENRICH-029",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
   "openTriageCounts": {
     "release-credit-found-profile-pending": 87,
     "identity-confirmed-metadata-incomplete": 6,
-    "targeted-research-needed": 102,
+    "targeted-research-needed": 101,
     "profile-or-credit-review": 10,
     "composite-credit": 21
   }
