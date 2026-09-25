@@ -33,8 +33,9 @@ assert len(baseline)==575
 processed=set(baseline)
 for batch in production:
  names=[r['displayName'] for r in batch['records']]
- assert names==[n for n in ordered if n not in processed][:100],batch['batchId']
- assert len(names)==100
+ expected_count=min(100,len(actual)-len(processed))
+ assert names==[n for n in ordered if n not in processed][:expected_count],batch['batchId']
+ assert len(names)==expected_count
  if 'priorTreatedCount' in batch:assert batch['priorTreatedCount']==len(processed)
  processed.update(names)
 assert len(processed)==state['treatedCount']

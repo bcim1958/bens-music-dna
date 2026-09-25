@@ -87,8 +87,10 @@ def main():
  assert len(seen)==len(prior)==a.expected_prior
  assert dict(Counter(r['treatmentStatus'] for r in prior))==state['counts']
  ordered=list(classification)+[n for n in population if n not in classification]
- names=[n for n in ordered if mention_id(n) not in seen][:100]
- assert len(names)==100 and len(set(names))==100
+ target_count=min(100,state['denominator']-a.expected_prior)
+ assert target_count>0,'Population already complete'
+ names=[n for n in ordered if mention_id(n) not in seen][:target_count]
+ assert len(names)==target_count and len(set(names))==target_count
  target='data/master-100/'+a.batch.lower()+'.json';assert not (root/target).exists(),'Refuse to overwrite a batch'
  date=datetime.date.today().isoformat()
  records=[];checkpoints=[]
@@ -99,16 +101,16 @@ def main():
   assert r['treatmentStatus'] in ('treated-verified','treated-unresolved','treated-conflict')
   if r['treatmentStatus']=='treated-verified':assert r['sourceRefs'] and r['evidenceRefs']
   records.append(r)
-  if i in (50,100):checkpoints.append({'label':a.batch+('-halfway' if i==50 else '-complete'),'treated':i,'total':100,'errors':0})
+  if i==50 or i==target_count:checkpoints.append({'label':a.batch+('-complete' if i==target_count else '-halfway'),'treated':i,'total':target_count,'errors':0})
  counts=dict(Counter(r['treatmentStatus'] for r in records))
  b={'schemaVersion':1,'engineVersion':'master-100-v1-compatible','batchId':a.batch,'sourceId':SOURCE_ID,'createdAt':date,'historicalAttribution':'new-batch','scope':{'kind':'v3-classification-provenance-migration','denominatorUnit':'literal-artist-mention','freshAllMusicRetrieval':False},'priorTreatedCount':a.expected_prior,'records':records,'counts':counts,'checkpoints':checkpoints}
  content=json.dumps(b,ensure_ascii=False)+'\n'
- state['batches'].append({'path':target,'batchId':a.batch,'count':100,'sha256':hashlib.sha256(content.encode()).hexdigest(),'counts':counts})
+ state['batches'].append({'path':target,'batchId':a.batch,'count':target_count,'sha256':hashlib.sha256(content.encode()).hexdigest(),'counts':counts})
  state['treatedCount']=len(prior)+len(records);state['remainingCount']=state['denominator']-state['treatedCount']
  state['counts']=dict(Counter(r['treatmentStatus'] for r in prior+records))
- state['newBatchCount']=100;state['lastCompletedBatch']=a.batch
- state['nextBatch']='MASTER-'+str(int(a.batch.split('-')[1])+1).zfill(3)
- state['latestBatch']={'batchId':a.batch,'first':names[0],'last':names[-1],'priorTreatedCount':a.expected_prior,'newUniqueCount':100,'counts':counts}
+ state['newBatchCount']=target_count;state['lastCompletedBatch']=a.batch
+ state['nextBatch']=('MASTER-'+str(int(a.batch.split('-')[1])+1).zfill(3)) if state['remainingCount'] else None
+ state['latestBatch']={'batchId':a.batch,'first':names[0],'last':names[-1],'priorTreatedCount':a.expected_prior,'newUniqueCount':target_count,'counts':counts}
  assert hashlib.sha256(a.source.read_bytes()).hexdigest()==digest
  (root/target).write_text(content)
  statepath.write_text(json.dumps(state,ensure_ascii=False)+'\n')

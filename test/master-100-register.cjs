@@ -56,16 +56,17 @@ const missing=structuredClone(b12);missing.records[0].evidenceRefs=[];
 assert(engine.validate(missing).some(e=>e.code==='verified-without-evidence'));
 const latestEntry=state.batches.find(b=>b.batchId===state.lastCompletedBatch);
 const latest=read(latestEntry.path);
-assert.equal(latest.records.length,100);
+assert.equal(latest.records.length,Math.min(100,state.denominator-latest.priorTreatedCount));
 if(state.latestBatch){
  assert.equal(latest.records[0].displayName,state.latestBatch.first);
  assert.equal(latest.records.at(-1).displayName,state.latestBatch.last);
- assert.equal(state.latestBatch.priorTreatedCount+100,state.treatedCount);
+ assert.equal(state.latestBatch.priorTreatedCount+latest.records.length,state.treatedCount);
  assert.equal(latest.priorTreatedCount,state.latestBatch.priorTreatedCount);
  assert.deepEqual(latest.counts,state.latestBatch.counts);
 }
 const previous=new Set(records.filter(r=>r.batchId!==latest.batchId).map(r=>r.musicDnaId));
 assert(!latest.records.some(r=>previous.has(r.musicDnaId)));
-assert.equal(latest.checkpoints[0].treated,50);
-assert.equal(latest.checkpoints.at(-1).treated,100);
+assert.equal(latest.checkpoints[0].treated,Math.min(50,latest.records.length));
+assert.equal(latest.checkpoints.at(-1).treated,latest.records.length);
+if(state.remainingCount===0){assert.equal(records.length,pop.size);assert.equal(state.nextBatch,null);}
 console.log(JSON.stringify({result:'PASS',population:pop.size,prior:previous.size,batch:latest.batchId,newUnique:latest.records.length,treated:records.length,counts:latest.counts,overlap:0,duplicateProtection:true,evidenceProtection:true}));
