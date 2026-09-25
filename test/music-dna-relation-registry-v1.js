@@ -1426,6 +1426,28 @@ function explorerNavigationRegressionSelfTest(){
   ];
   return {pass:cases.every(x=>x.pass),cases,invariant:"choose -> view -> follow a real edge -> back; entry source never constrains later wandering"};
 }
+function explorerGhostVoivodCrossWorldRegressionSelfTest(){
+  const walk=createExplorerWalk("ghost",{type:"free",label:"Vrij kiezen",id:"ghost"});
+  const ghost=explorerNode("ghost");
+  const ghostToVoivod=ghost&&ghost.links.find(x=>x.id==="voivod");
+  const atVoivod=ghostToVoivod?explorerStep(walk,"voivod"):null;
+  const voivodToRush=atVoivod&&atVoivod.links.find(x=>x.id==="rush");
+  const atRush=voivodToRush?explorerStep(walk,"rush"):null;
+  const breadcrumbAtRush=explorerBreadcrumb(walk);
+  const backToVoivod=atRush?explorerBack(walk):null;
+  const backToGhost=backToVoivod?explorerBack(walk):null;
+  const ghostQueue=genericDiscoveryQueue("ghost",createDiscoveryState(),6);
+  const voivodDoor=ghostQueue.find(d=>d.counterpart==="voivod");
+  const cases=[
+    {name:"Ghost exposes Voivod as one evidenced door",pass:!!ghostToVoivod&&ghostToVoivod.relationCount===1},
+    {name:"Ghost discovery queue can select the Voivod door",pass:!!voivodDoor},
+    {name:"Voivod exposes Rush as a real next world",pass:!!voivodToRush},
+    {name:"walk reaches Rush through two evidenced edges",pass:!!atRush&&walk.trail.slice(0,3).join(">")==="ghost>voivod>rush"},
+    {name:"breadcrumb preserves the cross-world route",pass:breadcrumbAtRush.map(x=>x.id).join(">")==="ghost>voivod>rush"},
+    {name:"back navigation returns Voivod then Ghost",pass:!!backToVoivod&&!!backToGhost&&walk.cursor===0&&walk.trail[walk.cursor]==="ghost"}
+  ];
+  return {pass:cases.every(x=>x.pass),cases,route:["ghost","voivod","rush"],evidence:["rel-ghost-voivod-influence","rel-voivod-rush-influence"],invariant:"a discovery may open a new world, continue across another evidenced relation, and return through the exact breadcrumb without fabricating edges"};
+}
 function explorerIntegrationSelfTest(){
   const entryTest=explorerEntrypointRegressionSelfTest();
   const navTest=explorerNavigationRegressionSelfTest();
@@ -1458,5 +1480,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,ghostDiscoveryQueueRegressionSelfTest,voivodDiscoveryQueueRegressionSelfTest,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerGenreDnaGroups,explorerGenreDnaGroup,explorerGenreTaxonomyRegressionSelfTest,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}});
+window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,ghostDiscoveryQueueRegressionSelfTest,voivodDiscoveryQueueRegressionSelfTest,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerGenreDnaGroups,explorerGenreDnaGroup,explorerGenreTaxonomyRegressionSelfTest,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerGhostVoivodCrossWorldRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}});
 })();
