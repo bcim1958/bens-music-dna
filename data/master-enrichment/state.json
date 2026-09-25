@@ -109,7 +109,7 @@
       "path": "data/master-enrichment/round-031.json"
     }
   ],
-  "nextAction": "Start terminal source-sparse classification design/reconciliation while continuing only genuinely new leads. ENRICH-031 produced zero promotions; do not repeat identical AllMusic searches for these 25 without new evidence.",
+  "nextAction": "Build terminal classification overlay for all 411 original open cases: supported, source-sparse, identity-unresolved, or researchable. Deduplicate by musicDnaId and require exact 411-case arithmetic before any further search batches.",
   "lastCompletedRound": "ENRICH-031",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
@@ -119,5 +119,7 @@
     "targeted-research-needed": 100,
     "profile-or-credit-review": 10,
     "composite-credit": 21
-  }
+  },
+  "lastReconciliation": "RECONCILE-001",
+  "reconciliationPath": "data/master-enrichment/reconcile-001.json"
 }
