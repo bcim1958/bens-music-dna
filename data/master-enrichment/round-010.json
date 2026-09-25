@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-010",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 0,
+  "additionalEvidenceRecordCount": 7,
+  "method": "Batch of 25 targeted-research-needed cases. Exact track/release evidence accepted where specific; no promotion without strict AllMusic genre/style completion. Non-results retained as checked, not guessed.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:f3c7050d31fcd673ed6e9a6d",
+      "displayName": "Argos",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Real Rime",
+        "album": "In the Name of Tragedy"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://open.spotify.com/embed/playlist/4mzHliI6PvgqYgSeDXLqPF",
+        "fact": "Indexed Spotify playlist corroborates Argos with Real Rime and In the Name of Tragedy; no strict AllMusic profile taxonomy found."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:6f5e59838721e89c911d44ef",
+      "displayName": "666packs",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Back in Black",
+        "album": "Free Beer Here, Vol. 1"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:6865bf53ffa43c1e8be21ad2",
+      "displayName": "Aventyr",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Trouble",
+        "album": "Driven"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:a429f39859539d653332362f",
+      "displayName": "Beyond Your Reach",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "In The Red",
+        "album": "In The Red"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:dbd894c36526a06ee3d99c94",
+      "displayName": "Big Clyde",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Love Season",
+        "album": "Growing Cold"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:bfe5e5cd1dfb7bf036ea427e",
+      "displayName": "Big Guns",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rocking in the Freeworld",
+        "album": "Down but Not Out"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://music.amazon.in/albums/B00F6CHUPU",
+        "fact": "Amazon catalog confirms Rocking in the Freeworld on Down but Not Out (2013); no strict AllMusic profile taxonomy found."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:55fb8cfb9a623b82ae11e45c",
+      "displayName": "BlackBeer",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Too Much Rock",
+        "album": "Trapped In The Sin City"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://music.amazon.com/albums/B0DG8CMY2W",
+        "fact": "Amazon catalog confirms Too Much Rock on Trapped In The Sin City (2024); no strict AllMusic profile taxonomy found."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:7ef5dbaa95e6680fdc864c18",
+      "displayName": "Blakk Ledd",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Reach For The Sky",
+        "album": "FightFire With Fire"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:ea0151c4cf78b351118dffca",
+      "displayName": "Bolt",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Destiny",
+        "album": "Destiny"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:2fd65bf28aaffc45d4d573fd",
+      "displayName": "Bomber Alley",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "We Get By",
+        "album": "We Get By"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:29e402b6bf9e65ba91997bb7",
+      "displayName": "Bonedryver",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Cock in a Henhouse",
+        "album": "Valley of Bones"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:db5463439542f556887d2398",
+      "displayName": "Cocaine Cowboys",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dirty Hell",
+        "album": "All In Vain"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://music.amazon.co.uk/albums/B0F1KW6JLC",
+        "fact": "Amazon and Apple catalog evidence confirms Dirty Hell on All In Vain (2024); provider genre Rock found, but no strict AllMusic profile taxonomy."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:133f94844291880fffae2ac5",
+      "displayName": "Crimson",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Two Way Mirror",
+        "album": "Black Carpet"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://thebandcrimson.bandcamp.com/album/black-carpet",
+        "fact": "Artist Bandcamp confirms Two Way Mirror on Black Carpet (2021); contemporary review identifies Swedish heavy metal band. No strict AllMusic profile taxonomy found."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:a515ac021b0d9d306732c603",
+      "displayName": "Crystal Tears",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Beds Are Burning",
+        "album": "Hellmade"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://www.metal-archives.com/albums/Crystal_Tears/Hellmade/402285",
+        "fact": "Release evidence confirms Beds Are Burning as Midnight Oil cover on Hellmade (2014); multiple reviews identify heavy/power metal. No strict AllMusic profile taxonomy found."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:74964c9d22bf47182e7c6afd",
+      "displayName": "D'OR",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Howling",
+        "album": "The Howling"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://dormusic.ch/",
+        "fact": "Official artist site confirms The Howling and debut album Veni Vidi Ignis; no strict AllMusic profile taxonomy found."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:2f2a264fb2308c82a65ee255",
+      "displayName": "Deathlike Silence",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Trapped in the Night",
+        "album": "Saturday Night Evil"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:0e352ba0f1e3da8e15656ea3",
+      "displayName": "Ded Ringer",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hot Lady",
+        "album": "The Neat Singles Collection: Vol. One"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:5eb02c2994a833de08e1c5cf",
+      "displayName": "Dream Patrol",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Tattooed Millionaire from Panama",
+        "album": "Phantoms of the Past"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:b2bd7528ec568649c8a0280d",
+      "displayName": "Drift Mothership",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Internet",
+        "album": "New Blood Type"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:08bac1379361ad250edb1657",
+      "displayName": "Dull of Down",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Waiting is Over",
+        "album": "Beauty and the Beast"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:51e3d2d96ff9f337a91363b1",
+      "displayName": "Dumpy's Rusty Nuts (DRN)",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rock City",
+        "album": "Boxhill or Bust"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:18e99c9018634e41afb58baf",
+      "displayName": "F.I.G.H.T.E.R",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Panic Attack",
+        "album": "American Made"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:9a12dbce550dace01d1f3977",
+      "displayName": "Face of a Stranger",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Human After All",
+        "album": "Human After All"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:293d0faacf4e1c02851078c5",
+      "displayName": "Feast!",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hail! To Saturday Nite!",
+        "album": "Feast!"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:2adc45c63ae66c1f1c53f5e5",
+      "displayName": "Fish in a Birdcage",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rule #4 - Fish in a Birdcage",
+        "album": "Fish in a Birdcage"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted indexed search completed; no sufficiently specific new source/profile evidence accepted. Retain open and avoid same-name inference."
+      }
+    }
+  ]
+}
