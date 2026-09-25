@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 184,
-  "remainingOpenCount": 227,
+  "sourceSupportedCount": 186,
+  "remainingOpenCount": 225,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -95,16 +95,19 @@
     },
     {
       "path": "data/master-enrichment/round-027.json"
+    },
+    {
+      "path": "data/master-enrichment/round-028.json"
     }
   ],
-  "nextAction": "Continue non-duplicate second-pass batches of 25, prioritizing remaining plausible leads. ENRICH-027 produced zero promotions and should be treated as a source-sparse signal; do not repeat these searches without new evidence.",
-  "lastCompletedRound": "ENRICH-027",
+  "nextAction": "Continue non-duplicate second-pass batches of 25. Prioritize plausible new leads; repeated exact-search no-result records should move toward a source-sparse terminal review rather than another identical pass.",
+  "lastCompletedRound": "ENRICH-028",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
   "openTriageCounts": {
     "release-credit-found-profile-pending": 87,
     "identity-confirmed-metadata-incomplete": 6,
-    "targeted-research-needed": 104,
+    "targeted-research-needed": 102,
     "profile-or-credit-review": 10,
     "composite-credit": 21
   }
