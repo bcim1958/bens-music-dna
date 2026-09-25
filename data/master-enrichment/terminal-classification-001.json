@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "classification": "TERMINAL-CLASSIFICATION-008",
+  "classification": "TERMINAL-CLASSIFICATION-009",
   "date": "2026-09-25",
   "baseline": {
     "originalCases": 411,
-    "supported": 186,
-    "open": 225
+    "supported": 187,
+    "open": 224
   },
   "rules": {
     "supported": "Identity-safe qualifying AllMusic Genre/Styles evidence exists.",
@@ -14,17 +14,17 @@
     "researchable": "A concrete unexhausted source/profile lead remains."
   },
   "openClassification": {
-    "sourceSparse": 151,
+    "sourceSparse": 175,
     "identityUnresolved": 30,
-    "researchable": 44,
+    "researchable": 19,
     "provisional": true,
-    "explanation": "Eighth history pass: 12 additional repeatedly researched open cases had no later supported promotion. No further case was moved without documented repeat-history."
+    "explanation": "First individual audit pass of the remaining researchable set: 25 cases checked; Fate DeStroyed promoted to supported and 24 stable identities closed as source-sparse after exact AllMusic re-checks."
   },
   "arithmetic": [
-    "186 + 151 + 30 + 44 = 411",
-    "151 + 30 + 44 = 225"
+    "187 + 175 + 30 + 19 = 411",
+    "175 + 30 + 19 = 224"
   ],
-  "nextPass": "Audit the remaining 44 individually; history-only automatic source-sparse classification is now near exhaustion.",
+  "nextPass": "Audit the remaining 19 researchable cases individually.",
   "sourceSparseCaseNames": [
     "Bad Bones",
     "CobraKill",
@@ -176,6 +176,30 @@
     "Voltedge",
     "Apollo",
     "Early Winters",
-    "Them Evils"
+    "Them Evils",
+    "Vonavibe",
+    "We're Wolves",
+    "Wirefall",
+    "Witche’s Brew",
+    "Wolf & Chain",
+    "Year Gone",
+    "Ashes to Omens",
+    "Atomic Drive",
+    "Bad Actress",
+    "Black City",
+    "Broken Peach",
+    "Bullseye",
+    "Burn The Ballroom",
+    "Camu",
+    "CHRIS HICKS PROJECT",
+    "Cincinnati Sinners",
+    "Crystal Steel",
+    "Cynical Sons",
+    "Game On",
+    "Hvalross",
+    "JC Crash (Johnny Crash)",
+    "Johnny Deathshadow",
+    "Joy in Motion",
+    "Cöntraband"
   ]
 }
