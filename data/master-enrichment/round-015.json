@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-015",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 3,
+  "method": "Release-credit profile follow-up batch; exact identity plus accepted AllMusic genre/style taxonomy required.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:81b9d538a139e737174c1c3f",
+      "displayName": "Amber Myst",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "TEARDROP",
+        "album": "TEARDROP"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:2dd96c47d4d25cb61a23016e",
+      "displayName": "Ammotrack",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Raise Your Hands",
+        "album": "Raise Your Hands"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:a2d696fbfb6643b9c178c22e",
+      "displayName": "Any Miracle",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Joran",
+        "album": "Joran"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:3a45f7ed152c28efc8c4a234",
+      "displayName": "Aron Scott Earthquake",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "High Speed Love",
+        "album": "High Speed Love"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:08f6e7771de6f04f6422c551",
+      "displayName": "Ashes to Omens",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Vultures",
+        "album": "Vultures"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:ed0c9fca6d1c6c382ced42fe",
+      "displayName": "5 Star Hooker",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Anything Goes",
+        "album": "Anything Goes"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:079755a148ce46cc4eb72d49",
+      "displayName": "Airtrain",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Black Chapter",
+        "album": "Black Chapter"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:d52aab6fa58bfd9bdaf50aa6",
+      "displayName": "Atomic Drive",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Wires",
+        "album": "Wires"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:37b3a3073bb3a700b227f4ba",
+      "displayName": "Bad Actress",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Outta My Head - 2024 Version",
+        "album": "Outta My Head (2024 Version)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:56b72a6de73c1d4adade00fd",
+      "displayName": "Bad Bones",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Don't Stop Believin' [Cover Version]",
+        "album": "Snakes And Bones (Deluxe Edition)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:e7f423f9dcf59775c7fd449a",
+      "displayName": "Black City",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Day My Hero Died",
+        "album": "Fire"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:b38dd80a0afb77e4105bf1f8",
+      "displayName": "Blood Command",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "A Villain's Monologue",
+        "album": "A Villain's Monologue"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile and taxonomy accepted."
+    },
+    {
+      "musicDnaId": "mdna:mention:b13ea6662c2cb0c1a259fec6",
+      "displayName": "Box Of Toys",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "I'm Thinking Of You Now",
+        "album": "Revolutionary Spirit: The Sound Of Liverpool 1976-1988"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:962ba1bd710f5985549d4725",
+      "displayName": "Broken Peach",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Tainted Love",
+        "album": "Tainted Love"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:985ee2c78a4294e55afbd75a",
+      "displayName": "Bullseye",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Count On Me",
+        "album": "Count On Me"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:b96d0205c240e0eb583165e5",
+      "displayName": "Burn The Ballroom",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Kiss Me You Animal",
+        "album": "Kiss Me You Animal"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:b99bf53981de2e1657058ff1",
+      "displayName": "Camu",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bamboo Road",
+        "album": "Bamboo Road"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:dab42921e5e148eb99bb4b89",
+      "displayName": "CHRIS HICKS PROJECT",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dancing Girl",
+        "album": "Dancing Girl"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:927cab2878e1c98ec1998c7a",
+      "displayName": "Chrome Division",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Sharp Dressed Man",
+        "album": "Booze, Broads & Beelzebub"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile and taxonomy accepted."
+    },
+    {
+      "musicDnaId": "mdna:mention:3973cc01cf56052daaa019e3",
+      "displayName": "Cincinnati Sinners",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Its Only Rock n Roll",
+        "album": "Cincinnati Sinners 6Pak"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:67887040cbf6bf4db1c325f4",
+      "displayName": "cleopatrick",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Lost",
+        "album": "Lost"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile and taxonomy accepted."
+    },
+    {
+      "musicDnaId": "mdna:mention:6bb0676ec9638b334b365b2b",
+      "displayName": "CobraKill",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Same Ol' Nasty Rock N' Roll",
+        "album": "Serpent's Kiss"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:83b0cc20b6807cd0bf1a427d",
+      "displayName": "Cryoshell",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Creeping in My Soul",
+        "album": "Cryoshell"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:34b484c92c391c1137a565ae",
+      "displayName": "Crystal Steel",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Crystalized",
+        "album": "Crystalized"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    },
+    {
+      "musicDnaId": "mdna:mention:a3b46e5c3cd982878e925698",
+      "displayName": "Cynical Sons",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Danger Xone",
+        "album": "Danger Xone"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Profile follow-up checked; strict AllMusic taxonomy still incomplete."
+    }
+  ]
+}
