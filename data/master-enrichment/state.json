@@ -92,10 +92,13 @@
     },
     {
       "path": "data/master-enrichment/round-026.json"
+    },
+    {
+      "path": "data/master-enrichment/round-027.json"
     }
   ],
-  "nextAction": "Continue 25-case second-pass batches, but begin tagging repeated identity-safe no-result cases as source-sparse candidates so exhausted searches are not repeated indefinitely.",
-  "lastCompletedRound": "ENRICH-026",
+  "nextAction": "Continue non-duplicate second-pass batches of 25, prioritizing remaining plausible leads. ENRICH-027 produced zero promotions and should be treated as a source-sparse signal; do not repeat these searches without new evidence.",
+  "lastCompletedRound": "ENRICH-027",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
   "openTriageCounts": {
