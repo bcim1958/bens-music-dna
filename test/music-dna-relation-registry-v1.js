@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-25.52",
+  version:"2026-09-25.53",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -27,6 +27,9 @@ const registry={
     "tom_tom_club":{type:"artist",name:"Tom Tom Club"},
     "adrian_belew":{type:"person",name:"Adrian Belew"},
     "king_crimson":{type:"artist",name:"King Crimson"},
+    "greg_lake":{type:"person",name:"Greg Lake"},
+    "emerson_lake_palmer":{type:"artist",name:"Emerson, Lake & Palmer"},
+    "montreal_olympic_stadium":{type:"venue",name:"Olympic Stadium, Montréal"},
     "radiohead":{type:"artist",name:"Radiohead"},
     "ed_obrien":{type:"person",name:"Ed O’Brien"},
     "jonny_greenwood":{type:"person",name:"Jonny Greenwood"},
@@ -280,6 +283,8 @@ const registry={
     soundonsound_spiral_scratch_2015:{provider:"Sound On Sound",kind:"independent-technical-history-with-interviews",title:"Classic Tracks: Buzzcocks Spiral Scratch",url:"https://www.soundonsound.com/techniques/classic-tracks-buzzcocks-spiral-scratch",publishedAt:"2015-12",checkedAt:"2026-09-25"},
     allmusic_magazine_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Magazine Biography",url:"https://www.allmusic.com/artist/magazine-mn0000229157",checkedAt:"2026-09-25"},
     allmusic_nile_rodgers_related:{provider:"AllMusic",kind:"editorial-related-artist",title:"Nile Rodgers — Related Artists",url:"https://www.allmusic.com/artist/nile-rodgers-mn0000411830/related",checkedAt:"2026-09-25"},
+    allmusic_greg_lake_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Greg Lake — Biography",url:"https://www.allmusic.com/artist/greg-lake-mn0000186477/biography",checkedAt:"2026-09-25"},
+    elp_works_live:{provider:"ELP",kind:"official-release",title:"Works Live",url:"https://elp.lnk.to/WorksLive",checkedAt:"2026-09-25"},
     allmusic_adrian_belew_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Adrian Belew — Biography",url:"https://www.allmusic.com/artist/adrian-belew-mn0000498577/biography",checkedAt:"2026-09-25"},
     allmusic_tom_tom_club_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Tom Tom Club — Biography",url:"https://www.allmusic.com/artist/tom-tom-club-mn0000612279/biography",checkedAt:"2026-09-25"},
     allmusic_talking_heads_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Talking Heads — Biography",url:"https://www.allmusic.com/artist/talking-heads-mn0000131650/biography",checkedAt:"2026-09-25"},
@@ -377,6 +382,7 @@ const registry={
   },
   discoveries:[
     {id:"disc-magazine-shot-both-sides",base:"magazine",counterpart:"buzzcocks",kind:"continuity-door",title:"Een Buzzcocks-lied steekt de grens over",summary:"Magazine debuutsingle Shot by Both Sides was door Howard Devoto samen met zijn voormalige Buzzcocks-partner Pete Shelley geschreven.",relations:["rel-magazine-shot-both-sides-shelley"],evidence:["allmusic_magazine_bio"],status:"unread"},
+    {id:"disc-crimson-lake-elp-montreal",base:"king_crimson",counterpart:"greg_lake",kind:"person-to-place-route",title:"Via Greg Lake van King Crimson naar Montréal",summary:"Greg Lake opent vanuit King Crimson de deur naar ELP; ELP opent vervolgens een gebeurtenisdeur naar het Olympisch Stadion van Montréal in 1977.",relations:["rel-lake-king-crimson","rel-lake-elp","rel-elp-montreal-1977"],evidence:["allmusic_greg_lake_bio","elp_works_live"],status:"unread"},
     {id:"disc-talking-heads-belew-crimson",base:"talking_heads",counterpart:"adrian_belew",kind:"known-terrain-bridge",title:"Een gitarist opent de progdeur",summary:"Naast de Tom Tom Club-spin-off heeft Talking Heads via Adrian Belew een personele deur naar King Crimson — een brug terug richting progressieve rock.",relations:["rel-belew-talking-heads","rel-belew-king-crimson"],evidence:["allmusic_adrian_belew_bio"],status:"unread"},
     {id:"disc-talking-heads-tomtom-spin",base:"talking_heads",counterpart:"tom_tom_club",kind:"spin-off-door",title:"De ritmesectie neemt een eigen afslag",summary:"Via Tina Weymouth en Chris Frantz loopt Talking Heads door naar hun zijproject Tom Tom Club — een echte spin-off in plaats van een genre-associatie.",relations:["rel-weymouth-talking-heads","rel-frantz-talking-heads","rel-weymouth-frantz-tomtom","rel-frantz-tomtom"],evidence:["allmusic_talking_heads_bio","allmusic_tom_tom_club_bio"],status:"unread"},
     {id:"disc-eno-talking-heads",base:"brian_eno",counterpart:"talking_heads",kind:"production-door",title:"Eno opent een deur naar Talking Heads",summary:"Via Eno’s productiewerk ontstaat een directe, feitelijke route naar Talking Heads; David Byrne verschijnt daar als volgende plaatsbare persoon.",relations:["rel-eno-talking-heads-production","rel-byrne-talking-heads"],evidence:["allmusic_talking_heads_bio"],status:"unread"},
