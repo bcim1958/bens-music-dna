@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "classification": "TERMINAL-CLASSIFICATION-010",
+  "classification": "TERMINAL-CLASSIFICATION-011",
   "date": "2026-09-25",
   "baseline": {
     "originalCases": 411,
@@ -14,17 +14,17 @@
     "researchable": "A concrete unexhausted source/profile lead remains."
   },
   "openClassification": {
-    "sourceSparse": 190,
-    "identityUnresolved": 33,
+    "sourceSparse": 221,
+    "identityUnresolved": 2,
     "researchable": 0,
-    "provisional": true,
-    "explanation": "Final individual researchable audit completed: The System promoted to supported; 15 stable identities closed source-sparse; Green Machine, Pendragon, and Daniel Licht;Jon Licht closed identity-unresolved. No researchable cases remain."
+    "provisional": false,
+    "explanation": "Identity reconciliation complete. Thirty-one formerly ambiguous cases were identity-resolved; nine were already source-supported and 22 resolve terminally as source-sparse. Only Green Machine and Pendragon remain identity-unresolved."
   },
   "arithmetic": [
-    "188 + 190 + 33 + 0 = 411",
-    "190 + 33 + 0 = 223"
+    "188 + 221 + 2 + 0 = 411",
+    "221 + 2 + 0 = 223"
   ],
-  "nextPass": "Run final 411-case integrity audit: exactly one terminal status per musicDnaId, no duplicates, exact arithmetic; then review identity-unresolved only as a separate identity-resolution workstream.",
+  "nextPass": "Source and identity reconciliation are closed. Preserve Green Machine and Pendragon as identity-unresolved unless new exact identity evidence appears; proceed to Relation Registry / DNA Explorer work.",
   "sourceSparseCaseNames": [
     "Bad Bones",
     "CobraKill",
