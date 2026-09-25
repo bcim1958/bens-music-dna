@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "reconciliation": "IDENTITY-RECONCILE-001",
+  "date": "2026-09-25",
+  "scope": "31 resolved identity cases from IDENTITY-001/002",
+  "result": {
+    "resolvedIdentityCases": 31,
+    "alreadySourceSupported": 9,
+    "promotedToSupported": 0,
+    "closedSourceSparse": 22,
+    "remainingIdentityUnresolved": 2
+  },
+  "principle": "Identity resolution is not sufficient for source support. A case is supported only when the normalized primary identity is tied to qualifying AllMusic Genre/Styles evidence. Otherwise a resolved identity closes source-sparse.",
+  "verifiedSupportedExamples": [
+    {
+      "displayName": "Paul McCartney;Wings",
+      "normalizedIdentity": "Paul McCartney & Wings",
+      "evidence": "AllMusic Band on the Run: Genre Pop/Rock; Styles Album Rock, Contemporary Pop/Rock, Soft Rock, AM Pop."
+    },
+    {
+      "displayName": "Dexys Midnight Runners;Kevin Rowland",
+      "normalizedIdentity": "Dexys Midnight Runners / Kevin Rowland",
+      "evidence": "AllMusic Too-Rye-Ay: Genre Pop/Rock; Styles New Wave, Punk/New Wave, Post-Punk, Blue-Eyed Soul."
+    },
+    {
+      "displayName": "Eurythmics; Annie Lennox; Dave Stewart",
+      "normalizedIdentity": "Eurythmics",
+      "evidence": "AllMusic Sweet Dreams: Genre Pop/Rock; Styles Dance-Rock, New Wave, Synth Pop."
+    },
+    {
+      "displayName": "Sirenia; Mortemia",
+      "normalizedIdentity": "Sirenia",
+      "evidence": "AllMusic The 13th Floor: Genre Pop/Rock; Styles Alternative Metal, Goth Metal, Heavy Metal."
+    }
+  ],
+  "note": "No broad source-enrichment workstream was reopened. The 22 resolved-but-not-qualifying cases are terminal source-sparse; Green Machine and Pendragon remain the only true identity-unresolved cases."
+}
