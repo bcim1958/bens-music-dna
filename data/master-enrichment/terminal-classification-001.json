@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "classification": "TERMINAL-CLASSIFICATION-001",
+  "date": "2026-09-25",
+  "baseline": {
+    "originalCases": 411,
+    "supported": 186,
+    "open": 225
+  },
+  "rules": {
+    "supported": "Identity-safe qualifying AllMusic Genre/Styles evidence exists.",
+    "sourceSparse": "Identity is sufficiently stable, but repeated exact searches have exhausted the qualifying AllMusic taxonomy route.",
+    "identityUnresolved": "Same-name, composite-credit, or release-credit ambiguity still prevents safe identity linkage.",
+    "researchable": "A concrete unexhausted source/profile lead remains."
+  },
+  "openClassification": {
+    "sourceSparse": 0,
+    "identityUnresolved": 30,
+    "researchable": 195,
+    "provisional": true,
+    "explanation": "Conservative first overlay: no case is terminally marked source-sparse solely from old triage labels. The 9 profile-or-credit-review plus 21 composite-credit cases seed identity-unresolved; all other 195 open cases remain researchable until review history is explicitly exhausted."
+  },
+  "arithmetic": [
+    "186 + 0 + 30 + 195 = 411",
+    "0 + 30 + 195 = 225"
+  ],
+  "nextPass": "Promote cases from researchable to source-sparse only from explicit repeated-search history; do not rerun searches already documented as exhausted."
+}
