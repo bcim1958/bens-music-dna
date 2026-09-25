@@ -1,10 +1,14 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-24.40",
+  version:"2026-09-25.41",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
+    "buzzcocks":{type:"artist",name:"Buzzcocks",research:{coverage:"seeded",richness:"promising",lastResearched:"2026-09-25",basis:"first network seed from independent retrospective and primary Pete Shelley interview; expand lazily",paths:{"independent-editorial":{status:"started"},"interviews-primary":{status:"started"},"relationships-network":{status:"started"}}}},
+    "sex_pistols":{type:"artist",name:"Sex Pistols"},
+    "howard_devoto":{type:"person",name:"Howard Devoto"},
+    "martin_hannett":{type:"person",name:"Martin Hannett"},
     "shiraz_lane":{
       "type": "artist",
       "name": "Shiraz Lane",
@@ -245,6 +249,8 @@ const registry={
       title:"Ghost’s Tobias Forge on the Swedish group’s eclectic new Phantomime EP",
       url:"https://www.rollingstone.co.uk/music/ghosts-tobias-forge-on-the-swedish-groups-eclectic-new-phantomime-ep-29546/"
     },
+    guardian_buzzcocks_indie_2017:{provider:"The Guardian",kind:"independent-editorial-with-interviews",title:"How Buzzcocks invented indie (with help from the Sex Pistols, a Renault and the Quo)",url:"https://www.theguardian.com/music/2017/jan/12/how-buzzcocks-invented-indie-with-help-from-the-sex-pistols-a-renault-and-the-quo",publishedAt:"2017-01-12",checkedAt:"2026-09-25"},
+    quietus_shelley_2014:{provider:"The Quietus",kind:"primary-interview",title:"Pete Shelley Interview: The Fate & The Fury Of The Buzzcocks",url:"https://thequietus.com/interviews/buzzcocks-pete-shelley-interview/",checkedAt:"2026-09-25"},
     musicdna_catalog:{
       provider:"Music DNA",kind:"catalog",
       title:"Music DNA entity/catalog context",url:null
@@ -328,6 +334,8 @@ const registry={
     }
   },
   discoveries:[
+    {id:"disc-buzzcocks-pistols-spark",base:"buzzcocks",counterpart:"sex_pistols",kind:"origin-door",title:"De vonk kwam vóór de band",summary:"Shelley en Devoto zagen de Sex Pistols, brachten hen daarna naar Manchester en bouwden vanuit die impuls Buzzcocks verder op.",relations:["rel-buzzcocks-pistols-origin","rel-buzzcocks-pistols-manchester"],evidence:["guardian_buzzcocks_indie_2017","quietus_shelley_2014"],status:"unread"},
+    {id:"disc-buzzcocks-hannett-spiral",base:"buzzcocks",counterpart:"martin_hannett",kind:"network-door",title:"Spiral Scratch opent nóg een deur",summary:"Martin Hannett zat achter de knoppen bij de Spiral Scratch-sessies; vanuit die kleine DIY-release loopt een directe weg naar een belangrijke Manchester-producer.",relations:["rel-buzzcocks-hannett-spiral-scratch"],evidence:["guardian_buzzcocks_indie_2017"],status:"unread"},
     {
       "id": "disc-shiraz-per-two-roles",
       "base": "shiraz_lane",
