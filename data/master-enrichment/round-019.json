@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-019",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 3,
+  "method": "Release-credit queue exhausted after 24 remaining cases; one composite-credit case added to complete the agreed 25-check batch. Exact identity plus accepted AllMusic genre/style taxonomy required.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:5aba0b9a08bee4c7ec96e201",
+      "displayName": "Subvision",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Room 611",
+        "album": "So Far so Noir"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching artist identity and accepted AllMusic genre/style taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:91054c1db57aaa2d116f9dfc",
+      "displayName": "Sunday Riot Club",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "White Bronco",
+        "album": "L'OPÉRA"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:78c8caaf49be2b57f7a266e6",
+      "displayName": "Terratomorf",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Творец желаний",
+        "album": "Творец желаний"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:9e7cd9cb5a63a3591e16f4d8",
+      "displayName": "Tester",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "King of the World",
+        "album": "King of the World"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:5ea04c8d1ae36767f8c42d47",
+      "displayName": "The Ben Cote Band",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Miss Understood",
+        "album": "Miss Understood"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:04f47090a178807989cc7bbe",
+      "displayName": "The Blanko",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Electric Desire",
+        "album": "Stimulation Paradise"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:2398728dabd5dd3f9ed0ce15",
+      "displayName": "The Faithless",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Won't Stop Rockin'",
+        "album": "Fighting the Shadows"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:7450bd3351ec4cdca0d78cc4",
+      "displayName": "The Fallen State",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "For My Sorrow",
+        "album": "A Deadset Endeavour"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:5a4753f15c313936484bc2ba",
+      "displayName": "The Killbilly 5'ers",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Burn Down the Trailer Park",
+        "album": "Welcome to Town Now Get the Hell Out"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:b4b86a4822d9fc47ed20c862",
+      "displayName": "Tomorrow Is Lost",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hideaway",
+        "album": "Hideaway"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:e69fe715cc5a8bbf4c6a478a",
+      "displayName": "Track of Rock",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Let's Rock",
+        "album": "Track of Rock"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:c0080afe6b52a94e97c85716",
+      "displayName": "TRUCKER DIABLO",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Party Like They Started the End of the World",
+        "album": "Rise Above the Noise"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:5bac459b3b8a7ff545087e46",
+      "displayName": "Two Places at Once",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Gloves",
+        "album": "Birdtraps"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:1aef19f36e99ee750067d336",
+      "displayName": "Tyranuke",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Join Me I Die",
+        "album": "Join Me I Die"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:dee642ccf3705a9e55e081d1",
+      "displayName": "Vixen X",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Die For You",
+        "album": "Die For You"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:a04b93db4d178acd87fbe4fd",
+      "displayName": "Voltedge",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "BYE BYE BYE",
+        "album": "BYE BYE BYE"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:061050ec110b3138b4874415",
+      "displayName": "Vonavibe",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Run n' Hide",
+        "album": "Bleed To Life"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:0e8afdcf0e562d17959a1bd4",
+      "displayName": "WARGASM (UK)",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Salma Hayek",
+        "album": "Salma Hayek"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching artist identity and accepted AllMusic genre/style taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:2ba3123542afc3346b9397de",
+      "displayName": "We're Wolves",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bodies",
+        "album": "Bodies"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:8efc2fbff3eff057c5817e2b",
+      "displayName": "Wirefall",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Soy Sauce",
+        "album": "Retina"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:1d2950711ca56b4801a51391",
+      "displayName": "Witche’s Brew",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Find A Way",
+        "album": "Chronicles of Electric Sorcery"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:a9b3a1e2e3d92aad6a80497e",
+      "displayName": "Wolf & Chain",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Phantom",
+        "album": "Phantom"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:b6e37b74213e710b4d32129b",
+      "displayName": "Year Gone",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Set My Soul",
+        "album": "Set My Soul"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:9d51984634ceb868f5066129",
+      "displayName": "Twin Tribes",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Fantasmas",
+        "album": "Ceremony"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching artist identity and accepted AllMusic genre/style taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:799b1423e2d19873bd980f0c",
+      "displayName": "Axl Rose;Izzy Stradlin",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Killing Time",
+        "album": "'80s Metal Essentials"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Existing identity/credit evidence reused; profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    }
+  ]
+}
