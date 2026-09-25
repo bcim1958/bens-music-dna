@@ -7,7 +7,7 @@
   "sourceSupportedCount": 188,
   "remainingOpenCount": 223,
   "resolvedBaselineConflictCount": 1,
-  "allEnrichmentComplete": false,
+  "allEnrichmentComplete": true,
   "rounds": [
     {
       "path": "data/master-enrichment/round-001.json",
@@ -111,7 +111,7 @@
     "round-032.json",
     "round-033.json"
   ],
-  "nextAction": "Run final 411-case terminal integrity audit; after closure, treat identity-unresolved cases only as a separate identity-resolution workstream.",
+  "nextAction": "Normal AllMusic source-enrichment is closed. Any further work on the 33 identity-unresolved cases is a separate identity-resolution workstream and must not reopen completed source-sparse cases without new evidence.",
   "lastCompletedRound": "ENRICH-033",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 19,
@@ -122,7 +122,7 @@
     "profile-or-credit-review": 9,
     "composite-credit": 21
   },
-  "lastReconciliation": "RECONCILE-002",
+  "lastReconciliation": "RECONCILE-003",
   "reconciliationPath": "data/master-enrichment/reconcile-002.json",
   "terminalClassificationPath": "data/master-enrichment/terminal-classification-001.json",
   "terminalClassificationCounts": {
@@ -130,5 +130,24 @@
     "sourceSparse": 190,
     "identityUnresolved": 33,
     "researchable": 0
+  },
+  "integrityAudit": {
+    "audit": "RECONCILE-003",
+    "date": "2026-09-25",
+    "result": "pass",
+    "originalCases": 411,
+    "terminalCounts": {
+      "supported": 188,
+      "sourceSparse": 190,
+      "identityUnresolved": 33,
+      "researchable": 0
+    },
+    "checks": [
+      "terminal arithmetic equals 411",
+      "open arithmetic equals 223",
+      "sourceSparseCaseNames contains exactly 190 unique names",
+      "researchable count is zero",
+      "latest enrichment round is ENRICH-033"
+    ]
   }
 }
