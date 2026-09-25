@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-014",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 4,
+  "additionalEvidenceRecordCount": 6,
+  "method": "Batch boundary crossed after targeted-research-needed was exhausted: 6 remaining targeted cases, then metadata-incomplete and profile/credit follow-ups to reach the agreed 25-check reporting unit. Promotion requires exact identity plus complete accepted AllMusic genre/style fields.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:3f7ff39cf1f589363d9a88c8",
+      "displayName": "VELLEN",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Saturday",
+        "album": "Stone Rain"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:af5924e2abec7521f8b254bc",
+      "displayName": "Venus Mountains",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Down to the Rainbow",
+        "album": "Black Snake"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://venusmountains.bandcamp.com/",
+        "fact": "Artist source corroborates Black Snake-era identity; strict AllMusic taxonomy not established."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:14ac195635df2a3f43b870e6",
+      "displayName": "Villain Press",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "You've Got Another Thing Comin'",
+        "album": "You've Got Another Thing Comin'"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:608d7f07f25a97d81c0f0674",
+      "displayName": "Whiskey River Gun Club",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Whiskey Feelin'",
+        "album": "100 Proof"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:d5ab7ae10646db978d0c6e6f",
+      "displayName": "White Void",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Do. Not. Sleep.",
+        "album": "Anti"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://www.nuclearblast.com/pages/album/anti",
+        "fact": "Label/release evidence corroborates White Void, Anti and Do. Not. Sleep.; provider description retained, strict AllMusic completion not established."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:c1a010773193ec7c4fa8ff68",
+      "displayName": "Yellow Dog Conspiracy",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Enough Is Enough",
+        "album": "Confrontation"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:5cd51939cf68c432557f4975",
+      "displayName": "Apollo",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Chasing Shadows",
+        "album": "Waterdevils"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:209e118a998198cd013bc444",
+      "displayName": "Crash Test Dummies",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Mmm Mmm Mmm Mmm",
+        "album": "God Shuffled His Feet"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "url": "https://www.allmusic.com/artist/crash-test-dummies-mn0000108679",
+        "fact": "Matching AllMusic artist profile supplies Genre Pop/Rock and styles Alternative Pop/Rock, Alternative/Indie Rock, Contemporary Pop/Rock; God Shuffled His Feet and Mmm Mmm Mmm Mmm match."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:c7fc32ca2bbd899117b3dfc8",
+      "displayName": "Deya Dova",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Women & Children",
+        "album": "So Bravely Human"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:ff9f35eddc8ba93e4f7cf529",
+      "displayName": "Early Winters",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Count Me In",
+        "album": "Early Winters"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:3fffedd0b6b0f0a97165635c",
+      "displayName": "La Fuga",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Buscando en la basura",
+        "album": "Negociando gasolina"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:332f2fa077ba46422bdd8e08",
+      "displayName": "Nick Kamen",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "I Promised Myself",
+        "album": "Move Until We Fly"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "url": "https://www.allmusic.com/artist/nick-kamen-mn0000866026",
+        "fact": "Matching AllMusic artist profile supplies Genre Pop/Rock and styles Dance-Pop, Contemporary Pop/Rock; I Promised Myself / Move Until We Fly identity matches."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:4aa72f769546c33fbb543158",
+      "displayName": "Skunk Anansie",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Hedonism (Just Because You Feel Good)",
+        "album": "Stoosh"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "url": "https://www.allmusic.com/artist/skunk-anansie-mn0000019678",
+        "fact": "Matching AllMusic artist profile supplies Genre Pop/Rock and styles Alternative Metal, Alternative/Indie Rock, Hard Rock; Stoosh and Hedonism identity match."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:f6eb36f0118ed74fc3e5c018",
+      "displayName": "Taking Dawn",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Chain",
+        "album": "Time To Burn SE"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:68d2683b0fe6007c3addb9c2",
+      "displayName": "Them Evils",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Where Ya Gonna Crash Tonight?",
+        "album": "Where Ya Gonna Crash Tonight?"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:64ef6c18dd5cd061202db40a",
+      "displayName": "Ugly Kid Joe",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Neighbor",
+        "album": "America's Least Wanted"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "url": "https://www.allmusic.com/artist/ugly-kid-joe-mn0000218425",
+        "fact": "Matching AllMusic artist profile supplies Genre Pop/Rock and styles Hard Rock, Heavy Metal, Pop-Metal; America's Least Wanted / Neighbor identity matches."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:690ce8c6dc970d8c4bd86df8",
+      "displayName": "LSD and the Search for God",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Starting Over",
+        "album": "LSD and the Search for God"
+      },
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:736001faca59e88731c65f78",
+      "displayName": "Aria",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Встань, страх преодолей",
+        "album": "С кем ты?"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:6015818b0518900d1848020d",
+      "displayName": "Green Machine",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Horse",
+        "album": "Horse"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:2362fc3b34cbe7ffdb0cfe60",
+      "displayName": "Midnight City",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Escape Into the Night",
+        "album": "Midnight City - EP"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:7af0511a4fa7ba8f475e6fed",
+      "displayName": "Nathan James",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Hanged Man",
+        "album": "The Hanged Man"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:90f31eb99eeb1f63a66edcc4",
+      "displayName": "Pendragon",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Lost Reason",
+        "album": "Pop: Korn! the Best of Pop & Rock"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:e614eeb9bf3ffeb4b810a590",
+      "displayName": "SHOUT",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "People of the Night",
+        "album": "People of the Night"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:6e21ba6f0b3527e04b868ab8",
+      "displayName": "Supercharger",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Blood Red Lips",
+        "album": "Broken Hearts and Fallaparts"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:4f82da918754733cbcb22de3",
+      "displayName": "The Mood",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Boozing, Dancing, and a Chance of Romancing",
+        "album": "Boozing, Dancing, and a Chance of Romancing"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "reviewOutcome": {
+        "fact": "Fresh follow-up completed; no sufficiently specific complete AllMusic genre/style evidence accepted. Existing identity/evidence retained; no unsupported promotion."
+      }
+    }
+  ]
+}
