@@ -125,8 +125,8 @@
   "terminalClassificationPath": "data/master-enrichment/terminal-classification-001.json",
   "terminalClassificationCounts": {
     "supported": 186,
-    "sourceSparse": 0,
+    "sourceSparse": 14,
     "identityUnresolved": 30,
-    "researchable": 195
+    "researchable": 181
   }
 }
