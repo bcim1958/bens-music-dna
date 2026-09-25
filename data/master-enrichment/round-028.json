@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-028",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 2,
+  "method": "Non-duplicate second-pass batch of unresolved targeted cases. Exact AllMusic identity plus accepted genre/style taxonomy required; repeated empty searches recorded as source-sparse evidence.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:ea9854ae911497b29146c766",
+      "displayName": "Seraina Telli",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Addicted to Color - Radio Edit",
+        "album": "Addicted to Color (Radio Edit)"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:a3995e98cf670bb175b7a532",
+      "displayName": "Seventh Rize",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Roller Coaster",
+        "album": "Full Moon"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:49561f15af10d26abb897643",
+      "displayName": "Shadow Bullets",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Death´s a Clown",
+        "album": "House of Mirrors: Shot B"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:83e2bd2edf2b57c3c6f86f57",
+      "displayName": "Shawn Michael Perry",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "ROCK Steady",
+        "album": "Kryp II Knight, Vol. IV"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:7bf9c5f01846cb4b527f7790",
+      "displayName": "Sinisis",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Beyond the Sun",
+        "album": "I Am Me"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:a750247451814c52536e6a56",
+      "displayName": "Sixxxten",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dr. Seltsam",
+        "album": "Jugend Violencia"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:0ea1cec82aec305700816d32",
+      "displayName": "Sleeping Bear",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "When Rivers Become a Waterfall",
+        "album": "Vorokhtah"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:a2568ea14301164f3ba8dc0a",
+      "displayName": "Stained Red",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Too Cold to Love",
+        "album": "Stained Red 2022 EP"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:cecf80df7aa331932eb83862",
+      "displayName": "Stallion four",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rough times - Radio Edit",
+        "album": "Rough times (Radio Edits)"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:6a12a3bcfa919520a89800b5",
+      "displayName": "State Of Emergency",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The End",
+        "album": "The End"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:6171b2a461207d1992847128",
+      "displayName": "Statement",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Feeling Scared",
+        "album": "Force of Life"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:7c2870123783e0ce9c97041a",
+      "displayName": "Stereosuckers",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Revölution",
+        "album": "Revölution"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:fd76ec2dc7a9106e0bcf5008",
+      "displayName": "Steve Strange",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Children of the Revolution / Get It On / Telegram Sam / Ride a White Swan / Metal Guru / Hot Love",
+        "album": "Bolan Esq T. Rex Medley"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:302e60d57d8a003154ba111c",
+      "displayName": "Steve Whiteman",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Foolin'",
+        "album": "More '80s Hair Metal"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact identity and accepted AllMusic genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:50f5d935ea5cb57eed1edd2f",
+      "displayName": "Stone Division",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Halo",
+        "album": "Six Indifferent Places"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:89dd16b26dc28ed89e2fd3b0",
+      "displayName": "Stryke Lightning",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Feeling the Heat",
+        "album": "Feeling the Heat"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:0bebd0ae502588d2a05126b3",
+      "displayName": "Taletellers",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Mary-Anne",
+        "album": "Radicalizer"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:f147fc9ce96abda7a9820fc2",
+      "displayName": "The Addicts",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Viva La Revolution",
+        "album": "Guitar Heroes: Rock of the 80s"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:88be78b7ac63d4780b1ff0d1",
+      "displayName": "The Babysitters",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "I Wanna Be On The T.V",
+        "album": "The Babysitters"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:14830fc1017ebacd13ee24cd",
+      "displayName": "The Baker Gurvitz Army",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "People - Live",
+        "album": "The Baker Gurvitz Army Live"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact identity and accepted AllMusic genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:db4344511e219fe354861b04",
+      "displayName": "The Dirty Marmaduke Flute Squad",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Show Us Your Boobs (Buy Me a Beer)",
+        "album": "Boneslinky!"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:a734766fb4a18dbcd26bba2b",
+      "displayName": "the inner me",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dime Show",
+        "album": "Rosabelle Believe"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:b507cd85cda028aaac91fd5c",
+      "displayName": "The Jolt",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "You're Cold",
+        "album": "Punk Pick & Mix"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:40094e8100d0396d45ed032e",
+      "displayName": "The L.A. Maybe",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Mr. Danger",
+        "album": "Dirty Damn Tricks"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    },
+    {
+      "musicDnaId": "mdna:mention:70aca4e8660dd27efd3e18d2",
+      "displayName": "The Reconciled",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Falling by the Wayside",
+        "album": "Skin & Bones"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Repeated empty exact searches strengthen source-sparse classification."
+    }
+  ]
+}
