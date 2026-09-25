@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 78,
-  "remainingOpenCount": 333,
+  "sourceSupportedCount": 84,
+  "remainingOpenCount": 327,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -16,9 +16,13 @@
     {
       "path": "data/master-enrichment/round-002.json",
       "sha256": "d41e530e958fb45daed32f8c2e890afc4bcd763dcceb29c4d481f4520b42a9c4"
+    },
+    {
+      "path": "data/master-enrichment/round-003.json",
+      "sha256": "c638597ea4a87f55c1abcc26e411eb150ddf7b1ca49436f270a7303b16e0a04d"
     }
   ],
-  "nextAction": "Broaden to official artist and label sources for unresolved identities and metadata. Reuse recorded searches; avoid repeating unchanged AllMusic-only queries. Preserve provider-specific vs derived classifications. Nine track-identified profiles still miss genre or styles.",
-  "lastCompletedRound": "ENRICH-002",
-  "partialEvidenceOpenCount": 9
+  "nextAction": "Continue targeted primary-source identity checks for remaining open cases. Ten profiles retain partial evidence; three parent-genre proposals are derived, not direct profile fields.",
+  "lastCompletedRound": "ENRICH-003",
+  "partialEvidenceOpenCount": 10
 }
