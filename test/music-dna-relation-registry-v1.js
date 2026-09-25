@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-25.44",
+  version:"2026-09-25.45",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -10,6 +10,9 @@ const registry={
     "magazine":{type:"artist",name:"Magazine"},
     "john_mcgeoch":{type:"person",name:"John McGeoch"},
     "johnny_marr":{type:"person",name:"Johnny Marr"},
+    "radiohead":{type:"artist",name:"Radiohead"},
+    "ed_obrien":{type:"person",name:"Ed O’Brien"},
+    "jonny_greenwood":{type:"person",name:"Jonny Greenwood"},
     "manic_street_preachers":{type:"artist",name:"Manic Street Preachers"},
     "siouxsie_banshees":{type:"artist",name:"Siouxsie and the Banshees"},
     "public_image_ltd":{type:"artist",name:"Public Image Ltd"},
@@ -259,6 +262,8 @@ const registry={
     },
     soundonsound_spiral_scratch_2015:{provider:"Sound On Sound",kind:"independent-technical-history-with-interviews",title:"Classic Tracks: Buzzcocks Spiral Scratch",url:"https://www.soundonsound.com/techniques/classic-tracks-buzzcocks-spiral-scratch",publishedAt:"2015-12",checkedAt:"2026-09-25"},
     allmusic_magazine_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Magazine Biography",url:"https://www.allmusic.com/artist/magazine-mn0000229157",checkedAt:"2026-09-25"},
+    musicradar_obrien_mcgeoch_2017:{provider:"MusicRadar",kind:"primary-interview",title:"Radiohead’s Ed O’Brien: I was always drawn to sounds that didn’t sound like the guitar",url:"https://www.musicradar.com/news/radioheads-ed-obrien-i-was-always-drawn-to-sounds-that-didnt-sound-like-the-guitar",checkedAt:"2026-09-25"},
+    johnmcgeoch_bio:{provider:"JohnMcGeoch.com",kind:"artist-archive-biography",title:"John McGeoch – Bio",url:"https://www.johnmcgeoch.com/bio",checkedAt:"2026-09-25"},
     guardian_mcgeoch_2022:{provider:"The Guardian",kind:"independent-editorial-with-interviews",title:"Invention, grace and bloodlust ballet: post-punk guitarist John McGeoch",url:"https://www.theguardian.com/music/2022/may/04/post-punk-guitarist-john-mcgeoch-magazine-siouxsie-sioux",publishedAt:"2022-05-04",checkedAt:"2026-09-25"},
     allmusic_buzzcocks_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Buzzcocks Biography",url:"https://www.allmusic.com/artist/buzzcock-mn0000629564",checkedAt:"2026-09-25"},
     guardian_buzzcocks_indie_2017:{provider:"The Guardian",kind:"independent-editorial-with-interviews",title:"How Buzzcocks invented indie (with help from the Sex Pistols, a Renault and the Quo)",url:"https://www.theguardian.com/music/2017/jan/12/how-buzzcocks-invented-indie-with-help-from-the-sex-pistols-a-renault-and-the-quo",publishedAt:"2017-01-12",checkedAt:"2026-09-25"},
@@ -347,6 +352,7 @@ const registry={
   },
   discoveries:[
     {id:"disc-magazine-shot-both-sides",base:"magazine",counterpart:"buzzcocks",kind:"continuity-door",title:"Een Buzzcocks-lied steekt de grens over",summary:"Magazine debuutsingle Shot by Both Sides was door Howard Devoto samen met zijn voormalige Buzzcocks-partner Pete Shelley geschreven.",relations:["rel-magazine-shot-both-sides-shelley"],evidence:["allmusic_magazine_bio"],status:"unread"},
+    {id:"disc-mcgeoch-radiohead",base:"john_mcgeoch",counterpart:"radiohead",kind:"influence-door",title:"De gitaar verdwijnt bijna als gitaar",summary:"Ed O’Brien noemt McGeoch expliciet een grote invloed omdat zijn spel om klank en song draaide, niet om traditionele leadgitaar; ook Jonny Greenwood wordt in McGeochs nalatenschap met die invloed verbonden.",relations:["rel-mcgeoch-ed-obrien-influence","rel-mcgeoch-jonny-greenwood-influence"],evidence:["musicradar_obrien_mcgeoch_2017","johnmcgeoch_bio"],status:"unread"},
     {id:"disc-mcgeoch-influence-branches",base:"john_mcgeoch",counterpart:"johnny_marr",kind:"influence-door",title:"McGeoch wordt zelf een wegwijzer",summary:"Johnny Marr noemt McGeoch een bepalende moderne gitarist; ook James Dean Bradfield koppelt zijn spel rechtstreeks aan The Holy Bible.",relations:["rel-mcgeoch-marr-influence","rel-mcgeoch-manic-street-preachers-influence"],evidence:["guardian_mcgeoch_2022"],status:"unread"},
     {id:"disc-magazine-mcgeoch-branches",base:"magazine",counterpart:"john_mcgeoch",kind:"network-door",title:"Via één gitarist naar nieuwe werelden",summary:"John McGeoch werd een bepalende Magazine-gitarist en liep later door naar Siouxsie and the Banshees en Public Image Ltd.",relations:["rel-magazine-mcgeoch-founder","rel-mcgeoch-banshees","rel-mcgeoch-pil"],evidence:["allmusic_magazine_bio","guardian_mcgeoch_2022"],status:"unread"},
     {id:"disc-buzzcocks-devoto-magazine",base:"buzzcocks",counterpart:"magazine",kind:"next-world",title:"Devoto stapt uit — en opent Magazine",summary:"Na Spiral Scratch verliet Howard Devoto Buzzcocks en vormde later Magazine: een natuurlijke Explorer-deur van vroege punk naar post-punk.",relations:["rel-buzzcocks-devoto-departure","rel-devoto-magazine-formation"],evidence:["soundonsound_spiral_scratch_2015","allmusic_buzzcocks_bio"],status:"unread"},
