@@ -1,0 +1,19 @@
+// Master 100 — Batch 004 — scaled fresh AllMusic verification
+(function(root){"use strict";
+const E=root.musicDnaMaster100EngineV1;
+const R=(id,name,claims)=>({musicDnaId:id,displayName:name,inputRef:"fresh-allmusic-2026-09-25",treatmentStatus:"treated-verified",identityStatus:"exact",sourceRefs:[claims.id],claimRefs:claims.facts,evidenceRefs:["direct-allmusic-profile:2026-09-25"]});
+const batch=E.createBatch({batchId:"MASTER-004-SCALED-ALLMUSIC",scope:{kind:"scaled-fresh-source-verification",source:"AllMusic",verifiedAt:"2026-09-25",records:10},records:[
+ R("mdna:artist:tesseract","TesseracT",{id:"allmusic:mn0001878711",facts:["formed:2003","place:Milton Keynes, Buckinghamshire, England","genre:Pop/Rock","style:Progressive Metal","style:Heavy Metal"]}),
+ R("mdna:artist:vola","VOLA",{id:"allmusic:mn0003524057",facts:["formed:2006","place:Copenhagen, Denmark","genre:Electronic","genre:Pop/Rock","style:Progressive Metal","style:Art Rock","style:Experimental Rock","style:Post-Rock","style:Experimental","style:Heavy Metal"]}),
+ R("mdna:artist:pineapple-thief","The Pineapple Thief",{id:"allmusic:mn0000347161",facts:["formed:1999","place:Yeovil, Somerset, England","genre:Pop/Rock","style:Alternative Pop/Rock","style:Alternative/Indie Rock","style:Neo-Prog"]}),
+ R("mdna:artist:porcupine-tree","Porcupine Tree",{id:"allmusic:mn0000854203",facts:["formed:1987","place:London, England","genre:Pop/Rock","style:Art Rock","style:Experimental","style:Experimental Rock","style:Neo-Prog","style:Alternative/Indie Rock","style:Ambient","style:Post-Rock"]}),
+ R("mdna:artist:steven-wilson","Steven Wilson",{id:"allmusic:mn0000455886",facts:["born:1967-11-03","place:Kingston-upon-Thames, London, England","genre:Pop/Rock","style:Alternative/Indie Rock","style:Experimental Rock","style:Post-Rock","style:Adult Alternative Pop/Rock","style:Indie Rock","style:Alternative Pop/Rock"]}),
+ R("mdna:artist:gavin-harrison","Gavin Harrison",{id:"allmusic:mn0000191711",facts:["born:1963-05-28","place:North Harrow, Middlesex, London, England","genre:Pop/Rock","style:Alternative/Indie Rock","style:Indie Rock","style:Instrumental Rock","style:Neo-Prog","style:Neo-Psychedelia","style:Prog-Rock","member-of:The Pineapple Thief","member-of:Incognito","member-of:King Crimson","member-of:Porcupine Tree"]}),
+ R("mdna:artist:blackfield","Blackfield",{id:"allmusic:mn0000216028",facts:["formed:2001","genre:Pop/Rock","style:Art Rock","style:Experimental","style:Alternative/Indie Rock","style:Post-Rock","style:Experimental Rock","member:Aviv Geffen","member:Steven Wilson"]}),
+ R("mdna:artist:richard-barbieri","Richard Barbieri",{id:"allmusic:mn0000346370",facts:["born:1957-11-30","place:London, England","genre:Pop/Rock","style:Art Rock","style:Prog-Rock","style:Alternative/Indie Rock","style:Ambient Pop","style:New Wave","style:Synth Pop","style:Adult Alternative Pop/Rock","style:Punk/New Wave","member-of:Japan","member-of:Porcupine Tree","member-of:Rain Tree Crow"]}),
+ R("mdna:artist:john-wesley","John Wesley",{id:"allmusic:mn0000571653",facts:["born:1962","place:Brandon, FL","genre:Pop/Rock","style:Contemporary Singer/Songwriter","style:Guitar Virtuoso","style:Prog-Rock","alias:Wes Dearth","member-of:Porcupine Tree"]}),
+ R("mdna:artist:storm-corrosion","Storm Corrosion",{id:"allmusic:mn0002887121",facts:["formed:2010","genre:Pop/Rock","style:Neo-Prog","style:Neo-Psychedelia","style:Post-Rock","style:Alternative/Indie Rock","style:Heavy Metal"]})
+]});
+batch.checkpoints=[E.checkpoint(batch,"scaled-allmusic-004-complete")];
+root.musicDnaMasterBatch004=batch;
+})(typeof window!=="undefined"?window:globalThis);
