@@ -28,6 +28,13 @@ for(const x of d.derivedInsights){
 }
 if(d.entities["mdna:artist:rush"].externalIds.musicBrainzArtistId!==null) fail("unverified MBID guessed");
 if(d.entities["mdna:artist:shiraz-lane"].externalIds.spotifyArtistId!==null) fail("unverified Spotify ID guessed");
+const credit=d.artistCredits["credit:holy-ghost:picturebooks-jon-harvey"];
+if(!credit||credit.parts.length!==2||credit.parts.some(x=>x.entityId!==null)) fail("composite credit guessed or flattened");
+const occ=d.providerOccurrences["occurrence:reissue-proof"];
+if(!occ||d.entities[occ.recordingId].canonicalYear===occ.displayedReleaseYear) fail("reissue packaging redated recording");
+const cs=d.conflictSets["conflict:example-formed-year"];
+if(!cs||cs.resolutionStatus!=="open"||!cs.candidateClaimIds.every(x=>claimIds.has(x))) fail("conflict set not preserved");
+if(d.entities["mdna:artist:ambiguous-fixture"].identityResolution!=="ambiguous") fail("ambiguous identity auto-resolved");
 console.log("Living Master pilot v1: PASS",{
  entities:Object.keys(d.entities).length,claims:d.claims.length,evidence:d.evidence.length,relations:d.relations.length,insights:d.derivedInsights.length
 });
