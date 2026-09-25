@@ -12,7 +12,7 @@ actual={}
 for i,r in enumerate(s['Playlist'][1:],2):actual.setdefault(r[3],[]).append(i)
 assert len(actual)==3333
 assert {r['displayName']:r['playlistRows'] for r in population['mentions']}==actual
-seen=set();baseline=[];new=[]
+seen=set();baseline=[];production=[]
 for manifest in state['batches']:
  batch=json.loads((root/manifest['path']).read_text())
  for record in batch['records']:
@@ -25,9 +25,17 @@ for manifest in state['batches']:
   else:assert raw[3]==name
   for r in record['repairObservations']:assert r['values']==list(s[r['sheet']][r['row']-1])
   for ref in record['populationEvidence']:assert s[ref['sheet']][ref['row']-1][3]==name
-  (new if batch['batchId']=='MASTER-012' else baseline).append(name)
+  if batch['batchId'].startswith('MASTER-RECOVERY-'):baseline.append(name)
+ if not batch['batchId'].startswith('MASTER-RECOVERY-'):production.append(batch)
 ordered=[r[0] for r in s['AllMusic-classificatie'][1:]]
 ordered += [n for n in actual if n not in set(ordered)]
-assert new==[n for n in ordered if n not in set(baseline)][:100]
-assert len(baseline)==575 and len(new)==100
-print(json.dumps({'result':'PASS','sourceSha256':state['source']['sha256'],'population':len(actual),'recordsComparedToOriginalWorkbook':len(seen),'deterministicBatch012':True,'sourceWorkbookUnchanged':hashlib.sha256(source.read_bytes()).hexdigest()==state['source']['sha256']}))
+assert len(baseline)==575
+processed=set(baseline)
+for batch in production:
+ names=[r['displayName'] for r in batch['records']]
+ assert names==[n for n in ordered if n not in processed][:100],batch['batchId']
+ assert len(names)==100
+ if 'priorTreatedCount' in batch:assert batch['priorTreatedCount']==len(processed)
+ processed.update(names)
+assert len(processed)==state['treatedCount']
+print(json.dumps({'result':'PASS','sourceSha256':state['source']['sha256'],'population':len(actual),'recordsComparedToOriginalWorkbook':len(seen),'deterministicBatches':[b['batchId'] for b in production],'sourceWorkbookUnchanged':hashlib.sha256(source.read_bytes()).hexdigest()==state['source']['sha256']}))

@@ -44,7 +44,7 @@ assert.equal(records.length,state.treatedCount);assert.deepEqual(counts,state.co
 assert.equal(state.remainingCount,state.denominator-records.length);
 const b12=read('data/master-100/master-012.json');
 assert.equal(b12.records.length,100);
-assert.equal(records.length-b12.records.length,575);
+assert.equal(records.filter(r=>r.batchId.startsWith('MASTER-RECOVERY-')).length,575);
 assert.equal(b12.records[0].displayName,state.batch012First);
 assert.equal(b12.records.at(-1).displayName,state.batch012Last);
 const prior=new Set(records.filter(r=>r.batchId!=='MASTER-012').map(r=>r.musicDnaId));
@@ -54,4 +54,18 @@ const duplicate=structuredClone(b12);duplicate.records[1].musicDnaId=duplicate.r
 assert(engine.validate(duplicate).some(e=>e.code==='duplicate-id'));
 const missing=structuredClone(b12);missing.records[0].evidenceRefs=[];
 assert(engine.validate(missing).some(e=>e.code==='verified-without-evidence'));
-console.log(JSON.stringify({result:'PASS',population:pop.size,baseline:prior.size,batch012:b12.records.length,treated:records.length,batch012Counts:b12.counts,overlap:0,duplicateProtection:true,evidenceProtection:true}));
+const latestEntry=state.batches.find(b=>b.batchId===state.lastCompletedBatch);
+const latest=read(latestEntry.path);
+assert.equal(latest.records.length,100);
+if(state.latestBatch){
+ assert.equal(latest.records[0].displayName,state.latestBatch.first);
+ assert.equal(latest.records.at(-1).displayName,state.latestBatch.last);
+ assert.equal(state.latestBatch.priorTreatedCount+100,state.treatedCount);
+ assert.equal(latest.priorTreatedCount,state.latestBatch.priorTreatedCount);
+ assert.deepEqual(latest.counts,state.latestBatch.counts);
+}
+const previous=new Set(records.filter(r=>r.batchId!==latest.batchId).map(r=>r.musicDnaId));
+assert(!latest.records.some(r=>previous.has(r.musicDnaId)));
+assert.equal(latest.checkpoints[0].treated,50);
+assert.equal(latest.checkpoints.at(-1).treated,100);
+console.log(JSON.stringify({result:'PASS',population:pop.size,prior:previous.size,batch:latest.batchId,newUnique:latest.records.length,treated:records.length,counts:latest.counts,overlap:0,duplicateProtection:true,evidenceProtection:true}));
