@@ -104,10 +104,13 @@
     },
     {
       "path": "data/master-enrichment/round-030.json"
+    },
+    {
+      "path": "data/master-enrichment/round-031.json"
     }
   ],
-  "nextAction": "Continue non-duplicate 25-case review, but prioritize reconciliation and terminal source-sparse classification soon: yield has flattened and repeated exact searches should not be rerun without new evidence.",
-  "lastCompletedRound": "ENRICH-030",
+  "nextAction": "Start terminal source-sparse classification design/reconciliation while continuing only genuinely new leads. ENRICH-031 produced zero promotions; do not repeat identical AllMusic searches for these 25 without new evidence.",
+  "lastCompletedRound": "ENRICH-031",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
   "openTriageCounts": {
