@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-018",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 6,
+  "method": "Fourth 25-case release-credit profile follow-up. Existing release identity reused; exact matching AllMusic profile taxonomy required. Same-name mismatches explicitly rejected.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:c6a7b417e661437552966963",
+      "displayName": "Ph.D.",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "I Won't Let You Down",
+        "album": "Love on Pop (Unforgettable Songs)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile accepted; I Won't Let You Down identity and Pop/Rock taxonomy align."
+    },
+    {
+      "musicDnaId": "mdna:mention:aa128e1c99bacfe1a00f37cd",
+      "displayName": "Pink Velvet Krush",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Nuthin' to Lose",
+        "album": "Blind in 2020"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:4447fde7c5349f84840ecd86",
+      "displayName": "Private Line",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dead Decade",
+        "album": "Dead Decade"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Correct Finnish hard-rock band identity retained; same-name Gerald Levert album result explicitly rejected."
+    },
+    {
+      "musicDnaId": "mdna:mention:15567ee4817fb62816d7464d",
+      "displayName": "Promises",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Baby It's You",
+        "album": "Promises"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:bb32d1dd2dad1ef0e66fc46d",
+      "displayName": "RADIO TAPOK",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Монстр",
+        "album": "Монстр"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:62a95af7a49c06ee7a6aa4ce",
+      "displayName": "Redemption Switch",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Away",
+        "album": "Away"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:17aba44ca045017a33ff299a",
+      "displayName": "RedScool",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Stare",
+        "album": "Stare"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:f5bab0b81d04401057050266",
+      "displayName": "Rise of Utopia",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "They Try To Catch Me",
+        "album": "They Try To Catch Me"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:650000faa18062f8b5b529b4",
+      "displayName": "Roah",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Old Friend",
+        "album": "Old Friend"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:c54d9415950c833f567f433d",
+      "displayName": "Rockborn",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rock Me Harder",
+        "album": "Rock Me Harder"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:eb578b7506fcb1c6f73a7bc1",
+      "displayName": "Rusty Nail",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Iris",
+        "album": "Foot To The Floor"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:4ab07918acb193361e69cb3f",
+      "displayName": "Saint",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Immortalizer",
+        "album": "Immortalizer"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile accepted; Immortalizer identity and Christian/heavy metal taxonomy align."
+    },
+    {
+      "musicDnaId": "mdna:mention:7d16b7fe7680b32bc3c69a60",
+      "displayName": "September Mourning",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Wake The Dead",
+        "album": "Wake The Dead"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile accepted; Wake The Dead identity and rock/metal taxonomy align."
+    },
+    {
+      "musicDnaId": "mdna:mention:affa5d033bd70ba2d1096789",
+      "displayName": "Sershen&Zaritskaya",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Separate Ways (Worlds Apart)",
+        "album": "Separate Ways (Worlds Apart)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:ad7305d545ea59bb06413de6",
+      "displayName": "Sex Slaves",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Thank God For Jack Daniels",
+        "album": "Bite Your Tongue"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile accepted; Bite Your Tongue / Thank God For Jack Daniels identity and hard-rock taxonomy align."
+    },
+    {
+      "musicDnaId": "mdna:mention:c57241ba9d5edfc0b90e1a2f",
+      "displayName": "Shereign",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dying Sun",
+        "album": "Ghost Diaries"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:0f77d9bc47098a79f6a5bbdd",
+      "displayName": "Skarlett Riot",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Gravity",
+        "album": "Gravity"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:539801f10203b9e51d953858",
+      "displayName": "Smackbound",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Drive It Like You Stole It",
+        "album": "20/20"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile accepted; 20/20 identity and metal/hard-rock taxonomy align."
+    },
+    {
+      "musicDnaId": "mdna:mention:9462803254653caf7f9f5616",
+      "displayName": "Soldato",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Holy Man",
+        "album": "Holy Man"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:4ad91d47d465db8475893fbb",
+      "displayName": "Sons Of Sounds",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Sound of Hope",
+        "album": "Seven"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:dbadb50fa289ad1a885fb699",
+      "displayName": "Sorrow & The Spire",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "My Misery Calling",
+        "album": "My Misery Calling"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:55a22071a8afb2c06ece1969",
+      "displayName": "Sparzanza",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Temple of the Red-Eyed Pigs",
+        "album": "Folie à Cinq"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile accepted; Folie à Cinq identity and metal/hard-rock taxonomy align."
+    },
+    {
+      "musicDnaId": "mdna:mention:53b1a58b8fcb70887775978f",
+      "displayName": "Speed Parade",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Wicked Vikki",
+        "album": "Wicked Vikki"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:7f0d270710719ccfaba1419c",
+      "displayName": "StoneRowe",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Higher",
+        "album": "Higher"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:686a93c96f1a71782477bf73",
+      "displayName": "Stryken",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "One Way",
+        "album": "First Strike"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    }
+  ]
+}
