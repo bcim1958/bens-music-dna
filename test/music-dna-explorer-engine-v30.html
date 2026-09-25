@@ -143,7 +143,18 @@ function explorerGenreWorldView(groupId,id){
   return '<section class="card"><div class="eyebrow">Genre DNA · persoonlijke wereld</div><h1>'+esc(w.name)+'</h1><p class="lead">Kies een artiest en wandel daarna vrij verder via dezelfde Registry-relaties.</p><div class="doors">'+(doors||'<p>'+empty+'</p>')+'</div>'+(mapping.unresolved.length?'<details><summary>'+mapping.unresolved.length+' playlistartiesten hebben nog geen eenduidige Registry-wereld</summary><p>'+mapping.unresolved.map(esc).join(' · ')+'</p></details>':'')+(mapping.evidence.length?'<details><summary>Bron van deze playlistkoppelingen</summary><p>Opgeslagen masterexport van 4 september 2026; UK Punk aangevuld uit bevestigde playlists van 9 september. Geen actuele Spotify-synchronisatie.</p>'+[...new Set(mapping.evidence.map(e=>e.source))].map(source=>'<p><a href="../'+esc(source)+'">'+esc(source)+'</a></p>').join('')+'</details>':'')+'</section>';
 }
 function openExplorerWorld(id){let n=RR.api.explorerNode(id);if(!n)return;path.push({kind:"explorerworld",id,label:n.name});render()}
-function explorerWorldView(id){let n=RR.api.explorerNode(id);if(!n)return '<section class="card"><h1>Wereld niet gevonden</h1></section>';let doors=n.links.map(x=>'<button class="door" onclick="openExplorerWorld(\''+x.id+'\')"><span>'+esc((x.families||[]).join(" · ")||x.type)+'</span><strong>'+esc(x.name)+' →</strong><span>'+x.relationCount+' onderbouwd verband'+(x.relationCount===1?"":"en")+'</span></button>').join("");return '<section class="card"><div class="eyebrow">'+esc(n.type)+' · vrije wandeling</div><h1>'+esc(n.name)+'</h1><p class="lead">Kies zelf welke deur je nu wilt openen.</p><div class="doors">'+(doors||'<div class="fact"><b>Nog geen deuren</b><span>Deze wereld kan naar de researchvoorraad.</span></div>')+'</div></section>'}
+function interestingExplorerDoor(id){
+  try{
+    if(!RR||!RR.api||typeof RR.api.genericDiscoveryQueue!=="function")return null;
+    const q=RR.api.genericDiscoveryQueue(id,null,1);
+    if(!q||!q.length)return null;
+    const d=q[0],target=d.counterpart;
+    if(!target||!RR.api.explorerNode(target))return null;
+    return {discovery:d,target};
+  }catch(e){return null}
+}
+function openInterestingExplorerDoor(id){const pick=interestingExplorerDoor(id);if(pick)openExplorerWorld(pick.target)}
+function explorerWorldView(id){let n=RR.api.explorerNode(id);if(!n)return '<section class="card"><h1>Wereld niet gevonden</h1></section>';let pick=interestingExplorerDoor(id);let surprise=pick?'<button class="door" onclick="openInterestingExplorerDoor(\''+id+'\')"><span>DNA Explorer kiest uit ongelezen voorraad</span><strong>Kies een interessante afslag voor mij →</strong><span>'+esc(pick.discovery.title||pick.target)+'</span></button>':"";let doors=n.links.map(x=>'<button class="door" onclick="openExplorerWorld(\''+x.id+'\')"><span>'+esc((x.families||[]).join(" · ")||x.type)+'</span><strong>'+esc(x.name)+' →</strong><span>'+x.relationCount+' onderbouwd verband'+(x.relationCount===1?"":"en")+'</span></button>').join("");return '<section class="card"><div class="eyebrow">'+esc(n.type)+' · vrije wandeling</div><h1>'+esc(n.name)+'</h1><p class="lead">Kies zelf welke deur je nu wilt openen — of laat Explorer één onderbouwde afslag kiezen.</p><div class="doors">'+surprise+(doors||'<div class="fact"><b>Nog geen deuren</b><span>Deze wereld kan naar de researchvoorraad.</span></div>')+'</div></section>'}
 function render(){
   crumbs();
   const x=path[path.length-1];
