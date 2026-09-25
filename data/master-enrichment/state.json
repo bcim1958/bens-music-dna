@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 131,
-  "remainingOpenCount": 280,
+  "sourceSupportedCount": 132,
+  "remainingOpenCount": 279,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -32,17 +32,20 @@
     {
       "path": "data/master-enrichment/round-006.json",
       "sha256": "7ae2ca2e5a8c46929f3c49c2f9ba7514c45d6b66349f31c39bfac5b591f736bc"
+    },
+    {
+      "path": "data/master-enrichment/round-007.json"
     }
   ],
-  "nextAction": "Continue unreviewed cases. Reuse round006 label/artist evidence. Do not repeat unchanged partial-profile opens without a new lead. Strict AllMusic fields remain incomplete for 280 records.",
-  "lastCompletedRound": "ENRICH-006",
+  "nextAction": "Continue the remaining 11 profile-or-credit-review cases, then targeted-research-needed. Preserve same-name exclusions from ENRICH-007; do not apply taxonomy across unproven identities.",
+  "lastCompletedRound": "ENRICH-007",
   "partialEvidenceOpenCount": 13,
-  "latestRoundReviewedCount": 19,
+  "latestRoundReviewedCount": 8,
   "openTriageCounts": {
     "release-credit-found-profile-pending": 119,
     "identity-confirmed-metadata-incomplete": 13,
     "targeted-research-needed": 106,
-    "profile-or-credit-review": 12,
+    "profile-or-credit-review": 11,
     "composite-credit": 30
   }
 }
