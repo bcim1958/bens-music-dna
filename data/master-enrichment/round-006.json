@@ -1,0 +1,1943 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-006",
+  "checkedAt": "2026-09-25",
+  "baselineSourceSha256": "b9b2dd9444bd42714bb19a51d36e55408c046536aede988a323662276b698ec8",
+  "reviewedCount": 19,
+  "newSupportedCount": 0,
+  "additionalEvidenceRecordCount": 14,
+  "method": "Primary artist/label and catalog follow-up. Four partial-profile checks retained without promotion. Original migration and earlier rounds immutable.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:2dd96c47d4d25cb61a23016e",
+      "displayName": "Ammotrack",
+      "status": "open",
+      "query": "Ammotrack Raise Your Hands Raise Your Hands",
+      "playlistIdentity": {
+        "track": "Raise Your Hands",
+        "album": "Raise Your Hands"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Ammotrack - Raise Your Hands - Encyclopaedia Metallum: The Metal Archives",
+            "url": "https://www.metal-archives.com/albums/Ammotrack/Raise_Your_Hands/1137871"
+          },
+          {
+            "title": "Raise Your Hands song by Ammotrack from Raise Your Hands on Amazon Music, ${countryName}",
+            "url": "https://music.amazon.com/tracks/B0713RZ6RJ"
+          },
+          {
+            "title": "‎Raise Your Hands - Album by Ammotrack - Apple Music",
+            "url": "https://music.apple.com/us/album/raise-your-hands/1230555275"
+          },
+          {
+            "title": "‎Raise Your Hands - Song by Ammotrack - Apple Music",
+            "url": "https://music.apple.com/us/song/1230555611"
+          },
+          {
+            "title": "",
+            "url": "https://open.spotify.com/embed/artist/67rhoUbtvL3vE5IoGLgTZQ"
+          },
+          {
+            "title": "Melodifestivalen 2014: Ammotrack - \"Raise Your Hands\"",
+            "url": "https://eurovisionworld.com/national/sweden/melodifestivalen-2014/ammotrack-raise-your-hands"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "Raise Your Hands song by Ammotrack from Raise Your Hands on Amazon Music, ${countryName}",
+          "url": "https://music.amazon.com/tracks/B0713RZ6RJ",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Raise Your Hands - Album by Ammotrack - Apple Music",
+          "url": "https://music.apple.com/us/album/raise-your-hands/1230555275",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Apple Music catalog",
+          "url": "https://music.apple.com/us/album/raise-your-hands/1230555275",
+          "fact": "Raise Your Hands gekoppeld aan Ammotrack en GAIN/Fifth Island/Sony in copyrightregel. Albumrubriek Worldwide is niet als artiestgenre overgenomen.",
+          "artistDescriptionTerms": [],
+          "sourceType": "catalog",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:56b72a6de73c1d4adade00fd",
+      "displayName": "Bad Bones",
+      "status": "open",
+      "query": "Bad Bones Don't Stop Believin' [Cover Version] Snakes And Bones (Deluxe Edition)",
+      "playlistIdentity": {
+        "track": "Don't Stop Believin' [Cover Version]",
+        "album": "Snakes And Bones (Deluxe Edition)"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Don't Stop Believin' [Cover Version] - song and lyrics by Bad Bones | Spotify",
+            "url": "https://open.spotify.com/track/6P2SKXpngBE6SzQaVhO7Ly"
+          },
+          {
+            "title": "Новости : DARKSIDE.ru",
+            "url": "https://www.darkside.ru/news/index.phtml?cp=2610&dlang=en"
+          },
+          {
+            "title": "Новости : DARKSIDE.ru",
+            "url": "https://www.darkside.ru/news/indexv.phtml?cp=2550"
+          },
+          {
+            "title": "Songs That Mention California (with lyrics) Page 1",
+            "url": "https://californiaherps.com/info/songsaboutcalifornia.html"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "Don't Stop Believin' [Cover Version] - song and lyrics by Bad Bones | Spotify",
+          "url": "https://open.spotify.com/track/6P2SKXpngBE6SzQaVhO7Ly",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Steve Balocco interview, Asphyxium Zine",
+          "url": "https://aeafanzine.blogspot.com/2019/01/interview-with-steve-balocco-of.html?m=1",
+          "fact": "Bandlid noemt Snakes And Bones en de deluxe-uitgave via Bagana Records. De specifieke covertrack is hiermee nog niet gecontroleerd.",
+          "artistDescriptionTerms": [],
+          "sourceType": "artist-interview",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:6bb0676ec9638b334b365b2b",
+      "displayName": "CobraKill",
+      "status": "open",
+      "query": "CobraKill Same Ol' Nasty Rock N' Roll Serpent's Kiss",
+      "playlistIdentity": {
+        "track": "Same Ol' Nasty Rock N' Roll",
+        "album": "Serpent's Kiss"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "CobraKill - \"Same Ol' Nasty Rock N' Roll\" - Official Music Video - YouTube",
+            "url": "https://www.youtube.com/watch?v=4-Rto6DysMo"
+          },
+          {
+            "title": "‎Same Ol' Nasty Rock N' Roll – Song by CobraKill – Apple Music",
+            "url": "https://music.apple.com/gb/song/1713246398"
+          },
+          {
+            "title": "‎CobraKill - Apple Music",
+            "url": "https://music.apple.com/us/artist/cobrakill/1528950636"
+          },
+          {
+            "title": "CobraKill | Spotify",
+            "url": "https://open.spotify.com/intl-de/artist/3wZZh7PGBeZf3MyOSqcDOS"
+          },
+          {
+            "title": "‎Serpent's Kiss - Album by CobraKill - Apple Music",
+            "url": "https://music.apple.com/us/album/serpents-kiss/1713246114"
+          },
+          {
+            "title": "Arena Of Sin - song and lyrics by CobraKill | Spotify",
+            "url": "https://open.spotify.com/track/4csCaYqjYSGGUMTHz6vTWv"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Same Ol' Nasty Rock N' Roll – Song by CobraKill – Apple Music",
+          "url": "https://music.apple.com/gb/song/1713246398",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Frontiers Music",
+          "url": "https://www.frontiers.it/album/5948",
+          "fact": "Label vermeldt Same Ol’ Nasty Rock N’ Roll op Serpent’s Kiss en beschrijft de band als Hard ’n Heavy metal.",
+          "artistDescriptionTerms": [
+            "Hard 'n Heavy metal"
+          ],
+          "sourceType": "label",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:209e118a998198cd013bc444",
+      "displayName": "Crash Test Dummies",
+      "status": "open",
+      "query": "Crash Test Dummies Mmm Mmm Mmm Mmm God Shuffled His Feet",
+      "playlistIdentity": {
+        "track": "Mmm Mmm Mmm Mmm",
+        "album": "God Shuffled His Feet"
+      },
+      "candidates": [
+        {
+          "url": "https://www.allmusic.com/artist/crash-test-dummies-mn0000108679",
+          "title": "Crash Test Dummies",
+          "genre": "Pop/Rock",
+          "matchedTrackLines": [
+            "MMM MMM MMM MMM",
+            "Mmm Mmm Mmm Mmm"
+          ],
+          "albums": [
+            {
+              "year": "1991",
+              "entry": "The Ghosts That Haunt Me The Ghosts That Haunt Me Arista"
+            },
+            {
+              "year": "1993",
+              "entry": "God Shuffled His Feet God Shuffled His Feet Arista"
+            },
+            {
+              "year": "1994",
+              "entry": "Intoxicated Gods Intoxicated Gods CDM Jazz"
+            },
+            {
+              "year": "1996",
+              "entry": "A Worm's Life A Worm's Life Arista"
+            },
+            {
+              "year": "1999",
+              "entry": "Give Yourself a Hand Give Yourself a Hand Arista"
+            },
+            {
+              "year": "2001",
+              "entry": "I Don't Care That You Don't Mind I Don't Care That You Don't Mi… V2"
+            },
+            {
+              "year": "2002",
+              "entry": "Jingle All the Way Jingle All the Way Koch"
+            },
+            {
+              "year": "2003",
+              "entry": "Puss 'n' Boots Puss 'n' Boots Hunter Records"
+            },
+            {
+              "year": "2004",
+              "entry": "Songs of the Unforgiven Songs of the Unforgiven SPV"
+            },
+            {
+              "year": "2010",
+              "entry": "Oooh La-La! Oooh La-La! Deep Fried Records / MRI Associated Labels"
+            }
+          ],
+          "method": "AllMusic indexed artist page; exact track line in Songs section",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "nextAction": "Complete missing fields using attributed provider evidence; preserve partial claims.",
+      "identityEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/crash-test-dummies-mn0000108679",
+          "title": "Crash Test Dummies",
+          "genre": "Pop/Rock",
+          "matchedTrackLines": [
+            "MMM MMM MMM MMM",
+            "Mmm Mmm Mmm Mmm"
+          ],
+          "albums": [
+            {
+              "year": "1991",
+              "entry": "The Ghosts That Haunt Me The Ghosts That Haunt Me Arista"
+            },
+            {
+              "year": "1993",
+              "entry": "God Shuffled His Feet God Shuffled His Feet Arista"
+            },
+            {
+              "year": "1994",
+              "entry": "Intoxicated Gods Intoxicated Gods CDM Jazz"
+            },
+            {
+              "year": "1996",
+              "entry": "A Worm's Life A Worm's Life Arista"
+            },
+            {
+              "year": "1999",
+              "entry": "Give Yourself a Hand Give Yourself a Hand Arista"
+            },
+            {
+              "year": "2001",
+              "entry": "I Don't Care That You Don't Mind I Don't Care That You Don't Mi… V2"
+            },
+            {
+              "year": "2002",
+              "entry": "Jingle All the Way Jingle All the Way Koch"
+            },
+            {
+              "year": "2003",
+              "entry": "Puss 'n' Boots Puss 'n' Boots Hunter Records"
+            },
+            {
+              "year": "2004",
+              "entry": "Songs of the Unforgiven Songs of the Unforgiven SPV"
+            },
+            {
+              "year": "2010",
+              "entry": "Oooh La-La! Oooh La-La! Deep Fried Records / MRI Associated Labels"
+            }
+          ],
+          "method": "AllMusic indexed artist page; exact track line in Songs section",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "partialClaims": [
+        {
+          "predicate": "genre",
+          "values": [
+            "Pop/Rock"
+          ],
+          "status": "source-supported",
+          "sourceUrl": "https://www.allmusic.com/artist/crash-test-dummies-mn0000108679"
+        }
+      ],
+      "missingFields": [
+        "styles"
+      ],
+      "additionalPageCheck": {
+        "name": "Crash Test Dummies",
+        "url": "https://www.allmusic.com/artist/crash-test-dummies-mn0000108679",
+        "accessible": true
+      },
+      "round003Review": {
+        "url": "https://www.allmusic.com/artist/crash-test-dummies-mn0000108679",
+        "note": "Profile styles remain absent; biography language not substituted for taxonomy.",
+        "checkedAt": "2026-09-25"
+      },
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/crash-test-dummies-mn0000108679",
+          "title": "Crash Test Dummies",
+          "genre": "Pop/Rock",
+          "styles": "## Crash Test Dummies Biography",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25",
+          "validation": "Rejected: section heading parsed as styles; not a taxonomy value."
+        }
+      ],
+      "earlierAlbumEvidence": [
+        {
+          "url": "https://www.allmusic.com/album/r189369",
+          "artist": "Crash Test Dummies",
+          "album": "God Shuffled His Feet",
+          "method": "AllMusic album heading retrieved through search index",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Crash Test Dummies - Mmm Mmm Mmm Mmm (Official Video) - YouTube",
+            "url": "https://www.youtube.com/watch?v=eTeg1txDv8w"
+          },
+          {
+            "title": "Crash Test Dummies - Mmm Mmm Mmm Mmm (HQ) - YouTube",
+            "url": "https://www.youtube.com/watch?v=t05G0983BcI"
+          },
+          {
+            "title": "Karaoke Mmm, Mmm, Mmm, Mmm - Video with Lyrics - Crash Test Dummies",
+            "url": "https://www.karafun.com/karaoke/crash-test-dummies/mmm-mmm-mmm-mmm/"
+          },
+          {
+            "title": "Mmm Mmm Mmm Mmm",
+            "url": "https://en.wikipedia.org/wiki/Mmm_Mmm_Mmm_Mmm"
+          },
+          {
+            "title": "Mmm Mmm Mmm Mmm - Crash Test Dummies - VAGALUME",
+            "url": "https://www.vagalume.com.br/crash-test-dummies/mmm-mmm-mmm-mmm.html"
+          },
+          {
+            "title": "mmm mmm mmm mmm Keyboards - Crash Test Dummies | E-CHORDS",
+            "url": "https://www.e-chords.com/keyboards/crash-test-dummies/mmm-mmm-mmm-mmm"
+          }
+        ]
+      },
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Direct AllMusic opening failed; earlier partial evidence retained."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:83b0cc20b6807cd0bf1a427d",
+      "displayName": "Cryoshell",
+      "status": "open",
+      "query": "Cryoshell Creeping in My Soul Cryoshell",
+      "playlistIdentity": {
+        "track": "Creeping in My Soul",
+        "album": "Cryoshell"
+      },
+      "candidates": [],
+      "nextAction": "Use recorded release credit to identify an artist-controlled/profile source and retrieve metadata.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Creeping In My Soul (song) | Cryoshell Wiki | Fandom",
+            "url": "https://cryoshell.fandom.com/wiki/Creeping_In_My_Soul_%28song%29"
+          },
+          {
+            "title": "Creeping in My Soul (song)",
+            "url": "https://en.wikipedia.org/wiki/Creeping_in_My_Soul_%28song%29"
+          },
+          {
+            "title": "Creeping in My Soul",
+            "url": "https://en.wikipedia.org/wiki/Creeping_in_My_Soul"
+          },
+          {
+            "title": "Creeping In My Soul | The BIONICLE Wiki | Fandom",
+            "url": "https://bionicle.fandom.com/wiki/Creeping_In_My_Soul"
+          },
+          {
+            "title": "Cryoshell",
+            "url": "https://en.wikipedia.org/wiki/Cryoshell"
+          },
+          {
+            "title": "Creeping In My Soul - Cryoshell: Song Lyrics, Music Videos & Concerts",
+            "url": "https://www.shazam.com/song/1332659993/creeping-in-my-soul"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Creeping In My Soul - Single - Album by Cryoshell - Apple Music",
+          "url": "https://music.apple.com/us/album/creeping-in-my-soul-single/340829456",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Creeping In My Soul - Song by Cryoshell - Apple Music",
+          "url": "https://music.apple.com/us/song/340829482",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Search returned mainly secondary articles; no new primary source accepted."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:3d2e31f21af953defd0bc40d",
+      "displayName": "Deaf Rat",
+      "status": "open",
+      "query": "Deaf Rat Fallen Angels Ban the Light",
+      "playlistIdentity": {
+        "track": "Fallen Angels",
+        "album": "Ban the Light"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "‎Fallen Angels - Song by Deaf Rat - Apple Music",
+            "url": "https://music.apple.com/us/song/1471962924"
+          },
+          {
+            "title": "Deaf Rat | Spotify",
+            "url": "https://open.spotify.com/artist/7p1KKyEJ3F0eavGA6SMrn7"
+          },
+          {
+            "title": "Fallen Angels song by Deaf Rat from Ban the Light [Explicit] on Amazon Music",
+            "url": "https://music.amazon.com/tracks/B07TZHHXFC"
+          },
+          {
+            "title": "DEAF RAT • \"Fallen Angels\"",
+            "url": "https://hardforce.com/actu/29543/deaf-rat-fallen-angels-video"
+          },
+          {
+            "title": "AFM Records // Epic & Power - playlist by AFM Records | Spotify",
+            "url": "https://open.spotify.com/playlist/0xd0PtTzch2FEgG1zUos3A"
+          },
+          {
+            "title": "DEAF RAT Release Their First Single \"Fallen Angels\" | INFRARED MAGAZINE",
+            "url": "https://infraredmag.com/deaf-rat-release-their-first-single-fallen-angels/"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Fallen Angels - Song by Deaf Rat - Apple Music",
+          "url": "https://music.apple.com/us/song/1471962924",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "Fallen Angels song by Deaf Rat from Ban the Light [Explicit] on Amazon Music",
+          "url": "https://music.amazon.com/tracks/B07TZHHXFC",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "AFM Records",
+          "url": "https://www.afm-records.com/blogs/news/deaf-rat-release-their-first-single-fallen-angels",
+          "fact": "Label koppelt Fallen Angels aan Ban The Light en beschrijft de Zweedse band als hardrock.",
+          "artistDescriptionTerms": [
+            "Hard Rock"
+          ],
+          "sourceType": "label",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:d7ee0dfb8423c1a3da9d6491",
+      "displayName": "Ember Falls",
+      "status": "open",
+      "query": "Ember Falls Shut Down With Me Welcome To Ember Falls",
+      "playlistIdentity": {
+        "track": "Shut Down With Me",
+        "album": "Welcome To Ember Falls"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/ember-falls-mn0003512993",
+          "title": "Ember Falls",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Ember Falls",
+            "url": "https://emberfalls.com/"
+          },
+          {
+            "title": "Ember Falls",
+            "url": "https://en.wikipedia.org/wiki/Ember_Falls"
+          },
+          {
+            "title": "Shut Down With Me - Ember Falls - OUVIR MÚSICA",
+            "url": "https://www.ouvirmusica.com.br/ember-falls/shut-down-with-me/"
+          },
+          {
+            "title": "‎Shut Down with Me – Song by Ember Falls – Apple Music",
+            "url": "https://music.apple.com/au/song/1442953573"
+          },
+          {
+            "title": "‎Shut Down with Me – Titel von Ember Falls – Apple Music",
+            "url": "https://music.apple.com/at/song/1442953573"
+          },
+          {
+            "title": "Shut Down With Me - Ember Falls - Cifra Club",
+            "url": "https://www.cifraclub.com.br/ember-falls/shut-down-with-me/"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Shut Down with Me – Song by Ember Falls – Apple Music",
+          "url": "https://music.apple.com/au/song/1442953573",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Shut Down with Me – Titel von Ember Falls – Apple Music",
+          "url": "https://music.apple.com/at/song/1442953573",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round005Review": {
+        "url": "https://www.allmusic.com/artist/ember-falls-mn0003512993",
+        "result": "fetch-failed",
+        "note": "Artist profile failed to fetch; no evidence of absent artist.",
+        "checkedAt": "2026-09-25",
+        "method": "Web retrieval of indexed source text; manually checked field scope and identity. Fetch failures and inconclusive searches are retained, not treated as absent evidence."
+      },
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Apple Music catalog",
+          "url": "https://music.apple.com/us/album/welcome-to-ember-falls/1442952625",
+          "fact": "Welcome to Ember Falls is gekoppeld aan de band; de pagina bevat ook de video Shut Down with Me. Albumrubriek Metal is geen artiesttaxonomie.",
+          "artistDescriptionTerms": [],
+          "sourceType": "catalog",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:c13a00bc01b5a11fe55f03e8",
+      "displayName": "Formosa",
+      "status": "open",
+      "query": "Formosa Her Mama Her Mama",
+      "playlistIdentity": {
+        "track": "Her Mama",
+        "album": "Her Mama"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "‎Her Mama – Song by Formosa – Apple Music",
+            "url": "https://music.apple.com/bg/song/1822314168"
+          },
+          {
+            "title": "Formosa (band)",
+            "url": "https://en.wikipedia.org/wiki/Formosa_%28band%29"
+          },
+          {
+            "title": "FORMOSA-Single „Her Mama“ + Interview – metal-heads.de",
+            "url": "https://metal-heads.de/behind-the-scenes/formosa-single-her-mama-interview/"
+          },
+          {
+            "title": "WATCH: Meet the adorable doggo who defied the odds of a major surgery",
+            "url": "https://www.guidememalta.com/en/watch-meet-the-adorable-doggo-who-defied-the-odds-of-a-major-surgery"
+          },
+          {
+            "title": "FJMR JOURNAL",
+            "url": "https://journal.formosapublisher.org/index.php/fjmr/article/download/12439/12862/53136"
+          },
+          {
+            "title": "Theme restaurants give diners a change of scenery - Los Angeles Times",
+            "url": "https://www.latimes.com/style/la-fo-theme11-2008jun11-story.html"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Her Mama – Song by Formosa – Apple Music",
+          "url": "https://music.apple.com/bg/song/1822314168",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Apple Music song credits",
+          "url": "https://music.apple.com/bg/song/1822314168",
+          "fact": "Her Mama vermeldt Formosa als uitvoerder en Jakob Dammert/Marius Tilly bij compositie en tekst.",
+          "artistDescriptionTerms": [],
+          "sourceType": "catalog",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:54888920f774ab46b68d601e",
+      "displayName": "Frontback",
+      "status": "open",
+      "query": "Frontback Dead Man on the Road Heart of a Lion",
+      "playlistIdentity": {
+        "track": "Dead Man on the Road",
+        "album": "Heart of a Lion"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Frontback - Top tracks | Spotify",
+            "url": "https://open.spotify.com/embed/artist/4uuYNKIR4DjaMJCerKYcCD"
+          },
+          {
+            "title": "We Are the Ones - song and lyrics by Dee Snider | Spotify",
+            "url": "https://open.spotify.com/track/4gwvSZys96wiymPM340FDE"
+          },
+          {
+            "title": "Iron Maiden Setlist 2005, Eddie Rips Up Ullevi Stadium, Ullevi Göteborg - playlist by Axel Graneskog | Spotify",
+            "url": "https://open.spotify.com/playlist/6mlqYmO7ZnDkcVyr8X10ry"
+          },
+          {
+            "title": "Dead Man on the Road song by Frontback from Dead Man on the Road on Amazon Music",
+            "url": "https://music.amazon.ca/tracks/B01M34G99O"
+          },
+          {
+            "title": "Iron Maiden Setlist 2018, The Legacy Of The Beast World Tour, Tele2 Stockholm & Sweden Rock Festival - playlist by Axel Graneskog | Spotify",
+            "url": "https://open.spotify.com/playlist/5TXAXMdOGESamO1wgG2eg3"
+          },
+          {
+            "title": "Iron Maiden Setlist 2023 & 2024, The Future Past World Tour - playlist by Axel Graneskog | Spotify",
+            "url": "https://open.spotify.com/playlist/6pTraW39MB1kN4sYNlrvdb"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "Dead Man on the Road song by Frontback from Dead Man on the Road on Amazon Music",
+          "url": "https://music.amazon.ca/tracks/B01M34G99O",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Bengans retailer catalog",
+          "url": "https://www.bengans.no/frontback-heart-of-a-lion",
+          "fact": "Catalogus koppelt Dead Man On The Road aan Heart Of A Lion en noemt Dead End Exit als label.",
+          "artistDescriptionTerms": [],
+          "sourceType": "catalog",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:760fbc70ed95e7b7836424d0",
+      "displayName": "Hollowstar",
+      "status": "open",
+      "query": "Hollowstar All I Gotta Say Hollowstar",
+      "playlistIdentity": {
+        "track": "All I Gotta Say",
+        "album": "Hollowstar"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Hollowstar - Album by Hollowstar | Spotify",
+            "url": "https://open.spotify.com/album/4EA8zSLl8H55xWJQJerUbD"
+          },
+          {
+            "title": "‎All I Gotta Say - Single - Album by Hølløwstar - Apple Music",
+            "url": "https://music.apple.com/us/album/all-i-gotta-say-single/1383755516"
+          },
+          {
+            "title": "Hollowstar | Spotify",
+            "url": "https://open.spotify.com/artist/6AwyQR3pPkMZQ5Cx6roZ0l"
+          },
+          {
+            "title": "",
+            "url": "https://open.spotify.com/embed/playlist/2derYIaJKEEwMLCcEOYEcI"
+          },
+          {
+            "title": "Saints Of Sin Radio | Spotify Playlist",
+            "url": "https://open.spotify.com/playlist/37i9dQZF1E4w70X9ganZDV"
+          },
+          {
+            "title": "Hollowstar Concert Setlist at Star and Garter, Manchester on May 31, 2019 | setlist.fm",
+            "url": "https://www.setlist.fm/setlist/hollowstar/2019/star-and-garter-manchester-england-4391b713.html"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "All I Gotta Say song by Hollowstar from Hollowstar on Amazon Music",
+          "url": "https://music.amazon.co.uk/tracks/B07P682J3H",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending.",
+        "rejectedCandidate": {
+          "url": "https://hollowstarmusic.com/",
+          "reason": "Different project: Hollow Star by Minneapolis musician Micah Lopez. Not linked to playlist recording."
+        }
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Spotify artist profile",
+          "url": "https://open.spotify.com/artist/6AwyQR3pPkMZQ5Cx6roZ0l",
+          "fact": "Profiel koppelt All I Gotta Say aan de band uit St Ives, Cambridgeshire; beschrijft de muziek als classic rock. Afzonderlijk project Hollow Star van Micah Lopez niet gekoppeld.",
+          "artistDescriptionTerms": [
+            "classic rock"
+          ],
+          "sourceType": "catalog",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:332f2fa077ba46422bdd8e08",
+      "displayName": "Nick Kamen",
+      "status": "open",
+      "query": "Nick Kamen I Promised Myself Move Until We Fly",
+      "playlistIdentity": {
+        "track": "I Promised Myself",
+        "album": "Move Until We Fly"
+      },
+      "candidates": [
+        {
+          "url": "https://www.allmusic.com/artist/nick-kamen-mn0000335260",
+          "title": "Nick Kamen",
+          "genre": "Pop/Rock",
+          "matchedTrackLines": [
+            "I Promised Myself"
+          ],
+          "albums": [
+            {
+              "year": "1987",
+              "entry": "Nick Kamen Nick Kamen Sire"
+            },
+            {
+              "year": "1988",
+              "entry": "Us Us Sire"
+            },
+            {
+              "year": "1990",
+              "entry": "Move Until We Fly Move Until We Fly WEA"
+            },
+            {
+              "year": "1993",
+              "entry": "Each Time You Break My Heart Each Time You Break My Heart"
+            },
+            {
+              "year": "1995",
+              "entry": "Whatever, Wherever Whatever, Wherever Rhino / WEA"
+            }
+          ],
+          "method": "AllMusic indexed artist page; exact track line in Songs section",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "nextAction": "Complete missing fields using attributed provider evidence; preserve partial claims.",
+      "identityEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/nick-kamen-mn0000335260",
+          "title": "Nick Kamen",
+          "genre": "Pop/Rock",
+          "matchedTrackLines": [
+            "I Promised Myself"
+          ],
+          "albums": [
+            {
+              "year": "1987",
+              "entry": "Nick Kamen Nick Kamen Sire"
+            },
+            {
+              "year": "1988",
+              "entry": "Us Us Sire"
+            },
+            {
+              "year": "1990",
+              "entry": "Move Until We Fly Move Until We Fly WEA"
+            },
+            {
+              "year": "1993",
+              "entry": "Each Time You Break My Heart Each Time You Break My Heart"
+            },
+            {
+              "year": "1995",
+              "entry": "Whatever, Wherever Whatever, Wherever Rhino / WEA"
+            }
+          ],
+          "method": "AllMusic indexed artist page; exact track line in Songs section",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "partialClaims": [
+        {
+          "predicate": "genre",
+          "values": [
+            "Pop/Rock"
+          ],
+          "status": "source-supported",
+          "sourceUrl": "https://www.allmusic.com/artist/nick-kamen-mn0000335260"
+        }
+      ],
+      "missingFields": [
+        "styles"
+      ],
+      "additionalPageCheck": {
+        "name": "Nick Kamen",
+        "url": "https://www.allmusic.com/artist/nick-kamen-mn0000335260",
+        "accessible": true
+      },
+      "round003Review": {
+        "url": "https://www.cherryred.co.uk/sales/special-packaging/nick-kamen-the-complete-collection-6cd-boxset",
+        "note": "Label collection has product genre Pop; release-scoped label metadata, not AllMusic artist styles.",
+        "checkedAt": "2026-09-25"
+      },
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/nick-kamen-mn0000335260",
+          "title": "Nick Kamen",
+          "genre": "Pop/Rock",
+          "albums": [
+            "Nick Kamen Nick Kamen Sire",
+            "Us Us Sire",
+            "Move Until We Fly Move Until We Fly WEA",
+            "Each Time You Break My Heart Each Time You Break My Heart",
+            "Whatever, Wherever Whatever, Wherever Rhino / WEA"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/nick-kamen-mn0000335260",
+          "title": "Nick Kamen",
+          "genre": "Pop/Rock",
+          "albums": [
+            "Move Until We Fly Move Until We Fly WEA",
+            "Nick Kamen Nick Kamen Sire",
+            "Us Us Sire",
+            "Move Until We Fly Move Until We Fly WEA",
+            "Each Time You Break My Heart Each Time You Break My Heart",
+            "Whatever, Wherever Whatever, Wherever Rhino / WEA"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [
+        {
+          "url": "https://www.allmusic.com/album/move-until-we-fly-mw0000690124",
+          "artist": "Nick Kamen",
+          "album": "Move Until We Fly",
+          "method": "AllMusic album heading retrieved through search index",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "I Promised Myself",
+            "url": "https://en.wikipedia.org/wiki/I_Promised_Myself"
+          },
+          {
+            "title": "Nick Kamen",
+            "url": "https://en.wikipedia.org/wiki/Nick_Kamen"
+          },
+          {
+            "title": "Release “I Promised Myself” by Nick Kamen - MusicBrainz",
+            "url": "https://musicbrainz.org/release/3e032528-8b1e-4e6f-a250-053dcd882715"
+          },
+          {
+            "title": "I Promised Myself song by Nick Kamen from that's pop! 100 hits [Explicit] on Amazon Music",
+            "url": "https://music.amazon.ca/tracks/B0GR537D81"
+          },
+          {
+            "title": "I Promised Myself",
+            "url": "https://de.wikipedia.org/wiki/I_Promised_Myself"
+          },
+          {
+            "title": "I Promised Myself song by Nick Kamen from Classic Nineties [Explicit] on Amazon Music",
+            "url": "https://music.amazon.ca/tracks/B0GTWHKCQ9"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "I Promised Myself song by Nick Kamen from that's pop! 100 hits [Explicit] on Amazon Music",
+          "url": "https://music.amazon.ca/tracks/B0GR537D81",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "I Promised Myself song by Nick Kamen from Classic Nineties [Explicit] on Amazon Music",
+          "url": "https://music.amazon.ca/tracks/B0GTWHKCQ9",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Direct AllMusic opening failed; earlier partial evidence retained."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:16be4d9847b3a6e3381ea4fe",
+      "displayName": "Noora Louhimo Experience",
+      "status": "open",
+      "query": "Noora Louhimo Experience Eternal Wheel Of Time And Space Eternal Wheel Of Time And Space",
+      "playlistIdentity": {
+        "track": "Eternal Wheel Of Time And Space",
+        "album": "Eternal Wheel Of Time And Space"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Home | Noora Louhimo - Official Artist Website & Latest News",
+            "url": "https://nooralouhimo.com/"
+          },
+          {
+            "title": "‎Eternal Wheel of Time and Space - Album by Noora Louhimo Experience - Apple Music",
+            "url": "https://music.apple.com/us/album/eternal-wheel-of-time-and-space/1785257535"
+          },
+          {
+            "title": "‎Eternal Wheel of Time and Space - Song by Noora Louhimo Experience - Apple Music",
+            "url": "https://music.apple.com/us/song/1785257962"
+          },
+          {
+            "title": "Eternal Wheel of Time and Space song by Noora Louhimo Experience from Eternal Wheel of Time and Space on Amazon Music",
+            "url": "https://music.amazon.com/tracks/B0DQF9NCK7"
+          },
+          {
+            "title": "Music | Noora Louhimo - Albums, Singles & Collaborations",
+            "url": "https://nooralouhimo.com/music/"
+          },
+          {
+            "title": "REVIEW: Noora Louhimo Experience - Eternal Wheel of Time and Space • Tuonela Magazine",
+            "url": "https://tuonelamagazine.com/review-noex-noora-louhimo-experience-eternal-wheel-of-time-and-space/"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Eternal Wheel of Time and Space - Album by Noora Louhimo Experience - Apple Music",
+          "url": "https://music.apple.com/us/album/eternal-wheel-of-time-and-space/1785257535",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Eternal Wheel of Time and Space - Song by Noora Louhimo Experience - Apple Music",
+          "url": "https://music.apple.com/us/song/1785257962",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Official Noora Louhimo website",
+          "url": "https://nooralouhimo.com/",
+          "fact": "Artiestenwebsite vermeldt het project Noora Louhimo Experience en Eternal Wheel of Time and Space.",
+          "artistDescriptionTerms": [],
+          "sourceType": "artist",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:4447fde7c5349f84840ecd86",
+      "displayName": "Private Line",
+      "status": "open",
+      "query": "Private Line Dead Decade Dead Decade",
+      "playlistIdentity": {
+        "track": "Dead Decade",
+        "album": "Dead Decade"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Private Line (band)",
+            "url": "https://en.wikipedia.org/wiki/Private_Line_%28band%29"
+          },
+          {
+            "title": "PRIVATE LINE: Dead Decade - Soundi.fi",
+            "url": "https://www.soundi.fi/levyarviot/private-line-dead-decade/"
+          },
+          {
+            "title": "Private Line - Dead Decade - tekst i tłumaczenie piosenki - Tekstowo.pl",
+            "url": "https://www.tekstowo.pl/private-line/dead-decade"
+          },
+          {
+            "title": "CD-Review: Private Line – Dead Decade | Welcome to my life ...",
+            "url": "https://northerndreamer.wordpress.com/2011/08/19/cd-review-private-line-dead-decade/"
+          },
+          {
+            "title": "‎Private Line - Apple Music",
+            "url": "https://music.apple.com/us/artist/private-line/78953208"
+          },
+          {
+            "title": "CD review: Private Line – Dead Decade | Welcome to my life ...",
+            "url": "https://northerndreamer.wordpress.com/2011/08/19/cd-review-private-line-dead-decade-2/"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "Play Dead Decade by Private Line on Amazon Music Unlimited",
+          "url": "https://music.amazon.com/albums/B005GQ10ZC",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Dead Decade -single - Album by Private Line - Apple Music",
+          "url": "https://music.apple.com/us/album/dead-decade-single/1166896978",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Apple Music artist profile",
+          "url": "https://music.apple.com/us/artist/private-line/78953208",
+          "fact": "Profiel noemt Finland, genre Rock en de titeltrack Dead Decade. Ook oudere releases worden getoond; mogelijke catalogusvermenging blijft te controleren.",
+          "artistDescriptionTerms": [
+            "Rock"
+          ],
+          "sourceType": "catalog",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:0f77d9bc47098a79f6a5bbdd",
+      "displayName": "Skarlett Riot",
+      "status": "open",
+      "query": "Skarlett Riot Gravity Gravity",
+      "playlistIdentity": {
+        "track": "Gravity",
+        "album": "Gravity"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "‎Gravity - Song by Skarlett Riot - Apple Music",
+            "url": "https://music.apple.com/us/song/1550219023"
+          },
+          {
+            "title": "Gravity - song and lyrics by Skarlett Riot | Spotify",
+            "url": "https://open.spotify.com/track/5p8MkAxGr7LkiVvtuduiCD"
+          },
+          {
+            "title": "Skarlett Riot Tickets, 2026-2027 Concert Tour Dates | Ticketmaster",
+            "url": "https://www.ticketmaster.com/skarlett-riot-tickets/artist/1860803?tt_scene=anchor_view"
+          },
+          {
+            "title": "Music | Skarlett Riot",
+            "url": "https://skarlettriot.bandcamp.com/music"
+          },
+          {
+            "title": "‎Gravity - Single - Album by Skarlett Riot - Apple Music",
+            "url": "https://music.apple.com/us/album/gravity-single/1541967060"
+          },
+          {
+            "title": "‎Gravity – Song by Skarlett Riot – Apple Music",
+            "url": "https://music.apple.com/ca/song/1541967397"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Gravity - Song by Skarlett Riot - Apple Music",
+          "url": "https://music.apple.com/us/song/1550219023",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "Gravity - song and lyrics by Skarlett Riot | Spotify",
+          "url": "https://open.spotify.com/track/5p8MkAxGr7LkiVvtuduiCD",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Despotz Records",
+          "url": "https://despotz.se/releases/",
+          "fact": "Labelcatalogus vermeldt Gravity als single van Skarlett Riot, 11 december 2020.",
+          "artistDescriptionTerms": [],
+          "sourceType": "label",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:4aa72f769546c33fbb543158",
+      "displayName": "Skunk Anansie",
+      "status": "open",
+      "query": "Skunk Anansie Hedonism (Just Because You Feel Good) Stoosh",
+      "playlistIdentity": {
+        "track": "Hedonism (Just Because You Feel Good)",
+        "album": "Stoosh"
+      },
+      "candidates": [
+        {
+          "url": "https://www.allmusic.com/artist/skunk-anansie-mn0000019831",
+          "title": "Skunk Anansie",
+          "styles": "Alternative Metal, Heavy Metal, Alternative Pop/Rock, Alternative/Indie Rock, Nü Metal, Punk Metal",
+          "matchedTrackLines": [
+            "Hedonism (Just Because You Feel Good)"
+          ],
+          "albums": [
+            {
+              "year": "1995",
+              "entry": "Paranoid & Sunburnt Paranoid & Sunburnt One Little Indian / Sony Music Distribution"
+            },
+            {
+              "year": "1996",
+              "entry": "Stoosh Stoosh Epic"
+            },
+            {
+              "year": "1999",
+              "entry": "Post Orgasmic Chill Post Orgasmic Chill Virgin"
+            },
+            {
+              "year": "1999",
+              "entry": "You'll Follow Me Down You'll Follow Me Down EMI Music Distribution"
+            },
+            {
+              "year": "2009",
+              "entry": "Smashes and Trashes Smashes and Trashes One Little Indian"
+            },
+            {
+              "year": "2010",
+              "entry": "Wonderlustre Wonderlustre V2"
+            },
+            {
+              "year": "2012",
+              "entry": "Black Traffic Black Traffic"
+            },
+            {
+              "year": "2016",
+              "entry": "Anarchytecture Anarchytecture"
+            },
+            {
+              "year": "2018",
+              "entry": "Skunk Anansie Skunk Anansie Carosello"
+            },
+            {
+              "year": "2025",
+              "entry": "The Painful Truth The Painful Truth FLG Productions / Frontiers Records"
+            }
+          ],
+          "method": "AllMusic indexed artist page; exact track line in Songs section",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "nextAction": "Complete missing fields using attributed provider evidence; preserve partial claims.",
+      "identityEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/skunk-anansie-mn0000019831",
+          "title": "Skunk Anansie",
+          "styles": "Alternative Metal, Heavy Metal, Alternative Pop/Rock, Alternative/Indie Rock, Nü Metal, Punk Metal",
+          "matchedTrackLines": [
+            "Hedonism (Just Because You Feel Good)"
+          ],
+          "albums": [
+            {
+              "year": "1995",
+              "entry": "Paranoid & Sunburnt Paranoid & Sunburnt One Little Indian / Sony Music Distribution"
+            },
+            {
+              "year": "1996",
+              "entry": "Stoosh Stoosh Epic"
+            },
+            {
+              "year": "1999",
+              "entry": "Post Orgasmic Chill Post Orgasmic Chill Virgin"
+            },
+            {
+              "year": "1999",
+              "entry": "You'll Follow Me Down You'll Follow Me Down EMI Music Distribution"
+            },
+            {
+              "year": "2009",
+              "entry": "Smashes and Trashes Smashes and Trashes One Little Indian"
+            },
+            {
+              "year": "2010",
+              "entry": "Wonderlustre Wonderlustre V2"
+            },
+            {
+              "year": "2012",
+              "entry": "Black Traffic Black Traffic"
+            },
+            {
+              "year": "2016",
+              "entry": "Anarchytecture Anarchytecture"
+            },
+            {
+              "year": "2018",
+              "entry": "Skunk Anansie Skunk Anansie Carosello"
+            },
+            {
+              "year": "2025",
+              "entry": "The Painful Truth The Painful Truth FLG Productions / Frontiers Records"
+            }
+          ],
+          "method": "AllMusic indexed artist page; exact track line in Songs section",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "partialClaims": [
+        {
+          "predicate": "styles",
+          "values": [
+            "Alternative Metal",
+            "Heavy Metal",
+            "Alternative Pop/Rock",
+            "Alternative/Indie Rock",
+            "Nü Metal",
+            "Punk Metal"
+          ],
+          "status": "source-supported",
+          "sourceUrl": "https://www.allmusic.com/artist/skunk-anansie-mn0000019831"
+        }
+      ],
+      "missingFields": [
+        "genre"
+      ],
+      "additionalPageCheck": {
+        "name": "Skunk Anansie",
+        "url": "https://www.allmusic.com/artist/skunk-anansie-mn0000019831",
+        "accessible": true,
+        "styles": "Alternative Metal , Heavy Metal , Alternative Pop/Rock , Alternative/Indie Rock , Nü Metal , Punk Metal"
+      },
+      "derivedClaims": [
+        {
+          "predicate": "genre",
+          "values": [
+            "Pop/Rock"
+          ],
+          "status": "derived-proposal",
+          "sourceRefs": [
+            "https://www.allmusic.com/artist/skunk-anansie-mn0000019831",
+            "https://www.allmusic.com/subgenre/heavy-metal-ma0000002721"
+          ],
+          "reason": "AllMusic places Heavy Metal under Pop/Rock. Parent derived from confirmed artist style, not a genre field on the artist profile; not necessarily exhaustive."
+        }
+      ],
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/skunk-anansie-mn0000019831",
+          "title": "Skunk Anansie",
+          "styles": "Alternative Metal, Heavy Metal, Alternative Pop/Rock, Alternative/Indie Rock, Nü Metal, Punk Metal",
+          "albums": [],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [
+        {
+          "url": "https://www.allmusic.com/album/stoosh-mw0000021285",
+          "artist": "Skunk Anansie",
+          "album": "Stoosh",
+          "method": "AllMusic album heading retrieved through search index",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "Hedonism (Just Because You Feel Good)",
+            "url": "https://en.wikipedia.org/wiki/Hedonism_%28Just_Because_You_Feel_Good%29"
+          },
+          {
+            "title": "Hedonism (Just Because You Feel Good) - YouTube",
+            "url": "https://www.youtube.com/watch?v=14nbVGHE7r8"
+          },
+          {
+            "title": "Skunk Anansie - Hedonism (Just Because You Feel Good) | Glastonbury 2022 - YouTube",
+            "url": "https://www.youtube.com/watch?v=d9lK_kTYD3E"
+          },
+          {
+            "title": "Skunk Anansie: Hedonism (Just... Tracks & Reviews | AllMusic",
+            "url": "https://www.allmusic.com/album/hedonism-just-because-you-feel-good-mw0000584499"
+          },
+          {
+            "title": "Hedonism - Just Because You Feel Good - song and lyrics by Skunk Anansie | Spotify",
+            "url": "https://open.spotify.com/track/5pDo8AChRUOoUGvktauiwf"
+          },
+          {
+            "title": "‎Hedonism (Just Because You Feel Good) - Song by Skunk Anansie - Apple Music",
+            "url": "https://music.apple.com/us/song/1726652930"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "Hedonism - Just Because You Feel Good - song and lyrics by Skunk Anansie | Spotify",
+          "url": "https://open.spotify.com/track/5pDo8AChRUOoUGvktauiwf",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Hedonism (Just Because You Feel Good) - Song by Skunk Anansie - Apple Music",
+          "url": "https://music.apple.com/us/song/1726652930",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Artist page still shows styles but no genre field."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:4ad91d47d465db8475893fbb",
+      "displayName": "Sons Of Sounds",
+      "status": "open",
+      "query": "Sons Of Sounds Sound of Hope Seven",
+      "playlistIdentity": {
+        "track": "Sound of Hope",
+        "album": "Seven"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "SEVEN | Sons Of Sounds",
+            "url": "https://sonsofsounds.bandcamp.com/album/seven"
+          },
+          {
+            "title": "Sons of Sounds - Seven - Encyclopaedia Metallum: The Metal Archives",
+            "url": "https://www.metal-archives.com/albums/Sons_of_Sounds/Seven/1171662"
+          },
+          {
+            "title": "‎Sound of Hope - Single - Album by Sons Of Sounds - Apple Music",
+            "url": "https://music.apple.com/ng/album/sound-of-hope-single/1705705794"
+          },
+          {
+            "title": "My Name - song and lyrics by Sons Of Sounds | Spotify",
+            "url": "https://open.spotify.com/track/5xG2wWAPzWB2MkRb6ocn33"
+          },
+          {
+            "title": "‎Sound of Hope – Song by Sons Of Sounds – Apple Music",
+            "url": "https://music.apple.com/ru/song/1707254230?l=en-GB"
+          },
+          {
+            "title": "Sons Of Sounds on Amazon Prime Music",
+            "url": "https://music.amazon.in/artists/B007QDNNV2/sons-of-sounds"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Sound of Hope - Single - Album by Sons Of Sounds - Apple Music",
+          "url": "https://music.apple.com/ng/album/sound-of-hope-single/1705705794",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎Sound of Hope – Song by Sons Of Sounds – Apple Music",
+          "url": "https://music.apple.com/ru/song/1707254230?l=en-GB",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Artist Bandcamp",
+          "url": "https://sonsofsounds.bandcamp.com/album/seven",
+          "fact": "Eigen albumuitgave SEVEN bevat Sound Of Hope; de artiestenbio noemt het project een progressive heavy rock ensemble.",
+          "artistDescriptionTerms": [
+            "progressive heavy rock"
+          ],
+          "sourceType": "artist",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:f6eb36f0118ed74fc3e5c018",
+      "displayName": "Taking Dawn",
+      "status": "open",
+      "query": "Taking Dawn The Chain Time To Burn SE",
+      "playlistIdentity": {
+        "track": "The Chain",
+        "album": "Time To Burn SE"
+      },
+      "candidates": [
+        {
+          "url": "https://www.allmusic.com/artist/taking-dawn-mn0001598509",
+          "title": "Taking Dawn",
+          "styles": "Hard Rock, Pop-Metal, Heavy Metal",
+          "matchedTrackLines": [
+            "The Chain"
+          ],
+          "albums": [
+            {
+              "year": "2010",
+              "entry": "Time to Burn Time to Burn Roadrunner Records"
+            }
+          ],
+          "method": "AllMusic indexed artist page; exact track line in Songs section",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "nextAction": "Complete missing fields using attributed provider evidence; preserve partial claims.",
+      "identityEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/taking-dawn-mn0001598509",
+          "title": "Taking Dawn",
+          "styles": "Hard Rock, Pop-Metal, Heavy Metal",
+          "matchedTrackLines": [
+            "The Chain"
+          ],
+          "albums": [
+            {
+              "year": "2010",
+              "entry": "Time to Burn Time to Burn Roadrunner Records"
+            }
+          ],
+          "method": "AllMusic indexed artist page; exact track line in Songs section",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "partialClaims": [
+        {
+          "predicate": "styles",
+          "values": [
+            "Hard Rock",
+            "Pop-Metal",
+            "Heavy Metal"
+          ],
+          "status": "source-supported",
+          "sourceUrl": "https://www.allmusic.com/artist/taking-dawn-mn0001598509"
+        }
+      ],
+      "missingFields": [
+        "genre"
+      ],
+      "additionalPageCheck": {
+        "name": "Taking Dawn",
+        "url": "https://www.allmusic.com/artist/taking-dawn-mn0001598509",
+        "accessible": true,
+        "styles": "Hard Rock , Pop-Metal , Heavy Metal"
+      },
+      "derivedClaims": [
+        {
+          "predicate": "genre",
+          "values": [
+            "Pop/Rock"
+          ],
+          "status": "derived-proposal",
+          "sourceRefs": [
+            "https://www.allmusic.com/artist/taking-dawn-mn0001598509",
+            "https://www.allmusic.com/subgenre/heavy-metal-ma0000002721"
+          ],
+          "reason": "AllMusic places Heavy Metal under Pop/Rock. Parent derived from confirmed artist style, not a genre field on the artist profile; not necessarily exhaustive."
+        }
+      ],
+      "earlierCandidateEvidence": [
+        {
+          "url": "https://www.allmusic.com/artist/taking-dawn-mn0001598509",
+          "title": "Taking Dawn",
+          "styles": "Hard Rock, Pop-Metal, Heavy Metal",
+          "albums": [
+            "Time to Burn Time to Burn Roadrunner Records"
+          ],
+          "method": "AllMusic indexed page retrieved through web search",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "earlierAlbumEvidence": [
+        {
+          "url": "https://www.allmusic.com/album/time-to-burn-mw0001950633",
+          "artist": "Taking Dawn",
+          "album": "Time to Burn",
+          "method": "AllMusic album heading retrieved through search index",
+          "checkedAt": "2026-09-25"
+        }
+      ],
+      "triageCategory": "identity-confirmed-metadata-incomplete",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "‎The Chain - Song by Taking Dawn - Apple Music",
+            "url": "https://music.apple.com/us/song/350135471"
+          },
+          {
+            "title": "‎The Chain - Song by Taking Dawn - Apple Music",
+            "url": "https://music.apple.com/us/song/1484789160"
+          },
+          {
+            "title": "BPM and key for The Chain by Taking Dawn | Tempo for The Chain | SongBPM | songbpm.com",
+            "url": "https://songbpm.com/%40taking-dawn/the-chain"
+          },
+          {
+            "title": "Taking Dawn | Spotify",
+            "url": "https://open.spotify.com/artist/1xfrQZpGRWFmtjJlf7s51h"
+          },
+          {
+            "title": "The Chain - Taking Dawn - VAGALUME",
+            "url": "https://www.vagalume.com.br/taking-dawn/the-chain.html"
+          },
+          {
+            "title": "‎The Chain – Song by Taking Dawn – Apple Music",
+            "url": "https://music.apple.com/ca/song/350102970"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎The Chain - Song by Taking Dawn - Apple Music",
+          "url": "https://music.apple.com/us/song/350135471",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "‎The Chain - Song by Taking Dawn - Apple Music",
+          "url": "https://music.apple.com/us/song/1484789160",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Artist page still shows Hard Rock, Pop-Metal, Heavy Metal styles but no genre field."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:7450bd3351ec4cdca0d78cc4",
+      "displayName": "The Fallen State",
+      "status": "open",
+      "query": "The Fallen State For My Sorrow A Deadset Endeavour",
+      "playlistIdentity": {
+        "track": "For My Sorrow",
+        "album": "A Deadset Endeavour"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "For My Sorrow - song and lyrics by The Fallen State | Spotify",
+            "url": "https://open.spotify.com/track/14oHybgp6z9zegbbDxUg8b"
+          },
+          {
+            "title": "Creative Projects — Jonathan Stow, a London based director",
+            "url": "https://www.jonathanstow.com/creative-projects"
+          },
+          {
+            "title": "For My Sorrow - The Fallen State | Spotify",
+            "url": "https://open.spotify.com/embed/track/3JhBrVg2nXCyTBXcIUhejD?theme=0"
+          },
+          {
+            "title": "‎For My Sorrow – Song by The Fallen State – Apple Music",
+            "url": "https://music.apple.com/ca/song/1667661543"
+          },
+          {
+            "title": "For My Sorrow | Nicola Sadori",
+            "url": "https://www.nicolasadori.com/formysorrow"
+          },
+          {
+            "title": "",
+            "url": "https://open.spotify.com/embed/artist/3wNjTfkaWlmNat9VufX7Ua?wmode=opaque"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "For My Sorrow - song and lyrics by The Fallen State | Spotify",
+          "url": "https://open.spotify.com/track/14oHybgp6z9zegbbDxUg8b",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        },
+        {
+          "title": "For My Sorrow - The Fallen State | Spotify",
+          "url": "https://open.spotify.com/embed/track/3JhBrVg2nXCyTBXcIUhejD?theme=0",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Spotify release catalog",
+          "url": "https://open.spotify.com/track/3JhBrVg2nXCyTBXcIUhejD",
+          "fact": "Catalogus koppelt For My Sorrow aan A Deadset Endeavour en vermeldt Last Man Music als exclusieve licentiehouder.",
+          "artistDescriptionTerms": [],
+          "sourceType": "catalog",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:061050ec110b3138b4874415",
+      "displayName": "Vonavibe",
+      "status": "open",
+      "query": "Vonavibe Run n' Hide Bleed To Life",
+      "playlistIdentity": {
+        "track": "Run n' Hide",
+        "album": "Bleed To Life"
+      },
+      "candidates": [],
+      "nextAction": "Reuse round006 provider evidence to complete artist-profile linkage and missing taxonomy; avoid repeating the same catalog search.",
+      "earlierCandidateEvidence": [],
+      "earlierAlbumEvidence": [],
+      "triageCategory": "release-credit-found-profile-pending",
+      "researchReview": {
+        "checkedAt": "2026-09-25",
+        "method": "Broad artist/track web search; manually reviewed evidence selection. Search leads are not accepted facts. Catalog headings corroborate release credits only, not artist-profile identity, recording version, or taxonomy.",
+        "searchStatus": "results-returned",
+        "searchLeads": [
+          {
+            "title": "‎Run n' Hide - Single - Album by Vonavibe - Apple Music",
+            "url": "https://music.apple.com/us/album/run-n-hide-single/1669517277"
+          },
+          {
+            "title": "Heavy modern rockers Vonavibe rock out with sheer power in their new single 'Run n' Hide' • GRIMM Gent",
+            "url": "https://www.grimmgent.com/heavy-modern-rockers-vonavibe-rock-out-with-sheer-power-in-their-new-single-run-n-hide/"
+          },
+          {
+            "title": "Bleed to Life - Vonavibe (heavy modern rock) Eclipse Records",
+            "url": "https://www.eclipserecords.com/release/bleed-life-vonavibe/"
+          },
+          {
+            "title": "Vonavibe | Spotify",
+            "url": "https://open.spotify.com/artist/3ISavG2RhSliWSm0UbM1O5"
+          },
+          {
+            "title": "‎Vonavibe - Apple Music",
+            "url": "https://music.apple.com/us/artist/vonavibe/1389970605"
+          },
+          {
+            "title": "Track By Tracks: Vonavibe - Bleed To Life (2023) - Breathing The Core",
+            "url": "https://www.breathingthecore.com/2023/03/track-by-tracks-vonavibe-bleed-to-life.html"
+          }
+        ]
+      },
+      "releaseCreditEvidence": [
+        {
+          "title": "‎Run n' Hide - Single - Album by Vonavibe - Apple Music",
+          "url": "https://music.apple.com/us/album/run-n-hide-single/1669517277",
+          "status": "indexed-catalog-credit-corroborated",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist/credit and song or release title; original release version and profile identity not established by heading alone."
+        }
+      ],
+      "round006Review": {
+        "checkedAt": "2026-09-25",
+        "method": "Targeted indexed web retrieval; source identity and claim scope manually reviewed; unchanged or inaccessible profiles are not counted as completed.",
+        "outcome": "Additional attributed evidence retained; AllMusic completion still pending."
+      },
+      "additionalProviderEvidence": [
+        {
+          "provider": "Eclipse Records",
+          "url": "https://www.eclipserecords.com/release/bleed-life-vonavibe/",
+          "fact": "Label koppelt Run ‘n’ Hide aan Bleed to Life.",
+          "artistDescriptionTerms": [],
+          "sourceType": "label",
+          "checkedAt": "2026-09-25",
+          "scope": "Provider-specific release/artist evidence; not AllMusic artist taxonomy."
+        },
+        {
+          "provider": "Eclipse Records",
+          "url": "https://www.eclipserecords.com/band/vonavibe/",
+          "fact": "Labelbio beschrijft Vonavibe als heavy modern rock en koppelt de band aan Bleed to Life.",
+          "artistDescriptionTerms": [
+            "heavy modern rock"
+          ],
+          "sourceType": "label",
+          "checkedAt": "2026-09-25",
+          "scope": "Artist description by label; not AllMusic taxonomy."
+        }
+      ]
+    }
+  ]
+}

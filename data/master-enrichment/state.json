@@ -28,12 +28,16 @@
     {
       "path": "data/master-enrichment/round-005.json",
       "sha256": "66b76fe8be20c8a17b199fd144b00b61f6723e28f9bef279fc7a0d98e7281370"
+    },
+    {
+      "path": "data/master-enrichment/round-006.json",
+      "sha256": "7ae2ca2e5a8c46929f3c49c2f9ba7514c45d6b66349f31c39bfac5b591f736bc"
     }
   ],
-  "nextAction": "Continue remaining release-credit cases using primary artist/label sources. Reuse round005 reviews; do not repeat failed or incomplete AllMusic checks without a new lead. Keep provider descriptions separate from strict AllMusic completion.",
-  "lastCompletedRound": "ENRICH-005",
+  "nextAction": "Continue unreviewed cases. Reuse round006 label/artist evidence. Do not repeat unchanged partial-profile opens without a new lead. Strict AllMusic fields remain incomplete for 280 records.",
+  "lastCompletedRound": "ENRICH-006",
   "partialEvidenceOpenCount": 13,
-  "latestRoundReviewedCount": 21,
+  "latestRoundReviewedCount": 19,
   "openTriageCounts": {
     "release-credit-found-profile-pending": 119,
     "identity-confirmed-metadata-incomplete": 13,
