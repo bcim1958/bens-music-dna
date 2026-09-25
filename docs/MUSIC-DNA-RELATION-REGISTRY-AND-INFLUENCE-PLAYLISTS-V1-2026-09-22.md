@@ -503,3 +503,23 @@ Afstand tot Bens DNA is daarom geen harde grens. Het persoonlijke landschap is e
 
 ### 19.4 Eerste ingestroomde bronnen
 De eerste gecontroleerde bronset bestaat uit 13 Exportify Music Maps plus `Ben's Disco favorites`. Deze bestanden vormen een persoonlijke bewijslaag en worden niet rechtstreeks als relationele feiten in de Registry geïmporteerd.
+
+
+## 20. Hoofdroute, spin-off en uitstapje
+
+Explorer interpreteert afstand tot het bekende Music DNA niet als één lineaire score. Een deur kan functioneel een andere rol hebben:
+
+- **Hoofdroute** — een artiest of wereld die stevig in het bestaande persoonlijke DNA is verankerd.
+- **Spin-off** — een persoon, solo-identiteit, zijproject, voorloper, opvolger of andere logisch afgeleide entiteit rond een hoofdroute. Een spin-off is niet automatisch een ontbrekend Master-record en mag later zelf nieuwe deuren openen.
+- **Uitstapje** — een relationeel bewezen deur naar terrein dat nog niet of nauwelijks persoonlijk verankerd is.
+
+Deze labels beschrijven de positie in de actuele reis, niet de intrinsieke waarde van de muziek. Een spin-off of uitstapje kan later hoofdroute worden wanneer persoonlijk bewijs of nieuwe verbindingen dat rechtvaardigen.
+
+### 20.1 Overlap met de Master
+Een Music Map hoeft niet 100% met de Master Database te overlappen. Afwijkingen kunnen betekenisvolle spin-offs of randen van belangstelling zijn en worden daarom eerst geïnterpreteerd, niet automatisch als databasegat gerepareerd.
+
+### 20.2 Bruggen tussen eilanden
+Een uitstapje kan uitkomen bij een ander reeds bestaand persoonlijk muziekeiland. Dan markeert Explorer dit als **bekender terrein dan gedacht** / **brug naar bekend terrein**. Het pad blijft relationeel onderbouwd; het persoonlijke bewijs verklaart alleen dat de bestemming al bij Ben hoort.
+
+### 20.3 Reiscontext
+Dezelfde artiest kan in verschillende reizen een andere rol hebben. Explorer bewaart daarom naast stabiele feiten ook de actuele routecontext: waar kwamen we vandaan, waarom was deze deur zichtbaar, en was de bestemming op dat moment hoofdroute, spin-off, uitstapje of brug.
