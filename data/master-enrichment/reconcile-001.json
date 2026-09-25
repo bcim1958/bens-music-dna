@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "reconciliation": "RECONCILE-001",
+  "date": "2026-09-25",
+  "scope": "Music DNA master enrichment rounds ENRICH-001 through ENRICH-031",
+  "findings": {
+    "originalOpenCases": 411,
+    "currentStateSupported": 188,
+    "currentStateOpen": 223,
+    "arithmeticCheck": "188 + 223 = 411",
+    "round014": {
+      "declaredReviewedCount": 25,
+      "actualRecordCount": 25,
+      "status": "valid; earlier suspicion of 23 records disproved by direct file audit"
+    },
+    "rounds022to031": {
+      "allDeclared25": true,
+      "allActual25": true
+    },
+    "qualityRule": "supported requires identity-safe AllMusic Genre/Styles evidence; source-sparse is a separate terminal status and must never be counted as supported."
+  },
+  "nextClassification": {
+    "statuses": [
+      "supported",
+      "source-sparse",
+      "identity-unresolved",
+      "researchable"
+    ],
+    "procedure": [
+      "Reconstruct each case's latest status from immutable original 411 plus enrichment overlays.",
+      "Deduplicate repeated reviews by musicDnaId; later evidence supersedes earlier open status, while a supported promotion remains supported unless explicitly invalidated.",
+      "Classify repeatedly searched exact-identity cases with no qualifying AllMusic taxonomy as source-sparse.",
+      "Keep ambiguous same-name/composite-credit cases identity-unresolved.",
+      "Reserve researchable only for cases with a concrete unexhausted source lead.",
+      "Require the four status counts to sum exactly to 411 before closing reconciliation."
+    ]
+  },
+  "notes": [
+    "AllMusic itself distinguishes broad Genres from more specific Styles; project completion continues to require the accepted AllMusic taxonomy rather than substituting provider genres.",
+    "No enrichment count was changed in RECONCILE-001; this is an audit/control checkpoint before terminal classification."
+  ]
+}
