@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-029",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 1,
+  "method": "Non-duplicate second-pass batch of unresolved targeted cases. Strict AllMusic exact-identity taxonomy rule unchanged; repeated no-result searches strengthen source-sparse status.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:d621d26c8594ea9a5eb72e54",
+      "displayName": "The Ruckus",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Nothin' to Lose",
+        "album": "Nothing to Lose"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:3dd310aed416123926bd62fc",
+      "displayName": "The Starks",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "We Are Here",
+        "album": "Lockdown"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:52c4908378623c664435569e",
+      "displayName": "The Svengalis",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Sting In The Tale",
+        "album": "Sting In The Tale"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:8c4f48e1aea9cbc545460b34",
+      "displayName": "THE VALVES",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "NO MATTER",
+        "album": "新劇場版 頭文字[イニシャル]D Legend2 -闘走- Sound Collection"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:9e980f426d79ff905db7ed19",
+      "displayName": "The Wicked Jackals",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Ain't Gonna Change",
+        "album": "About Time"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:bd0f2efb5347522b9cae661a",
+      "displayName": "UNFORCED 5",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Save Me",
+        "album": "Save Me"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:0e28f86690c3bb234e8bcb5a",
+      "displayName": "Vandal",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Best Days Of Your Life",
+        "album": "Best Days Of Your Life"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:7e62cb146bb90f6dd1c815d0",
+      "displayName": "Vanity Insanity",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Drop Dead",
+        "album": "Piece of Her Cake"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:3f7ff39cf1f589363d9a88c8",
+      "displayName": "VELLEN",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Saturday",
+        "album": "Stone Rain"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:af5924e2abec7521f8b254bc",
+      "displayName": "Venus Mountains",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Down to the Rainbow",
+        "album": "Black Snake"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:14ac195635df2a3f43b870e6",
+      "displayName": "Villain Press",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "You've Got Another Thing Comin'",
+        "album": "You've Got Another Thing Comin'"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:608d7f07f25a97d81c0f0674",
+      "displayName": "Whiskey River Gun Club",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Whiskey Feelin'",
+        "album": "100 Proof"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:d5ab7ae10646db978d0c6e6f",
+      "displayName": "White Void",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Do. Not. Sleep.",
+        "album": "Anti"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact artist/release identity and accepted AllMusic genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:c1a010773193ec7c4fa8ff68",
+      "displayName": "Yellow Dog Conspiracy",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Enough Is Enough",
+        "album": "Confrontation"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:f3c7050d31fcd673ed6e9a6d",
+      "displayName": "Argos",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Real Rime",
+        "album": "In the Name of Tragedy"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:6f5e59838721e89c911d44ef",
+      "displayName": "666packs",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Back in Black",
+        "album": "Free Beer Here, Vol. 1"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:6865bf53ffa43c1e8be21ad2",
+      "displayName": "Aventyr",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Trouble",
+        "album": "Driven"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:a429f39859539d653332362f",
+      "displayName": "Beyond Your Reach",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "In The Red",
+        "album": "In The Red"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:dbd894c36526a06ee3d99c94",
+      "displayName": "Big Clyde",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Love Season",
+        "album": "Growing Cold"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:bfe5e5cd1dfb7bf036ea427e",
+      "displayName": "Big Guns",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rocking in the Freeworld",
+        "album": "Down but Not Out"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:55fb8cfb9a623b82ae11e45c",
+      "displayName": "BlackBeer",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Too Much Rock",
+        "album": "Trapped In The Sin City"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:7ef5dbaa95e6680fdc864c18",
+      "displayName": "Blakk Ledd",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Reach For The Sky",
+        "album": "FightFire With Fire"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:ea0151c4cf78b351118dffca",
+      "displayName": "Bolt",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Destiny",
+        "album": "Destiny"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:2fd65bf28aaffc45d4d573fd",
+      "displayName": "Bomber Alley",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "We Get By",
+        "album": "We Get By"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:29e402b6bf9e65ba91997bb7",
+      "displayName": "Bonedryver",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Cock in a Henhouse",
+        "album": "Valley of Bones"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search completed; no sufficiently complete identity-safe AllMusic taxonomy found. Retain as open/source-sparse candidate."
+    }
+  ]
+}
