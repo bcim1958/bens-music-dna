@@ -1149,6 +1149,22 @@ function genericDiscoveryQueue(baseId,state,limit,opts){
   }
   return out;
 }
+function ghostDiscoveryQueueRegressionSelfTest(){
+  const state=createDiscoveryState();
+  const q1=genericDiscoveryQueue("ghost",state,6);
+  const q2=genericDiscoveryQueue("ghost",createDiscoveryState(),6);
+  const counterparts=q1.map(discoveryCounterpartId);
+  const ids=q1.map(d=>d.id);
+  const voivod=q1.filter(d=>d.counterpart==="voivod");
+  const cases=[
+    {name:"Ghost queue has six fresh doors",pass:q1.length===6},
+    {name:"one visible discovery per counterpart",pass:counterparts.length===new Set(counterparts).size},
+    {name:"Voivod cluster contributes at most one door",pass:voivod.length<=1},
+    {name:"queue is deterministic for identical state",pass:ids.join("|")===q2.map(d=>d.id).join("|")},
+    {name:"new refreshed stock participates",pass:ids.some(id=>["disc-ghost-sabbath-beyond-doom","disc-ghost-mercyful-fate-foundation","disc-ghost-misfits-pop-darkness","disc-ghost-rammstein-scale-not-sound"].includes(id))}
+  ];
+  return {pass:cases.every(x=>x.pass),cases,queue:q1.map(d=>({id:d.id,counterpart:d.counterpart,kind:d.kind,score:d.selection.score,families:d.selection.families})),invariant:"Kies een interessante afslag is deterministic for the same unread state and never shows the same counterpart twice in one queue"};
+}
 function genericDiscoveryRegressionSelfTest(){
   const state=createDiscoveryState(),ids=["ghost","voivod","shiraz_lane"];
   const cases=ids.map(id=>{const q=genericDiscoveryQueue(id,state,6);const cp=q.map(discoveryCounterpartId);return {id,count:q.length,pass:cp.length===new Set(cp).size,counterparts:cp};});
@@ -1430,5 +1446,5 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerGenreDnaGroups,explorerGenreDnaGroup,explorerGenreTaxonomyRegressionSelfTest,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}});
+window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,ghostDiscoveryQueueRegressionSelfTest,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerGenreDnaGroups,explorerGenreDnaGroup,explorerGenreTaxonomyRegressionSelfTest,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}});
 })();
