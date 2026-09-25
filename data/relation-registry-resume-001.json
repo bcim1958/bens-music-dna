@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "phase": "REGISTRY-RESUME-001",
+  "date": "2026-09-25",
+  "status": "ready",
+  "sourceFoundation": {
+    "cases": 411,
+    "supported": 188,
+    "sourceSparse": 221,
+    "identityUnresolved": 2,
+    "researchable": 0,
+    "quarantined": [
+      "Green Machine",
+      "Pendragon"
+    ],
+    "integrity": "RECONCILE-004"
+  },
+  "canonicalBuild": {
+    "registry": "test/music-dna-relation-registry-v1.js",
+    "explorer": "test/music-dna-explorer-engine-v30.html",
+    "handoff": "docs/HANDOFF-2026-09-22-STOPSTAAT.md"
+  },
+  "resumeDecision": "Resume filling and proving the existing Relation Registry; do not redesign architecture and do not promote prototype to production.",
+  "firstHub": {
+    "entity": "Ghost",
+    "reason": "Existing deep Registry proof, user-preferred first relationship journey, and current source foundation is closed.",
+    "existingEvidenceCheck": {
+      "allMusic": [
+        "Ghost biography explicitly identifies Tobias Forge and ABBA influence on Prequelle",
+        "Ghost biography links Impera to Blue Öyster Cult, Judas Priest, Queen, Def Leppard and Tygers of Pan Tang",
+        "Ghost covered Metallica's Enter Sandman in 2021 and Iron Maiden's Phantom of the Opera in 2023"
+      ],
+      "status": "consistent-with-existing-registry"
+    }
+  },
+  "nextAction": "Run Ghost Registry completeness audit against the closed master/source foundation; add only missing evidence-backed atomic relations, then verify counterpart bundling and discovery stock before any new UI work."
+}
