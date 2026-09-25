@@ -425,6 +425,34 @@ const registry={
       title:"Een vergelijking is nog geen hoofd-invloed",
       summary:"Forge nuanceert de bekende Blue Öyster Cult-vergelijking: hij houdt van de band, maar noemt hun werk minder bepalend voor Ghost dan vaak wordt aangenomen.",
       relations:["rel-ghost-boc-foundation"],evidence:["voir_voivod_2019"],status:"unread"
+    },
+    {
+      id:"disc-ghost-sabbath-beyond-doom",
+      base:"ghost",counterpart:"black_sabbath",kind:"story-angle",
+      title:"Sabbath zit bij Ghost niet alleen in het zware",
+      summary:"Forge wijst juist op de rijkere, meer melodische Sabbath-kant rond Sabbath Bloody Sabbath en Sabotage; de invloed is breder dan doom en zwaarte.",
+      relations:["rel-ghost-black-sabbath-guitar"],evidence:["guitarworld_prequelle_2018"],status:"unread"
+    },
+    {
+      id:"disc-ghost-mercyful-fate-foundation",
+      base:"ghost",counterpart:"mercyful_fate",kind:"new-fact",
+      title:"Een vroege bouwsteen, geen kopieerhandleiding",
+      summary:"Mercyful Fate hoort aantoonbaar bij de platen waaruit de eerste Ghost-taal groeide; dat is preciezer dan Ghost simpelweg als Mercyful Fate-kloon te behandelen.",
+      relations:["rel-ghost-mercyful-fate-foundation"],evidence:["louder_opus_2021"],status:"unread"
+    },
+    {
+      id:"disc-ghost-misfits-pop-darkness",
+      base:"ghost",counterpart:"misfits",kind:"story-angle",
+      title:"Donkere verpakking, grote melodie",
+      summary:"Forge noemt Misfits als vroege bouwsteen voor de combinatie die Ghost later zelf uitvergroot: donkere beeldtaal met opvallend directe popmelodieën.",
+      relations:["rel-ghost-misfits-foundation"],evidence:["louder_opus_2021"],status:"unread"
+    },
+    {
+      id:"disc-ghost-rammstein-scale-not-sound",
+      base:"ghost",counterpart:"rammstein",kind:"nuance",
+      title:"Rammstein als routekaart, niet als klankmodel",
+      summary:"Forge gebruikt Rammstein als hedendaagse maatstaf voor thematiek, show en de stap van arena naar stadion, terwijl hij expliciet niet op hun geluid mikt.",
+      relations:["rel-ghost-rammstein-guidepost"],evidence:["louder_impera_2022"],status:"unread"
     }
   ],
   relations:[
