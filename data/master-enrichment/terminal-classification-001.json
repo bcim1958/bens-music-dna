@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "classification": "TERMINAL-CLASSIFICATION-005",
+  "classification": "TERMINAL-CLASSIFICATION-006",
   "date": "2026-09-25",
   "baseline": {
     "originalCases": 411,
@@ -14,17 +14,17 @@
     "researchable": "A concrete unexhausted source/profile lead remains."
   },
   "openClassification": {
-    "sourceSparse": 89,
+    "sourceSparse": 114,
     "identityUnresolved": 30,
-    "researchable": 106,
+    "researchable": 81,
     "provisional": true,
-    "explanation": "Fifth history pass: 25 more open cases have repeated documented research rounds without a later supported promotion."
+    "explanation": "Sixth history pass: 25 further open cases show repeated documented research without a later supported promotion."
   },
   "arithmetic": [
-    "186 + 89 + 30 + 106 = 411",
-    "89 + 30 + 106 = 225"
+    "186 + 114 + 30 + 81 = 411",
+    "114 + 30 + 81 = 225"
   ],
-  "nextPass": "Continue history classification in 25-case batches; new web research only for cases that remain genuinely unexhausted.",
+  "nextPass": "Continue history classification; 81 cases remain researchable.",
   "sourceSparseCaseNames": [
     "Bad Bones",
     "CobraKill",
@@ -114,6 +114,31 @@
     "The L.A. Maybe",
     "The Reconciled",
     "The Ruckus",
-    "The Starks"
+    "The Starks",
+    "The Svengalis",
+    "THE VALVES",
+    "The Wicked Jackals",
+    "UNFORCED 5",
+    "Vandal",
+    "Vanity Insanity",
+    "VELLEN",
+    "Venus Mountains",
+    "Villain Press",
+    "Whiskey River Gun Club",
+    "Yellow Dog Conspiracy",
+    "Amber Myst",
+    "Ammotrack",
+    "Any Miracle",
+    "Aron Scott Earthquake",
+    "Kill City",
+    "Killit",
+    "Krieger",
+    "Kung Fu Hotline",
+    "Kurator",
+    "Lake Domain",
+    "Lanzer",
+    "Mainline",
+    "Metalsteel",
+    "MILE"
   ]
 }
