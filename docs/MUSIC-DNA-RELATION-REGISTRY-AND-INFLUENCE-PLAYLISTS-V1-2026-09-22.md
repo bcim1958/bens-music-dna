@@ -443,3 +443,39 @@ Bij uitbreiding van een artiestwereld vragen we niet: *hebben we alles over deze
 > **Hebben we genoeg betrouwbare wegwijzers om interessante, gevarieerde en herhaalbare reizen te kunnen maken?**
 
 Daarmee blijft Explorer dynamisch en licht, terwijl Express precies de geselecteerde informatie bewaart die het waard is om als Music-DNA-uitgave te conserveren.
+
+
+## 18. Verstandig dwalen — plaatsen kost geen afslag
+
+DNA Explorer moet vrije ontdekking mogelijk maken zonder dat de gebruiker de context kwijtraakt. Daarom geldt als vaste UX-invariant:
+
+> **Plaatsen kost geen afslag.**
+
+Iedere betekenisvolle naam of term die tijdens een Explorer-reis verschijnt — artiest, persoon, band, album, track, label, genre, plaats, venue of gebeurtenis — moet op verzoek kort te plaatsen zijn zonder de actieve route te verlaten of de ontdekgeschiedenis als gekozen afslag te veranderen.
+
+### Drie interactieniveaus
+
+1. **Reis** — de actieve verhaallijn en breadcrumb blijven intact.
+2. **Plaatsen** — een compacte contextkaart verschijnt boven/in de huidige context en beantwoordt minimaal: wie/wat is dit, waarvan kan ik dit kennen, en waarom verschijnt dit hier?
+3. **Afslaan** — alleen een expliciete actie zoals **Neem deze afslag** verandert de Explorer-route.
+
+Een contextkaart is dus geen navigatie-event. Openen/sluiten ervan mag geen gekozen deur, read-route of routehistorie simuleren.
+
+### Compacte plaatsingskaart
+
+De standaardkaart bevat waar beschikbaar:
+- naam;
+- type/rol;
+- maximaal enkele herkenningsankers;
+- één korte contextzin waarom dit knooppunt in de huidige reis voorkomt;
+- acties **Terug naar mijn reis**, **Iets meer weten** en **Neem deze afslag**.
+
+De kaart gebruikt progressive/contextual disclosure: alleen de noodzakelijke oriëntatie wordt direct getoond; verdere verdieping blijft op verzoek beschikbaar. De hoofdvertelling hoeft daardoor niet met biografische bijzinnen te worden overladen.
+
+### Informatielevensduur
+
+De plaatsingskaart hoort bij de vlottende Explorer-laag. Zij mag dynamisch worden samengesteld uit entity-metadata, bewezen relaties en evidence. Er hoeft geen canonieke Nederlandse kaarttekst per entiteit te worden opgeslagen. De onderliggende identiteit, feiten, relaties en provenance blijven wel stabiel.
+
+### Ontwerpdoel
+
+**Verstandig dwalen = vrij kunnen afslaan, maar nooit hoeven verdwalen.**
