@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-031",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 0,
+  "method": "Second-pass/reconciliation batch across unresolved release, targeted, and composite cases. Existing supported promotions excluded; strict exact-identity AllMusic taxonomy rule retained.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:81b9d538a139e737174c1c3f",
+      "displayName": "Amber Myst",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "TEARDROP",
+        "album": "TEARDROP"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:a2d696fbfb6643b9c178c22e",
+      "displayName": "Any Miracle",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Joran",
+        "album": "Joran"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:3a45f7ed152c28efc8c4a234",
+      "displayName": "Aron Scott Earthquake",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "High Speed Love",
+        "album": "High Speed Love"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:ed0c9fca6d1c6c382ced42fe",
+      "displayName": "5 Star Hooker",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Anything Goes",
+        "album": "Anything Goes"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:079755a148ce46cc4eb72d49",
+      "displayName": "Airtrain",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Black Chapter",
+        "album": "Black Chapter"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:db5463439542f556887d2398",
+      "displayName": "Cocaine Cowboys",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dirty Hell",
+        "album": "All In Vain"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:133f94844291880fffae2ac5",
+      "displayName": "Crimson",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Two Way Mirror",
+        "album": "Black Carpet"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:a515ac021b0d9d306732c603",
+      "displayName": "Crystal Tears",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Beds Are Burning",
+        "album": "Hellmade"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:74964c9d22bf47182e7c6afd",
+      "displayName": "D'OR",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Howling",
+        "album": "The Howling"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:2f2a264fb2308c82a65ee255",
+      "displayName": "Deathlike Silence",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Trapped in the Night",
+        "album": "Saturday Night Evil"
+      },
+      "triageCategory": "targeted-research-needed",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:f8fc50bf22d62402da1aa841",
+      "displayName": "Daniel Licht;Jon Licht",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Honor for All - End Credits",
+        "album": "Dishonored: Original Game Soundtrack"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:33c3d3986444b1ca89b76cb1",
+      "displayName": "Cruel Juno;Fabio Lione",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "A Little Punctuation",
+        "album": "A Little Punctuation"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:0538fa42997ed4ed619075b2",
+      "displayName": "Bombay Dub Orchestra;Tom Bailey",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Monsoon Malabar - International Observer Remix",
+        "album": "3 Cities in Dub"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:a3dedca2816c291b2487e102",
+      "displayName": "Chris Jericho;Paul Gilbert;Bob Kulick;Mike Inez;Brent Fitz",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Evil That Men Do",
+        "album": "Numbers From The Beast: An All-Star Tribute To Iron Maiden"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:d0f2419567b61495477f582d",
+      "displayName": "Euge Valovirta;Nico Hartonen",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Feed the Fire",
+        "album": "Easy Does It"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:29d4df6efda0f7e9d592aa43",
+      "displayName": "Hollywood Roses;Axl Rose",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Anything Goes",
+        "album": "Monster Metal Hits"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:c2c5be4d8b1203ace971938b",
+      "displayName": "It's Alive;Max Martin",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Give Us a Place (feat. Max Martin)",
+        "album": "Earthquake Visions (feat. Max Martin)"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:7b16484dd4e8574cd1b6c196",
+      "displayName": "Jason Payne & The Black Leather Riders;Daisy Pepper",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Dark",
+        "album": "The Dark"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:3f6ed686998b1f392ea7954d",
+      "displayName": "Nerved;Thobbe Englund;MAD-A",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Takin´Its Toll",
+        "album": "Takin´Its Toll"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:4ca37b38e04504e2a3efe3e0",
+      "displayName": "Plainview;Kalie Wolfe",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "His & Hearse",
+        "album": "His & Hearse"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:374f609b8f5a2012655026de",
+      "displayName": "Shopan Entesari;Mike Slamer",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rough Rock",
+        "album": "Cutting Edge Rock"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:3c5d603b22af4c7c9abb6fb4",
+      "displayName": "Sophie Lloyd;Cole Rolland",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Lost (feat. Cole Rolland)",
+        "album": "Lost (feat. Cole Rolland)"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:d6025b653d59b9cd88c990f1",
+      "displayName": "Sophie Lloyd;Inglorious;Nathan James",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Do Or Die (feat. Nathan James)",
+        "album": "Imposter Syndrome"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:af245aa164f5dba3c64a432a",
+      "displayName": "Steven Tyler;Nuno Bettencourt",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Brown Sugar",
+        "album": "Muscle Shoals: Small Town, Big Sound"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    },
+    {
+      "musicDnaId": "mdna:mention:7fb198b84ebb907881402216",
+      "displayName": "Testarossa;Danny Worsnop",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Mother Lover",
+        "album": "Mother Lover"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Second-pass exact search/reconciliation found no sufficiently complete identity-safe AllMusic Genre/Styles evidence. Retain open; source-sparse candidate."
+    }
+  ]
+}
