@@ -309,4 +309,16 @@ Permanent loop:
 
 `discover → evaluate → admit → verify → enrich → master → Explorer → discover`.
 
-The current 624-artist AllMusic programme is therefore a one-time catch-up migration of the existing collection into the same pipeline that future discoveries should enter automatically. Once that migration is sufficiently complete, new relevant finds should be enriched at intake instead of accumulating another future repair backlog.
+The current 624-artist Genre-DNA programme is the first prioritized tranche of a master-wide catch-up migration, not the full migration. The definitive v3 classification overview contains 3,333 unique artist mentions and the full artist population must ultimately pass the same identity, provenance and direct-verification treatment model. Track-level recording/release/version provenance (about 3,480 current master music objects after reconciliation) is a separate but linked migration. Once the historical catch-up is sufficiently complete, new relevant finds should enter this same pipeline at intake instead of accumulating another future repair backlog.
+
+### Master-wide catch-up scope
+
+The permanent catch-up phases are:
+- **A — identity:** canonicalize/deduplicate the 3,333 artist mentions and resolve stable external identities where available;
+- **B — verified baseline:** retain and audit the 98 existing direct-AllMusic rows, including concrete profile identity and verification date;
+- **C — derived backlog:** directly verify the 2,862 rows currently marked `afgeleid volgens AllMusic-taxonomie`; derived labels remain research aids until promoted;
+- **D — insufficient metadata:** repair the 324 rows with insufficient source metadata;
+- **E — unclassified:** research the 49 currently unclassified artist mentions without guessing;
+- **F — music objects:** separately verify the approximately 3,480 track/music objects for recording identity, version, original date/release and provenance.
+
+A record is **100% treated** when it has reached an explicit terminal treatment state with provenance (verified, genuinely unknown/unresolved, or conflict requiring retained disagreement). It does **not** need to be equally information-rich. In particular, a fully treated smaller artist may legitimately have a compact record while a fully treated artist such as Rush may have a very rich record.
