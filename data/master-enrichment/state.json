@@ -121,5 +121,12 @@
     "composite-credit": 21
   },
   "lastReconciliation": "RECONCILE-002",
-  "reconciliationPath": "data/master-enrichment/reconcile-002.json"
+  "reconciliationPath": "data/master-enrichment/reconcile-002.json",
+  "terminalClassificationPath": "data/master-enrichment/terminal-classification-001.json",
+  "terminalClassificationCounts": {
+    "supported": 186,
+    "sourceSparse": 0,
+    "identityUnresolved": 30,
+    "researchable": 195
+  }
 }
