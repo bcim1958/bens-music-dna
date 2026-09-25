@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-016",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 5,
+  "method": "Second 25-case release-credit profile follow-up. Existing release identity reused; exact matching AllMusic profile taxonomy required for promotion.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:36d35558eb9e405f3e780081",
+      "displayName": "Cöntraband",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Mamarracho",
+        "album": "Mamarracho"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:06f60d074faa05292332bcee",
+      "displayName": "David Baechler",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Tu penses trop",
+        "album": "Tu penses trop"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:e2aa11e7a8f67dfbc80405e1",
+      "displayName": "Dead Posey",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Don't Stop the Devil",
+        "album": "Freak Show - EP"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile and accepted genre/style taxonomy found; Freak Show / Don't Stop the Devil identity consistent."
+    },
+    {
+      "musicDnaId": "mdna:mention:0ea9bd2d15167fcf203bfc5f",
+      "displayName": "Dead Union Social Theory",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Machine",
+        "album": "The Machine"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:84d84054957d6f61dd2bc230",
+      "displayName": "Deadland Ritual",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Down in Flames",
+        "album": "Down in Flames"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile and accepted genre/style taxonomy found; Down in Flames identity consistent."
+    },
+    {
+      "musicDnaId": "mdna:mention:3d2e31f21af953defd0bc40d",
+      "displayName": "Deaf Rat",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Fallen Angels",
+        "album": "Ban the Light"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:5e64ad30b738f4ab4315c405",
+      "displayName": "Devilskin",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Corrode",
+        "album": "Corrode"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile and accepted genre/style taxonomy found; Corrode identity consistent."
+    },
+    {
+      "musicDnaId": "mdna:mention:32f6361bfe58ec65f6b65dc6",
+      "displayName": "Dizzy Reed",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "This Don't Look Like Vegas",
+        "album": "Rock 'N Roll Ain't Easy"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile and accepted genre/style taxonomy found; solo release identity consistent."
+    },
+    {
+      "musicDnaId": "mdna:mention:8210d8cd90c8d9d48aa21826",
+      "displayName": "Dress the Dead",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "You Only Get off When I Cry",
+        "album": "You Only Get off When I Cry"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:29c986e6380ba32ff4297cd4",
+      "displayName": "Ei siis on siis",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hell Bells",
+        "album": "Letut ja rocka"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:05ea318ef77cabd3aa5eebb5",
+      "displayName": "Electric Temple",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "DEATH WISH",
+        "album": "HIGH VOLTAGE SALVATION"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:d7ee0dfb8423c1a3da9d6491",
+      "displayName": "Ember Falls",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Shut Down With Me",
+        "album": "Welcome To Ember Falls"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:0eebb1e3ec3dac58a1c895ca",
+      "displayName": "Eye Tea",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The King Is Dead",
+        "album": "The King Is Dead"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:2193c606a48955e184bb7edb",
+      "displayName": "Fate DeStroyed",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Crave",
+        "album": "Crave"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:b03196e8e5d280c6ca4a7438",
+      "displayName": "FEARLESS",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hillbilly for Life",
+        "album": "Hillbilly for Life"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:c13a00bc01b5a11fe55f03e8",
+      "displayName": "Formosa",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Her Mama",
+        "album": "Her Mama"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:9e9bfc4769ab5505411498ee",
+      "displayName": "Frank Klepacki",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Hell March",
+        "album": "Command & Conquer: The Ultimate Music Collection"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Matching AllMusic artist profile and accepted genre/style taxonomy found; Command & Conquer / Hell March identity consistent."
+    },
+    {
+      "musicDnaId": "mdna:mention:bd78bb285b35f10640399d51",
+      "displayName": "Freaky Things",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Nightmare",
+        "album": "Tales of the Lovesick Sleepwalkers"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:54888920f774ab46b68d601e",
+      "displayName": "Frontback",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dead Man on the Road",
+        "album": "Heart of a Lion"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:e11116a2e673a8a27eba66c5",
+      "displayName": "Game On",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Fox on the run",
+        "album": "Fox on the run"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:760fbc70ed95e7b7836424d0",
+      "displayName": "Hollowstar",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "All I Gotta Say",
+        "album": "Hollowstar"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:d39fe0ad602d229aaf53cb95",
+      "displayName": "Hvalross",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Ancient Gods",
+        "album": "Ancient Gods"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:76624946e19c61404dc0762c",
+      "displayName": "JC Crash (Johnny Crash)",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "She's no angel",
+        "album": "Electrified"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:b92ebb42ef8504492d9fb88a",
+      "displayName": "Johnny Deathshadow",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Devils Own",
+        "album": "The Devils Own"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    },
+    {
+      "musicDnaId": "mdna:mention:2d72abab6f48d7fd3e082a67",
+      "displayName": "Joy in Motion",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Wasting Away",
+        "album": "Wasting Away"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Existing release identity reused; artist-profile taxonomy follow-up checked. No complete accepted AllMusic genre/style match yet."
+    }
+  ]
+}
