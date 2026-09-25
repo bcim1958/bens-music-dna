@@ -4,15 +4,21 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 59,
-  "remainingOpenCount": 352,
+  "sourceSupportedCount": 78,
+  "remainingOpenCount": 333,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
     {
       "path": "data/master-enrichment/round-001.json",
       "sha256": "349a40dea9e20868ac983407e9df775b239c030a18c860579081ead7c309fd96"
+    },
+    {
+      "path": "data/master-enrichment/round-002.json",
+      "sha256": "d41e530e958fb45daed32f8c2e890afc4bcd763dcceb29c4d481f4520b42a9c4"
     }
   ],
-  "nextAction": "Research remaining open records. Prioritize profile candidates with missing styles/identity evidence, then artist or label sources. Do not guess AllMusic taxonomy from biography. Composite credits remain intact."
+  "nextAction": "Broaden to official artist and label sources for unresolved identities and metadata. Reuse recorded searches; avoid repeating unchanged AllMusic-only queries. Preserve provider-specific vs derived classifications. Nine track-identified profiles still miss genre or styles.",
+  "lastCompletedRound": "ENRICH-002",
+  "partialEvidenceOpenCount": 9
 }
