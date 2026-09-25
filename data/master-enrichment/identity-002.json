@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "workstream": "IDENTITY-RESOLUTION",
+  "batch": "IDENTITY-002",
+  "date": "2026-09-25",
+  "reviewedCount": 8,
+  "resolvedCount": 6,
+  "stillUnresolvedCount": 2,
+  "rule": "Resolve primary artist versus guest/remix/member/composite credit. Identity resolution does not itself create AllMusic source support.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:ba1f6b87e5bfd8f7c28729dc",
+      "displayName": "Sirenia; Mortemia",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Sirenia",
+      "note": "The Path To Decay on The 13th Floor is Sirenia; Mortemia is not the primary artist identity for this track."
+    },
+    {
+      "musicDnaId": "mdna:mention:48773c448a910570a32a20dd",
+      "displayName": "The dB's; Don Dixon",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "The dB's",
+      "note": "Don Dixon is a mix credit; primary recording identity remains The dB's."
+    },
+    {
+      "musicDnaId": "mdna:mention:194e602d9e7860dfb2f9b180",
+      "displayName": "Asrai; Sascha Paeth",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Asrai",
+      "note": "Sascha Paeth is a production/person credit; primary artist identity remains Asrai."
+    },
+    {
+      "musicDnaId": "mdna:mention:dd9115b05cdac1577e6a91a5",
+      "displayName": "Collide; Blue Stahli",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Collide",
+      "note": "Blue Stahli is the remixer credit; primary artist identity remains Collide."
+    },
+    {
+      "musicDnaId": "mdna:mention:310a272939f90bd422b5d7d5",
+      "displayName": "Beth Hart, Joe Bonamassa",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Beth Hart & Joe Bonamassa",
+      "note": "Joint primary collaboration on Don't Explain; preserve both primary artists."
+    },
+    {
+      "musicDnaId": "mdna:mention:6015818b0518900d1848020d",
+      "displayName": "Green Machine",
+      "identityStatus": "unresolved",
+      "normalizedIdentity": "Green Machine",
+      "note": "AllMusic contains multiple distinct Green Machine identities; Horse does not safely identify the Japanese band or another same-name act."
+    },
+    {
+      "musicDnaId": "mdna:mention:90f31eb99eeb1f63a66edcc4",
+      "displayName": "Pendragon",
+      "identityStatus": "unresolved",
+      "normalizedIdentity": "Pendragon",
+      "note": "Lost Reason / Pop: Korn evidence does not safely map to a specific Pendragon identity."
+    },
+    {
+      "musicDnaId": "mdna:mention:f8fc50bf22d62402da1aa841",
+      "displayName": "Daniel Licht;Jon Licht",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Daniel Licht & Jon Licht",
+      "note": "Honor for All is a two-person collaboration credit; preserve both identities rather than force one artist."
+    }
+  ]
+}
