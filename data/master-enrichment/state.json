@@ -4,8 +4,8 @@
   "baselineMigrationCount": 3333,
   "initialOpenCount": 411,
   "searchedCount": 411,
-  "sourceSupportedCount": 158,
-  "remainingOpenCount": 253,
+  "sourceSupportedCount": 161,
+  "remainingOpenCount": 250,
   "resolvedBaselineConflictCount": 1,
   "allEnrichmentComplete": false,
   "rounds": [
@@ -68,14 +68,17 @@
     },
     {
       "path": "data/master-enrichment/round-018.json"
+    },
+    {
+      "path": "data/master-enrichment/round-019.json"
     }
   ],
-  "nextAction": "Targeted-research-needed original queue has now been reviewed through its final six entries. Continue remaining metadata-incomplete/profile-credit and then release-credit cases in batches of 25; report only after each batch.",
-  "lastCompletedRound": "ENRICH-018",
+  "nextAction": "Original release-credit-found-profile-pending queue has now been reviewed through its final entries. Continue composite-credit and other still-open follow-ups in batches of 25.",
+  "lastCompletedRound": "ENRICH-019",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
   "openTriageCounts": {
-    "release-credit-found-profile-pending": 100,
+    "release-credit-found-profile-pending": 97,
     "identity-confirmed-metadata-incomplete": 9,
     "targeted-research-needed": 104,
     "profile-or-credit-review": 10,
