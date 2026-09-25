@@ -50,10 +50,13 @@
     },
     {
       "path": "data/master-enrichment/round-012.json"
+    },
+    {
+      "path": "data/master-enrichment/round-013.json"
     }
   ],
-  "nextAction": "Continue targeted-research-needed with the next batch of 25. Report only after 25 checked. Reuse evidence from ENRICH-010 through ENRICH-012 and avoid unchanged repeat searches.",
-  "lastCompletedRound": "ENRICH-012",
+  "nextAction": "Continue the remaining targeted-research-needed cases in the next batch; report only after 25 checked, or when that category is exhausted. Reuse ENRICH-010 through ENRICH-013 evidence and avoid unchanged repeat searches.",
+  "lastCompletedRound": "ENRICH-013",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 25,
   "openTriageCounts": {
