@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-009",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 4,
+  "newSupportedCount": 0,
+  "method": "Targeted identity and taxonomy follow-up for remaining profile-or-credit-review cases. Provider genre evidence retained but not substituted for missing strict AllMusic fields.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:736001faca59e88731c65f78",
+      "displayName": "Aria",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Встань, страх преодолей",
+        "album": "С кем ты?"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Aria official",
+          "url": "https://aria.ru/en/albums/nomernoy-albom/s-kem-ty",
+          "fact": "Official band site confirms С кем ты? as the 1986 Aria album and its lineup."
+        },
+        {
+          "provider": "Spotify",
+          "url": "https://open.spotify.com/track/3nln8HfjIADO62VMHPt3UT",
+          "fact": "Exact song is credited to Aria; identity is secure. Strict AllMusic genre/style fields remain unverified."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:6015818b0518900d1848020d",
+      "displayName": "Green Machine",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Horse",
+        "album": "Horse"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "url": "https://open.spotify.com/artist/2DzKySvozyCRj9EoNEbnyR",
+          "fact": "Exact artist profile includes Horse (2020); bio identifies Einbeck band founded 2011 and describes sound between hard rock and groove metal."
+        },
+        {
+          "provider": "Apple Music",
+          "url": "https://music.apple.com/it/album/horse-single/1516835574",
+          "fact": "Horse is credited to Green Machine and catalogued as Metal, 2020. Provider taxonomy is retained as attributed evidence only."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:2362fc3b34cbe7ffdb0cfe60",
+      "displayName": "Midnight City",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Escape Into the Night",
+        "album": "Midnight City - EP"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Amazon Music",
+          "url": "https://music.amazon.com/albums/B00937KSHG",
+          "fact": "Exact 2012 Midnight City EP lists Escape Into the Night as track 2."
+        },
+        {
+          "provider": "Apple Music",
+          "url": "https://music.apple.com/dz/artist/midnight-city/520905194",
+          "fact": "Matching profile links the EP and track; provider metadata says Russia, formed 2012, genre Jazz. Strict AllMusic taxonomy remains unverified."
+        }
+      ]
+    },
+    {
+      "musicDnaId": "mdna:mention:e614eeb9bf3ffeb4b810a590",
+      "displayName": "SHOUT",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "People of the Night",
+        "album": "People of the Night"
+      },
+      "triageCategory": "profile-or-credit-review",
+      "evidence": [
+        {
+          "provider": "Lightning Records",
+          "url": "https://lightningrecords.se/releases/shout-people-of-the-night/",
+          "fact": "Label confirms 2018 album, title track, lineup and catalog number LIR018."
+        },
+        {
+          "provider": "Spotify",
+          "url": "https://open.spotify.com/artist/6iWx9CjWORacnUfxRGM5Iv",
+          "fact": "Matching Swedish band profile and 2018 discography confirmed."
+        },
+        {
+          "provider": "Hard Rock Info",
+          "url": "https://hardrockinfo.com/reviews/2018/8.html",
+          "fact": "Contemporary review describes the album as hard rock/heavy metal with rock and roll influence; retained as attributed secondary taxonomy, not AllMusic completion."
+        }
+      ]
+    }
+  ]
+}
