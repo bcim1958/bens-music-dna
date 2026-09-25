@@ -389,3 +389,57 @@ De Relation Registry en Explorer mogen bronmetadata over releases niet gelijkste
 Maak waar relevant expliciet onderscheid tussen **werk/song**, **concrete opname/versie** en **release/verpakking**. Een remaster, heruitgave, compilatie, jubileumeditie of streamingrelease kan een latere bron-/releasedatum hebben zonder het oorspronkelijke releasejaar van de opname te veranderen. Een nieuwe live-opname, remake/rerecording of remix is daarentegen een eigen versie en kan terecht een later jaar dragen.
 
 Datumclaims die Explorer in verhalen, relaties of tijdlijnen gebruikt moeten herleidbaar blijven tot evidence. Bij betrouwbare bronconflicten wordt de datum niet stilzwijgend genormaliseerd; de status blijft **conflicterend** of **nog te onderzoeken** totdat de bedoelde versie voldoende is vastgesteld. Hiermee blijft ook historische volgorde in relatieverhalen reproduceerbaar.
+
+
+## 17. Informatielevensduur — Explorer vlottend, Express vast
+
+Music DNA maakt voortaan expliciet onderscheid tussen **vlottende informatie** en **bewaarinformatie**.
+
+### DNA Explorer — vlottende informatie
+
+Explorer is een reis door betrouwbare bronnen en relaties, geen archief van kant-en-klare artikelen.
+
+Duurzaam bewaren we alleen wat nodig is om die reis betrouwbaar opnieuw te kunnen maken:
+- identiteit van het knooppunt;
+- aantoonbare atomaire relaties;
+- korte feitelijke claims/context;
+- bronverwijzingen en provenance;
+- bewijsstatus/betrouwbaarheid;
+- lees-/ontdekstatus voor variatie en terugkeer.
+
+De Nederlandse vertelling die de gebruiker tijdens een Explorer-reis leest is **geen canoniek bewaartekstobject**. Zij mag bij een later bezoek opnieuw worden samengesteld uit dezelfde betrouwbare feiten en bronnen, afhankelijk van ingang, route, reeds geziene informatie en inmiddels beschikbare relaties.
+
+Vaste invariant:
+
+> **De feiten zijn stabiel; de vertelling mag bewegen.**
+
+Een bron kan daardoor bij verschillende routes een andere relevante selectie opleveren. Een bezoek via Ghost → Voïvod hoeft niet hetzelfde verhaal uit een interview te halen als een bezoek via een andere relatie. Explorer kopieert of archiveert geen volledige interviews en hoeft geen volledige vertalingen als eigen contentvoorraad op te slaan.
+
+### DNA Express — bewaarinformatie
+
+Express is juist een publicatie-/archieflaag. Zodra materiaal bewust tot een Express-editie wordt gemaakt, wordt die editie vastgelegd met ten minste:
+- definitieve tekst/selectie;
+- volgorde en redactionele vorm;
+- datum en editie-identiteit;
+- gebruikte bronverwijzingen;
+- gekozen beeldmateriaal en vormgeving waar van toepassing.
+
+Een gepubliceerde editie wordt achteraf niet stilzwijgend herschreven omdat Explorer later nieuwe informatie vindt. Nieuwe kennis kan aanleiding zijn voor een nieuwe editie of vervolgstuk.
+
+Een PDF is een geschikte duurzame archiefweergave van een afgeronde Express-editie, naast eventuele interactieve presentatie in de app.
+
+### Gevolg voor Relation Registry
+
+De Registry wordt **geen encyclopedische kopie van het web**. De externe bron blijft de bron. De Registry bewaart de compacte, controleerbare wegwijzers waarmee Music DNA betekenisvol kan navigeren:
+
+**entity → relation → evidence → context/toepassing**
+
+Nieuwe Registry-inhoud wordt daarom alleen toegevoegd wanneer die een betrouwbare verbinding, herbruikbaar feit of noodzakelijke provenance vastlegt. Lange broninhoud of eenmalige Explorer-proza hoort niet in de Registry.
+
+### Praktische bouwregel
+
+Bij uitbreiding van een artiestwereld vragen we niet: *hebben we alles over deze artiest opgeslagen?* maar:
+
+> **Hebben we genoeg betrouwbare wegwijzers om interessante, gevarieerde en herhaalbare reizen te kunnen maken?**
+
+Daarmee blijft Explorer dynamisch en licht, terwijl Express precies de geselecteerde informatie bewaart die het waard is om als Music-DNA-uitgave te conserveren.
