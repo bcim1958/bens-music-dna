@@ -111,7 +111,7 @@
     "round-032.json",
     "round-033.json"
   ],
-  "nextAction": "Normal AllMusic source-enrichment is closed. Any further work on the 33 identity-unresolved cases is a separate identity-resolution workstream and must not reopen completed source-sparse cases without new evidence.",
+  "nextAction": "Return to Relation Registry / DNA Explorer. Source enrichment and identity reconciliation are closed; Green Machine and Pendragon remain quarantined unless new exact identity evidence appears.",
   "lastCompletedRound": "ENRICH-033",
   "partialEvidenceOpenCount": 13,
   "latestRoundReviewedCount": 19,
@@ -127,27 +127,39 @@
   "terminalClassificationPath": "data/master-enrichment/terminal-classification-001.json",
   "terminalClassificationCounts": {
     "supported": 188,
-    "sourceSparse": 190,
-    "identityUnresolved": 33,
+    "sourceSparse": 221,
+    "identityUnresolved": 2,
     "researchable": 0
   },
   "integrityAudit": {
-    "audit": "RECONCILE-003",
+    "audit": "RECONCILE-004",
     "date": "2026-09-25",
     "result": "pass",
     "originalCases": 411,
     "terminalCounts": {
       "supported": 188,
-      "sourceSparse": 190,
-      "identityUnresolved": 33,
+      "sourceSparse": 221,
+      "identityUnresolved": 2,
       "researchable": 0
     },
     "checks": [
       "terminal arithmetic equals 411",
       "open arithmetic equals 223",
-      "sourceSparseCaseNames contains exactly 190 unique names",
       "researchable count is zero",
-      "latest enrichment round is ENRICH-033"
+      "33 identity cases reviewed",
+      "31 identity cases resolved",
+      "2 identity cases remain quarantined"
     ]
+  },
+  "identityResolution": {
+    "reviewed": 33,
+    "resolved": 31,
+    "unresolved": 2,
+    "unresolvedNames": [
+      "Green Machine",
+      "Pendragon"
+    ],
+    "lastBatch": "IDENTITY-002",
+    "reconciliation": "IDENTITY-RECONCILE-001"
   }
 }
