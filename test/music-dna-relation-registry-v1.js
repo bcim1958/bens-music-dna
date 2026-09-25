@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-25.50",
+  version:"2026-09-25.51",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -22,6 +22,9 @@ const registry={
     "801":{type:"artist",name:"801"},
     "talking_heads":{type:"artist",name:"Talking Heads"},
     "david_byrne":{type:"person",name:"David Byrne"},
+    "tina_weymouth":{type:"person",name:"Tina Weymouth"},
+    "chris_frantz":{type:"person",name:"Chris Frantz"},
+    "tom_tom_club":{type:"artist",name:"Tom Tom Club"},
     "radiohead":{type:"artist",name:"Radiohead"},
     "ed_obrien":{type:"person",name:"Ed O’Brien"},
     "jonny_greenwood":{type:"person",name:"Jonny Greenwood"},
@@ -275,6 +278,7 @@ const registry={
     soundonsound_spiral_scratch_2015:{provider:"Sound On Sound",kind:"independent-technical-history-with-interviews",title:"Classic Tracks: Buzzcocks Spiral Scratch",url:"https://www.soundonsound.com/techniques/classic-tracks-buzzcocks-spiral-scratch",publishedAt:"2015-12",checkedAt:"2026-09-25"},
     allmusic_magazine_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Magazine Biography",url:"https://www.allmusic.com/artist/magazine-mn0000229157",checkedAt:"2026-09-25"},
     allmusic_nile_rodgers_related:{provider:"AllMusic",kind:"editorial-related-artist",title:"Nile Rodgers — Related Artists",url:"https://www.allmusic.com/artist/nile-rodgers-mn0000411830/related",checkedAt:"2026-09-25"},
+    allmusic_tom_tom_club_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Tom Tom Club — Biography",url:"https://www.allmusic.com/artist/tom-tom-club-mn0000612279/biography",checkedAt:"2026-09-25"},
     allmusic_talking_heads_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Talking Heads — Biography",url:"https://www.allmusic.com/artist/talking-heads-mn0000131650/biography",checkedAt:"2026-09-25"},
     allmusic_801_bio:{provider:"AllMusic",kind:"editorial-biography",title:"801 — Biography",url:"https://www.allmusic.com/artist/801-mn0000577733/biography",checkedAt:"2026-09-25"},
     allmusic_phil_manzanera_bio:{provider:"AllMusic",kind:"editorial-biography",title:"Phil Manzanera — Biography",url:"https://www.allmusic.com/artist/phil-manzanera-mn0000845075/biography",checkedAt:"2026-09-25"},
@@ -370,6 +374,7 @@ const registry={
   },
   discoveries:[
     {id:"disc-magazine-shot-both-sides",base:"magazine",counterpart:"buzzcocks",kind:"continuity-door",title:"Een Buzzcocks-lied steekt de grens over",summary:"Magazine debuutsingle Shot by Both Sides was door Howard Devoto samen met zijn voormalige Buzzcocks-partner Pete Shelley geschreven.",relations:["rel-magazine-shot-both-sides-shelley"],evidence:["allmusic_magazine_bio"],status:"unread"},
+    {id:"disc-talking-heads-tomtom-spin",base:"talking_heads",counterpart:"tom_tom_club",kind:"spin-off-door",title:"De ritmesectie neemt een eigen afslag",summary:"Via Tina Weymouth en Chris Frantz loopt Talking Heads door naar hun zijproject Tom Tom Club — een echte spin-off in plaats van een genre-associatie.",relations:["rel-weymouth-talking-heads","rel-frantz-talking-heads","rel-weymouth-frantz-tomtom","rel-frantz-tomtom"],evidence:["allmusic_talking_heads_bio","allmusic_tom_tom_club_bio"],status:"unread"},
     {id:"disc-eno-talking-heads",base:"brian_eno",counterpart:"talking_heads",kind:"production-door",title:"Eno opent een deur naar Talking Heads",summary:"Via Eno’s productiewerk ontstaat een directe, feitelijke route naar Talking Heads; David Byrne verschijnt daar als volgende plaatsbare persoon.",relations:["rel-eno-talking-heads-production","rel-byrne-talking-heads"],evidence:["allmusic_talking_heads_bio"],status:"unread"},
     {id:"disc-manzanera-801-eno",base:"phil_manzanera",counterpart:"801",kind:"spin-off-door",title:"De kleine deur naast Roxy Music",summary:"Naast de voor de hand liggende Roxy Music-route leidt Manzanera naar het kortstondige 801, waar Brian Eno opnieuw in beeld komt.",relations:["rel-manzanera-801","rel-eno-801"],evidence:["allmusic_801_bio"],status:"unread"},
     {id:"disc-rodgers-manzanera-roxy-bridge",base:"nile_rodgers",counterpart:"phil_manzanera",kind:"known-terrain-bridge",title:"Via Manzanera terug naar art rock",summary:"Een invloedslijn naar Nile Rodgers opent via Phil Manzanera een aantoonbare deur naar Roxy Music en daarnaast Quiet Sun.",relations:["rel-manzanera-rodgers-influence","rel-manzanera-roxy-membership","rel-manzanera-quiet-sun"],evidence:["allmusic_nile_rodgers_related","allmusic_phil_manzanera_bio"],status:"unread"},
