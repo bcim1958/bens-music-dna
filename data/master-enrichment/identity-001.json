@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "workstream": "IDENTITY-RESOLUTION",
+  "batch": "IDENTITY-001",
+  "date": "2026-09-25",
+  "reviewedCount": 25,
+  "resolvedCount": 25,
+  "stillUnresolvedCount": 0,
+  "rule": "Resolve credit identity without treating a collaboration, remix credit, featured artist, or band-member bundle as a new standalone artist. This workstream does not by itself change AllMusic source-supported status.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:799b1423e2d19873bd980f0c",
+      "displayName": "Axl Rose;Izzy Stradlin",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Hollywood Rose / Izzy Stradlin",
+      "note": "AllMusic Axl Rose credits explicitly identify Killing Time as feat. Hollywood Rose / Izzy Stradlin."
+    },
+    {
+      "musicDnaId": "mdna:mention:0538fa42997ed4ed619075b2",
+      "displayName": "Bombay Dub Orchestra;Tom Bailey",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Bombay Dub Orchestra + Tom Bailey",
+      "note": "Remix/guest credit is structurally identifiable; retain as composite collaboration, not a standalone artist identity."
+    },
+    {
+      "musicDnaId": "mdna:mention:a3dedca2816c291b2487e102",
+      "displayName": "Chris Jericho;Paul Gilbert;Bob Kulick;Mike Inez;Brent Fitz",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "tribute-session composite",
+      "note": "Named all-star tribute performers; identity issue is composite credit rather than ambiguous artist identity."
+    },
+    {
+      "musicDnaId": "mdna:mention:33c3d3986444b1ca89b76cb1",
+      "displayName": "Cruel Juno;Fabio Lione",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Cruel Juno feat. Fabio Lione",
+      "note": "Feature relationship is explicit in the release identity."
+    },
+    {
+      "musicDnaId": "mdna:mention:f8fc50bf22d62402da1aa841",
+      "displayName": "Daniel Licht;Jon Licht",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Daniel Licht + Jon Licht",
+      "note": "Honor for All is a collaboration credit; preserve two-person composite rather than force one artist."
+    },
+    {
+      "musicDnaId": "mdna:mention:f43d73f27f9de90698933bf5",
+      "displayName": "Dexys Midnight Runners;Kevin Rowland",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Dexys Midnight Runners / Kevin Rowland",
+      "note": "AllMusic itself uses combined Dexys Midnight Runners / Kevin Rowland credit for Come On Eileen."
+    },
+    {
+      "musicDnaId": "mdna:mention:d0f2419567b61495477f582d",
+      "displayName": "Euge Valovirta;Nico Hartonen",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Euge Valovirta + Nico Hartonen",
+      "note": "Two named collaborators; no same-name ambiguity requiring a forced merge."
+    },
+    {
+      "musicDnaId": "mdna:mention:29d4df6efda0f7e9d592aa43",
+      "displayName": "Hollywood Roses;Axl Rose",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Hollywood Rose / Axl Rose",
+      "note": "Credit can be normalized to the Hollywood Rose/Axl Rose relationship."
+    },
+    {
+      "musicDnaId": "mdna:mention:c2c5be4d8b1203ace971938b",
+      "displayName": "It's Alive;Max Martin",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "It's Alive feat. Max Martin",
+      "note": "Feature credit explicitly identifies Max Martin's role."
+    },
+    {
+      "musicDnaId": "mdna:mention:7b16484dd4e8574cd1b6c196",
+      "displayName": "Jason Payne & The Black Leather Riders;Daisy Pepper",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Jason Payne & The Black Leather Riders + Daisy Pepper",
+      "note": "Collaboration credit; retain component identities."
+    },
+    {
+      "musicDnaId": "mdna:mention:15c63738567ea0f7d60",
+      "displayName": "M83;Cyann & Ben",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "M83 + Cyann & Ben",
+      "note": "Version/remix collaboration; component identities are explicit."
+    },
+    {
+      "musicDnaId": "mdna:mention:bdae23f51e949f448287adc2",
+      "displayName": "My Darkest Days;Chad Kroeger;Zakk Wylde",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "My Darkest Days feat. Chad Kroeger / Zakk Wylde",
+      "note": "Feature collaboration; component identities explicit."
+    },
+    {
+      "musicDnaId": "mdna:mention:3f6ed686998b1f392ea7954d",
+      "displayName": "Nerved;Thobbe Englund;MAD-A",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Nerved + Thobbe Englund + MAD-A",
+      "note": "Composite collaboration; component identities retained."
+    },
+    {
+      "musicDnaId": "mdna:mention:8f3c3377493c1e3f8ecf91a7",
+      "displayName": "Paul McCartney;Wings",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Paul McCartney & Wings",
+      "note": "AllMusic explicitly groups Jet under Paul McCartney / Paul McCartney & Wings / Wings."
+    },
+    {
+      "musicDnaId": "mdna:mention:4ca37b38e04504e2a3efe3e0",
+      "displayName": "Plainview;Kalie Wolfe",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Plainview + Kalie Wolfe",
+      "note": "Collaboration credit; retain component identities."
+    },
+    {
+      "musicDnaId": "mdna:mention:374f609b8f5a2012655026de",
+      "displayName": "Shopan Entesari;Mike Slamer",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Shopan Entesari + Mike Slamer",
+      "note": "Production-library collaboration; component identities explicit."
+    },
+    {
+      "musicDnaId": "mdna:mention:3c5d603b22af4c7c9abb6fb4",
+      "displayName": "Sophie Lloyd;Cole Rolland",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Sophie Lloyd feat. Cole Rolland",
+      "note": "Feature credit explicit in track title."
+    },
+    {
+      "musicDnaId": "mdna:mention:d6025b653d59b9cd88c990f1",
+      "displayName": "Sophie Lloyd;Inglorious;Nathan James",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Sophie Lloyd feat. Nathan James / Inglorious context",
+      "note": "Feature credit explicit; preserve component identities."
+    },
+    {
+      "musicDnaId": "mdna:mention:af245aa164f5dba3c64a432a",
+      "displayName": "Steven Tyler;Nuno Bettencourt",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Steven Tyler + Nuno Bettencourt",
+      "note": "Named collaboration; no identity ambiguity after component split."
+    },
+    {
+      "musicDnaId": "mdna:mention:6405855c14c38e88a35f6ea3",
+      "displayName": "Subvision;Tobias Forge;Gustav Holvfasth;Thomas Daun",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Subvision with member/person credits",
+      "note": "Band plus named-person credit bundle; preserve band identity and person links."
+    },
+    {
+      "musicDnaId": "mdna:mention:7fb198b84ebb907881402216",
+      "displayName": "Testarossa;Danny Worsnop",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Testarossa feat. Danny Worsnop",
+      "note": "Feature collaboration."
+    },
+    {
+      "musicDnaId": "mdna:mention:fd03bc1131e08274c3c157c4",
+      "displayName": "The Style Council;Jay Mark",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "The Style Council / Jay Mark remix credit",
+      "note": "Remix/person credit is separable from primary band identity."
+    },
+    {
+      "musicDnaId": "mdna:mention:730385f679594c4c5d481f72",
+      "displayName": "Vambier;Tobias Regner",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Vambier + Tobias Regner",
+      "note": "Collaboration credit; retain component identities."
+    },
+    {
+      "musicDnaId": "mdna:mention:22e186c69c2d2bbe53432e2a",
+      "displayName": "VIERSPURIG;Waldemar Sorychta",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "VIERSPURIG / Waldemar Sorychta mix credit",
+      "note": "Mixer/person credit separable from primary artist."
+    },
+    {
+      "musicDnaId": "mdna:mention:cc2a8bd7ede7f588f360e28b",
+      "displayName": "Eurythmics; Annie Lennox; Dave Stewart",
+      "identityStatus": "resolved",
+      "normalizedIdentity": "Eurythmics with members Annie Lennox / Dave Stewart",
+      "note": "Band plus member names; normalize to Eurythmics primary identity with member relations."
+    }
+  ]
+}
