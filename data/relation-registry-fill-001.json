@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "plan": "REGISTRY-FILL-001",
+  "date": "2026-09-25",
+  "status": "active",
+  "purpose": "Resume forward construction after source/identity cleanup. Fill proven Registry architecture instead of adding more architecture tests.",
+  "guardrails": [
+    "Use only evidence-backed, non-quarantined identities.",
+    "Green Machine and Pendragon are excluded from downstream factual derivation.",
+    "One visible counterpart; preserve atomic relations underneath.",
+    "Tour/listening/production/personnel/influence remain semantically distinct.",
+    "No production promotion yet."
+  ],
+  "currentWorlds": [
+    {
+      "id": "ghost",
+      "role": "reference depth world",
+      "status": "deep"
+    },
+    {
+      "id": "voivod",
+      "role": "heterogeneous network world",
+      "status": "deep"
+    },
+    {
+      "id": "shiraz_lane",
+      "role": "smaller/less-famous world",
+      "status": "well-researched",
+      "existingCounterparts": [
+        "per_aldeheim",
+        "lordi"
+      ],
+      "existingDiscoveries": 4
+    }
+  ],
+  "nextFillOrder": [
+    {
+      "id": "shiraz_lane",
+      "action": "Complete and regression-check its existing world first; expand only with already verified evidence."
+    },
+    {
+      "id": "buzzcocks",
+      "action": "Build first punk/generation-peer world from verified evidence."
+    },
+    {
+      "id": "stiff_little_fingers",
+      "action": "Build as adjacent punk/regional world when evidence gate passes."
+    }
+  ],
+  "reason": "This order deliberately tests breadth across a smaller modern hard-rock act and then the user's preferred less-obvious punk network, rather than continuing to deepen Ghost/Voivod."
+}
