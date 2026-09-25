@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "classification": "TERMINAL-CLASSIFICATION-003",
+  "classification": "TERMINAL-CLASSIFICATION-004",
   "date": "2026-09-25",
   "baseline": {
     "originalCases": 411,
@@ -14,17 +14,17 @@
     "researchable": "A concrete unexhausted source/profile lead remains."
   },
   "openClassification": {
-    "sourceSparse": 39,
+    "sourceSparse": 64,
     "identityUnresolved": 30,
-    "researchable": 156,
+    "researchable": 131,
     "provisional": true,
-    "explanation": "Third history pass: 25 additional targeted-research cases have two documented research rounds without a later supported promotion; they are removed from repeated active searching."
+    "explanation": "Fourth history pass: 25 additional open cases have repeated documented research rounds without a later supported promotion."
   },
   "arithmetic": [
-    "186 + 39 + 30 + 156 = 411",
-    "39 + 30 + 156 = 225"
+    "186 + 64 + 30 + 131 = 411",
+    "64 + 30 + 131 = 225"
   ],
-  "nextPass": "Continue in 25-case history batches through remaining researchable records, reserving new web research for genuinely unexhausted leads.",
+  "nextPass": "Continue 25-case history classification before initiating any new searches.",
   "sourceSparseCaseNames": [
     "Bad Bones",
     "CobraKill",
@@ -64,6 +64,31 @@
     "Four Trips Ahead",
     "Gog Magog",
     "Gwyllion",
-    "Hank Of Sweden"
+    "Hank Of Sweden",
+    "Hell's Addiction",
+    "Hellsbelles",
+    "Human Flesh",
+    "Just Off the Grid",
+    "Kult of the Skull God",
+    "Michael Garrett",
+    "Omega Tribe",
+    "Out of Gravity",
+    "Loanshark",
+    "Motordrunk",
+    "Nemo!",
+    "Noise4Nothing",
+    "Non Divide",
+    "Nowhere's Home",
+    "Primal Sinner",
+    "Ranter",
+    "Raphael Gazal",
+    "Ratchet Dolls",
+    "Rattlesquad",
+    "Re-Machined",
+    "Revolution Rebels",
+    "Rinderwahnsinn",
+    "Roadhouse Diet",
+    "S.O.R.M",
+    "Saint Renascence"
   ]
 }
