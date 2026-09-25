@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-25.43",
+  version:"2026-09-25.44",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -9,6 +9,8 @@ const registry={
     "sex_pistols":{type:"artist",name:"Sex Pistols"},
     "magazine":{type:"artist",name:"Magazine"},
     "john_mcgeoch":{type:"person",name:"John McGeoch"},
+    "johnny_marr":{type:"person",name:"Johnny Marr"},
+    "manic_street_preachers":{type:"artist",name:"Manic Street Preachers"},
     "siouxsie_banshees":{type:"artist",name:"Siouxsie and the Banshees"},
     "public_image_ltd":{type:"artist",name:"Public Image Ltd"},
     "new_hormones":{type:"label",name:"New Hormones"},
@@ -345,6 +347,7 @@ const registry={
   },
   discoveries:[
     {id:"disc-magazine-shot-both-sides",base:"magazine",counterpart:"buzzcocks",kind:"continuity-door",title:"Een Buzzcocks-lied steekt de grens over",summary:"Magazine debuutsingle Shot by Both Sides was door Howard Devoto samen met zijn voormalige Buzzcocks-partner Pete Shelley geschreven.",relations:["rel-magazine-shot-both-sides-shelley"],evidence:["allmusic_magazine_bio"],status:"unread"},
+    {id:"disc-mcgeoch-influence-branches",base:"john_mcgeoch",counterpart:"johnny_marr",kind:"influence-door",title:"McGeoch wordt zelf een wegwijzer",summary:"Johnny Marr noemt McGeoch een bepalende moderne gitarist; ook James Dean Bradfield koppelt zijn spel rechtstreeks aan The Holy Bible.",relations:["rel-mcgeoch-marr-influence","rel-mcgeoch-manic-street-preachers-influence"],evidence:["guardian_mcgeoch_2022"],status:"unread"},
     {id:"disc-magazine-mcgeoch-branches",base:"magazine",counterpart:"john_mcgeoch",kind:"network-door",title:"Via één gitarist naar nieuwe werelden",summary:"John McGeoch werd een bepalende Magazine-gitarist en liep later door naar Siouxsie and the Banshees en Public Image Ltd.",relations:["rel-magazine-mcgeoch-founder","rel-mcgeoch-banshees","rel-mcgeoch-pil"],evidence:["allmusic_magazine_bio","guardian_mcgeoch_2022"],status:"unread"},
     {id:"disc-buzzcocks-devoto-magazine",base:"buzzcocks",counterpart:"magazine",kind:"next-world",title:"Devoto stapt uit — en opent Magazine",summary:"Na Spiral Scratch verliet Howard Devoto Buzzcocks en vormde later Magazine: een natuurlijke Explorer-deur van vroege punk naar post-punk.",relations:["rel-buzzcocks-devoto-departure","rel-devoto-magazine-formation"],evidence:["soundonsound_spiral_scratch_2015","allmusic_buzzcocks_bio"],status:"unread"},
     {id:"disc-buzzcocks-new-hormones-diy",base:"buzzcocks",counterpart:"new_hormones",kind:"context-door",title:"Niet wachten op een platenmaatschappij",summary:"Spiral Scratch verscheen op het eigen New Hormones-label en werd een vroeg, invloedrijk voorbeeld van Britse punk-DIY.",relations:["rel-buzzcocks-new-hormones-spiral-scratch"],evidence:["guardian_buzzcocks_indie_2017","allmusic_buzzcocks_bio"],status:"unread"},
