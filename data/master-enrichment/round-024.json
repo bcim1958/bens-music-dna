@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-024",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 3,
+  "method": "Second-pass hard-case review of unresolved release-profile records; strict exact-identity AllMusic taxonomy required.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:eb578b7506fcb1c6f73a7bc1",
+      "displayName": "Rusty Nail",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Iris",
+        "album": "Foot To The Floor"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:affa5d033bd70ba2d1096789",
+      "displayName": "Sershen&Zaritskaya",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Separate Ways (Worlds Apart)",
+        "album": "Separate Ways (Worlds Apart)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:c57241ba9d5edfc0b90e1a2f",
+      "displayName": "Shereign",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dying Sun",
+        "album": "Ghost Diaries"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:0f77d9bc47098a79f6a5bbdd",
+      "displayName": "Skarlett Riot",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Gravity",
+        "album": "Gravity"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact artist profile and accepted AllMusic genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:9462803254653caf7f9f5616",
+      "displayName": "Soldato",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Holy Man",
+        "album": "Holy Man"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:4ad91d47d465db8475893fbb",
+      "displayName": "Sons Of Sounds",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Sound of Hope",
+        "album": "Seven"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:dbadb50fa289ad1a885fb699",
+      "displayName": "Sorrow & The Spire",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "My Misery Calling",
+        "album": "My Misery Calling"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:53b1a58b8fcb70887775978f",
+      "displayName": "Speed Parade",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Wicked Vikki",
+        "album": "Wicked Vikki"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:7f0d270710719ccfaba1419c",
+      "displayName": "StoneRowe",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Higher",
+        "album": "Higher"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:686a93c96f1a71782477bf73",
+      "displayName": "Stryken",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "One Way",
+        "album": "First Strike"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:91054c1db57aaa2d116f9dfc",
+      "displayName": "Sunday Riot Club",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "White Bronco",
+        "album": "L'OPÉRA"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:78c8caaf49be2b57f7a266e6",
+      "displayName": "Terratomorf",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Творец желаний",
+        "album": "Творец желаний"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:9e7cd9cb5a63a3591e16f4d8",
+      "displayName": "Tester",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "King of the World",
+        "album": "King of the World"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:5ea04c8d1ae36767f8c42d47",
+      "displayName": "The Ben Cote Band",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Miss Understood",
+        "album": "Miss Understood"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:04f47090a178807989cc7bbe",
+      "displayName": "The Blanko",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Electric Desire",
+        "album": "Stimulation Paradise"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:2398728dabd5dd3f9ed0ce15",
+      "displayName": "The Faithless",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Won't Stop Rockin'",
+        "album": "Fighting the Shadows"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:7450bd3351ec4cdca0d78cc4",
+      "displayName": "The Fallen State",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "For My Sorrow",
+        "album": "A Deadset Endeavour"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact artist profile and accepted AllMusic genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:5a4753f15c313936484bc2ba",
+      "displayName": "The Killbilly 5'ers",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Burn Down the Trailer Park",
+        "album": "Welcome to Town Now Get the Hell Out"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b4b86a4822d9fc47ed20c862",
+      "displayName": "Tomorrow Is Lost",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hideaway",
+        "album": "Hideaway"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:e69fe715cc5a8bbf4c6a478a",
+      "displayName": "Track of Rock",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Let's Rock",
+        "album": "Track of Rock"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:c0080afe6b52a94e97c85716",
+      "displayName": "TRUCKER DIABLO",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Party Like They Started the End of the World",
+        "album": "Rise Above the Noise"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass exact artist profile and accepted AllMusic genre/style taxonomy verified."
+    },
+    {
+      "musicDnaId": "mdna:mention:5bac459b3b8a7ff545087e46",
+      "displayName": "Two Places at Once",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Gloves",
+        "album": "Birdtraps"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:1aef19f36e99ee750067d336",
+      "displayName": "Tyranuke",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Join Me I Die",
+        "album": "Join Me I Die"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:dee642ccf3705a9e55e081d1",
+      "displayName": "Vixen X",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Die For You",
+        "album": "Die For You"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    },
+    {
+      "musicDnaId": "mdna:mention:a04b93db4d178acd87fbe4fd",
+      "displayName": "Voltedge",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "BYE BYE BYE",
+        "album": "BYE BYE BYE"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed; no sufficiently complete identity-safe AllMusic taxonomy found."
+    }
+  ]
+}
