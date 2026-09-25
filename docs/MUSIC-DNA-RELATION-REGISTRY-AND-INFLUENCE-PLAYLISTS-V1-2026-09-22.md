@@ -479,3 +479,27 @@ De plaatsingskaart hoort bij de vlottende Explorer-laag. Zij mag dynamisch worde
 ### Ontwerpdoel
 
 **Verstandig dwalen = vrij kunnen afslaan, maar nooit hoeven verdwalen.**
+
+
+## 19. Persoonlijk DNA-bewijs — de archipel naast het relatienetwerk
+
+DNA Explorer houdt twee bewijssoorten strikt uit elkaar.
+
+### 19.1 Persoonlijk bewijs
+Spotify/Exportify-bronnen zoals favorietenlijsten en Music Maps mogen aantonen dat een artiest, track of muzikaal gebied al deel uitmaakt van Bens bekende muziekwereld. De bronsoort blijft zichtbaar, omdat de bewijskracht verschilt:
+- `favorite`: expliciet door Ben bewaarde favoriet;
+- `music-map`: onderdeel van een rond een artiest opgebouwde persoonlijke muziekkaart;
+- latere beoordelingen zoals `RAAK`: nieuw persoonlijk smaakbewijs.
+
+Een vermelding in zo'n bron bewijst **geen relatie tussen twee artiesten**.
+
+### 19.2 Relationeel bewijs
+Relaties tussen artiesten/personen/werken blijven uitsluitend afkomstig uit daarvoor geschikte externe bronnen en de Relation Registry. Playlist-co-occurrence mag nooit automatisch worden vertaald naar invloed, samenwerking of verwantschap.
+
+### 19.3 Explorer-toepassing
+Explorer mag beide lagen combineren zonder ze te vermengen. Daardoor kan een relationeel bewezen afslag eindigen bij terrein dat uit persoonlijk bewijs al bekend blijkt. Dit kan worden getoond als bijvoorbeeld `bekender terrein dan gedacht` of `brug naar bekend terrein`.
+
+Afstand tot Bens DNA is daarom geen harde grens. Het persoonlijke landschap is een groeiende **archipel**: uitstapjes kunnen onbekend terrein openen, maar ook twee reeds bestaande eilanden met elkaar verbinden. Een nieuwe positieve beoordeling kan de bekende archipel uitbreiden.
+
+### 19.4 Eerste ingestroomde bronnen
+De eerste gecontroleerde bronset bestaat uit 13 Exportify Music Maps plus `Ben's Disco favorites`. Deze bestanden vormen een persoonlijke bewijslaag en worden niet rechtstreeks als relationele feiten in de Registry geïmporteerd.
