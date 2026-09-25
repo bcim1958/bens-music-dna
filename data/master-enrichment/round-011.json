@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-011",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 2,
+  "additionalEvidenceRecordCount": 6,
+  "method": "Second batch of 25 targeted-research-needed cases. AllMusic genres/styles required for promotion; exact identity checked first.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:e3186aa068f36f0a065f08b1",
+      "displayName": "Forsaken Throne",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "21 Guns",
+        "album": "The Metaphysical"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:650e29ad896f26736e08e473",
+      "displayName": "Four Trips Ahead",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Escape",
+        "album": "…And The Fire Within"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://fourtripsahead.com/",
+        "fact": "Official artist material confirms …And The Fire Within and The Escape; described as heavy rock/progressive hard rock. Strict AllMusic taxonomy not established."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:ae07dbbefa8a6bc28643c407",
+      "displayName": "Get Into Gear",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Live to Die",
+        "album": "Live to Die"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:e3e726a9249286f60dcff41b",
+      "displayName": "Goddo",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "So Walk On - Live",
+        "album": "Best Seat in the House (Live)"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://www.allmusic.com/artist/goddo-mn0000665658",
+        "fact": "AllMusic artist profile matches Canadian Goddo and supplies Pop/Rock with Hard Rock/Album Rock taxonomy; exact live album/track identity is consistent."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:29bb75f167eaec1b40625932",
+      "displayName": "Gog Magog",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Metal Medley",
+        "album": "Metal Medley"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:a4ea2697c476853d3807be86",
+      "displayName": "Gwyllion",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Rock Rolls On",
+        "album": "The Crimson Covers a Tribute to W.A.S.P."
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:84305117925e27dade094612",
+      "displayName": "Hank Of Sweden",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Love The Way It Burns",
+        "album": "Diamonds and Pearls"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:9c2b6ed2fa382e2d835b2195",
+      "displayName": "Hell's Addiction",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "What You Gonna Do?",
+        "album": "Broken"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://hellsaddiction.com/",
+        "fact": "Official band material confirms Broken-era identity and British hard-rock context; strict AllMusic taxonomy not established."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:7ffb1e4b291cf5304768cb9f",
+      "displayName": "Hellsbelles",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rock & Roll Damnation",
+        "album": "Highway To Hell: A Tribute To Bon Scott And Ac/dc"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:09e81144fb462e90ea5fd704",
+      "displayName": "Human Flesh",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Balls to the Wall",
+        "album": "Human Flesh"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:b6e325fd37b872a87a27c970",
+      "displayName": "Igel vs. Shark",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Don’t Steal My Thunder",
+        "album": "500,000 Miles"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:db82ef19c2194ed8c121b591",
+      "displayName": "Into the Zoid",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Albino",
+        "album": "Voidgazer"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:e1af373a4b203e8f81ed4b1f",
+      "displayName": "Just Off the Grid",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Shot Gun",
+        "album": "Dirty Little Ditties"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:361d99ac76e0fc112c385260",
+      "displayName": "King of Bones",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hold Me Closer",
+        "album": "Don't Mess with the King"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:1cc264241c47edcdb7a8fe5f",
+      "displayName": "Kult of the Skull God",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "One More Try",
+        "album": "The Great Magini"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:fd69739c782828b9ad3475da",
+      "displayName": "Lawlezz",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Losing Control",
+        "album": "Losing Control"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:44ee2abd32172e06c72eca64",
+      "displayName": "Lethal Dose",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hard to Swallow",
+        "album": "The Clan of Lethal Skulls"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:ba419f99d9d355a7afbdf0c7",
+      "displayName": "Loanshark",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Queen of Hearts",
+        "album": "The Queen of Hearts"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:3a303558a7f8ed871520f1e6",
+      "displayName": "Los Bastardos Finlandeses",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Acapulco",
+        "album": "Saved By Rock 'n' Roll"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://www.allmusic.com/artist/los-bastardos-finlandeses-mn0002109769",
+        "fact": "AllMusic artist identity found; release linkage reviewed, but taxonomy fields were not complete enough in this pass for promotion."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:d1239d1de05e23e57cc4b123",
+      "displayName": "Megasonic",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Does Your Mother Know",
+        "album": "Intense"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://www.metal-archives.com/bands/Megasonic/3540363228",
+        "fact": "Release/band identity corroborated as Belgian heavy/power metal; Does Your Mother Know is on Intense. Not substituted for strict AllMusic fields."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:0a9157de98bb22a661ef5d32",
+      "displayName": "Michael Garrett",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bad Ass",
+        "album": "We've Arrived"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:b99e3582c604070e292fbd16",
+      "displayName": "Motordrunk",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Motordrunk",
+        "album": "Motordrunk"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:b68c4d54f58607de93cd72f9",
+      "displayName": "Nemo!",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Way I Do",
+        "album": "Emotional Metastasis"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:8607227c6eeb3aa5c4357dcb",
+      "displayName": "NEMOPHILA",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Night Flight",
+        "album": "Night Flight"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "url": "https://www.allmusic.com/artist/nemophila-mn0004017250",
+        "fact": "AllMusic artist profile matches Japanese NEMOPHILA and supplies Pop/Rock with Heavy Metal/Hard Rock taxonomy; Night Flight identity is consistent."
+      }
+    },
+    {
+      "musicDnaId": "mdna:mention:d12d2f8bc620bd6be3e9befa",
+      "displayName": "Noise4Nothing",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Rain",
+        "album": "Point of No Return"
+      },
+      "triageCategory": "targeted-research-needed",
+      "reviewOutcome": {
+        "fact": "Targeted search completed; no sufficiently specific complete AllMusic genre/style profile accepted. Retain open; do not infer from same-name or release-only results."
+      }
+    }
+  ]
+}
