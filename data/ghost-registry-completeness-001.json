@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "audit": "GHOST-REGISTRY-COMPLETENESS-001",
+  "date": "2026-09-25",
+  "result": "pass-with-enrichment-candidates",
+  "registrySnapshot": {
+    "atomicGhostRelations": 19,
+    "relationIds": [
+      "rel-ghost-voivod-influence",
+      "rel-ghost-abba-influence",
+      "rel-ghost-abba-studio",
+      "rel-ghost-maiden-learning",
+      "rel-ghost-maiden-live",
+      "rel-ghost-maiden-phantom-cover",
+      "rel-ghost-metallica-learning",
+      "rel-ghost-metallica-polar",
+      "rel-ghost-metallica-live",
+      "rel-ghost-metallica-cover",
+      "rel-ghost-boc-foundation",
+      "rel-ghost-mercyful-fate-foundation",
+      "rel-ghost-misfits-foundation",
+      "rel-ghost-black-sabbath-guitar",
+      "rel-ghost-deep-purple-guitar",
+      "rel-ghost-led-zeppelin-guitar",
+      "rel-ghost-judas-priest-guitar",
+      "rel-ghost-rammstein-guidepost",
+      "rel-ghost-sweden"
+    ]
+  },
+  "checks": {
+    "counterpartBundling": "existing API relationshipBundles/explorerNode preserves one visible counterpart with atomic relations underneath",
+    "semanticSeparation": "tour/cover/influence/guidepost remain distinct relation types",
+    "sourceFoundation": "closed master enrichment retained; no source-sparse or quarantined identity was silently promoted"
+  },
+  "externalCrossCheck": [
+    {
+      "counterpart": "ABBA",
+      "finding": "independently corroborated as major songwriting influence; Forge also names I Have A Dream as a favorite",
+      "source": "Louder/Metal Hammer"
+    },
+    {
+      "counterpart": "Metallica",
+      "finding": "career/show ambition explicitly framed by Forge against 1980s Metallica",
+      "source": "Louder"
+    },
+    {
+      "counterpart": "Iron Maiden",
+      "finding": "Forge explicitly describes early formative listening; Phantomime later includes Phantom of the Opera",
+      "source": "Louder/Metal Hammer"
+    },
+    {
+      "counterpart": "Black Sabbath",
+      "finding": "Forge calls Sabbath a major inspiration, with specific emphasis on later classic albums",
+      "source": "Louder/Metal Hammer"
+    },
+    {
+      "counterpart": "Rammstein",
+      "finding": "Forge describes Rammstein as a guidepost for scale/themed stadium ambition rather than a sound model",
+      "source": "Louder"
+    }
+  ],
+  "enrichmentCandidates": [
+    {
+      "counterpart": "Black Sabbath",
+      "action": "add stronger direct interview evidence to existing relation; no new relation needed"
+    },
+    {
+      "counterpart": "ABBA",
+      "action": "attach additional independent interview evidence to existing influence relation; no duplicate relation"
+    },
+    {
+      "counterpart": "Iron Maiden",
+      "action": "attach direct formative-listening evidence to existing learning relation; no duplicate relation"
+    },
+    {
+      "counterpart": "Metallica",
+      "action": "attach explicit arena-ambition evidence to existing learning/ambition dossier if semantically appropriate; keep separate from tour and cover facts"
+    }
+  ],
+  "decision": "Registry structure is already substantially complete for Ghost. Enrich evidence on existing atomic relations rather than creating duplicate counterpart relations.",
+  "nextAction": "Add/attach the four evidence enrichments, run registry integrity/bundling self-tests, then refresh Ghost discovery stock."
+}
