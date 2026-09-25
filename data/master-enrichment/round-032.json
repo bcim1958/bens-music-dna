@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-032",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 1,
+  "newSourceSparseCount": 24,
+  "method": "Individual audit of first 25 remaining researchable cases. Exact identity plus qualifying AllMusic Genre/Styles evidence required for support; repeated exact search without qualifying taxonomy closes stable identities as source-sparse.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:061050ec110b3138b4874415",
+      "displayName": "Vonavibe",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Run n' Hide",
+        "album": "Bleed To Life"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:2ba3123542afc3346b9397de",
+      "displayName": "We're Wolves",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bodies",
+        "album": "Bodies"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:8efc2fbff3eff057c5817e2b",
+      "displayName": "Wirefall",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Soy Sauce",
+        "album": "Retina"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:1d2950711ca56b4801a51391",
+      "displayName": "Witche’s Brew",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Find A Way",
+        "album": "Chronicles of Electric Sorcery"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:a9b3a1e2e3d92aad6a80497e",
+      "displayName": "Wolf & Chain",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Phantom",
+        "album": "Phantom"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:b6e37b74213e710b4d32129b",
+      "displayName": "Year Gone",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Set My Soul",
+        "album": "Set My Soul"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:08f6e7771de6f04f6422c551",
+      "displayName": "Ashes to Omens",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Vultures",
+        "album": "Vultures"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:d52aab6fa58bfd9bdaf50aa6",
+      "displayName": "Atomic Drive",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Wires",
+        "album": "Wires"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:37b3a3073bb3a700b227f4ba",
+      "displayName": "Bad Actress",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Outta My Head - 2024 Version",
+        "album": "Outta My Head (2024 Version)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:e7f423f9dcf59775c7fd449a",
+      "displayName": "Black City",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Day My Hero Died",
+        "album": "Fire"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:962ba1bd710f5985549d4725",
+      "displayName": "Broken Peach",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Tainted Love",
+        "album": "Tainted Love"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:985ee2c78a4294e55afbd75a",
+      "displayName": "Bullseye",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Count On Me",
+        "album": "Count On Me"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:b96d0205c240e0eb583165e5",
+      "displayName": "Burn The Ballroom",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Kiss Me You Animal",
+        "album": "Kiss Me You Animal"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:b99bf53981de2e1657058ff1",
+      "displayName": "Camu",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bamboo Road",
+        "album": "Bamboo Road"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:dab42921e5e148eb99bb4b89",
+      "displayName": "CHRIS HICKS PROJECT",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dancing Girl",
+        "album": "Dancing Girl"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:3973cc01cf56052daaa019e3",
+      "displayName": "Cincinnati Sinners",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Its Only Rock n Roll",
+        "album": "Cincinnati Sinners 6Pak"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:34b484c92c391c1137a565ae",
+      "displayName": "Crystal Steel",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Crystalized",
+        "album": "Crystalized"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:a3b46e5c3cd982878e925698",
+      "displayName": "Cynical Sons",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Danger Xone",
+        "album": "Danger Xone"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:2193c606a48955e184bb7edb",
+      "displayName": "Fate DeStroyed",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Crave",
+        "album": "Crave"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "supported",
+      "note": "Exact-identity AllMusic artist evidence found (Pop/Rock), with AllMusic release evidence linking Fate DeStroyed as primary artist on a Heavy Metal release. Promote to supported."
+    },
+    {
+      "musicDnaId": "mdna:mention:e11116a2e673a8a27eba66c5",
+      "displayName": "Game On",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Fox on the run",
+        "album": "Fox on the run"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:d39fe0ad602d229aaf53cb95",
+      "displayName": "Hvalross",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Ancient Gods",
+        "album": "Ancient Gods"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:76624946e19c61404dc0762c",
+      "displayName": "JC Crash (Johnny Crash)",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "She's no angel",
+        "album": "Electrified"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:b92ebb42ef8504492d9fb88a",
+      "displayName": "Johnny Deathshadow",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Devils Own",
+        "album": "The Devils Own"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:2d72abab6f48d7fd3e082a67",
+      "displayName": "Joy in Motion",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Wasting Away",
+        "album": "Wasting Away"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    },
+    {
+      "musicDnaId": "mdna:mention:36d35558eb9e405f3e780081",
+      "displayName": "Cöntraband",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Mamarracho",
+        "album": "Mamarracho"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "terminalClassification": "source-sparse",
+      "note": "Individual exact-name/track/album AllMusic audit completed. No sufficiently complete identity-safe qualifying AllMusic Genre/Styles taxonomy found after prior release-credit search; classify source-sparse."
+    }
+  ]
+}
