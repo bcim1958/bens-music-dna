@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-020",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 6,
+  "method": "First 25 composite-credit cases. Credits are decomposed into primary recording artist plus guest/remixer/member roles; promotion requires verified primary identity and accepted AllMusic genre/style taxonomy.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:799b1423e2d19873bd980f0c",
+      "displayName": "Axl Rose;Izzy Stradlin",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Killing Time",
+        "album": "'80s Metal Essentials"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:0538fa42997ed4ed619075b2",
+      "displayName": "Bombay Dub Orchestra;Tom Bailey",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Monsoon Malabar - International Observer Remix",
+        "album": "3 Cities in Dub"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:a3dedca2816c291b2487e102",
+      "displayName": "Chris Jericho;Paul Gilbert;Bob Kulick;Mike Inez;Brent Fitz",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Evil That Men Do",
+        "album": "Numbers From The Beast: An All-Star Tribute To Iron Maiden"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:33c3d3986444b1ca89b76cb1",
+      "displayName": "Cruel Juno;Fabio Lione",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "A Little Punctuation",
+        "album": "A Little Punctuation"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:f8fc50bf22d62402da1aa841",
+      "displayName": "Daniel Licht;Jon Licht",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Honor for All - End Credits",
+        "album": "Dishonored: Original Game Soundtrack"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:f43d73f27f9de90698933bf5",
+      "displayName": "Dexys Midnight Runners;Kevin Rowland",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Come On Eileen - Single Edit",
+        "album": "Too-Rye-Ay (As It Should Have Sounded 2022)"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit decomposed; primary recording artist identity and accepted AllMusic genre/style taxonomy verified. Guest/remixer/member credit retained separately."
+    },
+    {
+      "musicDnaId": "mdna:mention:d0f2419567b61495477f582d",
+      "displayName": "Euge Valovirta;Nico Hartonen",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Feed the Fire",
+        "album": "Easy Does It"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:29d4df6efda0f7e9d592aa43",
+      "displayName": "Hollywood Roses;Axl Rose",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Anything Goes",
+        "album": "Monster Metal Hits"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:c2c5be4d8b1203ace971938b",
+      "displayName": "It's Alive;Max Martin",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Give Us a Place (feat. Max Martin)",
+        "album": "Earthquake Visions (feat. Max Martin)"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:7b16484dd4e8574cd1b6c196",
+      "displayName": "Jason Payne & The Black Leather Riders;Daisy Pepper",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "The Dark",
+        "album": "The Dark"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:15c63738567ed38868ff7d60",
+      "displayName": "M83;Cyann & Ben",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "In Church - Cyann & Ben Version",
+        "album": "Dead Cities, Red Seas & Lost Ghosts (Remixes & B-Sides)"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit decomposed; primary recording artist identity and accepted AllMusic genre/style taxonomy verified. Guest/remixer/member credit retained separately."
+    },
+    {
+      "musicDnaId": "mdna:mention:bdae23f51e949f448287adc2",
+      "displayName": "My Darkest Days;Chad Kroeger;Zakk Wylde",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Porn Star Dancing",
+        "album": "My Darkest Days"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit decomposed; primary recording artist identity and accepted AllMusic genre/style taxonomy verified. Guest/remixer/member credit retained separately."
+    },
+    {
+      "musicDnaId": "mdna:mention:3f6ed686998b1f392ea7954d",
+      "displayName": "Nerved;Thobbe Englund;MAD-A",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Takin´Its Toll",
+        "album": "Takin´Its Toll"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:8f3c3377493c1e3f8ecf91a7",
+      "displayName": "Paul McCartney;Wings",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Jet - 2010 Remaster",
+        "album": "Band On The Run"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit decomposed; primary recording artist identity and accepted AllMusic genre/style taxonomy verified. Guest/remixer/member credit retained separately."
+    },
+    {
+      "musicDnaId": "mdna:mention:4ca37b38e04504e2a3efe3e0",
+      "displayName": "Plainview;Kalie Wolfe",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "His & Hearse",
+        "album": "His & Hearse"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:374f609b8f5a2012655026de",
+      "displayName": "Shopan Entesari;Mike Slamer",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Rough Rock",
+        "album": "Cutting Edge Rock"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:3c5d603b22af4c7c9abb6fb4",
+      "displayName": "Sophie Lloyd;Cole Rolland",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Lost (feat. Cole Rolland)",
+        "album": "Lost (feat. Cole Rolland)"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:d6025b653d59b9cd88c990f1",
+      "displayName": "Sophie Lloyd;Inglorious;Nathan James",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Do Or Die (feat. Nathan James)",
+        "album": "Imposter Syndrome"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:af245aa164f5dba3c64a432a",
+      "displayName": "Steven Tyler;Nuno Bettencourt",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Brown Sugar",
+        "album": "Muscle Shoals: Small Town, Big Sound"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:6405855c14c38e88a35f6ea3",
+      "displayName": "Subvision;Tobias Forge;Gustav Holvfasth;Thomas Daun",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Love Is a Fire",
+        "album": "The Killing Floor EP"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:7fb198b84ebb907881402216",
+      "displayName": "Testarossa;Danny Worsnop",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Mother Lover",
+        "album": "Mother Lover"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:fd03bc1131e08274c3c157c4",
+      "displayName": "The Style Council;Jay Mark",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Shout To The Top - USA Remix",
+        "album": "Our Favourite Shop"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit decomposed; primary recording artist identity and accepted AllMusic genre/style taxonomy verified. Guest/remixer/member credit retained separately."
+    },
+    {
+      "musicDnaId": "mdna:mention:730385f679594c4c5d481f72",
+      "displayName": "Vambier;Tobias Regner",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Dead on Parade",
+        "album": "Prost Mortem"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:22e186c69c2d2bbe53432e2a",
+      "displayName": "VIERSPURIG;Waldemar Sorychta",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Das Rad - Waldemar Sorychta Mix",
+        "album": "Gebrochene Werke (2018)"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit reviewed and decomposed where possible; primary artist or collaborator taxonomy is not yet sufficiently complete for strict promotion."
+    },
+    {
+      "musicDnaId": "mdna:mention:cc2a8bd7ede7f588f360e28b",
+      "displayName": "Eurythmics; Annie Lennox; Dave Stewart",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Sweet Dreams (Are Made of This)",
+        "album": "Sweet Dreams (Are Made Of This)"
+      },
+      "triageCategory": "composite-credit",
+      "note": "Composite credit decomposed; primary recording artist identity and accepted AllMusic genre/style taxonomy verified. Guest/remixer/member credit retained separately."
+    }
+  ]
+}
