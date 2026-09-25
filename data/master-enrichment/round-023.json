@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "round": "ENRICH-023",
+  "checkedAt": "2026-09-25",
+  "reviewedCount": 25,
+  "newSupportedCount": 3,
+  "method": "Second-pass hard-case review of 25 unresolved release-profile records. Reused confirmed release identity; strict exact-artist AllMusic taxonomy required.",
+  "records": [
+    {
+      "musicDnaId": "mdna:mention:8f91b811033e02a21b9a5824",
+      "displayName": "Kill City",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bitter Smile",
+        "album": "Darker Days"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:43b3ee6cdb2ac7cbf74b3749",
+      "displayName": "Killit",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Shut It Down",
+        "album": "Shut It Down"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:4b60952f4cab8722dfe87bae",
+      "displayName": "Krieger",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Wenn du mich küsst",
+        "album": "Krieger"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:4fa6b573a2d5515637a003e3",
+      "displayName": "Kung Fu Hotline",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Moving to the City",
+        "album": "Moving to the City"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:d341254bca4136849cb05266",
+      "displayName": "Kurator",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Black from Ashes",
+        "album": "Black from Ashes"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:c35d6dae1465a76d11414c9c",
+      "displayName": "Lake Domain",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Heroes",
+        "album": "Heroes"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b64aca10c037a40757a43a91",
+      "displayName": "Lanzer",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Warriors of the World - Live",
+        "album": "Greatest Rock Hits Live"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:08cc0f1b1167b64bbdc52e77",
+      "displayName": "Laurenne / Louhimo",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "The Reckoning",
+        "album": "The Reckoning"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass identity-safe artist profile match accepted with AllMusic genre/style taxonomy."
+    },
+    {
+      "musicDnaId": "mdna:mention:da37328c6ae25485880f6c7b",
+      "displayName": "Liliac",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "The Trooper",
+        "album": "The Trooper"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass identity-safe artist profile match accepted with AllMusic genre/style taxonomy."
+    },
+    {
+      "musicDnaId": "mdna:mention:3cd646e7afff45cd4af0d4af",
+      "displayName": "Mainline",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "In Nothing We Trust - '22 Version",
+        "album": "In Nothing We Trust ('22 Version)"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:7014a7fbf8c47d6f4314b48e",
+      "displayName": "Metalsteel",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "This Is Your Revelation",
+        "album": "This Is Your Revelation"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b248d2c758542345928c37f2",
+      "displayName": "MILE",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Crying in Your Sleep",
+        "album": "The World in Focus"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:cbca3a65f13ccb60a55e8a36",
+      "displayName": "Misery's Smile",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "My Misery",
+        "album": "My Misery"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:95575e5bcd89af4b7f521ae4",
+      "displayName": "NitroDive",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Bad Blood",
+        "album": "Re-Evolution"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:bbb2221343983bd9a476cc6a",
+      "displayName": "Nova Nights",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Sweet Cigarella",
+        "album": "Sweet Cigarella"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b991604729c6632e280a4f14",
+      "displayName": "Overloaded",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Hellfire",
+        "album": "Overloaded"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:886546f7e70c885e83ab8670",
+      "displayName": "Oxidize",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Extremist",
+        "album": "Extremist"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:b698d9cba3caf554b2f1935f",
+      "displayName": "Panama Kinal",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Any Other Way",
+        "album": "Any Other Way"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:aa128e1c99bacfe1a00f37cd",
+      "displayName": "Pink Velvet Krush",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Nuthin' to Lose",
+        "album": "Blind in 2020"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:4447fde7c5349f84840ecd86",
+      "displayName": "Private Line",
+      "status": "supported",
+      "playlistIdentity": {
+        "track": "Dead Decade",
+        "album": "Dead Decade"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass identity-safe artist profile match accepted with AllMusic genre/style taxonomy."
+    },
+    {
+      "musicDnaId": "mdna:mention:bb32d1dd2dad1ef0e66fc46d",
+      "displayName": "RADIO TAPOK",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Монстр",
+        "album": "Монстр"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:62a95af7a49c06ee7a6aa4ce",
+      "displayName": "Redemption Switch",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Away",
+        "album": "Away"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:17aba44ca045017a33ff299a",
+      "displayName": "RedScool",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Stare",
+        "album": "Stare"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:f5bab0b81d04401057050266",
+      "displayName": "Rise of Utopia",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "They Try To Catch Me",
+        "album": "They Try To Catch Me"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    },
+    {
+      "musicDnaId": "mdna:mention:650000faa18062f8b5b529b4",
+      "displayName": "Roah",
+      "status": "open",
+      "playlistIdentity": {
+        "track": "Old Friend",
+        "album": "Old Friend"
+      },
+      "triageCategory": "release-credit-found-profile-pending",
+      "note": "Second-pass targeted search completed. Existing release identity remains, but no sufficiently complete identity-safe AllMusic taxonomy was found."
+    }
+  ]
+}
