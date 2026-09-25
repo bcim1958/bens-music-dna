@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "classification": "TERMINAL-CLASSIFICATION-009",
+  "classification": "TERMINAL-CLASSIFICATION-010",
   "date": "2026-09-25",
   "baseline": {
     "originalCases": 411,
-    "supported": 187,
-    "open": 224
+    "supported": 188,
+    "open": 223
   },
   "rules": {
     "supported": "Identity-safe qualifying AllMusic Genre/Styles evidence exists.",
@@ -14,17 +14,17 @@
     "researchable": "A concrete unexhausted source/profile lead remains."
   },
   "openClassification": {
-    "sourceSparse": 175,
-    "identityUnresolved": 30,
-    "researchable": 19,
+    "sourceSparse": 190,
+    "identityUnresolved": 33,
+    "researchable": 0,
     "provisional": true,
-    "explanation": "First individual audit pass of the remaining researchable set: 25 cases checked; Fate DeStroyed promoted to supported and 24 stable identities closed as source-sparse after exact AllMusic re-checks."
+    "explanation": "Final individual researchable audit completed: The System promoted to supported; 15 stable identities closed source-sparse; Green Machine, Pendragon, and Daniel Licht;Jon Licht closed identity-unresolved. No researchable cases remain."
   },
   "arithmetic": [
-    "187 + 175 + 30 + 19 = 411",
-    "175 + 30 + 19 = 224"
+    "188 + 190 + 33 + 0 = 411",
+    "190 + 33 + 0 = 223"
   ],
-  "nextPass": "Audit the remaining 19 researchable cases individually.",
+  "nextPass": "Run final 411-case integrity audit: exactly one terminal status per musicDnaId, no duplicates, exact arithmetic; then review identity-unresolved only as a separate identity-resolution workstream.",
   "sourceSparseCaseNames": [
     "Bad Bones",
     "CobraKill",
@@ -200,6 +200,21 @@
     "JC Crash (Johnny Crash)",
     "Johnny Deathshadow",
     "Joy in Motion",
-    "Cöntraband"
+    "Cöntraband",
+    "David Baechler",
+    "Dead Union Social Theory",
+    "Dress the Dead",
+    "Ei siis on siis",
+    "Electric Temple",
+    "Eye Tea",
+    "FEARLESS",
+    "5 Star Hooker",
+    "Airtrain",
+    "Aria",
+    "Midnight City",
+    "Nathan James",
+    "SHOUT",
+    "Supercharger",
+    "The Mood"
   ]
 }
