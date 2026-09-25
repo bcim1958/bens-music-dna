@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "classification": "TERMINAL-CLASSIFICATION-007",
+  "classification": "TERMINAL-CLASSIFICATION-008",
   "date": "2026-09-25",
   "baseline": {
     "originalCases": 411,
@@ -14,17 +14,17 @@
     "researchable": "A concrete unexhausted source/profile lead remains."
   },
   "openClassification": {
-    "sourceSparse": 139,
+    "sourceSparse": 151,
     "identityUnresolved": 30,
-    "researchable": 56,
+    "researchable": 44,
     "provisional": true,
-    "explanation": "Seventh history pass: 25 additional repeatedly researched open cases had no later supported promotion."
+    "explanation": "Eighth history pass: 12 additional repeatedly researched open cases had no later supported promotion. No further case was moved without documented repeat-history."
   },
   "arithmetic": [
-    "186 + 139 + 30 + 56 = 411",
-    "139 + 30 + 56 = 225"
+    "186 + 151 + 30 + 44 = 411",
+    "151 + 30 + 44 = 225"
   ],
-  "nextPass": "Continue history classification; 56 cases remain researchable.",
+  "nextPass": "Audit the remaining 44 individually; history-only automatic source-sparse classification is now near exhaustion.",
   "sourceSparseCaseNames": [
     "Bad Bones",
     "CobraKill",
@@ -164,6 +164,18 @@
     "Sunday Riot Club",
     "Terratomorf",
     "Tester",
-    "The Ben Cote Band"
+    "The Ben Cote Band",
+    "The Blanko",
+    "The Faithless",
+    "The Killbilly 5'ers",
+    "Tomorrow Is Lost",
+    "Track of Rock",
+    "Two Places at Once",
+    "Tyranuke",
+    "Vixen X",
+    "Voltedge",
+    "Apollo",
+    "Early Winters",
+    "Them Evils"
   ]
 }
