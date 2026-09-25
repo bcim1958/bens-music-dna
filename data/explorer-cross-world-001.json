@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "proof": "EXPLORER-CROSS-WORLD-001",
+  "date": "2026-09-25",
+  "result": "pass-by-structural-regression",
+  "route": [
+    "Ghost",
+    "Voïvod",
+    "Rush"
+  ],
+  "edges": [
+    {
+      "from": "Ghost",
+      "to": "Voïvod",
+      "relation": "rel-ghost-voivod-influence",
+      "meaning": "Tobias Forge describes Voïvod as a deep formative artistic influence on Ghost.",
+      "evidence": [
+        "voir_voivod_2019"
+      ]
+    },
+    {
+      "from": "Voïvod",
+      "to": "Rush",
+      "relation": "rel-voivod-rush-influence",
+      "meaning": "Away identifies Neil Peart/Rush as formative and Voïvod later toured with Rush.",
+      "evidence": [
+        "voivod_rush_kerrang"
+      ]
+    }
+  ],
+  "behaviourVerified": [
+    "Ghost exposes Voïvod once as a bundled evidenced counterpart.",
+    "Ghost discovery queue contains a Voïvod door.",
+    "Following that door enters the same Voïvod relation graph, not a separate navigation system.",
+    "Voïvod exposes Rush as a next evidenced world.",
+    "Breadcrumb is Ghost > Voïvod > Rush.",
+    "Back navigation returns Rush > Voïvod > Ghost without changing Registry facts."
+  ],
+  "boundary": "This is a structural/data regression proof in the prototype code, not a new iPhone visual validation and not production promotion.",
+  "nextAction": "Wire this proven route into the existing Engine 30 interaction surface or add an end-to-end UI proof without redesigning navigation."
+}
