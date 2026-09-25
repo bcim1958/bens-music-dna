@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "audit": "SHIRAZ-EXPLORER-FLOATING-001",
+  "date": "2026-09-25",
+  "result": "pass",
+  "principle": "Facts/evidence persist; Explorer prose is disposable/recomposable.",
+  "world": {
+    "base": "shiraz_lane",
+    "counterparts": [
+      "per_aldeheim",
+      "lordi"
+    ],
+    "atomicRelations": 5,
+    "discoverySeeds": 4,
+    "evidenceSources": [
+      "metaltalk_shiraz_jani_2025",
+      "soundi_shiraz_2026",
+      "grimm_shiraz_lordi_2016"
+    ]
+  },
+  "persistentLayer": {
+    "keep": [
+      "entity identity",
+      "5 atomic relations",
+      "evidence references/provenance",
+      "short factual claims",
+      "discovery/read state"
+    ],
+    "doNotRequire": [
+      "canonical Dutch Explorer article",
+      "full translated interview",
+      "fixed narrative order"
+    ]
+  },
+  "recompositionExamples": [
+    {
+      "entry": "Shiraz Lane → Per Aldeheim",
+      "possibleFocus": [
+        "producer + co-writer on In Vertigo",
+        "earlier Carnival Days collaboration"
+      ]
+    },
+    {
+      "entry": "Shiraz Lane → Lordi",
+      "possibleFocus": [
+        "2016 European support tour",
+        "earlier listening/fan context"
+      ],
+      "semanticGuard": "Tour relation and listening relation remain separate facts even when narrated together."
+    }
+  ],
+  "assessment": "Existing Shiraz Lane data is already sufficient to support a small dynamic Explorer world without storing a new permanent article. No extra artist research is required for this proof.",
+  "next": "Use the same lifecycle rule when expanding the network; add evidence-backed waypoints, not encyclopedic dossiers."
+}
