@@ -28,8 +28,9 @@
     "spotify": {
       "status": "pending",
       "playlistId": null,
-      "folderPlacement": "pending",
-      "folderName": null
+      "folderPlacement": "manual-pending",
+      "folderName": null,
+      "folderPlacementMode": "manual"
     },
     "express": {
       "status": "pending",
@@ -55,7 +56,7 @@
       "published manifest corrections require provenance",
       "Spotify success does not imply full week publication success",
       "current Saturday gift composition: 19 positive discoveries from the week plus 2 from positive reserve",
-      "published Spotify playlist must have confirmed placement in the expected folder: 💎 Ontdek DNA"
+      "Spotify folder placement is a manual post-publication step; intended destination is 💎 Ontdek DNA and may be confirmed afterward"
     ]
   },
   "provenance": {
