@@ -662,3 +662,58 @@ De bio-pijplijn mag Registry-feiten en bronprovenance hergebruiken, maar:
 - kan wél nieuw gevonden, aantoonbaar relationeel bewijs apart aan de Registry aanbieden.
 
 Zo ontstaat één brononderzoek dat meerdere toepassingen kan voeden zonder bewijssoorten te vermengen.
+
+
+## 24. Weekmanifest — één waarheid voor de zaterdagpublicatie
+
+Iedere definitieve Ontdek-DNA-week krijgt één canoniek **weekmanifest**. Dit manifest is de machineleesbare publicatiebron waaruit alle onderdelen van dezelfde weekeditie worden afgeleid.
+
+### 24.1 Waarom
+
+Playlist, DNA Express, Edelsteen(museum), weekmetadata en latere archivering mogen niet ieder hun eigen kopie van de weekselectie onderhouden. Eén bevroren manifest voorkomt verschillen zoals 21 tracks in Spotify maar een andere artiestenset in Express of een ontbrekende Edelsteenregistratie.
+
+### 24.2 Minimale inhoud
+
+Een manifest bevat minimaal:
+- schema-versie;
+- week-ID in vorm YYYY-WW;
+- publicatie-/freeze-status en relevante timestamps;
+- de definitieve geordende tracklijst;
+- per track: stabiele track-ID/Spotify-ID waar beschikbaar, artiest-ID/naam, tracktitel, origineel releasejaar/versiecontext waar vastgesteld;
+- herkomst van de selectie (week of positieve reserve) waar relevant;
+- unieke artiestenset, **afgeleid uit de tracks** en niet handmatig dubbel bijgehouden;
+- Express-bio-status per unieke artiest;
+- Edelsteenstatus en gekozen Edelsteen zodra bepaald;
+- publicatiedoelen/statussen, waaronder Spotify-playlist, Express-editie en Edelsteenmuseum.
+
+### 24.3 Afgeleide producten
+
+Het manifest is bron voor:
+1. **Spotify** — naam, volgorde en inhoud van de definitieve Ontdek-DNA-playlist;
+2. **DNA Express** — de unieke artiestenset voor *De artiesten van deze week*;
+3. **Edelsteen** — selectie/status van de weekedelsteen;
+4. **Edelsteenmuseum** — registratie van de gepubliceerde edelsteen;
+5. **archief/controle** — reproduceerbare vastlegging van wat die week werkelijk is gepubliceerd.
+
+### 24.4 Integriteitsregels
+
+- De tracklijst is de primaire inhoudswaarheid.
+- Unieke artiesten worden programmatisch uit die tracklijst afgeleid.
+- Express mag geen artiest publiceren die niet uit het manifest of een expliciet gemarkeerde redactionele uitzondering komt.
+- Een gekozen Edelsteen moet verwijzen naar een track/artiest uit dezelfde weekeditie, tenzij een toekomstige regel expliciet anders bepaalt.
+- Publicatiestatussen zijn afzonderlijk zichtbaar; een geslaagde Spotify-publicatie mag dus niet verhullen dat Express of Edelsteenmuseum nog ontbreekt.
+- Een eenmaal als gepubliceerd bevroren manifest wordt niet stilzwijgend herschreven; correcties krijgen provenance.
+
+### 24.5 Publicatiepoort
+
+Een week mag technisch als playlist zijn afgeleverd terwijl andere onderdelen nog niet gereed zijn, maar de **volledige weekpublicatie** is pas compleet wanneer de verplichte doelen groen zijn. Voor de huidige opzet zijn dat minimaal:
+- Spotify-playlist;
+- DNA Express — *De artiesten van deze week*;
+- Edelsteen gekozen/gepresenteerd;
+- Edelsteenmuseum geregistreerd.
+
+Hierdoor wordt een ontbrekend Express-hoofdstuk of Edelsteen-element een zichtbare onvolledige publicatiestatus in plaats van een stil gemis.
+
+### 24.6 W39 als overgangsgeval
+
+W39 is vóór deze manifestregel gepubliceerd en geldt daarom als migratie-/herstelgeval. De canonieke 21 tracks worden niet uit geheugen of screenshots gegokt. Zodra de werkelijke definitieve W39-selectie machineleesbaar beschikbaar is, kan daarvan een retrospectief manifest worden gemaakt met provenance **migrated-from-pre-manifest-publication**.
