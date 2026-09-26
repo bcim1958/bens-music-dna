@@ -572,3 +572,43 @@ Zodra een functie is bewezen, hoort de normale uitbreiding te ontstaan uit de wa
 **bekend anker → evidence-backed deuren → nieuwheidsinschatting → interessante verrassing → vrijwillige afslag → nieuwe evidence-backed deuren**
 
 Daarmee verschuift de kern van een vooraf ingevulde muziekenyclopedie naar een echte ontdekmachine.
+
+
+## 22. DNA Express — vaste rubriek: de artiesten van deze week
+
+Iedere gepubliceerde Ontdek-DNA-week krijgt gelijktijdig in DNA Express een vaste naslagrubriek met korte biografieën van **alle artiesten/bands die op de gepubliceerde playlist voorkomen**.
+
+Aanleiding is het natuurlijke luistermoment: al bij de eerste tonen van een nieuwe weeklijst kan de behoefte ontstaan om onmiddellijk te weten wie de makers zijn. Express moet die nieuwsgierigheid op hetzelfde publicatiemoment kunnen opvangen, zonder dat de gebruiker per artiest elders hoeft te zoeken.
+
+### 22.1 Publicatie-eenheid
+
+De playlist en deze Express-rubriek horen bij dezelfde weekeditie. Wanneer Ontdek DNA #YYYY-WW wordt gepubliceerd, moet de bijbehorende Express-editie dus ook een hoofdstuk **De artiesten van deze week** kunnen openen.
+
+De rubriek bevat iedere unieke artiest/band uit de definitieve playlist één keer, ook wanneer later meerdere tracks van dezelfde artiest in een editie zouden voorkomen.
+
+### 22.2 Inhoud per bio
+
+De bio blijft compact genoeg om alle artiesten prettig achter elkaar te kunnen lezen, maar is binnen die ruimte zo volledig mogelijk. Waar betrouwbaar beschikbaar bevat zij minimaal:
+- herkomst en oprichtings-/startperiode;
+- belangrijkste leden of bezetting die nodig is om de artiest te plaatsen;
+- kern van stijl en muzikale ontwikkeling;
+- belangrijke albums, releases of loopbaanmomenten;
+- relevante personeelswisselingen, voorgangers/opvolgers of zijprojecten wanneer die werkelijk helpen bij het plaatsen;
+- actuele/historische status;
+- waarom juist deze artiest in de betreffende Ontdek-DNA-week staat, zonder daarvan een onbewezen biografisch feit te maken.
+
+### 22.3 Bronnen en informatielevensduur
+
+De bio wordt samengesteld uit betrouwbare externe bronnen en reeds bewezen Registry-feiten. Persoonlijk DNA mag de context **waarom hier** verklaren, maar bewijst geen biografische feiten.
+
+In tegenstelling tot Explorer is de gepubliceerde Express-bio **bewaarinformatie**: de definitieve tekst, weekeditie en bronverwijzingen worden met de editie vastgelegd. Latere kennis herschrijft een oude editie niet stilzwijgend.
+
+### 22.4 Geen encyclopedische ballast
+
+**Zo volledig mogelijk** betekent niet: zo lang mogelijk. Het doel is dat Ben na een korte bio werkelijk weet **wie deze band/artiest is, waar hij vandaan komt, wat hem muzikaal kenmerkt en welke plaats hij in de muziekgeschiedenis of eigen scene inneemt**.
+
+Verdieping, verrassende relaties en zijpaden blijven terrein van DNA Explorer. Express geeft hier het stevige, leesbare portret.
+
+### 22.5 Vaste Express-rubriek
+
+**De artiesten van deze week** is vanaf nu een vaste inhoudscategorie van DNA Express en geen incidenteel extraatje. Zij wordt ontworpen als structureel onderdeel van iedere Ontdek-DNA-weekpublicatie.
