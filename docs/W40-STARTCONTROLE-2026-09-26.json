@@ -142,5 +142,19 @@
       "w39SpecialCaseAdded": false
     },
     "note": "Structural inspection only. No Spotify mutation and no W40 playlist creation. Real execution remains blocked until Ben's definitive 21-track 19+2 selection is frozen."
+  },
+  "saturdayRuntimeRewriteAudit": {
+    "checkedAt": "2026-09-26",
+    "sourceHead": "cf6c2f41844d7de9b408a64fe00965b60dc05fff",
+    "result": "pass-structural-rewrite-audit",
+    "assertions": {
+      "finalNewPlaylistPathReturnsCompletionPromise": true,
+      "artworkFunctionInjected": true,
+      "scopedArtworkTokenExplicit": true,
+      "completeWrittenOnlyAfterArtworkUploadReturns": true,
+      "multiFileW40CandidatesSupported": true,
+      "artworkOAuthScopeRequested": true
+    },
+    "note": "Compared current v3 rewrite anchors against canonical v2 source. Five literal replacements are intentionally handled outside the generic string-replacement audit (three escaped script-tag rewrites and two manifest-only substitutions after v2 is loaded). No Spotify mutation performed."
   }
 }
