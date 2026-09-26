@@ -59,7 +59,8 @@ function validate(manifest){
   };
   const complete=Object.values(target).every(Boolean);
   if((manifest.integrity||{}).complete!==complete) errors.push("integrity.complete does not match required publication targets");
-  const gemCheck=gemstoneIntegrity(manifest);\n  errors.push(...gemCheck.errors);\n  return {pass:errors.length===0,errors,warnings,publicationTargets:target,complete,uniqueArtistCount:derived.length,trackCount:(manifest.tracks||[]).length};
+  const folderCheck=spotifyFolderIntegrity(manifest);\n  errors.push(...folderCheck.errors);\n  const gemCheck=gemstoneIntegrity(manifest);\n  errors.push(...gemCheck.errors);
+  return {pass:errors.length===0,errors,warnings,publicationTargets:target,complete,uniqueArtistCount:derived.length,trackCount:(manifest.tracks||[]).length};
 }
 
 function expressBioQueue(manifest){
@@ -99,6 +100,21 @@ function expressBioQueueSelfTest(){
   const x=m.express.artistBios.artists.find(a=>a.id==="x"),y=m.express.artistBios.artists.find(a=>a.id==="y");
   return {pass:m.express.artistBios.artists.length===2&&x.status==="ready"&&y.status==="needs-research"&&y.missing.includes("members"),
     cases:{uniqueBioJobs:m.express.artistBios.artists.length,xStatus:x.status,yStatus:y.status,yMissing:y.missing}};
+}
+function spotifyFolderIntegrity(manifest){
+  const p=((manifest||{}).publication||{}).spotify||{},rules=(manifest||{}).selectionRules||{},errors=[];
+  const expected=rules.expectedSpotifyFolder||null;
+  if(p.status==="published"){
+    if(p.folderPlacement!=="confirmed") errors.push("Spotify playlist folder placement is not confirmed");
+    if(expected&&p.folderName!==expected) errors.push("Spotify playlist is in "+String(p.folderName||"no recorded folder")+"; expected "+expected);
+  }
+  return {pass:errors.length===0,errors,expectedFolder:expected,actualFolder:p.folderName||null};
+}
+function spotifyFolderIntegritySelfTest(){
+  const base={selectionRules:{expectedSpotifyFolder:"💎 Ontdek DNA"}};
+  const good=spotifyFolderIntegrity({...base,publication:{spotify:{status:"published",folderPlacement:"confirmed",folderName:"💎 Ontdek DNA"}}});
+  const bad=spotifyFolderIntegrity({...base,publication:{spotify:{status:"published",folderPlacement:"confirmed",folderName:"Library"}}});
+  return {pass:good.pass&&!bad.pass};
 }
 function gemstoneIntegrity(manifest){
   const m=derive(manifest),g=m.gemstone||{},tracks=m.tracks||[],errors=[];
@@ -230,7 +246,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
