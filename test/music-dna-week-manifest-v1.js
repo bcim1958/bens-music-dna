@@ -100,6 +100,38 @@ function expressBioQueueSelfTest(){
   return {pass:m.express.artistBios.artists.length===2&&x.status==="ready"&&y.status==="needs-research"&&y.missing.includes("members"),
     cases:{uniqueBioJobs:m.express.artistBios.artists.length,xStatus:x.status,yStatus:y.status,yMissing:y.missing}};
 }
+function weeklyPublicationGate(manifest){
+  const report=validate(manifest);
+  const bios=((((manifest||{}).express||{}).artistBios||{}).artists)||[];
+  const bioCounts=bios.reduce((a,b)=>(a[b.status]=(a[b.status]||0)+1,a),{});
+  const expectedArtists=((manifest||{}).selectionRules||{}).expectedUniqueArtistCount;
+  const bioSetComplete=Number.isInteger(expectedArtists)?bios.length===expectedArtists:bios.length===report.uniqueArtistCount;
+  const biosReady=bioSetComplete&&bios.length>0&&bios.every(b=>b.status==="ready"||b.status==="published");
+  const blockers=[];
+  if(!report.pass) blockers.push(...report.errors);
+  if(!bioSetComplete) blockers.push("Express bio job count does not match unique artist count");
+  if(bioSetComplete&&!biosReady) blockers.push("one or more Express bios are not ready");
+  const p=report.publicationTargets||{};
+  if(!p.spotify) blockers.push("Spotify publication or folder placement incomplete");
+  if(!p.express) blockers.push("DNA Express publication incomplete");
+  if(!p.gemstone) blockers.push("weekly gemstone not published/presented");
+  if(!p.gemstoneMuseum) blockers.push("gemstone museum registration incomplete");
+  return {complete:blockers.length===0,blockers,trackCount:report.trackCount,uniqueArtistCount:report.uniqueArtistCount,bioCount:bios.length,bioCounts,targets:p};
+}
+function weeklyPublicationGateSelfTest(){
+  let m={weekId:"2026-40",selectionRules:{oneTrackPerArtist:true,expectedTrackCount:2,expectedUniqueArtistCount:2,allowedSelectionSources:["week-positive","positive-reserve"],expectedWeekPositiveCount:1,expectedPositiveReserveCount:1},
+    tracks:[{spotifyTrackId:"a",title:"One",artistId:"x",artistName:"X",selectionSource:"week-positive"},{spotifyTrackId:"b",title:"Two",artistId:"y",artistName:"Y",selectionSource:"positive-reserve"}],
+    derived:{uniqueArtists:[{id:"x",name:"X",firstTrackIndex:0},{id:"y",name:"Y",firstTrackIndex:1}]},
+    express:{artistBios:{artists:[{id:"x",status:"ready"},{id:"y",status:"needs-research"}]}},
+    gemstone:{status:"pending",trackId:null,artistId:null,presented:false},
+    publication:{spotify:{status:"published",folderPlacement:"confirmed"},express:{status:"pending"},gemstoneMuseum:{status:"pending"}},
+    integrity:{complete:false}};
+  const before=weeklyPublicationGate(m);
+  m.express.artistBios.artists[1].status="ready";m.publication.express.status="published";
+  m.gemstone={status:"published",trackId:"a",artistId:"x",presented:true};m.publication.gemstoneMuseum.status="published";m.integrity.complete=true;
+  const after=weeklyPublicationGate(m);
+  return {pass:!before.complete&&before.blockers.some(x=>x.includes("bios"))&&after.complete,cases:{beforeBlockers:before.blockers,afterBlockers:after.blockers}};
+}
 function freeze(manifest,at){
   const m=derive(manifest);
   const report=validate(m);
@@ -130,7 +162,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
