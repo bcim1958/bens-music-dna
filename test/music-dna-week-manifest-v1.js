@@ -25,6 +25,8 @@ function validate(manifest){
   if(!manifest||typeof manifest!=="object") return {pass:false,errors:["manifest missing"],warnings};
   if(!/^\d{4}-\d{2}$/.test(manifest.weekId||"")) errors.push("invalid weekId");
   if(!Array.isArray(manifest.tracks)||!manifest.tracks.length) warnings.push("no tracks");
+  const rules=manifest.selectionRules||{};
+  if(Number.isInteger(rules.expectedTrackCount)&&Array.isArray(manifest.tracks)&&manifest.tracks.length!==rules.expectedTrackCount) errors.push("expected "+rules.expectedTrackCount+" tracks, found "+manifest.tracks.length);
   const ids=new Set();
   (manifest.tracks||[]).forEach((t,i)=>{
     const id=t.spotifyTrackId||t.trackId;
@@ -33,10 +35,12 @@ function validate(manifest){
     else ids.add(id);
     if(!t.title) errors.push("track "+i+" has no title");
     if(!(t.artistId||t.artistName||(t.artists&&t.artists.length))) errors.push("track "+i+" has no artist");
+    if(rules.allowedSelectionSources&&rules.allowedSelectionSources.length&&!rules.allowedSelectionSources.includes(t.selectionSource)) errors.push("track "+i+" has invalid selectionSource "+String(t.selectionSource));
   });
   const derived=uniqArtistsFromTracks(manifest.tracks);
-  const oneTrackPerArtist=((manifest.selectionRules||{}).oneTrackPerArtist)!==false;
+  const oneTrackPerArtist=rules.oneTrackPerArtist!==false;
   if(oneTrackPerArtist&&(manifest.tracks||[]).length!==derived.length) errors.push("one-track-per-artist rule violated: "+(manifest.tracks||[]).length+" tracks / "+derived.length+" unique artists");
+  if(Number.isInteger(rules.expectedUniqueArtistCount)&&derived.length!==rules.expectedUniqueArtistCount) errors.push("expected "+rules.expectedUniqueArtistCount+" unique artists, found "+derived.length);
   const stored=((manifest.derived||{}).uniqueArtists||[]);
   if(JSON.stringify(derived)!==JSON.stringify(stored)) errors.push("derived.uniqueArtists is stale or not derived from tracks");
 
