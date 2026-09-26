@@ -89,6 +89,10 @@
       "weekIdentityRequired": true,
       "gemstoneIdentityRequired": true,
       "generateBeforePublication": true
+    },
+    "delivery": {
+      "status": "blocked",
+      "reason": "awaiting-generated-asset-and-playlist-id"
     }
   }
 }
