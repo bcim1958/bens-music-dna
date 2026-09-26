@@ -6,7 +6,8 @@
   "freeze": {
     "status": "draft",
     "frozenAt": null,
-    "publishedAt": null
+    "publishedAt": null,
+    "orderedTrackIds": []
   },
   "tracks": [],
   "derived": {
@@ -64,7 +65,8 @@
       "Spotify folder placement is a manual post-publication step; intended destination is 💎 Ontdek DNA and may be confirmed afterward",
       "weekly gemstone cover must be generated and attached to the Spotify playlist before the automatic delivery is considered complete",
       "gemstone sequence counter is continuous from 2026-W36 = stone 1 and is written numerically",
-      "gemstone editorial copy is short, factual and non-symbolic; no invented relation to Ben, taste or weekly flow"
+      "gemstone editorial copy is short, factual and non-symbolic; no invented relation to Ben, taste or weekly flow",
+      "freezing snapshots the exact ordered track IDs; the curated Flow-DNA order must not change afterward"
     ]
   },
   "provenance": {
