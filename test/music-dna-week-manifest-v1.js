@@ -59,7 +59,7 @@ function validate(manifest){
   };
   const complete=Object.values(target).every(Boolean);
   if((manifest.integrity||{}).complete!==complete) errors.push("integrity.complete does not match required publication targets");
-  return {pass:errors.length===0,errors,warnings,publicationTargets:target,complete,uniqueArtistCount:derived.length,trackCount:(manifest.tracks||[]).length};
+  const gemCheck=gemstoneIntegrity(manifest);\n  errors.push(...gemCheck.errors);\n  return {pass:errors.length===0,errors,warnings,publicationTargets:target,complete,uniqueArtistCount:derived.length,trackCount:(manifest.tracks||[]).length};
 }
 
 function expressBioQueue(manifest){
@@ -99,6 +99,27 @@ function expressBioQueueSelfTest(){
   const x=m.express.artistBios.artists.find(a=>a.id==="x"),y=m.express.artistBios.artists.find(a=>a.id==="y");
   return {pass:m.express.artistBios.artists.length===2&&x.status==="ready"&&y.status==="needs-research"&&y.missing.includes("members"),
     cases:{uniqueBioJobs:m.express.artistBios.artists.length,xStatus:x.status,yStatus:y.status,yMissing:y.missing}};
+}
+function gemstoneIntegrity(manifest){
+  const m=derive(manifest),g=m.gemstone||{},tracks=m.tracks||[],errors=[];
+  if(g.status==="published"||g.presented===true||g.trackId||g.artistId){
+    if(!g.trackId) errors.push("gemstone has no trackId");
+    const t=tracks.find(x=>(x.spotifyTrackId||x.trackId||x.id)===g.trackId);
+    if(g.trackId&&!t) errors.push("gemstone track is not in this week manifest");
+    if(t&&!g.artistId) errors.push("gemstone has no artistId");
+    if(t&&g.artistId){
+      const ids=[t.artistId,...((t.artists||[]).map(a=>a.id))].filter(Boolean);
+      if(!ids.includes(g.artistId)) errors.push("gemstone artist does not match gemstone track");
+    }
+  }
+  return {pass:errors.length===0,errors};
+}
+function gemstoneIntegritySelfTest(){
+  const base={weekId:"2026-40",tracks:[{spotifyTrackId:"a",title:"One",artistId:"x",artistName:"X"}]};
+  const good=gemstoneIntegrity({...base,gemstone:{status:"published",presented:true,trackId:"a",artistId:"x"}});
+  const outside=gemstoneIntegrity({...base,gemstone:{status:"published",presented:true,trackId:"z",artistId:"x"}});
+  const mismatch=gemstoneIntegrity({...base,gemstone:{status:"published",presented:true,trackId:"a",artistId:"y"}});
+  return {pass:good.pass&&!outside.pass&&!mismatch.pass};
 }
 function expressEditionSkeleton(manifest){
   const m=derive(manifest);
@@ -209,7 +230,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
