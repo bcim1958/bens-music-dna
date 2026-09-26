@@ -100,6 +100,24 @@ function expressBioQueueSelfTest(){
   return {pass:m.express.artistBios.artists.length===2&&x.status==="ready"&&y.status==="needs-research"&&y.missing.includes("members"),
     cases:{uniqueBioJobs:m.express.artistBios.artists.length,xStatus:x.status,yStatus:y.status,yMissing:y.missing}};
 }
+function publicationReadiness(manifest){
+  const m=derive(manifest),rules=m.selectionRules||{},tracks=m.tracks||[];
+  const artists=m.derived.uniqueArtists||[];
+  const bios=((((m||{}).express||{}).artistBios||{}).artists)||[];
+  const sourceCounts=tracks.reduce((a,t)=>(a[t.selectionSource]=(a[t.selectionSource]||0)+1,a),{});
+  const bioByKey=new Map(bios.map(b=>[b.id||("name:"+String(b.name||"").toLowerCase()),b]));
+  const missingBioArtists=artists.filter(a=>!bioByKey.has(a.id||("name:"+String(a.name||"").toLowerCase()))).map(a=>a.name||a.id);
+  const notReadyBios=bios.filter(b=>b.status!=="ready"&&b.status!=="published").map(b=>({id:b.id,name:b.name,status:b.status,missing:b.missing||[]}));
+  return {
+    weekId:m.weekId,
+    selection:{tracks:tracks.length,uniqueArtists:artists.length,weekPositive:sourceCounts["week-positive"]||0,positiveReserve:sourceCounts["positive-reserve"]||0,
+      expectedTracks:rules.expectedTrackCount,expectedArtists:rules.expectedUniqueArtistCount},
+    express:{bioJobs:bios.length,missingBioArtists,notReadyBios},
+    gemstone:{status:(m.gemstone||{}).status||"pending",presented:(m.gemstone||{}).presented===true},
+    publication:m.publication||{},
+    gate:weeklyPublicationGate(m)
+  };
+}
 function weeklyPublicationGate(manifest){
   const report=validate(manifest);
   const bios=((((manifest||{}).express||{}).artistBios||{}).artists)||[];
@@ -162,7 +180,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
