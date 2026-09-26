@@ -1,0 +1,130 @@
+{
+  "checkedCommit": "a6b7caf79ddbfe44aa0e105eeea85e30c485cf73",
+  "checkedDate": "2026-09-26",
+  "scope": "Local execution of committed capacity test and draft manifest gates; no live track availability or rating verification",
+  "candidateCapacity": {
+    "suite": "W40-integrated-release-gate-v1",
+    "pass": true,
+    "status": "PRODUCTION-READY",
+    "checks": {
+      "metadataComplete": true,
+      "spotifyIdentityUnique": true,
+      "artistCreditsUnique": true,
+      "historicalOverlapZero": true,
+      "capacity85gte63": true,
+      "stress63of63": true
+    },
+    "counts": {
+      "candidates": 85,
+      "uniqueSpotifyIds": 85,
+      "uniqueArtistCredits": 85,
+      "historicalOverlap": 0,
+      "stressSelected": 63,
+      "stressUnique": 63,
+      "stressRemaining": 22
+    },
+    "historicalOverlapIds": [],
+    "stressPerDay": [
+      {
+        "day": 1,
+        "needed": 9,
+        "selected": 9
+      },
+      {
+        "day": 2,
+        "needed": 9,
+        "selected": 9
+      },
+      {
+        "day": 3,
+        "needed": 9,
+        "selected": 9
+      },
+      {
+        "day": 4,
+        "needed": 9,
+        "selected": 9
+      },
+      {
+        "day": 5,
+        "needed": 9,
+        "selected": 9
+      },
+      {
+        "day": 6,
+        "needed": 9,
+        "selected": 9
+      },
+      {
+        "day": 7,
+        "needed": 9,
+        "selected": 9
+      }
+    ]
+  },
+  "draftReadiness": {
+    "artwork": {
+      "pass": true,
+      "errors": [],
+      "weekId": "2026-40",
+      "gemstoneName": "Imperiale topaas",
+      "sequenceNumber": 5,
+      "renderStatus": "ready"
+    },
+    "selection": {
+      "pass": false,
+      "errors": [
+        "track count not ready for publication",
+        "unique artist count not ready for publication",
+        "manifest must be frozen before Spotify publication",
+        "week-positive composition not ready",
+        "positive-reserve composition not ready"
+      ],
+      "weekId": "2026-40",
+      "trackCount": 0,
+      "uniqueArtistCount": 0
+    },
+    "delivery": {
+      "pass": false,
+      "errors": [
+        "Spotify playlistId missing"
+      ],
+      "weekId": "2026-40",
+      "canAttemptSpotifyArtworkAttachment": false,
+      "proofRequired": [
+        "generated artwork file exists",
+        "Spotify playlist exists",
+        "artwork attachment succeeds in real integration",
+        "post-attachment state is verified"
+      ],
+      "warning": "Code readiness is not proof of Spotify attachment capability."
+    },
+    "handoff": false,
+    "publication": {
+      "complete": false,
+      "blockers": [
+        "expected 21 tracks, found 0",
+        "expected 19 week-positive tracks, found 0",
+        "expected 2 positive-reserve tracks, found 0",
+        "expected 21 unique artists, found 0",
+        "Express bio job count does not match unique artist count",
+        "Spotify playlist publication incomplete",
+        "weekly gemstone cover is not generated and attached to Spotify",
+        "DNA Express publication incomplete",
+        "weekly gemstone not published/presented",
+        "gemstone museum registration incomplete"
+      ],
+      "trackCount": 0,
+      "uniqueArtistCount": 0,
+      "bioCount": 0,
+      "bioCounts": {},
+      "targets": {
+        "spotify": false,
+        "artwork": false,
+        "express": false,
+        "gemstone": false,
+        "gemstoneMuseum": false
+      }
+    }
+  }
+}

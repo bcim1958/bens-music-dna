@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0",
+  "status": "draft",
+  "purpose": "single source of truth for one published Ontdek DNA week",
+  "weekId": "2026-40",
+  "freeze": {
+    "status": "draft",
+    "frozenAt": null,
+    "publishedAt": null,
+    "orderedTrackIds": []
+  },
+  "tracks": [],
+  "derived": {
+    "uniqueArtists": []
+  },
+  "express": {
+    "artistBios": {
+      "status": "pending",
+      "artists": []
+    }
+  },
+  "gemstone": {
+    "status": "pending",
+    "name": "Imperiale topaas",
+    "sequenceNumber": 5,
+    "editorialText": "IMPERIALE TOPAAS · W40 — Topaas met roodachtig oranje tot oranjerode tinten. De handelsnaam kent geen officiële standaard. Steen 5 van de Music-DNA-slinger.",
+    "editorialStandard": "short-factual-no-symbolism",
+    "trackId": null,
+    "artistId": null,
+    "presented": false
+  },
+  "publication": {
+    "spotify": {
+      "status": "pending",
+      "playlistId": null,
+      "folderPlacement": "manual-pending",
+      "folderName": null,
+      "folderPlacementMode": "manual"
+    },
+    "express": {
+      "status": "pending",
+      "editionId": null
+    },
+    "gemstoneMuseum": {
+      "status": "pending",
+      "entryId": null
+    }
+  },
+  "integrity": {
+    "requiredTargets": [
+      "spotify",
+      "artwork",
+      "express",
+      "gemstone",
+      "gemstoneMuseum"
+    ],
+    "complete": false,
+    "rules": [
+      "tracks are the primary content truth",
+      "current Ontdek DNA rule: one track per artist; 21 tracks means 21 unique artists",
+      "uniqueArtists must be derived from tracks",
+      "published manifest corrections require provenance",
+      "Spotify success does not imply full week publication success",
+      "current Saturday gift composition: 19 positive discoveries from the week plus 2 from positive reserve",
+      "Spotify folder placement is a manual post-publication step; intended destination is 💎 Ontdek DNA and may be confirmed afterward",
+      "weekly gemstone cover must be generated and attached to the Spotify playlist before the automatic delivery is considered complete",
+      "gemstone sequence counter is continuous from 2026-W36 = stone 1 and is written numerically",
+      "gemstone editorial copy is short, factual and non-symbolic; no invented relation to Ben, taste or weekly flow",
+      "freezing snapshots the exact ordered track IDs; the curated Flow-DNA order must not change afterward"
+    ]
+  },
+  "provenance": {
+    "createdFor": "2026-W40 publication using existing manifest contract",
+    "notes": [
+      "Draft only: no final track selection, ratings or Flow-DNA order have been inferred from candidate membership.",
+      "85 candidate records are available; capacity proof is not publication readiness.",
+      "Artwork file was generated and uploaded to a separate private proof playlist on 2026-09-26; it is not attached to a W40 production playlist.",
+      "Proof playlist 6ARzCinEi6HyZKpIhxH12C is intentionally not publication.spotify.playlistId.",
+      "Artwork SHA-256: 8479d0cfb95c27a5024ed11c7265b640d2ce6050193d703036835a97ae92c360",
+      "Editorial sources: https://www.gia.edu/topaz-description and https://www.gia.edu/FAQ/gia-faq-imperial-topaz",
+      "Generated image is a proof asset; historical visual-family parity and smallest-thumbnail counter legibility are not fully validated.",
+      "Spotify folder placement remains manual; W39 unchanged."
+    ]
+  },
+  "selectionRules": {
+    "oneTrackPerArtist": true,
+    "expectedTrackCount": 21,
+    "expectedUniqueArtistCount": 21,
+    "allowedSelectionSources": [
+      "week-positive",
+      "positive-reserve"
+    ],
+    "expectedWeekPositiveCount": 19,
+    "expectedPositiveReserveCount": 2,
+    "expectedSpotifyFolder": "💎 Ontdek DNA"
+  },
+  "artwork": {
+    "status": "generated",
+    "kind": "weekly-gemstone-cover",
+    "gemstoneName": "Imperiale topaas",
+    "assetId": "assets/proofs/music-dna-w40-imperiale-topaas-steen-5.jpg",
+    "generatedAt": "2026-09-26",
+    "attachedToSpotify": false,
+    "rules": {
+      "square": true,
+      "weekIdentityRequired": true,
+      "gemstoneIdentityRequired": true,
+      "cinematicEdelsteenmuseumVisualFamily": true,
+      "numericSlingerCounterRequired": true,
+      "factualEditorialCopyRequired": true,
+      "generateBeforePublication": true
+    },
+    "delivery": {
+      "status": "blocked",
+      "reason": "awaiting-real-frozen-week-selection-and-production-playlist"
+    }
+  }
+}
