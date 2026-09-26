@@ -126,5 +126,21 @@
         "gemstoneMuseum": false
       }
     }
+  },
+  "saturdayManifestConnectionCheck": {
+    "checkedAt": "2026-09-26",
+    "sourceHead": "9ffa3ab454b25ca338aac124cae656ed71c873f2",
+    "result": "pass-structural-no-publication",
+    "assertions": {
+      "manifestLoadedBeforeLegacyPage": true,
+      "draftManifestBlockedByPrePublicationGate": true,
+      "frozenManifestTracksBecomeSaturdayTruth": true,
+      "spotifyArtworkScopeRequired": true,
+      "oldTokenWithoutArtworkScopeRejected": true,
+      "artworkUploadPrecedesComplete": true,
+      "spotifyArtworkReadbackRequired": true,
+      "w39SpecialCaseAdded": false
+    },
+    "note": "Structural inspection only. No Spotify mutation and no W40 playlist creation. Real execution remains blocked until Ben's definitive 21-track 19+2 selection is frozen."
   }
 }
