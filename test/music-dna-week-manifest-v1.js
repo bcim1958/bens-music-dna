@@ -290,6 +290,24 @@ function publicationReadiness(manifest){
     gate:weeklyPublicationGate(m)
   };
 }
+function productionHandoff(manifest){
+  const m=derive(manifest),selection=prePublicationGate(m),artwork=artworkPreflight(m);
+  const seq=publicationSequence(m);
+  const blockers=[...selection.errors,...artwork.errors];
+  return {
+    schemaVersion:"1.0",
+    kind:"music-dna-week-production-handoff",
+    weekId:m.weekId,
+    readyForProduction:blockers.length===0,
+    blockers:[...new Set(blockers)],
+    frozenTrackIds:((m.freeze||{}).orderedTrackIds)||[],
+    gemstone:{name:(m.gemstone||{}).name||null,sequenceNumber:gemstoneSequenceNumber(m.weekId),editorialText:(m.gemstone||{}).editorialText||null},
+    artwork:weeklyArtworkSpec(m),
+    stages:seq.stages,
+    manualSteps:["Confirm Spotify playlist placement in 💎 Ontdek DNA"],
+    rule:"Do not reconstruct, reorder or silently repair frozen weekly content during production."
+  };
+}
 function publicationSequence(manifest){
   const m=derive(manifest);
   const selection=prePublicationGate(m);
@@ -394,7 +412,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,prePublicationGate,artworkPreflight,publicationSequence,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,prePublicationGate,artworkPreflight,productionHandoff,publicationSequence,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
