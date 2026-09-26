@@ -654,3 +654,13 @@ Dit bewijst **gegenereerd bestand → echte playlist → UI-upload → visuele c
 De interne groenclaim uit eerdere paragrafen moet bovendien worden begrensd: uitvoering van de huidige weekmotor toont een echte tellerfout (`gemstoneSequenceNumber('2026-40') === null`; een foutieve teller 999 passeert de artwork-preflight) en één falende selftest door een ontbrekende freeze in de fixture. Deze tekortkomingen zijn in deze proef vastgelegd, niet gerepareerd.
 
 Volledig bewijs, bestand/hash, gebruikte tekst/bronnen, exacte beperkingen en reproductie: [externe hoesproef](SPOTIFY-HOESPROEF-2026-09-26.md). Vervolg: concrete tellerfout en testfixture behandelen, daarna de bestaande W40-keten met echte bevroren weekinhoud doorlopen. Geen nieuwe architectuur en geen W39-reconstructie.
+
+
+### 22.12 Tellerreparatie na externe hoesproef — 26 september
+De in §22.11 aangetoonde tellerfout is hersteld in de bestaande weekmotor. De week-ID-regex herkent nu cijfers; de doorlopende teller telt echte ISO-weken vanaf 2026-36, inclusief week 53. Bewezen voorbeelden: W36=1, W39=4, W40=5, 2026-53=18, 2027-01=19. Een niet-bestaande week zoals 2027-53 wordt afgewezen.
+
+Artwork-preflight blokkeert ongeldige/ontbrekende week-ID's, ontbrekende of onjuiste numerieke tellers en een foutieve afsluitende tekstteller. Een ontbrekende week-ID levert een blokkade op in plaats van een exception. De fixture van weeklyPublicationGateSelfTest wordt nu met de bestaande freeze-functie bevroren; de productiepoort is hiervoor niet versoepeld.
+
+Validatie: alle zeven bestaande geëxporteerde selftests slagen; de nieuwe regressietest `node test/week-manifest-counter-regression.cjs` slaagt. Deze controleert ook W40-artwork/render/handoff en dat ontbrekende externe asset-/playlistgegevens niet gereed worden verklaard.
+
+De externe UI-hoesproef uit §22.11 blijft het bewijs voor upload; deze codereparatie bewijst geen automatische manifestgestuurde Spotify-publicatie. Het testplaylist-ID wordt niet als echte W40-publicatie in een weekmanifest gezet. W39, muziekselecties en Spotify-mapplaatsing zijn niet gewijzigd. Eerstvolgende productievoorwaarde blijft het echte bevroren W40-manifest (21=21, 19+2, Flow-DNA-volgorde); geen kandidaten of synthetische tests tot weekwaarheid promoveren.

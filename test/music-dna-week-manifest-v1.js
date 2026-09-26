@@ -112,11 +112,19 @@ function expressBioQueueSelfTest(){
     cases:{uniqueBioJobs:m.express.artistBios.artists.length,xStatus:x.status,yStatus:y.status,yMissing:y.missing}};
 }
 function gemstoneSequenceNumber(weekId){
-  const m=/^(\\d{4})-(\\d{2})$/.exec(weekId||"");
+  const m=/^(\d{4})-(\d{2})$/.exec(weekId||"");
   if(!m) return null;
   const year=Number(m[1]),week=Number(m[2]);
   if(year<2026||(year===2026&&week<36)) return null;
-  return (year-2026)*52+(week-36)+1;
+  // ISO week 1 contains January 4; count actual weeks, including week 53.
+  const weekMs=7*24*60*60*1000;
+  const firstMonday=y=>{
+    const jan4=new Date(Date.UTC(y,0,4));
+    return jan4.getTime()-((jan4.getUTCDay()+6)%7)*24*60*60*1000;
+  };
+  const start=firstMonday(year),next=firstMonday(year+1);
+  if(week<1||week>(next-start)/weekMs) return null;
+  return (start+(week-1)*weekMs-(firstMonday(2026)+35*weekMs))/weekMs+1;
 }
 function gemstoneEditorialIntegrity(manifest){
   const m=manifest||{},g=m.gemstone||{},errors=[];
@@ -210,12 +218,13 @@ function artworkDeliveryPlan(manifest){
 function artworkPreflight(manifest){
   const m=derive(manifest),a=m.artwork||{},g=m.gemstone||{},errors=[];
   const expected=gemstoneSequenceNumber(m.weekId);
+  if(expected===null) errors.push("weekly gemstone weekId has no canonical sequence");
   if(!g.name) errors.push("weekly gemstone name missing");
   if(expected!==null&&g.sequenceNumber!==expected) errors.push("weekly gemstone numeric sequence is not canonical");
   if(!g.editorialText) errors.push("weekly gemstone factual editorial text missing");
   else if(expected!==null&&!String(g.editorialText).trim().endsWith("Steen "+expected+" van de Music-DNA-slinger.")) errors.push("weekly gemstone editorial text has wrong sling counter");
   if(a.gemstoneName&&g.name&&a.gemstoneName!==g.name) errors.push("artwork gemstone identity differs from weekly gemstone");
-  const render=weeklyArtworkRenderModel(m);
+  const render=expected===null?{status:"blocked",reason:"invalid-gemstone-week"}:weeklyArtworkRenderModel(m);
   if(render.status!=="ready") errors.push("weekly artwork render model is blocked: "+render.reason);
   return {pass:errors.length===0,errors,weekId:m.weekId,gemstoneName:g.name||null,sequenceNumber:expected,renderStatus:render.status};
 }
@@ -375,6 +384,7 @@ function weeklyPublicationGateSelfTest(){
     gemstone:{status:"pending",trackId:null,artistId:null,presented:false},
     publication:{spotify:{status:"published",folderPlacement:"confirmed"},express:{status:"pending"},gemstoneMuseum:{status:"pending"}},
     integrity:{complete:false}};
+  m=freeze(m,"2026-09-26T00:00:00.000Z");
   const before=weeklyPublicationGate(m);
   m.express.artistBios.artists[1].status="ready";m.publication.express.status="published";
   m.gemstone={status:"published",trackId:"a",artistId:"x",presented:true};m.artwork={status:"published",gemstoneName:"Teststeen",assetId:"cover-2026-40",attachedToSpotify:true};m.publication.gemstoneMuseum.status="published";m.integrity.complete=true;
