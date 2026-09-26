@@ -644,3 +644,13 @@ Sinds §22.9 zijn de volgende vangrails in de weekmotor vastgelegd:
 - interne code-readiness en werkelijk bewezen Spotify-artworklevering zijn bewust gescheiden. Groen voor artwork-koppeling vereist een echt gegenereerd bestand, echte playlist-ID, geslaagde koppeling én verificatie achteraf.
 
 **Actuele grens:** de interne W40-contractketen is structureel afgebakend; de externe beeldgenerator/Spotify-hoeskoppeling is nog niet end-to-end bewezen en blijft daarom 🟠. Geen nieuwe architectuur ontwerpen vóór deze externe proef is uitgevoerd.
+
+
+### 22.11 Externe hoesproef 26 september — werkelijke Desktop-upload bewezen
+Op main-kop `7642fbdd` is de externe hoesstap daadwerkelijk uitgevoerd. Een met image_gen gegenereerde JPEG van 1000×1000 voor **W40 = Imperiale topaas, steen 5** is via Spotify Desktop geüpload naar de afzonderlijke lege privétestplaylist `6ARzCinEi6HyZKpIhxH12C`. De hoes verscheen op de playlist en in de bibliotheek en bleef zichtbaar na navigatie naar Home en heropenen van de playlist.
+
+Dit bewijst **gegenereerd bestand → echte playlist → UI-upload → visuele controle na heropenen**. Het bewijst geen Web API-upload of autonome manifestgestuurde weekpublicatie. De testplaylist is geen W40-levering; W39 en alle trackvolgorden zijn ongemoeid gelaten. Spotify-mapplaatsing blijft handmatig.
+
+De interne groenclaim uit eerdere paragrafen moet bovendien worden begrensd: uitvoering van de huidige weekmotor toont een echte tellerfout (`gemstoneSequenceNumber('2026-40') === null`; een foutieve teller 999 passeert de artwork-preflight) en één falende selftest door een ontbrekende freeze in de fixture. Deze tekortkomingen zijn in deze proef vastgelegd, niet gerepareerd.
+
+Volledig bewijs, bestand/hash, gebruikte tekst/bronnen, exacte beperkingen en reproductie: [externe hoesproef](SPOTIFY-HOESPROEF-2026-09-26.md). Vervolg: concrete tellerfout en testfixture behandelen, daarna de bestaande W40-keten met echte bevroren weekinhoud doorlopen. Geen nieuwe architectuur en geen W39-reconstructie.
