@@ -52,7 +52,7 @@ function validate(manifest){
   const p=manifest.publication||{};
   const g=manifest.gemstone||{};
   const target={
-    spotify:p.spotify&&p.spotify.status==="published"&&p.spotify.folderPlacement==="confirmed",
+    spotify:p.spotify&&p.spotify.status==="published",
     express:p.express&&p.express.status==="published",
     gemstone:g.status==="published"&&g.presented===true&&!!(g.trackId||g.artistId),
     gemstoneMuseum:p.gemstoneMuseum&&p.gemstoneMuseum.status==="published"
@@ -104,17 +104,15 @@ function expressBioQueueSelfTest(){
 function spotifyFolderIntegrity(manifest){
   const p=((manifest||{}).publication||{}).spotify||{},rules=(manifest||{}).selectionRules||{},errors=[];
   const expected=rules.expectedSpotifyFolder||null;
-  if(p.status==="published"){
-    if(p.folderPlacement!=="confirmed") errors.push("Spotify playlist folder placement is not confirmed");
-    if(expected&&p.folderName!==expected) errors.push("Spotify playlist is in "+String(p.folderName||"no recorded folder")+"; expected "+expected);
-  }
-  return {pass:errors.length===0,errors,expectedFolder:expected,actualFolder:p.folderName||null};
+  if(p.status==="published"&&p.folderPlacement==="confirmed"&&expected&&p.folderName!==expected) errors.push("confirmed Spotify folder does not match expected manual destination "+expected);
+  return {pass:errors.length===0,errors,expectedFolder:expected,actualFolder:p.folderName||null,placementMode:"manual"};
 }
 function spotifyFolderIntegritySelfTest(){
   const base={selectionRules:{expectedSpotifyFolder:"💎 Ontdek DNA"}};
+  const pending=spotifyFolderIntegrity({...base,publication:{spotify:{status:"published",folderPlacement:"manual-pending",folderName:null}}});
   const good=spotifyFolderIntegrity({...base,publication:{spotify:{status:"published",folderPlacement:"confirmed",folderName:"💎 Ontdek DNA"}}});
   const bad=spotifyFolderIntegrity({...base,publication:{spotify:{status:"published",folderPlacement:"confirmed",folderName:"Library"}}});
-  return {pass:good.pass&&!bad.pass};
+  return {pass:pending.pass&&good.pass&&!bad.pass};
 }
 function gemstoneIntegrity(manifest){
   const m=derive(manifest),g=m.gemstone||{},tracks=m.tracks||[],errors=[];
@@ -196,7 +194,7 @@ function weeklyPublicationGate(manifest){
   if(!bioSetComplete) blockers.push("Express bio job count does not match unique artist count");
   if(bioSetComplete&&!biosReady) blockers.push("one or more Express bios are not ready");
   const p=report.publicationTargets||{};
-  if(!p.spotify) blockers.push("Spotify publication or folder placement incomplete");
+  if(!p.spotify) blockers.push("Spotify playlist publication incomplete");
   if(!p.express) blockers.push("DNA Express publication incomplete");
   if(!p.gemstone) blockers.push("weekly gemstone not published/presented");
   if(!p.gemstoneMuseum) blockers.push("gemstone museum registration incomplete");
