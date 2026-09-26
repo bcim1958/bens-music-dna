@@ -49,6 +49,7 @@
     "complete": false,
     "rules": [
       "tracks are the primary content truth",
+      "current Ontdek DNA rule: one track per artist; 21 tracks means 21 unique artists",
       "uniqueArtists must be derived from tracks",
       "published manifest corrections require provenance",
       "Spotify success does not imply full week publication success"
@@ -57,5 +58,10 @@
   "provenance": {
     "createdFor": "post-W39 canonical publication workflow",
     "notes": []
+  },
+  "selectionRules": {
+    "oneTrackPerArtist": true,
+    "expectedTrackCount": 21,
+    "expectedUniqueArtistCount": 21
   }
 }
