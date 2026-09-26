@@ -236,7 +236,7 @@ function weeklyPublicationGateSelfTest(){
     integrity:{complete:false}};
   const before=weeklyPublicationGate(m);
   m.express.artistBios.artists[1].status="ready";m.publication.express.status="published";
-  m.gemstone={status:"published",trackId:"a",artistId:"x",presented:true};m.publication.gemstoneMuseum.status="published";m.integrity.complete=true;
+  m.gemstone={status:"published",trackId:"a",artistId:"x",presented:true};m.artwork={status:"published",gemstoneName:"Teststeen",assetId:"cover-2026-40",attachedToSpotify:true};m.publication.gemstoneMuseum.status="published";m.integrity.complete=true;
   const after=weeklyPublicationGate(m);
   return {pass:!before.complete&&before.blockers.some(x=>x.includes("bios"))&&after.complete,cases:{beforeBlockers:before.blockers,afterBlockers:after.blockers}};
 }
@@ -263,6 +263,7 @@ function selfTest(){
   m.publication.spotify={status:"published",folderPlacement:"confirmed"};
   m.publication.express={status:"published"};
   m.gemstone={status:"published",trackId:"a",artistId:"x",presented:true};
+  m.artwork={status:"published",gemstoneName:"Teststeen",assetId:"cover-2026-40",attachedToSpotify:true};
   m.publication.gemstoneMuseum={status:"published"};
   m.integrity.complete=true;
   const r2=validate(m);
