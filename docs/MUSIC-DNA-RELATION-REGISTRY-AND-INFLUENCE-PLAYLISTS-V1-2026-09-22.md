@@ -523,3 +523,52 @@ Een uitstapje kan uitkomen bij een ander reeds bestaand persoonlijk muziekeiland
 
 ### 20.3 Reiscontext
 Dezelfde artiest kan in verschillende reizen een andere rol hebben. Explorer bewaart daarom naast stabiele feiten ook de actuele routecontext: waar kwamen we vandaan, waarom was deze deur zichtbaar, en was de bestemming op dat moment hoofdroute, spin-off, uitstapje of brug.
+
+
+## 21. Verrassingsmotor — onbekend maar relevant
+
+DNA Explorer bestaat niet primair om Ben terug te vertellen wat hij al weet. Bekende muziek is vooral het vertrekpunt en het herkenningsanker voor een reis naar betrouwbare, mogelijk nog onbekende informatie.
+
+Vaste ontwerpzin:
+
+> **DNA Explorer moet je steeds iets kunnen laten ontdekken waarvan je nog niet wist dat je het wilde weten.**
+
+### 21.1 Bekendheid is geen selectie-eis
+
+Een deur hoeft niet vooraf in de Master, een Music Map, favorieten of eerdere gesprekken voor te komen. Persoonlijk bewijs helpt Explorer bepalen wat waarschijnlijk al bekend terrein is; het ontbreken ervan betekent alleen **mogelijk onbekend**, niet oninteressant of ongeschikt.
+
+### 21.2 Twee onafhankelijke vragen
+
+Voor iedere potentiële ontdekking worden twee vragen uit elkaar gehouden:
+
+1. **Is de verbinding echt?** — uitsluitend relationeel/evidence-bewijs.
+2. **Is dit waarschijnlijk nieuw voor Ben?** — persoonlijk bewijs, eerdere lees-/routegeschiedenis en bekende Music-DNA-ankers.
+
+De tweede vraag mag nooit de eerste vervangen. Een verrassende associatie zonder bewijs wordt geen Explorer-deur.
+
+### 21.3 Onbekendheidsbonus, geen smaakgevangenis
+
+Wanneer meerdere betrouwbare deuren beschikbaar zijn, mag Explorer extra waarde geven aan een deur die:
+- nog niet eerder is bezocht;
+- niet reeds sterk persoonlijk verankerd is;
+- een nieuw type knooppunt opent (persoon, plaats, gebeurtenis, album, track, label enz.);
+- via een begrijpelijke brug terug te voeren is op de actuele reis;
+- voldoende bronmateriaal heeft voor een betekenisvolle volgende stap.
+
+Dit is een **onbekendheidsbonus**, geen verplichting om steeds verder van Bens smaak af te bewegen. Bekend terrein blijft beschikbaar voor oriëntatie en verdieping.
+
+### 21.4 Nieuwsgierigheid als feedback
+
+Een expliciete afslag is een sterker signaal dan alleen het tonen van een deur. Terugkeren zonder af te slaan is geen afwijzing van de muziek. Explorer leert daarom primair van reisgedrag op informatieniveau: welke soorten deuren, verhalen en verrassingen lokken vrijwillige verdieping uit?
+
+Dit signaal staat los van Ontdek-DNA-smaakbeoordelingen. **Interessant om over te lezen** betekent niet automatisch **meer muziek hiervan aanbevelen**.
+
+### 21.5 Bouwregel
+
+Handmatig gekozen casussen — Ghost, Shiraz Lane, Chester Thompson enz. — zijn bouwsteigers waarmee functies worden bewezen. Zij vormen niet de toekomstige inhoudsagenda.
+
+Zodra een functie is bewezen, hoort de normale uitbreiding te ontstaan uit de wandeling zelf:
+
+**bekend anker → evidence-backed deuren → nieuwheidsinschatting → interessante verrassing → vrijwillige afslag → nieuwe evidence-backed deuren**
+
+Daarmee verschuift de kern van een vooraf ingevulde muziekenyclopedie naar een echte ontdekmachine.
