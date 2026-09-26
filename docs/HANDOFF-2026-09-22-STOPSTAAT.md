@@ -628,3 +628,19 @@ Genormaliseerde teller: W36 = steen 1, W37 = steen 2, W38 = steen 3, W39 = steen
 De actuele genormaliseerde W39-tekst is: **CARNEOOL · W39 — Een oranjerode tot roodbruine variëteit van chalcedoon. De kleur ontstaat door ijzerverbindingen. Carneool wordt al sinds de oudheid gebruikt voor sieraden, kralen en zegelstenen. Steen 4 van de Music-DNA-slinger.**
 
 Deze §22.9 moet bij iedere toekomstige weekhoes/edelsteentekst vóór generatie worden toegepast; niet opnieuw vrij interpreteren.
+
+
+### 22.10 W39 proefrit — structurele vangrails vóór W40
+
+De W39-proefrit is gebruikt om historische tekortkomingen om te zetten in generieke beveiligingen voor W40 en verder. Er is **geen** reconstructie van de ontbrekende definitieve W39-trackdataset gemaakt: GitHub bevat geen primaire machineleesbare 21-track W39-selectie, dus oude kandidaten, chatgeheugen of screenshots mogen niet als vervangende waarheid worden gebruikt.
+
+Sinds §22.9 zijn de volgende vangrails in de weekmotor vastgelegd:
+- gepubliceerde weken moeten een gearchiveerd, bevroren trackmanifest met stabiele track-ID's hebben;
+- de exacte Flow-DNA-volgorde wordt bij freeze als orderedTrackIds vastgelegd en daarna gecontroleerd;
+- vóór Spotify-publicatie geldt een harde selectiepoort voor 21 tracks = 21 unieke artiesten, 19 weekpositieven + 2 positieve reserve, stabiele ID's, freeze en ongewijzigde volgorde;
+- vóór artwork geldt een Edelsteenmuseum-preflight voor steennaam, doorlopende numerieke teller, feitelijke tekst, juiste afsluitende teller en overeenkomende artwork-identiteit;
+- de weekstraat is deterministisch geordend: selectie/freeze → Express-onderzoek → Edelsteen/artwork-preflight → Spotify-publicatie → artwork-koppeling → Express-publicatie → Edelsteenmuseum-registratie → handmatige mapbevestiging;
+- productie krijgt een immutable handoff: bevroren inhoud mag niet tijdens productie worden gereconstrueerd, herschikt of stil gerepareerd;
+- interne code-readiness en werkelijk bewezen Spotify-artworklevering zijn bewust gescheiden. Groen voor artwork-koppeling vereist een echt gegenereerd bestand, echte playlist-ID, geslaagde koppeling én verificatie achteraf.
+
+**Actuele grens:** de interne W40-contractketen is structureel afgebakend; de externe beeldgenerator/Spotify-hoeskoppeling is nog niet end-to-end bewezen en blijft daarom 🟠. Geen nieuwe architectuur ontwerpen vóór deze externe proef is uitgevoerd.
