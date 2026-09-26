@@ -522,3 +522,87 @@ Volgende ontwikkelrichting: de slimme wandeling verder instrumenteren in plaats 
 Werkritme blijft: **bouwen → wandelen → nieuwsgierigheid observeren → ontbrekend instrument bouwen → netwerk uitbreiden → opnieuw wandelen.**
 
 **Healthcheck-status na deze consolidatie:** gegevens/code 🟢; projectgeheugen 🟢; Relation Evidence ↔ Personal DNA Evidence 🟢 conceptueel gescheiden; slimme meerstapswandeling 🟢 structureel bewezen; nieuwste UX/redactionele lagen 🟠 deels nog te operationaliseren; productie/iPhone-eindvalidatie blijft open. **Proof ≠ production.**
+
+
+## 22. Consolidatie 26 september — canoniek weekpublicatiecontract vóór W40
+
+Deze sectie is het nieuwe canonieke totaalanker voor de wekelijkse Ontdek-DNA-publicatie en consolideert de geaccepteerde bouwstand tot en met commit `14964c9ad63405879840ad7f1824b4cf5d1028b5`. Bij strijd met oudere hervatinstructies over de zaterdaglevering heeft deze sectie voorrang. §21 blijft het canonieke Explorer-anker.
+
+### 22.1 Werkelijke stand W39 en doel W40
+
+W39 is op zaterdag 26 september 2026 muzikaal daadwerkelijk gepubliceerd als `Ontdek DNA #2026-39`: 21 tracks, door Ben beluisterd, met een voorlopig positieve eerste Flow-DNA-indruk. De playlist is daarna handmatig in Spotify-map **💎 Ontdek DNA** geplaatst. De W39-publicatie was echter visueel/onvolledig: de afgesproken Edelsteen/weekhoes ontbrak. W39 is daarom bewijs dat **playlist geleverd** niet gelijk is aan **volledige weekpublicatie**.
+
+W40 start op zondag 27 september 2026. Eerste doel is niet nieuwe zijfunctionaliteit ontwerpen, maar zorgen dat W40 de volledige hieronder beschreven keten doorloopt en dat ontbrekende onderdelen niet stilzwijgend als gereed kunnen gelden.
+
+### 22.2 Single source of truth: het weekmanifest
+
+Elke definitieve Ontdek-DNA-week krijgt één machineleesbaar weekmanifest. De geordende `tracks[]` zijn de primaire inhoudswaarheid. Daaruit worden artiestenset, Express-bio-opdrachten en verdere publicatiecontrole afgeleid.
+
+Harde huidige selectie-invarianten:
+- exact **21 tracks**;
+- exact **21 unieke artiesten/bands**;
+- **één track per artiest**;
+- zaterdagcadeau exact **19 `week-positive` + 2 `positive-reserve`**;
+- iedere track heeft stabiele identiteit, titel, artiest en selectieherkomst;
+- de opgeslagen unieke artiestenset mag niet handmatig afwijken van de uit `tracks[]` afgeleide set.
+
+De bio-regel volgt hier rechtstreeks uit: **21 tracks = 21 unieke artiesten = 21 bio-opdrachten**. Deduplicatie blijft een technisch vangnet, geen toestemming voor dubbele artiesten in de weekselectie.
+
+### 22.3 Volgorde is inhoud: Flow-DNA mag niet worden hersorteerd
+
+Een geldige set van 21 tracks is nog geen goed gecureerde Ontdek-DNA-week. De definitieve volgorde in het bevroren manifest is de gecureerde Flow-DNA-volgorde en moet door alle publicatiestappen intact blijven. Publicatiecode mag de tracklijst niet alfabetisch, op artiest, op bron of anderszins opnieuw sorteren.
+
+Vaste publicatie-invariant:
+
+> **De volgorde van de bevroren `tracks[]` is de luistervolgorde. Geldigheid bewaakt de inhoud; Flow-DNA bewaakt de ervaring.**
+
+Voor W39 geldt: de bestaande volgorde niet achteraf optimaliseren op basis van één luisterbeurt. W39 blijft real-world luisterproef; eventuele Reference-003-status pas na herhaald luisteren.
+
+### 22.4 DNA Express hoort bij dezelfde weekpublicatie
+
+Uit het manifest wordt automatisch één bio-opdracht per unieke artiest afgeleid. Minimumdekking per bio: identiteit, herkomst/start, kernleden, stijl/ontwikkeling, belangrijke releases/carrièremomenten en status/relevante context. Ontbrekende dekking leidt tot `needs-research`; onzekere identiteit kan blokkeren.
+
+De vaste Express-rubriek heet **De artiesten van deze week**. De editie wordt uit hetzelfde manifest opgebouwd. Explorer blijft floating; een gepubliceerde Express-weekeditie is archival/fixed en wordt niet stilzwijgend herschreven.
+
+### 22.5 Edelsteen en weekhoes zijn geen losse extra's
+
+De wekelijkse Edelsteen moet verwijzen naar een track uit hetzelfde weekmanifest; artiest en track moeten bij elkaar horen. Een Edelsteen uit een andere week of een fout gekoppelde artiest is ongeldig.
+
+De visuele weekhoes is voortaan een verplicht publicatie-artifact. De huidige hoes-specificatie vraagt een vierkant beeld (1000×1000), herkenbare Edelsteenidentiteit, leesbare Ontdek-DNA/weekidentiteit en bruikbaarheid als kleine Spotify-thumbnail. De hoes moet vóór volledige automatische levering bestaan en aan de Spotify-playlist zijn gekoppeld.
+
+De ontbrekende W39-hoes kwam niet door een bewezen Spotify-beperking voor cover art, maar doordat de afgesproken visuele laag nog geen uitvoerbare generator/koppeling in de leveringsketen had. Per deze stopstaat is de **specificatie + gate** gebouwd; de daadwerkelijke beeldgenerator en Spotify-hoeskoppeling moeten nog end-to-end worden aangesloten en bewezen vóór we W40 visueel veilig noemen.
+
+### 22.6 Spotify-mapplaatsing is bewust handmatig
+
+Spotify-mapbeheer is geen automatische publicatiestap in onze huidige koppeling. Music DNA maakt/publiceert de playlist; Ben sleept die daarna handmatig naar **💎 Ontdek DNA**.
+
+Daarom:
+- automatische Spotify-publicatie mag niet falen omdat mapplaatsing nog `manual-pending` is;
+- de bedoelde bestemming blijft geregistreerd;
+- een latere handmatige bevestiging mag de juiste map controleren;
+- mapplaatsing en weekhoes zijn twee verschillende zaken.
+
+### 22.7 Publication gate en readiness
+
+De weekmotor bevat een complete-week publication gate en readiness-report. Deze bewaken afzonderlijk selectie, unieke artiesten, 19+2-herkomst, bio-opdrachten/-status, Spotify-publicatie, Express, Edelsteen, Edelsteenmuseum en weekhoes.
+
+Belangrijk onderscheid:
+
+> **Een Spotify-playlist kan succesvol gepubliceerd zijn terwijl de Music-DNA-week nog niet compleet is.**
+
+De readiness-laag moet concrete blokkades tonen in plaats van alleen rood/groen. De nieuwe contractlaag is technisch sterk afgedekt, maar **proof ≠ production**: de volledige keten moet nog met een echte nieuwe week end-to-end worden bewezen.
+
+### 22.8 Exacte hervatplek vóór W40
+
+**Geen nieuwe zijbouw vóór deze keten is beproefd.** Eerst:
+1. weekhoes-generator aansluiten op de bestaande `weeklyArtworkSpec`;
+2. daadwerkelijke koppeling van het gegenereerde hoesbeeld aan de Spotify-playlist beproeven;
+3. W40 vanaf start via het weekmanifest laten lopen;
+4. vóór zaterdag controleren dat 21=21, 19+2, identiteit en bevroren Flow-DNA-volgorde intact zijn;
+5. Express-bioqueue tijdig vullen zodat ontbrekend onderzoek vóór publicatie zichtbaar wordt;
+6. Edelsteen + weekhoes + Edelsteenmuseum in dezelfde publicatiecyclus laten landen;
+7. na Spotify-publicatie alleen de mapverplaatsing naar **💎 Ontdek DNA** als handmatige Ben-stap laten staan.
+
+**Healthcheck-status bij deze consolidatie:** W39 muziekpublicatie 🟢; W39 Flow eerste indruk 🟢 voorlopig; W39 visuele levering 🔴; weekmanifest/selectiecontract 🟢; Express-afleiding 🟢 structureel; Edelsteenreferentiecontrole 🟢; weekhoes-specificatie/gate 🟢; daadwerkelijke hoesgenerator + Spotify-koppeling 🔴 nog te bewijzen; volledige W40 end-to-end keten 🟠 nog niet bewezen.
+
+**Canonieke technische kop:** `14964c9ad63405879840ad7f1824b4cf5d1028b5`.
