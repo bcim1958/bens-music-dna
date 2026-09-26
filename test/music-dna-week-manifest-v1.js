@@ -115,6 +115,30 @@ function weeklyArtworkSpec(manifest){
     status:a.status||"pending"
   };
 }
+function weeklyArtworkRenderModel(manifest){
+  const spec=weeklyArtworkSpec(manifest);
+  if(!spec.weekId) throw new Error("weekId is required for artwork");
+  if(!spec.gemstoneName) return {status:"blocked",reason:"weekly-gemstone-not-selected",spec};
+  return {
+    status:"ready",
+    format:"image/jpeg",
+    width:1000,
+    height:1000,
+    layers:[
+      {kind:"gemstone",identity:spec.gemstoneName},
+      {kind:"title",text:"Ontdek DNA"},
+      {kind:"week",text:spec.weekId}
+    ],
+    accessibility:{smallThumbnailLegibility:true},
+    spec
+  };
+}
+function weeklyArtworkRenderModelSelfTest(){
+  const base={weekId:"2026-40",tracks:[],gemstone:{name:"Saffier"},artwork:{status:"pending"}};
+  const ready=weeklyArtworkRenderModel(base);
+  const blocked=weeklyArtworkRenderModel({...base,gemstone:{}});
+  return {pass:ready.status==="ready"&&ready.width===1000&&ready.layers[0].identity==="Saffier"&&blocked.status==="blocked"};
+}
 function artworkDeliveryPlan(manifest){
   const m=derive(manifest),a=m.artwork||{},p=(m.publication||{}).spotify||{};
   return {weekId:m.weekId,assetId:a.assetId||null,playlistId:p.playlistId||null,status:(a.assetId&&p.playlistId)?"ready":"blocked"};
@@ -275,7 +299,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
