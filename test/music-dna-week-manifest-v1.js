@@ -66,6 +66,8 @@ function validate(manifest){
   errors.push(...gemCheck.errors);
   const editorialCheck=gemstoneEditorialIntegrity(manifest);
   errors.push(...editorialCheck.errors);
+  const archiveCheck=archivalCompleteness(manifest);
+  errors.push(...archiveCheck.errors);
   return {pass:errors.length===0,errors,warnings,publicationTargets:target,complete,uniqueArtistCount:derived.length,trackCount:(manifest.tracks||[]).length};
 }
 
@@ -294,6 +296,16 @@ function weeklyPublicationGateSelfTest(){
   const after=weeklyPublicationGate(m);
   return {pass:!before.complete&&before.blockers.some(x=>x.includes("bios"))&&after.complete,cases:{beforeBlockers:before.blockers,afterBlockers:after.blockers}};
 }
+function archivalCompleteness(manifest){
+  const m=derive(manifest),errors=[];
+  const p=m.publication||{},published=(p.spotify||{}).status==="published";
+  if(published){
+    if(!Array.isArray(m.tracks)||!m.tracks.length) errors.push("published week has no archived track manifest");
+    if((m.tracks||[]).some(t=>!(t.spotifyTrackId||t.trackId))) errors.push("published week contains track without stable id");
+    if(!m.freeze||m.freeze.status!=="frozen") errors.push("published week manifest is not frozen");
+  }
+  return {pass:errors.length===0,errors,published,trackCount:(m.tracks||[]).length};
+}
 function freeze(manifest,at){
   const m=derive(manifest);
   const report=validate(m);
@@ -325,7 +337,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,archivalCompleteness,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
