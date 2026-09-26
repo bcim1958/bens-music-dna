@@ -612,3 +612,53 @@ Verdieping, verrassende relaties en zijpaden blijven terrein van DNA Explorer. E
 ### 22.5 Vaste Express-rubriek
 
 **De artiesten van deze week** is vanaf nu een vaste inhoudscategorie van DNA Express en geen incidenteel extraatje. Zij wordt ontworpen als structureel onderdeel van iedere Ontdek-DNA-weekpublicatie.
+
+
+## 23. DNA Express — bio-productiepijplijn
+
+De vaste rubriek **De artiesten van deze week** wordt niet handmatig achteraf bedacht, maar is een afgeleid publicatieproduct van de definitieve Ontdek-DNA-playlist.
+
+### 23.1 Trigger
+
+Zodra een weekplaylist definitief wordt bevroren, ontstaat automatisch een Express-bio-opdracht voor iedere **unieke primaire artiest/band** op die lijst. De weeklijst is daarmee de manifestbron; de Express-editie hoeft de artiestenset niet opnieuw handmatig samen te stellen.
+
+### 23.2 Dossierstatus vóór publicatie
+
+Iedere artiest krijgt vóór publicatie één van drie interne statussen:
+- **gereed** — identiteit en minimaal biografisch bronpakket zijn voldoende;
+- **aanvullen** — identiteit is zeker, maar één of meer kernvelden missen nog betrouwbare dekking;
+- **blokkade** — identiteit of essentiële bronbasis is te onzeker om verantwoord te publiceren.
+
+Een blokkade mag niet worden opgelost door ontbrekende biografie te verzinnen. De onderzoeksqueue krijgt de ontbrekende velden als concrete vraag.
+
+### 23.3 Minimaal bronpakket
+
+Voor een normale korte Express-bio zoeken we, waar beschikbaar, minimaal dekking voor:
+- identiteit/herkomst/startperiode;
+- bezetting of kernpersonen;
+- stijl/ontwikkeling;
+- belangrijke releases/loopbaanmomenten;
+- status en relevante recente/historische context.
+
+Bronnen worden per claim gekozen naar functie: bijvoorbeeld AllMusic voor brede biografische context, MusicBrainz voor identiteit, Discogs voor release/credits en passende genre-specialisten of primaire interviews voor verdieping. Geen enkele bron is verplicht wanneer een betere bron voor het betreffende feit bestaat.
+
+### 23.4 Schrijfmodel
+
+De bio wordt pas geschreven **nadat** de feitelijke dekking is verzameld. De tekst is een compacte Express-redactie van bewezen materiaal, geen opgeslagen kopie of vertaling van een bron.
+
+Standaard leesvolgorde:
+**wie zijn dit → waar komen ze vandaan → wat maken ze muzikaal bijzonder → welke momenten/platen moet ik kennen → waar staan ze nu/historisch → waarom hoor ik ze deze week**
+
+### 23.5 Gelijktijdige publicatie
+
+De Express-rubriek hoort gereed te zijn wanneer de playlist wordt vrijgegeven. Onderzoek voor de bio's moet daarom vóór het zaterdagse publicatiemoment meelopen met de definitieve kandidatenvoorraad en na de playlist-freeze alleen nog de werkelijk geselecteerde artiesten afronden.
+
+### 23.6 Scheiding van systemen
+
+De bio-pijplijn mag Registry-feiten en bronprovenance hergebruiken, maar:
+- vult de Relation Registry niet met encyclopedische ballast;
+- verandert bio-interesse niet in Ontdek-DNA-smaakbewijs;
+- verandert een bio niet automatisch in een Explorer-route;
+- kan wél nieuw gevonden, aantoonbaar relationeel bewijs apart aan de Registry aanbieden.
+
+Zo ontstaat één brononderzoek dat meerdere toepassingen kan voeden zonder bewijssoorten te vermengen.
