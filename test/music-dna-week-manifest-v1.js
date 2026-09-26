@@ -68,6 +68,8 @@ function validate(manifest){
   errors.push(...editorialCheck.errors);
   const archiveCheck=archivalCompleteness(manifest);
   errors.push(...archiveCheck.errors);
+  const orderCheck=flowOrderIntegrity(manifest);
+  errors.push(...orderCheck.errors);
   return {pass:errors.length===0,errors,warnings,publicationTargets:target,complete,uniqueArtistCount:derived.length,trackCount:(manifest.tracks||[]).length};
 }
 
@@ -296,6 +298,16 @@ function weeklyPublicationGateSelfTest(){
   const after=weeklyPublicationGate(m);
   return {pass:!before.complete&&before.blockers.some(x=>x.includes("bios"))&&after.complete,cases:{beforeBlockers:before.blockers,afterBlockers:after.blockers}};
 }
+function flowOrderIntegrity(manifest){
+  const m=manifest||{},errors=[],tracks=m.tracks||[],freeze=m.freeze||{};
+  if(freeze.status==="frozen"){
+    const snapshot=freeze.orderedTrackIds||[];
+    const current=tracks.map(t=>t.spotifyTrackId||t.trackId||null);
+    if(!snapshot.length) errors.push("frozen manifest has no orderedTrackIds snapshot");
+    else if(JSON.stringify(snapshot)!==JSON.stringify(current)) errors.push("frozen Flow-DNA track order changed after freeze");
+  }
+  return {pass:errors.length===0,errors};
+}
 function archivalCompleteness(manifest){
   const m=derive(manifest),errors=[];
   const p=m.publication||{},published=(p.spotify||{}).status==="published";
@@ -313,6 +325,7 @@ function freeze(manifest,at){
   m.freeze=m.freeze||{};
   m.freeze.status="frozen";
   m.freeze.frozenAt=at||new Date().toISOString();
+  m.freeze.orderedTrackIds=(m.tracks||[]).map(t=>t.spotifyTrackId||t.trackId);
   return m;
 }
 
@@ -337,7 +350,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,archivalCompleteness,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
