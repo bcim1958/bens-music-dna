@@ -35,6 +35,8 @@ function validate(manifest){
     if(!(t.artistId||t.artistName||(t.artists&&t.artists.length))) errors.push("track "+i+" has no artist");
   });
   const derived=uniqArtistsFromTracks(manifest.tracks);
+  const oneTrackPerArtist=((manifest.selectionRules||{}).oneTrackPerArtist)!==false;
+  if(oneTrackPerArtist&&(manifest.tracks||[]).length!==derived.length) errors.push("one-track-per-artist rule violated: "+(manifest.tracks||[]).length+" tracks / "+derived.length+" unique artists");
   const stored=((manifest.derived||{}).uniqueArtists||[]);
   if(JSON.stringify(derived)!==JSON.stringify(stored)) errors.push("derived.uniqueArtists is stale or not derived from tracks");
 
@@ -115,7 +117,8 @@ function selfTest(){
   m.publication.gemstoneMuseum={status:"published"};
   m.integrity.complete=true;
   const r2=validate(m);
-  return {pass:r1.pass&&r1.uniqueArtistCount===2&&!r1.complete&&r2.pass&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
+  const duplicateArtistCaught=r1.errors.some(e=>e.startsWith("one-track-per-artist rule violated"));
+  return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
 const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,freeze,selfTest};
