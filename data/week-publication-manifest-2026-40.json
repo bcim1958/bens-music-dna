@@ -76,7 +76,8 @@
       "85 candidate records are available; capacity proof is not publication readiness.",
       "Artwork file was generated and uploaded to a separate private proof playlist on 2026-09-26; it is not attached to a W40 production playlist.",
       "Proof playlist 6ARzCinEi6HyZKpIhxH12C is intentionally not publication.spotify.playlistId.",
-      "Artwork SHA-256: 8479d0cfb95c27a5024ed11c7265b640d2ce6050193d703036835a97ae92c360",
+      "Artwork SHA-256: b8aacf968cbd83df212e82eb7f35af995d5f49683fba38d0380ed23e22ea62f3",
+      "Production artwork technically recompressed on 2026-09-26: progressive JPEG, quality 93, original chroma subsampling, 1000x1000 unchanged; 303820 -> 250227 bytes (<262144). Same design/crop; visually checked. Original proof SHA-256: 8479d0cfb95c27a5024ed11c7265b640d2ce6050193d703036835a97ae92c360. Existing Saturday upload function accepts the new asset in an offline mock test; original oversized asset and wrong MIME are rejected. No Spotify publication or upload performed.",
       "Editorial sources: https://www.gia.edu/topaz-description and https://www.gia.edu/FAQ/gia-faq-imperial-topaz",
       "Generated image is a proof asset; historical visual-family parity and smallest-thumbnail counter legibility are not fully validated.",
       "Spotify folder placement remains manual; W39 unchanged."
