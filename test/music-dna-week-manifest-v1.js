@@ -182,6 +182,27 @@ function prePublicationGate(manifest){
   if(Number.isInteger(rules.expectedPositiveReserveCount)&&(counts["positive-reserve"]||0)!==rules.expectedPositiveReserveCount) errors.push("positive-reserve composition not ready");
   return {pass:errors.length===0,errors,weekId:m.weekId,trackCount:tracks.length,uniqueArtistCount:m.derived.uniqueArtists.length};
 }
+function externalDeliveryReadiness(manifest){
+  const m=derive(manifest),a=m.artwork||{},spotify=((m.publication||{}).spotify)||{},errors=[];
+  const pre=artworkPreflight(m);
+  errors.push(...pre.errors);
+  if(!a.assetId) errors.push("generated artwork assetId missing");
+  if(!spotify.playlistId) errors.push("Spotify playlistId missing");
+  const ready=errors.length===0;
+  return {
+    pass:ready,
+    errors,
+    weekId:m.weekId,
+    canAttemptSpotifyArtworkAttachment:ready,
+    proofRequired:[
+      "generated artwork file exists",
+      "Spotify playlist exists",
+      "artwork attachment succeeds in real integration",
+      "post-attachment state is verified"
+    ],
+    warning:"Code readiness is not proof of Spotify attachment capability."
+  };
+}
 function artworkDeliveryPlan(manifest){
   const m=derive(manifest),a=m.artwork||{},p=(m.publication||{}).spotify||{};
   return {weekId:m.weekId,assetId:a.assetId||null,playlistId:p.playlistId||null,status:(a.assetId&&p.playlistId)?"ready":"blocked"};
@@ -412,7 +433,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,prePublicationGate,artworkPreflight,productionHandoff,publicationSequence,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,prePublicationGate,artworkPreflight,externalDeliveryReadiness,productionHandoff,publicationSequence,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
