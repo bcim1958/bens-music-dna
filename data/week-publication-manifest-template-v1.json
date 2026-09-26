@@ -20,6 +20,10 @@
   },
   "gemstone": {
     "status": "pending",
+    "name": null,
+    "sequenceNumber": null,
+    "editorialText": null,
+    "editorialStandard": "short-factual-no-symbolism",
     "trackId": null,
     "artistId": null,
     "presented": false
@@ -58,7 +62,9 @@
       "Spotify success does not imply full week publication success",
       "current Saturday gift composition: 19 positive discoveries from the week plus 2 from positive reserve",
       "Spotify folder placement is a manual post-publication step; intended destination is 💎 Ontdek DNA and may be confirmed afterward",
-      "weekly gemstone cover must be generated and attached to the Spotify playlist before the automatic delivery is considered complete"
+      "weekly gemstone cover must be generated and attached to the Spotify playlist before the automatic delivery is considered complete",
+      "gemstone sequence counter is continuous from 2026-W36 = stone 1 and is written numerically",
+      "gemstone editorial copy is short, factual and non-symbolic; no invented relation to Ben, taste or weekly flow"
     ]
   },
   "provenance": {
@@ -88,6 +94,9 @@
       "square": true,
       "weekIdentityRequired": true,
       "gemstoneIdentityRequired": true,
+      "cinematicEdelsteenmuseumVisualFamily": true,
+      "numericSlingerCounterRequired": true,
+      "factualEditorialCopyRequired": true,
       "generateBeforePublication": true
     },
     "delivery": {
