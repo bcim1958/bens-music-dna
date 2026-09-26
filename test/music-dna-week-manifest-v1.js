@@ -60,7 +60,12 @@ function validate(manifest){
   };
   const complete=Object.values(target).every(Boolean);
   if((manifest.integrity||{}).complete!==complete) errors.push("integrity.complete does not match required publication targets");
-  const folderCheck=spotifyFolderIntegrity(manifest);\n  errors.push(...folderCheck.errors);\n  const gemCheck=gemstoneIntegrity(manifest);\n  errors.push(...gemCheck.errors);
+  const folderCheck=spotifyFolderIntegrity(manifest);
+  errors.push(...folderCheck.errors);
+  const gemCheck=gemstoneIntegrity(manifest);
+  errors.push(...gemCheck.errors);
+  const editorialCheck=gemstoneEditorialIntegrity(manifest);
+  errors.push(...editorialCheck.errors);
   return {pass:errors.length===0,errors,warnings,publicationTargets:target,complete,uniqueArtistCount:derived.length,trackCount:(manifest.tracks||[]).length};
 }
 
@@ -102,16 +107,36 @@ function expressBioQueueSelfTest(){
   return {pass:m.express.artistBios.artists.length===2&&x.status==="ready"&&y.status==="needs-research"&&y.missing.includes("members"),
     cases:{uniqueBioJobs:m.express.artistBios.artists.length,xStatus:x.status,yStatus:y.status,yMissing:y.missing}};
 }
+function gemstoneSequenceNumber(weekId){
+  const m=/^(\\d{4})-(\\d{2})$/.exec(weekId||"");
+  if(!m) return null;
+  const year=Number(m[1]),week=Number(m[2]);
+  if(year<2026||(year===2026&&week<36)) return null;
+  return (year-2026)*52+(week-36)+1;
+}
+function gemstoneEditorialIntegrity(manifest){
+  const m=manifest||{},g=m.gemstone||{},errors=[];
+  const expected=gemstoneSequenceNumber(m.weekId);
+  if(expected!==null&&g.sequenceNumber!=null&&g.sequenceNumber!==expected) errors.push("gemstone sequenceNumber must be "+expected+" for "+m.weekId);
+  if(g.editorialText){
+    const tail="Steen "+expected+" van de Music-DNA-slinger.";
+    if(expected!==null&&!String(g.editorialText).trim().endsWith(tail)) errors.push("gemstone editorialText must end with numeric sling counter: "+tail);
+  }
+  return {pass:errors.length===0,errors,expectedSequenceNumber:expected};
+}
 function weeklyArtworkSpec(manifest){
   const m=derive(manifest),g=m.gemstone||{},a=m.artwork||{};
   return {
     kind:"weekly-gemstone-cover",
     weekId:m.weekId,
     gemstoneName:a.gemstoneName||g.name||null,
+    sequenceNumber:g.sequenceNumber!=null?g.sequenceNumber:gemstoneSequenceNumber(m.weekId),
+    editorialText:g.editorialText||null,
+    editorialStyle:"short-factual-no-symbolism",
     square:true,
     size:{width:1000,height:1000},
     text:{primary:"Ontdek DNA",secondary:m.weekId||null},
-    requirements:["recognizable gemstone identity","legible week identity","works as small Spotify thumbnail"],
+    requirements:["recognizable gemstone identity","legible week identity","works as small Spotify thumbnail","cinematic Edelsteenmuseum visual family","editorial copy is short, factual and non-symbolic","numeric Music-DNA-slinger counter"],
     status:a.status||"pending"
   };
 }
@@ -127,7 +152,8 @@ function weeklyArtworkRenderModel(manifest){
     layers:[
       {kind:"gemstone",identity:spec.gemstoneName},
       {kind:"title",text:"Ontdek DNA"},
-      {kind:"week",text:spec.weekId}
+      {kind:"week",text:spec.weekId},
+      {kind:"sequence",text:"Steen "+spec.sequenceNumber}
     ],
     accessibility:{smallThumbnailLegibility:true},
     spec
@@ -299,7 +325,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
