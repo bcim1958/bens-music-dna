@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0",
+  "status": "template",
+  "purpose": "single source of truth for one published Ontdek DNA week",
+  "weekId": "YYYY-WW",
+  "freeze": {
+    "status": "draft",
+    "frozenAt": null,
+    "publishedAt": null
+  },
+  "tracks": [],
+  "derived": {
+    "uniqueArtists": []
+  },
+  "express": {
+    "artistBios": {
+      "status": "pending",
+      "artists": []
+    }
+  },
+  "gemstone": {
+    "status": "pending",
+    "trackId": null,
+    "artistId": null,
+    "presented": false
+  },
+  "publication": {
+    "spotify": {
+      "status": "pending",
+      "playlistId": null,
+      "folderPlacement": "pending"
+    },
+    "express": {
+      "status": "pending",
+      "editionId": null
+    },
+    "gemstoneMuseum": {
+      "status": "pending",
+      "entryId": null
+    }
+  },
+  "integrity": {
+    "requiredTargets": [
+      "spotify",
+      "express",
+      "gemstone",
+      "gemstoneMuseum"
+    ],
+    "complete": false,
+    "rules": [
+      "tracks are the primary content truth",
+      "uniqueArtists must be derived from tracks",
+      "published manifest corrections require provenance",
+      "Spotify success does not imply full week publication success"
+    ]
+  },
+  "provenance": {
+    "createdFor": "post-W39 canonical publication workflow",
+    "notes": []
+  }
+}
