@@ -37,6 +37,11 @@ function validate(manifest){
     if(!(t.artistId||t.artistName||(t.artists&&t.artists.length))) errors.push("track "+i+" has no artist");
     if(rules.allowedSelectionSources&&rules.allowedSelectionSources.length&&!rules.allowedSelectionSources.includes(t.selectionSource)) errors.push("track "+i+" has invalid selectionSource "+String(t.selectionSource));
   });
+  if(Array.isArray(manifest.tracks)&&rules.allowedSelectionSources){
+    const counts=manifest.tracks.reduce((a,t)=>(a[t.selectionSource]=(a[t.selectionSource]||0)+1,a),{});
+    if(Number.isInteger(rules.expectedWeekPositiveCount)&&(counts["week-positive"]||0)!==rules.expectedWeekPositiveCount) errors.push("expected "+rules.expectedWeekPositiveCount+" week-positive tracks, found "+(counts["week-positive"]||0));
+    if(Number.isInteger(rules.expectedPositiveReserveCount)&&(counts["positive-reserve"]||0)!==rules.expectedPositiveReserveCount) errors.push("expected "+rules.expectedPositiveReserveCount+" positive-reserve tracks, found "+(counts["positive-reserve"]||0));
+  }
   const derived=uniqArtistsFromTracks(manifest.tracks);
   const oneTrackPerArtist=rules.oneTrackPerArtist!==false;
   if(oneTrackPerArtist&&(manifest.tracks||[]).length!==derived.length) errors.push("one-track-per-artist rule violated: "+(manifest.tracks||[]).length+" tracks / "+derived.length+" unique artists");
