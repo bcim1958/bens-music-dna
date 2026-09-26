@@ -1555,6 +1555,37 @@ function explorerIntegrationSelfTest(){
   return {pass:cases.every(x=>x.pass),cases,subtests:{entryTest,navTest,loopTest},
     invariant:"all Explorer entrances feed one bidirectional relation graph; missing knowledge creates research demand rather than a fabricated or blocked route"};
 }
+function explorerSurpriseCandidates(id,context){
+  context=context||{};
+  const visited=new Set(context.visitedIds||[]);
+  const known=new Set(context.knownIds||[]);
+  const typeSeen=new Set(context.seenTypes||[]);
+  const node=explorerNode(id);
+  if(!node)return [];
+  return node.links.map(link=>{
+    const rels=relationsFor(id,{use:"explorer",confidence:"confirmed"}).filter(r=>counterpartFor(id,r)===link.id);
+    const evidenceCount=new Set(rels.flatMap(r=>r.evidence||[])).size;
+    const isVisited=visited.has(link.id),isKnown=known.has(link.id),novelType=!typeSeen.has(link.type);
+    const score=(isVisited?-100:0)+(isKnown?0:3)+(novelType?2:0)+Math.min(3,evidenceCount)+(link.relationCount>1?1:0);
+    return Object.assign({},link,{surprise:{score,isVisited,isKnown,novelType,evidenceCount,
+      reason:isVisited?"already-visited":(!isKnown&&novelType?"unknown-new-node-type":(!isKnown?"unknown-terrain":"known-terrain"))}});
+  }).filter(x=>!x.surprise.isVisited).sort((a,b)=>b.surprise.score-a.surprise.score||b.surprise.evidenceCount-a.surprise.evidenceCount||a.name.localeCompare(b.name));
+}
+function explorerInterestingDoor(id,context){
+  return explorerSurpriseCandidates(id,context)[0]||null;
+}
+function explorerSurpriseRegressionSelfTest(){
+  const candidates=explorerSurpriseCandidates("chester_thompson",{knownIds:["genesis"],visitedIds:["genesis"],seenTypes:["artist","person"]});
+  const top=candidates[0];
+  const cases=[
+    {name:"visited door is excluded",pass:!candidates.some(x=>x.id==="genesis")},
+    {name:"unknown evidence-backed doors remain",pass:candidates.some(x=>x.id==="frank_zappa")&&candidates.some(x=>x.id==="weather_report")},
+    {name:"new node type can receive novelty bonus",pass:candidates.some(x=>x.id==="seconds_out"&&x.surprise.novelType)},
+    {name:"selector returns one real Explorer door",pass:!!top&&explorerNode("chester_thompson").links.some(x=>x.id===top.id)}
+  ];
+  return {pass:cases.every(x=>x.pass),cases,top:top?{id:top.id,name:top.name,type:top.type,surprise:top.surprise}:null,
+    invariant:"surprise ranks only confirmed Explorer doors; novelty may reorder evidence-backed options but can never create an edge"};
+}
 function quickFacts(id){
   return relationsFor(id,{use:"wat-hoor-ik",confidence:"confirmed"}).map(r=>({
     relationId:r.id,family:r.family,text:r.claim,sources:evidenceFor(r)
@@ -1566,6 +1597,6 @@ function quickFactBundles(id){
     families:b.families,facts:b.claims,sources:b.evidence
   }));
 }
-window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,ghostDiscoveryQueueRegressionSelfTest,voivodDiscoveryQueueRegressionSelfTest,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerGenreDnaGroups,explorerGenreDnaGroup,explorerGenreTaxonomyRegressionSelfTest,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerGhostVoivodCrossWorldRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}});
+window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,ghostDiscoveryQueueRegressionSelfTest,voivodDiscoveryQueueRegressionSelfTest,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerGenreDnaGroups,explorerGenreDnaGroup,explorerGenreTaxonomyRegressionSelfTest,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerGhostVoivodCrossWorldRegressionSelfTest,explorerIntegrationSelfTest,explorerSurpriseCandidates,explorerInterestingDoor,explorerSurpriseRegressionSelfTest,quickFacts,quickFactBundles}});
 })(),
-    {id:"disc-genesis-chester-shadow-figure",base:"genesis",counterpart:"chester_thompson",kind:"collective-significance-door",title:"De drummer naast de zanger-drummer",summary:"Chester Thompson werd vanaf 1977 de vaste livepartner achter het drumstel toen Phil Collins ook frontman was; zijn eigen route voert terug naar Frank Zappa en Weather Report.",relations:["rel-thompson-genesis-live","rel-thompson-collins-double-drums","rel-thompson-zappa","rel-thompson-weather-report"],evidence:["chester_musicradar_2024","genesisnews_wind_wuthering_1977","genesisnews_thompson_2007"],status:"unread"};
+    {id:"disc-genesis-chester-shadow-figure",base:"genesis",counterpart:"chester_thompson",kind:"collective-significance-door",title:"De drummer naast de zanger-drummer",summary:"Chester Thompson werd vanaf 1977 de vaste livepartner achter het drumstel toen Phil Collins ook frontman was; zijn eigen route voert terug naar Frank Zappa en Weather Report.",relations:["rel-thompson-genesis-live","rel-thompson-collins-double-drums","rel-thompson-zappa","rel-thompson-weather-report"],evidence:["chester_musicradar_2024","genesisnews_wind_wuthering_1977","genesisnews_thompson_2007"],status:"unread"},
