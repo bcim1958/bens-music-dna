@@ -606,3 +606,25 @@ De readiness-laag moet concrete blokkades tonen in plaats van alleen rood/groen.
 **Healthcheck-status bij deze consolidatie:** W39 muziekpublicatie 🟢; W39 Flow eerste indruk 🟢 voorlopig; W39 visuele levering 🔴; weekmanifest/selectiecontract 🟢; Express-afleiding 🟢 structureel; Edelsteenreferentiecontrole 🟢; weekhoes-specificatie/gate 🟢; daadwerkelijke hoesgenerator + Spotify-koppeling 🔴 nog te bewijzen; volledige W40 end-to-end keten 🟠 nog niet bewezen.
 
 **Canonieke technische kop:** `14964c9ad63405879840ad7f1824b4cf5d1028b5`.
+
+
+### 22.9 Vaste redactiestandaard Edelsteenmuseum — vanaf W36
+
+Deze regel geldt direct en met terugwerkende kracht vanaf W36 en is de standaard voor alle volgende weekleveringen.
+
+**Beeld en tekst hebben verschillende rollen.** De weekhoes mag rijk, filmisch en uitgesproken zijn binnen de bestaande Edelsteenmuseum-vormtaal. De begeleidende Spotify-/museumtekst blijft juist kort, zakelijk en feitelijk.
+
+Vaste tekststructuur:
+1. `STEENNAAM · Wxx —`
+2. maximaal enkele controleerbare feiten over de steen zelf: mineraal/variëteit, kleur/ontstaan, eigenschap, gebruik, vindplaats of historisch feit waar relevant;
+3. afsluiten met **`Steen N van de Music-DNA-slinger.`**, waarbij N altijd als cijfer wordt geschreven.
+
+Niet meer gebruiken: verzonnen of geforceerde symboliek; karaktereigenschappen als passie, moed, vrijheid, creativiteit of energie alleen om een betekenis aan de steen te geven; verklaringen over Ben, zijn muzieksmaak, de flow of sfeer van de week; sentimentele duiding; achteraf geconstrueerde verbanden tussen steen en muziek.
+
+Redactioneel principe: **het beeld mag spectaculair zijn; de tekst hoeft niets te verklaren wat er feitelijk niet te verklaren valt.** Bij twijfel liever één feit minder dan een betekenis erbij verzinnen.
+
+Genormaliseerde teller: W36 = steen 1, W37 = steen 2, W38 = steen 3, W39 = steen 4; daarna doorlopend numeriek.
+
+De actuele genormaliseerde W39-tekst is: **CARNEOOL · W39 — Een oranjerode tot roodbruine variëteit van chalcedoon. De kleur ontstaat door ijzerverbindingen. Carneool wordt al sinds de oudheid gebruikt voor sieraden, kralen en zegelstenen. Steen 4 van de Music-DNA-slinger.**
+
+Deze §22.9 moet bij iedere toekomstige weekhoes/edelsteentekst vóór generatie worden toegepast; niet opnieuw vrij interpreteren.
