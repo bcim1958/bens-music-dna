@@ -186,6 +186,18 @@ function artworkDeliveryPlan(manifest){
   const m=derive(manifest),a=m.artwork||{},p=(m.publication||{}).spotify||{};
   return {weekId:m.weekId,assetId:a.assetId||null,playlistId:p.playlistId||null,status:(a.assetId&&p.playlistId)?"ready":"blocked"};
 }
+function artworkPreflight(manifest){
+  const m=derive(manifest),a=m.artwork||{},g=m.gemstone||{},errors=[];
+  const expected=gemstoneSequenceNumber(m.weekId);
+  if(!g.name) errors.push("weekly gemstone name missing");
+  if(expected!==null&&g.sequenceNumber!==expected) errors.push("weekly gemstone numeric sequence is not canonical");
+  if(!g.editorialText) errors.push("weekly gemstone factual editorial text missing");
+  else if(expected!==null&&!String(g.editorialText).trim().endsWith("Steen "+expected+" van de Music-DNA-slinger.")) errors.push("weekly gemstone editorial text has wrong sling counter");
+  if(a.gemstoneName&&g.name&&a.gemstoneName!==g.name) errors.push("artwork gemstone identity differs from weekly gemstone");
+  const render=weeklyArtworkRenderModel(m);
+  if(render.status!=="ready") errors.push("weekly artwork render model is blocked: "+render.reason);
+  return {pass:errors.length===0,errors,weekId:m.weekId,gemstoneName:g.name||null,sequenceNumber:expected,renderStatus:render.status};
+}
 function weeklyArtworkIntegrity(manifest){
   const a=(manifest||{}).artwork||{},g=(manifest||{}).gemstone||{},errors=[];
   if(a.status==="published"){
@@ -363,7 +375,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,prePublicationGate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,prePublicationGate,artworkPreflight,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
