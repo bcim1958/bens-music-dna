@@ -100,6 +100,35 @@ function expressBioQueueSelfTest(){
   return {pass:m.express.artistBios.artists.length===2&&x.status==="ready"&&y.status==="needs-research"&&y.missing.includes("members"),
     cases:{uniqueBioJobs:m.express.artistBios.artists.length,xStatus:x.status,yStatus:y.status,yMissing:y.missing}};
 }
+function expressEditionSkeleton(manifest){
+  const m=derive(manifest);
+  const artists=m.derived.uniqueArtists||[];
+  const bios=((((m||{}).express||{}).artistBios||{}).artists)||[];
+  const byKey=new Map(bios.map(b=>[b.id||("name:"+String(b.name||"").toLowerCase()),b]));
+  return {
+    schemaVersion:"1.0",
+    kind:"dna-express-weekly-edition",
+    weekId:m.weekId,
+    publicationStatus:"draft",
+    sections:[{
+      id:"artists-of-the-week",
+      title:"De artiesten van deze week",
+      fixed:true,
+      entries:artists.map((a,index)=>{
+        const b=byKey.get(a.id||("name:"+String(a.name||"").toLowerCase()))||{};
+        return {order:index+1,artistId:a.id||null,artistName:a.name||null,bioStatus:b.status||"missing",missing:b.missing||[],sourceRefs:b.sources||[],text:null};
+      })
+    }],
+    provenance:{derivedFrom:"week-publication-manifest",weekId:m.weekId},
+    rules:{oneEntryPerUniqueArtist:true,publishedTextIsImmutable:true,explorerNarrativeMayRemainDynamic:true}
+  };
+}
+function expressEditionSkeletonSelfTest(){
+  const m={weekId:"2026-40",tracks:[{spotifyTrackId:"a",title:"One",artistId:"x",artistName:"X"},{spotifyTrackId:"b",title:"Two",artistId:"y",artistName:"Y"}],
+    express:{artistBios:{artists:[{id:"x",name:"X",status:"ready",sources:["s1"]},{id:"y",name:"Y",status:"needs-research",missing:["members"]}]}}};
+  const e=expressEditionSkeleton(m),entries=e.sections[0].entries;
+  return {pass:entries.length===2&&entries[0].artistName==="X"&&entries[0].sourceRefs[0]==="s1"&&entries[1].missing[0]==="members"&&entries.every((x,i)=>x.order===i+1)};
+}
 function publicationReadiness(manifest){
   const m=derive(manifest),rules=m.selectionRules||{},tracks=m.tracks||[];
   const artists=m.derived.uniqueArtists||[];
@@ -180,7 +209,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
