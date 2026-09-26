@@ -28,7 +28,8 @@
     "spotify": {
       "status": "pending",
       "playlistId": null,
-      "folderPlacement": "pending"
+      "folderPlacement": "pending",
+      "folderName": null
     },
     "express": {
       "status": "pending",
@@ -53,7 +54,8 @@
       "uniqueArtists must be derived from tracks",
       "published manifest corrections require provenance",
       "Spotify success does not imply full week publication success",
-      "current Saturday gift composition: 19 positive discoveries from the week plus 2 from positive reserve"
+      "current Saturday gift composition: 19 positive discoveries from the week plus 2 from positive reserve",
+      "published Spotify playlist must have confirmed placement in the expected folder: 💎 Ontdek DNA"
     ]
   },
   "provenance": {
@@ -69,6 +71,7 @@
       "positive-reserve"
     ],
     "expectedWeekPositiveCount": 19,
-    "expectedPositiveReserveCount": 2
+    "expectedPositiveReserveCount": 2,
+    "expectedSpotifyFolder": "💎 Ontdek DNA"
   }
 }
