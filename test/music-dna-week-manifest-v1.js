@@ -169,6 +169,19 @@ function weeklyArtworkRenderModelSelfTest(){
   const blocked=weeklyArtworkRenderModel({...base,gemstone:{}});
   return {pass:ready.status==="ready"&&ready.width===1000&&ready.layers[0].identity==="Saffier"&&blocked.status==="blocked"};
 }
+function prePublicationGate(manifest){
+  const m=derive(manifest),errors=[],rules=m.selectionRules||{},tracks=m.tracks||[],freeze=m.freeze||{};
+  const ids=tracks.map(t=>t.spotifyTrackId||t.trackId).filter(Boolean);
+  if(Number.isInteger(rules.expectedTrackCount)&&tracks.length!==rules.expectedTrackCount) errors.push("track count not ready for publication");
+  if(Number.isInteger(rules.expectedUniqueArtistCount)&&m.derived.uniqueArtists.length!==rules.expectedUniqueArtistCount) errors.push("unique artist count not ready for publication");
+  if(tracks.some(t=>!(t.spotifyTrackId||t.trackId))) errors.push("one or more tracks lack stable id");
+  if(freeze.status!=="frozen") errors.push("manifest must be frozen before Spotify publication");
+  if(freeze.status==="frozen"&&JSON.stringify(freeze.orderedTrackIds||[])!==JSON.stringify(ids)) errors.push("frozen Flow-DNA order snapshot does not match tracks");
+  const counts=tracks.reduce((a,t)=>(a[t.selectionSource]=(a[t.selectionSource]||0)+1,a),{});
+  if(Number.isInteger(rules.expectedWeekPositiveCount)&&(counts["week-positive"]||0)!==rules.expectedWeekPositiveCount) errors.push("week-positive composition not ready");
+  if(Number.isInteger(rules.expectedPositiveReserveCount)&&(counts["positive-reserve"]||0)!==rules.expectedPositiveReserveCount) errors.push("positive-reserve composition not ready");
+  return {pass:errors.length===0,errors,weekId:m.weekId,trackCount:tracks.length,uniqueArtistCount:m.derived.uniqueArtists.length};
+}
 function artworkDeliveryPlan(manifest){
   const m=derive(manifest),a=m.artwork||{},p=(m.publication||{}).spotify||{};
   return {weekId:m.weekId,assetId:a.assetId||null,playlistId:p.playlistId||null,status:(a.assetId&&p.playlistId)?"ready":"blocked"};
@@ -350,7 +363,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,prePublicationGate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
