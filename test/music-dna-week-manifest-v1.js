@@ -53,6 +53,7 @@ function validate(manifest){
   const g=manifest.gemstone||{};
   const target={
     spotify:p.spotify&&p.spotify.status==="published",
+    artwork:manifest.artwork&&manifest.artwork.status==="published"&&!!manifest.artwork.assetId&&manifest.artwork.attachedToSpotify===true,
     express:p.express&&p.express.status==="published",
     gemstone:g.status==="published"&&g.presented===true&&!!(g.trackId||g.artistId),
     gemstoneMuseum:p.gemstoneMuseum&&p.gemstoneMuseum.status==="published"
@@ -100,6 +101,29 @@ function expressBioQueueSelfTest(){
   const x=m.express.artistBios.artists.find(a=>a.id==="x"),y=m.express.artistBios.artists.find(a=>a.id==="y");
   return {pass:m.express.artistBios.artists.length===2&&x.status==="ready"&&y.status==="needs-research"&&y.missing.includes("members"),
     cases:{uniqueBioJobs:m.express.artistBios.artists.length,xStatus:x.status,yStatus:y.status,yMissing:y.missing}};
+}
+function weeklyArtworkSpec(manifest){
+  const m=derive(manifest),g=m.gemstone||{},a=m.artwork||{};
+  return {
+    kind:"weekly-gemstone-cover",
+    weekId:m.weekId,
+    gemstoneName:a.gemstoneName||g.name||null,
+    square:true,
+    size:{width:1000,height:1000},
+    text:{primary:"Ontdek DNA",secondary:m.weekId||null},
+    requirements:["recognizable gemstone identity","legible week identity","works as small Spotify thumbnail"],
+    status:a.status||"pending"
+  };
+}
+function weeklyArtworkIntegrity(manifest){
+  const a=(manifest||{}).artwork||{},g=(manifest||{}).gemstone||{},errors=[];
+  if(a.status==="published"){
+    if(!a.assetId) errors.push("weekly artwork has no assetId");
+    if(a.attachedToSpotify!==true) errors.push("weekly artwork is not attached to Spotify playlist");
+    if(!a.gemstoneName) errors.push("weekly artwork has no gemstone identity");
+    if(g.name&&a.gemstoneName!==g.name) errors.push("weekly artwork gemstone does not match weekly gemstone");
+  }
+  return {pass:errors.length===0,errors};
 }
 function spotifyFolderIntegrity(manifest){
   const p=((manifest||{}).publication||{}).spotify||{},rules=(manifest||{}).selectionRules||{},errors=[];
@@ -178,6 +202,7 @@ function publicationReadiness(manifest){
       expectedTracks:rules.expectedTrackCount,expectedArtists:rules.expectedUniqueArtistCount},
     express:{bioJobs:bios.length,missingBioArtists,notReadyBios},
     gemstone:{status:(m.gemstone||{}).status||"pending",presented:(m.gemstone||{}).presented===true},
+    artwork:{status:(m.artwork||{}).status||"pending",gemstoneName:(m.artwork||{}).gemstoneName||null,assetId:(m.artwork||{}).assetId||null,attachedToSpotify:(m.artwork||{}).attachedToSpotify===true},
     publication:m.publication||{},
     gate:weeklyPublicationGate(m)
   };
@@ -195,6 +220,7 @@ function weeklyPublicationGate(manifest){
   if(bioSetComplete&&!biosReady) blockers.push("one or more Express bios are not ready");
   const p=report.publicationTargets||{};
   if(!p.spotify) blockers.push("Spotify playlist publication incomplete");
+  if(!p.artwork) blockers.push("weekly gemstone cover is not generated and attached to Spotify");
   if(!p.express) blockers.push("DNA Express publication incomplete");
   if(!p.gemstone) blockers.push("weekly gemstone not published/presented");
   if(!p.gemstoneMuseum) blockers.push("gemstone museum registration incomplete");
@@ -244,7 +270,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
