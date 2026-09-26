@@ -52,7 +52,8 @@
       "current Ontdek DNA rule: one track per artist; 21 tracks means 21 unique artists",
       "uniqueArtists must be derived from tracks",
       "published manifest corrections require provenance",
-      "Spotify success does not imply full week publication success"
+      "Spotify success does not imply full week publication success",
+      "current Saturday gift composition: 19 positive discoveries from the week plus 2 from positive reserve"
     ]
   },
   "provenance": {
@@ -62,6 +63,12 @@
   "selectionRules": {
     "oneTrackPerArtist": true,
     "expectedTrackCount": 21,
-    "expectedUniqueArtistCount": 21
+    "expectedUniqueArtistCount": 21,
+    "allowedSelectionSources": [
+      "week-positive",
+      "positive-reserve"
+    ],
+    "expectedWeekPositiveCount": 19,
+    "expectedPositiveReserveCount": 2
   }
 }
