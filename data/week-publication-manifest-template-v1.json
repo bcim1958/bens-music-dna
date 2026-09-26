@@ -44,6 +44,7 @@
   "integrity": {
     "requiredTargets": [
       "spotify",
+      "artwork",
       "express",
       "gemstone",
       "gemstoneMuseum"
@@ -56,7 +57,8 @@
       "published manifest corrections require provenance",
       "Spotify success does not imply full week publication success",
       "current Saturday gift composition: 19 positive discoveries from the week plus 2 from positive reserve",
-      "Spotify folder placement is a manual post-publication step; intended destination is 💎 Ontdek DNA and may be confirmed afterward"
+      "Spotify folder placement is a manual post-publication step; intended destination is 💎 Ontdek DNA and may be confirmed afterward",
+      "weekly gemstone cover must be generated and attached to the Spotify playlist before the automatic delivery is considered complete"
     ]
   },
   "provenance": {
@@ -74,5 +76,19 @@
     "expectedWeekPositiveCount": 19,
     "expectedPositiveReserveCount": 2,
     "expectedSpotifyFolder": "💎 Ontdek DNA"
+  },
+  "artwork": {
+    "status": "pending",
+    "kind": "weekly-gemstone-cover",
+    "gemstoneName": null,
+    "assetId": null,
+    "generatedAt": null,
+    "attachedToSpotify": false,
+    "rules": {
+      "square": true,
+      "weekIdentityRequired": true,
+      "gemstoneIdentityRequired": true,
+      "generateBeforePublication": true
+    }
   }
 }
