@@ -115,6 +115,10 @@ function weeklyArtworkSpec(manifest){
     status:a.status||"pending"
   };
 }
+function artworkDeliveryPlan(manifest){
+  const m=derive(manifest),a=m.artwork||{},p=(m.publication||{}).spotify||{};
+  return {weekId:m.weekId,assetId:a.assetId||null,playlistId:p.playlistId||null,status:(a.assetId&&p.playlistId)?"ready":"blocked"};
+}
 function weeklyArtworkIntegrity(manifest){
   const a=(manifest||{}).artwork||{},g=(manifest||{}).gemstone||{},errors=[];
   if(a.status==="published"){
@@ -271,7 +275,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={uniqArtistsFromTracks,derive,validate,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);
