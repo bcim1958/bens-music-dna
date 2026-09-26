@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 const registry={
-  version:"2026-09-25.53",
+  version:"2026-09-26.54",
   status:"prototype",
   principle:"one relation, many uses",
   entities:{
@@ -30,6 +30,12 @@ const registry={
     "greg_lake":{type:"person",name:"Greg Lake"},
     "emerson_lake_palmer":{type:"artist",name:"Emerson, Lake & Palmer"},
     "montreal_olympic_stadium":{type:"venue",name:"Olympic Stadium, Montréal"},
+    "genesis":{type:"artist",name:"Genesis"},
+    "chester_thompson":{type:"person",name:"Chester Thompson"},
+    "phil_collins":{type:"person",name:"Phil Collins"},
+    "frank_zappa":{type:"person",name:"Frank Zappa"},
+    "weather_report":{type:"artist",name:"Weather Report"},
+    "seconds_out":{type:"album",name:"Seconds Out",temporal:{canonicalReleaseYear:1977,objectType:"release",versionType:"live-album",dateStatus:"confirmed"}},
     "radiohead":{type:"artist",name:"Radiohead"},
     "ed_obrien":{type:"person",name:"Ed O’Brien"},
     "jonny_greenwood":{type:"person",name:"Jonny Greenwood"},
@@ -301,7 +307,10 @@ const registry={
     musicdna_catalog:{
       provider:"Music DNA",kind:"catalog",
       title:"Music DNA entity/catalog context",url:null
-    }
+    },
+    chester_musicradar_2024:{provider:"MusicRadar",kind:"primary-interview",title:"Chester Thompson: 10 albums that define my career",url:"https://www.musicradar.com/news/chester-thompson-10-albums-that-define-my-career--genesis-weather-report-frank-zappa",publishedAt:"2024-02-20",checkedAt:"2026-09-26",sourceNote:"Thompson bespreekt zelf Zappa, Weather Report, zijn eerste Genesis-tour/Seconds Out en het samenspel met Phil Collins."},
+    genesisnews_wind_wuthering_1977:{provider:"Genesis News Com [it]",kind:"independent-editorial",title:"Genesis – Wind & Wuthering Tour 1977 – tour report",url:"https://www.genesis-news.com/article/genesis-wind-wuthering-tour-1977-tour-report/",publishedAt:"2025-02-18",checkedAt:"2026-09-26",sourceNote:"Documenteert dat de Wind & Wuthering-tour de eerste Genesis-tour met Chester Thompson was en plaatst zijn komst na Bill Bruford."},
+    genesisnews_thompson_2007:{provider:"Genesis News Com [it]",kind:"primary-interview",title:"Chester Thompson Interview | Genesis live drummer talks to it (Düsseldorf 2007)",url:"https://www.genesis-news.com/article/chester-thompson-interview-genesis-live-drummer-talks-to-it-duesseldorf-2007/",publishedAt:"2007-07-06",checkedAt:"2026-09-26",sourceNote:"Interview tijdens de Genesis-tour van 2007; Thompson spreekt over zijn livewerk met Genesis en Phil Collins."}
   },
   stories:{
     "shiraz_per_aldeheim":{
@@ -472,7 +481,15 @@ const registry={
       base:"ghost",counterpart:"voivod",kind:"new-fact",
       title:"Niet de voor de hand liggende vergelijking",
       summary:"Forge zegt dat Voïvod een veel diepere invloed op Ghost is dan de vaak genoemde Mercyful Fate/Blue Öyster Cult-vergelijkingen suggereren.",
-      relations:["rel-ghost-voivod-influence"],evidence:["voir_voivod_2019"],status:"unread"
+      relations:[
+    {id:"rel-lake-king-crimson",from:"greg_lake",to:"king_crimson",family:"membership",type:"early-member-vocal-bass",direction:"out",claim:"Greg Lake was zanger en bassist in de vroege King Crimson-periode.",evidence:["allmusic_greg_lake_bio"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"],checkedAt:"2026-09-25"},
+    {id:"rel-lake-elp",from:"greg_lake",to:"emerson_lake_palmer",family:"membership",type:"co-founder-vocal-bass",direction:"out",claim:"Greg Lake vormde met Keith Emerson en Carl Palmer Emerson, Lake & Palmer.",evidence:["allmusic_greg_lake_bio"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"],checkedAt:"2026-09-25"},
+    {id:"rel-elp-montreal-1977",from:"emerson_lake_palmer",to:"montreal_olympic_stadium",family:"live",type:"concert-event",direction:"out",claim:"Emerson, Lake & Palmer trad in 1977 op in het Olympic Stadium in Montréal; materiaal daarvan werd verbonden aan Works Live.",evidence:["elp_works_live"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"],checkedAt:"2026-09-25"},
+    {id:"rel-thompson-genesis-live",from:"chester_thompson",to:"genesis",family:"live",type:"touring-drummer",direction:"out",claim:"Chester Thompson werd in 1977 Genesis' live-drummer en vervulde die rol gedurende meerdere decennia, inclusief de tour van 2007.",evidence:["chester_musicradar_2024","genesisnews_wind_wuthering_1977","genesisnews_thompson_2007"],confidence:"confirmed",uses:["explorer","wat-hoor-ik","express"],checkedAt:"2026-09-26"},
+    {id:"rel-thompson-collins-double-drums",from:"chester_thompson",to:"phil_collins",family:"performance",type:"double-drumming-partnership",direction:"out",claim:"Thompson en Phil Collins speelden bij Genesis live veel passages als dubbel-drumteam; Thompson beschrijft die samenwerking zelf als intens.",evidence:["chester_musicradar_2024"],confidence:"confirmed",uses:["explorer","wat-hoor-ik","express"],checkedAt:"2026-09-26"},
+    {id:"rel-thompson-zappa",from:"chester_thompson",to:"frank_zappa",family:"membership",type:"drummer",direction:"out",claim:"Voor Genesis drumde Chester Thompson bij Frank Zappa; hij noemt die periode zelf zijn belangrijkste leerschool voor complex materiaal.",evidence:["chester_musicradar_2024"],confidence:"confirmed",uses:["explorer","wat-hoor-ik","express"],checkedAt:"2026-09-26"},
+    {id:"rel-thompson-weather-report",from:"chester_thompson",to:"weather_report",family:"membership",type:"drummer",direction:"out",claim:"Chester Thompson speelde vóór Genesis bij Weather Report en nam met de groep onder meer materiaal voor Black Market op.",evidence:["chester_musicradar_2024"],confidence:"confirmed",uses:["explorer","wat-hoor-ik","express"],checkedAt:"2026-09-26"},
+    {id:"rel-thompson-seconds-out",from:"chester_thompson",to:"seconds_out",family:"performance",type:"live-album-performance",direction:"out",claim:"Seconds Out bevat livewerk uit Thompsons eerste Genesis-tour in 1977; Thompson noemt het album zelf als belangrijk carrièrepunt.",evidence:["chester_musicradar_2024"],confidence:"confirmed",uses:["explorer","wat-hoor-ik"],checkedAt:"2026-09-26"},"rel-ghost-voivod-influence"],evidence:["voir_voivod_2019"],status:"unread"
     },
     {
       id:"disc-ghost-voivod-away-jacket",
@@ -1550,4 +1567,5 @@ function quickFactBundles(id){
   }));
 }
 window.MUSIC_DNA_RELATION_REGISTRY_V1=Object.assign({},registry,{api:{entity,relationsFor,evidenceFor,counterpartFor,relationshipBundles,narrativeMaterial,narrativeCandidates,narrativeMaterialRegressionSelfTest,storyFor,storyBundle,traceStory,storyCoverage,integrityReport,integritySelfTest,temporalIntegrityReport,temporalRegressionSelfTest,researchPathStatus,researchCoverageGate,researchWorldStatus,researchCatalogSummary,researchBacklog,nextResearchTargets,researchTargetReason,researchOdometer,researchTank,researchCoverageRegressionSelfTest,researchIntegrityReport,temporalContext,versionFamily,discoveriesFor,discoveryStock,discoveryCandidates,discoveryCounterpartId,discoveryFamilyProfile,genericDiscoveryQueue,ghostDiscoveryQueueRegressionSelfTest,voivodDiscoveryQueueRegressionSelfTest,genericDiscoveryRegressionSelfTest,discoveryQueue,createDiscoveryState,discoveryQueueForState,markDiscovery,markStoryRead,discoveryRotation,relationIdentityRegressionSelfTest,counterpartUniquenessAudit,voivodBundlingRegressionSelfTest,aggregateInfluence,playlistCandidates,explorerResearchDemandFromNames,explorerResearchDemandFromWeek,explorerResearchQueue,explorerClosedLoopRegressionSelfTest,explorerArtistIdByName,explorerWeekContext,explorerGenreNodes,explorerGenreDnaGroups,explorerGenreDnaGroup,explorerGenreTaxonomyRegressionSelfTest,explorerEntrypoints,explorerStartFromEntry,explorerEntrypointRegressionSelfTest,explorerNode,createExplorerWalk,explorerStep,explorerBack,explorerBreadcrumb,explorerNavigationRegressionSelfTest,explorerGhostVoivodCrossWorldRegressionSelfTest,explorerIntegrationSelfTest,quickFacts,quickFactBundles}});
-})();
+})(),
+    {id:"disc-genesis-chester-shadow-figure",base:"genesis",counterpart:"chester_thompson",kind:"collective-significance-door",title:"De drummer naast de zanger-drummer",summary:"Chester Thompson werd vanaf 1977 de vaste livepartner achter het drumstel toen Phil Collins ook frontman was; zijn eigen route voert terug naar Frank Zappa en Weather Report.",relations:["rel-thompson-genesis-live","rel-thompson-collins-double-drums","rel-thompson-zappa","rel-thompson-weather-report"],evidence:["chester_musicradar_2024","genesisnews_wind_wuthering_1977","genesisnews_thompson_2007"],status:"unread"};
