@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0",
+  "id": "muziekmeter-w40-live-days1-5-2026-10-01",
+  "weekId": "2026-W40",
+  "status": "partial-live-calibration",
+  "completeOfficialDays": 5,
+  "officialTrackCount": 15,
+  "sourceNote": "Exact daily selections and ratings recovered from prior W40 conversation evidence/screenshots. Primary 11-area Genre-DNA assignment is intentionally not fabricated where Hard Rock/Hair overlap is unresolved.",
+  "days": [
+    {
+      "day": 1,
+      "official": [
+        {
+          "candidateId": "2026-W40-01",
+          "artist": "Kane Roberts;Alice Cooper;Alissa White-Gluz;Aoyama Hideki",
+          "title": "Beginning of the End",
+          "rating": "TERUGKOMEN",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        },
+        {
+          "candidateId": "2026-W40-02",
+          "artist": "John Norum;Joey Tempest",
+          "title": "We Will Be Strong",
+          "rating": "GOED",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        },
+        {
+          "candidateId": "2026-W40-04",
+          "artist": "Aviator",
+          "title": "Front Line",
+          "rating": "RAAK",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "official": [
+        {
+          "candidateId": "2026-W40-09",
+          "artist": "Heavy Bones",
+          "title": "The Hand That Feeds",
+          "rating": "RAAK",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        },
+        {
+          "candidateId": "2026-W40-10",
+          "artist": "King Kobra",
+          "title": "Iron Eagle (Never Say Die)",
+          "rating": "RAAK",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        },
+        {
+          "candidateId": "2026-W40-03",
+          "artist": "Alien",
+          "title": "Give It Up",
+          "rating": "RAAK",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "official": [
+        {
+          "candidateId": "2026-W40-18",
+          "artist": "Sic Vikki",
+          "title": "Kiss Me in French",
+          "rating": "RAAK",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        },
+        {
+          "candidateId": "2026-W40-05",
+          "artist": "Brighton Rock",
+          "title": "Young Wild and Free",
+          "rating": "RAAK",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        },
+        {
+          "candidateId": "2026-W40-17",
+          "artist": "Saints & Sinners",
+          "title": "Shake",
+          "rating": "RAAK",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "official": [
+        {
+          "candidateId": "2026-W40-14",
+          "artist": "Return",
+          "title": "Steal Your Heart",
+          "rating": "RAAK",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        },
+        {
+          "candidateId": "2026-W40-12",
+          "artist": "Radioactive;Jeff Paris",
+          "title": "Shame On You, Shame On Me",
+          "rating": "RAAK",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        },
+        {
+          "candidateId": "2026-W40-13",
+          "artist": "Restless Spirits;Chez Kane",
+          "title": "Dreams of the Wild",
+          "rating": "RAAK",
+          "cluster": "Hard Rock & AOR / Hair Metal"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "official": [
+        {
+          "candidateId": "2026-W40-46",
+          "artist": "Peppermint Creeps",
+          "title": "Turning Japanese",
+          "rating": "GOED",
+          "primaryGenreDna": "Punk & New Wave"
+        },
+        {
+          "candidateId": "2026-W40-26",
+          "artist": "Andy Timmons",
+          "title": "Groove or Die",
+          "rating": "GOED",
+          "cluster": "Hard Rock & AOR / Hair Metal / Classic Heavy Metal"
+        },
+        {
+          "candidateId": "2026-W40-28",
+          "artist": "Baby Jane",
+          "title": "My Behavior",
+          "rating": "GOED",
+          "primaryGenreDna": "Hair Metal"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "ratings": {
+      "RAAK": 10,
+      "GOED": 4,
+      "TERUGKOMEN": 1,
+      "NIET": 0,
+      "positive": 14,
+      "positiveRate": 0.9333333333333333
+    },
+    "broadCluster": {
+      "label": "Hard Rock & AOR + Hair Metal (including one unresolved Heavy-Metal overlap)",
+      "countAtLeast": 14,
+      "shareAtLeast": 0.9333333333333333,
+      "canonicalReferenceShareForHardRockAorPlusHairMetal": 0.2708333333333333,
+      "note": "Broad concentration signal only; do not use this partial week to steer."
+    }
+  },
+  "invariants": [
+    "Positions 1-3 only.",
+    "Week-level evidence is descriptive, never a steering trigger.",
+    "Ratings and genre balance remain separate.",
+    "Do not force a primary 11-area assignment for unresolved overlaps."
+  ]
+}
