@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0",
+  "id": "muziekmeter-live-validation-001-partial-w40-d5",
+  "generatedFor": "2026-10-01",
+  "status": "PARTIAL_DO_NOT_STEER",
+  "referenceId": "genre-dna-reference-2026-10-01",
+  "evidence": {
+    "historical": {
+      "weeks": "W36-W39",
+      "officialTracks": 84,
+      "hardRockAorPlusHairMetal": 47,
+      "share": 0.5595238095238095
+    },
+    "w40ThroughDay5": {
+      "officialTracks": 15,
+      "positive": 14,
+      "positiveRate": 0.9333333333333333,
+      "broadHardRockHairClusterAtLeast": 14,
+      "broadShareAtLeast": 0.9333333333333333,
+      "note": "One Andy Timmons track remains a multi-area overlap; no forced primary 11-area assignment."
+    },
+    "combinedObserved": {
+      "officialTracks": 99,
+      "broadHardRockHairClusterAtLeast": 61,
+      "broadShareAtLeast": 0.6161616161616161
+    }
+  },
+  "interpretation": {
+    "candidateQuality": "VERY_STRONG",
+    "offerDiversity": "VERY_NARROW_SO_FAR",
+    "historicalDirection": "CONCENTRATION_NOT_YET_RECEDING",
+    "steeringDecision": "NONE",
+    "whyNoSteering": [
+      "W40 is incomplete.",
+      "A single week has no steering authority.",
+      "The 13-week primary window is not yet complete.",
+      "Broad-cluster evidence cannot replace exact one-primary-area accounting."
+    ],
+    "nextRequiredEvidence": [
+      "W40 days 6 and 7 official positions 1-3",
+      "Final 21/21 W40 ratings",
+      "Exact primary Genre-DNA assignment for all 21 W40 official tracks",
+      "Saturday Flow-DNA diagnostic on the positive harvest"
+    ]
+  },
+  "expectedNextMilestones": {
+    "fullW40": "after day 7 / 21 official offers",
+    "first6WeekRadar": "W36-W41",
+    "first13WeekPrimaryWindow": "W36-W48",
+    "first26WeekSmallGenreWindow": "W36-W61"
+  }
+}
