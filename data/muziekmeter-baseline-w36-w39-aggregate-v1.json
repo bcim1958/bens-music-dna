@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "id": "muziekmeter-baseline-w36-w39-aggregate-v1",
+  "period": {
+    "weeks": [
+      "2026-W36",
+      "2026-W37",
+      "2026-W38",
+      "2026-W39"
+    ],
+    "officialTrackCount": 84
+  },
+  "provenance": {
+    "kind": "recovered-prior-conversation-aggregate",
+    "note": "Exact aggregate counts recovered from the earlier W36-W39 nulmeting discussion. This file does NOT reconstruct the 84 track identities and must not be used as a substitute for the original identity-level JSON."
+  },
+  "counts": {
+    "Hard Rock & AOR": 29,
+    "Punk & New Wave": 18,
+    "Hair Metal": 18,
+    "Garage Rock": 10,
+    "Progressive Metal": 3,
+    "Psychedelic & Space Rock": 2,
+    "Prog & Art Rock": 1,
+    "Classic Heavy Metal": 1,
+    "Extreme & Modern Metal": 1,
+    "Alternative & Indie": 1,
+    "Glam Rock": 0
+  },
+  "knownWeeklyCombined": {
+    "metric": "Hard Rock & AOR + Hair Metal",
+    "weeks": {
+      "2026-W36": 8,
+      "2026-W37": 13,
+      "2026-W38": 10,
+      "2026-W39": 16
+    },
+    "total": 47,
+    "share": 0.5595238095238095
+  },
+  "useRules": [
+    "Use only as historical calibration / dry-test input.",
+    "Do not infer per-track identities, ratings, days or primary classifications beyond these exact aggregate counts.",
+    "Do not use this four-week baseline to trigger selector steering.",
+    "Replace or supplement with the original identity-level nulmeting file if it becomes available."
+  ]
+}
