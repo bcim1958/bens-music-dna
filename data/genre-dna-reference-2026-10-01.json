@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0",
+  "id": "genre-dna-reference-2026-10-01",
+  "source": {
+    "basis": "48 canonical Genre-DNA playlists x 30 positions = 1440 playlist positions",
+    "note": "Playlist count is used as reference weight; one offered track counts once via primary Genre-DNA only."
+  },
+  "windows": {
+    "weekly": 21,
+    "warning6w": 126,
+    "primary13w": 273,
+    "long26w": 546
+  },
+  "mainAreas": [
+    {
+      "id": "punk-new-wave",
+      "name": "Punk & New Wave",
+      "playlists": 10,
+      "share": 0.20833333333333334,
+      "steering": "13w"
+    },
+    {
+      "id": "hair-metal",
+      "name": "Hair Metal",
+      "playlists": 9,
+      "share": 0.1875,
+      "steering": "13w"
+    },
+    {
+      "id": "prog-art-rock",
+      "name": "Prog & Art Rock",
+      "playlists": 7,
+      "share": 0.14583333333333334,
+      "steering": "13w"
+    },
+    {
+      "id": "extreme-modern-metal",
+      "name": "Extreme & Modern Metal",
+      "playlists": 6,
+      "share": 0.125,
+      "steering": "13w"
+    },
+    {
+      "id": "alternative-indie",
+      "name": "Alternative & Indie",
+      "playlists": 4,
+      "share": 0.08333333333333333,
+      "steering": "13w"
+    },
+    {
+      "id": "hard-rock-aor",
+      "name": "Hard Rock & AOR",
+      "playlists": 4,
+      "share": 0.08333333333333333,
+      "steering": "13w"
+    },
+    {
+      "id": "progressive-metal",
+      "name": "Progressive Metal",
+      "playlists": 3,
+      "share": 0.0625,
+      "steering": "13w"
+    },
+    {
+      "id": "classic-heavy-metal",
+      "name": "Classic Heavy Metal",
+      "playlists": 2,
+      "share": 0.041666666666666664,
+      "steering": "13w-cautious-26w-confirm"
+    },
+    {
+      "id": "garage-rock",
+      "name": "Garage Rock",
+      "playlists": 1,
+      "share": 0.020833333333333332,
+      "steering": "26w"
+    },
+    {
+      "id": "glam-rock",
+      "name": "Glam Rock",
+      "playlists": 1,
+      "share": 0.020833333333333332,
+      "steering": "26w"
+    },
+    {
+      "id": "psychedelic-space-rock",
+      "name": "Psychedelic & Space Rock",
+      "playlists": 1,
+      "share": 0.020833333333333332,
+      "steering": "26w"
+    }
+  ],
+  "statusRules": {
+    "greenAbsZLt": 1.5,
+    "yellowAbsZLt": 2,
+    "orangeAbsZGte": 2,
+    "minExpectedFor13wAutoSteer": 10,
+    "correctionCheckpointWeeks": 4,
+    "cooldownWeeks": 3,
+    "correctionSteps": [
+      0.03,
+      0.05,
+      0.1
+    ],
+    "correctionBounds": [
+      0.9,
+      1.1
+    ],
+    "blueMeaning": "still statistically outside green, but recent 6-week trend is consistently moving toward reference",
+    "redMeaning": "persistent orange deviation confirmed on longer horizon and not resolved after a prior soft correction",
+    "greyMeaning": "insufficient statistical mass for automatic steering"
+  },
+  "invariants": [
+    "Only official positions 1-3 count toward the longitudinal balance ledger.",
+    "Reserve positions never affect the official Genre-DNA balance.",
+    "One offered track has exactly one primary Genre-DNA main area for balance accounting.",
+    "Ratings measure candidate quality within taste areas and do not directly rewrite reference shares.",
+    "Flow-DNA is diagnostic only and never directly changes genre weights.",
+    "Candidate quality outranks balance correction."
+  ]
+}
