@@ -1,0 +1,529 @@
+{
+  "schemaVersion": 1,
+  "kind": "dna-express-week-handoff",
+  "weekId": "2026-40",
+  "status": "prepared",
+  "destination": {
+    "operational": false,
+    "status": "awaiting-operational-destination"
+  },
+  "orderedSpotifyTrackIds": [
+    "5MmFMKe0VGaqlQ33KNy0KY",
+    "0bwEjc3wdAY8mDdsbnRxcv",
+    "3tD4AR8vbvM0b9X09YBYE0",
+    "4lxeOuQ37BfUxqkeOwwIjb",
+    "1nDOVQ2ioOrnE7SfJT0rvO",
+    "7EBpncUwlHjLhQTetSLb9O",
+    "4gjFeCBHRvUQluaJgUsDCh",
+    "4sbbbxq9R9KJoUZuJHF6Wb",
+    "1xId1hoQ0mfYl610t5VtPW",
+    "6XcxLPk27iNbo2rBWnnr5V",
+    "6cVcombXzsFOdRDnvpMLoL",
+    "3DQUOnH5OKGjXXnfKGj0UT",
+    "6Wb0KcC6LEMjOtLYcMKcss",
+    "3HUCwifeBQMMBKUPxCaVt2",
+    "6Db5cayYggggqGq2MIfp65",
+    "5TqQnYIyisbHJiHXzkSK9u",
+    "07VDLT8jatNUZTGgVVm7gy",
+    "1IJtqhXB7xi9IXqOmG7DLd",
+    "1kTPKqk6vMojgGGgsfumiq",
+    "4NTuOzgM0DgNtbCSCUj9QN",
+    "2vLm4hsLeMMfcqaVlj4PKN"
+  ],
+  "tracks": [
+    {
+      "position": 1,
+      "spotifyTrackId": "5MmFMKe0VGaqlQ33KNy0KY",
+      "title": "Front Line",
+      "artistName": "Aviator",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 2,
+      "spotifyTrackId": "0bwEjc3wdAY8mDdsbnRxcv",
+      "title": "The Hand That Feeds",
+      "artistName": "Heavy Bones",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 3,
+      "spotifyTrackId": "3tD4AR8vbvM0b9X09YBYE0",
+      "title": "Iron Eagle (Never Say Die)",
+      "artistName": "King Kobra",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 4,
+      "spotifyTrackId": "4lxeOuQ37BfUxqkeOwwIjb",
+      "title": "Kiss Me in French",
+      "artistName": "Sic Vikki",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 5,
+      "spotifyTrackId": "1nDOVQ2ioOrnE7SfJT0rvO",
+      "title": "Give It Up",
+      "artistName": "Alien",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 6,
+      "spotifyTrackId": "7EBpncUwlHjLhQTetSLb9O",
+      "title": "Young Wild and Free",
+      "artistName": "Brighton Rock",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 7,
+      "spotifyTrackId": "4gjFeCBHRvUQluaJgUsDCh",
+      "title": "Shake",
+      "artistName": "Saints & Sinners",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 8,
+      "spotifyTrackId": "4sbbbxq9R9KJoUZuJHF6Wb",
+      "title": "Steal Your Heart",
+      "artistName": "Return",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 9,
+      "spotifyTrackId": "1xId1hoQ0mfYl610t5VtPW",
+      "title": "We Will Be Strong",
+      "artistName": "John Norum;Joey Tempest",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 10,
+      "spotifyTrackId": "6XcxLPk27iNbo2rBWnnr5V",
+      "title": "Shame On You, Shame On Me",
+      "artistName": "Radioactive;Jeff Paris",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 11,
+      "spotifyTrackId": "6cVcombXzsFOdRDnvpMLoL",
+      "title": "Dreams of the Wild",
+      "artistName": "Restless Spirits;Chez Kane",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 12,
+      "spotifyTrackId": "3DQUOnH5OKGjXXnfKGj0UT",
+      "title": "As I Said Before",
+      "artistName": "Zebra",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "position": 13,
+      "spotifyTrackId": "6Wb0KcC6LEMjOtLYcMKcss",
+      "title": "Turning Japanese",
+      "artistName": "Peppermint Creeps",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 14,
+      "spotifyTrackId": "3HUCwifeBQMMBKUPxCaVt2",
+      "title": "Everybody Needs A Hero",
+      "artistName": "Big Bang Babies",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 15,
+      "spotifyTrackId": "6Db5cayYggggqGq2MIfp65",
+      "title": "Rock You Tonight",
+      "artistName": "C.J. Snare",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 16,
+      "spotifyTrackId": "5TqQnYIyisbHJiHXzkSK9u",
+      "title": "Hometown Hero",
+      "artistName": "Babylon Bombs",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 17,
+      "spotifyTrackId": "07VDLT8jatNUZTGgVVm7gy",
+      "title": "Shake Your Body",
+      "artistName": "Bombshell Boys",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 18,
+      "spotifyTrackId": "1IJtqhXB7xi9IXqOmG7DLd",
+      "title": "My Behavior",
+      "artistName": "Baby Jane",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 19,
+      "spotifyTrackId": "1kTPKqk6vMojgGGgsfumiq",
+      "title": "She Gets Away",
+      "artistName": "Crash Kelly",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 20,
+      "spotifyTrackId": "4NTuOzgM0DgNtbCSCUj9QN",
+      "title": "Rockstar",
+      "artistName": "Crystal Pistol",
+      "selectionSource": "week-positive"
+    },
+    {
+      "position": 21,
+      "spotifyTrackId": "2vLm4hsLeMMfcqaVlj4PKN",
+      "title": "Groove or Die",
+      "artistName": "Andy Timmons",
+      "selectionSource": "week-positive"
+    }
+  ],
+  "gemstone": {
+    "scope": "week",
+    "name": "Imperiale topaas",
+    "sequenceNumber": 5,
+    "editorialText": "IMPERIALE TOPAAS · W40 — Topaas met roodachtig oranje tot oranjerode tinten. De handelsnaam kent geen officiële standaard. Steen 5 van de Music-DNA-slinger.",
+    "artworkAssetId": "assets/proofs/music-dna-w40-imperiale-topaas-steen-5.jpg"
+  },
+  "researchQueue": [
+    {
+      "id": null,
+      "name": "Aviator",
+      "firstTrackIndex": 0,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Heavy Bones",
+      "firstTrackIndex": 1,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "King Kobra",
+      "firstTrackIndex": 2,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Sic Vikki",
+      "firstTrackIndex": 3,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Alien",
+      "firstTrackIndex": 4,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Brighton Rock",
+      "firstTrackIndex": 5,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Saints & Sinners",
+      "firstTrackIndex": 6,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Return",
+      "firstTrackIndex": 7,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "John Norum;Joey Tempest",
+      "firstTrackIndex": 8,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Radioactive;Jeff Paris",
+      "firstTrackIndex": 9,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Restless Spirits;Chez Kane",
+      "firstTrackIndex": 10,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Zebra",
+      "firstTrackIndex": 11,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Peppermint Creeps",
+      "firstTrackIndex": 12,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Big Bang Babies",
+      "firstTrackIndex": 13,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "C.J. Snare",
+      "firstTrackIndex": 14,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Babylon Bombs",
+      "firstTrackIndex": 15,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Bombshell Boys",
+      "firstTrackIndex": 16,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Baby Jane",
+      "firstTrackIndex": 17,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Crash Kelly",
+      "firstTrackIndex": 18,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Crystal Pistol",
+      "firstTrackIndex": 19,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    },
+    {
+      "id": null,
+      "name": "Andy Timmons",
+      "firstTrackIndex": 20,
+      "status": "needs-research",
+      "missing": [
+        "identity",
+        "originStart",
+        "members",
+        "styleDevelopment",
+        "careerMoments",
+        "status"
+      ],
+      "identityCertain": true,
+      "sources": []
+    }
+  ],
+  "editionStatus": "not-produced",
+  "published": false
+}

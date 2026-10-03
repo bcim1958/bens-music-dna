@@ -364,7 +364,19 @@ function publicationSequence(manifest){
   ];
   return {weekId:m.weekId,stages};
 }
+function weekDeliveryGate(manifest){
+  const r=validate(manifest),p=manifest.publication||{},h=manifest.express?.handoff,errors=[...r.errors];
+  if(!p.spotify?.playlistId||p.spotify.status!=='published')errors.push('Spotify publication unverified');
+  if(p.spotify?.folderPlacement!=='confirmed')errors.push('Spotify folder placement not confirmed');
+  if(!r.publicationTargets.artwork)errors.push('Artwork attachment unverified');
+  if(!r.publicationTargets.gemstone||!r.publicationTargets.gemstoneMuseum||!p.gemstoneMuseum?.entryId)errors.push('Museum delivery unverified');
+  const ids=(manifest.tracks||[]).map(t=>t.spotifyTrackId||t.trackId);
+  const H=typeof module!=='undefined'&&module.exports?require('./music-dna-express-handoff-v1.js'):root.MUSIC_DNA_EXPRESS_HANDOFF_V1;
+  if(!H||!H.validate(h,manifest).pass)errors.push('Express handoff missing or mismatched');
+  return {complete:errors.length===0,scope:'operational-week-delivery',fullChainComplete:false,expressPublication:'awaiting-operational-destination',blockers:errors,targets:r.publicationTargets};
+}
 function weeklyPublicationGate(manifest){
+  if(manifest?.express?.deliveryMode==='handoff'&&manifest.express.destinationOperational===false)return weekDeliveryGate(manifest);
   const report=validate(manifest);
   const bios=((((manifest||{}).express||{}).artistBios||{}).artists)||[];
   const bioCounts=bios.reduce((a,b)=>(a[b.status]=(a[b.status]||0)+1,a),{});
@@ -456,7 +468,7 @@ function selfTest(){
   return {pass:!r1.pass&&duplicateArtistCaught&&r1.uniqueArtistCount===2&&!r1.complete&&r2.complete,cases:{derivedArtists:r1.uniqueArtistCount,duplicateArtistCaught,prePublishComplete:r1.complete,fullPublishComplete:r2.complete}};
 }
 
-const api={uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,prePublicationGate,artworkPreflight,externalDeliveryReadiness,productionHandoff,publicationSequence,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
+const api={weekDeliveryGate,uniqArtistsFromTracks,derive,validate,gemstoneSequenceNumber,gemstoneEditorialIntegrity,flowOrderIntegrity,archivalCompleteness,prePublicationGate,artworkPreflight,externalDeliveryReadiness,productionHandoff,publicationSequence,expressBioQueue,syncExpressBioQueue,expressBioQueueSelfTest,weeklyArtworkSpec,weeklyArtworkRenderModel,weeklyArtworkRenderModelSelfTest,artworkDeliveryPlan,weeklyArtworkIntegrity,spotifyFolderIntegrity,spotifyFolderIntegritySelfTest,gemstoneIntegrity,gemstoneIntegritySelfTest,expressEditionSkeleton,expressEditionSkeletonSelfTest,publicationReadiness,weeklyPublicationGate,weeklyPublicationGateSelfTest,freeze,selfTest};
 if(typeof module!=="undefined"&&module.exports) module.exports=api;
 else root.MUSIC_DNA_WEEK_MANIFEST_V1=api;
 })(typeof window!=="undefined"?window:globalThis);

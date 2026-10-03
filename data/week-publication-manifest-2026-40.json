@@ -17,7 +17,9 @@
     "artistBios": {
       "status": "pending",
       "artists": []
-    }
+    },
+    "deliveryMode": "handoff",
+    "destinationOperational": false
   },
   "gemstone": {
     "status": "pending",
@@ -81,7 +83,9 @@
       "Editorial sources: https://www.gia.edu/topaz-description and https://www.gia.edu/FAQ/gia-faq-imperial-topaz",
       "Generated image is a proof asset; historical visual-family parity and smallest-thumbnail counter legibility are not fully validated.",
       "Spotify folder placement remains manual; W39 unchanged.",
-      "2026-10-03: user confirmed retaining all 20 actual positive W40 official tracks plus one reserve track. Replaces obsolete fixed 19+2 assumption; source ratings unchanged."
+      "2026-10-03: user confirmed retaining all 20 actual positive W40 official tracks plus one reserve track. Replaces obsolete fixed 19+2 assumption; source ratings unchanged.",
+      "Actual iPhone snapshot replayed 2026-10-03; input SHA-256 9f6a1ba2c5d0c378a00f2918bd05fcafa969f16f5baa6f773868edad3504a1a4. User confirmed 20+1 composition. Frozen Flow-DNA order retained. Gemstone represents entire week under architecture 2026-09-18. No production publication.",
+      "User confirmed DNA Express is not operational: prepare validated handoff, defer edition publication without blocking operational W40 delivery."
     ]
   },
   "selectionRules": {

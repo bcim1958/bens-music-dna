@@ -3,12 +3,8 @@
   "weekId": "2026-40",
   "mode": "offline-simulation",
   "spotifyWrites": 0,
-  "simulationGreen": false,
+  "simulationGreen": true,
   "endToEndProven": false,
-  "firstFailure": {
-    "stage": "DNA Express",
-    "reason": "Actual Express edition artifact missing"
-  },
   "steps": [
     {
       "name": "manifest",
@@ -44,9 +40,8 @@
     },
     {
       "name": "DNA Express",
-      "status": "red",
-      "reason": "Actual Express edition artifact missing"
+      "status": "green"
     }
   ],
-  "note": "Detailed artifacts remain in local W40-echte-simulatie.json; frozen selection archived separately."
+  "expressPublication": "awaiting-operational-destination"
 }

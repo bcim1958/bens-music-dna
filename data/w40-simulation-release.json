@@ -1,7 +1,31 @@
 {
   "weekId": "2026-40",
-  "simulationGreen": false,
-  "orderedSpotifyUris": [],
-  "reason": "Actual iPhone W40 snapshot not yet replayed; all nine simulation stages must pass before release.",
-  "endToEndProven": false
+  "simulationGreen": true,
+  "orderedSpotifyUris": [
+    "spotify:track:5MmFMKe0VGaqlQ33KNy0KY",
+    "spotify:track:0bwEjc3wdAY8mDdsbnRxcv",
+    "spotify:track:3tD4AR8vbvM0b9X09YBYE0",
+    "spotify:track:4lxeOuQ37BfUxqkeOwwIjb",
+    "spotify:track:1nDOVQ2ioOrnE7SfJT0rvO",
+    "spotify:track:7EBpncUwlHjLhQTetSLb9O",
+    "spotify:track:4gjFeCBHRvUQluaJgUsDCh",
+    "spotify:track:4sbbbxq9R9KJoUZuJHF6Wb",
+    "spotify:track:1xId1hoQ0mfYl610t5VtPW",
+    "spotify:track:6XcxLPk27iNbo2rBWnnr5V",
+    "spotify:track:6cVcombXzsFOdRDnvpMLoL",
+    "spotify:track:3DQUOnH5OKGjXXnfKGj0UT",
+    "spotify:track:6Wb0KcC6LEMjOtLYcMKcss",
+    "spotify:track:3HUCwifeBQMMBKUPxCaVt2",
+    "spotify:track:6Db5cayYggggqGq2MIfp65",
+    "spotify:track:5TqQnYIyisbHJiHXzkSK9u",
+    "spotify:track:07VDLT8jatNUZTGgVVm7gy",
+    "spotify:track:1IJtqhXB7xi9IXqOmG7DLd",
+    "spotify:track:1kTPKqk6vMojgGGgsfumiq",
+    "spotify:track:4NTuOzgM0DgNtbCSCUj9QN",
+    "spotify:track:2vLm4hsLeMMfcqaVlj4PKN"
+  ],
+  "expressDelivery": "validated-handoff-awaiting-operational-destination",
+  "endToEndProven": false,
+  "sourceSnapshotSha256": "9f6a1ba2c5d0c378a00f2918bd05fcafa969f16f5baa6f773868edad3504a1a4",
+  "rule": "Production proof requires track readback, artwork readback, museum visible check, folder confirmation and gift visible check."
 }

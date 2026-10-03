@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "simulationGreen": true,
+  "spotifyWrites": 0,
+  "endToEndProven": false,
+  "cases": [
+    "real snapshot green with deferred Express handoff",
+    "handoff title/order tampering rejected",
+    "real delivery cannot complete from simulation",
+    "track readback mismatch prevents upload",
+    "artwork 403 stops delivery",
+    "empty artwork readback stops delivery",
+    "successful mock still leaves folder/visible checks pending"
+  ]
+}
