@@ -26,3 +26,7 @@ DNA Express blijft een voorbereide overdracht zonder operationele bestemming. Sp
 - De simulator met de echte W40-invoer blijft groen; de simulator claimt geen nieuw praktijkbewijs.
 - De bestaande zaterdagregressies slagen.
 - W41-invoercontrole eindigt met een rode capaciteitspoort, zoals vereist.
+
+## Verduidelijking positieve reservevoorraad
+
+De capaciteit van 16 verschillende officiële artiesten hierboven betreft de onderzoeksvoorraad voor nieuwe dagelijkse ontdekkingen, niet de positieve zaterdagreserve. De echte iPhone-export bevat 115 positieve bankitems: 70 reeds gebruikte en 45 nog niet gebruikte. Van die 45 zijn 20 positieve officiële W40-tracks en 25 positieve reservetracks. De melding van vanochtend 25 / 42 is dus bevestigd. Deze reserve vult ontbrekende positieve weektracks aan tot 21, met behoud van de selectie- en hergebruikregels. Een tekort in nieuwe dagontdekkingen mag niet als tekort in deze reserve worden beschreven. Deze telling betreft de export vóór de W40-aflevering; het actuele saldo na aflevering is hiermee niet opnieuw vastgesteld.
