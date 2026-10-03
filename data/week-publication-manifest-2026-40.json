@@ -61,7 +61,7 @@
       "uniqueArtists must be derived from tracks",
       "published manifest corrections require provenance",
       "Spotify success does not imply full week publication success",
-      "current Saturday gift composition: 19 positive discoveries from the week plus 2 from positive reserve",
+      "Saturday gift composition: retain all positive weekly discoveries, up to 21; fill remaining slots from positive reserve. W40 actual: 20 week-positive + 1 positive-reserve.",
       "Spotify folder placement is a manual post-publication step; intended destination is 💎 Ontdek DNA and may be confirmed afterward",
       "weekly gemstone cover must be generated and attached to the Spotify playlist before the automatic delivery is considered complete",
       "gemstone sequence counter is continuous from 2026-W36 = stone 1 and is written numerically",
@@ -80,7 +80,8 @@
       "Production artwork technically recompressed on 2026-09-26: progressive JPEG, quality 93, original chroma subsampling, 1000x1000 unchanged; 303820 -> 250227 bytes (<262144). Same design/crop; visually checked. Original proof SHA-256: 8479d0cfb95c27a5024ed11c7265b640d2ce6050193d703036835a97ae92c360. Existing Saturday upload function accepts the new asset in an offline mock test; original oversized asset and wrong MIME are rejected. No Spotify publication or upload performed.",
       "Editorial sources: https://www.gia.edu/topaz-description and https://www.gia.edu/FAQ/gia-faq-imperial-topaz",
       "Generated image is a proof asset; historical visual-family parity and smallest-thumbnail counter legibility are not fully validated.",
-      "Spotify folder placement remains manual; W39 unchanged."
+      "Spotify folder placement remains manual; W39 unchanged.",
+      "2026-10-03: user confirmed retaining all 20 actual positive W40 official tracks plus one reserve track. Replaces obsolete fixed 19+2 assumption; source ratings unchanged."
     ]
   },
   "selectionRules": {
@@ -91,8 +92,8 @@
       "week-positive",
       "positive-reserve"
     ],
-    "expectedWeekPositiveCount": 19,
-    "expectedPositiveReserveCount": 2,
+    "expectedWeekPositiveCount": 20,
+    "expectedPositiveReserveCount": 1,
     "expectedSpotifyFolder": "💎 Ontdek DNA"
   },
   "artwork": {
