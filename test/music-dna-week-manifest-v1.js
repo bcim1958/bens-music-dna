@@ -55,7 +55,7 @@ function validate(manifest){
     spotify:p.spotify&&p.spotify.status==="published",
     artwork:manifest.artwork&&manifest.artwork.status==="published"&&!!manifest.artwork.assetId&&manifest.artwork.attachedToSpotify===true,
     express:p.express&&p.express.status==="published",
-    gemstone:g.status==="published"&&g.presented===true&&!!(g.trackId||g.artistId),
+    gemstone:g.status==="published"&&g.presented===true&&!!(g.trackId||g.artistId||(g.scope==='week'&&g.weekId===manifest.weekId)),
     gemstoneMuseum:p.gemstoneMuseum&&p.gemstoneMuseum.status==="published"
   };
   const complete=Object.values(target).every(Boolean);
@@ -253,6 +253,13 @@ function spotifyFolderIntegritySelfTest(){
 }
 function gemstoneIntegrity(manifest){
   const m=derive(manifest),g=m.gemstone||{},tracks=m.tracks||[],errors=[];
+  if(g.scope==='week'){
+    if(g.weekId!==m.weekId)errors.push('gemstone week identity mismatch');
+    const ids=tracks.map(t=>t.spotifyTrackId||t.trackId);
+    if(!Array.isArray(g.orderedTrackIds)||JSON.stringify(g.orderedTrackIds)!==JSON.stringify(ids))errors.push('gemstone does not reference exact weekly order');
+    if(!g.name)errors.push('gemstone name missing');
+    return {pass:errors.length===0,errors};
+  }
   if(g.status==="published"||g.presented===true||g.trackId||g.artistId){
     if(!g.trackId) errors.push("gemstone has no trackId");
     const t=tracks.find(x=>(x.spotifyTrackId||x.trackId||x.id)===g.trackId);

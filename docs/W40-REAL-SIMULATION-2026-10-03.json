@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "weekId": "2026-40",
+  "mode": "offline-simulation",
+  "spotifyWrites": 0,
+  "simulationGreen": false,
+  "endToEndProven": false,
+  "firstFailure": {
+    "stage": "DNA Express",
+    "reason": "Actual Express edition artifact missing"
+  },
+  "steps": [
+    {
+      "name": "manifest",
+      "status": "green"
+    },
+    {
+      "name": "weekcontrole",
+      "status": "green"
+    },
+    {
+      "name": "Flow-DNA",
+      "status": "green"
+    },
+    {
+      "name": "edelsteen",
+      "status": "green"
+    },
+    {
+      "name": "museumtekst",
+      "status": "green"
+    },
+    {
+      "name": "artwork",
+      "status": "green"
+    },
+    {
+      "name": "publicatie",
+      "status": "green"
+    },
+    {
+      "name": "Spotify-mapplaatsing",
+      "status": "green"
+    },
+    {
+      "name": "DNA Express",
+      "status": "red",
+      "reason": "Actual Express edition artifact missing"
+    }
+  ],
+  "note": "Detailed artifacts remain in local W40-echte-simulatie.json; frozen selection archived separately."
+}
