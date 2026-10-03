@@ -1,3 +1,5 @@
+> Historische tussenstand. De hieronder beschreven W41-blokkade is inmiddels opgelost; zie [W41 — voorbereiding gereed](W41-AUTOMATIC-READY-2026-10-03.md). Echte W41-aflevering is nog niet bewezen.
+
 # Automatische W41-voorbereiding — gecontroleerde tussenstand
 
 W41 is nog niet vrijgegeven. De werkende W40-afleverroute bewijst niet dat de invoer voor W41 al gereed is. Er bestaat geen handmatige W41-keuze die Ben hoeft aan te leveren; de selectiemotor moet deze leveren.
