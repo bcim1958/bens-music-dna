@@ -28,7 +28,16 @@ const MUSIC_DNA_WEEKS = (() => {
       key: '2026-W40', yearLabel: '2026', weekLabel: 'W40', display: '2026 · W40',
       start: new Date(2026, 8, 27), end: new Date(2026, 9, 4),
       startText: 'zondag 27 september', endText: 'zaterdag 3 oktober 2026',
-      candidateGlobal: 'MUSIC_DNA_W40_CANDIDATES', candidateFiles: ['music-dna-candidates-w40-data-1.js','music-dna-candidates-w40-data-2.js','music-dna-candidates-w40-data-3.js','music-dna-candidates-w40-staging-v1.js'], ready: true
+      candidateGlobal: 'MUSIC_DNA_W40_CANDIDATES', candidateFiles: ['music-dna-candidates-w40-data-1.js','music-dna-candidates-w40-data-2.js','music-dna-candidates-w40-data-3.js','music-dna-candidates-w40-staging-v1.js'], ready: true,
+      delivery: {releasePath:'../data/w40-simulation-release.json',manifestPath:'../data/week-publication-manifest-2026-40-simulation-frozen.json',museumPath:'w40-museum.html'}
+    },
+    {
+      key:'2026-W41',yearLabel:'2026',weekLabel:'W41',display:'2026 · W41',
+      start:new Date(2026,9,4),end:new Date(2026,9,11),
+      startText:'zondag 4 oktober',endText:'zaterdag 10 oktober 2026',
+      candidateGlobal:'MUSIC_DNA_W41_CANDIDATES',candidateFiles:[],ready:false,
+      delivery:{releasePath:'../data/week-simulation-release-2026-41.json',manifestPath:'../data/week-publication-manifest-2026-41-simulation-frozen.json',museumPath:'week-museum.html?week=2026-41'},
+      pendingReason:'W41-muziekinvoer en edelsteen moeten nog worden vastgelegd.'
     }
   ];
   function get(key){return weeks.find(w => w.key === key) || null;}

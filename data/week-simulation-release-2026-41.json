@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "weekId": "2026-41",
+  "simulationGreen": false,
+  "endToEndProven": false,
+  "orderedSpotifyUris": [],
+  "blockers": [
+    "approved-week-candidates-missing",
+    "week-gemstone-missing",
+    "actual-week-ratings-incomplete",
+    "frozen-manifest-missing"
+  ],
+  "deliveryScope": {
+    "spotifyFolderPlacement": "known-technical-limitation",
+    "dnaExpress": "handoff-awaiting-operational-destination"
+  }
+}
