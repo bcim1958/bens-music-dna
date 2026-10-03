@@ -1,17 +1,11 @@
 {
   "schemaVersion": 1,
   "weekId": "2026-41",
+  "mode": "device-runtime-simulation",
+  "inputsApproved": true,
   "simulationGreen": false,
   "endToEndProven": false,
+  "manifestTemplatePath": "../data/week-publication-manifest-2026-41.json",
   "orderedSpotifyUris": [],
-  "blockers": [
-    "approved-week-candidates-missing",
-    "week-gemstone-missing",
-    "actual-week-ratings-incomplete",
-    "frozen-manifest-missing"
-  ],
-  "deliveryScope": {
-    "spotifyFolderPlacement": "known-technical-limitation",
-    "dnaExpress": "handoff-awaiting-operational-destination"
-  }
+  "reason": "Actual W41 ratings must complete all nine device-side simulation stages before any Spotify writes."
 }

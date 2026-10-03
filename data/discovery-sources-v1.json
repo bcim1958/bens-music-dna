@@ -1,0 +1,319 @@
+{
+  "version": 1,
+  "purpose": "External release reservoir; never a manually selected daily set. Styles are editorial mappings from the cited artist/label descriptions, not claimed AllMusic classifications.",
+  "releases": [
+    {
+      "artist": "Wytch Hazel",
+      "album": "IV: Sacrament",
+      "spotifyAlbumId": "6FrO2DMt2SdAKHo7e3gwvY",
+      "year": 2023,
+      "country": "United Kingdom",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "source": "https://wytchhazel.bandcamp.com/album/iv-sacrament",
+      "rationale": "Melodic classic hard rock and twin guitars; mapped to Ben's hard-rock and heavy-metal reference styles."
+    },
+    {
+      "artist": "Sumerlands",
+      "album": "Dreamkiller",
+      "spotifyAlbumId": "12Yv3UWaeM3DpJT1TEnbei",
+      "year": 2022,
+      "country": "United States",
+      "styles": [
+        "Heavy Metal",
+        "Hard Rock"
+      ],
+      "source": "https://www.relapse.com/products/sumerlands-dreamkiller-cd",
+      "rationale": "Label identifies Scorpions, Foreigner and Dokken affinities; melodic hooks and traditional metal."
+    },
+    {
+      "artist": "Tanith",
+      "album": "Voyage",
+      "spotifyAlbumId": "3iddQERDgTUKCF3Oxrgkzl",
+      "year": 2023,
+      "country": "United States / United Kingdom",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "source": "https://www.metalblade.com/tanith/",
+      "rationale": "Label describes 1970s hard rock, twin guitars and dual vocals."
+    },
+    {
+      "artist": "The Vintage Caravan",
+      "album": "Monuments",
+      "spotifyAlbumId": "3ESChQNgOwrjZpnrUROmCv",
+      "year": 2021,
+      "country": "Iceland",
+      "styles": [
+        "Hard Rock",
+        "Psychedelic/Garage",
+        "Blues-Rock",
+        "Prog-Rock"
+      ],
+      "source": "https://open.spotify.com/intl-fr/artist/61MH29rMIyOfuK7KXQznzX",
+      "rationale": "Artist biography describes 1970s-inspired guitar, progressive, psychedelic and blues rock."
+    },
+    {
+      "artist": "Rosalie Cunningham",
+      "album": "To Shoot Another Day",
+      "spotifyAlbumId": "57pXZ5MtcZWEGmG2N0rhuS",
+      "year": 2024,
+      "country": "United Kingdom",
+      "styles": [
+        "Prog-Rock",
+        "Psychedelic/Garage"
+      ],
+      "source": "https://rosaliecunningham.bandcamp.com/album/to-shoot-another-day",
+      "rationale": "Progressive and psychedelic rock source tags; a targeted connection to Ben's prog reference styles.",
+      "maxTracks": 10
+    },
+    {
+      "artist": "Freeways",
+      "album": "Dark Sky Sanctuary",
+      "spotifyAlbumId": "1vlIcAf1OT7oRJQoodHXZs",
+      "year": 2024,
+      "country": "Canada",
+      "styles": [
+        "Hard Rock"
+      ],
+      "source": "https://dyingvictimsproductions.bandcamp.com/album/dark-sky-sanctuary",
+      "rationale": "Label-described classic hard rock; UFO/Thin Lizzy reference connections."
+    },
+    {
+      "artist": "Dead Lord",
+      "album": "Surrender",
+      "spotifyAlbumId": "0UxhGBzQXMnpfC5ZDCGnw6",
+      "year": 2020,
+      "country": "Sweden",
+      "styles": [
+        "Hard Rock"
+      ],
+      "source": "https://www.twilight-magazin.de/reviews/musik-review/dead-lord-surrender",
+      "rationale": "Classic hard-rock album; guitar-led bridge from the hard-rock reference library."
+    },
+    {
+      "artist": "Black Paisley",
+      "album": "Human Nature",
+      "spotifyAlbumId": "0HNhU6JzehhomkzU5lo7z7",
+      "year": 2022,
+      "country": "Sweden",
+      "styles": [
+        "Hard Rock",
+        "Album Rock"
+      ],
+      "source": "https://blackpaisley.se/Black-Paisley-Bio-2024.pdf",
+      "rationale": "Band biography places this record in classic rock; melodic song structure."
+    },
+    {
+      "artist": "The Commoners",
+      "album": "Restless",
+      "spotifyAlbumId": "3ehbB5ZcATlrQY7t38yhhU",
+      "year": 2024,
+      "country": "Canada",
+      "styles": [
+        "Southern Rock",
+        "Blues-Rock"
+      ],
+      "source": "https://thecommoners.ca/the-commoners-new-album-restless-out-now/",
+      "rationale": "Southern blues-rock route; roots-based guitar and vocals."
+    },
+    {
+      "artist": "TAILGUNNER",
+      "album": "Guns for Hire",
+      "spotifyAlbumId": "0P9NyowwI3fZTCNz3ijFOU",
+      "year": 2023,
+      "country": "United Kingdom",
+      "styles": [
+        "Heavy Metal"
+      ],
+      "source": "https://label.napalmrecords.com/tailgunner",
+      "rationale": "Traditional heavy metal; label biography cites Iron Maiden and Judas Priest."
+    },
+    {
+      "artist": "Fellowship",
+      "album": "The Skies Above Eternity",
+      "spotifyAlbumId": "5fgRZluotqv8Vk1yPXsx4t",
+      "year": 2024,
+      "country": "United Kingdom",
+      "styles": [
+        "Power Metal",
+        "Heavy Metal"
+      ],
+      "source": "https://scarletrecords.com/releases-scarlet/",
+      "rationale": "Melodic power-metal release; compare against existing power-metal taste signals."
+    },
+    {
+      "artist": "Wings of Steel",
+      "album": "Gates of Twilight",
+      "spotifyAlbumId": "00uD5QxM7lxQx5Dpesyz7g",
+      "year": 2023,
+      "country": "United States",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal",
+        "Hair Metal"
+      ],
+      "source": "https://officialwingsofsteel.bandcamp.com/album/gates-of-twilight",
+      "rationale": "Artist tags identify 1980s metal, hard rock and hair metal."
+    },
+    {
+      "artist": "Amethyst",
+      "album": "Throw Down The Gauntlet",
+      "spotifyAlbumId": "6D0nu2hvMR6YlpDFNawiek",
+      "year": 2024,
+      "country": "Switzerland",
+      "styles": [
+        "Heavy Metal",
+        "Hard Rock"
+      ],
+      "source": "https://www.zephyrs-odem.de/reviews/detail/amethyst-throw-down-the-gauntlet-2024-13764",
+      "rationale": "Traditional heavy-rock release; genre mapping is editorial, not a probability guarantee."
+    },
+    {
+      "artist": "Flight",
+      "album": "Echoes of Journeys Past",
+      "spotifyAlbumId": "6DiT3GBF6igHnC66WTpAzE",
+      "year": 2023,
+      "country": "Norway",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "source": "https://dyingvictimsproductions.bandcamp.com/album/echoes-of-journeys-past",
+      "rationale": "Label tags and description identify classic heavy rock."
+    },
+    {
+      "artist": "High Spirits",
+      "album": "Safe on the Other Side",
+      "spotifyAlbumId": "1L2I86VVkESXzq217nl8hQ",
+      "year": 2023,
+      "country": "United States",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "source": "https://highspiritsmetal.bandcamp.com/album/safe-on-the-other-side",
+      "rationale": "Artist describes high-energy rock; connects melodic heavy rock to reference styles."
+    },
+    {
+      "artist": "TOWER",
+      "album": "Shock to the System",
+      "spotifyAlbumId": "10GgmANkZOLHvnBppm3TmO",
+      "year": 2021,
+      "country": "United States",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "source": "https://towernyc.bandcamp.com/album/shock-to-the-system",
+      "rationale": "Artist tags explicitly identify classic metal, hard rock and heavy metal."
+    },
+    {
+      "artist": "Night",
+      "album": "High Tides - Distant Skies",
+      "spotifyAlbumId": "1SEzlDCBz06KbCwqqpbJZf",
+      "year": 2020,
+      "country": "Sweden",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "source": "https://nightband.bandcamp.com/album/high-tides-distant-skies",
+      "rationale": "Classic heavy-rock album; source locked to Swedish band and this exact album to avoid namesakes."
+    },
+    {
+      "artist": "Black Mirrors",
+      "album": "Tomorrow Will Be Without Us",
+      "spotifyAlbumId": "2XSyjw5QIvXen7bEyDI8E8",
+      "year": 2022,
+      "country": "Belgium",
+      "styles": [
+        "Grunge",
+        "Hard Rock"
+      ],
+      "source": "https://blackmirrorsmusic.bandcamp.com/album/tomorrow-will-be-without-us",
+      "rationale": "Editorial genre mapping from the cited artist/label release description; exact Spotify recording checked separately."
+    },
+    {
+      "artist": "Magick Brother & Mystic Sister",
+      "album": "TAROT part I",
+      "spotifyAlbumId": "3HhlUBCIrtdPBVdx3dWQVn",
+      "year": 2024,
+      "country": "Spain",
+      "styles": [
+        "Prog-Rock",
+        "Neo-Psychedelia"
+      ],
+      "source": "https://magicbrothermysticsister.bandcamp.com/album/tarot-part-i",
+      "rationale": "Editorial genre mapping from the cited artist/label release description; exact Spotify recording checked separately."
+    },
+    {
+      "artist": "Castle Rat",
+      "album": "Into The Realm",
+      "spotifyAlbumId": "30pWmMh4zKmgbe1jRk8S1n",
+      "year": 2024,
+      "country": "United States",
+      "styles": [
+        "Doom Metal",
+        "Hard Rock"
+      ],
+      "source": "https://castlerat.bandcamp.com/album/into-the-realm-2",
+      "rationale": "Editorial genre mapping from the cited artist/label release description; exact Spotify recording checked separately."
+    },
+    {
+      "artist": "High Vis",
+      "album": "Blending",
+      "spotifyAlbumId": "2O3NneZDbRKj2kTyMK9jrw",
+      "year": 2022,
+      "country": "United Kingdom",
+      "styles": [
+        "Post-Punk"
+      ],
+      "source": "https://highvis.bandcamp.com/album/blending",
+      "rationale": "Editorial genre mapping from the cited artist/label release description; exact Spotify recording checked separately."
+    },
+    {
+      "artist": "Moon Tooth",
+      "album": "Phototroph",
+      "spotifyAlbumId": "0yUaaeiII1xyniv3cSqN1o",
+      "year": 2022,
+      "country": "United States",
+      "styles": [
+        "Progressive Metal",
+        "Alternative Metal"
+      ],
+      "source": "https://moontoothny.bandcamp.com/album/phototroph",
+      "rationale": "Editorial genre mapping from the cited artist/label release description; exact Spotify recording checked separately."
+    },
+    {
+      "artist": "Night Verses",
+      "album": "From the Gallery of Sleep",
+      "spotifyAlbumId": "4HYYq0DrvR7L6G7nINEw69",
+      "year": 2018,
+      "country": "United States",
+      "styles": [
+        "Progressive Metal",
+        "Instrumental Rock"
+      ],
+      "source": "https://nightverses.bandcamp.com/album/from-the-gallery-of-sleep",
+      "rationale": "Editorial genre mapping from the cited artist/label release description; exact Spotify recording checked separately."
+    },
+    {
+      "artist": "The Tubs",
+      "album": "Cotton Crown",
+      "spotifyAlbumId": "3CyhN08fdNqH1lEojtDSFP",
+      "year": 2025,
+      "country": "United Kingdom",
+      "styles": [
+        "Indie Rock",
+        "Jangle Pop",
+        "Folk-Rock"
+      ],
+      "source": "https://thetubs.bandcamp.com/album/cotton-crown",
+      "rationale": "Editorial genre mapping from the cited artist/label release description; exact Spotify recording checked separately."
+    }
+  ]
+}

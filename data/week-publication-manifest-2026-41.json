@@ -22,14 +22,21 @@
     "destinationOperational": false
   },
   "gemstone": {
-    "status": "pending",
+    "status": "prepared",
     "scope": "week",
     "weekId": "2026-41",
-    "name": null,
+    "name": "Citrien",
     "sequenceNumber": 6,
-    "editorialText": null,
+    "editorialText": "CITRIEN · W41 — Een lichtgele tot bruinoranje variëteit van kwarts. Sporen van ijzer geven de steen zijn kleur. Natuurlijke citrien is zeldzaam; veel citrien ontstaat door het verhitten van amethist. De steen wordt gebruikt voor sieraden en gesneden ornamenten. Steen 6 van de Music-DNA-slinger.",
     "editorialStandard": "short-factual-no-symbolism",
-    "presented": false
+    "presented": false,
+    "editorialSources": [
+      "https://www.gia.edu/citrine",
+      "https://www.gia.edu/citrine-description"
+    ],
+    "selectionMethod": "controlled-colour-progression",
+    "selectionReason": "Continuation from W39 orange-red carnelian and W40 reddish-orange imperial topaz toward warm yellow quartz.",
+    "orderedTrackIds": []
   },
   "publication": {
     "spotify": {
@@ -90,10 +97,10 @@
     "compositionPolicy": "all-positive-week-then-reserve"
   },
   "artwork": {
-    "status": "pending",
+    "status": "generated",
     "kind": "weekly-gemstone-cover",
-    "gemstoneName": null,
-    "assetId": null,
+    "gemstoneName": "Citrien",
+    "assetId": "assets/weekly/music-dna-2026-w41-citrien.jpg",
     "attachedToSpotify": false,
     "rules": {
       "square": true,
@@ -103,6 +110,11 @@
       "numericSlingerCounterRequired": true,
       "factualEditorialCopyRequired": true,
       "generateBeforePublication": true
-    }
+    },
+    "sha256": "668265261d43cb9cf9f4508593b819e9fea6de5362c3160ca9d5ba4a398dec45",
+    "bytes": 131567,
+    "encodedBytes": 175424,
+    "visuallyChecked": true,
+    "visualFamily": "music-dna-cinematic-landscape-v1"
   }
 }
