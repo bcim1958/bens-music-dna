@@ -367,7 +367,7 @@ function publicationSequence(manifest){
 function weekDeliveryGate(manifest){
   const r=validate(manifest),p=manifest.publication||{},h=manifest.express?.handoff,errors=[...r.errors];
   if(!p.spotify?.playlistId||p.spotify.status!=='published')errors.push('Spotify publication unverified');
-  if(p.spotify?.folderPlacement!=='confirmed')errors.push('Spotify folder placement not confirmed');
+  const folder=p.spotify?.folderPlacement;if(folder!=='confirmed'&&!(folder==='known-technical-limitation'&&p.spotify?.folderLimitationReason))errors.push('Spotify folder placement not confirmed');
   if(!r.publicationTargets.artwork)errors.push('Artwork attachment unverified');
   if(!r.publicationTargets.gemstone||!r.publicationTargets.gemstoneMuseum||!p.gemstoneMuseum?.entryId)errors.push('Museum delivery unverified');
   const visible=manifest.verification||{};

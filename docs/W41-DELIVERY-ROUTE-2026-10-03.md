@@ -8,7 +8,7 @@ De gebruiker bevestigt dat Spotify-mapplaatsing technisch niet mogelijk is en al
 
 De cadeaupagina vereist voor iedere week een expliciete afleverroute en een groene simulatievrijgave met exact dezelfde Spotify-volgorde en hetzelfde weeknummer. Het oude pad dat andere weken direct als voltooid registreerde is verwijderd. De gedeelde hoescompressie, upload en terugleescontrole worden via de weekroute gebruikt. W40 houdt zijn bestaande bevroren manifest, vrijgave en museum.
 
-W41 is geregistreerd voor zondag 4 t/m zaterdag 10 oktober, maar blijft ready:false. De vrijgave is rood. In de huidige repository zijn geen W41-kandidaten, edelsteen of bevroren weekselectie gevonden. De gebruiker bevestigt dat keuzes in een andere chat zijn gemaakt; de bron moet nog worden teruggevonden. Deze keuzes worden niet door verzonnen invulling vervangen.
+W41 is geregistreerd voor zondag 4 t/m zaterdag 10 oktober, maar blijft ready:false. De vrijgave is rood. In de huidige repository zijn geen W41-kandidaten, edelsteen of bevroren weekselectie gevonden. De gebruiker verduidelijkt: deze keuzes horen automatisch te ontstaan. Er is geen handmatige W41-keuze vereist. De repository bevat echter uitsluitend een Pages-deployworkflow en geen automatische nieuwe-weekvoorbereiding. De dagelijkse selector selecteert alleen binnen een reeds geregistreerde kandidatenweek.
 
 ## Controle
 
@@ -16,4 +16,4 @@ week-route-check.cjs: W40-route behouden; 4 oktober levert geen verlopen W40 op;
 
 ## Resterend
 
-Bestaande W41-keuzes terugvinden; goedgekeurde kandidaten beschikbaar maken en dagelijkse selector controleren; edelsteen, museumtekst en hoes voorbereiden; simulator veralgemeniseren en met echte W41-beoordelingen uitvoeren; alleen na groen de vrijgave publiceren. Daarna playlist, hoes, museum en cadeau zichtbaar controleren. De W40-specifieke simulator is nog niet omgebouwd: deze checkpoint claimt dus geen voltooide W41-simulator.
+De ontbrekende automatische nieuwe-weekvoorbereiding realiseren; gecontroleerde kandidaten beschikbaar maken en dagelijkse selector controleren; edelsteen, museumtekst en hoes voorbereiden; de generieke simulator met echte W41-beoordelingen uitvoeren; alleen na groen de vrijgave publiceren. Daarna playlist, hoes, museum en cadeau zichtbaar controleren. De simulator gebruikt nu input.weekId (standaard W40), weekgebonden opslag, kandidaten en manifest. W40 met echte export is opnieuw groen. W41 stopt bij manifest met week-not-ready; alle opvolgers zijn not-run. Dit is geen W41-publicatiebewijs.

@@ -37,7 +37,7 @@ const MUSIC_DNA_WEEKS = (() => {
       startText:'zondag 4 oktober',endText:'zaterdag 10 oktober 2026',
       candidateGlobal:'MUSIC_DNA_W41_CANDIDATES',candidateFiles:[],ready:false,
       delivery:{releasePath:'../data/week-simulation-release-2026-41.json',manifestPath:'../data/week-publication-manifest-2026-41-simulation-frozen.json',museumPath:'week-museum.html?week=2026-41'},
-      pendingReason:'W41-muziekinvoer en edelsteen moeten nog worden vastgelegd.'
+      pendingReason:'De automatische W41-voorbereiding heeft nog geen gecontroleerde kandidaten en edelsteen opgeleverd.'
     }
   ];
   function get(key){return weeks.find(w => w.key === key) || null;}

@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "status": "draft",
   "purpose": "single source of truth for one published Ontdek DNA week",
-  "weekId": "2026-40",
+  "weekId": "2026-41",
   "freeze": {
     "status": "draft",
     "frozenAt": null,
@@ -23,12 +23,12 @@
   },
   "gemstone": {
     "status": "pending",
-    "name": "Imperiale topaas",
-    "sequenceNumber": 5,
-    "editorialText": "IMPERIALE TOPAAS · W40 — Topaas met roodachtig oranje tot oranjerode tinten. De handelsnaam kent geen officiële standaard. Steen 5 van de Music-DNA-slinger.",
+    "scope": "week",
+    "weekId": "2026-41",
+    "name": null,
+    "sequenceNumber": 6,
+    "editorialText": null,
     "editorialStandard": "short-factual-no-symbolism",
-    "trackId": null,
-    "artistId": null,
     "presented": false
   },
   "publication": {
@@ -73,20 +73,9 @@
     ]
   },
   "provenance": {
-    "createdFor": "2026-W40 publication using existing manifest contract",
+    "createdFor": "2026-W41 automatic weekly preparation",
     "notes": [
-      "Draft only: no final track selection, ratings or Flow-DNA order have been inferred from candidate membership.",
-      "85 candidate records are available; capacity proof is not publication readiness.",
-      "Artwork file was generated and uploaded to a separate private proof playlist on 2026-09-26; it is not attached to a W40 production playlist.",
-      "Proof playlist 6ARzCinEi6HyZKpIhxH12C is intentionally not publication.spotify.playlistId.",
-      "Artwork SHA-256: b8aacf968cbd83df212e82eb7f35af995d5f49683fba38d0380ed23e22ea62f3",
-      "Production artwork technically recompressed on 2026-09-26: progressive JPEG, quality 93, original chroma subsampling, 1000x1000 unchanged; 303820 -> 250227 bytes (<262144). Same design/crop; visually checked. Original proof SHA-256: 8479d0cfb95c27a5024ed11c7265b640d2ce6050193d703036835a97ae92c360. Existing Saturday upload function accepts the new asset in an offline mock test; original oversized asset and wrong MIME are rejected. No Spotify publication or upload performed.",
-      "Editorial sources: https://www.gia.edu/topaz-description and https://www.gia.edu/FAQ/gia-faq-imperial-topaz",
-      "Generated image is a proof asset; historical visual-family parity and smallest-thumbnail counter legibility are not fully validated.",
-      "Spotify folder placement remains manual; W39 unchanged.",
-      "2026-10-03: user confirmed retaining all 20 actual positive W40 official tracks plus one reserve track. Replaces obsolete fixed 19+2 assumption; source ratings unchanged.",
-      "Actual iPhone snapshot replayed 2026-10-03; input SHA-256 9f6a1ba2c5d0c378a00f2918bd05fcafa969f16f5baa6f773868edad3504a1a4. User confirmed 20+1 composition. Frozen Flow-DNA order retained. Gemstone represents entire week under architecture 2026-09-18. No production publication.",
-      "User confirmed DNA Express is not operational: prepare validated handoff, defer edition publication without blocking operational W40 delivery."
+      "Pending: candidates, gemstone identity, editorial copy and artwork must be generated and verified before release. No manual music choice required from user."
     ]
   },
   "selectionRules": {
@@ -97,16 +86,14 @@
       "week-positive",
       "positive-reserve"
     ],
-    "expectedWeekPositiveCount": 20,
-    "expectedPositiveReserveCount": 1,
-    "expectedSpotifyFolder": "💎 Ontdek DNA"
+    "expectedSpotifyFolder": "💎 Ontdek DNA",
+    "compositionPolicy": "all-positive-week-then-reserve"
   },
   "artwork": {
-    "status": "generated",
+    "status": "pending",
     "kind": "weekly-gemstone-cover",
-    "gemstoneName": "Imperiale topaas",
-    "assetId": "assets/proofs/music-dna-w40-imperiale-topaas-steen-5.jpg",
-    "generatedAt": "2026-09-26",
+    "gemstoneName": null,
+    "assetId": null,
     "attachedToSpotify": false,
     "rules": {
       "square": true,
@@ -116,10 +103,6 @@
       "numericSlingerCounterRequired": true,
       "factualEditorialCopyRequired": true,
       "generateBeforePublication": true
-    },
-    "delivery": {
-      "status": "blocked",
-      "reason": "awaiting-real-frozen-week-selection-and-production-playlist"
     }
   }
 }
