@@ -503,7 +503,7 @@
         "name": "Imperiale topaas",
         "sequenceNumber": 5,
         "editorialText": "IMPERIALE TOPAAS · W40 — Topaas met roodachtig oranje tot oranjerode tinten. De handelsnaam kent geen officiële standaard. Steen 5 van de Music-DNA-slinger.",
-        "artworkAssetId": "assets/proofs/music-dna-w40-imperiale-topaas-steen-5.jpg"
+        "artworkAssetId": "assets/weekly/music-dna-2026-w40-imperiale-topaas.jpg"
       },
       "researchQueue": [
         {
@@ -936,7 +936,8 @@
       "Spotify folder placement remains manual; W39 unchanged.",
       "2026-10-03: user confirmed retaining all 20 actual positive W40 official tracks plus one reserve track. Replaces obsolete fixed 19+2 assumption; source ratings unchanged.",
       "Actual iPhone snapshot replayed 2026-10-03; input SHA-256 9f6a1ba2c5d0c378a00f2918bd05fcafa969f16f5baa6f773868edad3504a1a4. User confirmed 20+1 composition. Frozen Flow-DNA order retained. Gemstone represents entire week under architecture 2026-09-18. No production publication.",
-      "User confirmed DNA Express is not operational: prepare validated handoff, defer edition publication without blocking operational W40 delivery."
+      "User confirmed DNA Express is not operational: prepare validated handoff, defer edition publication without blocking operational W40 delivery.",
+      "2026-10-03: user requested restoring approved W39 visual family. Replaced pedestal proof artwork with cinematic landscape cover; existing Spotify playlist 3R392OsftQ7iWrYLVPHonc updated through Desktop UI and visually checked. Track selection and frozen order unchanged."
     ]
   },
   "selectionRules": {
@@ -955,8 +956,8 @@
     "status": "generated",
     "kind": "weekly-gemstone-cover",
     "gemstoneName": "Imperiale topaas",
-    "assetId": "assets/proofs/music-dna-w40-imperiale-topaas-steen-5.jpg",
-    "generatedAt": "2026-09-26",
+    "assetId": "assets/weekly/music-dna-2026-w40-imperiale-topaas.jpg",
+    "generatedAt": "2026-10-03",
     "attachedToSpotify": false,
     "rules": {
       "square": true,
@@ -970,6 +971,10 @@
     "delivery": {
       "status": "blocked",
       "reason": "awaiting-real-frozen-week-selection-and-production-playlist"
-    }
+    },
+    "visualFamily": "music-dna-cinematic-landscape-v1",
+    "visualReference": "Approved W39 Carneool cover; same brand layout, landscape, explorer and DNA emblem.",
+    "sha256": "a5b35d12ccb10931a06d28fbb6462a6354bcaf90607a76366bad2bb31dc2212c",
+    "uploadEncodedBytes": 190580
   }
 }
