@@ -370,6 +370,8 @@ function weekDeliveryGate(manifest){
   if(p.spotify?.folderPlacement!=='confirmed')errors.push('Spotify folder placement not confirmed');
   if(!r.publicationTargets.artwork)errors.push('Artwork attachment unverified');
   if(!r.publicationTargets.gemstone||!r.publicationTargets.gemstoneMuseum||!p.gemstoneMuseum?.entryId)errors.push('Museum delivery unverified');
+  const visible=manifest.verification||{};
+  for(const key of ['playlistVisible','artworkVisible','museumVisible','giftClosureVisible'])if(visible[key]!==true)errors.push('Visible check missing: '+key);
   const ids=(manifest.tracks||[]).map(t=>t.spotifyTrackId||t.trackId);
   const H=typeof module!=='undefined'&&module.exports?require('./music-dna-express-handoff-v1.js'):root.MUSIC_DNA_EXPRESS_HANDOFF_V1;
   if(!H||!H.validate(h,manifest).pass)errors.push('Express handoff missing or mismatched');
