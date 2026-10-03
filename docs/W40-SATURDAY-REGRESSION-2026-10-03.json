@@ -1,0 +1,17 @@
+{
+  "pass": true,
+  "cases": [
+    "old W40 loader fails on undefined filename",
+    "fixed multi-file and external loading",
+    "missing device snapshot stops all successors",
+    "synthetic 19+2 replays original bank and Flow-DNA",
+    "missing gemstone stops downstream",
+    "frozen order mutation rejected",
+    "manifest gate self-test",
+    "unconfirmed folder cannot complete",
+    "nine synthetic stages green remain unproven in production",
+    "red or mismatched release prevents Spotify writes"
+  ],
+  "loadedCandidates": 355,
+  "syntheticOnly": true
+}

@@ -369,6 +369,11 @@ function weeklyPublicationGate(manifest){
   if(!bioSetComplete) blockers.push("Express bio job count does not match unique artist count");
   if(bioSetComplete&&!biosReady) blockers.push("one or more Express bios are not ready");
   const p=report.publicationTargets||{};
+  const delivery=((manifest||{}).publication||{});
+  if(!delivery.spotify||!delivery.spotify.playlistId) blockers.push('Spotify playlist identity missing');
+  if(!delivery.spotify||delivery.spotify.folderPlacement!=='confirmed') blockers.push('Spotify folder placement not confirmed');
+  if(!delivery.express||!delivery.express.editionId) blockers.push('DNA Express edition identity missing');
+  if(!delivery.gemstoneMuseum||!delivery.gemstoneMuseum.entryId) blockers.push('Museum entry identity missing');
   if(!p.spotify) blockers.push("Spotify playlist publication incomplete");
   if(!p.artwork) blockers.push("weekly gemstone cover is not generated and attached to Spotify");
   if(!p.express) blockers.push("DNA Express publication incomplete");
@@ -388,6 +393,7 @@ function weeklyPublicationGateSelfTest(){
   const before=weeklyPublicationGate(m);
   m.express.artistBios.artists[1].status="ready";m.publication.express.status="published";
   m.gemstone={status:"published",trackId:"a",artistId:"x",presented:true};m.artwork={status:"published",gemstoneName:"Teststeen",assetId:"cover-2026-40",attachedToSpotify:true};m.publication.gemstoneMuseum.status="published";m.integrity.complete=true;
+  m.publication.spotify.playlistId='test-playlist';m.publication.express.editionId='test-edition';m.publication.gemstoneMuseum.entryId='test-entry';
   const after=weeklyPublicationGate(m);
   return {pass:!before.complete&&before.blockers.some(x=>x.includes("bios"))&&after.complete,cases:{beforeBlockers:before.blockers,afterBlockers:after.blockers}};
 }

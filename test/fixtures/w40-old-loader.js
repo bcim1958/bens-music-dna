@@ -1,0 +1,1 @@
+async function loadCandidates(){const wanted=MUSIC_DNA_WEEKS.weeks.filter(w=>w.ready||w.key===WEEK),seen={};for(const w of wanted){if(seen[w.candidateFile])continue;seen[w.candidateFile]=true;try{await loadScript(w.candidateFile)}catch(e){if(w.key===WEEK)throw e}const obj=window[w.candidateGlobal];if(obj&&obj.tracks)Object.assign(TRACKS,obj.tracks)}}

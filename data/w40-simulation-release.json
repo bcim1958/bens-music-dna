@@ -1,0 +1,7 @@
+{
+  "weekId": "2026-40",
+  "simulationGreen": false,
+  "orderedSpotifyUris": [],
+  "reason": "Actual iPhone W40 snapshot not yet replayed; all nine simulation stages must pass before release.",
+  "endToEndProven": false
+}

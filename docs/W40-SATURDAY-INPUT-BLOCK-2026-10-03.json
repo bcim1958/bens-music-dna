@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "weekId": "2026-40",
+  "mode": "offline-simulation",
+  "spotifyWrites": 0,
+  "simulationGreen": false,
+  "endToEndProven": false,
+  "steps": [
+    {
+      "name": "manifest",
+      "status": "red",
+      "reason": "Actual device snapshot unavailable/incomplete: bmd-week-2026-W40-day1-selection-v1, bmd-week-2026-W40-day2-selection-v1, bmd-week-2026-W40-day3-selection-v1, bmd-week-2026-W40-day4-selection-v1, bmd-week-2026-W40-day5-selection-v1, bmd-week-2026-W40-day6-selection-v1, bmd-week-2026-W40-day7-selection-v1"
+    },
+    {
+      "name": "weekcontrole",
+      "status": "not-run",
+      "reason": "upstream failure"
+    },
+    {
+      "name": "Flow-DNA",
+      "status": "not-run",
+      "reason": "upstream failure"
+    },
+    {
+      "name": "edelsteen",
+      "status": "not-run",
+      "reason": "upstream failure"
+    },
+    {
+      "name": "museumtekst",
+      "status": "not-run",
+      "reason": "upstream failure"
+    },
+    {
+      "name": "artwork",
+      "status": "not-run",
+      "reason": "upstream failure"
+    },
+    {
+      "name": "publicatie",
+      "status": "not-run",
+      "reason": "upstream failure"
+    },
+    {
+      "name": "Spotify-mapplaatsing",
+      "status": "not-run",
+      "reason": "upstream failure"
+    },
+    {
+      "name": "DNA Express",
+      "status": "not-run",
+      "reason": "upstream failure"
+    }
+  ],
+  "independentChecks": {
+    "repositoryManifest": {
+      "pass": false,
+      "errors": [
+        "track count not ready for publication",
+        "unique artist count not ready for publication",
+        "manifest must be frozen before Spotify publication",
+        "week-positive composition not ready",
+        "positive-reserve composition not ready"
+      ],
+      "weekId": "2026-40",
+      "trackCount": 0,
+      "uniqueArtistCount": 0
+    },
+    "folderContract": {
+      "stored": "💎 Ontdek DNA",
+      "requestedWeekStructure": "W40",
+      "mode": "manual",
+      "note": "Confirm exact hierarchy before production; offline plan is not placement evidence."
+    }
+  },
+  "artifacts": {},
+  "firstFailure": {
+    "stage": "manifest",
+    "reason": "Actual device snapshot unavailable/incomplete: bmd-week-2026-W40-day1-selection-v1, bmd-week-2026-W40-day2-selection-v1, bmd-week-2026-W40-day3-selection-v1, bmd-week-2026-W40-day4-selection-v1, bmd-week-2026-W40-day5-selection-v1, bmd-week-2026-W40-day6-selection-v1, bmd-week-2026-W40-day7-selection-v1"
+  }
+}
