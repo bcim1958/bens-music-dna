@@ -3,6 +3,10 @@
 **Last updated: 2026-10-05**  
 **Status: Jaarboekenherstel en Master-snapshot vastgelegd; beschikbaarheid steekproefsgewijs akkoord; W40-zaterdagmachine ONVOLTOOID.**
 
+## Huidige hoofdroute — W41, gecontroleerd 5 oktober 2026
+
+[W41-voorbereiding](W41-PREPARATION-CHECK-2026-10-05.md): 226 kandidaten; zeven-daagse selectorproef en negen-stappen apparaatproef slagen met echte historische invoer en synthetische W41-beoordelingen. De echte productievrijgave blijft gesloten tot de beoordelingen van W41 compleet zijn en de apparaatcontrole slaagt. Zaterdaglevering 10 oktober nog onbewezen. W40 blijft een afzonderlijke historische herstelproef.
+
 ## W40-callbackreparatie — 5 oktober 2026
 
 De [automatische Spotify-terugkeer](W40-CALLBACK-RECOVERY-2026-10-05.md) gebruikt nu de bestaande foutafhandeling en herhaalknop. De fout is vóór herstel gereproduceerd; drie nieuwe en tien bestaande regressieproeven slagen, evenals de echte offline W40-herhaling. De automatische iPhone-eindproef blijft open.

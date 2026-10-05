@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-05",
+  "sourceCommit": "4e27ca32f8fab0296a41fa8d3018f4dcab85b8eb",
+  "week": "2026-W41",
+  "deliveryDate": "2026-10-10",
+  "registeredCandidates": 226,
+  "uniqueCandidateTrackUrls": 226,
+  "historicalInputExport": "2026-10-03T09:01:40.024Z",
+  "futureW41Ratings": "synthetic-only",
+  "officialArtistCountInSevenDayTest": 21,
+  "minimumNewArtistsPerDay": 2,
+  "restartStable": true,
+  "historicalRatingsPreserved": true,
+  "syntheticComposition": {
+    "weekPositive": 18,
+    "reserve": 3
+  },
+  "offlineNineStepsGreen": true,
+  "deviceNineStepsGreen": true,
+  "deviceMetadataWarnings": 42,
+  "blockedCases": [
+    "missing day7 ratings",
+    "artwork hash mismatch",
+    "Flow order mutation"
+  ],
+  "staticProductionReleaseGreen": false,
+  "actualW41FullDeviceExportAvailable": false,
+  "spotifyWrites": 0,
+  "endToEndProven": false,
+  "tests": {
+    "week-route-regression.cjs": "PASS: W40 route preserved; W41 date and release guards; zero Spotify writes for blocked input; JavaScript parses.\n",
+    "discovery-policy-regression.cjs": "PASS: novelty, own-stock/alias exclusion, quality gate, playback gate, negative feedback, distinct artists, history and immutable rating provenance\nPASS: W40 five-day capacity, limited reservoir shortfall gate, read-only readiness, source/payload parity\nPASS: weekly official artist uniqueness\n",
+    "w40-resume-regression.cjs": "{\"pass\":true,\"cases\":[\"modern response resumes same playlist without track writes\",\"legacy response resumes same playlist without duplicate append\",\"invalid row stops before mutation\",\"pagination stops before mutation\"],\"spotifyWrites\":0}\n",
+    "w40-callback-recovery-regression.cjs": "{\"pass\":true,\"cases\":[\"automatic callback error shows retry and saves diagnostic\",\"expired callback token reauthorizes\",\"successful callback delivers once\"],\"spotifyWrites\":0}\n"
+  }
+}
