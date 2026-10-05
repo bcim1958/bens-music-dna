@@ -3,6 +3,10 @@
 **Last updated: 2026-10-05**  
 **Status: Jaarboekenherstel en Master-snapshot vastgelegd; beschikbaarheid steekproefsgewijs akkoord; W40-zaterdagmachine ONVOLTOOID.**
 
+## W40-herstelproef — 5 oktober 2026
+
+De [actuele herhaling](W40-HERSTELPROEF-2026-10-05.md) reproduceert de groene offline keten met echte invoer en bestaande artefacten. W40 staat zichtbaar met 21 tracks, hoes en parentmap in Spotify; de museumpagina is bereikbaar. De automatische iPhone-cadeau-afsluiting en Express-publicatie blijven onbewezen. Geen nieuwe Spotify-mutaties of runtimewijzigingen uitgevoerd.
+
 ## Actuele ingang — 5 oktober 2026
 
 Zie [checkpoint 5 oktober](CHECKPOINT-2026-10-05-JAARBOEKEN-MASTER-ACTIELIJST.md) voor de huidige gegevens, bewijsgrenzen en actielijn. De onderstaande projectkaart is historische context; eerdere groene deelstatussen zijn geen bewijs van een werkende zaterdaglevering.

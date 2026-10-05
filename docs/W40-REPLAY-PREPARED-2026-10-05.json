@@ -1,0 +1,3127 @@
+{
+  "schemaVersion": 1,
+  "weekId": "2026-40",
+  "mode": "offline-simulation",
+  "spotifyWrites": 0,
+  "simulationGreen": true,
+  "endToEndProven": false,
+  "steps": [
+    {
+      "name": "manifest",
+      "status": "green",
+      "details": {
+        "officialRatings": 21,
+        "selected": 21,
+        "weekPositive": 20,
+        "reserve": 1
+      }
+    },
+    {
+      "name": "weekcontrole",
+      "status": "green",
+      "details": {
+        "audit": {
+          "version": 1,
+          "scope": "positive-week-selection",
+          "total": 21,
+          "counts": {
+            "Alternative & Indie": 0,
+            "Classic Heavy Metal": 0,
+            "Extreme & Modern Metal": 0,
+            "Garage Rock": 0,
+            "Glam Rock": 0,
+            "Hair Metal": 0,
+            "Hard Rock & AOR": 0,
+            "Prog & Art Rock": 0,
+            "Progressive Metal": 0,
+            "Psychedelic & Space Rock": 0,
+            "Punk & New Wave": 0
+          },
+          "represented": 0,
+          "largest": [],
+          "topTwoCount": 0,
+          "hardRockHairCount": 0,
+          "hardRockHairShare": 0,
+          "coverage": {
+            "identity": 21,
+            "primaryGenre": 0,
+            "secondaryStyles": 0,
+            "novelty": 0,
+            "total": 21
+          },
+          "unclassified": 21,
+          "ratings": {
+            "positive": 21,
+            "retry": 0,
+            "negative": 0,
+            "unknown": 0
+          },
+          "albumArena": {
+            "observedCount": 0,
+            "labelledTracks": 0,
+            "complete": false,
+            "share": null
+          },
+          "issues": [
+            {
+              "code": "primary-genre-unknown",
+              "position": 1
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 1
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 2
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 2
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 3
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 3
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 4
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 4
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 5
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 5
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 6
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 6
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 7
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 7
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 8
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 8
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 9
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 9
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 10
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 10
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 11
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 11
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 12
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 12
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 13
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 13
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 14
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 14
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 15
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 15
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 16
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 16
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 17
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 17
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 18
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 18
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 19
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 19
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 20
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 20
+            },
+            {
+              "code": "primary-genre-unknown",
+              "position": 21
+            },
+            {
+              "code": "novelty-unknown",
+              "position": 21
+            }
+          ],
+          "dataChecksPass": false,
+          "tasteBalanceVerdict": "not-determined",
+          "note": "Concentration is descriptive. No target percentages, quotas, or automatic publication decision."
+        },
+        "metadataWarnings": [
+          {
+            "code": "primary-genre-unknown",
+            "position": 1
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 1
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 2
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 2
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 3
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 3
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 4
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 4
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 5
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 5
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 6
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 6
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 7
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 7
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 8
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 8
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 9
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 9
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 10
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 10
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 11
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 11
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 12
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 12
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 13
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 13
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 14
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 14
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 15
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 15
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 16
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 16
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 17
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 17
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 18
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 18
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 19
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 19
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 20
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 20
+          },
+          {
+            "code": "primary-genre-unknown",
+            "position": 21
+          },
+          {
+            "code": "novelty-unknown",
+            "position": 21
+          }
+        ],
+        "note": "No new genre quotas; unknown annotation fields stay unknown."
+      }
+    },
+    {
+      "name": "Flow-DNA",
+      "status": "green",
+      "details": {
+        "sameRecordings": true,
+        "invalidBefore": 0,
+        "invalidAfter": 0,
+        "removed": [],
+        "added": [],
+        "duplicatesBefore": [],
+        "duplicatesAfter": []
+      }
+    },
+    {
+      "name": "edelsteen",
+      "status": "green",
+      "details": {
+        "scope": "week",
+        "pass": true,
+        "errors": []
+      }
+    },
+    {
+      "name": "museumtekst",
+      "status": "green",
+      "details": {
+        "editorialText": "IMPERIALE TOPAAS · W40 — Een roodachtig oranje tot oranjerode variëteit van topaas. Chroom draagt bij aan de roze en rode tinten. Bekende vindplaatsen liggen bij Ouro Preto in Brazilië. De steen wordt vaak ovaal of peervormig geslepen. Steen 5 van de Music-DNA-slinger."
+      }
+    },
+    {
+      "name": "artwork",
+      "status": "green",
+      "details": {
+        "bytes": 142933,
+        "encodedBytesBeforeCompression": 190580,
+        "compressionRequired": false,
+        "sha256": "a5b35d12ccb10931a06d28fbb6462a6354bcaf90607a76366bad2bb31dc2212c"
+      }
+    },
+    {
+      "name": "publicatie",
+      "status": "green",
+      "details": {
+        "mockReadback": true,
+        "productionProof": false,
+        "receipt": {
+          "playlistId": "simulation-only",
+          "trackCount": 21,
+          "orderedUris": [
+            "spotify:track:5MmFMKe0VGaqlQ33KNy0KY",
+            "spotify:track:0bwEjc3wdAY8mDdsbnRxcv",
+            "spotify:track:3tD4AR8vbvM0b9X09YBYE0",
+            "spotify:track:4lxeOuQ37BfUxqkeOwwIjb",
+            "spotify:track:1nDOVQ2ioOrnE7SfJT0rvO",
+            "spotify:track:7EBpncUwlHjLhQTetSLb9O",
+            "spotify:track:4gjFeCBHRvUQluaJgUsDCh",
+            "spotify:track:4sbbbxq9R9KJoUZuJHF6Wb",
+            "spotify:track:1xId1hoQ0mfYl610t5VtPW",
+            "spotify:track:6XcxLPk27iNbo2rBWnnr5V",
+            "spotify:track:6cVcombXzsFOdRDnvpMLoL",
+            "spotify:track:3DQUOnH5OKGjXXnfKGj0UT",
+            "spotify:track:6Wb0KcC6LEMjOtLYcMKcss",
+            "spotify:track:3HUCwifeBQMMBKUPxCaVt2",
+            "spotify:track:6Db5cayYggggqGq2MIfp65",
+            "spotify:track:5TqQnYIyisbHJiHXzkSK9u",
+            "spotify:track:07VDLT8jatNUZTGgVVm7gy",
+            "spotify:track:1IJtqhXB7xi9IXqOmG7DLd",
+            "spotify:track:1kTPKqk6vMojgGGgsfumiq",
+            "spotify:track:4NTuOzgM0DgNtbCSCUj9QN",
+            "spotify:track:2vLm4hsLeMMfcqaVlj4PKN"
+          ],
+          "artworkAttached": true,
+          "artworkReadback": true,
+          "artworkOriginalBytes": 142933,
+          "artworkUploadBytes": 142933,
+          "artworkEncodedBytes": 190580,
+          "folderPlacement": "known-technical-limitation",
+          "weekComplete": false,
+          "expressPublication": "awaiting-operational-destination"
+        },
+        "mockRequests": [
+          {
+            "url": "https://api.spotify.com/v1/playlists/simulation-only/items?limit=50",
+            "method": "GET"
+          },
+          {
+            "url": "../assets/weekly/music-dna-2026-w40-imperiale-topaas.jpg",
+            "method": "GET"
+          },
+          {
+            "url": "https://api.spotify.com/v1/playlists/simulation-only/images",
+            "method": "PUT"
+          },
+          {
+            "url": "https://api.spotify.com/v1/playlists/simulation-only/images",
+            "method": "GET"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spotify-mapplaatsing",
+      "status": "green",
+      "details": {
+        "required": false,
+        "actualPlacementVerified": false,
+        "status": "known-technical-limitation",
+        "reason": "User confirmed 2026-10-03: technically impossible and already investigated."
+      }
+    },
+    {
+      "name": "DNA Express",
+      "status": "green",
+      "details": {
+        "handoffPrepared": true,
+        "publicationDeferred": true,
+        "researchPending": 21
+      }
+    }
+  ],
+  "independentChecks": {
+    "repositoryManifest": {
+      "pass": false,
+      "errors": [
+        "track count not ready for publication",
+        "unique artist count not ready for publication",
+        "manifest must be frozen before Spotify publication",
+        "week-positive composition not ready",
+        "positive-reserve composition not ready"
+      ],
+      "weekId": "2026-40",
+      "trackCount": 0,
+      "uniqueArtistCount": 0
+    }
+  },
+  "artifacts": {
+    "gift": {
+      "version": 14,
+      "weekKey": "2026-W40",
+      "size": 21,
+      "targetSize": 21,
+      "complete": true,
+      "full": true,
+      "ids": [
+        "2026-W40-04",
+        "2026-W40-09",
+        "2026-W40-10",
+        "2026-W40-18",
+        "2026-W40-03",
+        "2026-W40-05",
+        "2026-W40-17",
+        "2026-W40-14",
+        "2026-W40-02",
+        "2026-W40-12",
+        "2026-W40-13",
+        "2026-W39-11",
+        "2026-W40-46",
+        "2026-W40-31",
+        "2026-W40-35",
+        "2026-W40-29",
+        "2026-W40-33",
+        "2026-W40-28",
+        "2026-W40-38",
+        "2026-W40-39",
+        "2026-W40-26"
+      ],
+      "tracks": [
+        {
+          "trackId": "2026-W40-04",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Aviator",
+          "title": "Front Line",
+          "country": "Verenigde Staten",
+          "releaseYear": 1986,
+          "albumOrRelease": "Aviator",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hair metal"
+          ],
+          "ratedAt": "2026-09-27T06:38:37.475Z",
+          "spotifyUrl": "https://open.spotify.com/track/5MmFMKe0VGaqlQ33KNy0KY",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-27T06:38:37.475Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-09",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Heavy Bones",
+          "title": "The Hand That Feeds",
+          "country": "Verenigde Staten",
+          "releaseYear": 1992,
+          "albumOrRelease": "Heavy Bones",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hair metal"
+          ],
+          "ratedAt": "2026-09-28T03:56:24.652Z",
+          "spotifyUrl": "https://open.spotify.com/track/0bwEjc3wdAY8mDdsbnRxcv",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-28T03:56:24.652Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-10",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "King Kobra",
+          "title": "Iron Eagle (Never Say Die)",
+          "country": "Verenigde Staten",
+          "releaseYear": 1986,
+          "albumOrRelease": "Thrill Of A Lifetime",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hair metal"
+          ],
+          "ratedAt": "2026-09-28T03:56:52.302Z",
+          "spotifyUrl": "https://open.spotify.com/track/3tD4AR8vbvM0b9X09YBYE0",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-28T03:56:52.302Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-18",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Sic Vikki",
+          "title": "Kiss Me in French",
+          "country": "Verenigde Staten",
+          "releaseYear": 1993,
+          "albumOrRelease": "Kiss Me in French",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hair metal"
+          ],
+          "ratedAt": "2026-09-29T00:06:13.847Z",
+          "spotifyUrl": "https://open.spotify.com/track/4lxeOuQ37BfUxqkeOwwIjb",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-29T00:06:13.847Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-03",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Alien",
+          "title": "Give It Up",
+          "country": "Zweden",
+          "releaseYear": 1990,
+          "albumOrRelease": "Shiftin' Gear",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hair metal"
+          ],
+          "ratedAt": "2026-09-28T03:57:45.509Z",
+          "spotifyUrl": "https://open.spotify.com/track/1nDOVQ2ioOrnE7SfJT0rvO",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-28T03:57:45.509Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-05",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Brighton Rock",
+          "title": "Young Wild and Free",
+          "country": "Canada",
+          "releaseYear": 1986,
+          "albumOrRelease": "Young, Wild And Free",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hair metal"
+          ],
+          "ratedAt": "2026-09-29T00:08:28.557Z",
+          "spotifyUrl": "https://open.spotify.com/track/7EBpncUwlHjLhQTetSLb9O",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-29T00:08:28.557Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-17",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Saints & Sinners",
+          "title": "Shake",
+          "country": "Canada",
+          "releaseYear": 1992,
+          "albumOrRelease": "Saints & Sinners",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hair metal"
+          ],
+          "ratedAt": "2026-09-29T00:11:15.154Z",
+          "spotifyUrl": "https://open.spotify.com/track/4gjFeCBHRvUQluaJgUsDCh",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-29T00:11:15.154Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-14",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Return",
+          "title": "Steal Your Heart",
+          "country": "Noorwegen",
+          "releaseYear": 1988,
+          "albumOrRelease": "Attitudes",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal",
+            "Pop"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hair metal"
+          ],
+          "ratedAt": "2026-09-30T08:10:31.209Z",
+          "spotifyUrl": "https://open.spotify.com/track/4sbbbxq9R9KJoUZuJHF6Wb",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-30T08:10:31.209Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-02",
+          "rating": "goed",
+          "weight": 1,
+          "source": "official",
+          "artist": "John Norum;Joey Tempest",
+          "title": "We Will Be Strong",
+          "country": "Zweden",
+          "releaseYear": 1992,
+          "albumOrRelease": "Face The Truth",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hard Rock",
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hard rock"
+          ],
+          "ratedAt": "2026-09-27T06:37:17.802Z",
+          "spotifyUrl": "https://open.spotify.com/track/1xId1hoQ0mfYl610t5VtPW",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-27T06:37:17.802Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-12",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Radioactive;Jeff Paris",
+          "title": "Shame On You, Shame On Me",
+          "country": "Zweden / Verenigde Staten",
+          "releaseYear": 2024,
+          "albumOrRelease": "Shame On You, Shame On Me",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hard Rock",
+            "Hair Metal",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hard rock"
+          ],
+          "ratedAt": "2026-09-30T08:11:21.552Z",
+          "spotifyUrl": "https://open.spotify.com/track/6XcxLPk27iNbo2rBWnnr5V",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-30T08:11:21.552Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-13",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Restless Spirits;Chez Kane",
+          "title": "Dreams of the Wild",
+          "country": "Spanje / Verenigd Koninkrijk",
+          "releaseYear": 2022,
+          "albumOrRelease": "Dreams of the Wild",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hard Rock",
+            "Hair Metal",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hard rock"
+          ],
+          "ratedAt": "2026-09-30T08:12:17.120Z",
+          "spotifyUrl": "https://open.spotify.com/track/6cVcombXzsFOdRDnvpMLoL",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-30T08:12:17.120Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W39-11",
+          "rating": "raak",
+          "weight": 2,
+          "source": "reserve",
+          "artist": "Zebra",
+          "title": "As I Said Before",
+          "country": "Verenigde Staten",
+          "releaseYear": 1983,
+          "albumOrRelease": "Zebra",
+          "styles": [
+            "Album Rock",
+            "Arena Rock",
+            "Hair Metal"
+          ],
+          "dnaRoute": [
+            "album rock",
+            "arena rock",
+            "hair metal"
+          ],
+          "ratedAt": "2026-09-21T08:32:40.654Z",
+          "spotifyUrl": "https://open.spotify.com/track/3DQUOnH5OKGjXXnfKGj0UT",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-09-21T08:32:40.654Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-46",
+          "rating": "goed",
+          "weight": 1,
+          "source": "official",
+          "artist": "Peppermint Creeps",
+          "title": "Turning Japanese",
+          "country": "Verenigde Staten",
+          "releaseYear": 2005,
+          "albumOrRelease": "We R The Weirdoz!!!",
+          "styles": [
+            "Punk",
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "punk",
+            "hair metal",
+            "glam rock"
+          ],
+          "ratedAt": "2026-10-01T04:28:44.325Z",
+          "spotifyUrl": "https://open.spotify.com/track/6Wb0KcC6LEMjOtLYcMKcss",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-10-01T04:25:26.143Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-31",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Big Bang Babies",
+          "title": "Everybody Needs A Hero",
+          "country": "Verenigde Staten",
+          "releaseYear": 2001,
+          "albumOrRelease": "3 Chords And The Truth",
+          "styles": [
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "hair metal",
+            "glam rock",
+            "heavy metal"
+          ],
+          "ratedAt": "2026-10-02T06:18:34.751Z",
+          "spotifyUrl": "https://open.spotify.com/track/3HUCwifeBQMMBKUPxCaVt2",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-10-02T06:18:34.751Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-35",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "C.J. Snare",
+          "title": "Rock You Tonight",
+          "country": "Verenigde Staten",
+          "releaseYear": 1992,
+          "albumOrRelease": "Hold Your Fire",
+          "styles": [
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "hair metal",
+            "glam rock",
+            "heavy metal"
+          ],
+          "ratedAt": "2026-10-02T06:19:13.198Z",
+          "spotifyUrl": "https://open.spotify.com/track/6Db5cayYggggqGq2MIfp65",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-10-02T06:19:13.198Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-29",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Babylon Bombs",
+          "title": "Hometown Hero",
+          "country": "Zweden",
+          "releaseYear": 2006,
+          "albumOrRelease": "Doin' You Nasty",
+          "styles": [
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "hair metal",
+            "glam rock",
+            "heavy metal"
+          ],
+          "ratedAt": "2026-10-02T06:19:59.782Z",
+          "spotifyUrl": "https://open.spotify.com/track/5TqQnYIyisbHJiHXzkSK9u",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-10-02T06:19:59.782Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-33",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Bombshell Boys",
+          "title": "Shake Your Body",
+          "country": "Zweden",
+          "releaseYear": 2021,
+          "albumOrRelease": "Medicine for Love",
+          "styles": [
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "hair metal",
+            "glam rock",
+            "heavy metal"
+          ],
+          "ratedAt": "2026-10-03T06:22:11.331Z",
+          "spotifyUrl": "https://open.spotify.com/track/07VDLT8jatNUZTGgVVm7gy",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-10-03T06:22:11.331Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-28",
+          "rating": "goed",
+          "weight": 1,
+          "source": "official",
+          "artist": "Baby Jane",
+          "title": "My Behavior",
+          "country": "Zweden",
+          "releaseYear": 2012,
+          "albumOrRelease": "In the Spotlight",
+          "styles": [
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "hair metal",
+            "glam rock",
+            "heavy metal"
+          ],
+          "ratedAt": "2026-10-01T04:27:11.852Z",
+          "spotifyUrl": "https://open.spotify.com/track/1IJtqhXB7xi9IXqOmG7DLd",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-10-01T04:27:11.852Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-38",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Crash Kelly",
+          "title": "She Gets Away",
+          "country": "Canada",
+          "releaseYear": 2005,
+          "albumOrRelease": "Penny Pills",
+          "styles": [
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "hair metal",
+            "glam rock",
+            "heavy metal"
+          ],
+          "ratedAt": "2026-10-03T06:23:02.598Z",
+          "spotifyUrl": "https://open.spotify.com/track/1kTPKqk6vMojgGGgsfumiq",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-10-03T06:23:02.598Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-39",
+          "rating": "raak",
+          "weight": 2,
+          "source": "official",
+          "artist": "Crystal Pistol",
+          "title": "Rockstar",
+          "country": "Canada",
+          "releaseYear": 2006,
+          "albumOrRelease": "Crystal Pistol",
+          "styles": [
+            "Hair Metal",
+            "Glam Rock",
+            "Heavy Metal"
+          ],
+          "dnaRoute": [
+            "hair metal",
+            "glam rock",
+            "heavy metal"
+          ],
+          "ratedAt": "2026-10-03T06:24:08.421Z",
+          "spotifyUrl": "https://open.spotify.com/track/4NTuOzgM0DgNtbCSCUj9QN",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-10-03T06:24:08.421Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        },
+        {
+          "trackId": "2026-W40-26",
+          "rating": "goed",
+          "weight": 1,
+          "source": "official",
+          "artist": "Andy Timmons",
+          "title": "Groove or Die",
+          "country": "Verenigde Staten",
+          "releaseYear": 1997,
+          "albumOrRelease": "Ear X-Tacy 2",
+          "styles": [
+            "Guitar Virtuoso",
+            "Heavy Metal",
+            "Pop-Metal",
+            "Hair Metal",
+            "Hard Rock"
+          ],
+          "dnaRoute": [
+            "guitar virtuoso",
+            "heavy metal",
+            "pop-metal"
+          ],
+          "ratedAt": "2026-10-01T04:26:21.431Z",
+          "spotifyUrl": "https://open.spotify.com/track/2vLm4hsLeMMfcqaVlj4PKN",
+          "spotifyResolvedExact": true,
+          "deliverable": true,
+          "firstPositiveAt": "2026-10-01T04:26:21.431Z",
+          "playlistUses": 0,
+          "lastPlaylistWeek": null
+        }
+      ],
+      "fromCurrentWeek": 20,
+      "fromReserve": 1,
+      "blockedUndeliverable": [],
+      "blockedPreviouslyDelivered": [
+        "2026-W36-01",
+        "2026-W36-06",
+        "2026-W36-13",
+        "2026-W36-11",
+        "2026-W36-08",
+        "2026-W36-09",
+        "2026-W36-14",
+        "2026-W36-12",
+        "2026-W36-20",
+        "2026-W36-16",
+        "2026-W35-08",
+        "2026-W35-09",
+        "2026-W35-10",
+        "2026-W35-16",
+        "2026-W35-17",
+        "2026-W35-18",
+        "2026-W35-20",
+        "2026-W35-21",
+        "2026-W35-22",
+        "2026-W35-35",
+        "2026-W35-36",
+        "2026-W37-03",
+        "2026-W37-06",
+        "2026-W37-18",
+        "2026-W37-16",
+        "2026-W37-14",
+        "2026-W37-15",
+        "2026-W37-12",
+        "2026-W37-20",
+        "2026-W37-08",
+        "2026-W37-01",
+        "2026-W37-13",
+        "2026-W37-02",
+        "2026-W38-01",
+        "2026-W38-03",
+        "2026-W38-02",
+        "2026-W38-08",
+        "2026-W38-23",
+        "2026-W38-09",
+        "2026-W38-12",
+        "2026-W38-13",
+        "2026-W38-07",
+        "2026-W38-18",
+        "2026-W38-05",
+        "2026-W38-06",
+        "2026-W38-26",
+        "2026-W38-25",
+        "2026-W38-14",
+        "2026-W38-10",
+        "2026-W39-34",
+        "2026-W39-30",
+        "2026-W39-05",
+        "2026-W39-33",
+        "2026-W39-09",
+        "2026-W39-02",
+        "2026-W39-04",
+        "2026-W39-06",
+        "2026-W39-07",
+        "2026-W39-08",
+        "2026-W39-01",
+        "2026-W39-03",
+        "2026-W39-32",
+        "2026-W39-29",
+        "2026-W39-42",
+        "2026-W39-40",
+        "2026-W39-23",
+        "2026-W39-22",
+        "2026-W39-16",
+        "2026-W39-17",
+        "2026-W39-28"
+      ],
+      "reserveOrder": "FIFO_OLDEST_FIRST",
+      "sequenceMode": "smart-flow-v1",
+      "sequenceIntegrity": {
+        "ok": true,
+        "beforeIds": [
+          "2026-W40-02",
+          "2026-W40-04",
+          "2026-W40-09",
+          "2026-W40-10",
+          "2026-W40-03",
+          "2026-W40-18",
+          "2026-W40-05",
+          "2026-W40-17",
+          "2026-W40-14",
+          "2026-W40-12",
+          "2026-W40-13",
+          "2026-W40-26",
+          "2026-W40-28",
+          "2026-W40-46",
+          "2026-W40-31",
+          "2026-W40-35",
+          "2026-W40-29",
+          "2026-W40-33",
+          "2026-W40-38",
+          "2026-W40-39",
+          "2026-W39-11"
+        ],
+        "afterIds": [
+          "2026-W40-04",
+          "2026-W40-09",
+          "2026-W40-10",
+          "2026-W40-18",
+          "2026-W40-03",
+          "2026-W40-05",
+          "2026-W40-17",
+          "2026-W40-14",
+          "2026-W40-02",
+          "2026-W40-12",
+          "2026-W40-13",
+          "2026-W39-11",
+          "2026-W40-46",
+          "2026-W40-31",
+          "2026-W40-35",
+          "2026-W40-29",
+          "2026-W40-33",
+          "2026-W40-28",
+          "2026-W40-38",
+          "2026-W40-39",
+          "2026-W40-26"
+        ]
+      },
+      "sequenceDeterminism": {
+        "ok": true,
+        "firstIds": [
+          "2026-W40-04",
+          "2026-W40-09",
+          "2026-W40-10",
+          "2026-W40-18",
+          "2026-W40-03",
+          "2026-W40-05",
+          "2026-W40-17",
+          "2026-W40-14",
+          "2026-W40-02",
+          "2026-W40-12",
+          "2026-W40-13",
+          "2026-W39-11",
+          "2026-W40-46",
+          "2026-W40-31",
+          "2026-W40-35",
+          "2026-W40-29",
+          "2026-W40-33",
+          "2026-W40-28",
+          "2026-W40-38",
+          "2026-W40-39",
+          "2026-W40-26"
+        ],
+        "secondIds": [
+          "2026-W40-04",
+          "2026-W40-09",
+          "2026-W40-10",
+          "2026-W40-18",
+          "2026-W40-03",
+          "2026-W40-05",
+          "2026-W40-17",
+          "2026-W40-14",
+          "2026-W40-02",
+          "2026-W40-12",
+          "2026-W40-13",
+          "2026-W39-11",
+          "2026-W40-46",
+          "2026-W40-31",
+          "2026-W40-35",
+          "2026-W40-29",
+          "2026-W40-33",
+          "2026-W40-28",
+          "2026-W40-38",
+          "2026-W40-39",
+          "2026-W40-26"
+        ]
+      },
+      "createdAt": "2026-10-05T15:45:00.195Z"
+    },
+    "weekAudit": {
+      "version": 1,
+      "scope": "positive-week-selection",
+      "total": 21,
+      "counts": {
+        "Alternative & Indie": 0,
+        "Classic Heavy Metal": 0,
+        "Extreme & Modern Metal": 0,
+        "Garage Rock": 0,
+        "Glam Rock": 0,
+        "Hair Metal": 0,
+        "Hard Rock & AOR": 0,
+        "Prog & Art Rock": 0,
+        "Progressive Metal": 0,
+        "Psychedelic & Space Rock": 0,
+        "Punk & New Wave": 0
+      },
+      "represented": 0,
+      "largest": [],
+      "topTwoCount": 0,
+      "hardRockHairCount": 0,
+      "hardRockHairShare": 0,
+      "coverage": {
+        "identity": 21,
+        "primaryGenre": 0,
+        "secondaryStyles": 0,
+        "novelty": 0,
+        "total": 21
+      },
+      "unclassified": 21,
+      "ratings": {
+        "positive": 21,
+        "retry": 0,
+        "negative": 0,
+        "unknown": 0
+      },
+      "albumArena": {
+        "observedCount": 0,
+        "labelledTracks": 0,
+        "complete": false,
+        "share": null
+      },
+      "issues": [
+        {
+          "code": "primary-genre-unknown",
+          "position": 1
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 1
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 2
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 2
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 3
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 3
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 4
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 4
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 5
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 5
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 6
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 6
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 7
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 7
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 8
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 8
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 9
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 9
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 10
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 10
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 11
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 11
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 12
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 12
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 13
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 13
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 14
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 14
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 15
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 15
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 16
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 16
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 17
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 17
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 18
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 18
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 19
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 19
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 20
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 20
+        },
+        {
+          "code": "primary-genre-unknown",
+          "position": 21
+        },
+        {
+          "code": "novelty-unknown",
+          "position": 21
+        }
+      ],
+      "dataChecksPass": false,
+      "tasteBalanceVerdict": "not-determined",
+      "note": "Concentration is descriptive. No target percentages, quotas, or automatic publication decision."
+    },
+    "manifest": {
+      "schemaVersion": "1.0",
+      "status": "draft",
+      "purpose": "single source of truth for one published Ontdek DNA week",
+      "weekId": "2026-40",
+      "freeze": {
+        "status": "frozen",
+        "frozenAt": "2026-10-05T15:45:00.198Z",
+        "publishedAt": null,
+        "orderedTrackIds": [
+          "5MmFMKe0VGaqlQ33KNy0KY",
+          "0bwEjc3wdAY8mDdsbnRxcv",
+          "3tD4AR8vbvM0b9X09YBYE0",
+          "4lxeOuQ37BfUxqkeOwwIjb",
+          "1nDOVQ2ioOrnE7SfJT0rvO",
+          "7EBpncUwlHjLhQTetSLb9O",
+          "4gjFeCBHRvUQluaJgUsDCh",
+          "4sbbbxq9R9KJoUZuJHF6Wb",
+          "1xId1hoQ0mfYl610t5VtPW",
+          "6XcxLPk27iNbo2rBWnnr5V",
+          "6cVcombXzsFOdRDnvpMLoL",
+          "3DQUOnH5OKGjXXnfKGj0UT",
+          "6Wb0KcC6LEMjOtLYcMKcss",
+          "3HUCwifeBQMMBKUPxCaVt2",
+          "6Db5cayYggggqGq2MIfp65",
+          "5TqQnYIyisbHJiHXzkSK9u",
+          "07VDLT8jatNUZTGgVVm7gy",
+          "1IJtqhXB7xi9IXqOmG7DLd",
+          "1kTPKqk6vMojgGGgsfumiq",
+          "4NTuOzgM0DgNtbCSCUj9QN",
+          "2vLm4hsLeMMfcqaVlj4PKN"
+        ]
+      },
+      "tracks": [
+        {
+          "trackId": "2026-W40-04",
+          "spotifyTrackId": "5MmFMKe0VGaqlQ33KNy0KY",
+          "title": "Front Line",
+          "artistName": "Aviator",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-09",
+          "spotifyTrackId": "0bwEjc3wdAY8mDdsbnRxcv",
+          "title": "The Hand That Feeds",
+          "artistName": "Heavy Bones",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-10",
+          "spotifyTrackId": "3tD4AR8vbvM0b9X09YBYE0",
+          "title": "Iron Eagle (Never Say Die)",
+          "artistName": "King Kobra",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-18",
+          "spotifyTrackId": "4lxeOuQ37BfUxqkeOwwIjb",
+          "title": "Kiss Me in French",
+          "artistName": "Sic Vikki",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-03",
+          "spotifyTrackId": "1nDOVQ2ioOrnE7SfJT0rvO",
+          "title": "Give It Up",
+          "artistName": "Alien",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-05",
+          "spotifyTrackId": "7EBpncUwlHjLhQTetSLb9O",
+          "title": "Young Wild and Free",
+          "artistName": "Brighton Rock",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-17",
+          "spotifyTrackId": "4gjFeCBHRvUQluaJgUsDCh",
+          "title": "Shake",
+          "artistName": "Saints & Sinners",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-14",
+          "spotifyTrackId": "4sbbbxq9R9KJoUZuJHF6Wb",
+          "title": "Steal Your Heart",
+          "artistName": "Return",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-02",
+          "spotifyTrackId": "1xId1hoQ0mfYl610t5VtPW",
+          "title": "We Will Be Strong",
+          "artistName": "John Norum;Joey Tempest",
+          "selectionSource": "week-positive",
+          "rating": "goed"
+        },
+        {
+          "trackId": "2026-W40-12",
+          "spotifyTrackId": "6XcxLPk27iNbo2rBWnnr5V",
+          "title": "Shame On You, Shame On Me",
+          "artistName": "Radioactive;Jeff Paris",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-13",
+          "spotifyTrackId": "6cVcombXzsFOdRDnvpMLoL",
+          "title": "Dreams of the Wild",
+          "artistName": "Restless Spirits;Chez Kane",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W39-11",
+          "spotifyTrackId": "3DQUOnH5OKGjXXnfKGj0UT",
+          "title": "As I Said Before",
+          "artistName": "Zebra",
+          "selectionSource": "positive-reserve",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-46",
+          "spotifyTrackId": "6Wb0KcC6LEMjOtLYcMKcss",
+          "title": "Turning Japanese",
+          "artistName": "Peppermint Creeps",
+          "selectionSource": "week-positive",
+          "rating": "goed"
+        },
+        {
+          "trackId": "2026-W40-31",
+          "spotifyTrackId": "3HUCwifeBQMMBKUPxCaVt2",
+          "title": "Everybody Needs A Hero",
+          "artistName": "Big Bang Babies",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-35",
+          "spotifyTrackId": "6Db5cayYggggqGq2MIfp65",
+          "title": "Rock You Tonight",
+          "artistName": "C.J. Snare",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-29",
+          "spotifyTrackId": "5TqQnYIyisbHJiHXzkSK9u",
+          "title": "Hometown Hero",
+          "artistName": "Babylon Bombs",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-33",
+          "spotifyTrackId": "07VDLT8jatNUZTGgVVm7gy",
+          "title": "Shake Your Body",
+          "artistName": "Bombshell Boys",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-28",
+          "spotifyTrackId": "1IJtqhXB7xi9IXqOmG7DLd",
+          "title": "My Behavior",
+          "artistName": "Baby Jane",
+          "selectionSource": "week-positive",
+          "rating": "goed"
+        },
+        {
+          "trackId": "2026-W40-38",
+          "spotifyTrackId": "1kTPKqk6vMojgGGgsfumiq",
+          "title": "She Gets Away",
+          "artistName": "Crash Kelly",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-39",
+          "spotifyTrackId": "4NTuOzgM0DgNtbCSCUj9QN",
+          "title": "Rockstar",
+          "artistName": "Crystal Pistol",
+          "selectionSource": "week-positive",
+          "rating": "raak"
+        },
+        {
+          "trackId": "2026-W40-26",
+          "spotifyTrackId": "2vLm4hsLeMMfcqaVlj4PKN",
+          "title": "Groove or Die",
+          "artistName": "Andy Timmons",
+          "selectionSource": "week-positive",
+          "rating": "goed"
+        }
+      ],
+      "derived": {
+        "uniqueArtists": [
+          {
+            "id": null,
+            "name": "Aviator",
+            "firstTrackIndex": 0
+          },
+          {
+            "id": null,
+            "name": "Heavy Bones",
+            "firstTrackIndex": 1
+          },
+          {
+            "id": null,
+            "name": "King Kobra",
+            "firstTrackIndex": 2
+          },
+          {
+            "id": null,
+            "name": "Sic Vikki",
+            "firstTrackIndex": 3
+          },
+          {
+            "id": null,
+            "name": "Alien",
+            "firstTrackIndex": 4
+          },
+          {
+            "id": null,
+            "name": "Brighton Rock",
+            "firstTrackIndex": 5
+          },
+          {
+            "id": null,
+            "name": "Saints & Sinners",
+            "firstTrackIndex": 6
+          },
+          {
+            "id": null,
+            "name": "Return",
+            "firstTrackIndex": 7
+          },
+          {
+            "id": null,
+            "name": "John Norum;Joey Tempest",
+            "firstTrackIndex": 8
+          },
+          {
+            "id": null,
+            "name": "Radioactive;Jeff Paris",
+            "firstTrackIndex": 9
+          },
+          {
+            "id": null,
+            "name": "Restless Spirits;Chez Kane",
+            "firstTrackIndex": 10
+          },
+          {
+            "id": null,
+            "name": "Zebra",
+            "firstTrackIndex": 11
+          },
+          {
+            "id": null,
+            "name": "Peppermint Creeps",
+            "firstTrackIndex": 12
+          },
+          {
+            "id": null,
+            "name": "Big Bang Babies",
+            "firstTrackIndex": 13
+          },
+          {
+            "id": null,
+            "name": "C.J. Snare",
+            "firstTrackIndex": 14
+          },
+          {
+            "id": null,
+            "name": "Babylon Bombs",
+            "firstTrackIndex": 15
+          },
+          {
+            "id": null,
+            "name": "Bombshell Boys",
+            "firstTrackIndex": 16
+          },
+          {
+            "id": null,
+            "name": "Baby Jane",
+            "firstTrackIndex": 17
+          },
+          {
+            "id": null,
+            "name": "Crash Kelly",
+            "firstTrackIndex": 18
+          },
+          {
+            "id": null,
+            "name": "Crystal Pistol",
+            "firstTrackIndex": 19
+          },
+          {
+            "id": null,
+            "name": "Andy Timmons",
+            "firstTrackIndex": 20
+          }
+        ]
+      },
+      "express": {
+        "artistBios": {
+          "status": "pending",
+          "artists": []
+        },
+        "deliveryMode": "handoff",
+        "destinationOperational": false,
+        "handoff": {
+          "schemaVersion": 1,
+          "kind": "dna-express-week-handoff",
+          "weekId": "2026-40",
+          "status": "prepared",
+          "destination": {
+            "operational": false,
+            "status": "awaiting-operational-destination"
+          },
+          "orderedSpotifyTrackIds": [
+            "5MmFMKe0VGaqlQ33KNy0KY",
+            "0bwEjc3wdAY8mDdsbnRxcv",
+            "3tD4AR8vbvM0b9X09YBYE0",
+            "4lxeOuQ37BfUxqkeOwwIjb",
+            "1nDOVQ2ioOrnE7SfJT0rvO",
+            "7EBpncUwlHjLhQTetSLb9O",
+            "4gjFeCBHRvUQluaJgUsDCh",
+            "4sbbbxq9R9KJoUZuJHF6Wb",
+            "1xId1hoQ0mfYl610t5VtPW",
+            "6XcxLPk27iNbo2rBWnnr5V",
+            "6cVcombXzsFOdRDnvpMLoL",
+            "3DQUOnH5OKGjXXnfKGj0UT",
+            "6Wb0KcC6LEMjOtLYcMKcss",
+            "3HUCwifeBQMMBKUPxCaVt2",
+            "6Db5cayYggggqGq2MIfp65",
+            "5TqQnYIyisbHJiHXzkSK9u",
+            "07VDLT8jatNUZTGgVVm7gy",
+            "1IJtqhXB7xi9IXqOmG7DLd",
+            "1kTPKqk6vMojgGGgsfumiq",
+            "4NTuOzgM0DgNtbCSCUj9QN",
+            "2vLm4hsLeMMfcqaVlj4PKN"
+          ],
+          "tracks": [
+            {
+              "position": 1,
+              "spotifyTrackId": "5MmFMKe0VGaqlQ33KNy0KY",
+              "title": "Front Line",
+              "artistName": "Aviator",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 2,
+              "spotifyTrackId": "0bwEjc3wdAY8mDdsbnRxcv",
+              "title": "The Hand That Feeds",
+              "artistName": "Heavy Bones",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 3,
+              "spotifyTrackId": "3tD4AR8vbvM0b9X09YBYE0",
+              "title": "Iron Eagle (Never Say Die)",
+              "artistName": "King Kobra",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 4,
+              "spotifyTrackId": "4lxeOuQ37BfUxqkeOwwIjb",
+              "title": "Kiss Me in French",
+              "artistName": "Sic Vikki",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 5,
+              "spotifyTrackId": "1nDOVQ2ioOrnE7SfJT0rvO",
+              "title": "Give It Up",
+              "artistName": "Alien",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 6,
+              "spotifyTrackId": "7EBpncUwlHjLhQTetSLb9O",
+              "title": "Young Wild and Free",
+              "artistName": "Brighton Rock",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 7,
+              "spotifyTrackId": "4gjFeCBHRvUQluaJgUsDCh",
+              "title": "Shake",
+              "artistName": "Saints & Sinners",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 8,
+              "spotifyTrackId": "4sbbbxq9R9KJoUZuJHF6Wb",
+              "title": "Steal Your Heart",
+              "artistName": "Return",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 9,
+              "spotifyTrackId": "1xId1hoQ0mfYl610t5VtPW",
+              "title": "We Will Be Strong",
+              "artistName": "John Norum;Joey Tempest",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 10,
+              "spotifyTrackId": "6XcxLPk27iNbo2rBWnnr5V",
+              "title": "Shame On You, Shame On Me",
+              "artistName": "Radioactive;Jeff Paris",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 11,
+              "spotifyTrackId": "6cVcombXzsFOdRDnvpMLoL",
+              "title": "Dreams of the Wild",
+              "artistName": "Restless Spirits;Chez Kane",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 12,
+              "spotifyTrackId": "3DQUOnH5OKGjXXnfKGj0UT",
+              "title": "As I Said Before",
+              "artistName": "Zebra",
+              "selectionSource": "positive-reserve"
+            },
+            {
+              "position": 13,
+              "spotifyTrackId": "6Wb0KcC6LEMjOtLYcMKcss",
+              "title": "Turning Japanese",
+              "artistName": "Peppermint Creeps",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 14,
+              "spotifyTrackId": "3HUCwifeBQMMBKUPxCaVt2",
+              "title": "Everybody Needs A Hero",
+              "artistName": "Big Bang Babies",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 15,
+              "spotifyTrackId": "6Db5cayYggggqGq2MIfp65",
+              "title": "Rock You Tonight",
+              "artistName": "C.J. Snare",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 16,
+              "spotifyTrackId": "5TqQnYIyisbHJiHXzkSK9u",
+              "title": "Hometown Hero",
+              "artistName": "Babylon Bombs",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 17,
+              "spotifyTrackId": "07VDLT8jatNUZTGgVVm7gy",
+              "title": "Shake Your Body",
+              "artistName": "Bombshell Boys",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 18,
+              "spotifyTrackId": "1IJtqhXB7xi9IXqOmG7DLd",
+              "title": "My Behavior",
+              "artistName": "Baby Jane",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 19,
+              "spotifyTrackId": "1kTPKqk6vMojgGGgsfumiq",
+              "title": "She Gets Away",
+              "artistName": "Crash Kelly",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 20,
+              "spotifyTrackId": "4NTuOzgM0DgNtbCSCUj9QN",
+              "title": "Rockstar",
+              "artistName": "Crystal Pistol",
+              "selectionSource": "week-positive"
+            },
+            {
+              "position": 21,
+              "spotifyTrackId": "2vLm4hsLeMMfcqaVlj4PKN",
+              "title": "Groove or Die",
+              "artistName": "Andy Timmons",
+              "selectionSource": "week-positive"
+            }
+          ],
+          "gemstone": {
+            "scope": "week",
+            "name": "Imperiale topaas",
+            "sequenceNumber": 5,
+            "editorialText": "IMPERIALE TOPAAS · W40 — Een roodachtig oranje tot oranjerode variëteit van topaas. Chroom draagt bij aan de roze en rode tinten. Bekende vindplaatsen liggen bij Ouro Preto in Brazilië. De steen wordt vaak ovaal of peervormig geslepen. Steen 5 van de Music-DNA-slinger.",
+            "artworkAssetId": "assets/weekly/music-dna-2026-w40-imperiale-topaas.jpg"
+          },
+          "researchQueue": [
+            {
+              "id": null,
+              "name": "Aviator",
+              "firstTrackIndex": 0,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Heavy Bones",
+              "firstTrackIndex": 1,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "King Kobra",
+              "firstTrackIndex": 2,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Sic Vikki",
+              "firstTrackIndex": 3,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Alien",
+              "firstTrackIndex": 4,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Brighton Rock",
+              "firstTrackIndex": 5,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Saints & Sinners",
+              "firstTrackIndex": 6,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Return",
+              "firstTrackIndex": 7,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "John Norum;Joey Tempest",
+              "firstTrackIndex": 8,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Radioactive;Jeff Paris",
+              "firstTrackIndex": 9,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Restless Spirits;Chez Kane",
+              "firstTrackIndex": 10,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Zebra",
+              "firstTrackIndex": 11,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Peppermint Creeps",
+              "firstTrackIndex": 12,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Big Bang Babies",
+              "firstTrackIndex": 13,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "C.J. Snare",
+              "firstTrackIndex": 14,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Babylon Bombs",
+              "firstTrackIndex": 15,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Bombshell Boys",
+              "firstTrackIndex": 16,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Baby Jane",
+              "firstTrackIndex": 17,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Crash Kelly",
+              "firstTrackIndex": 18,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Crystal Pistol",
+              "firstTrackIndex": 19,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            },
+            {
+              "id": null,
+              "name": "Andy Timmons",
+              "firstTrackIndex": 20,
+              "status": "needs-research",
+              "missing": [
+                "identity",
+                "originStart",
+                "members",
+                "styleDevelopment",
+                "careerMoments",
+                "status"
+              ],
+              "identityCertain": true,
+              "sources": []
+            }
+          ],
+          "editionStatus": "not-produced",
+          "published": false
+        }
+      },
+      "gemstone": {
+        "status": "pending",
+        "name": "Imperiale topaas",
+        "sequenceNumber": 5,
+        "editorialText": "IMPERIALE TOPAAS · W40 — Een roodachtig oranje tot oranjerode variëteit van topaas. Chroom draagt bij aan de roze en rode tinten. Bekende vindplaatsen liggen bij Ouro Preto in Brazilië. De steen wordt vaak ovaal of peervormig geslepen. Steen 5 van de Music-DNA-slinger.",
+        "editorialStandard": "short-factual-no-symbolism",
+        "trackId": null,
+        "artistId": null,
+        "presented": false,
+        "scope": "week",
+        "weekId": "2026-40",
+        "orderedTrackIds": [
+          "5MmFMKe0VGaqlQ33KNy0KY",
+          "0bwEjc3wdAY8mDdsbnRxcv",
+          "3tD4AR8vbvM0b9X09YBYE0",
+          "4lxeOuQ37BfUxqkeOwwIjb",
+          "1nDOVQ2ioOrnE7SfJT0rvO",
+          "7EBpncUwlHjLhQTetSLb9O",
+          "4gjFeCBHRvUQluaJgUsDCh",
+          "4sbbbxq9R9KJoUZuJHF6Wb",
+          "1xId1hoQ0mfYl610t5VtPW",
+          "6XcxLPk27iNbo2rBWnnr5V",
+          "6cVcombXzsFOdRDnvpMLoL",
+          "3DQUOnH5OKGjXXnfKGj0UT",
+          "6Wb0KcC6LEMjOtLYcMKcss",
+          "3HUCwifeBQMMBKUPxCaVt2",
+          "6Db5cayYggggqGq2MIfp65",
+          "5TqQnYIyisbHJiHXzkSK9u",
+          "07VDLT8jatNUZTGgVVm7gy",
+          "1IJtqhXB7xi9IXqOmG7DLd",
+          "1kTPKqk6vMojgGGgsfumiq",
+          "4NTuOzgM0DgNtbCSCUj9QN",
+          "2vLm4hsLeMMfcqaVlj4PKN"
+        ]
+      },
+      "publication": {
+        "spotify": {
+          "status": "pending",
+          "playlistId": null,
+          "folderPlacement": "known-technical-limitation",
+          "folderName": null,
+          "folderPlacementMode": "unsupported",
+          "folderLimitationReason": "User confirmed 2026-10-03: technically impossible and already investigated."
+        },
+        "express": {
+          "status": "awaiting-operational-destination",
+          "published": false
+        },
+        "gemstoneMuseum": {
+          "status": "pending",
+          "entryId": null
+        }
+      },
+      "integrity": {
+        "requiredTargets": [
+          "spotify",
+          "artwork",
+          "express",
+          "gemstone",
+          "gemstoneMuseum"
+        ],
+        "complete": false,
+        "rules": [
+          "tracks are the primary content truth",
+          "current Ontdek DNA rule: one track per artist; 21 tracks means 21 unique artists",
+          "uniqueArtists must be derived from tracks",
+          "published manifest corrections require provenance",
+          "Spotify success does not imply full week publication success",
+          "Saturday gift composition: retain all positive weekly discoveries, up to 21; fill remaining slots from positive reserve. W40 actual: 20 week-positive + 1 positive-reserve.",
+          "Spotify folder placement is a known technical limitation; operational delivery records this exception without claiming placement.",
+          "weekly gemstone cover must be generated and attached to the Spotify playlist before the automatic delivery is considered complete",
+          "gemstone sequence counter is continuous from 2026-W36 = stone 1 and is written numerically",
+          "gemstone editorial copy is short, factual and non-symbolic; no invented relation to Ben, taste or weekly flow",
+          "freezing snapshots the exact ordered track IDs; the curated Flow-DNA order must not change afterward"
+        ]
+      },
+      "provenance": {
+        "createdFor": "2026-W40 publication using existing manifest contract",
+        "notes": [
+          "Draft only: no final track selection, ratings or Flow-DNA order have been inferred from candidate membership.",
+          "85 candidate records are available; capacity proof is not publication readiness.",
+          "Artwork file was generated and uploaded to a separate private proof playlist on 2026-09-26; it is not attached to a W40 production playlist.",
+          "Proof playlist 6ARzCinEi6HyZKpIhxH12C is intentionally not publication.spotify.playlistId.",
+          "Artwork SHA-256: b8aacf968cbd83df212e82eb7f35af995d5f49683fba38d0380ed23e22ea62f3",
+          "Production artwork technically recompressed on 2026-09-26: progressive JPEG, quality 93, original chroma subsampling, 1000x1000 unchanged; 303820 -> 250227 bytes (<262144). Same design/crop; visually checked. Original proof SHA-256: 8479d0cfb95c27a5024ed11c7265b640d2ce6050193d703036835a97ae92c360. Existing Saturday upload function accepts the new asset in an offline mock test; original oversized asset and wrong MIME are rejected. No Spotify publication or upload performed.",
+          "Editorial sources: https://www.gia.edu/topaz-description and https://www.gia.edu/FAQ/gia-faq-imperial-topaz",
+          "Generated image is a proof asset; historical visual-family parity and smallest-thumbnail counter legibility are not fully validated.",
+          "Spotify folder placement remains manual; W39 unchanged.",
+          "2026-10-03: user confirmed retaining all 20 actual positive W40 official tracks plus one reserve track. Replaces obsolete fixed 19+2 assumption; source ratings unchanged.",
+          "Actual iPhone snapshot replayed 2026-10-03; input SHA-256 9f6a1ba2c5d0c378a00f2918bd05fcafa969f16f5baa6f773868edad3504a1a4. User confirmed 20+1 composition. Frozen Flow-DNA order retained. Gemstone represents entire week under architecture 2026-09-18. No production publication.",
+          "User confirmed DNA Express is not operational: prepare validated handoff, defer edition publication without blocking operational W40 delivery.",
+          "2026-10-03: user requested restoring approved W39 visual family. Replaced pedestal proof artwork with cinematic landscape cover; existing Spotify playlist 3R392OsftQ7iWrYLVPHonc updated through Desktop UI and visually checked. Track selection and frozen order unchanged."
+        ]
+      },
+      "selectionRules": {
+        "oneTrackPerArtist": true,
+        "expectedTrackCount": 21,
+        "expectedUniqueArtistCount": 21,
+        "allowedSelectionSources": [
+          "week-positive",
+          "positive-reserve"
+        ],
+        "expectedWeekPositiveCount": 20,
+        "expectedPositiveReserveCount": 1,
+        "expectedSpotifyFolder": "💎 Ontdek DNA"
+      },
+      "artwork": {
+        "status": "generated",
+        "kind": "weekly-gemstone-cover",
+        "gemstoneName": "Imperiale topaas",
+        "assetId": "assets/weekly/music-dna-2026-w40-imperiale-topaas.jpg",
+        "generatedAt": "2026-10-03",
+        "attachedToSpotify": false,
+        "rules": {
+          "square": true,
+          "weekIdentityRequired": true,
+          "gemstoneIdentityRequired": true,
+          "cinematicEdelsteenmuseumVisualFamily": true,
+          "numericSlingerCounterRequired": true,
+          "factualEditorialCopyRequired": true,
+          "generateBeforePublication": true
+        },
+        "delivery": {
+          "status": "blocked",
+          "reason": "awaiting-real-frozen-week-selection-and-production-playlist"
+        },
+        "visualFamily": "music-dna-cinematic-landscape-v1",
+        "visualReference": "Approved W39 Carneool cover; same brand layout, landscape, explorer and DNA emblem.",
+        "sha256": "a5b35d12ccb10931a06d28fbb6462a6354bcaf90607a76366bad2bb31dc2212c",
+        "uploadEncodedBytes": 190580
+      }
+    },
+    "museumText": "IMPERIALE TOPAAS · W40 — Topaas met roodachtig oranje tot oranjerode tinten. De handelsnaam kent geen officiële standaard. Steen 5 van de Music-DNA-slinger.",
+    "spotifyPayload": {
+      "name": "Ontdek DNA #2026-40",
+      "public": false,
+      "uris": [
+        "spotify:track:5MmFMKe0VGaqlQ33KNy0KY",
+        "spotify:track:0bwEjc3wdAY8mDdsbnRxcv",
+        "spotify:track:3tD4AR8vbvM0b9X09YBYE0",
+        "spotify:track:4lxeOuQ37BfUxqkeOwwIjb",
+        "spotify:track:1nDOVQ2ioOrnE7SfJT0rvO",
+        "spotify:track:7EBpncUwlHjLhQTetSLb9O",
+        "spotify:track:4gjFeCBHRvUQluaJgUsDCh",
+        "spotify:track:4sbbbxq9R9KJoUZuJHF6Wb",
+        "spotify:track:1xId1hoQ0mfYl610t5VtPW",
+        "spotify:track:6XcxLPk27iNbo2rBWnnr5V",
+        "spotify:track:6cVcombXzsFOdRDnvpMLoL",
+        "spotify:track:3DQUOnH5OKGjXXnfKGj0UT",
+        "spotify:track:6Wb0KcC6LEMjOtLYcMKcss",
+        "spotify:track:3HUCwifeBQMMBKUPxCaVt2",
+        "spotify:track:6Db5cayYggggqGq2MIfp65",
+        "spotify:track:5TqQnYIyisbHJiHXzkSK9u",
+        "spotify:track:07VDLT8jatNUZTGgVVm7gy",
+        "spotify:track:1IJtqhXB7xi9IXqOmG7DLd",
+        "spotify:track:1kTPKqk6vMojgGGgsfumiq",
+        "spotify:track:4NTuOzgM0DgNtbCSCUj9QN",
+        "spotify:track:2vLm4hsLeMMfcqaVlj4PKN"
+      ]
+    },
+    "expressHandoff": {
+      "schemaVersion": 1,
+      "kind": "dna-express-week-handoff",
+      "weekId": "2026-40",
+      "status": "prepared",
+      "destination": {
+        "operational": false,
+        "status": "awaiting-operational-destination"
+      },
+      "orderedSpotifyTrackIds": [
+        "5MmFMKe0VGaqlQ33KNy0KY",
+        "0bwEjc3wdAY8mDdsbnRxcv",
+        "3tD4AR8vbvM0b9X09YBYE0",
+        "4lxeOuQ37BfUxqkeOwwIjb",
+        "1nDOVQ2ioOrnE7SfJT0rvO",
+        "7EBpncUwlHjLhQTetSLb9O",
+        "4gjFeCBHRvUQluaJgUsDCh",
+        "4sbbbxq9R9KJoUZuJHF6Wb",
+        "1xId1hoQ0mfYl610t5VtPW",
+        "6XcxLPk27iNbo2rBWnnr5V",
+        "6cVcombXzsFOdRDnvpMLoL",
+        "3DQUOnH5OKGjXXnfKGj0UT",
+        "6Wb0KcC6LEMjOtLYcMKcss",
+        "3HUCwifeBQMMBKUPxCaVt2",
+        "6Db5cayYggggqGq2MIfp65",
+        "5TqQnYIyisbHJiHXzkSK9u",
+        "07VDLT8jatNUZTGgVVm7gy",
+        "1IJtqhXB7xi9IXqOmG7DLd",
+        "1kTPKqk6vMojgGGgsfumiq",
+        "4NTuOzgM0DgNtbCSCUj9QN",
+        "2vLm4hsLeMMfcqaVlj4PKN"
+      ],
+      "tracks": [
+        {
+          "position": 1,
+          "spotifyTrackId": "5MmFMKe0VGaqlQ33KNy0KY",
+          "title": "Front Line",
+          "artistName": "Aviator",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 2,
+          "spotifyTrackId": "0bwEjc3wdAY8mDdsbnRxcv",
+          "title": "The Hand That Feeds",
+          "artistName": "Heavy Bones",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 3,
+          "spotifyTrackId": "3tD4AR8vbvM0b9X09YBYE0",
+          "title": "Iron Eagle (Never Say Die)",
+          "artistName": "King Kobra",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 4,
+          "spotifyTrackId": "4lxeOuQ37BfUxqkeOwwIjb",
+          "title": "Kiss Me in French",
+          "artistName": "Sic Vikki",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 5,
+          "spotifyTrackId": "1nDOVQ2ioOrnE7SfJT0rvO",
+          "title": "Give It Up",
+          "artistName": "Alien",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 6,
+          "spotifyTrackId": "7EBpncUwlHjLhQTetSLb9O",
+          "title": "Young Wild and Free",
+          "artistName": "Brighton Rock",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 7,
+          "spotifyTrackId": "4gjFeCBHRvUQluaJgUsDCh",
+          "title": "Shake",
+          "artistName": "Saints & Sinners",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 8,
+          "spotifyTrackId": "4sbbbxq9R9KJoUZuJHF6Wb",
+          "title": "Steal Your Heart",
+          "artistName": "Return",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 9,
+          "spotifyTrackId": "1xId1hoQ0mfYl610t5VtPW",
+          "title": "We Will Be Strong",
+          "artistName": "John Norum;Joey Tempest",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 10,
+          "spotifyTrackId": "6XcxLPk27iNbo2rBWnnr5V",
+          "title": "Shame On You, Shame On Me",
+          "artistName": "Radioactive;Jeff Paris",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 11,
+          "spotifyTrackId": "6cVcombXzsFOdRDnvpMLoL",
+          "title": "Dreams of the Wild",
+          "artistName": "Restless Spirits;Chez Kane",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 12,
+          "spotifyTrackId": "3DQUOnH5OKGjXXnfKGj0UT",
+          "title": "As I Said Before",
+          "artistName": "Zebra",
+          "selectionSource": "positive-reserve"
+        },
+        {
+          "position": 13,
+          "spotifyTrackId": "6Wb0KcC6LEMjOtLYcMKcss",
+          "title": "Turning Japanese",
+          "artistName": "Peppermint Creeps",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 14,
+          "spotifyTrackId": "3HUCwifeBQMMBKUPxCaVt2",
+          "title": "Everybody Needs A Hero",
+          "artistName": "Big Bang Babies",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 15,
+          "spotifyTrackId": "6Db5cayYggggqGq2MIfp65",
+          "title": "Rock You Tonight",
+          "artistName": "C.J. Snare",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 16,
+          "spotifyTrackId": "5TqQnYIyisbHJiHXzkSK9u",
+          "title": "Hometown Hero",
+          "artistName": "Babylon Bombs",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 17,
+          "spotifyTrackId": "07VDLT8jatNUZTGgVVm7gy",
+          "title": "Shake Your Body",
+          "artistName": "Bombshell Boys",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 18,
+          "spotifyTrackId": "1IJtqhXB7xi9IXqOmG7DLd",
+          "title": "My Behavior",
+          "artistName": "Baby Jane",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 19,
+          "spotifyTrackId": "1kTPKqk6vMojgGGgsfumiq",
+          "title": "She Gets Away",
+          "artistName": "Crash Kelly",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 20,
+          "spotifyTrackId": "4NTuOzgM0DgNtbCSCUj9QN",
+          "title": "Rockstar",
+          "artistName": "Crystal Pistol",
+          "selectionSource": "week-positive"
+        },
+        {
+          "position": 21,
+          "spotifyTrackId": "2vLm4hsLeMMfcqaVlj4PKN",
+          "title": "Groove or Die",
+          "artistName": "Andy Timmons",
+          "selectionSource": "week-positive"
+        }
+      ],
+      "gemstone": {
+        "scope": "week",
+        "name": "Imperiale topaas",
+        "sequenceNumber": 5,
+        "editorialText": "IMPERIALE TOPAAS · W40 — Een roodachtig oranje tot oranjerode variëteit van topaas. Chroom draagt bij aan de roze en rode tinten. Bekende vindplaatsen liggen bij Ouro Preto in Brazilië. De steen wordt vaak ovaal of peervormig geslepen. Steen 5 van de Music-DNA-slinger.",
+        "artworkAssetId": "assets/weekly/music-dna-2026-w40-imperiale-topaas.jpg"
+      },
+      "researchQueue": [
+        {
+          "id": null,
+          "name": "Aviator",
+          "firstTrackIndex": 0,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Heavy Bones",
+          "firstTrackIndex": 1,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "King Kobra",
+          "firstTrackIndex": 2,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Sic Vikki",
+          "firstTrackIndex": 3,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Alien",
+          "firstTrackIndex": 4,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Brighton Rock",
+          "firstTrackIndex": 5,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Saints & Sinners",
+          "firstTrackIndex": 6,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Return",
+          "firstTrackIndex": 7,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "John Norum;Joey Tempest",
+          "firstTrackIndex": 8,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Radioactive;Jeff Paris",
+          "firstTrackIndex": 9,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Restless Spirits;Chez Kane",
+          "firstTrackIndex": 10,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Zebra",
+          "firstTrackIndex": 11,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Peppermint Creeps",
+          "firstTrackIndex": 12,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Big Bang Babies",
+          "firstTrackIndex": 13,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "C.J. Snare",
+          "firstTrackIndex": 14,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Babylon Bombs",
+          "firstTrackIndex": 15,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Bombshell Boys",
+          "firstTrackIndex": 16,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Baby Jane",
+          "firstTrackIndex": 17,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Crash Kelly",
+          "firstTrackIndex": 18,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Crystal Pistol",
+          "firstTrackIndex": 19,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        },
+        {
+          "id": null,
+          "name": "Andy Timmons",
+          "firstTrackIndex": 20,
+          "status": "needs-research",
+          "missing": [
+            "identity",
+            "originStart",
+            "members",
+            "styleDevelopment",
+            "careerMoments",
+            "status"
+          ],
+          "identityCertain": true,
+          "sources": []
+        }
+      ],
+      "editionStatus": "not-produced",
+      "published": false
+    }
+  }
+}

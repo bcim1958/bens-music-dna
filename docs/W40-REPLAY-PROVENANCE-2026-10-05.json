@@ -1,0 +1,620 @@
+{
+  "date": "2026-10-05",
+  "code_ref": "288fac34c25b96dcada72e1c21b30ac21a661c28",
+  "input_exported_at": "2026-10-03T09:01:40.024Z",
+  "input_sha256": "9f6a1ba2c5d0c378a00f2918bd05fcafa969f16f5baa6f773868edad3504a1a4",
+  "original_storage_preserved_in_prepared_input": true,
+  "code_files_verified_against_github_tree": [
+    {
+      "path": "data/w40-simulation-release.json",
+      "sha": "a67a8aa4e7fa31263b68c5d28213291a04ca1eef"
+    },
+    {
+      "path": "data/week-publication-manifest-2026-40-simulation-frozen.json",
+      "sha": "da55642ff349de7fb6d7251a9c6ae2e9fab54f76"
+    },
+    {
+      "path": "data/week-publication-manifest-2026-40.json",
+      "sha": "73adcfc5d387116cea53439dc6c8d1ed0184bfca"
+    },
+    {
+      "path": "docs/W40-EXPRESS-DELIVERY-REGRESSION-2026-10-03.json",
+      "sha": "08d798b8bc4ba1c2411f6bd6bc67571f9741e0dd"
+    },
+    {
+      "path": "docs/W40-EXPRESS-HANDOFF-AND-DELIVERY-2026-10-03.md",
+      "sha": "671efea2ddf7e18dbd763b2028f3058c9e8205f3"
+    },
+    {
+      "path": "scripts/saturday-simulator.cjs",
+      "sha": "78d29fd6865e78b31e424c3cc51ec616c60f4b0b"
+    },
+    {
+      "path": "test/fixtures/w40-old-loader.js",
+      "sha": "7d332be114324d0f4d86e5f41b50734a7599e40f"
+    },
+    {
+      "path": "test/music-dna-candidates-w35-v1.js",
+      "sha": "217ae4405d9181875d43a466fb1465d5b853a52a"
+    },
+    {
+      "path": "test/music-dna-candidates-w36-v1.js",
+      "sha": "3550cb28221aa0704f22d67a38d9904ea9cbb079"
+    },
+    {
+      "path": "test/music-dna-candidates-w37-v1.js",
+      "sha": "682c72ab28329ad54bcf3d50d9569dccc0bd3bc0"
+    },
+    {
+      "path": "test/music-dna-candidates-w38-v1.js",
+      "sha": "1ed00bc6b61c56f5628d16fe7a03a4575e70dc9c"
+    },
+    {
+      "path": "test/music-dna-candidates-w39-v1.js",
+      "sha": "20589c76be967fbf97023b0e2bf9376d4e0b8bb7"
+    },
+    {
+      "path": "test/music-dna-candidates-w40-data-1.js",
+      "sha": "98afcf17eb9769abb8349b532fa70348bf9420b1"
+    },
+    {
+      "path": "test/music-dna-candidates-w40-data-2.js",
+      "sha": "14a5985d4fd9500036fc0f33030d8c36e15b074c"
+    },
+    {
+      "path": "test/music-dna-candidates-w40-data-3.js",
+      "sha": "856f0e8211d33c378e146fa8d4e8442e74d483bb"
+    },
+    {
+      "path": "test/music-dna-candidates-w40-staging-v1.js",
+      "sha": "334c1c73f9e7ab5908e556d7c8763e18648b28e7"
+    },
+    {
+      "path": "test/music-dna-data-v1.3.js",
+      "sha": "f9098a3678b980857a29302d5049b85f4c8ec2ff"
+    },
+    {
+      "path": "test/music-dna-delivery-registry-v1.js",
+      "sha": "824d8fe7e2f65bd922b471c9eecb5cababdc9a39"
+    },
+    {
+      "path": "test/music-dna-discovery-reference-v1.js",
+      "sha": "73967cbc089a2b48c88734ec535b65f9b5efc4fc"
+    },
+    {
+      "path": "test/music-dna-discovery-v1.js",
+      "sha": "1a29b4568dbc09673b90e826bba3319f14c27565"
+    },
+    {
+      "path": "test/music-dna-explorer-editorial-standard-v1.js",
+      "sha": "e6ee71fe10e42a0e59dd4bd0ad5c2886dd6a2abf"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v1.html",
+      "sha": "ab89b55ed071a463cd8f64db30efc3ed9c5d4ada"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v10.html",
+      "sha": "aed263b2ec771405e623ffe09c55cd3cfa7951d8"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v11.html",
+      "sha": "c86cf54e3af95732fde61ff40472cd74f7982929"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v12.html",
+      "sha": "fc6aae3d96de360f32caaf164f13c1f03d77d39c"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v13.html",
+      "sha": "aa052a3d3bc8d115f2c3871eec03e5cfe65e9086"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v14.html",
+      "sha": "f367cd4efe0d279704834e1e324e3cefbb37f484"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v15.html",
+      "sha": "491489d7c88c34809dc41de7aad30cb1a6dec5e8"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v16.html",
+      "sha": "21f744eb2b18b70e6b2677bffe0c5f39426c0fec"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v17.html",
+      "sha": "1e44169f07b3c1d61534cdf3e37c13265e627e9e"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v18.html",
+      "sha": "3f716fe8f26127cc69e42f711a97b8e70a5db9fc"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v19.html",
+      "sha": "0f8f9284648c5a00c2d555ffabcad078c2e49f47"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v2.html",
+      "sha": "d926e544539042f37d09ed9f0a439ccad9ea98e1"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v20.html",
+      "sha": "c1975f0c5f1cf2276d25952bc83d4391b3fda70e"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v21.html",
+      "sha": "bc486926e756db6f2c989774eb88ff19961fa70b"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v22.html",
+      "sha": "524a4bacb8d8bc9035eb221056d3b2a0c2721f7d"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v23.html",
+      "sha": "f71a689f13b011753253b2c05f89f0b2f375ac95"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v24.html",
+      "sha": "1a8c134cbb699211d3390d529d06129c8a61ebde"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v25.html",
+      "sha": "f7acafe07406e5cdb8d2d8128965525c8a596fd5"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v26.html",
+      "sha": "b5b060512f6ceb1d2cf1d42c178d711f30507315"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v27.html",
+      "sha": "17c758e2fd615d1a0bb3f2e0e1383cbbd3d1b377"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v28.html",
+      "sha": "e4b969efb81610d49df80a4f298b220ea73be3d1"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v29.html",
+      "sha": "0a3beeb18292f317687d2550dc921889e82bbb6d"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v3.html",
+      "sha": "72c8107f832ecd57d00bf717eb7ab63035f8721b"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v30.html",
+      "sha": "3757b5f13616cfe82fb2ae64b8b8a29f63676192"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v4.html",
+      "sha": "73f38176ba1847bc1a9784bcbb8d445ac0a4b5ef"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v5.html",
+      "sha": "183da3c4ee41b82d9211aca80453d427173cbff3"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v6.html",
+      "sha": "8d6046fb7bef7384a92a3a0aa309ffc61c556cb1"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v7.html",
+      "sha": "26a645ae94986d34b1e09d11731edaff45af3b10"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v8.html",
+      "sha": "8d5329b61ebb45deaf6c4c741c5cf0edf1162750"
+    },
+    {
+      "path": "test/music-dna-explorer-engine-v9.html",
+      "sha": "289915491a8d9e7303db609119c45cf834a798cf"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v1.js",
+      "sha": "0fa0f88d7a063bbc57ad8570ea003de3ef3aeaf6"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v10.js",
+      "sha": "23aa3a4d9347ff1b93b898daacf470097a4ba64b"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v11.js",
+      "sha": "5432acab4f91e804c571d759a6f665bdf74d4adc"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v12.js",
+      "sha": "bb50a3aabc29aa505e419d9cadff7c86714e84db"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v13.js",
+      "sha": "a7714cfa0b5bf18404eb0ae984172f71d10f83d1"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v14.js",
+      "sha": "9fb4795af703f4736adfc3cc48949e4b1e4e515a"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v15.js",
+      "sha": "76be316e27d109393ad59e3fa5d9586f80f0a205"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v16.js",
+      "sha": "9a7ceb73b1792c26b919afef40719263f8829853"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v2.js",
+      "sha": "996ebccfa13d758a51f2ed856a40f7528826bafa"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v3.js",
+      "sha": "786fcde7e4b6fe891a5a6f5347d3b2a9cc86190c"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v4.js",
+      "sha": "3c9ce0946b29e7b1f65910634708e977cfaec39f"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v5.js",
+      "sha": "6e17c5c8d33c912bb7dca2c47861a66146ce5c39"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v6.js",
+      "sha": "941c197dc6c31fddb80bee015144139c660ae360"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v7.js",
+      "sha": "316535ddb00ef6a9b876d8db27536e05f06b511d"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v8.js",
+      "sha": "158495d20564b0e26397a732bb6c7d910161faf2"
+    },
+    {
+      "path": "test/music-dna-explorer-graph-v9.js",
+      "sha": "84fdecc75bfddbbb73eae23591702b40bb3410ab"
+    },
+    {
+      "path": "test/music-dna-explorer-story-sources-v1.js",
+      "sha": "847e4d99da29238ce752d2d8d363e897c80d56f3"
+    },
+    {
+      "path": "test/music-dna-explorer-trails-v1.js",
+      "sha": "32cca56cb88d574a3a1c44fbd1807271362f9da9"
+    },
+    {
+      "path": "test/music-dna-express-handoff-v1.js",
+      "sha": "9812d554b13f53c886c6241044f25f9a2c70f687"
+    },
+    {
+      "path": "test/music-dna-external-candidates-v1.js",
+      "sha": "947af4935c7756ba75ed0e95b8bd56a062c201aa"
+    },
+    {
+      "path": "test/music-dna-film-act1-v1.html",
+      "sha": "9aaf256a7790a9fed0d57c2c8024ec54bf380a6d"
+    },
+    {
+      "path": "test/music-dna-film-camera-journey-v1.html",
+      "sha": "4549793b2edfda804a2e745dff71adff1e54a358"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v1.html",
+      "sha": "e4f9153a1f38b1c09d139e6ecb0f8089ff48d93b"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v10.html",
+      "sha": "741f3aeb5e8fdb8b31fae6eb5e379bd836fb959a"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v11.html",
+      "sha": "b98af8e00b584135f66129eab3b2ef0f16b3118b"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v2.html",
+      "sha": "9cde4d85bb513f15d5f4e83f323bed146d113de7"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v3.html",
+      "sha": "218b3fb2785bcb7dcaf01e67c9d3e103a8a50f36"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v4.html",
+      "sha": "09adc501fde463837c95d8057975fc5fac7d8af3"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v5.html",
+      "sha": "158b3a5b88f19945ad677903291ac0640e82e12f"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v6.html",
+      "sha": "023ae4b22a36749e9e1cd36c74ca1db9c033aca8"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v7.html",
+      "sha": "aaf4c98291f98c2b17818e365bbe840176889efb"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v8.html",
+      "sha": "2678cc5c1875f84ae55f96d54d4c3f85bc2b591d"
+    },
+    {
+      "path": "test/music-dna-film-cinematic-act1-v9.html",
+      "sha": "731fdd9ff9371c27eda63f7bc94abbaeb31df4ef"
+    },
+    {
+      "path": "test/music-dna-film-discovery-gravity-v1.html",
+      "sha": "f70053d397170ee3c40df0589eff797ae755bf50"
+    },
+    {
+      "path": "test/music-dna-film-dna-birth-v1.html",
+      "sha": "15140e4ba4e96d6d9320f721fef658793d0be320"
+    },
+    {
+      "path": "test/music-dna-film-earth-to-dna-v1.html",
+      "sha": "53732bbf70d6c3860d4cc9bb1cc4fb734d337500"
+    },
+    {
+      "path": "test/music-dna-film-opening-v4.html",
+      "sha": "ff8332d6adb634438d05a22807a0ba61bcb883bf"
+    },
+    {
+      "path": "test/music-dna-film-opening-v5.html",
+      "sha": "a88f34e074bfee6cfda1a237d6fc0ae9d1b8126c"
+    },
+    {
+      "path": "test/music-dna-film-pan-earth-keyframes-v1.html",
+      "sha": "9866adb421bec48729e03032f3f6016356d8deac"
+    },
+    {
+      "path": "test/music-dna-film-scene-proof-v1.html",
+      "sha": "a97bfaedc717c869cea740bfa5dd861e2b844176"
+    },
+    {
+      "path": "test/music-dna-film-spine-v1.html",
+      "sha": "ed4dac073889fabd55f8db41053a0bf5eabecfe0"
+    },
+    {
+      "path": "test/music-dna-film-transition-earth-v1.html",
+      "sha": "7e087ace80e703811ac1c7e177460f2d57f8467c"
+    },
+    {
+      "path": "test/music-dna-film-v1.html",
+      "sha": "8998271ba4e37fd8d6c140e3b67265719241c34e"
+    },
+    {
+      "path": "test/music-dna-film-week-gift-v1.html",
+      "sha": "741facf784465ec923da5ef760975bf513977da4"
+    },
+    {
+      "path": "test/music-dna-film-wide-story-v1.html",
+      "sha": "7b9b9ae2237fe99dea73336f904beb15e2b8be1f"
+    },
+    {
+      "path": "test/music-dna-film-wide-story-v2.html",
+      "sha": "43fc534e57cda81a88cf173c306126e8a24afbfa"
+    },
+    {
+      "path": "test/music-dna-flow-learning-v1.js",
+      "sha": "564197de7a7e14514561e016ff734f2c8b2b3df4"
+    },
+    {
+      "path": "test/music-dna-genre-memberships-v1.js",
+      "sha": "917d5b25ea5e45c6caa74661ece8261df0f61c5d"
+    },
+    {
+      "path": "test/music-dna-genre-navigation-v1.js",
+      "sha": "a0b9dc10a5f55b066b9765fcf588a2a4ba364a15"
+    },
+    {
+      "path": "test/music-dna-go-v1.html",
+      "sha": "099a3c16f01ebe933525aa3872a8e743de739b49"
+    },
+    {
+      "path": "test/music-dna-icon-180.png",
+      "sha": "69d52c14385389dd0e49ffd44faccaf264ef1f59"
+    },
+    {
+      "path": "test/music-dna-iphone-home-concept-v1.html",
+      "sha": "4d3551f919c5ba2abf6e969fd71a52ff29472c1e"
+    },
+    {
+      "path": "test/music-dna-iphone-shell-v1.html",
+      "sha": "a890abd72516bd687502d94385190e5be7f7191c"
+    },
+    {
+      "path": "test/music-dna-iphone-visual-preview-v1.html",
+      "sha": "cbd9c6b32cc814615e2fdbb1020eb47985b73be7"
+    },
+    {
+      "path": "test/music-dna-learning-v1.js",
+      "sha": "87025aa77dcad1b927ec4b31a5408d2db7b145a3"
+    },
+    {
+      "path": "test/music-dna-living-master-e2e-v2.js",
+      "sha": "956bf36cad6ea2861d0915821cad49a98dfbe310"
+    },
+    {
+      "path": "test/music-dna-living-master-pilot-v1.js",
+      "sha": "6e54e2df07b1069575082591e0e81a0b27945e3a"
+    },
+    {
+      "path": "test/music-dna-logo-story-v1.html",
+      "sha": "598625d7768c6017d70c59a2f05eab0946474cc7"
+    },
+    {
+      "path": "test/music-dna-master-100-engine-v1.js",
+      "sha": "19c99ba4ff9627aa0e315599b5fb98fe9c95eb6c"
+    },
+    {
+      "path": "test/music-dna-master-batch-001.js",
+      "sha": "aeff5179c9e7e7102ab3e98eda28d203efa2b459"
+    },
+    {
+      "path": "test/music-dna-master-batch-002.js",
+      "sha": "0a273a04a3e3560cc337cea4eaf2398eaefd70b8"
+    },
+    {
+      "path": "test/music-dna-master-batch-003.js",
+      "sha": "ace80e07272b91fce0dffe2c825bbfc9e60d8dd9"
+    },
+    {
+      "path": "test/music-dna-master-batch-004.js",
+      "sha": "99c813647a321cf9cf66745497f507cddbff871a"
+    },
+    {
+      "path": "test/music-dna-master-batch-005a.js",
+      "sha": "40e1b80486b992f9560acbe6f0868504dfee68fc"
+    },
+    {
+      "path": "test/music-dna-master-batch-005b.js",
+      "sha": "302b1e8b681edf7851285ef34fcf98a70436f9a5"
+    },
+    {
+      "path": "test/music-dna-metamorphosis-v1.html",
+      "sha": "c6169e9d3b248503abc085abed8c06ca46c1a729"
+    },
+    {
+      "path": "test/music-dna-metamorphosis-v2.html",
+      "sha": "1c0857401903606a07b86f0988b89640bde7cd0a"
+    },
+    {
+      "path": "test/music-dna-metamorphosis-v3.html",
+      "sha": "1ef06c89f4e35e55df94db23ba0ca61a0424120a"
+    },
+    {
+      "path": "test/music-dna-museum-v1.js",
+      "sha": "861be9e30cab5bf25f3bc25daf84c3be433b766d"
+    },
+    {
+      "path": "test/music-dna-positive-bank-v1.js",
+      "sha": "2f4cd1da520b5c189f19ec738bde7d81caa6313d"
+    },
+    {
+      "path": "test/music-dna-proefcadeau-v1.js",
+      "sha": "11aa196b2c096427f298163c9cd60ce302883cd4"
+    },
+    {
+      "path": "test/music-dna-rating-ledger-v1.js",
+      "sha": "4a33010dc3e01d4530df3aca576a1bfc8b032174"
+    },
+    {
+      "path": "test/music-dna-rating-write-v1.js",
+      "sha": "69eed7b93d1d41665a0d79d0f41aab4509f8c73a"
+    },
+    {
+      "path": "test/music-dna-relation-dossier-proof-v1.html",
+      "sha": "0b8ecbfca4abcf6692d777f6c2d990e7ed91dc35"
+    },
+    {
+      "path": "test/music-dna-relation-registry-proof-v1.html",
+      "sha": "791e9e5e63ecee7665be9bbda6d4650dd847f8c4"
+    },
+    {
+      "path": "test/music-dna-relation-registry-v1.js",
+      "sha": "feda9ad98234ddb91c0b187349573efe627f2187"
+    },
+    {
+      "path": "test/music-dna-representative-pilot-v2.js",
+      "sha": "a1235b848c29b9f9c8b3d4baa2fe176ba68b58fe"
+    },
+    {
+      "path": "test/music-dna-rich-artist-ghost-v1.js",
+      "sha": "1c1f6c2abbe5b0a40dd3130e283a83370e52b257"
+    },
+    {
+      "path": "test/music-dna-runtime-simulator-v1.js",
+      "sha": "adc858dc18d225be549420e2e46fa26ef7b9b1dc"
+    },
+    {
+      "path": "test/music-dna-selector-v1.js",
+      "sha": "5de8f6d6b068090fe6ccb2f35c31bf0f0d999edd"
+    },
+    {
+      "path": "test/music-dna-sequencer-v1.js",
+      "sha": "90b7074f5b31e2dd4ca6348716748b4c648c65e7"
+    },
+    {
+      "path": "test/music-dna-storage-v1.js",
+      "sha": "af5c9c6d7789f4f8f74ab831db6ebc32ff337802"
+    },
+    {
+      "path": "test/music-dna-w35-reserve-v1.js",
+      "sha": "f0e32c07ee0e44f11f5d8a8356a48e9e000311e6"
+    },
+    {
+      "path": "test/music-dna-w41-candidates-v1.js",
+      "sha": "a984acbb49d5f19f5687798c18624fc293ae6bda"
+    },
+    {
+      "path": "test/music-dna-week-control-v1.js",
+      "sha": "1531009dc342e2a53539ba2dd2a0de236fb43a2a"
+    },
+    {
+      "path": "test/music-dna-week-delivery-v1.js",
+      "sha": "963268e54f24554d8fd8a4a266f8ec98c905369f"
+    },
+    {
+      "path": "test/music-dna-week-manifest-v1.js",
+      "sha": "d3ada6fb95ff91db8cd05c8a6d3106da7f6ecd97"
+    },
+    {
+      "path": "test/music-dna-week-transition-v1.js",
+      "sha": "def41e77706260cbf5884d7c5ee0082ff862157d"
+    },
+    {
+      "path": "test/music-dna-weeks-v1.js",
+      "sha": "74ca32cb0fa0c12372c275893e708ed5c94f86b8"
+    },
+    {
+      "path": "test/music-dna-world-rc1.html",
+      "sha": "66658a4b5d65dec8254a151f81fcc2019bf7ca1f"
+    },
+    {
+      "path": "test/music-dna-world-rc2.html",
+      "sha": "f930e401f176f843b9d23fcb89e015c8550ae511"
+    },
+    {
+      "path": "test/music-dna-world-rc3.html",
+      "sha": "e8194bd46a4109f59ae55bbbbe54e4ae6027217a"
+    },
+    {
+      "path": "test/saturday-simulator-regression.cjs",
+      "sha": "8680619272d6b84db1fedff6ff0ba09824d5828f"
+    },
+    {
+      "path": "test/zaterdagcadeau-v2-selftest.html",
+      "sha": "c4f675ed7342a14dc0b016beb4154cce24404d4f"
+    },
+    {
+      "path": "test/zaterdagcadeau-v2.html",
+      "sha": "a606a7d0eac051406a0160654b3e2065653328ed"
+    },
+    {
+      "path": "test/zaterdagcadeau-v3.html",
+      "sha": "204a455e92f60701219b54bf30be7121d4821e3c"
+    },
+    {
+      "path": "test/zaterdagcadeau.html",
+      "sha": "a0dc9ca3604e51b4aef5395ae9a8c903ae3dd910"
+    },
+    {
+      "path": "assets/weekly/music-dna-2026-w40-imperiale-topaas.jpg",
+      "sha256": "a5b35d12ccb10931a06d28fbb6462a6354bcaf90607a76366bad2bb31dc2212c"
+    }
+  ],
+  "regression_pass": true,
+  "regression_cases": 10,
+  "production_proven": false,
+  "spotify_writes": 0,
+  "live_observation": {
+    "spotify_playlist_name": "Ontdek DNA #2026-40",
+    "parent_folder": "💎 Ontdek DNA",
+    "track_count": 21,
+    "title_artist_order_matches": true,
+    "artwork_visible": true,
+    "all_uri_identities_live_exported": false,
+    "museum_visible": true,
+    "gift_browser_missing_original_phone_storage": true,
+    "express_publication": false
+  }
+}
