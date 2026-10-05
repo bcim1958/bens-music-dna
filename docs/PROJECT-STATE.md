@@ -3,6 +3,10 @@
 **Last updated: 2026-10-05**  
 **Status: Jaarboekenherstel en Master-snapshot vastgelegd; beschikbaarheid steekproefsgewijs akkoord; W40-zaterdagmachine ONVOLTOOID.**
 
+## W40-callbackreparatie — 5 oktober 2026
+
+De [automatische Spotify-terugkeer](W40-CALLBACK-RECOVERY-2026-10-05.md) gebruikt nu de bestaande foutafhandeling en herhaalknop. De fout is vóór herstel gereproduceerd; drie nieuwe en tien bestaande regressieproeven slagen, evenals de echte offline W40-herhaling. De automatische iPhone-eindproef blijft open.
+
 ## W40-herstelproef — 5 oktober 2026
 
 De [actuele herhaling](W40-HERSTELPROEF-2026-10-05.md) reproduceert de groene offline keten met echte invoer en bestaande artefacten. W40 staat zichtbaar met 21 tracks, hoes en parentmap in Spotify; de museumpagina is bereikbaar. De automatische iPhone-cadeau-afsluiting en Express-publicatie blijven onbewezen. Geen nieuwe Spotify-mutaties of runtimewijzigingen uitgevoerd.
