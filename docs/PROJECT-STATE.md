@@ -1,7 +1,13 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-09-23**  
-**Status: GREEN — canonieke stopstaat hersteld; Explorer blijft proefbouw.**
+**Last updated: 2026-10-05**  
+**Status: Jaarboekenherstel en Master-snapshot vastgelegd; W40-zaterdagmachine ONVOLTOOID.**
+
+## Actuele ingang — 5 oktober 2026
+
+Zie [checkpoint 5 oktober](CHECKPOINT-2026-10-05-JAARBOEKEN-MASTER-ACTIELIJST.md) voor de huidige gegevens, bewijsgrenzen en actielijn. De onderstaande projectkaart is historische context; eerdere groene deelstatussen zijn geen bewijs van een werkende zaterdaglevering.
+
+## Historische ingang — 23 september 2026
 
 ## Actuele canonieke ingang
 

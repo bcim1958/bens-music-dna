@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-05",
+  "parent_commit": "93d7c88333087346747b205863af1d306667a745",
+  "yearbooks": 56,
+  "tracks_per_yearbook": 20,
+  "yearbook_tracks": 1120,
+  "historical_repairs": 109,
+  "additional_availability_repairs": 1,
+  "master_rows": 3618,
+  "original_master_rows_retained": 3480,
+  "master_additions_total": 138,
+  "complete_playback_test": false,
+  "w40_saturday_machine": "ONVOLTOOID",
+  "archives": [
+    {
+      "path": "archive/2026-10-05/DNA_HERSTEL_AFGEROND_1970_2025.zip",
+      "bytes": 200612,
+      "sha256": "0e0e11a628ac741040732995da72cabb44dfe23434a8daa87fe7884de76d0809"
+    },
+    {
+      "path": "archive/2026-10-05/DNA_MASTER_GESYNCHRONISEERD_2026_10_05.zip",
+      "bytes": 3012076,
+      "sha256": "83869f111c6d62fddcba67b1a82ee55c1e6cdb268950bc6fbe96cb3784be8cf2"
+    },
+    {
+      "path": "archive/2026-10-05/DNA_NACONTROLE_CREDITS_EN_FLOW.zip",
+      "bytes": 126621,
+      "sha256": "2cdfb6de32af52511e1090e6d084c82c6fcfc640ee61e7e6dae16ad8302c0c9c"
+    }
+  ]
+}
