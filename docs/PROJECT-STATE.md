@@ -1,7 +1,7 @@
 # Ben's Music DNA — Project State
 
 **Last updated: 2026-10-05**  
-**Status: Jaarboekenherstel en Master-snapshot vastgelegd; W40-zaterdagmachine ONVOLTOOID.**
+**Status: Jaarboekenherstel en Master-snapshot vastgelegd; beschikbaarheid steekproefsgewijs akkoord; W40-zaterdagmachine ONVOLTOOID.**
 
 ## Actuele ingang — 5 oktober 2026
 

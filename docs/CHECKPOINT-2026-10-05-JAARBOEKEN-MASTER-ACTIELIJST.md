@@ -13,7 +13,7 @@ Dit checkpoint volgt op 93d7c88333087346747b205863af1d306667a745 (3 oktober). He
 - Spotify-titels, bestaande artwork en mapindeling zijn behouden. Het lokale uitvoeringsverslag beschrijft de wijzigingen en grenzen van de controle.
 
 ## Nog open / grenzen van het bewijs
-- Geen volledige afspeeltest van alle 1.120 tracks; Spotify-beschikbaarheid kan veranderen. Visuele beschikbaarheid is geen luisterbewijs.
+- Beschikbaarheidscontrole afgesloten op gebruikersakkoord: in iedere map willekeurige tracks gestart, zonder afspeelfouten. Zie [steekproefakkoord](JAARBOEKEN-STEEKPROEF-AKKOORD-2026-10-05.md). Geen volledige afspeeltest of gekwantificeerde steekproef; latere uitval geldt als nieuwe melding.
 - Jaar-fit sluit aan op geregistreerde bronjaren; geen onafhankelijke verificatie van iedere oorspronkelijke release. Acht bestaande verschillen tussen Master-werkjaar en Jaarboekjaar zijn expliciet vastgelegd en niet stilzwijgend overschreven.
 - Flow-DNA is redactioneel toegepast. De nacontrole geeft 67 aandachtssignalen bij 531 vergelijkbare overgangen van 684 overgangen in de 36 gewijzigde Jaarboeken. Audiofeatures komen uit de historische export van 2 oktober: 621 van 720 tracks hebben daar een exacte URI-match. De 99 ontbrekende matches betreffen deze featurebron; alle actuele Jaarboektracks staan wél in Master 1.9.
 - Credits met mogelijke naamvarianten of complexe samenwerkingen blijven handmatig te beoordelen volgens de creditbevindingen. Een signaal is geen opdracht om automatisch een track te vervangen.
@@ -33,4 +33,4 @@ De bewijsbasis is het werk en de gecontroleerde uitvoer van 5 oktober in de Jaar
 
 Zie `archive/2026-10-05/manifest.json` voor aantallen, SHA-256-hashes en bundelpaden. De drie ZIP-bundels bevatten de actuele Jaarboekgegevens, volledige Master en credit-/Flow-nacontrole. Hun interne bestanden bevatten oorspronkelijke lokale bronverwijzingen; die zijn provenance, geen benodigde installatielocaties.
 
-**Status:** Jaarboekenherstel en Master-snapshot vastgelegd; volledige luister-/beschikbaarheidscontrole open; W40-falen en herstelstrategie veilig; zaterdagmachine nog onbewezen.
+**Status:** Jaarboekenherstel en Master-snapshot vastgelegd; beschikbaarheid steekproefsgewijs akkoord; volledige Flow-luistertest niet uitgevoerd; W40-falen en herstelstrategie veilig; zaterdagmachine nog onbewezen.
