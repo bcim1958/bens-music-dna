@@ -1,7 +1,11 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-05**  
-**Status: Jaarboekenherstel en Master-snapshot vastgelegd; beschikbaarheid steekproefsgewijs akkoord; W40-zaterdagmachine ONVOLTOOID.**
+**Last updated: 2026-10-07**  
+**Status: Depot v1.18, Listening DNA-richting, Master 1.13 en Specials 101–104 vastgelegd; gebruiksreconciliatie open; echte W41-zaterdaglevering nog onbewezen.**
+
+## Actuele ingang — 7 oktober 2026
+
+[Checkpoint Depot, Listening DNA en corpus](CHECKPOINT-2026-10-07-DEPOT-LISTENING-DNA-CORPUS.md): Depot-proef 474 records, 410 geëxposeerd en 64 Onverkend; Special 104 live 15/15 gecontroleerd; Master 1.13 met 3.646 records. 71,17% betreft geregistreerd gebruik en is door gevonden registratieverschillen geen definitieve benuttingstelling. Streaminggeschiedenis aangevraagd, nog niet aantoonbaar ontvangen/ingelezen. Volledige Master-ontsluiting en gebruiksreconciliatie zijn vervolgstappen. Geen runtimewijziging of nieuwe W41-vrijgave.
 
 ## Huidige hoofdroute — W41, gecontroleerd 5 oktober 2026
 
@@ -15,7 +19,7 @@ De [automatische Spotify-terugkeer](W40-CALLBACK-RECOVERY-2026-10-05.md) gebruik
 
 De [actuele herhaling](W40-HERSTELPROEF-2026-10-05.md) reproduceert de groene offline keten met echte invoer en bestaande artefacten. W40 staat zichtbaar met 21 tracks, hoes en parentmap in Spotify; de museumpagina is bereikbaar. De automatische iPhone-cadeau-afsluiting en Express-publicatie blijven onbewezen. Geen nieuwe Spotify-mutaties of runtimewijzigingen uitgevoerd.
 
-## Actuele ingang — 5 oktober 2026
+## Historische ingang — 5 oktober 2026
 
 Zie [checkpoint 5 oktober](CHECKPOINT-2026-10-05-JAARBOEKEN-MASTER-ACTIELIJST.md) voor de huidige gegevens, bewijsgrenzen en actielijn. De onderstaande projectkaart is historische context; eerdere groene deelstatussen zijn geen bewijs van een werkende zaterdaglevering.
 

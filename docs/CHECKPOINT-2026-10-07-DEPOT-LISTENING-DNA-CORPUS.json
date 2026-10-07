@@ -1,0 +1,174 @@
+{
+  "as_of": "2026-10-07",
+  "previous_github_head": "201ce54b62f6907126a3e358fe7f3f48d1dad886",
+  "master": {
+    "version": "1.13 Japan",
+    "records": 3646,
+    "registered_used": 2595,
+    "registered_unused": 1051,
+    "registered_used_percent": 71.17388919363687,
+    "definitive_actual_usage_percent": null,
+    "modified_by_checkpoint": false
+  },
+  "depot": {
+    "as_of": "2026-10-07",
+    "master_version": "1.13 Japan, 2026-10-06",
+    "master_records": 3646,
+    "genre_filter_records": 474,
+    "credited_artist_strings": 470,
+    "artist_album_pairs": 472,
+    "depot_status_counts": {
+      "Geëxposeerd": 410,
+      "Onverkend": 64
+    },
+    "inventory_groups": {
+      "Geëxposeerd": 410,
+      "Voorlopige VE-kandidaat": 63,
+      "Positieve stroom; actuele FIFO-positie open": 1
+    },
+    "adjacent_research_records": 15,
+    "master_used_in_filter": 292,
+    "master_unused_in_filter": 182,
+    "additional_exposure_for_master_unused": 118,
+    "provisional_ve_candidates": 63,
+    "definitive_ve_records": 0,
+    "positive_bank_matches": 52,
+    "week_history_matches": 13,
+    "spotify_artist_album_links_checked": 9,
+    "special104_published": true,
+    "special104_exact_uri_matches": 15,
+    "latest_fifo_export_found": "2026-10-03T09:01:40.024Z",
+    "master_modified": false,
+    "candidate_records_with_source_isrc": 63
+  },
+  "yearbooks": {
+    "date": "2026-10-05",
+    "yearbooks": 56,
+    "tracks": 1120,
+    "unique_spotify_uris": 1120,
+    "unique_registered_credit_keys": 1163,
+    "repeated_registered_credit_keys": 0,
+    "internal_duplicate_uris": 0,
+    "internal_duplicate_credits": 0,
+    "historical_positions_repaired": 109,
+    "historical_positions_open": 0,
+    "first_retained_mentions_all_preserved": true,
+    "changed_years": [
+      1971,
+      1972,
+      1973,
+      1974,
+      1975,
+      1976,
+      1977,
+      1978,
+      1979,
+      1980,
+      1981,
+      1982,
+      1983,
+      1984,
+      1985,
+      1986,
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1996,
+      1997,
+      2000,
+      2001,
+      2002,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010
+    ],
+    "unchanged_years": [
+      1970,
+      1995,
+      1998,
+      1999,
+      2003,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "block_overlaps": [
+      {
+        "block_a": "1970–2010",
+        "block_b": "2011–2019",
+        "uri_overlap": 0,
+        "artist_credit_overlap": 0
+      },
+      {
+        "block_a": "1970–2010",
+        "block_b": "2020–2025",
+        "uri_overlap": 0,
+        "artist_credit_overlap": 0
+      },
+      {
+        "block_a": "2011–2019",
+        "block_b": "2020–2025",
+        "uri_overlap": 0,
+        "artist_credit_overlap": 0
+      }
+    ],
+    "year_fit": {
+      "all_registered_source_years_match": true,
+      "independent_external_verification_of_all_1120_original_releases": false,
+      "replacement_year_evidence_recorded": true
+    },
+    "flow_method": "redactioneel; geen volledige luistertest",
+    "identity_limit": "Naamnormalisatie en vastgelegde creditresoluties; niet alle identiteiten zijn met Spotify-artiest-ID bevestigd.",
+    "availability_repairs": 1,
+    "availability_full_series_playback_test": false
+  },
+  "specials_published": [
+    101,
+    102,
+    103,
+    104
+  ],
+  "special104_live_exact_uri_order_count": 15,
+  "listening_dna": {
+    "state": "accepted direction; not implemented",
+    "extended_spotify_history": "requested according to project discussion; receipt/import not evidenced"
+  },
+  "w41": {
+    "delivery_date": "2026-10-10",
+    "endToEndProven": false,
+    "release_changed": false,
+    "runtime_changed": false
+  },
+  "registration_backlogs": {
+    "additional_glam_exposure": 118,
+    "older_specials_missing_master_records": 230,
+    "overlap_between_backlogs_known": false,
+    "reconciled_master_created": false
+  },
+  "excluded": [
+    "raw personal device/browser storage",
+    "raw streaming history",
+    "artwork and screenshots retained in existing local delivery packages"
+  ]
+}

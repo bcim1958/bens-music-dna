@@ -1,0 +1,412 @@
+{
+  "as_of": "2026-10-07",
+  "depot_revision": "v1.18 — archiefexpositie en volledige ISRC-brondekking voor 63 kandidaten",
+  "files": [
+    {
+      "path": "depot/Music-DNA-Depot-v1-Overzicht.md",
+      "bytes": 5294,
+      "sha256": "8258ca01c3714d64afe5b5b3f6bb1f7b3ec96ef8d68c00d3f0c0d8dba8c65f64"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-v1-Glam-Metal.md",
+      "bytes": 235456,
+      "sha256": "549d8561705d608d564813948d2fccf09252dfe850b429b414e3bf551e739808"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-v1-Glam-Metal.json",
+      "bytes": 8400347,
+      "sha256": "3b31a6d863394c1903be6fd552308e8757b300c0059d65d767fef3126910072a"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Proefcollectie.md",
+      "bytes": 14211,
+      "sha256": "374b264e69d31e6d2577fd53231fa4b85c0e594731e5fe488fa30e831608c590"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Proefcollectie.json",
+      "bytes": 114178,
+      "sha256": "546dd68e34e5371103ebff9bccf025db814c9d7a4e7c56f6f01db5e75e328503"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Gebruiksindex.md",
+      "bytes": 183396,
+      "sha256": "9fc026c5c619fd949a1a3fc010d61ec2c729612db33f7c60ac9f6e6d57695108"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Gebruiksindex.json",
+      "bytes": 2124823,
+      "sha256": "36b9bc0cd6b48725df87884fcd2fe075e18f84177f9e95d1911525a430f45aa5"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Expositieregister.json",
+      "bytes": 1372799,
+      "sha256": "a12a35ee245a607ff600a86fb351e3c4710a2635c57433cbf5aaaa597466bb68"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Registratieverschillen.json",
+      "bytes": 345841,
+      "sha256": "c9c08ecadeddf51fa17af5e4d59da5e219d0840c16fc46b72a31a2846afc10d4"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Artiestonderzoek.md",
+      "bytes": 4241,
+      "sha256": "0564b7db52e875eff445360927b060ca8cbc7a937206f8b62f1ed562b34478b9"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Artiestidentiteiten.json",
+      "bytes": 4960,
+      "sha256": "8384f6844738edea8d8317d8f66b11b6a135abea77d7e62178d576ae5122bd48"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Genreambiguiteiten.md",
+      "bytes": 2955,
+      "sha256": "8ed2700641354ee9fde5851d25012833c0beba1a0066de5f95cf9a9605aa3940"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Genreambiguiteiten.json",
+      "bytes": 2511,
+      "sha256": "775b16fad450f1ac8453e0786b0dd1685e74aef9741c0bdb61ec81cb64b8b306"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Versiecontrole.md",
+      "bytes": 2276,
+      "sha256": "ed4eb3f6acea0f26835eb8d44c3363beb78f460a3c4def3c19df7441d9bc986c"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Versiecontrole.json",
+      "bytes": 854,
+      "sha256": "8535a559551762db05c02f9332fd066aa60e98c9b5eaa4cce3a2740c99c87c92"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Alternatieve-Masterversies.json",
+      "bytes": 610,
+      "sha256": "c9b9c9405ae57e7475af0db280236fb126a2a34d28fdcdf078411ef4b894f016"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-FIFO-Brongrens.md",
+      "bytes": 2920,
+      "sha256": "31f25c74709045457c277248067ec72c14dad436a08533297697a4bd48eacb45"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-FIFO-Brongrens.json",
+      "bytes": 10455,
+      "sha256": "9e32010e407b3d2907badc4e60c919238acdd9aee17b23da81731466b17360b1"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Special104-Live-URI-Bewijs.json",
+      "bytes": 3766,
+      "sha256": "4b66d8eaa4e117f32ed0c33d103a577bbc3930f0cdd1f76f3d22785d83c43e23"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-W40-Expositiebewijs.json",
+      "bytes": 1208,
+      "sha256": "26f30e4fbff79c7201c0f56fc5871a62e0e0f674a290231945be2c83bc51c58f"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Aanvullende-Exports.md",
+      "bytes": 14348,
+      "sha256": "ec690d45b86d4d93786d1f6919d4f12586abf4ab9b6bea7082c60ff6f1316322"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Aanvullende-Exports.json",
+      "bytes": 308696,
+      "sha256": "cedc2dc4ac9c93522ed3514c70657af4c15386d8b1e162607ad813708f93ed7f"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-ISRC-Controle.json",
+      "bytes": 49209,
+      "sha256": "7c7c1cfa687ed9fd2930b3bd36e0d3b8617d72c083f25c6d4b2476c6149ee9c4"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Aanvullende-Versiematches.json",
+      "bytes": 1235,
+      "sha256": "d8863222cb291f92d15a211328de42b623fdef918fcbf063667295556c18aad7"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Steeler-Versiekoppeling.json",
+      "bytes": 904,
+      "sha256": "2f0da8b1b54c3a5bc934c3fc3bf9a4828bdf421726cfda7ff448809103efb08c"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Opnamecodes.md",
+      "bytes": 5678,
+      "sha256": "1fb6ff18b1454d7c29647553b3d5cfb5848b4e0f1e8e56a4824d7de98f871239"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Archiefcontrole.md",
+      "bytes": 2787,
+      "sha256": "fbc50ed5617302c03aad577ff945df2c2bac4a96658ff6e1e39b7d4f6e8bcde4"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Archiefcontrole.json",
+      "bytes": 1172679,
+      "sha256": "409d379fbe63c0d8e1c8ba2e53c28175167293cc6da0e0671a13c06e7b79162f"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Luisterproef.md",
+      "bytes": 13150,
+      "sha256": "f81a645a2b2d49928588bfcdce1b3c5f4d93ca5b1d4e648d67725cbe4ddd472e"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Luisterproef.json",
+      "bytes": 163415,
+      "sha256": "ca5bc01911cfda6fd7066d4f4d922de52225d5c9b3677c4586bbf0b328f8a285"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Kandidatenordening.md",
+      "bytes": 19106,
+      "sha256": "e1021af3175562be3565a62801730d452e7913d4af11d73dc44d9edf5dd6e955"
+    },
+    {
+      "path": "depot/Music-DNA-Depot-Overdrachtsmanifest.json",
+      "bytes": 5970,
+      "sha256": "e2efb22a59d740185a156ed62a76993d3dc3dd9f442bd80e764cf55bf6ae26a3"
+    },
+    {
+      "path": "master-1.13/TOEVOEGINGEN.json",
+      "bytes": 22087,
+      "sha256": "8b97c04e7e00df4d82967d859924a91f2613e4e02a54faa9ea6ff8a214d0f860"
+    },
+    {
+      "path": "master-1.13/Ben_Master_Music_DNA_Database_1.13_Japan_2026-10-06.xlsx",
+      "bytes": 1715371,
+      "sha256": "a268a20782014771392c112a815c8985eda1caba6bf39260b79223c99991e355"
+    },
+    {
+      "path": "master-1.13/WIJZIGINGEN.json",
+      "bytes": 694,
+      "sha256": "e944029e9f131d12916c44d43108b42c8d3a972e6ddbf89320525e2a0f3a78c9"
+    },
+    {
+      "path": "master-1.13/GEBRUIKSSTAND.json",
+      "bytes": 230,
+      "sha256": "dccb4bc0fb1c20306adfa1096789e0fba6434661eaa062ac0e619d08644cf73e"
+    },
+    {
+      "path": "master-1.13/EXCEL_CONTROLE.json",
+      "bytes": 299,
+      "sha256": "1c81788e2ffa890221de4452a6fa835547ed000db953187af0bb9d7669ac9ac2"
+    },
+    {
+      "path": "master-1.13/MASTER_ACTUEEL.json",
+      "bytes": 5900565,
+      "sha256": "356b79c68b79b3265d53755302f44f33418edd707d8b1438ad55c338ece98730"
+    },
+    {
+      "path": "jaarboeken/OPEN_HERSTELKAART.csv",
+      "bytes": 65,
+      "sha256": "b976bef082302de6fb64b35c143ab761fce189f32238fccb7ac48b06f037d65c"
+    },
+    {
+      "path": "jaarboeken/SAMENVATTING_PER_JAAR.csv",
+      "bytes": 2816,
+      "sha256": "5ce4dc4ef1aade6136f9891eaed52e482ec577b2e7126dd89440f00377641ec1"
+    },
+    {
+      "path": "jaarboeken/SAMENVATTING_PER_DECENNIUM.csv",
+      "bytes": 262,
+      "sha256": "a9cef16fa6e63ee93105a3ba163daee7e8a2f1610931e716da2b8c6d45c6789d"
+    },
+    {
+      "path": "jaarboeken/BESCHIKBAARHEID_STEEKPROEFAKKOORD.json",
+      "bytes": 285,
+      "sha256": "a991558418b0a6efe0006cc902d0ee69e6f8587f818d348537ba09e6135e6c33"
+    },
+    {
+      "path": "jaarboeken/BESCHIKBAARHEIDSHERSTEL.csv",
+      "bytes": 587,
+      "sha256": "ecf99936acd8b6aa0790611855f926bbdc4a3994b95262e900fb84de01645fb8"
+    },
+    {
+      "path": "jaarboeken/CANONIEK_1970_2025.json",
+      "bytes": 853465,
+      "sha256": "002c6b41b228daf63f98d9c71541b816744fc5875ac1d8e15f08370b6d7e8598"
+    },
+    {
+      "path": "jaarboeken/HERSTELHISTORIE_109_POSITIES.json",
+      "bytes": 132343,
+      "sha256": "29ca4e3aac633a55715e038554c26debecc4070cc850d490b9ca3c2805051498"
+    },
+    {
+      "path": "jaarboeken/OPEN_HERSTELKAART.json",
+      "bytes": 277,
+      "sha256": "dc1dad0065d5dad5aef50e714661e76f57eac1a8628c8a9f11bc6b2ada3036b0"
+    },
+    {
+      "path": "jaarboeken/RAPPORT.md",
+      "bytes": 4409,
+      "sha256": "1742fc19e01840523da84d11269aa5ee9592b306d1f91d22c70ef5eb91615f57"
+    },
+    {
+      "path": "jaarboeken/HERSTELHISTORIE_109_POSITIES.csv",
+      "bytes": 84420,
+      "sha256": "b5e4fec3ec35e5dd980b83d4087c6abd69dd95562cddf8d8eb46c4740164c71d"
+    },
+    {
+      "path": "jaarboeken/BESCHIKBAARHEIDSHERSTEL.json",
+      "bytes": 727,
+      "sha256": "1839781525346e9297659b2eddc01123343b6ab4238d8a6a5f79de6f7e4c28ef"
+    },
+    {
+      "path": "jaarboeken/CANONIEK_1970_2025.csv",
+      "bytes": 488521,
+      "sha256": "9ec154b4739fbe20a51bd2f52e42467ce82c73b115f978d9ba23ed00c9d1b8bb"
+    },
+    {
+      "path": "jaarboeken/EINDCONTROLE.json",
+      "bytes": 1875,
+      "sha256": "ebf6270cc654403090617e608e83804928c683f9c5e6ba68d803233788be18b9"
+    },
+    {
+      "path": "special-101/CONTROLE.json",
+      "bytes": 2867,
+      "sha256": "aa24570018e1965ef7ad94c45fad2db0888e77262b9f10ca374895047be60b84"
+    },
+    {
+      "path": "special-101/SELECTIE.json",
+      "bytes": 14086,
+      "sha256": "8df779c9c5f38d0b66128ab86eb79b9ba2864ac10b3e4370540001292b33e7e7"
+    },
+    {
+      "path": "special-101/SPECIAL.md",
+      "bytes": 6872,
+      "sha256": "8d6c398058fdcc928318a7878e48933cfb46358e7847cf373d3c15c98ddaba3d"
+    },
+    {
+      "path": "special-101/PUBLICATIE.md",
+      "bytes": 1809,
+      "sha256": "eb95a7c15ddf8f3e2de17882d723e3e880d853e89ab09da228ef9e988c42f524"
+    },
+    {
+      "path": "special-101/SPOTIFY_URI_VOLGORDE.txt",
+      "bytes": 555,
+      "sha256": "9c2f79964b7c83eaa117b4a116990bb724811517ac06917c857d2bcebfc8496a"
+    },
+    {
+      "path": "special-101/TITEL_EN_BESCHRIJVING.txt",
+      "bytes": 292,
+      "sha256": "0f03b9bb0d34f52a8c4fa46e9a25665ac8bdbe938eac945761227d81426b97b1"
+    },
+    {
+      "path": "special-102/SELECTIE_15.json",
+      "bytes": 3343,
+      "sha256": "6aaf716c3e8495363fa0cf666aca7514608f7227dd7e50713cefc8f8b3d98898"
+    },
+    {
+      "path": "special-102/PUBLICATIE.md",
+      "bytes": 2013,
+      "sha256": "48497679361d6e36fe53118d6a2d1c9e04db5cd11a0869a0ef04639dfd65793d"
+    },
+    {
+      "path": "special-102/SPOTIFY_PUBLIEKE_LINKS.json",
+      "bytes": 3757,
+      "sha256": "f177a471edceb0d0f4673170bea7f348d258d9f94c3b9ce065cbdf738b3de8a1"
+    },
+    {
+      "path": "special-102/SPOTIFY_URI_VOLGORDE.txt",
+      "bytes": 555,
+      "sha256": "80aebfc3394ead8d73afa579913b93e656ea99384fe9f6aa7740ccd383fdf900"
+    },
+    {
+      "path": "special-103/CONTROLE_DEFINITIEF.json",
+      "bytes": 1333,
+      "sha256": "7c98513c8c362eba09b2a53b2771d9f3c13ded224ebef469d154078cbf2ed26b"
+    },
+    {
+      "path": "special-103/SELECTIE_DEFINITIEF.json",
+      "bytes": 16572,
+      "sha256": "f85242f5220703b0da036d304b1570c58abee280654389aa8d446c3b39bdac4d"
+    },
+    {
+      "path": "special-103/PUBLICATIE.md",
+      "bytes": 1983,
+      "sha256": "9e42d19da3a05eefb41020bb32d9e4dd2f8b2ca08a1a0b605ca8e7884a6907b9"
+    },
+    {
+      "path": "special-103/SPOTIFY_PUBLICATIE_TERUGGELEZEN.json",
+      "bytes": 7203,
+      "sha256": "5b40fb9bf7b75b9b70ce0aa81d9573b4a42a94209c54ae1ea687db33fc114ab5"
+    },
+    {
+      "path": "special-103/DNA_SPECIAL_103_Japan_Achter_de_glitter_DEFINITIEF_IMPORTER.csv",
+      "bytes": 1123,
+      "sha256": "35d9fd122c977e985d9f61482d5ccf945545d9cd920e69e908f17b1682cc2294"
+    },
+    {
+      "path": "special-103/SPOTIFY_URI_VOLGORDE.txt",
+      "bytes": 555,
+      "sha256": "6531ab8ebd5cb423155c0dfbf7a3920036127d237e38f14148b0c1d4f8f05d3f"
+    },
+    {
+      "path": "special-103/SPECIALS_BRONRECORDS.json",
+      "bytes": 260902,
+      "sha256": "832ee4cafac769994c486bd97656537f3cfc861ec0d6d18e1ebb232380fa214b"
+    },
+    {
+      "path": "special-104/START_HIER.txt",
+      "bytes": 1105,
+      "sha256": "00e521bee20a1e0a2d7cf59f9c2763604dac348bcbbeda67c85bb58e97e005f4"
+    },
+    {
+      "path": "special-104/06_CONTROLE.json",
+      "bytes": 1123,
+      "sha256": "68b0fe6432fcac5e9329de5c7021604873295491a936a2bc229ebf6e3a993c10"
+    },
+    {
+      "path": "special-104/02_TEKSTJES.txt",
+      "bytes": 1129,
+      "sha256": "16d916da0222facc688f78a0f5abefe90f230a3a52ade68c11deb14b1f044b32"
+    },
+    {
+      "path": "special-104/SPOTIFY_CONTROLE.json",
+      "bytes": 235329,
+      "sha256": "c9cac0550bcf637886f9f5d587759fe36b56dd2f0c278ea231f1a06248bd44b9"
+    },
+    {
+      "path": "special-104/08_MASTER_REGISTRATIE_VOORBEREID.json",
+      "bytes": 6586,
+      "sha256": "3f5f11bcfeea4097c8089eb452220ac512cb56bf64cfeaed77fc01b68c73d9c1"
+    },
+    {
+      "path": "special-104/07_SPOTIFY_URI_VOLGORDE.txt",
+      "bytes": 555,
+      "sha256": "dd2b4062530fbe12d2540bc3a8018f39f5eac0b77c3811c858114e9f1f308f27"
+    },
+    {
+      "path": "special-104/05_SELECTIE.json",
+      "bytes": 15520,
+      "sha256": "b3394b3e982d1ca5f4aa8ddbcf87ff9899388201d8df5b5305b00aa548745bb4"
+    },
+    {
+      "path": "special-104/01_SPOTIFY_IMPORT.csv",
+      "bytes": 1147,
+      "sha256": "76702e386abb636c836abae8f8f796661b406ca3f78b4c408855b2673ea1ab5b"
+    },
+    {
+      "path": "special-104/04_SELECTIE_EN_CONTROLE.md",
+      "bytes": 8568,
+      "sha256": "6864ed6fb903b36c136ef585cfdead367ef0c0e82b9eac8a96029563f5bd2e3b"
+    },
+    {
+      "path": "special-104/Music-DNA-Depot-Special104-Live-URI-Bewijs.json",
+      "bytes": 3766,
+      "sha256": "4b66d8eaa4e117f32ed0c33d103a577bbc3930f0cdd1f76f3d22785d83c43e23"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 12451,
+      "sha256": "258b68c46aa5eaf59a5422c121bd8f4f4df13bf5c9edab3a665b9747bd2b7232"
+    },
+    {
+      "path": "SAMENVATTING.json",
+      "bytes": 4263,
+      "sha256": "56489fe194cbcc200103529bd619f294659b75fbfa23ab3ac97bc0027ee96677"
+    }
+  ],
+  "archive": {
+    "repository_path": "archive/checkpoints/2026-10-07/Music-DNA-Checkpoint-2026-10-07.zip",
+    "bytes": 3666654,
+    "sha256": "52a4bac7c3bbe54c366fcabb2a7399e28b84698db1f9a93308a5f9139f8c8cdf",
+    "git_blob_sha": "efcc9c51b0c8a6c7f7399bfd0cb81824cd200a77"
+  }
+}
