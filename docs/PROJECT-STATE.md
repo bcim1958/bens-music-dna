@@ -3,7 +3,11 @@
 **Last updated: 2026-10-08**  
 **Status: Master 1.14.1 vastgelegd; alle 34 ontbrekende Specialnummers hersteld; metadata en bredere gebruiksdekking open; W41-productieaflevering onbewezen.**
 
-## Actuele ingang — Master 1.14.1, 8 oktober 2026
+## Actuele ingang — Depot 1.19, 8 oktober 2026
+
+[Depot 1.19 volledige Master-gegevenslaag](DEPOT-1.19-2026-10-08.md): 3.877 unieke trackobjecten op Master1.14.1, thematische indices, 3.454 voorlopige albumbronkaarten en 3.482 artiestcreditkaarten. 3.005 geëxposeerd en 872 Onverkend binnen beschikbare dekking. Glam474: 415 geëxposeerd, 59 Onverkend; 58 voorlopige kandidaten en één historisch positief geval met actuele FIFO open. Nieuwe ZIP-analyse levert 47 expositiekoppelingen op voor nog ongebruikt geregistreerde Masterrecords; bewijs bewaard voor een volgende gerichte Mastercorrectie. Geen definitieve VE-status, actuele FIFO niet aangetoond; geen appinterface of runtimewijziging.
+
+## Historische ingang — Master 1.14.1, 8 oktober 2026
 
 [Specialnummerherstel](MASTER-1.14.1-SPECIALNUMMERHERSTEL-2026-10-08.md): alle 34 open trackkoppelingen aan 11 Specials zijn op exacte Spotify-URI hersteld uit het aangeleverde ZIP-bestand. Nul onbekende Specialnummers in deze herstelgroep. Master1.14.1 is nu de actuele canonieke JSON/CSV. Totalen blijven 3.877 records, 2.958 gebruikt en 919 ongebruikt. Metadataonderzoek, Special65/Bonus01 bronidentiteit en gebruiksdekking buiten bestaande bronnen blijven open.
 
