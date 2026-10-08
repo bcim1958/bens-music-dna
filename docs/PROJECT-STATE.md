@@ -1,7 +1,11 @@
 # Ben's Music DNA — Project State
 
 **Last updated: 2026-10-08**  
-**Status: Master 1.14.1 vastgelegd; alle 34 ontbrekende Specialnummers hersteld; metadata en bredere gebruiksdekking open; W41-productieaflevering onbewezen.**
+**Status: Master 1.14.3 vastgelegd; 230 historische tracks voorzien van album en Spotify-bronjaar; 63 tracks met open land/genre; actuele FIFO en W41-productieaflevering onbewezen.**
+
+## Metadataherstel — Master 1.14.3, 8 oktober 2026
+
+[Metadataherstel](MASTER-1.14.3-METADATAHERSTEL-2026-10-08.md): alle 230 herstelde historische Special-tracks hebben album en Spotify-bronjaar. Land/hoofdgenre voor 167 voorlopig gekoppeld aan Master-artiestcredits; 63 blijven open. Rainbow-ID 2t07asmUebiYnqkxJVAmbe hoort bij Sensitive To Light; historische titel behouden, playlist ongewijzigd. Master blijft 3.877 tracks, 3.005 gebruikt, 872 zonder geregistreerd gebruik. Depothal bijgewerkt; geen nieuwe playlists.
 
 ## Actuele ingang — Master1.14.2 en Depothal, 8 oktober 2026
 
