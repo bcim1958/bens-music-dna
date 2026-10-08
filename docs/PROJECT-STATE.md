@@ -1,9 +1,13 @@
 # Ben's Music DNA — Project State
 
 **Last updated: 2026-10-08**  
-**Status: Master 1.14 gebruiksreconciliatie vastgelegd, Specials 104–105 verwerkt; onvolledige brondekking en metadataonderzoek open; W41-productieaflevering onbewezen.**
+**Status: Master 1.14.1 vastgelegd; alle 34 ontbrekende Specialnummers hersteld; metadata en bredere gebruiksdekking open; W41-productieaflevering onbewezen.**
 
-## Actuele ingang — 8 oktober 2026
+## Actuele ingang — Master 1.14.1, 8 oktober 2026
+
+[Specialnummerherstel](MASTER-1.14.1-SPECIALNUMMERHERSTEL-2026-10-08.md): alle 34 open trackkoppelingen aan 11 Specials zijn op exacte Spotify-URI hersteld uit het aangeleverde ZIP-bestand. Nul onbekende Specialnummers in deze herstelgroep. Master1.14.1 is nu de actuele canonieke JSON/CSV. Totalen blijven 3.877 records, 2.958 gebruikt en 919 ongebruikt. Metadataonderzoek, Special65/Bonus01 bronidentiteit en gebruiksdekking buiten bestaande bronnen blijven open.
+
+## Historische ingang — Master 1.14, 8 oktober 2026
 
 [Master 1.14 gebruiksreconciliatie](MASTER-1.14-RECONCILIATIE-2026-10-08.md): 3.877 unieke records, 2.958 gebruikt geregistreerd, 919 ongebruikt geregistreerd (76,30%). 132 bestaande ongebruikte records bijgewerkt en 231 records toegevoegd (230 historische Specials plus Stryper uit Special105). Dit vervangt Master1.13 als actuele canonieke JSON/CSV; oude Excel blijft historisch. 34 Specialnummers en metadata van teruggehaalde records open. Beschikbare bronnen gereconcilieerd, volledige live dekking onbekend. FIFO/runtime niet gewijzigd, W41 endToEndProven=false.
 
