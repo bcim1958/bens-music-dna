@@ -1,9 +1,13 @@
 # Ben's Music DNA — Project State
 
 **Last updated: 2026-10-08**  
-**Status: Master 1.14.3 vastgelegd; 230 historische tracks voorzien van album en Spotify-bronjaar; 63 tracks met open land/genre; actuele FIFO en W41-productieaflevering onbewezen.**
+**Status: Master 1.14.4 vastgelegd; 230 herstelde records hebben brononderbouwde herkomst en voorlopige genrecontext; twee historische hoofdlabels open; actuele FIFO en W41-productieaflevering onbewezen.**
 
-## Metadataherstel — Master 1.14.3, 8 oktober 2026
+## Broncontrole — Master 1.14.4, 8 oktober 2026
+
+[Herkomst en genrecontext](MASTER-1.14.4-BRONCONTROLE-2026-10-08.md): 63 hiaten aangevuld en 167 eerdere creditkoppelingen aan externe bronverwijzingen gekoppeld. Alle 230 herstelde tracks hebben herkomst en genrecontext; artiestcontext betreft 185 projecten. Genre blijft voorlopig op artiest-/albumniveau, oorspronkelijke opnamejaren nog niet onafhankelijk bevestigd. Twee historische hoofdlabels (Mother’s Finest en Thank You Scientist) blijven expliciete onderzoeksvragen. Depothal toont bronnen en doorzoekbare regio; Master blijft 3.877 / 3.005 gebruikt / 872 zonder geregistreerd gebruik. Geen playlist- of FIFO-wijzigingen.
+
+## Historische metadataherstel — Master 1.14.3, 8 oktober 2026
 
 [Metadataherstel](MASTER-1.14.3-METADATAHERSTEL-2026-10-08.md): alle 230 herstelde historische Special-tracks hebben album en Spotify-bronjaar. Land/hoofdgenre voor 167 voorlopig gekoppeld aan Master-artiestcredits; 63 blijven open. Rainbow-ID 2t07asmUebiYnqkxJVAmbe hoort bij Sensitive To Light; historische titel behouden, playlist ongewijzigd. Master blijft 3.877 tracks, 3.005 gebruikt, 872 zonder geregistreerd gebruik. Depothal bijgewerkt; geen nieuwe playlists.
 
