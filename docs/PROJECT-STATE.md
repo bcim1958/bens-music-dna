@@ -3,7 +3,11 @@
 **Last updated: 2026-10-08**  
 **Status: Master 1.14.1 vastgelegd; alle 34 ontbrekende Specialnummers hersteld; metadata en bredere gebruiksdekking open; W41-productieaflevering onbewezen.**
 
-## Actuele ingang — Depot 1.19, 8 oktober 2026
+## Actuele ingang — Master1.14.2 en Depothal, 8 oktober 2026
+
+[Master1.14.2 en eerste Depothal](MASTER-1.14.2-DEPOTHAL-2026-10-08.md): 47 aanvullende exacte expositiekoppelingen verwerkt. Actuele Master: 3.877 tracks, 3.005 gebruikt, 872 ongebruikt. [Depothal](../depot.html) met zoeken, combinatiefilters, tracks, albumkaarten en zeven ingangen. Geen nieuwe playlists. Actuele FIFO en W41-productieaflevering blijven onbewezen.
+
+## Historische ingang — Depot 1.19, 8 oktober 2026
 
 [Depot 1.19 volledige Master-gegevenslaag](DEPOT-1.19-2026-10-08.md): 3.877 unieke trackobjecten op Master1.14.1, thematische indices, 3.454 voorlopige albumbronkaarten en 3.482 artiestcreditkaarten. 3.005 geëxposeerd en 872 Onverkend binnen beschikbare dekking. Glam474: 415 geëxposeerd, 59 Onverkend; 58 voorlopige kandidaten en één historisch positief geval met actuele FIFO open. Nieuwe ZIP-analyse levert 47 expositiekoppelingen op voor nog ongebruikt geregistreerde Masterrecords; bewijs bewaard voor een volgende gerichte Mastercorrectie. Geen definitieve VE-status, actuele FIFO niet aangetoond; geen appinterface of runtimewijziging.
 
