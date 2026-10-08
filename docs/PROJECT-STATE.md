@@ -1,9 +1,15 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-07**  
-**Status: Depot v1.18, Listening DNA-richting, Master 1.13 en Specials 101–104 vastgelegd; gebruiksreconciliatie open; echte W41-zaterdaglevering nog onbewezen.**
+**Last updated: 2026-10-08**  
+**Status: Master 1.14 gebruiksreconciliatie vastgelegd, Specials 104–105 verwerkt; onvolledige brondekking en metadataonderzoek open; W41-productieaflevering onbewezen.**
 
-## Actuele ingang — 7 oktober 2026
+## Actuele ingang — 8 oktober 2026
+
+[Master 1.14 gebruiksreconciliatie](MASTER-1.14-RECONCILIATIE-2026-10-08.md): 3.877 unieke records, 2.958 gebruikt geregistreerd, 919 ongebruikt geregistreerd (76,30%). 132 bestaande ongebruikte records bijgewerkt en 231 records toegevoegd (230 historische Specials plus Stryper uit Special105). Dit vervangt Master1.13 als actuele canonieke JSON/CSV; oude Excel blijft historisch. 34 Specialnummers en metadata van teruggehaalde records open. Beschikbare bronnen gereconcilieerd, volledige live dekking onbekend. FIFO/runtime niet gewijzigd, W41 endToEndProven=false.
+
+[Smaaksignalen en Special105-export](CHECKPOINT-2026-10-08-SMAAK-SPECIAL105.md) blijven afzonderlijk bewaard. Depot v1.18 is het historische proefpakket; afgeleide status/tellingen opnieuw berekenen uit Master1.14.
+
+## Historische ingang — 7 oktober 2026
 
 [Checkpoint Depot, Listening DNA en corpus](CHECKPOINT-2026-10-07-DEPOT-LISTENING-DNA-CORPUS.md): Depot-proef 474 records, 410 geëxposeerd en 64 Onverkend; Special 104 live 15/15 gecontroleerd; Master 1.13 met 3.646 records. 71,17% betreft geregistreerd gebruik en is door gevonden registratieverschillen geen definitieve benuttingstelling. Streaminggeschiedenis aangevraagd, nog niet aantoonbaar ontvangen/ingelezen. Volledige Master-ontsluiting en gebruiksreconciliatie zijn vervolgstappen. Geen runtimewijziging of nieuwe W41-vrijgave.
 
