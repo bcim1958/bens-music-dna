@@ -1,0 +1,3379 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "e568fe4b849a75ca6f7eb6e124d8cf9d5e8d070a",
+  "inputs": {
+    "archive/checkpoints/2026-10-08/Music-DNA-Master-1.14.4-Broncontrole.zip": "f567df5976800d4413402db45b671484bf75b27625441157f32e34e6970af504",
+    "data/depot/catalogus.json": "f433a7272781e3ce8d33bba4266c66dd36d3a7c799b9d5f5c11844e53d7afd6f",
+    "data/historical-ratings-recovery-w35-w38-v2.json": "b1120752ce12dfddb5e17bea2e7e51a2b6c6edba577224fed6f399edcb2a1467",
+    "data/music-dna-historical-ledger-v1.json": "314568b262caab690f287d87800acca567634a7fc1043f43279ed6044f341a43",
+    "test/music-dna-data-v1.3.js": "cdeef0c237a5716cb5d0b0a48c4cda4cf56391abd6dcdee8d8520393974027c5",
+    "test/music-dna-delivery-registry-v1.js": "28418e4c34988a4dd0c2e69faa4efa95f8c606d77b263be64a3b55b99d9cfb68",
+    "test/music-dna-candidates-w35-v1.js": "8d41f59509a02ed038bcec827769bca92cebf76d1e06c665f3f85c9fa90e4a7d",
+    "test/music-dna-candidates-w36-v1.js": "447b6a84f0964e3dc818d59b106efce92aec9f97d2ea75adebd2b6dc2ddebfcc",
+    "test/music-dna-candidates-w37-v1.js": "256c420a5cc70173ad629db09626425f84bff50b855df9432052ad8b9ad84753",
+    "test/music-dna-candidates-w38-v1.js": "643416a5932f399b2801fd1bab80c26de25bd0a0fc9425257baac50bd3671ed6",
+    "scripts/analyze-depot-meter.py": "cd8fb5434b96b3dc437159c670714ae38a003828d00d255f068444ee64e31820",
+    "scripts/export-meter-candidates.cjs": "a6ab15a7fda15156c734c0efe51795958a5e1e3692c6dbbfff3e2e98f36853bc"
+  },
+  "totals": {
+    "master": 3877,
+    "used": 3005,
+    "withoutRegisteredUse": 872
+  },
+  "definitions": {
+    "used": "Master DNA Gebruikt=Ja: registered application, not listening or rating",
+    "candidatePool": "historical W35–W38 declarations, not proof of actual offer",
+    "assessed": "unique recovered candidate IDs; assessment is evidence of exposure, no complete offer denominator",
+    "labels": "multi-label counts; unknown explicit; no alias normalization; Spotify Genres separate from AllMusic",
+    "sources": "coverage of explicit BRONCONTROLE only; no claim that other rows lack all provenance"
+  },
+  "distributions": {
+    "AllMusic hoofdgenre": {
+      "Pop/Rock": {
+        "master": 3215,
+        "used": 2615,
+        "withoutRegisteredUse": 600
+      },
+      "ONBEKEND": {
+        "master": 603,
+        "used": 349,
+        "withoutRegisteredUse": 254
+      },
+      "Electronic": {
+        "master": 31,
+        "used": 20,
+        "withoutRegisteredUse": 11
+      },
+      "Rap": {
+        "master": 5,
+        "used": 5,
+        "withoutRegisteredUse": 0
+      },
+      "Stage & Screen": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "Classical": {
+        "master": 3,
+        "used": 2,
+        "withoutRegisteredUse": 1
+      },
+      "Country": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "Holiday": {
+        "master": 3,
+        "used": 1,
+        "withoutRegisteredUse": 2
+      },
+      "Jazz": {
+        "master": 3,
+        "used": 1,
+        "withoutRegisteredUse": 2
+      },
+      "New Age": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "R&B": {
+        "master": 3,
+        "used": 2,
+        "withoutRegisteredUse": 1
+      },
+      "Comedy/Spoken": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "Folk": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "Reggae": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "Avant-Garde": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Children's": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "International": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Religious": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      }
+    },
+    "AllMusic hoofdstructuur": {
+      "Heavy Metal": {
+        "master": 1216,
+        "used": 955,
+        "withoutRegisteredUse": 261
+      },
+      "Hard Rock": {
+        "master": 714,
+        "used": 580,
+        "withoutRegisteredUse": 134
+      },
+      "ONBEKEND": {
+        "master": 603,
+        "used": 349,
+        "withoutRegisteredUse": 254
+      },
+      "Punk/New Wave": {
+        "master": 548,
+        "used": 415,
+        "withoutRegisteredUse": 133
+      },
+      "Alternative/Indie Rock": {
+        "master": 401,
+        "used": 363,
+        "withoutRegisteredUse": 38
+      },
+      "Art-Rock/Experimental": {
+        "master": 156,
+        "used": 154,
+        "withoutRegisteredUse": 2
+      },
+      "Pop/Rock": {
+        "master": 60,
+        "used": 41,
+        "withoutRegisteredUse": 19
+      },
+      "Electronic": {
+        "master": 50,
+        "used": 36,
+        "withoutRegisteredUse": 14
+      },
+      "Psychedelic/Garage": {
+        "master": 28,
+        "used": 27,
+        "withoutRegisteredUse": 1
+      },
+      "Rock & Roll/Roots": {
+        "master": 27,
+        "used": 27,
+        "withoutRegisteredUse": 0
+      },
+      "Soft Rock": {
+        "master": 22,
+        "used": 20,
+        "withoutRegisteredUse": 2
+      },
+      "Avant-Garde": {
+        "master": 9,
+        "used": 9,
+        "withoutRegisteredUse": 0
+      },
+      "Holiday": {
+        "master": 6,
+        "used": 2,
+        "withoutRegisteredUse": 4
+      },
+      "Classical": {
+        "master": 4,
+        "used": 2,
+        "withoutRegisteredUse": 2
+      },
+      "Comedy/Spoken": {
+        "master": 4,
+        "used": 2,
+        "withoutRegisteredUse": 2
+      },
+      "Stage & Screen": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "Country": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "New Age": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "Rap": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "Singer/Songwriter": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "Folk": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "Folk-Rock": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "International": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "Jazz": {
+        "master": 2,
+        "used": 0,
+        "withoutRegisteredUse": 2
+      },
+      "R&B": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "British Invasion": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "Reggae": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Religious": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      }
+    },
+    "AllMusic stijlen": {
+      "Heavy Metal": {
+        "master": 1522,
+        "used": 1296,
+        "withoutRegisteredUse": 226
+      },
+      "Punk": {
+        "master": 627,
+        "used": 481,
+        "withoutRegisteredUse": 146
+      },
+      "Album Rock": {
+        "master": 590,
+        "used": 478,
+        "withoutRegisteredUse": 112
+      },
+      "Hair Metal": {
+        "master": 492,
+        "used": 433,
+        "withoutRegisteredUse": 59
+      },
+      "Arena Rock": {
+        "master": 407,
+        "used": 298,
+        "withoutRegisteredUse": 109
+      },
+      "Hard Rock": {
+        "master": 341,
+        "used": 332,
+        "withoutRegisteredUse": 9
+      },
+      "Niet nader vastgesteld": {
+        "master": 324,
+        "used": 70,
+        "withoutRegisteredUse": 254
+      },
+      "ONBEKEND": {
+        "master": 315,
+        "used": 303,
+        "withoutRegisteredUse": 12
+      },
+      "Speed/Thrash Metal": {
+        "master": 299,
+        "used": 220,
+        "withoutRegisteredUse": 79
+      },
+      "Glam Rock": {
+        "master": 298,
+        "used": 289,
+        "withoutRegisteredUse": 9
+      },
+      "Power Metal": {
+        "master": 282,
+        "used": 234,
+        "withoutRegisteredUse": 48
+      },
+      "Prog-Rock": {
+        "master": 269,
+        "used": 264,
+        "withoutRegisteredUse": 5
+      },
+      "Symphonic Metal": {
+        "master": 260,
+        "used": 221,
+        "withoutRegisteredUse": 39
+      },
+      "Progressive Metal": {
+        "master": 243,
+        "used": 231,
+        "withoutRegisteredUse": 12
+      },
+      "New Wave": {
+        "master": 234,
+        "used": 225,
+        "withoutRegisteredUse": 9
+      },
+      "Goth Metal": {
+        "master": 226,
+        "used": 193,
+        "withoutRegisteredUse": 33
+      },
+      "Goth Rock": {
+        "master": 221,
+        "used": 197,
+        "withoutRegisteredUse": 24
+      },
+      "Proto-Punk": {
+        "master": 194,
+        "used": 177,
+        "withoutRegisteredUse": 17
+      },
+      "Hardcore Punk": {
+        "master": 191,
+        "used": 106,
+        "withoutRegisteredUse": 85
+      },
+      "Post-Punk": {
+        "master": 184,
+        "used": 179,
+        "withoutRegisteredUse": 5
+      },
+      "Alternative Metal": {
+        "master": 139,
+        "used": 125,
+        "withoutRegisteredUse": 14
+      },
+      "Synth Pop": {
+        "master": 134,
+        "used": 129,
+        "withoutRegisteredUse": 5
+      },
+      "Ska Revival": {
+        "master": 132,
+        "used": 87,
+        "withoutRegisteredUse": 45
+      },
+      "Power Pop": {
+        "master": 129,
+        "used": 114,
+        "withoutRegisteredUse": 15
+      },
+      "Art Rock": {
+        "master": 125,
+        "used": 124,
+        "withoutRegisteredUse": 1
+      },
+      "Death Metal": {
+        "master": 119,
+        "used": 88,
+        "withoutRegisteredUse": 31
+      },
+      "Doom Metal": {
+        "master": 115,
+        "used": 94,
+        "withoutRegisteredUse": 21
+      },
+      "Pop": {
+        "master": 115,
+        "used": 93,
+        "withoutRegisteredUse": 22
+      },
+      "Contemporary Folk": {
+        "master": 114,
+        "used": 102,
+        "withoutRegisteredUse": 12
+      },
+      "Darkwave": {
+        "master": 114,
+        "used": 113,
+        "withoutRegisteredUse": 1
+      },
+      "Industrial": {
+        "master": 112,
+        "used": 90,
+        "withoutRegisteredUse": 22
+      },
+      "Stoner Metal": {
+        "master": 90,
+        "used": 82,
+        "withoutRegisteredUse": 8
+      },
+      "Folk-Metal": {
+        "master": 87,
+        "used": 75,
+        "withoutRegisteredUse": 12
+      },
+      "Industrial Metal": {
+        "master": 80,
+        "used": 61,
+        "withoutRegisteredUse": 19
+      },
+      "Grunge": {
+        "master": 69,
+        "used": 63,
+        "withoutRegisteredUse": 6
+      },
+      "Black Metal": {
+        "master": 64,
+        "used": 59,
+        "withoutRegisteredUse": 5
+      },
+      "Alternative Pop/Rock": {
+        "master": 63,
+        "used": 60,
+        "withoutRegisteredUse": 3
+      },
+      "Metalcore": {
+        "master": 62,
+        "used": 40,
+        "withoutRegisteredUse": 22
+      },
+      "Blues-Rock": {
+        "master": 54,
+        "used": 50,
+        "withoutRegisteredUse": 4
+      },
+      "Electro-Industrial": {
+        "master": 54,
+        "used": 52,
+        "withoutRegisteredUse": 2
+      },
+      "Nü Metal": {
+        "master": 51,
+        "used": 46,
+        "withoutRegisteredUse": 5
+      },
+      "Psychedelic/Garage": {
+        "master": 48,
+        "used": 48,
+        "withoutRegisteredUse": 0
+      },
+      "Alternative/Indie Rock": {
+        "master": 47,
+        "used": 42,
+        "withoutRegisteredUse": 5
+      },
+      "Indie Rock": {
+        "master": 47,
+        "used": 45,
+        "withoutRegisteredUse": 2
+      },
+      "Space Rock": {
+        "master": 46,
+        "used": 46,
+        "withoutRegisteredUse": 0
+      },
+      "Kraut Rock": {
+        "master": 42,
+        "used": 42,
+        "withoutRegisteredUse": 0
+      },
+      "Grindcore": {
+        "master": 40,
+        "used": 21,
+        "withoutRegisteredUse": 19
+      },
+      "Contemporary Pop/Rock": {
+        "master": 34,
+        "used": 28,
+        "withoutRegisteredUse": 6
+      },
+      "Neo-Classical Metal": {
+        "master": 33,
+        "used": 27,
+        "withoutRegisteredUse": 6
+      },
+      "Southern Rock": {
+        "master": 33,
+        "used": 32,
+        "withoutRegisteredUse": 1
+      },
+      "Emo": {
+        "master": 31,
+        "used": 25,
+        "withoutRegisteredUse": 6
+      },
+      "Post-Hardcore": {
+        "master": 31,
+        "used": 24,
+        "withoutRegisteredUse": 7
+      },
+      "Madchester": {
+        "master": 30,
+        "used": 30,
+        "withoutRegisteredUse": 0
+      },
+      "Riot Grrrl": {
+        "master": 27,
+        "used": 21,
+        "withoutRegisteredUse": 6
+      },
+      "Garage Rock": {
+        "master": 26,
+        "used": 25,
+        "withoutRegisteredUse": 1
+      },
+      "Avant-Garde": {
+        "master": 24,
+        "used": 22,
+        "withoutRegisteredUse": 2
+      },
+      "Contemporary Jazz": {
+        "master": 24,
+        "used": 22,
+        "withoutRegisteredUse": 2
+      },
+      "Britpop": {
+        "master": 22,
+        "used": 20,
+        "withoutRegisteredUse": 2
+      },
+      "Deathcore": {
+        "master": 22,
+        "used": 12,
+        "withoutRegisteredUse": 10
+      },
+      "Punk/New Wave": {
+        "master": 22,
+        "used": 17,
+        "withoutRegisteredUse": 5
+      },
+      "Soft Rock": {
+        "master": 22,
+        "used": 20,
+        "withoutRegisteredUse": 2
+      },
+      "Baroque Pop": {
+        "master": 20,
+        "used": 17,
+        "withoutRegisteredUse": 3
+      },
+      "Queercore": {
+        "master": 19,
+        "used": 12,
+        "withoutRegisteredUse": 7
+      },
+      "Alternative Dance": {
+        "master": 18,
+        "used": 18,
+        "withoutRegisteredUse": 0
+      },
+      "Modern Electric Blues": {
+        "master": 18,
+        "used": 16,
+        "withoutRegisteredUse": 2
+      },
+      "Adult Alternative Pop/Rock": {
+        "master": 17,
+        "used": 14,
+        "withoutRegisteredUse": 3
+      },
+      "Funk Metal": {
+        "master": 17,
+        "used": 17,
+        "withoutRegisteredUse": 0
+      },
+      "Hi-NRG": {
+        "master": 15,
+        "used": 10,
+        "withoutRegisteredUse": 5
+      },
+      "International": {
+        "master": 15,
+        "used": 14,
+        "withoutRegisteredUse": 1
+      },
+      "Neo-Psychedelia": {
+        "master": 15,
+        "used": 14,
+        "withoutRegisteredUse": 1
+      },
+      "Ambient": {
+        "master": 13,
+        "used": 13,
+        "withoutRegisteredUse": 0
+      },
+      "Dance-Rock": {
+        "master": 13,
+        "used": 12,
+        "withoutRegisteredUse": 1
+      },
+      "Post-Grunge": {
+        "master": 13,
+        "used": 10,
+        "withoutRegisteredUse": 3
+      },
+      "Trip-Hop": {
+        "master": 13,
+        "used": 11,
+        "withoutRegisteredUse": 2
+      },
+      "Big Beat": {
+        "master": 11,
+        "used": 8,
+        "withoutRegisteredUse": 3
+      },
+      "Contemporary Country": {
+        "master": 11,
+        "used": 8,
+        "withoutRegisteredUse": 3
+      },
+      "House": {
+        "master": 11,
+        "used": 6,
+        "withoutRegisteredUse": 5
+      },
+      "Rockabilly": {
+        "master": 11,
+        "used": 9,
+        "withoutRegisteredUse": 2
+      },
+      "Shoegaze": {
+        "master": 11,
+        "used": 10,
+        "withoutRegisteredUse": 1
+      },
+      "Dream Pop": {
+        "master": 10,
+        "used": 10,
+        "withoutRegisteredUse": 0
+      },
+      "R&B": {
+        "master": 10,
+        "used": 9,
+        "withoutRegisteredUse": 1
+      },
+      "Electroclash": {
+        "master": 9,
+        "used": 7,
+        "withoutRegisteredUse": 2
+      },
+      "Rap-Rock": {
+        "master": 9,
+        "used": 7,
+        "withoutRegisteredUse": 2
+      },
+      "Contemporary Singer/Songwriter": {
+        "master": 8,
+        "used": 8,
+        "withoutRegisteredUse": 0
+      },
+      "Electronic": {
+        "master": 8,
+        "used": 4,
+        "withoutRegisteredUse": 4
+      },
+      "Hip-Hop": {
+        "master": 8,
+        "used": 7,
+        "withoutRegisteredUse": 1
+      },
+      "Alternative Country-Rock": {
+        "master": 7,
+        "used": 6,
+        "withoutRegisteredUse": 1
+      },
+      "Holiday": {
+        "master": 7,
+        "used": 3,
+        "withoutRegisteredUse": 4
+      },
+      "New Age": {
+        "master": 7,
+        "used": 7,
+        "withoutRegisteredUse": 0
+      },
+      "American Trad Rock": {
+        "master": 6,
+        "used": 5,
+        "withoutRegisteredUse": 1
+      },
+      "College Rock": {
+        "master": 6,
+        "used": 6,
+        "withoutRegisteredUse": 0
+      },
+      "Comedy/Spoken": {
+        "master": 6,
+        "used": 2,
+        "withoutRegisteredUse": 4
+      },
+      "Downtempo": {
+        "master": 6,
+        "used": 6,
+        "withoutRegisteredUse": 0
+      },
+      "Rock & Roll": {
+        "master": 6,
+        "used": 4,
+        "withoutRegisteredUse": 2
+      },
+      "Club/Dance": {
+        "master": 5,
+        "used": 3,
+        "withoutRegisteredUse": 2
+      },
+      "Soundtracks": {
+        "master": 5,
+        "used": 5,
+        "withoutRegisteredUse": 0
+      },
+      "American Punk": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "Classical Crossover": {
+        "master": 4,
+        "used": 2,
+        "withoutRegisteredUse": 2
+      },
+      "Dance-Pop": {
+        "master": 4,
+        "used": 3,
+        "withoutRegisteredUse": 1
+      },
+      "Folk-Rock": {
+        "master": 4,
+        "used": 2,
+        "withoutRegisteredUse": 2
+      },
+      "Guitar Virtuoso": {
+        "master": 4,
+        "used": 3,
+        "withoutRegisteredUse": 1
+      },
+      "New York Punk": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "Slowcore": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "Breakbeat": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "Indie Pop": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "Pop Punk": {
+        "master": 3,
+        "used": 2,
+        "withoutRegisteredUse": 1
+      },
+      "Pop-Metal": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "Alternative Singer/Songwriter": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "British Punk": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "Christian Rock": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "Gospel": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "Neo-Prog": {
+        "master": 2,
+        "used": 0,
+        "withoutRegisteredUse": 2
+      },
+      "Rap": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "Roots Rock": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "Surf": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "AM Pop": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "Adult Contemporary": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "Anarchist Punk": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Aussie Rock": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Bluegrass": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Brass Band": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "British Invasion": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "British Rap": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Children's Rock": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Chillwave": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "Dub": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Early Pop/Rock": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "Electronica": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "Emo-Pop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Euro-Dance": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Euro-Pop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Experimental": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Experimental Rock": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "French": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "French Rock": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Fusion": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Garage Punk": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Garage Rock Revival": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Grime": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Instrumental Rock": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Jangle Pop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Left-Field Pop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "New Wave/Post-Punk Revival": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "New Zealand Rock": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Pub Rock": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "Punk Blues": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Punk Metal": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Punk Revival": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "Reggae": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Roots Reggae": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Ska-Punk": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Soul": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Techno": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "Teen Pop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Third Wave Ska Revival": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Trance": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Urban Folk": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Video Game Music": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "Western European Traditions": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      }
+    },
+    "Genres": {
+      "ONBEKEND": {
+        "master": 830,
+        "used": 558,
+        "withoutRegisteredUse": 272
+      },
+      "aor": {
+        "master": 496,
+        "used": 387,
+        "withoutRegisteredUse": 109
+      },
+      "glam-metal": {
+        "master": 476,
+        "used": 417,
+        "withoutRegisteredUse": 59
+      },
+      "arena rock": {
+        "master": 398,
+        "used": 291,
+        "withoutRegisteredUse": 107
+      },
+      "punk": {
+        "master": 310,
+        "used": 207,
+        "withoutRegisteredUse": 103
+      },
+      "metal": {
+        "master": 300,
+        "used": 271,
+        "withoutRegisteredUse": 29
+      },
+      "hardrock": {
+        "master": 296,
+        "used": 293,
+        "withoutRegisteredUse": 3
+      },
+      "glamrock": {
+        "master": 281,
+        "used": 272,
+        "withoutRegisteredUse": 9
+      },
+      "progressive rock": {
+        "master": 271,
+        "used": 266,
+        "withoutRegisteredUse": 5
+      },
+      "powermetal": {
+        "master": 263,
+        "used": 215,
+        "withoutRegisteredUse": 48
+      },
+      "speedmetal": {
+        "master": 259,
+        "used": 187,
+        "withoutRegisteredUse": 72
+      },
+      "symfonische metal": {
+        "master": 243,
+        "used": 204,
+        "withoutRegisteredUse": 39
+      },
+      "heavy metal": {
+        "master": 239,
+        "used": 184,
+        "withoutRegisteredUse": 55
+      },
+      "progressive metal": {
+        "master": 228,
+        "used": 216,
+        "withoutRegisteredUse": 12
+      },
+      "gothic metal": {
+        "master": 206,
+        "used": 173,
+        "withoutRegisteredUse": 33
+      },
+      "gothic rock": {
+        "master": 187,
+        "used": 165,
+        "withoutRegisteredUse": 22
+      },
+      "proto-punk": {
+        "master": 185,
+        "used": 168,
+        "withoutRegisteredUse": 17
+      },
+      "new wave": {
+        "master": 180,
+        "used": 177,
+        "withoutRegisteredUse": 3
+      },
+      "hardcore punk": {
+        "master": 173,
+        "used": 93,
+        "withoutRegisteredUse": 80
+      },
+      "post-punk": {
+        "master": 154,
+        "used": 149,
+        "withoutRegisteredUse": 5
+      },
+      "artrock": {
+        "master": 134,
+        "used": 133,
+        "withoutRegisteredUse": 1
+      },
+      "powerpop": {
+        "master": 119,
+        "used": 105,
+        "withoutRegisteredUse": 14
+      },
+      "thrashmetal": {
+        "master": 118,
+        "used": 87,
+        "withoutRegisteredUse": 31
+      },
+      "doom metal": {
+        "master": 115,
+        "used": 94,
+        "withoutRegisteredUse": 21
+      },
+      "synthpop": {
+        "master": 103,
+        "used": 99,
+        "withoutRegisteredUse": 4
+      },
+      "skate punk": {
+        "master": 100,
+        "used": 62,
+        "withoutRegisteredUse": 38
+      },
+      "darkwave": {
+        "master": 96,
+        "used": 95,
+        "withoutRegisteredUse": 1
+      },
+      "classic rock": {
+        "master": 92,
+        "used": 90,
+        "withoutRegisteredUse": 2
+      },
+      "deathrock": {
+        "master": 87,
+        "used": 82,
+        "withoutRegisteredUse": 5
+      },
+      "deathmetal": {
+        "master": 85,
+        "used": 60,
+        "withoutRegisteredUse": 25
+      },
+      "industrial": {
+        "master": 83,
+        "used": 72,
+        "withoutRegisteredUse": 11
+      },
+      "industrial metal": {
+        "master": 82,
+        "used": 63,
+        "withoutRegisteredUse": 19
+      },
+      "folk metal": {
+        "master": 81,
+        "used": 69,
+        "withoutRegisteredUse": 12
+      },
+      "sludge metal": {
+        "master": 80,
+        "used": 68,
+        "withoutRegisteredUse": 12
+      },
+      "psychedelische rock": {
+        "master": 77,
+        "used": 76,
+        "withoutRegisteredUse": 1
+      },
+      "rock": {
+        "master": 76,
+        "used": 76,
+        "withoutRegisteredUse": 0
+      },
+      "stoner metal": {
+        "master": 76,
+        "used": 70,
+        "withoutRegisteredUse": 6
+      },
+      "melodieuze deathmetal": {
+        "master": 70,
+        "used": 53,
+        "withoutRegisteredUse": 17
+      },
+      "industrial rock": {
+        "master": 68,
+        "used": 58,
+        "withoutRegisteredUse": 10
+      },
+      "alternative metal": {
+        "master": 67,
+        "used": 62,
+        "withoutRegisteredUse": 5
+      },
+      "groovemetal": {
+        "master": 67,
+        "used": 57,
+        "withoutRegisteredUse": 10
+      },
+      "stonerrock": {
+        "master": 66,
+        "used": 61,
+        "withoutRegisteredUse": 5
+      },
+      "ska punk": {
+        "master": 64,
+        "used": 44,
+        "withoutRegisteredUse": 20
+      },
+      "cold wave": {
+        "master": 61,
+        "used": 60,
+        "withoutRegisteredUse": 1
+      },
+      "post-grunge": {
+        "master": 59,
+        "used": 53,
+        "withoutRegisteredUse": 6
+      },
+      "ska": {
+        "master": 58,
+        "used": 44,
+        "withoutRegisteredUse": 14
+      },
+      "blackmetal": {
+        "master": 57,
+        "used": 52,
+        "withoutRegisteredUse": 5
+      },
+      "acid rock": {
+        "master": 53,
+        "used": 53,
+        "withoutRegisteredUse": 0
+      },
+      "metalcore": {
+        "master": 53,
+        "used": 31,
+        "withoutRegisteredUse": 22
+      },
+      "bluesrock": {
+        "master": 52,
+        "used": 48,
+        "withoutRegisteredUse": 4
+      },
+      "ebm": {
+        "master": 52,
+        "used": 50,
+        "withoutRegisteredUse": 2
+      },
+      "djent": {
+        "master": 51,
+        "used": 47,
+        "withoutRegisteredUse": 4
+      },
+      "krautrock": {
+        "master": 51,
+        "used": 51,
+        "withoutRegisteredUse": 0
+      },
+      "spacerock": {
+        "master": 49,
+        "used": 49,
+        "withoutRegisteredUse": 0
+      },
+      "nu metal": {
+        "master": 47,
+        "used": 42,
+        "withoutRegisteredUse": 5
+      },
+      "hardcore": {
+        "master": 45,
+        "used": 23,
+        "withoutRegisteredUse": 22
+      },
+      "jangle pop": {
+        "master": 44,
+        "used": 40,
+        "withoutRegisteredUse": 4
+      },
+      "grindcore": {
+        "master": 42,
+        "used": 23,
+        "withoutRegisteredUse": 19
+      },
+      "grunge": {
+        "master": 41,
+        "used": 41,
+        "withoutRegisteredUse": 0
+      },
+      "christelijke rock": {
+        "master": 38,
+        "used": 30,
+        "withoutRegisteredUse": 8
+      },
+      "middeleeuwse metal": {
+        "master": 36,
+        "used": 28,
+        "withoutRegisteredUse": 8
+      },
+      "drone metal": {
+        "master": 35,
+        "used": 30,
+        "withoutRegisteredUse": 5
+      },
+      "noise rock": {
+        "master": 35,
+        "used": 30,
+        "withoutRegisteredUse": 5
+      },
+      "finse rock": {
+        "master": 33,
+        "used": 16,
+        "withoutRegisteredUse": 17
+      },
+      "rapmetal": {
+        "master": 33,
+        "used": 28,
+        "withoutRegisteredUse": 5
+      },
+      "horrorpunk": {
+        "master": 32,
+        "used": 23,
+        "withoutRegisteredUse": 9
+      },
+      "neoklassiek": {
+        "master": 31,
+        "used": 26,
+        "withoutRegisteredUse": 5
+      },
+      "alternative rock": {
+        "master": 30,
+        "used": 30,
+        "withoutRegisteredUse": 0
+      },
+      "melodieuze hardcore": {
+        "master": 30,
+        "used": 17,
+        "withoutRegisteredUse": 13
+      },
+      "norsk rock": {
+        "master": 30,
+        "used": 27,
+        "withoutRegisteredUse": 3
+      },
+      "pop punk": {
+        "master": 30,
+        "used": 21,
+        "withoutRegisteredUse": 9
+      },
+      "southern rock": {
+        "master": 30,
+        "used": 29,
+        "withoutRegisteredUse": 1
+      },
+      "madchester": {
+        "master": 28,
+        "used": 28,
+        "withoutRegisteredUse": 0
+      },
+      "post-hardcore": {
+        "master": 28,
+        "used": 21,
+        "withoutRegisteredUse": 7
+      },
+      "garagerock": {
+        "master": 27,
+        "used": 26,
+        "withoutRegisteredUse": 1
+      },
+      "riot grrrl": {
+        "master": 27,
+        "used": 21,
+        "withoutRegisteredUse": 6
+      },
+      "avant-garde": {
+        "master": 26,
+        "used": 24,
+        "withoutRegisteredUse": 2
+      },
+      "emo": {
+        "master": 26,
+        "used": 22,
+        "withoutRegisteredUse": 4
+      },
+      "britpop": {
+        "master": 25,
+        "used": 23,
+        "withoutRegisteredUse": 2
+      },
+      "indierock": {
+        "master": 24,
+        "used": 22,
+        "withoutRegisteredUse": 2
+      },
+      "neo-folk": {
+        "master": 23,
+        "used": 23,
+        "withoutRegisteredUse": 0
+      },
+      "psychobilly": {
+        "master": 23,
+        "used": 14,
+        "withoutRegisteredUse": 9
+      },
+      "post-rock": {
+        "master": 21,
+        "used": 18,
+        "withoutRegisteredUse": 3
+      },
+      "folkpunk": {
+        "master": 19,
+        "used": 15,
+        "withoutRegisteredUse": 4
+      },
+      "queercore": {
+        "master": 19,
+        "used": 12,
+        "withoutRegisteredUse": 7
+      },
+      "barokpop": {
+        "master": 18,
+        "used": 15,
+        "withoutRegisteredUse": 3
+      },
+      "deathcore": {
+        "master": 18,
+        "used": 8,
+        "withoutRegisteredUse": 10
+      },
+      "moderne blues": {
+        "master": 18,
+        "used": 16,
+        "withoutRegisteredUse": 2
+      },
+      "yachtrock": {
+        "master": 17,
+        "used": 15,
+        "withoutRegisteredUse": 2
+      },
+      "celtic rock": {
+        "master": 15,
+        "used": 12,
+        "withoutRegisteredUse": 3
+      },
+      "neo-psychedelisch": {
+        "master": 15,
+        "used": 14,
+        "withoutRegisteredUse": 1
+      },
+      "drone": {
+        "master": 14,
+        "used": 12,
+        "withoutRegisteredUse": 2
+      },
+      "funkrock": {
+        "master": 14,
+        "used": 14,
+        "withoutRegisteredUse": 0
+      },
+      "indie": {
+        "master": 14,
+        "used": 14,
+        "withoutRegisteredUse": 0
+      },
+      "celtic punk": {
+        "master": 13,
+        "used": 8,
+        "withoutRegisteredUse": 5
+      },
+      "mathcore": {
+        "master": 13,
+        "used": 12,
+        "withoutRegisteredUse": 1
+      },
+      "screamo": {
+        "master": 13,
+        "used": 9,
+        "withoutRegisteredUse": 4
+      },
+      "softrock": {
+        "master": 13,
+        "used": 12,
+        "withoutRegisteredUse": 1
+      },
+      "big beat": {
+        "master": 12,
+        "used": 9,
+        "withoutRegisteredUse": 3
+      },
+      "experimenteel": {
+        "master": 12,
+        "used": 12,
+        "withoutRegisteredUse": 0
+      },
+      "jazz fusion": {
+        "master": 12,
+        "used": 12,
+        "withoutRegisteredUse": 0
+      },
+      "rockabilly": {
+        "master": 12,
+        "used": 10,
+        "withoutRegisteredUse": 2
+      },
+      "triphop": {
+        "master": 12,
+        "used": 11,
+        "withoutRegisteredUse": 1
+      },
+      "hi-nrg": {
+        "master": 11,
+        "used": 6,
+        "withoutRegisteredUse": 5
+      },
+      "shoegaze": {
+        "master": 11,
+        "used": 10,
+        "withoutRegisteredUse": 1
+      },
+      "alternative dance": {
+        "master": 10,
+        "used": 10,
+        "withoutRegisteredUse": 0
+      },
+      "dreampop": {
+        "master": 10,
+        "used": 10,
+        "withoutRegisteredUse": 0
+      },
+      "middeleeuws": {
+        "master": 10,
+        "used": 9,
+        "withoutRegisteredUse": 1
+      },
+      "ccm": {
+        "master": 9,
+        "used": 7,
+        "withoutRegisteredUse": 2
+      },
+      "countryrock": {
+        "master": 9,
+        "used": 9,
+        "withoutRegisteredUse": 0
+      },
+      "keltisch": {
+        "master": 9,
+        "used": 9,
+        "withoutRegisteredUse": 0
+      },
+      "anti-folk": {
+        "master": 8,
+        "used": 7,
+        "withoutRegisteredUse": 1
+      },
+      "electroclash": {
+        "master": 8,
+        "used": 6,
+        "withoutRegisteredUse": 2
+      },
+      "mathrock": {
+        "master": 8,
+        "used": 7,
+        "withoutRegisteredUse": 1
+      },
+      "acid house": {
+        "master": 7,
+        "used": 6,
+        "withoutRegisteredUse": 1
+      },
+      "art pop": {
+        "master": 7,
+        "used": 7,
+        "withoutRegisteredUse": 0
+      },
+      "blues": {
+        "master": 7,
+        "used": 6,
+        "withoutRegisteredUse": 1
+      },
+      "christelijke alternative rock": {
+        "master": 7,
+        "used": 6,
+        "withoutRegisteredUse": 1
+      },
+      "j-rock": {
+        "master": 7,
+        "used": 7,
+        "withoutRegisteredUse": 0
+      },
+      "kerst": {
+        "master": 7,
+        "used": 3,
+        "withoutRegisteredUse": 4
+      },
+      "ambient": {
+        "master": 6,
+        "used": 6,
+        "withoutRegisteredUse": 0
+      },
+      "downtempo": {
+        "master": 6,
+        "used": 6,
+        "withoutRegisteredUse": 0
+      },
+      "finse pop": {
+        "master": 6,
+        "used": 3,
+        "withoutRegisteredUse": 3
+      },
+      "italo disco": {
+        "master": 6,
+        "used": 3,
+        "withoutRegisteredUse": 3
+      },
+      "neue deutsche welle": {
+        "master": 6,
+        "used": 5,
+        "withoutRegisteredUse": 1
+      },
+      "raprock": {
+        "master": 6,
+        "used": 4,
+        "withoutRegisteredUse": 2
+      },
+      "rock en español": {
+        "master": 6,
+        "used": 5,
+        "withoutRegisteredUse": 1
+      },
+      "alt country": {
+        "master": 5,
+        "used": 4,
+        "withoutRegisteredUse": 1
+      },
+      "christelijke muziek": {
+        "master": 5,
+        "used": 3,
+        "withoutRegisteredUse": 2
+      },
+      "east coast hiphop": {
+        "master": 5,
+        "used": 4,
+        "withoutRegisteredUse": 1
+      },
+      "experimentele jazz": {
+        "master": 5,
+        "used": 5,
+        "withoutRegisteredUse": 0
+      },
+      "iskelmä": {
+        "master": 5,
+        "used": 2,
+        "withoutRegisteredUse": 3
+      },
+      "nederpop": {
+        "master": 5,
+        "used": 5,
+        "withoutRegisteredUse": 0
+      },
+      "new age": {
+        "master": 5,
+        "used": 5,
+        "withoutRegisteredUse": 0
+      },
+      "northern soul": {
+        "master": 5,
+        "used": 4,
+        "withoutRegisteredUse": 1
+      },
+      "souljazz": {
+        "master": 5,
+        "used": 2,
+        "withoutRegisteredUse": 3
+      },
+      "southern gothic": {
+        "master": 5,
+        "used": 5,
+        "withoutRegisteredUse": 0
+      },
+      "zweedse pop": {
+        "master": 5,
+        "used": 3,
+        "withoutRegisteredUse": 2
+      },
+      "ambient folk": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "chicago house": {
+        "master": 4,
+        "used": 2,
+        "withoutRegisteredUse": 2
+      },
+      "elektronisch": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "folk": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "folkrock": {
+        "master": 4,
+        "used": 2,
+        "withoutRegisteredUse": 2
+      },
+      "gesproken woord": {
+        "master": 4,
+        "used": 0,
+        "withoutRegisteredUse": 4
+      },
+      "mexicaanse rock": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "midwest emo": {
+        "master": 4,
+        "used": 2,
+        "withoutRegisteredUse": 2
+      },
+      "score": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "sea shanties": {
+        "master": 4,
+        "used": 2,
+        "withoutRegisteredUse": 2
+      },
+      "singer-songwriter": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "slowcore": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "soundtrack": {
+        "master": 4,
+        "used": 4,
+        "withoutRegisteredUse": 0
+      },
+      "acid jazz": {
+        "master": 3,
+        "used": 1,
+        "withoutRegisteredUse": 2
+      },
+      "braziliaanse rock": {
+        "master": 3,
+        "used": 1,
+        "withoutRegisteredUse": 2
+      },
+      "breakbeat": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "chinese rock": {
+        "master": 3,
+        "used": 2,
+        "withoutRegisteredUse": 1
+      },
+      "christelijke pop": {
+        "master": 3,
+        "used": 2,
+        "withoutRegisteredUse": 1
+      },
+      "dark ambient": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "duitse pop": {
+        "master": 3,
+        "used": 1,
+        "withoutRegisteredUse": 2
+      },
+      "hedendaags klassiek": {
+        "master": 3,
+        "used": 1,
+        "withoutRegisteredUse": 2
+      },
+      "idm": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "indie punk": {
+        "master": 3,
+        "used": 0,
+        "withoutRegisteredUse": 3
+      },
+      "jamband": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "minimalisme": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "noorse pop": {
+        "master": 3,
+        "used": 2,
+        "withoutRegisteredUse": 1
+      },
+      "outlaw country": {
+        "master": 3,
+        "used": 2,
+        "withoutRegisteredUse": 1
+      },
+      "rocksteady": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "roots rock": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "schlager": {
+        "master": 3,
+        "used": 1,
+        "withoutRegisteredUse": 2
+      },
+      "spacemuziek": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "visual kei": {
+        "master": 3,
+        "used": 3,
+        "withoutRegisteredUse": 0
+      },
+      "americana": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "bebop": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "comedy": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "country": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "dansband": {
+        "master": 2,
+        "used": 0,
+        "withoutRegisteredUse": 2
+      },
+      "drum and bass": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "egg punk": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "electro": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "electro swing": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "electrohouse": {
+        "master": 2,
+        "used": 0,
+        "withoutRegisteredUse": 2
+      },
+      "electronica": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "franse house": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "hardstyle": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "hiphop": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "italiaanse singer-songwriter": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "italo dance": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "jazz": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "klassiek": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "latin rock": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "lo-fi indie": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "native American-muziek": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "old school hiphop": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "opera": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "red dirt": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "rock-and-roll": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "soulblues": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "surfrock": {
+        "master": 2,
+        "used": 2,
+        "withoutRegisteredUse": 0
+      },
+      "synthwave": {
+        "master": 2,
+        "used": 1,
+        "withoutRegisteredUse": 1
+      },
+      "acid techno": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "afro-cubaanse jazz": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "aussie drill": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "ballet": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "bluegrass": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "boogiewoogie": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "brassband": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "breakcore": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "chanson": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "chillwave": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "chinese indie": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "christelijke country": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "city pop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "classic country": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "concerto": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "country hiphop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "deathstep": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "drumstep": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "dub techno": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "edm": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "edm trap": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "evangeliemuziek": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "expressionisme": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "finse hiphop": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "franse pop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "free jazz": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "funk melody": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "gregoriaanse zang": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "hiphouse": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "hiplife": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "honky tonk": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "horrorcore": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "house": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "hyperpop": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "indie jazz": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "indiepop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "italiaanse trap": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "j-pop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "japans klassiek": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "japanse vgm": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "jazz funk": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "jazz rap": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "jungle": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "kayōkyoku": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "klassieke blues": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "klassieke crossover": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "koormuziek": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "latin alternative": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "latin jazz": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "liquid funk": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "mexicaanse ska": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "miami bass": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "minimal techno": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "moombahton": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "musique concrète": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "new rave": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "noorse hiphop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "nu jazz": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "orkestraal": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "philly soul": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "plunderphonics": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "psytrance": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "rap": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "raï": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "reggae": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "reggaerock": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "retropop": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "retrosoul": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "schlagerparty": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "shibuya-kei": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "singeli": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "soul": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "southern gospel": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "swingmuziek": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "taiwanese indie": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "taiwanese pop": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "techno": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "texas country": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "traditionele gospel": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "uk funky": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "vaporwave": {
+        "master": 1,
+        "used": 0,
+        "withoutRegisteredUse": 1
+      },
+      "variété française": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      },
+      "vocal jazz": {
+        "master": 1,
+        "used": 1,
+        "withoutRegisteredUse": 0
+      }
+    }
+  },
+  "missingFields": {
+    "Acousticness": 590,
+    "Added At": 589,
+    "Added By": 589,
+    "Album Name": 137,
+    "AllMusic hoofdgenre": 603,
+    "AllMusic hoofdstructuur": 603,
+    "AllMusic stijlen": 315,
+    "Artist Name(s)": 0,
+    "Classificatiestatus": 49,
+    "DNA Aantal toepassingen": 0,
+    "DNA Bronnen herkomst en stijl": 3647,
+    "DNA Decennium uitvoering": 210,
+    "DNA Gebruikt": 0,
+    "DNA Genreduiding bron": 3812,
+    "DNA Genreonderzoek": 3875,
+    "DNA Herkomstcontext": 3871,
+    "DNA Herkomstscope": 3647,
+    "DNA Historische artiestcredit": 3873,
+    "DNA Historische tracktitel": 3870,
+    "DNA Hoofdstructuur bronduiding": 3812,
+    "DNA Identiteitsverschil": 3870,
+    "DNA Jaarstatus": 193,
+    "DNA Jaarzekerheid": 0,
+    "DNA Laatste metadatacontrole": 3647,
+    "DNA Metadata bron": 3647,
+    "DNA Plaatsactie": 0,
+    "DNA Plaatszekerheid": 0,
+    "DNA Playlist(s)": 872,
+    "DNA Regio": 337,
+    "DNA Registratiebron": 0,
+    "DNA Stijlen bronduiding": 3812,
+    "DNA Tijdactie": 0,
+    "DNA Toepassingen compleet": 0,
+    "DNA Uitgiftejaar uitvoering": 210,
+    "DNA Versietype": 561,
+    "Danceability": 590,
+    "Duration (ms)": 359,
+    "Energy": 590,
+    "Explicit": 405,
+    "Genres": 830,
+    "Herkomstcontrole": 193,
+    "ISRC": 3692,
+    "Instrumentalness": 590,
+    "Key": 590,
+    "Land van herkomst": 347,
+    "Liveness": 590,
+    "Loudness": 590,
+    "Mode": 590,
+    "Popularity": 589,
+    "Record Label": 404,
+    "Release Date": 359,
+    "Speechiness": 590,
+    "Spotify album-ID bron": 3831,
+    "Spotify artiest-ID bron": 3831,
+    "Taxonomiebron": 446,
+    "Tempo": 590,
+    "Time Signature": 590,
+    "Track Name": 0,
+    "Track URI": 0,
+    "Valence": 590,
+    "null": 3877
+  },
+  "classificationStatus": {
+    "rechtstreeks AllMusic": 98,
+    "afgeleid volgens AllMusic-taxonomie": 3009,
+    "onvoldoende bronmetadata": 324,
+    "ONBEKEND": 49,
+    "nog niet geclassificeerd": 166,
+    "Voorlopig geduid op artiest-/albumniveau; geen onafhankelijk trackgenrebewijs": 230,
+    "Spotify-artiestlabels; tracktaxonomie nog te controleren": 1
+  },
+  "sourceQuality": {
+    "explicitCheckedRecords": 230,
+    "outsideExplicitCheck": 3647,
+    "scopes": {
+      "Voorlopig geduid op artiest-/albumniveau; geen onafhankelijk trackgenrebewijs": 230
+    },
+    "openGenreReviews": {
+      "spotify:track:4pOao4lmah5I8m8wuaCHn6": "Oud hoofdlabel Heavy Metal; broncontext wijst vooral op Funk-Rock. Definitieve trackclassificatie blijft open.",
+      "spotify:track:4GmyUzZNMn11fmKvanLhzE": "Oud hoofdlabel Heavy Metal; broncontext legt accent op progressive rock en jazz/fusion. Definitieve trackclassificatie blijft open."
+    }
+  },
+  "historical": {
+    "candidatePool": 109,
+    "recoveredRatings": 33,
+    "ratingCounts": {
+      "TERUGKOMEN": 6,
+      "GOED": 12,
+      "RAAK": 13,
+      "NIET": 2
+    },
+    "staticOfferFlagContradictions": 3,
+    "candidateIdentityMissing": 0,
+    "spotifyIdentityMissing": 19,
+    "masterMatches": 0,
+    "candidateStyleUnknown": 19,
+    "byCandidateStyle": {
+      "Album Rock": {
+        "assessed": 2,
+        "RAAK": 2
+      },
+      "Alternative Metal": {
+        "assessed": 1,
+        "TERUGKOMEN": 1
+      },
+      "Alternative Rock": {
+        "assessed": 2,
+        "NIET": 1,
+        "TERUGKOMEN": 1
+      },
+      "Alternative/Indie Rock": {
+        "assessed": 2,
+        "TERUGKOMEN": 1,
+        "GOED": 1
+      },
+      "American Trad Rock": {
+        "assessed": 3,
+        "RAAK": 2,
+        "GOED": 1
+      },
+      "Arena Rock": {
+        "assessed": 1,
+        "GOED": 1
+      },
+      "Hard Rock": {
+        "assessed": 12,
+        "TERUGKOMEN": 3,
+        "RAAK": 3,
+        "NIET": 1,
+        "GOED": 5
+      },
+      "Heavy Metal": {
+        "assessed": 4,
+        "RAAK": 1,
+        "GOED": 3
+      },
+      "Neo-Glam": {
+        "assessed": 1,
+        "GOED": 1
+      },
+      "ONBEKEND": {
+        "assessed": 19,
+        "TERUGKOMEN": 3,
+        "RAAK": 9,
+        "GOED": 6,
+        "NIET": 1
+      },
+      "Pop-Metal": {
+        "assessed": 1,
+        "GOED": 1
+      },
+      "Prog-Rock": {
+        "assessed": 2,
+        "GOED": 1,
+        "RAAK": 1
+      },
+      "Progressive Metal": {
+        "assessed": 1,
+        "GOED": 1
+      },
+      "Punk Blues": {
+        "assessed": 1,
+        "TERUGKOMEN": 1
+      },
+      "Retro-Rock": {
+        "assessed": 1,
+        "TERUGKOMEN": 1
+      },
+      "Stoner Metal": {
+        "assessed": 1,
+        "GOED": 1
+      }
+    },
+    "assessmentEvents": [
+      {
+        "id": "2026-W35-13",
+        "rating": "TERUGKOMEN",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "DOROTHY",
+          "title": "Rest in Peace",
+          "releaseYear": 2022,
+          "albumOrRelease": "Gifts from the Holy Ghost",
+          "country": "United States"
+        },
+        "candidateStyles": [
+          "Alternative/Indie Rock",
+          "Hard Rock",
+          "Punk Blues",
+          "Retro-Rock"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-07",
+        "rating": "GOED",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Wobbler",
+          "title": "Five Rooms",
+          "releaseYear": 2020,
+          "albumOrRelease": "Dwellers of the Deep",
+          "country": "Norway"
+        },
+        "candidateStyles": [
+          "Prog-Rock"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-14",
+        "rating": "TERUGKOMEN",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Plush",
+          "title": "Hate",
+          "releaseYear": 2021,
+          "albumOrRelease": "Plush",
+          "country": "United States"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-12",
+        "rating": "RAAK",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Creeper",
+          "title": "Cry to Heaven",
+          "releaseYear": 2023,
+          "albumOrRelease": "Sanguivore",
+          "country": "United Kingdom"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-19",
+        "rating": "RAAK",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Starbenders",
+          "title": "Blood Moon",
+          "releaseYear": 2022,
+          "albumOrRelease": "Take Back the Night",
+          "country": "United States"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-10",
+        "rating": "RAAK",
+        "spotifyTrackId": "7d1jgc7jRYIc1yuUEp7zx7",
+        "identity": {
+          "artist": "Nestor",
+          "title": "On the Run",
+          "releaseYear": 2021,
+          "albumOrRelease": "Kids in a Ghost Town",
+          "country": "Sweden"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-36",
+        "rating": "RAAK",
+        "spotifyTrackId": "0cq5YH4eRdbXgunCPgvX6S",
+        "identity": {
+          "artist": "Airbourne",
+          "title": "Breakin' Outta Hell",
+          "releaseYear": 2016,
+          "albumOrRelease": "Breakin' Outta Hell",
+          "country": "Australia"
+        },
+        "candidateStyles": [
+          "Hard Rock"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-25",
+        "rating": "GOED",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Bleeker",
+          "title": "Highway",
+          "releaseYear": 2016,
+          "albumOrRelease": "Erase You",
+          "country": "Canada"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-38",
+        "rating": "RAAK",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Enforcer",
+          "title": "Kiss of Death",
+          "releaseYear": 2021,
+          "albumOrRelease": "Kiss of Death",
+          "country": "Sweden"
+        },
+        "candidateStyles": [
+          "Heavy Metal"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W36-19",
+        "rating": "NIET",
+        "spotifyTrackId": "3lubbUrIJx6aghnlMTgWwJ",
+        "identity": {
+          "artist": "Tigercub",
+          "title": "The Perfume of Decay - Redux",
+          "releaseYear": 2025,
+          "albumOrRelease": "The Perfume Of Decay (Redux)",
+          "country": "United Kingdom"
+        },
+        "candidateStyles": [
+          "Alternative Rock",
+          "Hard Rock"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W36-10",
+        "rating": "TERUGKOMEN",
+        "spotifyTrackId": "7iJ9EfGFYKv0Cv9KcaceP2",
+        "identity": {
+          "artist": "Skindred",
+          "title": "Gimme That Boom",
+          "releaseYear": 2023,
+          "albumOrRelease": "Smile",
+          "country": "United Kingdom"
+        },
+        "candidateStyles": [
+          "Alternative Metal",
+          "Hard Rock"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W36-13",
+        "rating": "TERUGKOMEN",
+        "spotifyTrackId": "4XtagwFOP5raVawgXl498u",
+        "identity": {
+          "artist": "Des Rocs",
+          "title": "Never Ending Moment",
+          "releaseYear": 2023,
+          "albumOrRelease": "Dream Machine",
+          "country": "United States"
+        },
+        "candidateStyles": [
+          "Alternative Rock",
+          "Hard Rock"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-04",
+        "rating": "RAAK",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Dirty Honey",
+          "title": "When I'm Gone",
+          "releaseDate": null,
+          "releaseYear": 2019,
+          "albumOrRelease": "Dirty Honey",
+          "country": "United States",
+          "locality": null
+        },
+        "candidateStyles": [
+          "Album Rock",
+          "American Trad Rock",
+          "Hard Rock"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": false,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-05",
+        "rating": "GOED",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "The Struts",
+          "title": "Pretty Vicious",
+          "releaseDate": "2023-11-03",
+          "releaseYear": 2023,
+          "albumOrRelease": "Pretty Vicious",
+          "country": "United Kingdom",
+          "locality": null
+        },
+        "candidateStyles": [
+          "Alternative/Indie Rock",
+          "American Trad Rock",
+          "Hard Rock",
+          "Neo-Glam"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": false,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-06",
+        "rating": "GOED",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "The Warning",
+          "title": "S!CK",
+          "releaseDate": null,
+          "releaseYear": 2024,
+          "albumOrRelease": "Keep Me Fed",
+          "country": "Mexico",
+          "locality": "Monterrey"
+        },
+        "candidateStyles": [
+          "Hard Rock",
+          "Heavy Metal"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": false,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-01",
+        "rating": "RAAK",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Crown Lands",
+          "title": "Right Way Back",
+          "releaseDate": "2021-03-11",
+          "releaseYear": 2021,
+          "albumOrRelease": "Context: Fearless Pt. I",
+          "country": "Canada",
+          "locality": "Oshawa, Ontario"
+        },
+        "candidateStyles": [
+          "Album Rock",
+          "American Trad Rock",
+          "Hard Rock",
+          "Prog-Rock"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": true,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-02",
+        "rating": "GOED",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Hällas",
+          "title": "Fading Hero",
+          "releaseDate": "2020-02-14",
+          "releaseYear": 2020,
+          "albumOrRelease": "Conundrum",
+          "country": "Zweden",
+          "locality": "Jönköping"
+        },
+        "candidateStyles": [
+          "Hard Rock",
+          "Heavy Metal",
+          "Progressive Metal",
+          "Stoner Metal"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": true,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-03",
+        "rating": "GOED",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "The Night Flight Orchestra",
+          "title": "Give Us the Moon",
+          "releaseDate": "2025-01-31",
+          "releaseYear": 2025,
+          "albumOrRelease": "Give Us the Moon",
+          "country": "Zweden",
+          "locality": "Helsingborg"
+        },
+        "candidateStyles": [
+          "Arena Rock",
+          "Hard Rock",
+          "Heavy Metal",
+          "Pop-Metal"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": true,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-22",
+        "rating": "GOED",
+        "spotifyTrackId": "6RGURwb5jvJMa3QSe6tViy",
+        "identity": {
+          "artist": "White Reaper",
+          "title": "Might Be Right",
+          "releaseYear": 2019,
+          "albumOrRelease": "You Deserve Love",
+          "country": "United States"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-27",
+        "rating": "TERUGKOMEN",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Temples",
+          "title": "Hot Motion",
+          "releaseYear": 2019,
+          "albumOrRelease": "Hot Motion",
+          "country": "United Kingdom"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-35",
+        "rating": "GOED",
+        "spotifyTrackId": "1tFQwUUnsotRNBPCupoyQd",
+        "identity": {
+          "artist": "Drab Majesty",
+          "title": "Ellipsis",
+          "releaseYear": 2019,
+          "albumOrRelease": "Modern Mirror",
+          "country": "United States"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-09",
+        "rating": "RAAK",
+        "spotifyTrackId": "2wbfb2aLoDZMfX3kuuqYbt",
+        "identity": {
+          "artist": "Green Lung",
+          "title": "Maxine (Witch Queen)",
+          "releaseYear": 2023,
+          "albumOrRelease": "This Heathen Land",
+          "country": "United Kingdom"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-15",
+        "rating": "RAAK",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Lucifer",
+          "title": "Maculate Heart",
+          "releaseYear": 2024,
+          "albumOrRelease": "Lucifer V",
+          "country": null
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-08",
+        "rating": "RAAK",
+        "spotifyTrackId": "2yFzF7w2re0HxT4jDrGgOX",
+        "identity": {
+          "artist": "Elder",
+          "title": "Catastasis",
+          "releaseYear": 2022,
+          "albumOrRelease": "Innate Passage",
+          "country": "United States"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-20",
+        "rating": "GOED",
+        "spotifyTrackId": "5lnCypJsQ39undAOrvqLNP",
+        "identity": {
+          "artist": "Unto Others",
+          "title": "Butterfly",
+          "releaseYear": 2024,
+          "albumOrRelease": "Never, Neverland",
+          "country": "United States"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-21",
+        "rating": "GOED",
+        "spotifyTrackId": "5TZbDoSfKFm30smKZy7bK2",
+        "identity": {
+          "artist": "King Buffalo",
+          "title": "Mammoth",
+          "releaseYear": 2022,
+          "albumOrRelease": "Regenerator",
+          "country": "United States"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-11",
+        "rating": "RAAK",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Crazy Lixx",
+          "title": "Rise Above",
+          "releaseYear": 2021,
+          "albumOrRelease": "Street Lethal",
+          "country": "Sweden"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-16",
+        "rating": "RAAK",
+        "spotifyTrackId": "401y3CGGbwRAOQP4jVdGc5",
+        "identity": {
+          "artist": "Amyl and the Sniffers",
+          "title": "Hertz",
+          "releaseYear": 2021,
+          "albumOrRelease": "Comfort to Me",
+          "country": "Australia"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-18",
+        "rating": "GOED",
+        "spotifyTrackId": "7hPc1Q8iPbYBzZw6eAOlTa",
+        "identity": {
+          "artist": "Grade 2",
+          "title": "Under the Streetlight",
+          "releaseYear": 2023,
+          "albumOrRelease": "Grade 2",
+          "country": "United Kingdom"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-17",
+        "rating": "RAAK",
+        "spotifyTrackId": "5LWmGFuiygZ5Sc4uH6ERrj",
+        "identity": {
+          "artist": "The Chats",
+          "title": "6L GTR",
+          "releaseYear": 2022,
+          "albumOrRelease": "Get Fucked",
+          "country": "Australia"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-24",
+        "rating": "NIET",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Starcrawler",
+          "title": "She Said",
+          "releaseYear": 2022,
+          "albumOrRelease": "She Said",
+          "country": "United States"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-39",
+        "rating": "GOED",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "The Gems",
+          "title": "Like a Phoenix",
+          "releaseYear": 2023,
+          "albumOrRelease": "Phoenix",
+          "country": "Sweden"
+        },
+        "candidateStyles": [
+          "Hard Rock"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      },
+      {
+        "id": "2026-W35-37",
+        "rating": "TERUGKOMEN",
+        "spotifyTrackId": null,
+        "identity": {
+          "artist": "Church of the Cosmic Skull",
+          "title": "Cold Sweat",
+          "releaseYear": 2018,
+          "albumOrRelease": "Science Fiction",
+          "country": "United Kingdom"
+        },
+        "candidateStyles": [
+          "ONBEKEND"
+        ],
+        "masterMatched": false,
+        "masterMainStructure": null,
+        "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+        "observedAt": null,
+        "staticOfferedFlag": null,
+        "offeredEvidence": "rating proves assessment; exact offer time unavailable"
+      }
+    ],
+    "playlistMembershipByWeek": {
+      "2026-W36": 21,
+      "2026-W37": 21,
+      "2026-W38": 21
+    },
+    "limits": "Broad audit returned the same 33 unique rating IDs for each requested week because legacy bmd-day-v13 keys are not week-scoped. Candidate IDs themselves prove 30 belong to W35 and 3 to W36. No W37 or W38 per-track rating IDs were recovered."
+  }
+}
