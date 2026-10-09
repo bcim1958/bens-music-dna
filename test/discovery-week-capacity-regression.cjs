@@ -1,0 +1,18 @@
+'use strict';
+const assert=require('node:assert/strict'),S=require('../scripts/saturday-simulator.cjs');
+const e=S.sandbox();for(const f of ['music-dna-discovery-reference-v1.js','music-dna-discovery-v1.js','music-dna-w41-candidates-v1.js'])e.load(f);
+const api=e.ctx.MUSIC_DNA_DISCOVERY,tracks=e.ctx.MUSIC_DNA_W41_CANDIDATES.tracks;
+const before=JSON.stringify(e.data),plan=api.weekReadiness(tracks);
+assert.equal(Object.keys(tracks).length,226);assert.equal(new Set(Object.values(tracks).map(t=>t.identity.artist)).size,24);
+assert.equal(plan.ready,true);assert.equal(plan.uniqueOfficialArtists,21);
+const all=plan.runs.flatMap(d=>d.official.concat(d.reserve));
+assert.equal(new Set(all.map(id=>tracks[id].identity.artist)).size,all.length,'capacity rehearsal must enforce official and reserve artist exclusion');
+assert(all.length<=24);assert(plan.runs.flatMap(d=>d.reserve).length<=3,'extra offers cannot exhaust the 21 official slots');
+assert.equal(JSON.stringify(e.data),before,'planning must never persist future choices');
+const rows=api.chooseBatch(tracks,{size:3}),avoid=rows.map(r=>r.track.identity.artist),excludeIds=rows.map(r=>r.id);
+const remaining=api.chooseReserveBatch(tracks,{size:2,excludeArtists:avoid,excludeIds,remainingDays:6});
+assert.equal(remaining.length,2);
+const onlyOfficial=Object.fromEntries(Object.entries(tracks).filter(([id,t])=>new Set(plan.runs.flatMap(d=>d.official).map(id=>tracks[id].identity.artist)).has(t.identity.artist)));
+assert.equal(api.chooseReserveBatch(onlyOfficial,{size:2,excludeArtists:avoid,excludeIds,remainingDays:6}).length,0,'exact official capacity permits no extra offers');
+assert.equal(api.weekReadiness(tracks,{days:0,reserveOffers:0}).ready,true);
+console.log('PASS: 226 W41 tracks / 24 artist credits; seven official days retain 21 distinct artists; optional reserves use surplus only; readiness stays read-only.');
