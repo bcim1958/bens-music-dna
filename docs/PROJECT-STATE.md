@@ -1,7 +1,15 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-08**  
-**Status: Master 1.14.4 vastgelegd; 230 herstelde records hebben brononderbouwde herkomst en voorlopige genrecontext; twee historische hoofdlabels open; actuele FIFO en W41-productieaflevering onbewezen.**
+**Last updated: 2026-10-09**
+**Status: W41-selectie en bezorgcontroles hersteld en offline getest; Master 1.14.4 / CSV / Depot consistent; 230 verouderde jaarmeldingen verwijderd. Echte zaterdaglevering, actuele apparaat-FIFO en definitieve DNA Express-publicatie blijven onbewezen.**
+
+## Actuele hervatplek — betrouwbaarheid, 9 oktober 2026
+
+[Herstel en verificatie](W41-RELIABILITY-CHECK-2026-10-09.md): **lokale herstelbranch; upload door automatische goedkeuringscontrole tegengehouden. Deze nieuwe correcties zijn nog niet live.** Actuele `main` gecontroleerd vanaf `0987b7f`; de bestaande Pages-uitrol van die commit is geslaagd. Kleine reparaties voor Spotify-opnamealiassen, duurzaam reserveverbruik, gewijzigde hoesbestanden, officiële weekcapaciteit en verouderde Depotmeldingen zijn getest. De offline suite kan zonder persoonlijke export worden uitgevoerd; W41 is daarnaast herhaald met de bestaande echte historische export van 3 oktober en uitsluitend synthetische toekomstige W41-beoordelingen.
+
+De W41-voorraad bevat 226 tracks maar 24 artiestcredits. Extra voorraadplekken mogen de capaciteit voor de resterende officiële dagen niet uitputten. Bestaande dag-/reservekeuzes, beoordelingen en historische leveringen blijven behouden. Onvoldoende actuele capaciteit blijft een veilige blokkade; de reparatie verzint geen nieuwe kandidaten en vervangt geen reeds gemaakte keuzes.
+
+Voor zaterdag 10 oktober: gebruik de echte volledige W41-apparaatinvoer. Alle negen runtimecontroles moeten slagen vóór Spotify-bezorging; daarna playlistvolgorde, hoes, museum en zichtbare apparaat-afsluiting controleren. `spotifyWrites=0` en `endToEndProven=false` gelden voor de hier beschreven offline proeven. Een groene overdracht naar DNA Express bewijst geen gepubliceerde editie.
 
 ## Broncontrole — Master 1.14.4, 8 oktober 2026
 

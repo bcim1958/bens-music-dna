@@ -15,7 +15,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  regressions:
+    uses: ./.github/workflows/weekly-regressions.yml
   deploy:
+    needs: regressions
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
