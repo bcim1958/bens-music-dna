@@ -1,0 +1,20 @@
+name: Discovery history offline evidence
+on:
+  pull_request:
+    paths:
+      - 'test/discovery-history-regression.cjs'
+      - 'test/fixtures/discovery-history/**'
+      - 'scripts/audit-discovery-history.cjs'
+      - 'scripts/check-w41-snapshot.cjs'
+      - 'docs/ONTDEK-DNA-HISTORY-2026-10-09.md'
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node test/discovery-history-regression.cjs

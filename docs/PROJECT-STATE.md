@@ -5,11 +5,19 @@
 
 ## Actuele hervatplek — betrouwbaarheid, 9 oktober 2026
 
-[Herstel en verificatie](W41-RELIABILITY-CHECK-2026-10-09.md): **lokale herstelbranch; upload door automatische goedkeuringscontrole tegengehouden. Deze nieuwe correcties zijn nog niet live.** Actuele `main` gecontroleerd vanaf `0987b7f`; de bestaande Pages-uitrol van die commit is geslaagd. Kleine reparaties voor Spotify-opnamealiassen, duurzaam reserveverbruik, gewijzigde hoesbestanden, officiële weekcapaciteit en verouderde Depotmeldingen zijn getest. De offline suite kan zonder persoonlijke export worden uitgevoerd; W41 is daarnaast herhaald met de bestaande echte historische export van 3 oktober en uitsluitend synthetische toekomstige W41-beoordelingen.
+[Herstel en verificatie](W41-RELIABILITY-CHECK-2026-10-09.md): **PR #1 is samengevoegd op `e568fe4b849a75ca6f7eb6e124d8cf9d5e8d070a` en Pages is succesvol uitgerold.** Actuele `main` bevestigd op dit mergecommit. Beide bijbehorende runs zijn geslaagd: [Deploy GitHub Pages 37938450534](https://github.com/bcim1958/bens-music-dna/actions/runs/37938450534) en [pages build and deployment 37938449582](https://github.com/bcim1958/bens-music-dna/actions/runs/37938449582). De eerdere blokkadebeschrijving is historische context en geen actuele uploadstatus. Kleine reparaties voor Spotify-opnamealiassen, duurzaam reserveverbruik, gewijzigde hoesbestanden, officiële weekcapaciteit en verouderde Depotmeldingen zijn getest. De offline suite kan zonder persoonlijke export worden uitgevoerd; W41 is daarnaast herhaald met de bestaande echte historische export van 3 oktober en uitsluitend synthetische toekomstige W41-beoordelingen.
 
 De W41-voorraad bevat 226 tracks maar 24 artiestcredits. Extra voorraadplekken mogen de capaciteit voor de resterende officiële dagen niet uitputten. Bestaande dag-/reservekeuzes, beoordelingen en historische leveringen blijven behouden. Onvoldoende actuele capaciteit blijft een veilige blokkade; de reparatie verzint geen nieuwe kandidaten en vervangt geen reeds gemaakte keuzes.
 
 Voor zaterdag 10 oktober: gebruik de echte volledige W41-apparaatinvoer. Alle negen runtimecontroles moeten slagen vóór Spotify-bezorging; daarna playlistvolgorde, hoes, museum en zichtbare apparaat-afsluiting controleren. `spotifyWrites=0` en `endToEndProven=false` gelden voor de hier beschreven offline proeven. Een groene overdracht naar DNA Express bewijst geen gepubliceerde editie.
+
+## Ontdek-DNA-historie en afzonderlijke ontwikkelvoorraad — 9 oktober 2026
+
+[Onderzoek TOWER en Tanith](ONTDEK-DNA-HISTORY-2026-10-09.md): vijf aangeleverde iPhone-exports bevestigen herhaalde reserveartiesten met andere tracks. Op 8 oktober 14:57 uur: TOWER — Lay Down the Law en Tanith — Architects of Time, beide GOED. Eerdere beoordelingen zijn aanwezig en consistent. De oude reservefunctie sloot eerdere reserveartiesten niet uit; PR #1 herstelt dit binnen dezelfde week. Historische metadata-koppeling en algemeen herhalingsbeleid blijven afzonderlijke open punten.
+
+**W41-readiness geblokkeerd met export van 9 oktober 06:26 uur:** de huidige dagelijkse pagina kan op zaterdag slechts twee toegestane dag-7-artiesten selecteren (The Commoners, The Tubs). The Vintage Caravan mist de vereiste volledige bibliotheekuitsluiting. De laatste drie officiële keuzes/beoordelingen en echte zaterdagketen zijn dus nog niet beschikbaar/bewezen. 20 nieuwe controles en 16 generieke weektests slagen, maar vervangen deze actuele apparaatproef niet. Geen aanvullende W41-productiewijziging uitgevoerd.
+
+[PR #2 — Depot en Muziekmeter](https://github.com/bcim1958/bens-music-dna/pull/2) staat **nog open, niet samengevoegd**. Beide PR-controles zijn geslaagd; dit werk is geen onderdeel van productie-`main`. Depot blijft archief; geen nieuwe Specials om de 872 tracks zonder geregistreerd gebruik op te maken. FIFO is gecontroleerd tot de aangeleverde momentopname van 9 oktober 06:26 uur; latere apparaatopslag, echte laatste drie W41-beoordelingen en de zaterdaglevering blijven onbewezen.
 
 ## Broncontrole — Master 1.14.4, 8 oktober 2026
 

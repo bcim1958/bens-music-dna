@@ -1,0 +1,317 @@
+{
+  "sourceExportSha256": "e95d0b1f535b93e62fb23c0257d9cc95174c2defd402f74dbd199e918de5c401",
+  "exportedAt": "2026-10-08T13:06:22.604Z",
+  "scope": "Bounded real TOWER/Tanith observations from supplied export 5; not full device history",
+  "offers": [
+    {
+      "key": "bmd-week-2026-W41-day2-reserve-selection-v1",
+      "id": "external-0AoTXGf85bADmtHNFaZjjz",
+      "createdAt": "2026-10-05T03:48:40.601Z",
+      "retired": false,
+      "artist": "Tanith",
+      "title": "Mother of Exile",
+      "spotifyTrackId": "0AoTXGf85bADmtHNFaZjjz",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day2-reserve-selection-v1",
+      "id": "external-0fB8w0B7vtpZape6mV9G29",
+      "createdAt": "2026-10-05T03:48:40.601Z",
+      "retired": false,
+      "artist": "TOWER",
+      "title": "The Black Rose",
+      "spotifyTrackId": "0fB8w0B7vtpZape6mV9G29",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day5-reserve-selection-v1",
+      "id": "external-2nbmILxV3FYF4Hcu1QFuub",
+      "createdAt": "2026-10-08T12:57:33.998Z",
+      "retired": false,
+      "artist": "TOWER",
+      "title": "Lay Down the Law",
+      "spotifyTrackId": "2nbmILxV3FYF4Hcu1QFuub",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day5-reserve-selection-v1",
+      "id": "external-4MZ1QaGFKKIp3dbOExSkRT",
+      "createdAt": "2026-10-08T12:57:33.998Z",
+      "retired": false,
+      "artist": "Tanith",
+      "title": "Architects of Time",
+      "spotifyTrackId": "4MZ1QaGFKKIp3dbOExSkRT",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day3-reserve-selection-v1",
+      "id": "external-0RKdTtXzfPF8PRsx7tN7PE",
+      "createdAt": "2026-10-06T10:50:41.024Z",
+      "retired": false,
+      "artist": "TOWER",
+      "title": "Powder Keg",
+      "spotifyTrackId": "0RKdTtXzfPF8PRsx7tN7PE",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day3-reserve-selection-v1",
+      "id": "external-1MXJAqB4CNEwnG6cBbrxxO",
+      "createdAt": "2026-10-06T10:50:41.024Z",
+      "retired": false,
+      "artist": "Tanith",
+      "title": "Adrasteia",
+      "spotifyTrackId": "1MXJAqB4CNEwnG6cBbrxxO",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day1-reserve-selection-v1",
+      "id": "external-06RSZ10XSroGJhPYOtGgG2",
+      "createdAt": "2026-10-04T15:08:55.545Z",
+      "retired": false,
+      "artist": "Tanith",
+      "title": "Snow Tiger",
+      "spotifyTrackId": "06RSZ10XSroGJhPYOtGgG2",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day4-reserve-selection-v1",
+      "id": "external-12miUEeB0mQTZyG4rIPXoO",
+      "createdAt": "2026-10-07T10:51:49.018Z",
+      "retired": false,
+      "artist": "TOWER",
+      "title": "Running out of Time",
+      "spotifyTrackId": "12miUEeB0mQTZyG4rIPXoO",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day4-reserve-selection-v1",
+      "id": "external-3kLKL5prZ0sDtkg9KhehNN",
+      "createdAt": "2026-10-07T10:51:49.018Z",
+      "retired": false,
+      "artist": "Tanith",
+      "title": "Falling Wizard",
+      "spotifyTrackId": "3kLKL5prZ0sDtkg9KhehNN",
+      "metadataSource": "repository catalog"
+    }
+  ],
+  "ratings": [
+    {
+      "key": "bmd-week-2026-W41-day3-reserve-v1",
+      "id": "external-0RKdTtXzfPF8PRsx7tN7PE",
+      "rating": "goed",
+      "ratedAt": "2026-10-06T10:56:50.199Z",
+      "learningPresent": true,
+      "artist": "TOWER",
+      "title": "Powder Keg",
+      "spotifyTrackId": "0RKdTtXzfPF8PRsx7tN7PE",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day3-reserve-v1",
+      "id": "external-1MXJAqB4CNEwnG6cBbrxxO",
+      "rating": "goed",
+      "ratedAt": "2026-10-06T10:56:45.094Z",
+      "learningPresent": true,
+      "artist": "Tanith",
+      "title": "Adrasteia",
+      "spotifyTrackId": "1MXJAqB4CNEwnG6cBbrxxO",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day1-reserve-v1",
+      "id": "external-06RSZ10XSroGJhPYOtGgG2",
+      "rating": "twijfel",
+      "ratedAt": "2026-10-04T15:13:42.855Z",
+      "learningPresent": true,
+      "artist": "Tanith",
+      "title": "Snow Tiger",
+      "spotifyTrackId": "06RSZ10XSroGJhPYOtGgG2",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day4-reserve-v1",
+      "id": "external-12miUEeB0mQTZyG4rIPXoO",
+      "rating": "raak",
+      "ratedAt": "2026-10-07T10:55:59.476Z",
+      "learningPresent": true,
+      "artist": "TOWER",
+      "title": "Running out of Time",
+      "spotifyTrackId": "12miUEeB0mQTZyG4rIPXoO",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day4-reserve-v1",
+      "id": "external-3kLKL5prZ0sDtkg9KhehNN",
+      "rating": "goed",
+      "ratedAt": "2026-10-07T10:57:00.296Z",
+      "learningPresent": true,
+      "artist": "Tanith",
+      "title": "Falling Wizard",
+      "spotifyTrackId": "3kLKL5prZ0sDtkg9KhehNN",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day2-reserve-v1",
+      "id": "external-0AoTXGf85bADmtHNFaZjjz",
+      "rating": "twijfel",
+      "ratedAt": "2026-10-05T03:55:36.791Z",
+      "learningPresent": true,
+      "artist": "Tanith",
+      "title": "Mother of Exile",
+      "spotifyTrackId": "0AoTXGf85bADmtHNFaZjjz",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day2-reserve-v1",
+      "id": "external-0fB8w0B7vtpZape6mV9G29",
+      "rating": "goed",
+      "ratedAt": "2026-10-05T03:56:09.153Z",
+      "learningPresent": true,
+      "artist": "TOWER",
+      "title": "The Black Rose",
+      "spotifyTrackId": "0fB8w0B7vtpZape6mV9G29",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day5-reserve-v1",
+      "id": "external-2nbmILxV3FYF4Hcu1QFuub",
+      "rating": "goed",
+      "ratedAt": "2026-10-08T13:04:42.401Z",
+      "learningPresent": true,
+      "artist": "TOWER",
+      "title": "Lay Down the Law",
+      "spotifyTrackId": "2nbmILxV3FYF4Hcu1QFuub",
+      "metadataSource": "repository catalog"
+    },
+    {
+      "key": "bmd-week-2026-W41-day5-reserve-v1",
+      "id": "external-4MZ1QaGFKKIp3dbOExSkRT",
+      "rating": "goed",
+      "ratedAt": "2026-10-08T13:05:57.054Z",
+      "learningPresent": true,
+      "artist": "Tanith",
+      "title": "Architects of Time",
+      "spotifyTrackId": "4MZ1QaGFKKIp3dbOExSkRT",
+      "metadataSource": "repository catalog"
+    }
+  ],
+  "learning": {
+    "external-06RSZ10XSroGJhPYOtGgG2": {
+      "rating": "twijfel",
+      "weight": 0,
+      "ratedAt": "2026-10-04T15:13:42.855Z",
+      "artist": "Tanith",
+      "title": "Snow Tiger",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/06RSZ10XSroGJhPYOtGgG2",
+      "spotifyResolvedExact": true
+    },
+    "external-0AoTXGf85bADmtHNFaZjjz": {
+      "rating": "twijfel",
+      "weight": 0,
+      "ratedAt": "2026-10-05T03:55:36.791Z",
+      "artist": "Tanith",
+      "title": "Mother of Exile",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/0AoTXGf85bADmtHNFaZjjz",
+      "spotifyResolvedExact": true
+    },
+    "external-0RKdTtXzfPF8PRsx7tN7PE": {
+      "rating": "goed",
+      "weight": 1,
+      "ratedAt": "2026-10-06T10:56:50.199Z",
+      "artist": "TOWER",
+      "title": "Powder Keg",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/0RKdTtXzfPF8PRsx7tN7PE",
+      "spotifyResolvedExact": true
+    },
+    "external-0fB8w0B7vtpZape6mV9G29": {
+      "rating": "goed",
+      "weight": 1,
+      "ratedAt": "2026-10-05T03:56:09.153Z",
+      "artist": "TOWER",
+      "title": "The Black Rose",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/0fB8w0B7vtpZape6mV9G29",
+      "spotifyResolvedExact": true
+    },
+    "external-12miUEeB0mQTZyG4rIPXoO": {
+      "rating": "raak",
+      "weight": 2,
+      "ratedAt": "2026-10-07T10:55:59.476Z",
+      "artist": "TOWER",
+      "title": "Running out of Time",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/12miUEeB0mQTZyG4rIPXoO",
+      "spotifyResolvedExact": true
+    },
+    "external-1MXJAqB4CNEwnG6cBbrxxO": {
+      "rating": "goed",
+      "weight": 1,
+      "ratedAt": "2026-10-06T10:56:45.094Z",
+      "artist": "Tanith",
+      "title": "Adrasteia",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/1MXJAqB4CNEwnG6cBbrxxO",
+      "spotifyResolvedExact": true
+    },
+    "external-2nbmILxV3FYF4Hcu1QFuub": {
+      "rating": "goed",
+      "weight": 1,
+      "ratedAt": "2026-10-08T13:04:42.401Z",
+      "artist": "TOWER",
+      "title": "Lay Down the Law",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/2nbmILxV3FYF4Hcu1QFuub",
+      "spotifyResolvedExact": true
+    },
+    "external-3kLKL5prZ0sDtkg9KhehNN": {
+      "rating": "goed",
+      "weight": 1,
+      "ratedAt": "2026-10-07T10:57:00.296Z",
+      "artist": "Tanith",
+      "title": "Falling Wizard",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/3kLKL5prZ0sDtkg9KhehNN",
+      "spotifyResolvedExact": true
+    },
+    "external-4MZ1QaGFKKIp3dbOExSkRT": {
+      "rating": "goed",
+      "weight": 1,
+      "ratedAt": "2026-10-08T13:05:57.054Z",
+      "artist": "Tanith",
+      "title": "Architects of Time",
+      "styles": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/4MZ1QaGFKKIp3dbOExSkRT",
+      "spotifyResolvedExact": true
+    }
+  }
+}
