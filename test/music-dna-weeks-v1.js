@@ -38,6 +38,13 @@ const MUSIC_DNA_WEEKS = (() => {
       candidateGlobal:'MUSIC_DNA_W41_CANDIDATES',candidateFiles:['music-dna-w41-candidates-v1.js'],ready:true,
       delivery:{releasePath:'../data/week-simulation-release-2026-41.json',manifestPath:'../data/week-publication-manifest-2026-41-simulation-frozen.json',museumPath:'week-museum.html?week=2026-41'},
       preparationStatus:'inputs-approved-runtime-simulation-required'
+    },
+    {
+      key:'2026-W42',yearLabel:'2026',weekLabel:'W42',display:'2026 · W42',
+      start:new Date(2026,9,11),end:new Date(2026,9,18),
+      startText:'zondag 11 oktober',endText:'zaterdag 17 oktober 2026',
+      ready:false,automaticGift:true,
+      preparationStatus:'blocked-unverified-candidates-and-delivery-inputs'
     }
   ];
   function get(key){return weeks.find(w => w.key === key) || null;}

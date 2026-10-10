@@ -1,13 +1,13 @@
 // Execute actual daily page scripts with a small DOM/storage fixture. Browser QA is separate.
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
-async function boot(file,store,date='2026-09-29T08:00:00+02:00'){
+async function boot(file,store,date='2026-09-29T08:00:00+02:00',configure){
  const nodes={};class Element{constructor(tag){this.tag=tag;this.children=[];this.textContent='';this.className='';this._html='';}appendChild(e){this.children.push(e);return e;}set innerHTML(v){this._html=v;this.children=[];}get innerHTML(){return this._html;}}
  const RealDate=Date;class Clock extends RealDate{constructor(...a){super(...(a.length?a:[date]));}static now(){return new RealDate(date).getTime();}}
  const storage={get length(){return store.size},getItem:k=>store.get(k)||null,key:i=>[...store.keys()][i],setItem:(k,v)=>store.set(k,String(v)),removeItem:k=>store.delete(k)};
  const c={window:null,Date:Clock,localStorage:storage,location:{origin:'http://test'},console,setTimeout:()=>{}};c.window=c;vm.createContext(c);
  const load=name=>vm.runInContext(fs.readFileSync('test/'+name.split('?')[0],'utf8'),c,{filename:name});
  c.document={getElementById:id=>nodes[id]||(nodes[id]=new Element('div')),createElement:tag=>new Element(tag),head:{appendChild:el=>{try{load(el.src);el.onload();}catch(e){if(el.onerror)el.onerror(e);else throw e;}}}};
- const html=fs.readFileSync('test/'+file,'utf8');for(const m of html.matchAll(/<script(?: src="([^"]+)")?[^>]*>(.*?)<\/script>/gs)){if(m[1])load(m[1]);else await vm.runInContext(m[2],c);}
+ const html=fs.readFileSync('test/'+file,'utf8');for(const m of html.matchAll(/<script(?: src="([^"]+)")?[^>]*>(.*?)<\/script>/gs)){if(m[1]){load(m[1]);if(configure&&m[1].split('?')[0]==='music-dna-weeks-v1.js')configure(c);}else await vm.runInContext(m[2],c);}
  return {c,nodes,read:k=>JSON.parse(store.get(k)||'null')};
 }
 
