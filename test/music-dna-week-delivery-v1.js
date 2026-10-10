@@ -11,6 +11,61 @@ async function verifyArtworkIdentity(blob,artwork){
  if(hash!==artwork.sha256)throw Error('artwork-hash-mismatch');
  return hash;
 }
-async function verifyAndAttach(options){const {fetch:request,token,playlistId,uris,manifest}=options;const headers={Authorization:'Bearer '+token};const base='https://api.spotify.com/v1/playlists/'+encodeURIComponent(playlistId);const rr=await request(base+'/items?limit=50',{headers});if(!rr.ok)throw Error('track-readback '+rr.status);const rows=await rr.json();const actual=(rows.items||[]).map(x=>(x.item||x.track)?.uri);if(rows.next||actual.length!==21||JSON.stringify(actual)!==JSON.stringify(uris))throw Error('track-readback-order');if(JSON.stringify(manifest.freeze?.orderedTrackIds)!==JSON.stringify(uris.map(u=>u.replace('spotify:track:',''))))throw Error('manifest-order-mismatch');const ar=await request('../'+manifest.artwork.assetId,{cache:'no-store'});if(!ar.ok)throw Error('artwork-asset '+ar.status);const original=await ar.blob();const sourceSha256=await verifyArtworkIdentity(original,manifest.artwork);const blob=await prepareArtwork(original,options.artworkEnvironment);if(encodedLength(blob.size)>MAX_ENCODED_BYTES)throw Error('artwork-encoded-size-too-large');const bytes=new Uint8Array(await blob.arrayBuffer());if(bytes[0]!==255||bytes[1]!==216)throw Error('artwork-jpeg-invalid');let binary='';for(const byte of bytes)binary+=String.fromCharCode(byte);const encoded=btoa(binary);if(encoded.length>MAX_ENCODED_BYTES)throw Error('artwork-encoded-size-too-large');const up=await request(base+'/images',{method:'PUT',headers:{...headers,'Content-Type':'image/jpeg'},body:encoded});if(!up.ok)throw Error('artwork-upload '+up.status);const ir=await request(base+'/images',{headers});if(!ir.ok)throw Error('artwork-readback '+ir.status);const images=await ir.json();if(!Array.isArray(images)||!images.some(i=>i.url))throw Error('artwork-readback-empty');return {playlistId,trackCount:actual.length,orderedUris:actual,artworkAttached:true,artworkReadback:true,artworkSourceSha256:sourceSha256,artworkOriginalBytes:original.size,artworkUploadBytes:blob.size,artworkEncodedBytes:encoded.length,folderPlacement:manifest.publication?.spotify?.folderPlacement==='known-technical-limitation'?'known-technical-limitation':'manual-pending',weekComplete:false,expressPublication:'awaiting-operational-destination'};}
+function descriptionFor(manifest){
+ const text=manifest?.gemstone?.editorialText;
+ if(typeof text!=='string'||!text.trim())throw Error('description-missing');
+ if(text.length>300)throw Error('description-too-long');
+ return text;
+}
+async function verifyAndAttach(options){
+ const {fetch:request,token,playlistId,uris,manifest}=options;
+ const description=descriptionFor(manifest);
+ const headers={Authorization:'Bearer '+token};
+ const base='https://api.spotify.com/v1/playlists/'+encodeURIComponent(playlistId);
+ async function readTracks(){
+  const response=await request(base+'/items?limit=50',{headers});
+  if(!response.ok)throw Error('track-readback '+response.status);
+  const rows=await response.json();
+  const actual=(rows.items||[]).map(x=>(x.item||x.track)?.uri);
+  if(rows.next||actual.length!==21||JSON.stringify(actual)!==JSON.stringify(uris))throw Error('track-readback-order');
+  return actual;
+ }
+ await readTracks();
+ if(JSON.stringify(manifest.freeze?.orderedTrackIds)!==JSON.stringify(uris.map(u=>u.replace('spotify:track:',''))))throw Error('manifest-order-mismatch');
+ const ar=await request('../'+manifest.artwork.assetId,{cache:'no-store'});
+ if(!ar.ok)throw Error('artwork-asset '+ar.status);
+ const original=await ar.blob();
+ const sourceSha256=await verifyArtworkIdentity(original,manifest.artwork);
+ const blob=await prepareArtwork(original,options.artworkEnvironment);
+ if(encodedLength(blob.size)>MAX_ENCODED_BYTES)throw Error('artwork-encoded-size-too-large');
+ const bytes=new Uint8Array(await blob.arrayBuffer());
+ if(bytes[0]!==255||bytes[1]!==216)throw Error('artwork-jpeg-invalid');
+ let binary='';for(const byte of bytes)binary+=String.fromCharCode(byte);
+ const encoded=btoa(binary);
+ if(encoded.length>MAX_ENCODED_BYTES)throw Error('artwork-encoded-size-too-large');
+ const up=await request(base+'/images',{method:'PUT',headers:{...headers,'Content-Type':'image/jpeg'},body:encoded});
+ if(!up.ok)throw Error('artwork-upload '+up.status);
+ const ir=await request(base+'/images',{headers});
+ if(!ir.ok)throw Error('artwork-readback '+ir.status);
+ const images=await ir.json();
+ if(!Array.isArray(images)||!images.some(i=>i.url))throw Error('artwork-readback-empty');
+ // Only playlist metadata is written here. Track endpoints remain read-only.
+ async function readDescription(){
+  const response=await request(base+'?fields=description',{headers});
+  if(!response.ok)throw Error('description-readback '+response.status);
+  const data=await response.json();
+  return data.description;
+ }
+ let descriptionUpdated=false;
+ if(await readDescription()!==description){
+  const update=await request(base,{method:'PUT',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({description})});
+  if(!update.ok)throw Error('description-update '+update.status);
+  descriptionUpdated=true;
+  if(await readDescription()!==description)throw Error('description-readback-mismatch');
+ }
+ const actual=await readTracks();
+ return {playlistId,trackCount:actual.length,orderedUris:actual,description,descriptionUpdated,descriptionReadback:true,artworkAttached:true,artworkReadback:true,artworkSourceSha256:sourceSha256,artworkOriginalBytes:original.size,artworkUploadBytes:blob.size,artworkEncodedBytes:encoded.length,folderPlacement:manifest.publication?.spotify?.folderPlacement==='known-technical-limitation'?'known-technical-limitation':'manual-pending',weekComplete:false,expressPublication:'awaiting-operational-destination'};
+}
+
 const api={verifyAndAttach,prepareArtwork,encodedLength,MAX_ENCODED_BYTES};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.MUSIC_DNA_WEEK_DELIVERY_V1=api;
 })(typeof window!=='undefined'?window:globalThis);

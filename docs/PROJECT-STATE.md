@@ -1,9 +1,13 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-09**
-**Status: W41-selectie en bezorgcontroles hersteld en offline getest; Master 1.14.4 / CSV / Depot consistent; 230 verouderde jaarmeldingen verwijderd. Echte zaterdaglevering, actuele apparaat-FIFO en definitieve DNA Express-publicatie blijven onbewezen.**
+**Last updated: 2026-10-10**
+**Status: W41 Spotify-hoes en museumtekst via desktop hersteld en teruggelezen; 21 bestaande tracks en volgorde behouden. Automatische aflevering, volledige eligibility, apparaat-FIFO, DNA Express en museumpublicatie blijven onbewezen.**
 
-## Actuele hervatplek — betrouwbaarheid, 9 oktober 2026
+## Actuele hervatplek — W41 metadataherstel, 10 oktober 2026
+
+[Herstelbewijs en beperkingen](W41-METADATA-RECOVERY-2026-10-10.md): de bestaande privéplaylist `0VyIb6M1YWFPsPWaDjYYEf` heeft de Citrien-hoes en 295 tekens museumtekst. Alle 21 trackregels voor/direct na opslaan zijn gelijk. Dag 7 blijft onbeoordeeld; de automatische vrijgave blijft gesloten. Main vóór deze wijziging: `53f6b075fdda63acb18032b6c22a6366e4064023`, Pages-run `38063189292` geslaagd. De beschrijvingsstap ontbrak in de code; gerichte correctie met 18 offline mockcontroles voorbereid. Geen nieuwe Spotifyplaylist aanmaken; eerst bestaande desktopaflevering met apparaatopslag en reserveverbruik reconciliëren.
+
+## Historische hervatplek — betrouwbaarheid, 9 oktober 2026
 
 [Herstel en verificatie](W41-RELIABILITY-CHECK-2026-10-09.md): **lokale herstelbranch; upload door automatische goedkeuringscontrole tegengehouden. Deze nieuwe correcties zijn nog niet live.** Actuele `main` gecontroleerd vanaf `0987b7f`; de bestaande Pages-uitrol van die commit is geslaagd. Kleine reparaties voor Spotify-opnamealiassen, duurzaam reserveverbruik, gewijzigde hoesbestanden, officiële weekcapaciteit en verouderde Depotmeldingen zijn getest. De offline suite kan zonder persoonlijke export worden uitgevoerd; W41 is daarnaast herhaald met de bestaande echte historische export van 3 oktober en uitsluitend synthetische toekomstige W41-beoordelingen.
 
