@@ -64,3 +64,29 @@ quotaContext.window=quotaContext;vm.createContext(quotaContext);vm.runInContext(
 assert.equal(quotaContext.MUSIC_DNA_POSITIVE_BANK.commitSaturdayPlaylist(gift),false);
 
 console.log('PASS: recording aliases, exact Spotify URLs, recording consumption across reimports, legacy delivery IDs, FIFO and historical preservation.');
+
+// A two-artist reserve must not make 21 tracks fail with 22 artist credits.
+const collaborationSignals = {...signals,
+  collaboration:row(92,{artist:'Violet Janine;Pontus Snibb',ratedAt:'2026-09-01T00:00:00Z'})};
+const collaborationBefore=JSON.stringify(collaborationSignals);
+({bank,store}=boot(collaborationSignals));
+gift=bank.buildSaturdayPlaylist('2026-W41',[]);
+assert.equal(gift.full,true);
+assert.equal(gift.uniqueArtistCount,21);
+assert(!gift.ids.includes('collaboration'));
+assert(gift.blockedReserveArtistCount.includes('collaboration'));
+assert.equal(JSON.stringify(collaborationSignals),collaborationBefore,'skipping reserve preserves its rating');
+// Official week positives retain priority: do not silently discard a collaboration.
+gift=bank.buildSaturdayPlaylist('2026-W41',['collaboration']);
+assert.equal(gift.full,false);
+assert.equal(gift.size,0);
+assert.equal(gift.uniqueArtistCount,22);
+assert(!gift.blockedReserveArtistCount.includes('collaboration'));
+assert(gift.sequenceIntegrity.beforeIds.includes('collaboration'));
+// An insufficient single-artist reserve remains incomplete, never a full gift.
+({bank}=boot({collaboration:collaborationSignals.collaboration,
+  ...Object.fromEntries(Array.from({length:20},(_,i)=>['single-'+i,row(i+100)]))}));
+gift=bank.buildSaturdayPlaylist('2026-W41',[]);
+assert.equal(gift.full,false);
+assert.equal(gift.size,20);
+console.log('PASS: reserve collaboration skipped with reason, rating preserved, official collaboration blocks, shortage remains incomplete.');
