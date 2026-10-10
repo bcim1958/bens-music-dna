@@ -2,7 +2,7 @@
 function read(k,f){try{var x=localStorage.getItem(k);return x?JSON.parse(x):f}catch(e){return f}}
 function write(k,v){localStorage.setItem(k,JSON.stringify(v))}
 function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
-function load(src){return new Promise(function(ok,no){var s=document.createElement('script');s.src=src+(src.indexOf('?')>=0?'&':'?')+'v=20261009.recording-safe1';s.onload=ok;s.onerror=no;document.head.appendChild(s)})}
+function load(src){return new Promise(function(ok,no){var s=document.createElement('script');s.src=src+(src.indexOf('?')>=0?'&':'?')+'v=20261010.w41-preview1';s.onload=ok;s.onerror=no;document.head.appendChild(s)})}
 function stateKey(d){return'bmd-week-'+WEEK+'-day'+d+'-v1'}
 function selectionKey(d){return'bmd-week-'+WEEK+'-day'+d+'-selection-v1'}
 function reserveStateKey(d){return'bmd-week-'+WEEK+'-day'+d+'-reserve-v1'}
