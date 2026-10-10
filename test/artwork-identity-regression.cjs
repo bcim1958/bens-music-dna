@@ -8,7 +8,7 @@ manifest.freeze={orderedTrackIds:uris.map(u=>u.replace('spotify:track:',''))};
 async function attempt(bytes,m=manifest){
  let writes=0;
  const fetch=async(url,o={})=>{
-  if(url.endsWith('/items?limit=50'))return {ok:true,json:async()=>({items:uris.map(uri=>({item:{uri}})),next:null})};
+  if(url.endsWith('?fields=description'))return {ok:true,json:async()=>({description:manifest.gemstone.editorialText})};if(url.endsWith('/items?limit=50'))return {ok:true,json:async()=>({items:uris.map(uri=>({item:{uri}})),next:null})};
   if(url.startsWith('../'))return {ok:true,blob:async()=>new Blob([bytes],{type:'image/jpeg'})};
   if(o.method==='PUT'){writes++;return {ok:true};}
   if(url.endsWith('/images'))return {ok:true,json:async()=>[{url:'mock-image'}]};
