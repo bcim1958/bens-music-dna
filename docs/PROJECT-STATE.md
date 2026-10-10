@@ -1,9 +1,20 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-09**
-**Status: W41-selectie en bezorgcontroles hersteld en offline getest; Master 1.14.4 / CSV / Depot consistent; 230 verouderde jaarmeldingen verwijderd. Echte zaterdaglevering, actuele apparaat-FIFO en definitieve DNA Express-publicatie blijven onbewezen.**
+**Last updated: 2026-10-10**
+**Status: W42 NO-GO — kandidaatcapaciteit en cadeaugegevens ontoereikend. Automatische overgang na laatste officiële zaterdagbeoordeling veilig voorbereid en offline getest; geen nieuwe productieaflevering bewezen.**
 
-## Actuele hervatplek — betrouwbaarheid, 9 oktober 2026
+## Actuele hervatplek — W42 herstel, 10 oktober 2026
+
+[W42-controle en correcties](W42-RECOVERY-2026-10-10.md): gecontroleerde main `53f6b075fdda63acb18032b6c22a6366e4064023`. W42 loopt zondag 11 t/m zaterdag 17 oktober, drie officiële aanbiedingen per dag. De herstelbranch registreert de week met `ready:false`, omdat nieuwe kandidaatvoorraad en cadeaugegevens ontbreken. De laatste officiële beoordeling opent voor expliciet ingestelde automatische weken direct het cadeau; optionele reservebeoordelingen houden die overgang niet tegen. De bestaande vrijgave-, datum-, voorraad- en Spotify-controles blijven vereist.
+
+W42: NO-GO. Acht catalogi / 456 interne IDs leveren op de export van 9 oktober 06:26 slechts 18 toegestane artiestcredits, waaronder 2 nieuwe. Minimaal 21 verschillende officiële artiesten en 14 nieuwe vereist. Geen actuele volledige apparaatopslag uit de screenshots afgeleid. De op 10 oktober aangeleverde screenshots tonen W41 nog als zesdaags voorstel (12 weekpositief + 9 reserve), met dag 7 niet aangeboden/beoordeeld. De bestaande W41-playlist blijft buiten deze correctie; desktopaflevering en apparaat/FIFO/manifest zijn niet gereconcilieerd.
+
+Open PRs vóór deze herstelbranch: #2, #3, #4, #5, #7, #10. #7 heeft samenvoegconflicten; #4 richt zich op #3. PR #10 bevat de afzonderlijke museumtekst-correctie en gerapporteerd desktopmetadataherstel. Geen open PR gemerged of uitgerold. Nieuwe correcties zijn uitsluitend op de herstelbranch getest; dit is geen productie- of zaterdagvrijgave.
+
+## Historische hervatplek — betrouwbaarheid, 9 oktober 2026
+
+**Onderstaande upload-/mainstatus is verouderd:** PR #1 is inmiddels gemerged in `e568fe4b`; main staat bij deze controle op `53f6b075`. Bewijsgrenzen van de historische proeven blijven gelden.
+
 
 [Herstel en verificatie](W41-RELIABILITY-CHECK-2026-10-09.md): **lokale herstelbranch; upload door automatische goedkeuringscontrole tegengehouden. Deze nieuwe correcties zijn nog niet live.** Actuele `main` gecontroleerd vanaf `0987b7f`; de bestaande Pages-uitrol van die commit is geslaagd. Kleine reparaties voor Spotify-opnamealiassen, duurzaam reserveverbruik, gewijzigde hoesbestanden, officiële weekcapaciteit en verouderde Depotmeldingen zijn getest. De offline suite kan zonder persoonlijke export worden uitgevoerd; W41 is daarnaast herhaald met de bestaande echte historische export van 3 oktober en uitsluitend synthetische toekomstige W41-beoordelingen.
 

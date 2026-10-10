@@ -13,7 +13,7 @@ function run(file,args=[]){
 }
 (async()=>{
  try{
-  for(const file of ['w41-preview-regression','positive-bank-recording-regression','w41-artist-uniqueness-regression','week-route-regression','discovery-policy-regression','discovery-week-capacity-regression','daily-reserve-capacity-regression','saturday-simulator-regression','w40-callback-recovery-regression','w40-resume-regression','artwork-payload-regression','artwork-identity-regression','week-manifest-counter-regression'])run('test/'+file+'.cjs');
+  for(const file of ['w42-readiness-regression','w42-cycle-regression','w41-preview-regression','positive-bank-recording-regression','w41-artist-uniqueness-regression','week-route-regression','discovery-policy-regression','discovery-week-capacity-regression','daily-reserve-capacity-regression','saturday-simulator-regression','w40-callback-recovery-regression','w40-resume-regression','artwork-payload-regression','artwork-identity-regression','week-manifest-counter-regression'])run('test/'+file+'.cjs');
   // Historical-shaped markers test preservation without importing personal storage
   // or treating W40 candidates as real ratings.
   const e=S.sandbox();
