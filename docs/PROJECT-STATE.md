@@ -1,15 +1,23 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-09**
-**Status: W41-selectie en bezorgcontroles hersteld en offline getest; Master 1.14.4 / CSV / Depot consistent; 230 verouderde jaarmeldingen verwijderd. Echte zaterdaglevering, actuele apparaat-FIFO en definitieve DNA Express-publicatie blijven onbewezen.**
+**Last updated: 2026-10-10**
+**Status: PR #1 samengevoegd en Pages succesvol uitgerold. W41 NO-GO op apparaatstand 9 oktober 06:26:02; latere apparaatstand niet onderzocht. Master 1.14.4 / CSV / Depot consistent (3.877 / 3.005 / 872). Echte zaterdaglevering en DNA Express-publicatie blijven onbewezen.**
 
 ## Actuele hervatplek — betrouwbaarheid, 9 oktober 2026
 
-[Herstel en verificatie](W41-RELIABILITY-CHECK-2026-10-09.md): **lokale herstelbranch; upload door automatische goedkeuringscontrole tegengehouden. Deze nieuwe correcties zijn nog niet live.** Actuele `main` gecontroleerd vanaf `0987b7f`; de bestaande Pages-uitrol van die commit is geslaagd. Kleine reparaties voor Spotify-opnamealiassen, duurzaam reserveverbruik, gewijzigde hoesbestanden, officiële weekcapaciteit en verouderde Depotmeldingen zijn getest. De offline suite kan zonder persoonlijke export worden uitgevoerd; W41 is daarnaast herhaald met de bestaande echte historische export van 3 oktober en uitsluitend synthetische toekomstige W41-beoordelingen.
+[Herstel en verificatie](W41-RELIABILITY-CHECK-2026-10-09.md): **PR #1 samengevoegd op `e568fe4b849a75ca6f7eb6e124d8cf9d5e8d070a` (9 oktober 15:39:50 Amsterdam).** Beide Pages-uitvoeringen voor dit commit zijn succesvol: [37938450534](https://github.com/bcim1958/bens-music-dna/actions/runs/37938450534) en [37938449582](https://github.com/bcim1958/bens-music-dna/actions/runs/37938449582). De eerdere uploadblokkade is historische context. Uitrolsucces bewijst geen W41-levering.
 
 De W41-voorraad bevat 226 tracks maar 24 artiestcredits. Extra voorraadplekken mogen de capaciteit voor de resterende officiële dagen niet uitputten. Bestaande dag-/reservekeuzes, beoordelingen en historische leveringen blijven behouden. Onvoldoende actuele capaciteit blijft een veilige blokkade; de reparatie verzint geen nieuwe kandidaten en vervangt geen reeds gemaakte keuzes.
 
 Voor zaterdag 10 oktober: gebruik de echte volledige W41-apparaatinvoer. Alle negen runtimecontroles moeten slagen vóór Spotify-bezorging; daarna playlistvolgorde, hoes, museum en zichtbare apparaat-afsluiting controleren. `spotifyWrites=0` en `endToEndProven=false` gelden voor de hier beschreven offline proeven. Een groene overdracht naar DNA Express bewijst geen gepubliceerde editie.
+
+## Actuele controle — 10 oktober 2026
+
+[Controle en veilige proefvolgorde](W41-CONTROLE-EN-PROEF-2026-10-10.md): oorspronkelijke export van 9 oktober 06:26:02 opnieuw offline gecontroleerd met de auditcode van PR #4. 456 kandidaat-ID's; alleen The Commoners en The Tubs toegestaan; geen dag-7-keuze. The Vintage Caravan mist volledige bibliotheekuitsluiting. Alle 135 opgeslagen FIFO-items zijn historisch aangeboden; geen vervangende officiële ontdekvoorraad. **NO-GO blijft gelden voor deze momentopname.** Een later apparaat mag alleen op nieuw bewijs worden beoordeeld.
+
+[PR #2](https://github.com/bcim1958/bens-music-dna/pull/2) is open en afzonderlijk. [PR #3](https://github.com/bcim1958/bens-music-dna/pull/3) is een open concept tegen main, met historieonderzoek en eerdere statuscorrectie. [PR #4](https://github.com/bcim1958/bens-music-dna/pull/4) is een open concept tegen de branch van #3. Geen van deze drie is samengevoegd; hun groene offline controles bewijzen geen aflevering. TOWER/Tanith-reserveherhaling is bewaard in #3; PR #1 herstelt uitsluiting binnen dezelfde week.
+
+[Special 106 en Blood Star](CHECKPOINT-2026-10-10-MELLOTRON-BLOOD-STAR.md) zijn nu als begrensde chatmeldingen in deze documentatie vastgelegd. Special 106: 15 nummers gemeld, exacte lijst en Spotify-controle ontbreken. Blood Star — Cold Moon: RAAK volgens Ben, opname-ID en operationele beoordeling niet geverifieerd. Geen automatische kandidaat-, Master-, FIFO- of playlistregistratie afgeleid.
 
 ## Broncontrole — Master 1.14.4, 8 oktober 2026
 
