@@ -15,6 +15,14 @@ W41 is op 10 oktober nood-gepubliceerd met 21 unieke nummers (9 oudere W39-reser
 
 PR #10/#11 blijven open concepten na inhoudelijke controle; geen merge. De 18 bestaande offline weekcontroles en Master/CSV/Depot-audit slagen op huidige main. Spotify-writes=0; endToEndProven=false. Volgende vrijgavestap: actuele dag-1-apparaatcontrole en nieuwe gecontroleerde dag-2-selectie met behoud van ratings, opname-/artiestuniekheid en FIFO. Dit is geen volledige maandag- of zaterdagvrijgave.
 
+## Toekomstige ontwerpafspraak — dagelijkse iPhone-badge, 11 oktober 2026
+
+**Lage prioriteit; pas oppakken NA betrouwbare W42 dag 2–7 en de zaterdagmachine. Nog niet geïmplementeerd of bewezen werkend.**
+
+Het Music DNA-beginschermicoon op iPhone krijgt als wens een rustige notificatiebadge voor het aantal nog niet beoordeelde **OFFICIËLE dagelijkse Ontdek-DNA-nummers**: bij start van de dag 3, na één beoordeling 2, na twee beoordelingen 1, na alle drie geen badge; de volgende dag weer 3. Conditionele reserves tellen nooit mee. Geen pushgeluid, geen opdringerige melding en geen dagelijkse gebruikershandelingen.
+
+Eerst technische haalbaarheid en benodigde toestemming voor de iOS PWA onderzoeken: Home Screen Web App, Badging API en eventuele notification-/push permission, inclusief bijwerken bij een nieuwe dag wanneer de app gesloten is. Eventuele eenmalige toestemming apart vaststellen; geen werkende badge of stille achtergrondverversing claimen vóór echte iPhone-verificatie. Deze afspraak verandert geen runtimecode, bestaande projectstatus, ratings, dagkeuzes, playlists of FIFO.
+
 ## Historische betrouwbaarheid — 9 oktober 2026
 
 [Herstel en verificatie](W41-RELIABILITY-CHECK-2026-10-09.md) bewaart het toenmalige lokale herstel en de destijds tegengehouden upload. Die uploadstatus is inmiddels achterhaald: herstelcode staat op main. Historische offline proeven, synthetische toekomstige ratings en oudere Pages-bewijzen bewijzen geen actuele apparaat-FIFO of volledige automatische productieaflevering. Bestaande beoordelingen, dagkeuzes en gesloten playlists blijven beschermd.
