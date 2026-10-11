@@ -1,7 +1,13 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-09**
-**Status: W41-selectie en bezorgcontroles hersteld en offline getest; Master 1.14.4 / CSV / Depot consistent; 230 verouderde jaarmeldingen verwijderd. Echte zaterdaglevering, actuele apparaat-FIFO en definitieve DNA Express-publicatie blijven onbewezen.**
+**Last updated: 2026-10-11 (consolidated checkpoint of 10 October; documentation branch, not yet main)**
+**Status: W41-playlist met 21 tracks, Citrien-hoes en museumtekst volgens PR #10 hersteld; automatische zaterdaglevering niet bewezen. W42 NO-GO wegens kandidaatvoorraad. PR #5/#10/#11 nog concept; geen productie-vrijgave. Master 1.14.4 / CSV / Depot blijven de laatst gerapporteerde gegevensbasis.**
+
+## Actuele hervatplek — checkpoint 10 oktober 2026 (vastgelegd 11 oktober)
+
+Zie [geconsolideerd checkpoint 10 oktober](CHECKPOINT-2026-10-10-CONSOLIDATED.md) voor de W41 Spotify-herstelstatus, de W42 NO-GO en de open PR's, plus nog niet gesynchroniseerde beoordelingen en Explorer-/Atlas-ideeën. Dit checkpoint is een **documentatievoorstel op aparte branch**, geen merge of deploy. PR #10/#11 moeten gezamenlijk worden gecontroleerd; bestaande Spotify-playlists en beoordelingen blijven intact.
+
+**Correctie bij de historische paragraaf hieronder:** de melding van 9 oktober dat eerdere reparaties niet waren geüpload, is achterhaald. Deze paragraaf blijft alleen als gedateerde historische context staan; niet als actuele status lezen.
 
 ## Actuele hervatplek — betrouwbaarheid, 9 oktober 2026
 
