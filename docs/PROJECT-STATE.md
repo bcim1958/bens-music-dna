@@ -1,15 +1,23 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-09**
-**Status: W41-selectie en bezorgcontroles hersteld en offline getest; Master 1.14.4 / CSV / Depot consistent; 230 verouderde jaarmeldingen verwijderd. Echte zaterdaglevering, actuele apparaat-FIFO en definitieve DNA Express-publicatie blijven onbewezen.**
+**Last updated: 2026-10-11**
+**Status: W42 dag 1 samengevoegd en publiek uitgerold; dag 2–7 en automatische zaterdaglevering NIET vrijgegeven. Actuele iPhone-opslag/FIFO onbekend.**
 
-## Actuele hervatplek — betrouwbaarheid, 9 oktober 2026
+## Actuele canonieke hervatplek — 11 oktober 2026
 
-[Herstel en verificatie](W41-RELIABILITY-CHECK-2026-10-09.md): **lokale herstelbranch; upload door automatische goedkeuringscontrole tegengehouden. Deze nieuwe correcties zijn nog niet live.** Actuele `main` gecontroleerd vanaf `0987b7f`; de bestaande Pages-uitrol van die commit is geslaagd. Kleine reparaties voor Spotify-opnamealiassen, duurzaam reserveverbruik, gewijzigde hoesbestanden, officiële weekcapaciteit en verouderde Depotmeldingen zijn getest. De offline suite kan zonder persoonlijke export worden uitgevoerd; W41 is daarnaast herhaald met de bestaande echte historische export van 3 oktober en uitsluitend synthetische toekomstige W41-beoordelingen.
+[Geconsolideerd checkpoint](CHECKPOINT-2026-10-10-CONSOLIDATED.md) en [voortzettingscontrole](CONTINUATION-CHECK-2026-10-11.md) vervangen oudere actuele statusclaims hieronder. Gecontroleerde basis: `3aca235e`, PR #12 merged om 14.06 Nederlandse tijd. Pages-deploy geslaagd en vijf dagelijkse appbestanden publiek bytegelijk aan die basis; echte iPhone-werking nog niet bewezen. Deze documentatiepromotie verandert geen runtimecode of gebruikersopslag.
 
-De W41-voorraad bevat 226 tracks maar 24 artiestcredits. Extra voorraadplekken mogen de capaciteit voor de resterende officiële dagen niet uitputten. Bestaande dag-/reservekeuzes, beoordelingen en historische leveringen blijven behouden. Onvoldoende actuele capaciteit blijft een veilige blokkade; de reparatie verzint geen nieuwe kandidaten en vervangt geen reeds gemaakte keuzes.
+W42 bevat uitsluitend de drie officiële dag-1-tracks ALIAS / Sea Lemon / Menomena en de twee conditionele reserves Lychee Juice / Beach Vacation. Maandag 12 oktober, dag 2, staat nog niet veilig klaar: selector is bewust begrensd op dag 1 en gecontroleerde vervolgplannen ontbreken. Ook W42-publicatiemanifest en runtime-release ontbreken. De laatste historische catalogusaudit uit PR #11 is geen actuele iPhone- of dag-2-vrijgave.
 
-Voor zaterdag 10 oktober: gebruik de echte volledige W41-apparaatinvoer. Alle negen runtimecontroles moeten slagen vóór Spotify-bezorging; daarna playlistvolgorde, hoes, museum en zichtbare apparaat-afsluiting controleren. `spotifyWrites=0` en `endToEndProven=false` gelden voor de hier beschreven offline proeven. Een groene overdracht naar DNA Express bewijst geen gepubliceerde editie.
+**Gebruikersregel:** dagelijks 3 officiële Ontdek-DNA-tracks, maximaal 2 conditionele reserves buiten de Muziekmeter; Ben beoordeelt alleen. Zaterdag 21 unieke positieve Spotify-nummers: huidige weekpositieven eerst, daarna ongebruikte positieve FIFO-reserve. Geen beoordelingen verzinnen, oude playlists overschrijven of reservegebruik dubbel registreren. **De Klankmakers** is de vaste DNA Express-instrumentenrubriek, inclusief de nog redactioneel uit te werken Moog-/Minimoog-verkenning.
+
+W41 is op 10 oktober nood-gepubliceerd met 21 unieke nummers (9 oudere W39-reserves, 12 externe). De export van 9 oktober 06.26 telde 44 ongebruikte positives; 23 is uitsluitend de theoretische stand na W41, geen actuele teller. W41-afboeking alleen na lezen van actuele opslag en bewezen ontbrekende registratie. Geen blinde afboeking, hardcoded teller of oude export terugzetten. Historische W36/W38-dubbelen ongemoeid.
+
+PR #10/#11 blijven open concepten na inhoudelijke controle; geen merge. De 18 bestaande offline weekcontroles en Master/CSV/Depot-audit slagen op huidige main. Spotify-writes=0; endToEndProven=false. Volgende vrijgavestap: actuele dag-1-apparaatcontrole en nieuwe gecontroleerde dag-2-selectie met behoud van ratings, opname-/artiestuniekheid en FIFO. Dit is geen volledige maandag- of zaterdagvrijgave.
+
+## Historische betrouwbaarheid — 9 oktober 2026
+
+[Herstel en verificatie](W41-RELIABILITY-CHECK-2026-10-09.md) bewaart het toenmalige lokale herstel en de destijds tegengehouden upload. Die uploadstatus is inmiddels achterhaald: herstelcode staat op main. Historische offline proeven, synthetische toekomstige ratings en oudere Pages-bewijzen bewijzen geen actuele apparaat-FIFO of volledige automatische productieaflevering. Bestaande beoordelingen, dagkeuzes en gesloten playlists blijven beschermd.
 
 ## Broncontrole — Master 1.14.4, 8 oktober 2026
 
@@ -41,7 +49,7 @@ Voor zaterdag 10 oktober: gebruik de echte volledige W41-apparaatinvoer. Alle ne
 
 [Checkpoint Depot, Listening DNA en corpus](CHECKPOINT-2026-10-07-DEPOT-LISTENING-DNA-CORPUS.md): Depot-proef 474 records, 410 geëxposeerd en 64 Onverkend; Special 104 live 15/15 gecontroleerd; Master 1.13 met 3.646 records. 71,17% betreft geregistreerd gebruik en is door gevonden registratieverschillen geen definitieve benuttingstelling. Streaminggeschiedenis aangevraagd, nog niet aantoonbaar ontvangen/ingelezen. Volledige Master-ontsluiting en gebruiksreconciliatie zijn vervolgstappen. Geen runtimewijziging of nieuwe W41-vrijgave.
 
-## Huidige hoofdroute — W41, gecontroleerd 5 oktober 2026
+## Historische hoofdroute — W41, gecontroleerd 5 oktober 2026
 
 [W41-voorbereiding](W41-PREPARATION-CHECK-2026-10-05.md): 226 kandidaten; zeven-daagse selectorproef en negen-stappen apparaatproef slagen met echte historische invoer en synthetische W41-beoordelingen. De echte productievrijgave blijft gesloten tot de beoordelingen van W41 compleet zijn en de apparaatcontrole slaagt. Zaterdaglevering 10 oktober nog onbewezen. W40 blijft een afzonderlijke historische herstelproef.
 
@@ -59,7 +67,7 @@ Zie [checkpoint 5 oktober](CHECKPOINT-2026-10-05-JAARBOEKEN-MASTER-ACTIELIJST.md
 
 ## Historische ingang — 23 september 2026
 
-## Actuele canonieke ingang
+## Historische canonieke ingang — 23 september
 
 **Nieuwste vervolg:** [Verhaal gelezen → vertelde vondsten verwerkt](VALIDATION-2026-09-23-STORY-DISCOVERY-READING.md). Registry `2026-09-23.3`: expliciete verhaalcoverage en een gecontroleerde leesstatusoperatie. Het producerverhaal verwerkt twee vondsten; Lordi en Ghost blijven beschikbaar. Audits en defectproeven PASS. De UI en W39 zijn ongewijzigd; zie de aanvulling voor de actuele hervatplek.
 
