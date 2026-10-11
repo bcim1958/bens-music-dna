@@ -437,3 +437,17 @@ After the visual gate passes: translate deliberately to iPhone/iPad, complete so
 
 ## Current health checkpoint
 The 2026-09-14 end-of-day GREEN checkpoint remains historical evidence for the prior state. This 2026-09-15 consolidation supersedes it as the central current map while preserving all closed-work protections.
+
+
+## W42 dag 2 — voorlopige kandidaten (11 oktober 2026)
+Onderzoeksresultaat, **NIET VRIJGEGEVEN** voor maandag 12 oktober; geen runtime-/Spotify-mutatie. Drie voorgestelde officiële ontdekkingen (nul nieuwe reserves; dag-1-reserves blijven beschermd):
+
+| Artiest | Track | Spotify-track-ID |
+| --- | --- | --- |
+| Chinese American Bear | Love You (爱你) | `7ef1yxmLkmfnLBSzlgAiUj` |
+| Friedberg | I Sometimes Do (But Mostly Might) | `125m8ZbcZOYBukLKEj8qF7` |
+| Kingcrow | Night Drive | `1nyW51X8LGzUD3Vaq34SsK` |
+
+Volgens de werkcontrole zijn Spotify-identiteiten via publieke bronnen nagegaan en komen deze tracks niet voor in de toen beschikbare Master/Depot- en historische selectiegegevens. Dit is **geen** verificatie tegen de actuele iPhone-opslag, de actuele positieve FIFO of Nederlandse accountafspeelbaarheid. De laatste beschikbare iPhone-export was van 9 oktober, vóór W41-publicatie en W42-dag-1-beoordelingen. Dag 2–7 en zaterdag blijven NO-GO totdat identiteit/nieuwheid tegen actuele gegevens, ratingbehoud en beperkte dagselector zijn gecontroleerd en getest. Niets uit oude exports terugzetten; geen W41-verbruik blind afboeken.
+
+**Apparaatobservatie (11 oktober):** op een gedeeld iPhone-screenshot oogt het Music DNA-beginschermpictogram scherper en opent de app zonder zichtbare GitHub-browserbalk. Dit is een gebruikerswaarneming, geen onafhankelijke PWA-/deploytest. De badgewens is een aparte toekomstige ontwerpafspraak, niet geïmplementeerd.
