@@ -15,6 +15,10 @@ W41 is op 10 oktober nood-gepubliceerd met 21 unieke nummers (9 oudere W39-reser
 
 PR #10/#11 blijven open concepten na inhoudelijke controle; geen merge. De 18 bestaande offline weekcontroles en Master/CSV/Depot-audit slagen op huidige main. Spotify-writes=0; endToEndProven=false. Volgende vrijgavestap: actuele dag-1-apparaatcontrole en nieuwe gecontroleerde dag-2-selectie met behoud van ratings, opname-/artiestuniekheid en FIFO. Dit is geen volledige maandag- of zaterdagvrijgave.
 
+## De Wandelende Jaarboeken — inhoudelijk dossier, 11 oktober 2026
+
+[Music DNA — De Wandelende Jaarboeken](DE-WANDELENDE-JAARBOEKEN-2026-10-11.md) bewaart de volledige overdracht, persoonlijke herinneringen aan Uriah Heep en Ten Years After en de eerste wandelmeting (1973: 4,6 km / 48:45; 11 nummers / 49:58). Jaarboeken 1970–1973 beluisterd volgens Ben; doel 1970–2025 vóór eind 2026, Jaarboek 2026 op 2 januari 2027. Herinneringen en luisterbeleving zijn gescheiden van de bronstatus van muziekfeiten. **Lage prioriteit:** Ontdek DNA en de zaterdagmachine blijven eerst; geen nieuwe appfuncties, databases, automatiseringen, verplicht verslagritme of wijzigingen aan playlists/ratings. Motto: **De muziek bepaalt de wandeling. De herinneringen bepalen het verhaal.**
+
 ## Toekomstige ontwerpafspraak — dagelijkse iPhone-badge, 11 oktober 2026
 
 **Lage prioriteit; pas oppakken NA betrouwbare W42 dag 2–7 en de zaterdagmachine. Nog niet geïmplementeerd of bewezen werkend.**
