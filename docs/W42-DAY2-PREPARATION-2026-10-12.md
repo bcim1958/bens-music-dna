@@ -45,3 +45,7 @@ Beide open draft en mergeable=false op de gelezen GitHub-snapshot.
 - #11 (`7706da39`): oudere W42-registratie ready=false plus automatische zaterdagovergang, synthetische zeven-dagenproef en historische voorraadaudit. Lokale merge-tree bevestigt conflicten in PROJECT-STATE, regressierunner, daily.html en weeks-config. Die registratie strookt niet meer met de inmiddels uitgerolde beperkte dag-1-config. Blind mergen kan die vrijgave terugdraaien. Geen geschikte dag-2-vrijgave.
 
 Deze PR's moeten apart met actuele main worden gereconcilieerd voor hun eigen vervolgdoel. Ze zijn niet vereist om alleen het beperkte maandagplan te beoordelen.
+
+## Inhoudelijke review en herstel — 12 oktober 2026
+
+[Review met defectreproducties en vrijgavegrenzen](W42-CODE-REVIEW-2026-10-12.md): opstartvalidatie, voorraadbehoud bij afwijkende beoordelingen en blijvende opslagweigering zijn hersteld met regressies. [20 offline programma’s PASS](W42-REVIEW-REGRESSIONS-2026-10-12.json). De eerdere 19-testset beschrijft de oorspronkelijke PR-head. Geen iPhone/Safari-proef; NO-GO voor merge/live vrijgave. Geen merge of uitrol uitgevoerd.
