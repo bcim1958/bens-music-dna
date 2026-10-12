@@ -1,7 +1,29 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-11**
-**Status: W42 dag 1 samengevoegd en publiek uitgerold; dag 2–7 en automatische zaterdaglevering NIET vrijgegeven. Actuele iPhone-opslag/FIFO onbekend.**
+**Last updated: 2026-10-12**
+**Status: W42 dag 2 gepubliceerd en op iPhone praktisch beoordeeld; dag 3–7 en automatische zaterdaglevering nog NIET end-to-end bewezen. Echte iPhone-data nog niet onafhankelijk als herstelkopie veiliggesteld.**
+
+## Actueel checkpoint — maandag 12 oktober 2026 (na PR #13 en #14)
+
+**GitHub-release:** `main` staat volgens de controle op commit `55645af2a5c83548982a8484900dd3293d0dbc90`. PR #14 (beschermde dagelijkse opslag via IndexedDB) en PR #13 (W42 dag 2 en opslagherstel) zijn samengevoegd. De oudere concept-/NO-GO-teksten verderop zijn historisch en weerspiegelen niet de inmiddels doorgevoerde dag-2-release. Dit checkpoint is alleen documentatie; geen runtimecode of Spotify-data aangepast.
+
+**Waargenomen op de echte iPhone op 12 oktober (gebruikersscreenshots en terugmelding):**
+- W42, dag 2 van 7 met Chinese American Bear — *Love You (爱你)*, **GOED**; Friedberg — *I Sometimes Do (But Mostly Might)*, **TERUGKOMEN**; Kingcrow — *Night Drive*, **TERUGKOMEN**.
+- Na de drie beoordelingen verscheen **‘VANDAAG VOLTOOID — Je bent helemaal bij!’** en **‘Positieve zaterdagvoorraad: 44 / 42 ✓’**.
+- De gebruiker sloot en opende de app opnieuw; de voltooide dag en de getoonde teller bleven zichtbaar. Dat bevestigt basale persistentie van dit dagbeeld, **niet** een onafhankelijke controle van iedere historische beoordeling, alle reserves of de volledige FIFO.
+- De gewenste rustige **iPhone-appicoonbadge** met aantal onbeoordeelde officiële nummers verscheen nog niet; afzonderlijk, laagprioritair verbeterpunt. Geen badgefunctionaliteit als geleverd beschouwen.
+
+**Technische beschermingslaag en bewijsgrens:** PR #14 introduceert beschermde opslag voor dagelijkse beoordelingen/reserves in IndexedDB, zodat verouderde gecachte pagina's die gegevens niet op dezelfde manier kunnen overschrijven. Werk-/browserproeven en regressies zijn gerapporteerd als geslaagd; dit bewijst niet dat de volledige echte iPhone-historie buiten het apparaat is veiliggesteld. De brongegevens op de iPhone zijn **niet** via GitHub uitgelezen of geback-upt. Een volledige herstelkopie dient nog via de bestaande exportpagina in dezelfde iPhone-appcontext te worden gecontroleerd; niet blind importeren, terugzetten of wissen. Exportroute: `test/gegevens-bewaren.html`. De gebruiker hoeft niet voor de checkpoint-documentatie nieuwe beoordelingen in te voeren.
+
+**Nog open:** W42 dag 3–7 moet op de werkelijke kalenderdagen afzonderlijk verschijnen en beoordeeld kunnen worden zonder verlies; de autonome zaterdagketen blijft **onbewezen** en PR #10/#11 staan voor zover laatst gecontroleerd afzonderlijk open. Geen automatische publicatie, correcte FIFO-afboeking, Spotify-mutatie of end-to-end geslaagdheid claimen op grond van alleen deze dag-2-proef. Een eventuele herstel-/vrijgaveactie volgt pas na afzonderlijke verificatie.
+
+**Wandeljournaal — tweede registratie:** 11 oktober, Jaarboek 1973: 4,6 km / 48:45 / 5,66 km/u. 12 oktober, Jaarboek 1974: 6,8 km / 64:58 / 6,28 km/u, netto na correctie van 1:20; laatste beluisterde nummer CAN — *Dizzy Dizzy*. Totaal twee geregistreerde wandelingen: **11,4 km / 1:53:43 / 6,01 km/u**. Jaarboeken 1970–1974 beluisterd; 1975 volgt. De dagnotities bewaren onder andere Bad Company (veranderde waardering), UFO/Iron Maiden, Sweet/Stryper, Rush/*Jacob's Ladder* (Wales 2017) en Robin Trower/*Bridge of Sighs* (Venetië). Dit is persoonlijk bronmateriaal; muziekfeiten blijven verificatieplichtig. Geen verplicht rapportageritme of nieuwe appfunctie.
+
+**DNA Express — redactionele ideeënvoorraad, nog geen publicatie:** (1) **KISS achter de schermen / De onzichtbare familie**: onderscheid aantoonbare actieve ondersteuning (tourpodium, productie, financiering, compositie, meespelen, label, aanbeveling) van louter invloed; succes én uitgebleven doorbraak, tegengetuigenissen en wederkerigheid onderzoeken; Angel/Casablanca, Van Halen, Cinderella/Bon Jovi, Rush, New England e.a. zijn onderzoekscases, **geen definitief geverifieerde credits of playlist**. Mogelijke artikelgedachte: *Niet alles wat KISS aanraakte, werd goud.* (2) **De geschiedenis van...** over levensloop en nalatenschap van bands. (3) **Voordat de eerste noot klinkt** over concertintro's en rituelen. Geen nieuw artikel of playlist zonder afzonderlijke redactionele uitvoering.
+
+**Prioriteit:** eerst deze archivering en behoud van bestaande gebruikersgegevens, daarna dag-3-praktijkwaarneming; geen app-herbouw, geen blind herstel, geen nieuwe badge-ontwikkeling voor de bewezen dagelijkse werking stabiel is.
+
+---
 
 ## Opslagherstel concept-PR #13 — 12 oktober 2026
 
