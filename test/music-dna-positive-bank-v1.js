@@ -10,7 +10,7 @@
   var BANK_KEY='bmd-positive-bank-v1';
   var PLAYLIST_HISTORY_KEY='bmd-positive-playlist-history-v1';
   function parse(raw,fallback){try{return raw?JSON.parse(raw):fallback;}catch(e){return fallback;}}
-  function read(key,fallback){return parse(storage.getItem(key),fallback);}
+  function read(key,fallback){var raw=storage.getItem(key);if(key!==BANK_KEY&&key!==PLAYLIST_HISTORY_KEY)return parse(raw,fallback);if(raw===null)return fallback;var v;try{v=JSON.parse(raw);}catch(e){throw Error('Bestaande '+key+' is onleesbaar; gegevens blijven bewaard.');}var field=key===BANK_KEY?'items':'weeks';if(!v||typeof v!=='object'||Array.isArray(v)||!v[field]||typeof v[field]!=='object'||Array.isArray(v[field]))throw Error('Bestaande '+key+' is ongeldig; gegevens blijven bewaard.');return v;}
   function write(key,value){try{storage.setItem(key,JSON.stringify(value));return true;}catch(e){return false;}}
   function signals(){var m=window.MUSIC_DNA_LEARNING&&window.MUSIC_DNA_LEARNING.read?window.MUSIC_DNA_LEARNING.read():null;return m&&m.signals?m.signals:{};}
   function history(){return read(PLAYLIST_HISTORY_KEY,{version:VERSION,weeks:{}});}
