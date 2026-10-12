@@ -1,0 +1,11 @@
+# W42 gecontroleerde vrijgave en herstel
+
+Vrijgavevolgorde: merge PR #14 met merge-commit in de headbranch van #13; controleer CI op de gecombineerde head; merge daarna #13 naar main. Main krijgt nooit de tussenversie zonder beschermde opslag. Controleer beide GitHub Pages-publicatieroutes en vergelijk de live dagelijkse bestanden met de finale commit.
+
+Herstel is behoudend en voorwaarts: publiceer nooit 7da8e87 of een eerdere localStorage-writer na overgang. Houd test/music-dna-daily-store-v1.js, de geïntegreerde dagelijkse pagina en releasepinnen van de finale W42-versie bij elkaar. Een fout in latere releases wordt hersteld door de volledige veilige W42-release op dezelfde origin te publiceren. Het bestaande IndexedDB-record blijft behouden en wordt gelezen; er is geen databaseversieverhoging, import, bronoverschrijving of reset nodig. Bij onleesbare opslag blijft de app gesloten voor writes; geen terugval naar de oorspronkelijke kopie.
+
+De pagina test/gegevens-bewaren.html gebruikt uitsluitend een readonly-transactie op het bestaande record. Zij exporteert het volledige record inclusief original en current, revision en origin, en alle nog bestaande bmd-bronstrings. Geen automatische import: een herstelkopie mag nooit stilzwijgend nieuwe beoordelingen overschrijven. Bewaar een kopie na de eerste gezonde overgang. Bij opslagverlies of corruptie: stop, bewaar de bestaande toestand, en behandel herstel afzonderlijk op basis van die kopie. Dit is geen garantie tegen verlies door wissen van websitegegevens of het apparaat.
+
+Eerste iPhone-controle: gebruik de bestaande app/Safari-opslagcontext, sluit oude Music DNA-pagina's, wis geen websitegegevens. Controleer bekende beoordelingen en reserves; W42 dag 2 opent na voltooiing van dag 1. Controleer Chinese American Bear — Love You (爱你), Friedberg — I Sometimes Do (But Mostly Might), Kingcrow — Night Drive. Geef één beoordeling en heropen in dezelfde context. Controleer behoud en bewaar vervolgens de volledige herstelkopie via gegevens-bewaren.html. Bij ontbrekende historie of wachtstand stoppen zonder reset.
+
+Geen Spotify-mutaties. W42-zaterdag en de zaterdagmachine blijven buiten scope. De iPhone-controle kan alleen de gebruiker in de bestaande apparaatcontext voltooien; desktopproeven vervangen dit niet.
