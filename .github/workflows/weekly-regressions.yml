@@ -21,3 +21,22 @@ jobs:
         run: node scripts/run-weekly-regressions.cjs
       - name: Master and Depot consistency
         run: python3 scripts/audit-master-depot.py
+  protected-storage-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright@1.62.1
+      - run: npx playwright install --with-deps chromium
+      - name: Verify protected storage and read-only recovery export
+        run: |
+          export MUSIC_DNA_CHROME="$(node -e "console.log(require('playwright').chromium.executablePath())")"
+          node test/daily-store-native-regression.cjs /tmp/w42-browser.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: w42-browser-evidence
+          path: /tmp/w42-browser.json

@@ -4,8 +4,8 @@ const {boot}=require('./w41-daily-regression.cjs');
 const date='2026-10-12T13:00:00+02:00',day='bmd-week-2026-W42-day2-v1',KEY='bmd-rating-transaction-v1';
 const flat=n=>[n,...(n.children||[]).flatMap(flat)];
 function fixture(){const ids=['0290eeW1DvuplJkqwhErTL','068KPJISmxyjh0pdetMKdP','65k71e3Z4ZY6JhXSsz6spz'].map(x=>'pilot-'+x);const reserve=['0tv2Vj73NTUs0FbUoHFOdZ','1bMV1Dw8B2feFudpLAdZQ8'].map(x=>'pilot-'+x);return new Map([['bmd-week-2026-W42-day1-selection-v1',JSON.stringify({ids})],['bmd-week-2026-W42-day1-v1',JSON.stringify(Object.fromEntries(ids.map(id=>[id,{rating:'goed',ratedAt:'2026-10-11'}])))] ,['bmd-week-2026-W42-day1-reserve-selection-v1',JSON.stringify({ids:reserve})],['bmd-week-2026-W42-day1-reserve-v1',JSON.stringify(Object.fromEntries(reserve.map(id=>[id,{rating:'goed',ratedAt:'2026-10-11',meter:false}])))]]);}
-function click(p){p.nodes.screen.children.find(n=>n.className==='card').onclick();flat(p.nodes.screen).find(n=>n.textContent==='👍 GOED').onclick();}
-async function pending(){const s=fixture(),p=await boot('daily.html',s,date),set=p.c.localStorage.setItem;p.c.localStorage.setItem=(k,v)=>{if(k===day)throw Error('injected crash before rating write');return set(k,v);};click(p);assert(s.has(KEY));return {s,j:JSON.parse(s.get(KEY))};}
+async function click(p){p.nodes.screen.children.find(n=>n.className==='card').onclick();await flat(p.nodes.screen).find(n=>n.textContent==='👍 GOED').onclick();}
+async function pending(){const s=fixture(),p=await boot('daily.html',s,date),set=p.c.localStorage.setItem;p.c.localStorage.setItem=(k,v)=>{if(k===day)throw Error('injected crash before rating write');return set(k,v);};await click(p);assert(s.has(KEY));return {s,j:JSON.parse(s.get(KEY))};}
 (async()=>{
  const baseline=process.argv.includes('--baseline'),evidence=[];
  for(const key of ['bmd-learning-v1','bmd-quarterly-doubt-v1','bmd-positive-bank-v1','bmd-positive-playlist-history-v1'])for(const raw of ['{broken','null','[]','{}','']){

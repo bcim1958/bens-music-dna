@@ -1,6 +1,7 @@
 /* Durable forward recovery, never rollback another writer's data. */
 (function(){
-  var KEY='bmd-rating-transaction-v1',storage=window.localStorage;
+  var localStorage=(typeof document!=='undefined'&&document.defaultView===window&&window.MUSIC_DNA_DAILY_STORE)?window.MUSIC_DNA_DAILY_STORE.view:window.localStorage;
+  var KEY='bmd-rating-transaction-v1',storage=localStorage;
   var lease=false;
   // Hold one browser-managed origin lock for this daily page's lifetime. This
   // also covers hydration, render-time bank writes and delayed learning tasks.
@@ -16,6 +17,7 @@
           // can still write localStorage. Stop this page when the browser reports
           // such a change; this cannot undo it or prevent writes before delivery.
           if(window.addEventListener)window.addEventListener('storage',function(e){
+            if(window.MUSIC_DNA_DAILY_STORE&&document.defaultView===window)return;
             if(!lease||e.storageArea!==storage||(e.key!==null&&e.key.indexOf('bmd-')!==0))return;
             window.MUSIC_DNA_STORAGE_BLOCKED=true;
             if(window.MUSIC_DNA_STORAGE_ERROR)window.MUSIC_DNA_STORAGE_ERROR(Error('Music-DNA-opslag is gewijzigd vanuit een ander document. Stop en laat de opgeslagen toestand controleren; wis geen websitegegevens.'));

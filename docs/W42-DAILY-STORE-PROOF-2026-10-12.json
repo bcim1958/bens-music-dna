@@ -1,0 +1,227 @@
+{
+  "baseCommit": "321376c1c758b09e3049744cf99f693caa3a7894",
+  "pass": true,
+  "native": [
+    {
+      "pass": true,
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "syntheticOnly": true,
+      "realBrowser": true,
+      "documents": "same-origin iframes (no top-level tab or iPhone claim)",
+      "productionWrites": 0,
+      "iphoneWrites": 0,
+      "spotifyWrites": 0,
+      "checks": [
+        "PASS: alle oorspronkelijke bytes, historische beoordelingen, reserves en FIFO behouden; nul writes aan bron",
+        "PASS: tweede echt browserdocument geblokkeerd vóór writes",
+        "PASS: werkelijke oude bankcode verwijdert bronreserve; beschermde reserve en volledige oorspronkelijke kopie blijven behouden, ook na clear",
+        "PASS: dag 2 beoordeling samen opgeslagen en behouden na heropenen met lege oude opslag",
+        "PASS: fout ná opslagverzoek geeft geen bevestiging en geen gedeeltelijke opslag; heropenen werkt",
+        "PASS: daadwerkelijk worker-gecachete oude bankcode kan beschermde opslag niet wijzigen"
+      ]
+    },
+    {
+      "pass": true,
+      "syntheticOnly": true,
+      "realBrowser": true,
+      "scenario": "pending",
+      "checks": [
+        "PASS: pending blocks cutover, preserves all source bytes and does not fall back"
+      ],
+      "iphoneWrites": 0,
+      "spotifyWrites": 0,
+      "productionWrites": 0
+    },
+    {
+      "pass": true,
+      "syntheticOnly": true,
+      "realBrowser": true,
+      "scenario": "unavailable",
+      "checks": [
+        "PASS: unavailable blocks cutover, preserves all source bytes and does not fall back"
+      ],
+      "iphoneWrites": 0,
+      "spotifyWrites": 0,
+      "productionWrites": 0
+    },
+    {
+      "pass": true,
+      "syntheticOnly": true,
+      "realBrowser": true,
+      "scenario": "abort",
+      "checks": [
+        "PASS: abort blocks cutover, preserves all source bytes and does not fall back"
+      ],
+      "iphoneWrites": 0,
+      "spotifyWrites": 0,
+      "productionWrites": 0
+    },
+    {
+      "pass": true,
+      "syntheticOnly": true,
+      "realBrowser": true,
+      "scenario": "empty",
+      "checks": [
+        "PASS: empty blocks cutover, preserves all source bytes and does not fall back"
+      ],
+      "iphoneWrites": 0,
+      "spotifyWrites": 0,
+      "productionWrites": 0
+    }
+  ],
+  "regressions": {
+    "pass": true,
+    "tests": [
+      {
+        "test": "test/rating-transition-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/rating-version-compat-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/rating-storage-concurrency-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/rating-journal-review-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/rating-storage-failure-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w42-review-storage-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w42-day2-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w42-day1-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w41-preview-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/positive-bank-recording-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w41-artist-uniqueness-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/week-route-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/discovery-policy-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/discovery-week-capacity-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/daily-reserve-capacity-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/saturday-simulator-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w40-callback-recovery-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w40-resume-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/artwork-payload-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/artwork-identity-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/week-manifest-counter-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w41-daily-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "scripts/saturday-simulator.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w41-runtime-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/express-delivery-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      }
+    ],
+    "syntheticRatings": true,
+    "spotifyWrites": 0,
+    "endToEndProven": false
+  },
+  "sourceSha256": {
+    "test/daily.html": "db57f35a2007e51d35f86eac6750265b453b7b8fac922da67709ae60e0049e6d",
+    "test/index.html": "ac8920be7928065807946ebf87a49c14e0f35ff16d94010569a3880039ed5844",
+    "test/music-dna-daily-store-v1.js": "6d92e31723d5cfa46dfa2438ff8ffb69bc0a6b39e5ea54d3b11c8de15b91e50b",
+    "test/music-dna-rating-transaction-v1.js": "d13b4efe1ecaf0f632802e274edf73d911d9034ad8c7d579eeb138da5ee93765",
+    "test/music-dna-learning-v1.js": "04c56d9f7f66cba36c9b62a7ae3b6cf8011f84f0eeaf0fcfa8b1eb89bf30e8e8",
+    "test/music-dna-positive-bank-v1.js": "7c76dd49ccf018f788b41b34f93d2b97e747d0f85e6ad8ea1f4f87b79cbb6459",
+    "test/music-dna-storage-v1.js": "2682e5058efcfcb249094b85a648c2020ca18e5ea1dcb891f06a3777789e9330",
+    "test/music-dna-prepared-day-v1.js": "57fec86f812457f948157d1a6dd54fe7df015215acff8595ee0299e4c1098f54",
+    "test/music-dna-discovery-v1.js": "8dfe55defe382dc4d2db40828e49a3d734102f9f3ef70e1646c2b6a0cbbb1e18",
+    "test/daily-store-native.html": "eaafe681fc9255b314c118d2ec3edef0a78376383ad8b061483ab8e30de99e6d",
+    "test/daily-store-native-regression.cjs": "73d93951b455fabb82abfa4a45cddc32ec1802304c3f5ce53fb2497309ae2de3"
+  },
+  "limits": [
+    "Synthetic browser data only; same-origin iframes, no final top-level-tab proof",
+    "No actual iPhone/Safari/PWA, suspension, BFCache, physical quota or OS crash proof",
+    "Source snapshot cannot recover losses predating capture; do not rate in old pages after cutover",
+    "Saturday remains separate and closed for W42"
+  ],
+  "productionWrites": 0,
+  "iphoneWrites": 0,
+  "spotifyWrites": 0
+}

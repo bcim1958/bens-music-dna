@@ -24,7 +24,7 @@ async function run(){
  await checkSnapshot({storage:{}});
  for(const verdict of ['❤️ RAAK','👍 GOED','😐 TERUGKOMEN','👎 NIET']){
   const {store,b}=await checkSnapshot({storage:{}}),card=b.nodes.screen.children.find(e=>e.tag==='section'&&e.className==='card');card.onclick();
-  const button=elements(b.nodes.screen).find(e=>e.textContent===verdict);assert(button);button.onclick();
+  const button=elements(b.nodes.screen).find(e=>e.textContent===verdict);assert(button);await button.onclick();
   const value=b.read(DAY+'-v1')[official[0]].rating;assert.equal(value,{'❤️ RAAK':'raak','👍 GOED':'goed','😐 TERUGKOMEN':'twijfel','👎 NIET':'nee'}[verdict]);
   assert.equal(b.c.MUSIC_DNA_LEARNING.read().signals[official[0]].rating,value);
   assert.equal(!!b.c.MUSIC_DNA_POSITIVE_BANK.sync().items[official[0]],value==='raak'||value==='goed');
@@ -37,7 +37,7 @@ async function run(){
   {'bmd-learning-v1':{signals:{old:{rating:'goed',artist:'ALIAS',title:'COCKTAILS AND DREAMS',spotifyUrl:'https://open.spotify.com/track/0290eeW1DvuplJkqwhErTL',spotifyResolvedExact:true}}}}
  ]){const store=storeFor({storage:history}),b=await boot('daily.html',store,date);assert.equal(b.read(DAY+'-selection-v1'),null);assert(b.nodes.screen.innerHTML.includes('historie'));}
  const {store,b}=await checkSnapshot({storage:{}});
- const reserveCard=b.nodes.screen.children.find(e=>e.className==='card reserve');assert(reserveCard);reserveCard.onclick();elements(b.nodes.screen).find(e=>e.textContent==='👍 GOED').onclick();
+ const reserveCard=b.nodes.screen.children.find(e=>e.className==='card reserve');assert(reserveCard);reserveCard.onclick();await elements(b.nodes.screen).find(e=>e.textContent==='👍 GOED').onclick();
  assert.equal(b.read(DAY+'-reserve-v1')[reserve[0]].meter,false);assert.equal(b.read(DAY+'-v1'),null);
  store.set(DAY+'-v1',JSON.stringify(Object.fromEntries(official.map(id=>[id,{rating:'goed',ratedAt:date}]))));
  store.set(DAY+'-reserve-v1',JSON.stringify(Object.fromEntries(reserve.map(id=>[id,{rating:'goed',ratedAt:date,meter:false}]))));

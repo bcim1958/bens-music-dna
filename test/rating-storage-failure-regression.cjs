@@ -10,7 +10,7 @@ function fixture(){return new Map(Object.entries({
  'bmd-week-2026-W42-day1-reserve-selection-v1':{ids:r1},
  'bmd-week-2026-W42-day1-reserve-v1':Object.fromEntries(r1.map(id=>[id,{rating:'goed',ratedAt:'2026-10-11',meter:false}]))
  }).map(([k,v])=>[k,JSON.stringify(v)]));}
-function click(p,label){p.nodes.screen.children.find(n=>n.className==='card').onclick();flat(p.nodes.screen).find(n=>n.textContent===label).onclick();}
+async function click(p,label){p.nodes.screen.children.find(n=>n.className==='card').onclick();await flat(p.nodes.screen).find(n=>n.textContent===label).onclick();}
 function preserved(before,s){for(const[k,v]of before)if(/^(bmd-week-.*day1-|bmd-positive-playlist-history|bmd-delivery)/.test(k))assert.equal(s.get(k),v,k);}
 (async()=>{
  const evidence=[];
@@ -34,14 +34,14 @@ function preserved(before,s){for(const[k,v]of before)if(/^(bmd-week-.*day1-|bmd-
  }
  // A conflicting value is never overwritten, even if other components need repair.
  for(const target of [day,'bmd-learning-v1','bmd-positive-bank-v1','bmd-week-2026-W42-day1-v1']){
-  const s=fixture(),p=await boot('daily.html',s,date),set=p.c.localStorage.setItem;p.c.localStorage.setItem=(k,v)=>{if(k==='bmd-positive-bank-v1')throw Error('quota');return set(k,v)};click(p,'👍 GOED');assert(s.has(journal));s.set(target,JSON.stringify({conflicting:'other writer'}));const before=new Map(s),re=await boot('daily.html',s,date);assert.equal(re.c.MUSIC_DNA_LEARNING,undefined);assert.match(re.nodes.screen.innerHTML,/Opslagconflict/);assert.deepEqual([...s],[...before]);
+  const s=fixture(),p=await boot('daily.html',s,date),set=p.c.localStorage.setItem;p.c.localStorage.setItem=(k,v)=>{if(k==='bmd-positive-bank-v1')throw Error('quota');return set(k,v)};await click(p,'👍 GOED');assert(s.has(journal));s.set(target,JSON.stringify({conflicting:'other writer'}));const before=new Map(s),re=await boot('daily.html',s,date);assert.equal(re.c.MUSIC_DNA_LEARNING,undefined);assert.match(re.nodes.screen.innerHTML,/Opslagconflict/);assert.deepEqual([...s],[...before]);
  }
  // Interruption at any durable boundary, including after a successful write.
  
  for(let boundary=1;boundary<=6;boundary++){
   const s=fixture(),p=await boot('daily.html',s,date),before=new Map(s);let n=0;
   const set=p.c.localStorage.setItem,remove=p.c.localStorage.removeItem;
-  p.c.localStorage.setItem=(k,v)=>{set(k,v);if(++n===boundary)throw Error('synthetic interruption after write')};p.c.localStorage.removeItem=k=>{remove(k);if(++n===boundary)throw Error('synthetic interruption after removal')};click(p,'😐 TERUGKOMEN');assert.match(p.nodes.screen.innerHTML,/niet bevestigd/);
+  p.c.localStorage.setItem=(k,v)=>{set(k,v);if(++n===boundary)throw Error('synthetic interruption after write')};p.c.localStorage.removeItem=k=>{remove(k);if(++n===boundary)throw Error('synthetic interruption after removal')};await click(p,'😐 TERUGKOMEN');assert.match(p.nodes.screen.innerHTML,/niet bevestigd/);
   const re=await boot('daily.html',s,date);assert(!s.has(journal));assert.equal(Object.values(re.read(day))[0].rating,'twijfel');preserved(before,s);
  }
  // Invalid journals fail closed before hydration and retain bytes.
@@ -49,14 +49,14 @@ function preserved(before,s){for(const[k,v]of before)if(/^(bmd-week-.*day1-|bmd-
  // Native storage failure on startup no longer disappears inside learning.
  for(const key of ['bmd-learning-v1','bmd-quarterly-doubt-v1','bmd-positive-bank-v1']){const s=fixture();s.set=function(k,v){if(k===key)throw Error('persistent startup quota');return Map.prototype.set.call(this,k,v)};const p=await boot('daily.html',s,date);assert.match(p.nodes.screen.innerHTML,/niet bevestigd/);assert(!s.has(day));}
  // Reserve path uses the same transaction and preserves meter=false.
- {const s=fixture();s.delete('bmd-week-2026-W42-day1-reserve-v1');const p=await boot('daily.html',s,'2026-10-11T13:00:00+02:00');p.nodes.screen.children.find(n=>n.className==='card reserve').onclick();flat(p.nodes.screen).find(n=>n.textContent==='👍 GOED').onclick();assert.equal(p.read('bmd-week-2026-W42-day1-reserve-v1')[r1[0]].meter,false);assert(!s.has(journal));}
+ {const s=fixture();s.delete('bmd-week-2026-W42-day1-reserve-v1');const p=await boot('daily.html',s,'2026-10-11T13:00:00+02:00');p.nodes.screen.children.find(n=>n.className==='card reserve').onclick();await flat(p.nodes.screen).find(n=>n.textContent==='👍 GOED').onclick();assert.equal(p.read('bmd-week-2026-W42-day1-reserve-v1')[r1[0]].meter,false);assert(!s.has(journal));}
  // No reliance on replacing the native Storage method, plus actual delayed callbacks.
  {const s=fixture(),callbacks=[],p=await boot('daily.html',s,date,{configure:c=>Object.defineProperty(c.localStorage,'setItem',{value:c.localStorage.setItem,writable:false}),setTimeout:fn=>callbacks.push(fn)});
   const set=s.set;s.set=function(k,v){if(k==='bmd-learning-v1')throw Error('delayed quota');return set.call(this,k,v)};callbacks[0]();assert.match(p.nodes.screen.innerHTML,/niet bevestigd/);assert(p.c.MUSIC_DNA_STORAGE_BLOCKED);const before=new Map(s);for(const fn of callbacks.slice(1))fn();assert.deepEqual([...s],[...before]);
  }
- {const s=fixture(),p=await boot('daily.html',s,date,{configure:c=>Object.defineProperty(c.localStorage,'setItem',{value:c.localStorage.setItem,writable:false})});click(p,'👍 GOED');assert.equal(Object.values(p.read(day))[0].rating,'goed');assert(!s.has(journal));}
+ {const s=fixture(),p=await boot('daily.html',s,date,{configure:c=>Object.defineProperty(c.localStorage,'setItem',{value:c.localStorage.setItem,writable:false})});await click(p,'👍 GOED');assert.equal(Object.values(p.read(day))[0].rating,'goed');assert(!s.has(journal));}
  // Reject unreadable state and changed selections at click time without replacing bytes.
- for(const target of [day,'bmd-week-2026-W42-day2-selection-v1']){const s=fixture(),p=await boot('daily.html',s,date);s.set(target,target===day?'{broken':JSON.stringify({ids:['changed']}));const before=new Map(s);click(p,'👍 GOED');assert.match(p.nodes.screen.innerHTML,/niet bevestigd/);assert.deepEqual([...s],[...before]);}
+ for(const target of [day,'bmd-week-2026-W42-day2-selection-v1']){const s=fixture(),p=await boot('daily.html',s,date);s.set(target,target===day?'{broken':JSON.stringify({ids:['changed']}));const before=new Map(s);await click(p,'👍 GOED');assert.match(p.nodes.screen.innerHTML,/niet bevestigd/);assert.deepEqual([...s],[...before]);}
  // Browsers can fire script.onload even when script evaluation threw.
  {const s=fixture();await boot('daily.html',s,date);const bank=s.get('bmd-positive-bank-v1');s.set=function(k,v){if(k==='bmd-learning-v1')throw Error('startup learning quota');return Map.prototype.set.call(this,k,v)};const p=await boot('daily.html',s,date,{runtimeErrorsUseOnload:true});assert.match(p.nodes.screen.innerHTML,/Learning kon niet veilig starten/);assert.equal(s.get('bmd-positive-bank-v1'),bank);assert.equal(p.c.MUSIC_DNA_POSITIVE_BANK,undefined);}
  if(process.argv[2])fs.writeFileSync(process.argv[2],JSON.stringify({pass:true,fixture:true,realBrowser:false,spotifyWrites:0,evidence,conflicts:4,interruptionBoundaries:6,delayedCallbackFailure:true,nativeMethodReplacementNotRequired:true,runtimeScriptErrorLoadModel:true,malformedClickStateBlocked:true},null,2)+'\n');
