@@ -12,6 +12,14 @@
         if(!lock){reject(Error('Music DNA is al geopend in een ander tabblad. Sluit dat tabblad en heropen deze pagina.'));return;}
         lease=true;resolve(true);
         return new Promise(function(release){
+          // Web Locks exclude cooperating daily pages only. A legacy document
+          // can still write localStorage. Stop this page when the browser reports
+          // such a change; this cannot undo it or prevent writes before delivery.
+          if(window.addEventListener)window.addEventListener('storage',function(e){
+            if(!lease||e.storageArea!==storage||(e.key!==null&&e.key.indexOf('bmd-')!==0))return;
+            window.MUSIC_DNA_STORAGE_BLOCKED=true;
+            if(window.MUSIC_DNA_STORAGE_ERROR)window.MUSIC_DNA_STORAGE_ERROR(Error('Music-DNA-opslag is gewijzigd vanuit een ander document. Stop en laat de opgeslagen toestand controleren; wis geen websitegegevens.'));
+          });
           if(window.addEventListener)window.addEventListener('pagehide',function(){lease=false;window.MUSIC_DNA_STORAGE_BLOCKED=true;release();},{once:true});
           if(window.addEventListener)window.addEventListener('pageshow',function(e){if(e.persisted&&!lease&&window.MUSIC_DNA_STORAGE_ERROR)window.MUSIC_DNA_STORAGE_ERROR(Error('Deze pagina heeft haar opslagvergrendeling vrijgegeven. Heropen Music DNA om veilig verder te gaan.'));});
         });

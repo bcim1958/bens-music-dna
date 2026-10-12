@@ -1,0 +1,38 @@
+{
+  "synthetic": true,
+  "realBrowser": true,
+  "iphoneSafari": false,
+  "origin": "http://127.0.0.1:8963",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "checks": [
+    "Fresh localhost with no pre-existing storage",
+    "Real top-level owner tab opened",
+    "Owner hydrated and startup timers settled",
+    "Real second top-level tab opened",
+    "Second top-level tab blocked before hydration and writes",
+    "Injected bank quota leaves journal and unconfirmed rating",
+    "Recovery top-level tab opened",
+    "Closing owner releases lock and reopen completes journal",
+    "Recovery preserves historical FIFO and playlist usage",
+    "Recovered day rating agrees with bank",
+    "Historical ratings, reserves and selections remain byte-identical",
+    "Explicit separate isolated origin supplied",
+    "Legacy writer on separate origin cannot change modern history or journal",
+    "Opened legacy writer still removes reserve despite held lock: release blocker",
+    "Native storage event stops modern journal and subsequent writes",
+    "Live modern tab opened for controllerchange",
+    "Native caching worker activated and claimed test page",
+    "Live native controllerchange stops writes with exact storage preservation",
+    "Historical bank bytes demonstrably served from worker Cache Storage",
+    "Controlled daily rejects before recovery, probe or hydration writes",
+    "Worker-cached legacy bytes still remove restored reserve: release blocker",
+    "Only own disposable worker registration and fixture cache removed"
+  ],
+  "limitations": [
+    "Storage events are asynchronous and cannot prevent the legacy write",
+    "Desktop Chromium only; no real iPhone, quota, OS crash or disk durability test"
+  ],
+  "pass": true,
+  "releaseAllowed": false,
+  "finishedAt": "2026-10-12T11:23:59.274Z"
+}
