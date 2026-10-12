@@ -1,0 +1,15 @@
+{
+  "pass": false,
+  "reproduced": true,
+  "synthetic": true,
+  "realBrowser": false,
+  "checks": [
+    "reproduced: external bmd-learning-v1 does not stop lease",
+    "reproduced: external bmd-positive-bank-v1 does not stop lease",
+    "reproduced: external bmd-positive-playlist-history-v1 does not stop lease",
+    "reproduced: external bmd-week-2026-W39-day1-v1 does not stop lease",
+    "reproduced: external bmd-week-2026-W42-day2-reserve-v1 does not stop lease",
+    "reproduced: external bmd-rating-transaction-v1 does not stop lease",
+    "reproduced: external null does not stop lease"
+  ]
+}

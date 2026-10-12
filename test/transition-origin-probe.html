@@ -1,0 +1,5 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Isolated origin legacy writer</title></head><body><pre id="result">Running</pre><script>
+if(location.hostname!=='127.0.0.1'||!location.port||localStorage.length)throw Error('Fresh localhost required');localStorage.setItem('bmd-positive-bank-v1',JSON.stringify({version:16,items:{'isolated-synthetic':{rating:'goed',firstPositiveAt:'2026-09-01',playlistUses:2}}}));window.MUSIC_DNA_LEARNING={read:()=>({signals:{}})};
+</script><script src="fixtures/compat-bank-85ad816.js"></script><script>
+if(location.hostname!=='127.0.0.1'||!location.port||!window.MUSIC_DNA_LEARNING)throw Error('Isolated seed required');MUSIC_DNA_POSITIVE_BANK.sync();const r={pass:!JSON.parse(localStorage.getItem('bmd-positive-bank-v1')).items['isolated-synthetic'],origin:location.origin,synthetic:true};document.querySelector('#result').textContent=JSON.stringify(r);parent.postMessage({type:'synthetic-origin-proof',report:r},'*');
+</script></body></html>

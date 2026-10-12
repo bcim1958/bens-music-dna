@@ -6,7 +6,7 @@ assert.equal(config.resolve(new Date(2026,9,3)).key,'2026-W40');
 assert.equal(config.resolve(new Date(2026,9,4)).key,'2026-W41');
 assert.equal(config.resolve(new Date(2026,9,10,23,59)).key,'2026-W41');
 assert.equal(config.resolve(new Date(2026,9,11)).key,'2026-W42');
-assert.equal(config.get('2026-W42').preparedThroughDay,1);
+assert.equal(config.get('2026-W42').preparedThroughDay,2);
 assert.equal(config.get('2026-W42').delivery,undefined);
 assert.equal(config.resolve(new Date(2026,9,18)),null);
 assert.equal(config.get('2026-W41').ready,true);

@@ -1,5 +1,6 @@
 // W40 day 3 onward only. Historical selectors and stored ratings remain intact.
 (function(){
+  var localStorage=(typeof document!=='undefined'&&document.defaultView===window&&window.MUSIC_DNA_DAILY_STORE)?window.MUSIC_DNA_DAILY_STORE.view:window.localStorage;
 'use strict';
 var VERSION='2026-10-09.1',REF=window.MUSIC_DNA_DISCOVERY_REFERENCE;
 if(!REF)throw Error('Ontdek-DNA referentie ontbreekt');

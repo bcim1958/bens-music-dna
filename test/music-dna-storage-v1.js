@@ -1,4 +1,5 @@
 (function(){
+  var localStorage=(typeof document!=='undefined'&&document.defaultView===window&&window.MUSIC_DNA_DAILY_STORE)?window.MUSIC_DNA_DAILY_STORE.view:window.localStorage;
   var VERSION=2;
   var PREFIX='bmd-';
   var META_KEY='bmd-storage-health-v1';
@@ -23,7 +24,7 @@
   function check(){
     var p=probe(),snap=snapshot(),fp=fingerprint(snap),previous=parse(localStorage.getItem(META_KEY),null);
     var sameOrigin=!previous||previous.origin===location.origin,nonShrinking=!previous||fp.keyCount>=Number(previous.keyCount||0),report={version:VERSION,ok:p.ok&&sameOrigin&&nonShrinking,checkedAt:new Date().toISOString(),origin:location.origin,keyCount:fp.keyCount,charCount:fp.charCount,digest:fp.digest,previous:previous,sameOrigin:sameOrigin,nonShrinking:nonShrinking};
-    if(p.ok){try{localStorage.setItem(META_KEY,JSON.stringify({version:VERSION,lastHealthyAt:report.checkedAt,origin:report.origin,keyCount:fp.keyCount,charCount:fp.charCount,digest:fp.digest}))}catch(e){report.ok=false;report.error=String(e&&e.message||e)}}
+    if(report.ok){try{localStorage.setItem(META_KEY,JSON.stringify({version:VERSION,lastHealthyAt:report.checkedAt,origin:report.origin,keyCount:fp.keyCount,charCount:fp.charCount,digest:fp.digest}))}catch(e){report.ok=false;report.error=String(e&&e.message||e)}}
     return report;
   }
   function exportJson(){

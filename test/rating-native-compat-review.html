@@ -1,0 +1,29 @@
+<!doctype html><meta charset="utf-8"><title>Music DNA cache compatibility proof</title><h1>Native cache compatibility proof</h1><button id="run">Run isolated synthetic checks</button><pre id="result">Ready — requires fresh 127.0.0.1 origin</pre><div id="pages"></div><script>
+document.querySelector('#run').onclick=async()=>{
+const report={synthetic:true,realBrowser:true,iphoneSafari:false,origin:location.origin,userAgent:navigator.userAgent,checks:[]},out=document.querySelector('#result');
+const check=(ok,name)=>{if(!ok)throw Error(name);report.checks.push(name);out.textContent=JSON.stringify(report,null,2);};
+const bytes=()=>JSON.stringify(Object.fromEntries(Object.keys(localStorage).sort().map(k=>[k,localStorage.getItem(k)])));
+const delay=ms=>new Promise(r=>setTimeout(r,ms));async function until(fn){for(let i=0;i<100;i++){if(fn())return;await delay(50);}throw Error('timeout');}
+function frame(body){const f=document.createElement('iframe');f.srcdoc='<base href="/test/">'+(body.toLowerCase().startsWith('<!doctype')?body:'<body>'+body);document.querySelector('#pages').append(f);return f;}
+try{
+check(location.hostname==='127.0.0.1'&&!!location.port&&!localStorage.length,'Fresh isolated localhost only');
+localStorage.setItem('bmd-learning-v1',JSON.stringify({version:9,signals:{'synthetic-history':{rating:'goed',weight:1,source:'official',ratedAt:'2026-09-01',artist:'Synthetic',title:'History',styles:[]}}}));
+localStorage.setItem('bmd-positive-bank-v1',JSON.stringify({version:16,items:{'synthetic-history':{trackId:'synthetic-history',rating:'goed',firstPositiveAt:'2026-09-01',playlistUses:2,lastPlaylistWeek:'2026-W39'}}}));
+localStorage.setItem('bmd-positive-playlist-history-v1',JSON.stringify({version:16,weeks:{'2026-W39':{ids:['synthetic-history','synthetic-history']}}}));
+const html=await(await fetch('daily.html')).text();const a=frame(html);await until(()=>a.contentWindow.MUSIC_DNA_LEARNING);check(true,'Modern daily owns native lock');
+await until(()=>a.contentDocument.querySelector(".card"));await delay(8500);const before=bytes();
+for(const route of ['daily-v2.html','week.html','zaterdagcadeau.html']){const legacy=frame(await(await fetch(route)).text());await until(()=>legacy.contentDocument.querySelector('#compat-wait'));await delay(100);check(bytes()===before&&!legacy.contentWindow.MUSIC_DNA_LEARNING,'CSP legacy route '+route+' has zero storage writes');legacy.remove();}
+for(const name of ['music-dna-learning-v1.js','music-dna-positive-bank-v1.js']){
+const f=frame('<script>window.addEventListener("error",e=>document.body.dataset.error=e.message);<\/script><script src="'+name+'"><\/script>');await until(()=>f.contentDocument.body.dataset.error);check(bytes()===before,'Legacy page + updated '+name+' rejected before writes');f.remove();}
+// Actual native SRI rejects baseline bank bytes even though URL resolves successfully.
+a.remove();await delay(200);
+const mixed=frame(html.replace("await load('music-dna-positive-bank-v1.js?v=20261012.storage-review2')","await load('fixtures/compat-bank-85ad816.js')").replace('var RELEASE_PINS={','var RELEASE_PINS={"fixtures/compat-bank-85ad816.js":'+JSON.stringify((html.match(/"music-dna-positive-bank-v1.js":"([^"]+)"/)||[])[1])+','));
+await until(()=>mixed.contentDocument.body.textContent.includes('Beoordeling niet bevestigd'));check(!mixed.contentWindow.MUSIC_DNA_POSITIVE_BANK,'Native SRI rejects cached baseline bank before evaluation');mixed.remove();await delay(200);
+const good=frame(html);await until(()=>good.contentWindow.MUSIC_DNA_POSITIVE_BANK);check(JSON.parse(localStorage.getItem('bmd-positive-bank-v1')).items['synthetic-history'].firstPositiveAt==='2026-09-01','FIFO firstPositiveAt retained after compatible reopen');check(JSON.parse(localStorage.getItem('bmd-positive-bank-v1')).items['synthetic-history'].playlistUses===2&&JSON.parse(localStorage.getItem('bmd-positive-bank-v1')).items['synthetic-history'].lastPlaylistWeek==='2026-W39','FIFO usage and lastPlaylistWeek retained');
+// Counterexample: original module never checks the new lock and accepts stale signals.
+const old=frame('<script>window.MUSIC_DNA_LEARNING={read:()=>({signals:{}})};<\/script><script src="fixtures/compat-bank-85ad816.js"><\/script><script>MUSIC_DNA_POSITIVE_BANK.sync();document.body.dataset.done="yes";<\/script>');await until(()=>old.contentDocument.body.dataset.done);check(!JSON.parse(localStorage.getItem('bmd-positive-bank-v1')).items['synthetic-history'],'Baseline cached writer reproduced: stale bank removes reserve while modern lock held');old.remove();good.remove();
+const frozen=bytes(),registration=await navigator.serviceWorker.register('compat-review-sw.js',{scope:'/test/'});await navigator.serviceWorker.ready;const swPage=frame(html);await until(()=>swPage.contentDocument.body.textContent.includes('service-workerregistratie'));check(bytes()===frozen&&!swPage.contentWindow.MUSIC_DNA_LEARNING,'Native service-worker registration blocks daily before all storage writes');swPage.remove();await registration.unregister();
+report.pass=true;out.textContent=JSON.stringify(report,null,2);
+}catch(e){report.pass=false;report.error=String(e.stack||e);out.textContent=JSON.stringify(report,null,2);}
+};
+</script>

@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "reproduced": false,
+  "synthetic": true,
+  "realBrowser": false,
+  "checks": [
+    "external bmd-learning-v1: stop without further writes or journal removal",
+    "external bmd-positive-bank-v1: stop without further writes or journal removal",
+    "external bmd-positive-playlist-history-v1: stop without further writes or journal removal",
+    "external bmd-week-2026-W39-day1-v1: stop without further writes or journal removal",
+    "external bmd-week-2026-W42-day2-reserve-v1: stop without further writes or journal removal",
+    "external bmd-rating-transaction-v1: stop without further writes or journal removal",
+    "external null: stop without further writes or journal removal",
+    "other storage area and unrelated key leave lease usable",
+    "persisted pageshow requires reopen",
+    "daily UI, learning and bank fail closed after external event"
+  ]
+}

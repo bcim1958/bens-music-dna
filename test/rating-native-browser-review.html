@@ -1,0 +1,26 @@
+<!doctype html><meta charset="utf-8"><title>Music DNA — isolated native storage review</title><h1>Native browser storage review</h1><pre id="result">Running on an isolated localhost origin with synthetic ratings…</pre><div id="pages"></div><script>
+(async()=>{
+const out=document.querySelector('#result'),KEY='bmd-rating-transaction-v1',day='bmd-week-2026-W42-day2-v1',report={synthetic:true,realBrowser:true,iphoneSafari:false,origin:location.origin,userAgent:navigator.userAgent,checks:[]};
+function check(ok,name){if(!ok)throw Error(name);report.checks.push(name);out.textContent=JSON.stringify(report,null,2);}
+function bytes(){return JSON.stringify(Object.fromEntries(Object.keys(localStorage).sort().map(k=>[k,localStorage.getItem(k)])));}
+const delay=ms=>new Promise(r=>setTimeout(r,ms));
+async function until(fn){for(let i=0;i<100;i++){if(fn())return;await delay(50);}throw Error('Timeout');}
+try{
+check(location.hostname==='127.0.0.1'&&!!location.port,'Localhost-only test origin');
+check(!Object.keys(localStorage).length,'Fresh isolated origin — no pre-existing storage');
+const ids=['0290eeW1DvuplJkqwhErTL','068KPJISmxyjh0pdetMKdP','65k71e3Z4ZY6JhXSsz6spz'].map(x=>'pilot-'+x),reserve=['0tv2Vj73NTUs0FbUoHFOdZ','1bMV1Dw8B2feFudpLAdZQ8'].map(x=>'pilot-'+x);
+for(const [k,v] of Object.entries({'bmd-week-2026-W42-day1-selection-v1':{ids},'bmd-week-2026-W42-day1-v1':Object.fromEntries(ids.map(id=>[id,{rating:'goed',ratedAt:'2026-10-11'}])),'bmd-week-2026-W42-day1-reserve-selection-v1':{ids:reserve},'bmd-week-2026-W42-day1-reserve-v1':Object.fromEntries(reserve.map(id=>[id,{rating:'goed',ratedAt:'2026-10-11',meter:false}]))}))localStorage.setItem(k,JSON.stringify(v));
+const html=await (await fetch('/test/daily.html')).text();
+const clock='<script>const nativeSet=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(window.injectBankFailure&&k==="bmd-positive-bank-v1")throw new DOMException("Synthetic quota failure","QuotaExceededError");return nativeSet.call(this,k,v);};const RealDate=Date;window.Date=class extends RealDate{constructor(...a){super(...(a.length?a:["2026-10-12T13:00:00+02:00"]));}static now(){return new RealDate("2026-10-12T13:00:00+02:00").getTime();}};<\/script>';
+function frame(){const f=document.createElement('iframe');f.style='width:400px;height:260px';f.srcdoc='<base href="/test/">'+clock+html;document.querySelector('#pages').append(f);return f;}
+const a=frame();await until(()=>a.contentWindow.MUSIC_DNA_LEARNING&&a.contentDocument.querySelector('.card'));check(true,'First page hydrated with native localStorage and Web Locks');
+a.contentWindow.injectBankFailure=true;
+a.contentDocument.querySelector('.card').click();[...a.contentDocument.querySelectorAll('.rate')].find(x=>x.textContent==='👍 GOED').click();check(a.contentDocument.body.textContent.includes('Beoordeling niet bevestigd')&&localStorage.getItem(KEY),'Native quota injection leaves a recoverable journal');
+const before=bytes(),b=frame();await until(()=>b.contentDocument.body.textContent.includes('ander tabblad'));check(bytes()===before&&!b.contentWindow.MUSIC_DNA_LEARNING,'Second live context blocked before hydration or writes');
+a.contentWindow.injectBankFailure=false;a.remove();await delay(300);
+const c=frame();await until(()=>c.contentWindow.MUSIC_DNA_LEARNING);check(localStorage.getItem(KEY)===null,'Closing first context releases native lock; reopen recovers journal');
+const id=Object.keys(JSON.parse(localStorage.getItem(day)))[0];check(JSON.parse(localStorage.getItem('bmd-positive-bank-v1')).items[id].rating==='goed','Recovered rating and positive bank agree');
+report.pass=true;out.textContent=JSON.stringify(report,null,2);
+}catch(e){report.pass=false;report.error=String(e.stack||e);out.textContent=JSON.stringify(report,null,2);}
+})();
+</script>

@@ -43,8 +43,8 @@ const MUSIC_DNA_WEEKS = (() => {
       key:'2026-W42',yearLabel:'2026',weekLabel:'W42',display:'2026 · W42',
       start:new Date(2026,9,11),end:new Date(2026,9,18),
       startText:'zondag 11 oktober',endText:'zaterdag 17 oktober 2026',
-      candidateGlobal:'MUSIC_DNA_W42_CANDIDATES',candidateFiles:['music-dna-w42-day1-v1.js'],ready:true,
-      preparedThroughDay:1,preparationStatus:'explicit-day-1-only-saturday-not-ready'
+      candidateGlobal:'MUSIC_DNA_W42_CANDIDATES',candidateFiles:['music-dna-w42-day1-v1.js','music-dna-w42-day2-v1.js'],ready:true,
+      preparedThroughDay:2,preparationStatus:'explicit-days-1-2-only-saturday-not-ready'
     }
   ];
   function get(key){return weeks.find(w => w.key === key) || null;}

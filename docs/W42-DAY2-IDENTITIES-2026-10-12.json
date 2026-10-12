@@ -1,0 +1,52 @@
+{
+  "source": "Live public Spotify embed, 12 October 2026",
+  "tracks": [
+    {
+      "id": "7ef1yxmLkmfnLBSzlgAiUj",
+      "title": "Love You (爱你)",
+      "artists": [
+        {
+          "name": "Chinese American Bear",
+          "uri": "spotify:artist:6WIb9mpc6lyBzAjTeGWvEh"
+        }
+      ],
+      "releaseDate": {
+        "isoString": "2024-10-18T00:00:00Z"
+      },
+      "duration": 237877,
+      "isPlayable": true
+    },
+    {
+      "id": "125m8ZbcZOYBukLKEj8qF7",
+      "title": "⁠I Sometimes Do (But Mostly Might)",
+      "artists": [
+        {
+          "name": "Friedberg",
+          "uri": "spotify:artist:0lqPfG8vAR30UX3cWDbCEn"
+        }
+      ],
+      "releaseDate": {
+        "isoString": "2024-11-08T00:00:00Z"
+      },
+      "duration": 187368,
+      "isPlayable": true
+    },
+    {
+      "id": "1nyW51X8LGzUD3Vaq34SsK",
+      "title": "Night Drive",
+      "artists": [
+        {
+          "name": "Kingcrow",
+          "uri": "spotify:artist:3nnSgQo8TIgiO5M5pv3mlV"
+        }
+      ],
+      "releaseDate": {
+        "isoString": "2024-08-23T00:00:00Z"
+      },
+      "duration": 348280,
+      "isPlayable": true
+    }
+  ],
+  "accountAvailabilityVerified": false,
+  "spotifyWrites": 0
+}
