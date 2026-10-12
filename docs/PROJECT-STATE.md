@@ -3,6 +3,10 @@
 **Last updated: 2026-10-11**
 **Status: W42 dag 1 samengevoegd en publiek uitgerold; dag 2–7 en automatische zaterdaglevering NIET vrijgegeven. Actuele iPhone-opslag/FIFO onbekend.**
 
+## Voorbereiding W42 dag 2 — 12 oktober 2026 (conceptbranch)
+
+[Controle en vrijgavevoorwaarden](W42-DAY2-PREPARATION-2026-10-12.md): Chinese American Bear / Friedberg / Kingcrow zijn opnieuw met exacte Spotify-track- en artiest-ID's gecontroleerd. Deze conceptbranch bereidt uitsluitend dag 2 voor met behoudsguards, nul nieuwe reserves en 19 geslaagde offline controles. **Geen productie-uitrol uitgevoerd; main blijft dag 1. Dag 3–7, automatische zaterdag en actuele apparaat-FIFO blijven onbewezen.** PR #10/#11 zijn open concepten met conflicten en niet samengevoegd. Geen privégegevens geïmporteerd of Spotify-mutaties uitgevoerd.
+
 ## Actuele canonieke hervatplek — 11 oktober 2026
 
 [Geconsolideerd checkpoint](CHECKPOINT-2026-10-10-CONSOLIDATED.md) en [voortzettingscontrole](CONTINUATION-CHECK-2026-10-11.md) vervangen oudere actuele statusclaims hieronder. Gecontroleerde basis: `3aca235e`, PR #12 merged om 14.06 Nederlandse tijd. Pages-deploy geslaagd en vijf dagelijkse appbestanden publiek bytegelijk aan die basis; echte iPhone-werking nog niet bewezen. Deze documentatiepromotie verandert geen runtimecode of gebruikersopslag.

@@ -3,11 +3,24 @@
   function read(key){var raw=localStorage.getItem(key);return raw===null?null:JSON.parse(raw);}
   function sid(value){if(/^[A-Za-z0-9]{22}$/.test(String(value||'')))return String(value);var m=String(value||'').match(/(?:track[:/]|(?:pilot|external)-)([A-Za-z0-9]{22})(?:$|[?#])/);return m&&m[1];}
   function norm(value){return String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');}
+  // The existing bank sync rebuilds items from signals and receipts. Stop before
+  // loading it when that would drop an item or restore a consumed FIFO entry.
+  function preflightStorage(){
+    var bank=read('bmd-positive-bank-v1'),learning=read('bmd-learning-v1'),history=read('bmd-positive-playlist-history-v1');
+    if(!bank)return;
+    if(!bank.items||typeof bank.items!=='object'||Array.isArray(bank.items))throw Error('De positieve voorraad vraagt controle; die is behouden.');
+    var signals=learning&&learning.signals||{},weeks=history&&history.weeks||{},uses={};
+    Object.keys(weeks).forEach(function(week){(weeks[week].ids||[]).forEach(function(id){uses[id]=(uses[id]||0)+1;});});
+    Object.keys(bank.items).forEach(function(id){var item=bank.items[id],signal=signals[id];
+      if(!item||!signal||!['raak','goed'].includes(signal.rating)||item.rating!==signal.rating)throw Error('Een voorraaditem mist een overeenkomend positief leersignaal; de voorraad is behouden.');
+      if((item.playlistUses||0)!==(uses[id]||0))throw Error('Reservegebruik en playlistregistratie verschillen; de FIFO is behouden.');
+    });
+  }
   function selection(cfg,candidates,day,isReserve,reserveCount){
-    if(day!==1||cfg.preparedThroughDay!==1)throw Error('De volgende dag staat nog niet klaar.');
+    if(!Number.isInteger(day)||day<1||day>cfg.preparedThroughDay||!candidates['day'+day])throw Error('De volgende dag staat nog niet klaar.');
     var base='bmd-week-'+cfg.key+'-day'+day;
     var officialKey=base+'-selection-v1',reserveKey=base+'-reserve-selection-v1';
-    var official=read(officialKey),reserve=read(reserveKey),plan=candidates.day1;
+    var official=read(officialKey),reserve=read(reserveKey),plan=candidates['day'+day];
     function check(q,expected){
       if(!q)return;
       if(!Array.isArray(q.ids)||q.ids.length!==expected||new Set(q.ids).size!==q.ids.length||q.ids.some(function(id){return !candidates.tracks[id];}))throw Error('Een bestaande dagkeuze vraagt herstel; die is behouden.');
@@ -16,8 +29,17 @@
     if(reserve&&(!reserve.ids.length||reserve.ids.length>2))throw Error('Een bestaande reservekeuze vraagt herstel; die is behouden.');
     if(!official&&read(base+'-v1'))throw Error('Bestaande beoordelingen zonder dagkeuze zijn behouden.');
     if(!reserve&&read(base+'-reserve-v1'))throw Error('Bestaande reservebeoordelingen zonder keuze zijn behouden.');
+    if(!plan||!Array.isArray(plan.official)||plan.official.length!==3||!Array.isArray(plan.reserve)||plan.reserve.length>2)throw Error('Het dagplan is niet geldig.');
     var ids=(official?official.ids:plan.official).concat(reserve?reserve.ids:plan.reserve.slice(0,reserveCount));
     if(new Set(ids).size!==ids.length)throw Error('Officiële nummers en reserves overlappen; bestaande gegevens zijn behouden.');
+    var artists=new Set(),recordings=new Set();
+    ids.forEach(function(id){var t=candidates.tracks[id],recording=t&&sid(t.spotifyUrl);if(!t||!recording||recordings.has(recording))throw Error('Het dagplan bevat een ontbrekende of dubbele opname.');recordings.add(recording);String(t.identity.artist||'').split(';').forEach(function(a){var key=norm(a);if(!key||artists.has(key))throw Error('Een artiest komt meermaals voor in het dagplan.');artists.add(key);});});
+    // Protect artist uniqueness across official, reserve and retired offers in this week.
+    for(var wd=1;wd<=7;wd++)if(wd!==day){
+      [read('bmd-week-'+cfg.key+'-day'+wd+'-selection-v1'),read('bmd-week-'+cfg.key+'-day'+wd+'-reserve-selection-v1')].forEach(function(q){
+        if(!q)return;(q.ids||(q.id?[q.id]:[])).concat(q.retiredIds||[]).forEach(function(id){var t=candidates.tracks[id]||(window.MUSIC_DNA_DB&&window.MUSIC_DNA_DB.tracks[id]);if(!t)throw Error('Een bestaande weekkeuze vraagt identiteitscontrole; die is behouden.');String(t.identity.artist||'').split(';').forEach(function(a){if(artists.has(norm(a)))throw Error('Een gekozen artiest is deze week al aangeboden.');});});
+      });
+    }
     var seen=new Set(),keys=new Set();
     function remember(value,key){
       if(typeof value==='string'){var recording=sid(value)||sid(key);if(recording)seen.add(recording);return;}
@@ -43,5 +65,5 @@
     q={ids:chosen.slice(),createdAt:new Date().toISOString(),meter:!isReserve,purpose:isReserve?'positive-reserve':'explicit-day-recovery',preparedDayVersion:1};
     localStorage.setItem(key,JSON.stringify(q));return q;
   }
-  window.MUSIC_DNA_PREPARED_DAY={selection:selection};
+  window.MUSIC_DNA_PREPARED_DAY={selection:selection,preflightStorage:preflightStorage};
 })();

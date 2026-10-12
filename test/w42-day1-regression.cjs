@@ -41,7 +41,7 @@ async function run(){
  assert.equal(b.read(DAY+'-reserve-v1')[reserve[0]].meter,false);assert.equal(b.read(DAY+'-v1'),null);
  store.set(DAY+'-v1',JSON.stringify(Object.fromEntries(official.map(id=>[id,{rating:'goed',ratedAt:date}]))));
  store.set(DAY+'-reserve-v1',JSON.stringify(Object.fromEntries(reserve.map(id=>[id,{rating:'goed',ratedAt:date,meter:false}]))));
- const monday=await boot('daily.html',store,'2026-10-12T13:00:00+02:00');assert.equal(monday.read('bmd-week-2026-W42-day2-selection-v1'),null);assert(elements(monday.nodes.screen).some(e=>e.textContent.includes('volgende dag')));
+ const monday=await boot('daily.html',store,'2026-10-12T13:00:00+02:00');assert.equal(monday.read('bmd-week-2026-W42-day2-selection-v1').ids.length,3);assert.equal(monday.read('bmd-week-2026-W42-day2-reserve-selection-v1'),null);
  // A selection we cannot resolve and orphan ratings must never be overwritten.
  for(const extra of [{[DAY+'-selection-v1']:{ids:['unknown-1','unknown-2','unknown-3']}},{[DAY+'-v1']:{orphan:{rating:'raak'}}}]){const store=storeFor({storage:extra}),before=new Map(store);await boot('daily.html',store,date);for(const [k,v] of before)assert.equal(store.get(k),v);}
  console.log(JSON.stringify({pass:true,historicalSnapshots:snapshots,buttons:4,syntheticTestRatingsOnly:true,spotifyWrites:0,weekAutomationProven:false}));
