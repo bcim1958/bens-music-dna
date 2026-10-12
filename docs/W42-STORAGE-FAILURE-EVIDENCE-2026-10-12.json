@@ -1,0 +1,147 @@
+{
+  "pass": true,
+  "fixture": true,
+  "realBrowser": false,
+  "spotifyWrites": 0,
+  "evidence": [
+    {
+      "rating": "raak",
+      "failure": "bmd-rating-transaction-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": false,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "raak",
+      "failure": "bmd-week-2026-W42-day2-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "raak",
+      "failure": "bmd-learning-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "raak",
+      "failure": "bmd-positive-bank-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "raak",
+      "failure": "remove-journal",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "goed",
+      "failure": "bmd-rating-transaction-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": false,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "goed",
+      "failure": "bmd-week-2026-W42-day2-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "goed",
+      "failure": "bmd-learning-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "goed",
+      "failure": "bmd-positive-bank-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "goed",
+      "failure": "remove-journal",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "twijfel",
+      "failure": "bmd-rating-transaction-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": false,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "twijfel",
+      "failure": "bmd-week-2026-W42-day2-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "twijfel",
+      "failure": "bmd-learning-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "twijfel",
+      "failure": "bmd-quarterly-doubt-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "twijfel",
+      "failure": "remove-journal",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "nee",
+      "failure": "bmd-rating-transaction-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": false,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "nee",
+      "failure": "bmd-week-2026-W42-day2-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "nee",
+      "failure": "bmd-learning-v1",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    },
+    {
+      "rating": "nee",
+      "failure": "remove-journal",
+      "visibleFailure": true,
+      "persistentReopenBlocked": true,
+      "historicalRatingsPreserved": true
+    }
+  ],
+  "conflicts": 4,
+  "interruptionBoundaries": 6,
+  "delayedCallbackFailure": true,
+  "nativeMethodReplacementNotRequired": true,
+  "runtimeScriptErrorLoadModel": true,
+  "malformedClickStateBlocked": true
+}
