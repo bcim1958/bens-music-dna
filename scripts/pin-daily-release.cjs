@@ -1,0 +1,13 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'../test'),file=path.join(root,'daily.html');let html=fs.readFileSync(file,'utf8');
+const names=new Set([...html.matchAll(/<script src="([^"?]+)/g)].map(m=>m[1]));
+for(const m of html.matchAll(/load\('([^'?]+\.js)/g))names.add(m[1]);
+for(const m of fs.readFileSync(path.join(root,'music-dna-weeks-v1.js'),'utf8').matchAll(/['"]([^'"?]+\.js)(?:\?[^'"]*)?['"]/g))names.add(m[1]);
+const pins=Object.fromEntries([...names].sort().map(name=>[name,'sha384-'+crypto.createHash('sha384').update(fs.readFileSync(path.join(root,name))).digest('base64')]));
+html=html.replace(/<script src="([^"]+)"(?: integrity="[^"]+" crossorigin="anonymous")?><\/script>/g,(m,src)=>`<script src="${src}" integrity="${pins[src.split('?')[0]]}" crossorigin="anonymous"></script>`);
+const literal='var RELEASE_PINS='+JSON.stringify(pins)+';';
+if(html.includes('var RELEASE_PINS='))html=html.replace(/var RELEASE_PINS=\{[^;]+;/,literal);else html=html.replace('function load(src){',literal+'\nfunction load(src){');
+html=html.replace("var s=document.createElement('script');s.src=src", "var s=document.createElement('script'),pin=RELEASE_PINS[src.split('?')[0]];if(!pin){no(Error('Onbekende releasecomponent: '+src));return;}s.integrity=pin;s.crossOrigin='anonymous';s.src=src");
+if(!html.includes('Ontbrekende releasecomponent'))html=html.replace('try{await cachePreflight();',"try{if(!window.MUSIC_DNA_RATING_TRANSACTION||typeof MUSIC_DNA_RATING_TRANSACTION.requireLease!=='function'||!window.MUSIC_DNA_STORAGE)throw Error('Ontbrekende releasecomponent; heropen Music DNA.');await cachePreflight();");
+if(process.argv.includes('--check')){if(html!==fs.readFileSync(file,'utf8'))throw Error('Daily release pins are stale');console.log('PASS daily release integrity pins');}else fs.writeFileSync(file,html);

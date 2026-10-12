@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "realBrowser": true,
+  "iphoneSafari": false,
+  "origin": "http://127.0.0.1:8952",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "checks": [
+    "Fresh isolated localhost only",
+    "Modern daily owns native lock",
+    "CSP legacy route daily-v2.html has zero storage writes",
+    "CSP legacy route week.html has zero storage writes",
+    "CSP legacy route zaterdagcadeau.html has zero storage writes",
+    "Legacy page + updated music-dna-learning-v1.js rejected before writes",
+    "Legacy page + updated music-dna-positive-bank-v1.js rejected before writes",
+    "Native SRI rejects cached baseline bank before evaluation",
+    "FIFO firstPositiveAt retained after compatible reopen",
+    "FIFO usage and lastPlaylistWeek retained",
+    "Baseline cached writer reproduced: stale bank removes reserve while modern lock held",
+    "Native service-worker registration blocks daily before all storage writes"
+  ],
+  "pass": true
+}

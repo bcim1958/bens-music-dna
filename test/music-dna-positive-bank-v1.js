@@ -1,4 +1,10 @@
 (function(){
+// Native document writers must belong to the reviewed daily release and lease.
+// Offline simulators have no executing browser script; they use synthetic storage.
+var nativeWriter=typeof document!=='undefined'&&document.defaultView===window;
+function requireWriter(){if(!nativeWriter)return;if(window.MUSIC_DNA_WRITER_RELEASE!=='20261012.compat1'||!window.MUSIC_DNA_RATING_TRANSACTION||typeof window.MUSIC_DNA_RATING_TRANSACTION.requireLease!=='function')throw Error('Oude of gemengde Music DNA-versie: heropen de dagelijkse pagina. Er wordt niets opgeslagen.');window.MUSIC_DNA_RATING_TRANSACTION.requireLease();}
+requireWriter();
+
   var storage=window.localStorage;
   function withStorage(s,fn){var previous=storage;storage=s;try{return fn()}finally{storage=previous}}
   var VERSION=16;
@@ -11,7 +17,7 @@
   var PLAYLIST_HISTORY_KEY='bmd-positive-playlist-history-v1';
   function parse(raw,fallback){try{return raw?JSON.parse(raw):fallback;}catch(e){return fallback;}}
   function read(key,fallback){var raw=storage.getItem(key);if(key!==BANK_KEY&&key!==PLAYLIST_HISTORY_KEY)return parse(raw,fallback);if(raw===null)return fallback;var v;try{v=JSON.parse(raw);}catch(e){throw Error('Bestaande '+key+' is onleesbaar; gegevens blijven bewaard.');}var field=key===BANK_KEY?'items':'weeks';if(!v||typeof v!=='object'||Array.isArray(v)||!v[field]||typeof v[field]!=='object'||Array.isArray(v[field]))throw Error('Bestaande '+key+' is ongeldig; gegevens blijven bewaard.');return v;}
-  function write(key,value){try{storage.setItem(key,JSON.stringify(value));return true;}catch(e){return false;}}
+  function write(key,value){try{if(storage===window.localStorage)requireWriter();storage.setItem(key,JSON.stringify(value));return true;}catch(e){return false;}}
   function signals(){var m=window.MUSIC_DNA_LEARNING&&window.MUSIC_DNA_LEARNING.read?window.MUSIC_DNA_LEARNING.read():null;return m&&m.signals?m.signals:{};}
   function history(){return read(PLAYLIST_HISTORY_KEY,{version:VERSION,weeks:{}});}
   function usedCounts(){var h=history(),out={};for(var week in h.weeks){var ids=h.weeks[week]&&h.weeks[week].ids||[];for(var i=0;i<ids.length;i++)out[ids[i]]=(out[ids[i]]||0)+1;}return out;}

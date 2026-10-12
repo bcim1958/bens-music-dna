@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "realBrowser": true,
+  "iphoneSafari": false,
+  "origin": "http://127.0.0.1:8951",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "checks": [
+    "Localhost-only test origin",
+    "Fresh isolated origin — no pre-existing storage",
+    "First page hydrated with native localStorage and Web Locks",
+    "Native quota injection leaves a recoverable journal",
+    "Second live context blocked before hydration or writes",
+    "Closing first context releases native lock; reopen recovers journal",
+    "Recovered rating and positive bank agree"
+  ],
+  "pass": true
+}

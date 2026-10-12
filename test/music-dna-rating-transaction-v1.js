@@ -18,7 +18,7 @@
       }).catch(reject);
     });
   }
-  function requireLease(){if(!lease)throw Error('Geen exclusieve opslagtoegang; heropen Music DNA.');}
+  function requireLease(){if(window.MUSIC_DNA_STORAGE_BLOCKED)throw Error('Geen exclusieve opslagtoegang: gestopt; heropen Music DNA.');if(!lease)throw Error('Geen exclusieve opslagtoegang; heropen Music DNA.');}
   var ratingKey=/^bmd-week-\d{4}-W\d{2}-day[1-7]-(?:reserve-)?v1$/;
   function allowed(k){return ratingKey.test(k)||['bmd-learning-v1','bmd-quarterly-doubt-v1','bmd-positive-bank-v1'].indexOf(k)!==-1;}
   function snapshot(){var out={};for(var i=0;i<storage.length;i++){var k=storage.key(i);if(k&&/^bmd-/.test(k)&&!/^bmd-storage-/.test(k)&&k!==KEY)out[k]=storage.getItem(k);}return out;}
@@ -108,5 +108,5 @@
       return true;
     });});
   }
-  window.MUSIC_DNA_RATING_TRANSACTION={key:KEY,acquire:acquire,save:save,recover:recover};
+  window.MUSIC_DNA_RATING_TRANSACTION={key:KEY,requireLease:requireLease,acquire:acquire,save:save,recover:recover};
 })();

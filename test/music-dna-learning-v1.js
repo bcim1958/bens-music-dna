@@ -1,7 +1,13 @@
 (function(){
+// Native document writers must belong to the reviewed daily release and lease.
+// Offline simulators have no executing browser script; they use synthetic storage.
+var nativeWriter=typeof document!=='undefined'&&document.defaultView===window;
+function requireWriter(){if(!nativeWriter)return;if(window.MUSIC_DNA_WRITER_RELEASE!=='20261012.compat1'||!window.MUSIC_DNA_RATING_TRANSACTION||typeof window.MUSIC_DNA_RATING_TRANSACTION.requireLease!=='function')throw Error('Oude of gemengde Music DNA-versie: heropen de dagelijkse pagina. Er wordt niets opgeslagen.');window.MUSIC_DNA_RATING_TRANSACTION.requireLease();}
+requireWriter();
+
 var storage=localStorage;
 function withStorage(s,fn){var previous=storage;storage=s;try{return fn()}finally{storage=previous}}
-function writable(){if(storage===localStorage&&(window.MUSIC_DNA_STORAGE_BLOCKED||storage.getItem('bmd-rating-transaction-v1')))throw Error('Een beoordeling wacht op opslagherstel.')}
+function writable(){if(storage===localStorage)requireWriter();if(storage===localStorage&&(window.MUSIC_DNA_STORAGE_BLOCKED||storage.getItem('bmd-rating-transaction-v1')))throw Error('Een beoordeling wacht op opslagherstel.')}
 var LEGACY_KEYS=['bmd-day1-v13','bmd-day2-v13','bmd-day3-v13','bmd-day4-v13','bmd-day5-v13','bmd-day6-v13','bmd-day7-v13','bmd-day8-v13','bmd-day9-v13','bmd-day10-v13'],LEARNING_KEY='bmd-learning-v1',DOUBT_KEY='bmd-quarterly-doubt-v1',WEIGHTS={raak:2,goed:1,twijfel:0,nee:-2},PROD_RE=/^bmd-week-\d{4}-W\d{2}-day[1-7]-v1$/,RESERVE_RE=/^bmd-week-\d{4}-W\d{2}-day[1-7]-reserve-v1$/;
 function safeParse(raw,f){try{return raw?JSON.parse(raw):f}catch(e){return f}}
 function readComponent(key,field,fallback){var raw=storage.getItem(key);if(raw===null)return fallback;var v;try{v=JSON.parse(raw)}catch(e){throw Error('Bestaande '+key+' is onleesbaar; gegevens blijven bewaard.')}
