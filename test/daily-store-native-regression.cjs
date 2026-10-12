@@ -53,6 +53,11 @@ async function rate(page,index=0){await page.locator('.card:not(.reserve)').nth(
   for(const k of Object.keys(raw).filter(k=>/day1-|W40|history|unknown/.test(k)))assert.equal(initial.current[k],raw[k],k);
   const bank=JSON.parse(initial.current['bmd-positive-bank-v1']);for(const id of ['fixture-fresh','fixture-used'])for(const field of ['firstPositiveAt','playlistUses','lastPlaylistWeek'])assert.equal(bank.items[id][field],source['bmd-positive-bank-v1'].items[id][field]);
   results.push('cutover retains every original byte; historical ratings, receipts and FIFO retained; zero source writes');
+  const recovery=await c.newPage();await recovery.goto(origin+'/test/gegevens-bewaren.html');
+  const downloadPromise=recovery.waitForEvent('download');await recovery.locator('#save').click();const download=await downloadPromise;
+  const downloadPath=await download.path(),exported=JSON.parse(fs.readFileSync(downloadPath,'utf8'));
+  assert.deepEqual(exported.record,await record(p));assert.deepEqual(exported.legacy,await legacy(old));assert.deepEqual(await record(p),initial);assert.deepEqual(await legacy(old),raw);await recovery.close();
+  results.push('full recovery export preserves original, current and legacy bytes; readonly, zero mutations');
   const second=await c.newPage();await second.goto(origin+'/test/daily.html');await settled(second);assert.match(await second.locator('#screen').innerText(),/ander tabblad/);assert.deepEqual(await record(p),initial);await second.close();results.push('second actual browser tab blocked before writes');
   await old.evaluate(()=>{window.MUSIC_DNA_LEARNING={read:()=>({signals:{}})};});await old.addScriptTag({content:fixture});await old.evaluate(()=>MUSIC_DNA_POSITIVE_BANK.sync());
   assert.equal(JSON.parse((await legacy(old))['bmd-positive-bank-v1']).items['fixture-fresh'],undefined);assert.deepEqual(await record(p),initial);results.push('actual historical bank code still deletes legacy reserve but cannot delete canonical reserve');
