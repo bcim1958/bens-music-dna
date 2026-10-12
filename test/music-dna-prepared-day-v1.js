@@ -1,5 +1,6 @@
 /* Explicit daily handoff. Reads current storage; never imports historical snapshots. */
 (function(){
+  var localStorage=(typeof document!=='undefined'&&document.defaultView===window&&window.MUSIC_DNA_DAILY_STORE)?window.MUSIC_DNA_DAILY_STORE.view:window.localStorage;
   function read(key){var raw=localStorage.getItem(key);return raw===null?null:JSON.parse(raw);}
   function sid(value){if(/^[A-Za-z0-9]{22}$/.test(String(value||'')))return String(value);var m=String(value||'').match(/(?:track[:/]|(?:pilot|external)-)([A-Za-z0-9]{22})(?:$|[?#])/);return m&&m[1];}
   function norm(value){return String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');}

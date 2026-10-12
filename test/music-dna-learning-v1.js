@@ -1,8 +1,9 @@
 (function(){
+  var localStorage=(typeof document!=='undefined'&&document.defaultView===window&&window.MUSIC_DNA_DAILY_STORE)?window.MUSIC_DNA_DAILY_STORE.view:window.localStorage;
 // Native document writers must belong to the reviewed daily release and lease.
 // Offline simulators have no executing browser script; they use synthetic storage.
 var nativeWriter=typeof document!=='undefined'&&document.defaultView===window;
-function requireWriter(){if(!nativeWriter)return;if(window.MUSIC_DNA_WRITER_RELEASE!=='20261012.compat1'||!window.MUSIC_DNA_RATING_TRANSACTION||typeof window.MUSIC_DNA_RATING_TRANSACTION.requireLease!=='function')throw Error('Oude of gemengde Music DNA-versie: heropen de dagelijkse pagina. Er wordt niets opgeslagen.');window.MUSIC_DNA_RATING_TRANSACTION.requireLease();}
+function requireWriter(){if(!nativeWriter)return;if(window.MUSIC_DNA_WRITER_RELEASE!=='20261012.daily-store1'||!window.MUSIC_DNA_RATING_TRANSACTION||typeof window.MUSIC_DNA_RATING_TRANSACTION.requireLease!=='function')throw Error('Oude of gemengde Music DNA-versie: heropen de dagelijkse pagina. Er wordt niets opgeslagen.');window.MUSIC_DNA_RATING_TRANSACTION.requireLease();}
 requireWriter();
 
 var storage=localStorage;
@@ -27,7 +28,7 @@ function ingestState(raw,source){var st=safeParse(raw,{});for(var id in st)if(st
 function ingestLegacy(raw){var st=safeParse(raw,{});for(var k in st){var r=st[k];if(!r||!r.rating)continue;var id=r.trackId||r.id||k;if(findTrack(id))upsertSignal(id,r.rating,r.ratedAt,'legacy')}}
 function resyncStoredRatings(){readLearning();readDoubts();for(var i=0;i<LEGACY_KEYS.length;i++)ingestLegacy(storage.getItem(LEGACY_KEYS[i]));for(var j=0;j<storage.length;j++){var k=storage.key(j);if(k&&PROD_RE.test(k))ingestState(storage.getItem(k),'official');else if(k&&RESERVE_RE.test(k))ingestState(storage.getItem(k),'reserve')}restoreReserve();hydrateExistingDelivery();return readLearning()}
 readLearning();readDoubts();hydrateExistingDelivery();resyncStoredRatings();
-var originalSetItem=localStorage.setItem.bind(localStorage);localStorage.setItem=function(key,value){writable();originalSetItem(key,value);if(storage!==localStorage)return;if(PROD_RE.test(key))ingestState(value,'official');else if(RESERVE_RE.test(key))ingestState(value,'reserve');else if(LEGACY_KEYS.indexOf(key)>=0)ingestLegacy(value)};
+if(!nativeWriter){var originalSetItem=localStorage.setItem.bind(localStorage);localStorage.setItem=function(key,value){writable();originalSetItem(key,value);if(storage!==localStorage)return;if(PROD_RE.test(key))ingestState(value,'official');else if(RESERVE_RE.test(key))ingestState(value,'reserve');else if(LEGACY_KEYS.indexOf(key)>=0)ingestLegacy(value)};}
 window.MUSIC_DNA_LEARNING={version:9,withStorage:withStorage,weights:WEIGHTS,storageKey:LEARNING_KEY,doubtStorageKey:DOUBT_KEY,officialStatePattern:PROD_RE,reserveStatePattern:RESERVE_RE,read:readLearning,readDoubts:readDoubts,hydrateExistingDelivery:hydrateExistingDelivery,restoreReserve:restoreReserve,resyncStoredRatings:resyncStoredRatings};
-[250,1000,3000,8000].forEach(function(ms){setTimeout(function(){try{resyncStoredRatings()}catch(e){if(window.MUSIC_DNA_STORAGE_ERROR)window.MUSIC_DNA_STORAGE_ERROR(e)}},ms)});
+if(!nativeWriter)[250,1000,3000,8000].forEach(function(ms){setTimeout(function(){try{resyncStoredRatings();}catch(e){if(window.MUSIC_DNA_STORAGE_ERROR)window.MUSIC_DNA_STORAGE_ERROR(e)}},ms)});
 })();

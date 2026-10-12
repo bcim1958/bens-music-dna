@@ -24,14 +24,14 @@ function elements(n){return [n,...(n.children||[]).flatMap(elements)];}
  const frozen=store.get(BASE+'-selection-v1');await boot('daily.html',store,date);assert.equal(store.get(BASE+'-selection-v1'),frozen);
  for(const [label,value] of [['❤️ RAAK','raak'],['👍 GOED','goed'],['😐 TERUGKOMEN','twijfel'],['👎 NIET','nee']]){
   const s=fixture(),p=await boot('daily.html',s,date),prior=new Map(s),oldBank=p.read('bmd-positive-bank-v1');
-  p.nodes.screen.children.find(n=>n.className==='card').onclick();elements(p.nodes.screen).find(n=>n.textContent===label).onclick();
+  p.nodes.screen.children.find(n=>n.className==='card').onclick();await elements(p.nodes.screen).find(n=>n.textContent===label).onclick();
   assert.equal(p.read(BASE+'-v1')[official[0]].rating,value);assert.equal(p.read(BASE+'-v1')[official[0]].meter,true);
   assert.equal(!!p.read('bmd-positive-bank-v1').items[official[0]],['raak','goed'].includes(value));
   for(const id of r1){const old=oldBank.items[id],now=p.read('bmd-positive-bank-v1').items[id];assert.equal(now.firstPositiveAt,old.firstPositiveAt);assert.equal(now.playlistUses,old.playlistUses);assert.equal(now.lastPlaylistWeek,old.lastPlaylistWeek);}
   preserve(prior,s);const rating=s.get(BASE+'-v1');await boot('daily.html',s,date);assert.equal(s.get(BASE+'-v1'),rating);
  }
  // All three actual rating handlers complete day 2 without creating a reserve or day 3.
- for(let i=0;i<3;i++){const p=await boot('daily.html',store,date);p.nodes.screen.children.find(n=>n.className==='card'&&n.children.some(c=>c.textContent===p.c.MUSIC_DNA_W42_CANDIDATES.tracks[official[i]].identity.title)).onclick();elements(p.nodes.screen).find(n=>n.textContent==='👍 GOED').onclick();}
+ for(let i=0;i<3;i++){const p=await boot('daily.html',store,date);p.nodes.screen.children.find(n=>n.className==='card'&&n.children.some(c=>c.textContent===p.c.MUSIC_DNA_W42_CANDIDATES.tracks[official[i]].identity.title)).onclick();await elements(p.nodes.screen).find(n=>n.textContent==='👍 GOED').onclick();}
  for(let day=13;day<=17;day++){const p=await boot('daily.html',store,`2026-10-${day}T13:00:00+02:00`);assert.equal(p.read('bmd-week-2026-W42-day3-selection-v1'),null);assert.equal(p.c.location.href,undefined);assert(elements(p.nodes.screen).some(n=>n.textContent.includes('volgende dag')));}
  preserve(before,store);
  // Every target identity is blocked under aliases, URL/URI, title normalization and bank-only history.

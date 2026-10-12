@@ -1,4 +1,5 @@
 (function(){
+  var localStorage=(typeof document!=='undefined'&&document.defaultView===window&&window.MUSIC_DNA_DAILY_STORE)?window.MUSIC_DNA_DAILY_STORE.view:window.localStorage;
   var VERSION=2;
   var PREFIX='bmd-';
   var META_KEY='bmd-storage-health-v1';
