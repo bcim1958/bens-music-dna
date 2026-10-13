@@ -44,7 +44,7 @@ const MUSIC_DNA_WEEKS = (() => {
       start:new Date(2026,9,11),end:new Date(2026,9,18),
       startText:'zondag 11 oktober',endText:'zaterdag 17 oktober 2026',
       candidateGlobal:'MUSIC_DNA_W42_CANDIDATES',candidateFiles:['music-dna-w42-day1-v1.js','music-dna-w42-day2-v1.js'],ready:true,
-      preparedThroughDay:2,preparationStatus:'explicit-days-1-2-only-saturday-not-ready'
+      preparedThroughDay:2,preparationStatus:'W42-day3-7-not-released-saturday-not-ready'
     }
   ];
   function get(key){return weeks.find(w => w.key === key) || null;}

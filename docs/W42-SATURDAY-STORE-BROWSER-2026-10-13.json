@@ -1,0 +1,26 @@
+{
+  "pass": true,
+  "browser": "151.0.7922.34",
+  "syntheticOnly": true,
+  "productionWrites": 0,
+  "iphoneWrites": 0,
+  "spotifyWrites": 0,
+  "checks": [
+    "cutover retains every original byte; historical ratings, receipts and FIFO retained; zero source writes",
+    "full recovery export preserves original, current and legacy bytes; readonly, zero mutations",
+    "second actual browser tab blocked before writes",
+    "actual historical bank code still deletes legacy reserve but cannot delete canonical reserve",
+    "legacy localStorage.clear cannot remove original or current daily data",
+    "day 2 rating acknowledged after atomic completion and preserved after reopening with empty legacy storage",
+    "abort after IDB put rejects confirmation; entire durable record unchanged; reopening succeeds",
+    "real service-worker-cached historical code cannot alter isolated daily record",
+    "actual Saturday bootstrap reads canonical daily record, shares tab lock, preserves ratings/FIFO and legacy bytes; receipt checkpoint survives reopen; abort preserves entire durable record",
+    "pending legacy journal: no successful cutover, no source writes, no fallback",
+    "unavailable IndexedDB: no successful cutover, no source writes, no fallback",
+    "initial IDB abort: no successful cutover, no source writes, no fallback"
+  ],
+  "workflowRunId": 38439296711,
+  "commitSha": "5158abeb1aec5cdab44d1890786a1a4788acb99e",
+  "workflowUrl": "https://github.com/bcim1958/bens-music-dna/actions/runs/38439296711",
+  "endToEndProven": false
+}

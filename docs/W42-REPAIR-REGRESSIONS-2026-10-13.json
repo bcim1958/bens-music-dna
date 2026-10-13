@@ -1,0 +1,138 @@
+{
+  "pass": true,
+  "tests": [
+    {
+      "test": "test/rating-transition-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/rating-version-compat-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/rating-storage-concurrency-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/rating-journal-review-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/rating-storage-failure-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/w42-review-storage-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/w42-day2-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/w42-seven-day-routing-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/w42-day1-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/w41-preview-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/positive-bank-recording-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/w41-artist-uniqueness-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/week-route-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/discovery-policy-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/discovery-week-capacity-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/daily-reserve-capacity-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/saturday-simulator-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/w40-callback-recovery-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/w40-resume-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/artwork-payload-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/artwork-identity-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/week-manifest-counter-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/w41-daily-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "scripts/saturday-simulator.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/w41-runtime-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
+      "test": "test/express-delivery-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    }
+  ],
+  "syntheticRatings": true,
+  "spotifyWrites": 0,
+  "endToEndProven": false
+}

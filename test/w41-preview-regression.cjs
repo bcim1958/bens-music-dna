@@ -31,7 +31,7 @@ const P=require('./music-dna-w41-preview-v1.js'),{boot}=require('./w41-daily-reg
   const saved=store.get('bmd-week-2026-W41-day1-v1');store.delete('bmd-week-2026-W41-day1-v1');
   assert.equal(P.officialIds(b.c.localStorage,'2026-W41',new Date()),null);store.set('bmd-week-2026-W41-day1-v1',saved);
   store.set('bmd-week-2026-W41-day7-v1','{}');assert.equal(P.officialIds(b.c.localStorage,'2026-W41',new Date()),null);store.delete('bmd-week-2026-W41-day7-v1');
-  b.c.URLSearchParams=URLSearchParams;b.c.location.search='?week=2026-W41&preview=1&spotify=ready';
+  b.c.MUSIC_DNA_GIFT_STORAGE={open:async()=>b.c.localStorage,checkpoint:async()=>true,requireOpen:()=>{}};b.c.URLSearchParams=URLSearchParams;b.c.location.search='?week=2026-W41&preview=1&spotify=ready';
   let requests=0;b.c.fetch=async()=>{requests++;throw Error('preview must not request Spotify');};
   const html=fs.readFileSync('test/zaterdagcadeau.html','utf8');
   for(const match of html.matchAll(/<script(?: src="([^"]+)")?[^>]*>(.*?)<\/script>/gs)){

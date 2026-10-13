@@ -1,6 +1,6 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-12**
+**Last updated: 2026-10-13**
 **Status: W42 dag 2 gepubliceerd en op iPhone praktisch beoordeeld; dag 3–7 en automatische zaterdaglevering nog NIET end-to-end bewezen. Echte iPhone-data nog niet onafhankelijk als herstelkopie veiliggesteld.**
 
 ## Actueel checkpoint — maandag 12 oktober 2026 (na PR #13 en #14)
@@ -22,6 +22,26 @@
 **DNA Express — redactionele ideeënvoorraad, nog geen publicatie:** (1) **KISS achter de schermen / De onzichtbare familie**: onderscheid aantoonbare actieve ondersteuning (tourpodium, productie, financiering, compositie, meespelen, label, aanbeveling) van louter invloed; succes én uitgebleven doorbraak, tegengetuigenissen en wederkerigheid onderzoeken; Angel/Casablanca, Van Halen, Cinderella/Bon Jovi, Rush, New England e.a. zijn onderzoekscases, **geen definitief geverifieerde credits of playlist**. Mogelijke artikelgedachte: *Niet alles wat KISS aanraakte, werd goud.* (2) **De geschiedenis van...** over levensloop en nalatenschap van bands. (3) **Voordat de eerste noot klinkt** over concertintro's en rituelen. Geen nieuw artikel of playlist zonder afzonderlijke redactionele uitvoering.
 
 **Prioriteit:** eerst deze archivering en behoud van bestaande gebruikersgegevens, daarna dag-3-praktijkwaarneming; geen app-herbouw, geen blind herstel, geen nieuwe badge-ontwikkeling voor de bewezen dagelijkse werking stabiel is.
+
+---
+
+## W42 dinsdag 13 oktober — incident en volledige-zevendaagse opdracht
+
+**Waarneming op iPhone 13 oktober 11:14:** na de drie beoordelingen van maandag blijft het scherm op 'Vandaag voltooid', teller 44/42, met 'De volgende dag wordt nog voorbereid.' Dit is een gecontroleerde productiestop, niet bewezen gegevensverlies. **Oorzaak in code:** `test/music-dna-weeks-v1.js` heeft `preparedThroughDay:2` en alleen dag-1-/dag-2-kandidaatbestanden; `test/daily.html` stopt op die grens. De dinsdagaanbieding is dus niet vrijgegeven.
+
+**Opdracht is de VOLLEDIGE W42, zondag 11 t/m zaterdag 17 oktober, niet alleen dinsdag t/m vrijdag.** Bestaande zondag/maandag-beoordelingen, reserves, timestamps, positieve bank, FIFO, beschermde IndexedDB-opslag en historische playlists behouden. Geen synthetische beoordelingen, ongetoetste artiest-/track-ID's, automatische FIFO-afboeking of ongecontroleerde Spotify-writes.
+
+**Werkvolgorde en acceptatie:**
+1. Read-only controle van huidige W42-release, kandidaatbronnen, 21 unieke officiële artiesten/tracks, 14 nieuwe artiesten indien de geldende beleidsregel dat vereist, en alle bestaande beoordelings-/bankbehoudsguards. Bewijs per track (Spotify-ID, artiest-ID, titel, speelbaarheid en bron), zonder bestaand weekmateriaal te hergebruiken.
+2. Bereid dag 3–7 voor met correcte datumgrenzen en drie officiële keuzes per dag; maak de volledige week beschikbaar in één gecontroleerde release, niet dagelijks een nieuwe noodpatch. Op dinsdag moet de eerstvolgende onbeoordeelde dag verschijnen, met behoud van dag 1 en 2.
+3. Test echte selector, opnieuw openen, negatieve/twijfelratings, mogelijke reserves, artiest-/trackuniekheid, opslagfouten, concurrency, cache, oude writers, offline/heropenen en datumovergangen. Geen reset of terugval naar localStorage. Laat een ontbrekende kandidaat of corruptie veilig blokkeren in plaats van gegevens te wijzigen.
+4. Test de zaterdagroute: na drie officiële beoordelingen op zaterdag totaal 21 officiële beoordelingen; kies uitsluitend 21 unieke **positieve** tracks uit de week en aantoonbaar ongebruikte FIFO, weekpositieven eerst. Controleer dat 44/42 slechts een zichtbare teller is en niet de volledige onafhankelijke FIFO-herstelkopie.
+5. Behoud de historische W41-publicatie; controleer manifest, edelsteen, hoes, zakelijke museumtekst, juiste map, Spotify-identiteit, OAuth en readback. Pas bij bewijs de autonome cadeau-/publicatieroute vrijgeven. PR #10/#11 niet blind samenvoegen wegens oude/conflicterende code.
+6. Verifieer CI, productie-Pages en echte iPhone per dag en op zaterdag. **endToEndProven=false** tot de echte zaterdagaflevering en readback aantoonbaar geslaagd zijn.
+
+**Gegevensveiligheid:** geen onafhankelijke volledige iPhone-herstelkopie aanwezig. De readonly export `test/gegevens-bewaren.html` blijft een apart controlepunt. Geen claims over echte apparaat-FIFO of succesvolle zaterdagpublicatie op grond van synthetische tests.
+
+**Uitvoering bij dit checkpoint:** oorzaak opnieuw in live main-code gecontroleerd. Nog geen dag-3-/weekrelease, geen kandidaatgoedkeuring, geen testresultaat of Spotify-mutatie. De productie blijft in veilige wachtstand totdat de bovenstaande poorten zijn bewezen.
 
 ---
 
