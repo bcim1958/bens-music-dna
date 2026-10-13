@@ -47,6 +47,11 @@
       "exitCode": 0
     },
     {
+      "test": "test/gift-delivery-checkpoint-regression.cjs",
+      "pass": true,
+      "exitCode": 0
+    },
+    {
       "test": "test/w42-day1-regression.cjs",
       "pass": true,
       "exitCode": 0

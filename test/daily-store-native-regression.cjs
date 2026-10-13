@@ -71,6 +71,8 @@ async function rate(page,index=0){await page.locator('.card:not(.reserve)').nth(
   const cached=await old.evaluate(async()=>{const r=await fetch('/legacy/cached-bank.js');return{header:r.headers.get('X-Fixture-Cache'),code:await r.text()};});assert.equal(cached.header,'historical');assert.equal(cached.code,fixture);
   await old.evaluate(data=>{localStorage.setItem('bmd-positive-bank-v1',data);window.MUSIC_DNA_LEARNING={read:()=>({signals:{}})};},raw['bmd-positive-bank-v1']);await old.addScriptTag({url:origin+'/legacy/cached-bank.js'});const protectedState=await record(afterFailure);await old.evaluate(()=>MUSIC_DNA_POSITIVE_BANK.sync());assert.equal(JSON.parse((await legacy(old))['bmd-positive-bank-v1']).items['fixture-fresh'],undefined);assert.deepEqual(await record(afterFailure),protectedState);results.push('real service-worker-cached historical code cannot alter isolated daily record');
   const beforeGift=await record(afterFailure),legacyBeforeGift=await legacy(old);await afterFailure.close();
+  // Remove only this test's disposable worker after its isolation proof.
+  await old.evaluate(async()=>{for(const r of await navigator.serviceWorker.getRegistrations())await r.unregister();});
   const gift=await c.newPage();await gift.goto(origin+'/test/zaterdagcadeau.html?week=2026-W42&syntheticGift=1');
   await gift.waitForFunction(()=>document.querySelector('#screen').textContent.includes('Nog niet zaterdag'));
   const giftState=await record(gift);assert.deepEqual(giftState.original,beforeGift.original);assert.deepEqual(await legacy(old),legacyBeforeGift);

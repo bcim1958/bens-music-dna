@@ -12,6 +12,8 @@ function sandbox(failStage){
  await assert.rejects(ok.c.MUSIC_DNA_GIFT_STORAGE.open(),/opnieuw/);
  for(const stage of ['lease','open','flush']){const x=sandbox(stage);await assert.rejects(x.c.MUSIC_DNA_GIFT_STORAGE.open(),new RegExp(stage));assert.equal(x.c.MUSIC_DNA_STORAGE_BLOCKED,true);assert.throws(()=>x.c.MUSIC_DNA_GIFT_STORAGE.requireOpen(),/niet bevestigd/);await assert.rejects(x.c.MUSIC_DNA_GIFT_STORAGE.open(),/opnieuw/);}
  const mixed=sandbox();mixed.c.MUSIC_DNA_WRITER_RELEASE='old';await assert.rejects(mixed.c.MUSIC_DNA_GIFT_STORAGE.open(),/Gemengde/);assert.equal(mixed.calls.length,0);
+  for(const sw of [{controller:{}},{controller:null,getRegistrations:async()=>[{}]}]){const x=sandbox();x.c.navigator={serviceWorker:sw};await assert.rejects(x.c.MUSIC_DNA_GIFT_STORAGE.open(),/service worker|gecontroleerd/);assert.equal(x.calls.length,0);}
+  const changed=sandbox();let change;changed.c.navigator={serviceWorker:{controller:null,getRegistrations:async()=>[],addEventListener:(name,handler)=>{change=handler;}}};await changed.c.MUSIC_DNA_GIFT_STORAGE.open();change();assert.throws(()=>changed.c.MUSIC_DNA_GIFT_STORAGE.requireOpen(),/niet bevestigd/);
  const html=fs.readFileSync('test/zaterdagcadeau.html','utf8');
  assert(html.includes("script-src 'none'"),'compatibility gate remains closed');
  assert(html.indexOf('await MUSIC_DNA_GIFT_STORAGE.open()')<html.indexOf("for(const file of ['music-dna-learning-v1.js'"),'no hydration before protected storage');
