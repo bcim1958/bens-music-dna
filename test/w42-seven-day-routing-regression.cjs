@@ -14,7 +14,7 @@ const options={afterLoad(c,name){
  if(name==='music-dna-w42-day2-v1.js'){
   const catalog=c.MUSIC_DNA_W42_CANDIDATES;
   for(let day=3;day<=7;day++)catalog['day'+day]={official:[],reserve:[]};
-  for(const t of research.tracks){const id='pilot-'+t.spotifyTrackUri.split(':').pop();catalog.tracks[id]={identity:{artist:t.artist,title:t.title},spotifyUrl:t.spotifyUrl,taxonomy:{allMusicStyles:[]}};catalog['day'+t.proposedDay].official.push(id);}
+  for(const t of research.tracks){const id='pilot-'+t.spotifyTrackUri.split(':').pop();catalog.tracks[id]={identity:{artist:t.artist,title:t.title},spotifyUrl:t.spotifyUrl,taxonomy:{allMusicStyles:[]},editorial:{whyForYou:'Synthetic routing fixture; not editorial approval.'}};catalog['day'+t.proposedDay].official.push(id);}
  }
 }};
 function elements(n){return[n,...(n.children||[]).flatMap(elements)];}
@@ -49,5 +49,14 @@ function setDay(store,catalog,day){const base='bmd-week-2026-W42-day'+day,ids=ca
  assert.equal(typeof done.nodes.gift.onclick,'function');
  done.nodes.gift.onclick();assert.match(done.c.location.href,/zaterdagcadeau.html\?week=2026-W42/);
  for(const [k,v] of before)if(/^bmd-week-/.test(k))assert.equal(s.get(k),v);
+ // Staged automatic route must wait for the durable render checkpoint, but
+ // must not wait for optional reserve ratings after all 21 official ratings.
+ const optional='synthetic-optional-reserve',autoOptions={afterLoad(c,name){options.afterLoad(c,name);if(name==='music-dna-weeks-v1.js')vm.runInContext("Object.assign(MUSIC_DNA_WEEKS.get('2026-W42'),{automaticGift:true,delivery:{releasePath:'synthetic-release',manifestPath:'synthetic-manifest',museumPath:'synthetic-museum'}})",c);if(name==='music-dna-w42-day2-v1.js'){c.MUSIC_DNA_W42_CANDIDATES.tracks[optional]={identity:{artist:'Synthetic optional reserve',title:'Synthetic fixture'},spotifyUrl:'https://open.spotify.com/track/9999999999999999999999',taxonomy:{allMusicStyles:[]}};c.MUSIC_DNA_W42_CANDIDATES.day7.reserve=[optional];}}};
+ const autoStore=new Map(before),last=catalog.day7.official[2],state=JSON.parse(autoStore.get('bmd-week-2026-W42-day7-v1'));delete state[last];autoStore.set('bmd-week-2026-W42-day7-v1',JSON.stringify(state));autoStore.set('bmd-week-2026-W42-day7-reserve-selection-v1',JSON.stringify({ids:[optional]}));
+ const auto=await boot('daily.html',autoStore,'2026-10-17T12:00:00+02:00',autoOptions);assert.equal(auto.c.location.href,undefined);
+ auto.nodes.screen.children.find(n=>n.className==='card'&&n.children.some(x=>x.textContent===catalog.tracks[last].identity.title)).onclick();await elements(auto.nodes.screen).find(n=>n.textContent==='👍 GOED').onclick();
+ assert.match(auto.c.location.href,/automatic=1/);assert.equal(auto.read('bmd-week-2026-W42-day7-reserve-v1'),null,'optional reserve is not auto-rated');
+ const abortedOptions={afterLoad(c,name){autoOptions.afterLoad(c,name);if(name==='music-dna-prepared-day-v1.js'){vm.runInContext("document.defaultView=window;window.MUSIC_DNA_DAILY_STORE={view:window.localStorage,flush:async function(){throw Error('synthetic checkpoint abort');}}",c);}}};
+ const aborted=await boot('daily.html',new Map(autoStore),'2026-10-17T12:00:00+02:00',abortedOptions);assert.equal(aborted.c.location.href,undefined,'no automatic navigation before successful checkpoint');assert.match(aborted.nodes.screen.innerHTML,/Beoordeling niet bevestigd/);
  console.log('PASS: proposed seven-day fixture resumes oldest day, preserves ratings, respects dates and reaches gift only after 21 ratings. Synthetic ratings; Spotify writes=0; endToEndProven=false.');
 })().catch(e=>{console.error(e);process.exitCode=1});
