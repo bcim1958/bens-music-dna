@@ -3,6 +3,10 @@
 Date: 2026-09-15
 Status: ACTIVE PRODUCTION PROTOCOL — v1
 
+## Aanvulling 13 oktober 2026 — 2.0 heeft voorrang
+
+[Music DNA 2.0 — Vereenvoudigde zaterdagmachine](DECISION-2026-10-13-MUSIC-DNA-2.0-VEREENVOUDIGDE-ZATERDAGMACHINE.md) bepaalt de nieuwe zaterdagwerking. Première: W44, 31 oktober 2026. Gate 0/1 gebruiken de nieuwe officiële 21 en uitsluitend werkelijk beschikbare ratings; actuele weekratings en de definitieve vorige W-lijst zijn geen publicatiepoort. Ontbrekende beoordelingen blijven onbekend. Voorraadkandidaten/vervangers krijgen geen eigen redactionele aandacht. Nieuwe W-lijst en Express hebben afzonderlijke publicatiestatus en mogen elkaar niet blokkeren. Bron-, inhoud-, navigatie- en apparaat-QA blijven vereist. Dit is een protocolwijziging; de zelfstandige ketens en première zijn nog te bouwen/testen.
+
 ## Purpose
 Make Saturday publication repeatable without making DNA EXPRESS visually or editorially templated.
 

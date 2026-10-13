@@ -3,6 +3,10 @@
 Date: 2026-09-13
 Status: ACCEPTED
 
+## Voorrang vanaf besluit 13 oktober 2026
+
+[Music DNA 2.0 — Vereenvoudigde zaterdagmachine](DECISION-2026-10-13-MUSIC-DNA-2.0-VEREENVOUDIGDE-ZATERDAGMACHINE.md) vervangt voor toekomstige 2.0-weken de dagelijkse aanbod-/beoordelingspoort en de betekenis van de nieuwe zaterdaglijst. De nieuwe officiële lijst bevat 21 onbeoordeelde ontdekkingen plus standaard 7 extra Spotify-kandidaten; de positieve 21-norm geldt voor de definitieve W-lijst. Voorraadcontrole wordt maandelijks georganiseerd. Integriteit, echte positieve beoordelingen, FIFO-gebruiksbewaking en historische bewaring blijven gelden. Onderstaande tekst blijft historische bron; geen automatische migratie of runtimevrijgave.
+
 ## Existing decisions preserved
 This decision refines, but does not replace, the accepted separation in `DECISION-2026-09-11-MUZIEKMETER-ONTDEK-DNA.md` between the 21 weekly ratings, the Muziekmeter and the curated Ontdek-DNA gift. It also preserves the project rule that a weekly Ontdek-DNA gift is 21/21 checked tracks where the 21-track norm applies.
 

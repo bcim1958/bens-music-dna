@@ -1,7 +1,17 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-12**
+**Last updated: 2026-10-13**
 **Status: W42 dag 2 gepubliceerd en op iPhone praktisch beoordeeld; dag 3–7 en automatische zaterdaglevering nog NIET end-to-end bewezen. Echte iPhone-data nog niet onafhankelijk als herstelkopie veiliggesteld.**
+
+
+## Leidende functionele opzet — 13 oktober 2026
+
+[Music DNA 2.0 — Vereenvoudigde zaterdagmachine](DECISION-2026-10-13-MUSIC-DNA-2.0-VEREENVOUDIGDE-ZATERDAGMACHINE.md) is de geaccepteerde doelopzet: zaterdag 21 officiële nieuwe ontdekkingen plus standaard 7 extra Spotify-kandidaten; vrij achteraf beoordelen; stille positieve voorraad; definitieve 21 positieve tracks op hun vaste plek; oorspronkelijke selectie bewaren. W42/W43 overgang uit gecontroleerde positieve voorraad; première DNA Express bij W44 op 31 oktober. **Implementatie, migratie en AC01–AC12 staan OPEN; geen 2.0-releaseclaim.**
+
+Actuele GitHub-basis: main `122d064b378707f4968eb93942e6212069920b30` (PR #15); beide Pages-runs success. Open bij controle: #2/#3/#4/#5/#7/#10/#11/#16/#17. #17 is een concept met synthetische zaterdagopslagproeven, geen echte end-to-endvrijgave. [Actuele documentatieoverdracht](HANDOFF-2026-10-13-MUSIC-DNA-2.0.md) bewaart exacte heads en volgende stappen.
+
+Oudere dagelijkse quota, verplichte weekratings vóór nieuwe zaterdaglevering en oude hervatopdrachten hieronder zijn historische afspraken voor zover het nieuwe besluit ze vervangt. Bestaande runtime en echte apparaat-/Spotify-toestand veranderen hierdoor niet. Het checkpoint van 12 oktober blijft bewijs van dag 2; de oorspronkelijke hoofdbranchvermelding daarin is inmiddels historisch.
+
 
 ## Actueel checkpoint — maandag 12 oktober 2026 (na PR #13 en #14)
 

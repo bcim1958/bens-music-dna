@@ -2,6 +2,10 @@
 
 This is the durable record of accepted product decisions. New chats must not silently reopen these decisions; changes require a new dated decision explaining why.
 
+## 2026-10-13 — Music DNA 2.0: vereenvoudigde zaterdagmachine
+
+**GEACCEPTEERD FUNCTIONEEL; IMPLEMENTATIE OPEN.** [Music DNA 2.0 — Vereenvoudigde zaterdagmachine](DECISION-2026-10-13-MUSIC-DNA-2.0-VEREENVOUDIGDE-ZATERDAGMACHINE.md) vervangt verplichte dagelijkse quota en beoordeling als poort voor de nieuwe zaterdaglijst/DNA Express. Nieuwe week: 21 officiële ontdekkingen + standaard 7 stille voorraadkandidaten, allemaal in Spotify; vrij beoordelen achteraf. Definitief: 21 echte positieven, met stille voorraadvervanging en behoud van de oorspronkelijke 21. W42/W43: gecontroleerde positieve voorraadovergang. DNA Express-première: W44, 31 oktober 2026. Migratieplan en AC01–AC12 staan in het besluit. Geen productiecode of vrijgave door deze vastlegging.
+
 ## 2026-09-03 — Music remains the centre
 **Decision:** Music is the primary function. Rich artist/band worlds are supporting and optional, but the app must not become visually barren.
 **Reason:** Daily value comes from listening/discovery; enrichment is the reward for curiosity.
