@@ -5,7 +5,7 @@ async function boot(file,store,date='2026-09-29T08:00:00+02:00',options={}){
  const RealDate=Date;class Clock extends RealDate{constructor(...a){super(...(a.length?a:[date]));}static now(){return new RealDate(date).getTime();}}
  const storage={get length(){return store.size},getItem:k=>store.has(k)?store.get(k):null,key:i=>[...store.keys()][i],setItem:(k,v)=>store.set(k,String(v)),removeItem:k=>store.delete(k)};
  const c={window:null,navigator:{locks:{request:(name,opts,fn)=>{try{return Promise.resolve(fn({name}))}catch(e){return Promise.reject(e)}}}},Date:Clock,localStorage:storage,location:{origin:'http://test'},console,setTimeout:options.setTimeout||(()=>{})};c.window=c;if(options.configure)options.configure(c);vm.createContext(c);
- const load=name=>vm.runInContext(fs.readFileSync('test/'+name.split('?')[0],'utf8'),c,{filename:name});
+ const load=name=>{const result=vm.runInContext(fs.readFileSync('test/'+name.split('?')[0],'utf8'),c,{filename:name});if(options.afterLoad)options.afterLoad(c,name.split('?')[0]);return result;};
  c.document={getElementById:id=>nodes[id]||(nodes[id]=new Element('div')),createElement:tag=>new Element(tag),head:{appendChild:el=>{try{load(el.src);el.onload();}catch(e){if(options.runtimeErrorsUseOnload)el.onload();else if(el.onerror)el.onerror(e);else throw e;}}}};
  const html=fs.readFileSync('test/'+file,'utf8');for(const m of html.matchAll(/<script(?: src="([^"]+)")?[^>]*>(.*?)<\/script>/gs)){if(m[1])load(m[1]);else await vm.runInContext(m[2],c);}
  return {c,nodes,read:k=>JSON.parse(store.get(k)||'null')};

@@ -1,0 +1,346 @@
+{
+  "weekKey": "2026-W42",
+  "status": "research-only-not-runtime-approved",
+  "baseMain": "122d064b378707f4968eb93942e6212069920b30",
+  "sourcePR16": "7cf1e17b303718d3d19405570571bc1c74eaaed5",
+  "inputsApproved": false,
+  "endToEndProven": false,
+  "tracks": [
+    {
+      "proposedDay": 3,
+      "artist": "English Teacher",
+      "title": "Nearly Daffodils",
+      "spotifyTrackUri": "spotify:track:6UujMCzNxqaU5RooRvww1P",
+      "spotifyArtistUris": [
+        "spotify:artist:5H9IFTRxSICj24uxO15ScU"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/6UujMCzNxqaU5RooRvww1P",
+      "durationMs": 226585,
+      "spotifyPackageDate": {
+        "isoString": "2024-04-12T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:02:01.070978+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/6UujMCzNxqaU5RooRvww1P"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 3,
+      "artist": "House of Protection",
+      "title": "It's Supposed To Hurt",
+      "spotifyTrackUri": "spotify:track:0nPWNzcryh5oyJA5uZaepT",
+      "spotifyArtistUris": [
+        "spotify:artist:6fb3I3Q54izgnOMtiZbOBA"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/0nPWNzcryh5oyJA5uZaepT",
+      "durationMs": 212086,
+      "spotifyPackageDate": {
+        "isoString": "2024-04-30T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:01:59.046232+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/0nPWNzcryh5oyJA5uZaepT"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 3,
+      "artist": "MEER",
+      "title": "Beehive",
+      "spotifyTrackUri": "spotify:track:37EGmBJm03gJ1jhAnF8Mk4",
+      "spotifyArtistUris": [
+        "spotify:artist:4pAX6VBnbccF9uVcb9EGiq"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/37EGmBJm03gJ1jhAnF8Mk4",
+      "durationMs": 277800,
+      "spotifyPackageDate": {
+        "isoString": "2021-01-29T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:01:59.387136+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/37EGmBJm03gJ1jhAnF8Mk4"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 4,
+      "artist": "Brigitte Calls Me Baby",
+      "title": "Slumber Party",
+      "spotifyTrackUri": "spotify:track:0Z1QTSfvKWs3ovOOSdIIDi",
+      "spotifyArtistUris": [
+        "spotify:artist:3sB1RV3IE5yCyMbl01FzBN"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/0Z1QTSfvKWs3ovOOSdIIDi",
+      "durationMs": 241483,
+      "spotifyPackageDate": {
+        "isoString": "2026-03-13T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:01:58.597366+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/0Z1QTSfvKWs3ovOOSdIIDi"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 4,
+      "artist": "Heartworms",
+      "title": "Consistent Dedication",
+      "spotifyTrackUri": "spotify:track:2IEhBUj9WTswTqSxC7Q7vK",
+      "spotifyArtistUris": [
+        "spotify:artist:1slmc4uUMOsz7J3pQqeWPP"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/2IEhBUj9WTswTqSxC7Q7vK",
+      "durationMs": 189426,
+      "spotifyPackageDate": {
+        "isoString": "2022-09-19T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:01:58.625028+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/2IEhBUj9WTswTqSxC7Q7vK"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 4,
+      "artist": "Kalandra",
+      "title": "Brave New World",
+      "spotifyTrackUri": "spotify:track:4KLTJBsPLOFsNsnGHivuX2",
+      "spotifyArtistUris": [
+        "spotify:artist:2N0vFuOoMtAQfBmhsRo24e"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/4KLTJBsPLOFsNsnGHivuX2",
+      "durationMs": 239595,
+      "spotifyPackageDate": {
+        "isoString": "2020-10-23T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:02:00.397483+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/4KLTJBsPLOFsNsnGHivuX2"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 5,
+      "artist": "NewDad",
+      "title": "Angel",
+      "spotifyTrackUri": "spotify:track:1kiw6IXeTauPy3L964yxoZ",
+      "spotifyArtistUris": [
+        "spotify:artist:1yz8XixOiIJJ9IxjbnfYV6"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/1kiw6IXeTauPy3L964yxoZ",
+      "durationMs": 199220,
+      "spotifyPackageDate": {
+        "isoString": "2024-01-26T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:01:58.709668+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/1kiw6IXeTauPy3L964yxoZ"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 5,
+      "artist": "Gurriers",
+      "title": "Top Of The Bill",
+      "spotifyTrackUri": "spotify:track:4kAnrSFanaSI2zpzRPOy0F",
+      "spotifyArtistUris": [
+        "spotify:artist:0bPAi2zCrxUrPBREWdetZ5"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/4kAnrSFanaSI2zpzRPOy0F",
+      "durationMs": 233560,
+      "spotifyPackageDate": {
+        "isoString": "2024-09-13T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:01:58.768676+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/4kAnrSFanaSI2zpzRPOy0F"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 5,
+      "artist": "Dirt Poor Robins",
+      "title": "Enchanté",
+      "spotifyTrackUri": "spotify:track:784FnVGX6Td1t2hvDlxUI5",
+      "spotifyArtistUris": [
+        "spotify:artist:16lGevDffmuRakKVvdJ983"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/784FnVGX6Td1t2hvDlxUI5",
+      "durationMs": 335461,
+      "spotifyPackageDate": {
+        "isoString": "2022-11-15T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:02:00.594308+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/784FnVGX6Td1t2hvDlxUI5"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 6,
+      "artist": "Been Stellar",
+      "title": "Kids 1995",
+      "spotifyTrackUri": "spotify:track:6NbywDH5W9ZaSNWlnqAcAB",
+      "spotifyArtistUris": [
+        "spotify:artist:3ep1YmatQ8L9UKCGYiJNBh"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/6NbywDH5W9ZaSNWlnqAcAB",
+      "durationMs": 276347,
+      "spotifyPackageDate": {
+        "isoString": "2022-04-26T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:01:59.159485+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/6NbywDH5W9ZaSNWlnqAcAB"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 6,
+      "artist": "Wunderhorse",
+      "title": "Teal",
+      "spotifyTrackUri": "spotify:track:1jJvNlkbQmtRpG9uIUpiYA",
+      "spotifyArtistUris": [
+        "spotify:artist:41pd7r1XBRsvdxY3vHEgib"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/1jJvNlkbQmtRpG9uIUpiYA",
+      "durationMs": 191120,
+      "spotifyPackageDate": {
+        "isoString": "2022-10-07T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:01:59.569686+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/1jJvNlkbQmtRpG9uIUpiYA"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 6,
+      "artist": "Geese",
+      "title": "Au Pays du Cocaine",
+      "spotifyTrackUri": "spotify:track:1g9GiiPPaL7KcDHlDzu7lT",
+      "spotifyArtistUris": [
+        "spotify:artist:0WCo84qtCKfbyIf1lqQWB4"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/1g9GiiPPaL7KcDHlDzu7lT",
+      "durationMs": 210945,
+      "spotifyPackageDate": {
+        "isoString": "2025-09-26T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:02:00.142876+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/1g9GiiPPaL7KcDHlDzu7lT"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 7,
+      "artist": "The Last Dinner Party",
+      "title": "Nothing Matters",
+      "spotifyTrackUri": "spotify:track:5crY7axm3GejOxy5PsnnPk",
+      "spotifyArtistUris": [
+        "spotify:artist:5SHgclK1ZpTdfdAmXW7J6s"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/5crY7axm3GejOxy5PsnnPk",
+      "durationMs": 182623,
+      "spotifyPackageDate": {
+        "isoString": "2024-02-02T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:02:00.352681+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/5crY7axm3GejOxy5PsnnPk"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 7,
+      "artist": "Panchiko",
+      "title": "D>E>A>T>H>M>E>T>A>L",
+      "spotifyTrackUri": "spotify:track:0R7BWzdXe7BVtGgFV6jqay",
+      "spotifyArtistUris": [
+        "spotify:artist:4KEHIUSoWCcqrk8AddTE1O"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/0R7BWzdXe7BVtGgFV6jqay",
+      "durationMs": 261849,
+      "spotifyPackageDate": {
+        "isoString": "2000-12-05T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:02:01.070624+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/0R7BWzdXe7BVtGgFV6jqay"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    },
+    {
+      "proposedDay": 7,
+      "artist": "Bambie Thug",
+      "title": "Doomsday Blue",
+      "spotifyTrackUri": "spotify:track:7qiEoVlFjb3KaytT2zgK1g",
+      "spotifyArtistUris": [
+        "spotify:artist:6g3orasGcMPn0gwcE3JMAC"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/7qiEoVlFjb3KaytT2zgK1g",
+      "durationMs": 183741,
+      "spotifyPackageDate": {
+        "isoString": "2023-10-13T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "checkedAt": "2026-10-13T17:02:00.642458+00:00",
+      "sources": [
+        "https://open.spotify.com/embed/track/7qiEoVlFjb3KaytT2zgK1g"
+      ],
+      "accountAvailabilityVerified": false,
+      "personalHistoryNoveltyVerified": false,
+      "editorialApproval": false
+    }
+  ],
+  "limitations": [
+    "Spotify public embeds prove exact identity and reported public playability only.",
+    "No personal iPhone history, independent FIFO backup or NL account playback verification.",
+    "Artist/release/studio-version and editorial style review remain pending; no candidate is promoted into daily runtime.",
+    "No ratings, reserves or playlist uses imported or fabricated."
+  ]
+}
