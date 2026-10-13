@@ -37,10 +37,10 @@ function setDay(store,catalog,day){const base='bmd-week-2026-W42-day'+day,ids=ca
  assert.equal(s.get('bmd-week-2026-W42-day3-selection-v1'),selected,'oldest unfinished day resumes');
  assert.equal(s.has('bmd-week-2026-W42-day4-selection-v1'),false);
  for(let day=3;day<=6;day++)setDay(s,catalog,day);
- const friday=await boot('daily.html',s,'2026-10-16T23:59:00+02:00',options);
+ const friday=await boot('daily.html',s,'2026-10-16T23:59:00',options);
  assert.equal(s.has('bmd-week-2026-W42-day7-selection-v1'),false);
  assert.equal(friday.nodes.gift,undefined);
- const saturday=await boot('daily.html',s,'2026-10-17T00:00:00+02:00',options);
+ const saturday=await boot('daily.html',s,'2026-10-17T00:00:00',options);
  assert.deepEqual(saturday.read('bmd-week-2026-W42-day7-selection-v1').ids,catalog.day7.official);
  assert.equal(saturday.nodes.gift,undefined,'three Saturday ratings required');
  setDay(s,catalog,7);
