@@ -1,0 +1,304 @@
+{
+  "schemaVersion": "1.0",
+  "status": "spotify-published-archive-pending",
+  "purpose": "W42 voorbereidings- en herkomstmanifest; geen uitvoerbare iPhone-import",
+  "weekId": "2026-42",
+  "freeze": {
+    "status": "frozen",
+    "frozenAt": "2026-10-16T15:03:45.246211+00:00",
+    "publishedAt": "2026-10-16T15:03:45.246211+00:00",
+    "orderedTrackIds": [
+      "0Md3WqXa9vCXWOVcvU94lA",
+      "47sftmA1pVBWn6C6Sf4suV",
+      "3VWGHiQO7fArciqoKB2DSx",
+      "60VvnoCXoJ0P6RJki3QO21",
+      "17ZHoNeu3j9wPdaCA5OmEi",
+      "3fgSnDCK05NDXlDJX0jArO",
+      "597sFLu5mDcNFyRkaiNSgW",
+      "1FiVRpr3BdZmekfdKsjTKt",
+      "3Csv0MN00Iv3XH9d418JaQ",
+      "45L8TWrPiA9FCGUKOgujlb",
+      "7DRkxr8eGnAwcNIbdAWcxM",
+      "18n5kMWdrmrEOuh9Qnh2Wf",
+      "2PpqbO2k43P79UHR0WiMs9",
+      "0fB8w0B7vtpZape6mV9G29",
+      "1MXJAqB4CNEwnG6cBbrxxO",
+      "4LCYlleksg6Qj0nel91vln",
+      "6pFmkLJFz8VcgLuz9rTLKi",
+      "1G6osOLGrmzdh55hAVl7Ti",
+      "2oCEQXUMSsgNr6LLAEGcMD",
+      "0290eeW1DvuplJkqwhErTL",
+      "7ef1yxmLkmfnLBSzlgAiUj"
+    ],
+    "orderSnapshotSha256": "62ff63cf6141c7fa47ea2f1c92f1b7a1d87d586cb286b176760be746877a0993"
+  },
+  "gemstone": {
+    "status": "published",
+    "name": "Heliodoor",
+    "sequenceNumber": 7,
+    "editorialText": "HELIODOOR · W42 — Een gele tot groengele variëteit van beryl. IJzer draagt bij aan de kleur. Bekende kristallen komen uit Volyn in Oekraïne; natuurlijke etspatronen op kristalvlakken zijn daar kenmerkend. Steen 7 van de Music-DNA-slinger.",
+    "editorialStandard": "short-factual-no-symbolism",
+    "presented": true,
+    "scope": "week",
+    "weekId": "2026-42",
+    "editorialSources": [
+      "https://www.gia.edu/gia-gem-project-beryl",
+      "https://www.gia.edu/gems-gemology/spring-2020-color-characteristics-blue-to-yellow-beryl",
+      "https://www.gia.edu/gems-gemology/fall-2023-ukrainian-beryl"
+    ],
+    "selectionMethod": "new-editorial-choice-after-user-colour-sequence-correction-2026-10-16",
+    "orderedTrackIds": [
+      "0Md3WqXa9vCXWOVcvU94lA",
+      "47sftmA1pVBWn6C6Sf4suV",
+      "3VWGHiQO7fArciqoKB2DSx",
+      "60VvnoCXoJ0P6RJki3QO21",
+      "17ZHoNeu3j9wPdaCA5OmEi",
+      "3fgSnDCK05NDXlDJX0jArO",
+      "597sFLu5mDcNFyRkaiNSgW",
+      "1FiVRpr3BdZmekfdKsjTKt",
+      "3Csv0MN00Iv3XH9d418JaQ",
+      "45L8TWrPiA9FCGUKOgujlb",
+      "7DRkxr8eGnAwcNIbdAWcxM",
+      "18n5kMWdrmrEOuh9Qnh2Wf",
+      "2PpqbO2k43P79UHR0WiMs9",
+      "0fB8w0B7vtpZape6mV9G29",
+      "1MXJAqB4CNEwnG6cBbrxxO",
+      "4LCYlleksg6Qj0nel91vln",
+      "6pFmkLJFz8VcgLuz9rTLKi",
+      "1G6osOLGrmzdh55hAVl7Ti",
+      "2oCEQXUMSsgNr6LLAEGcMD",
+      "0290eeW1DvuplJkqwhErTL",
+      "7ef1yxmLkmfnLBSzlgAiUj"
+    ],
+    "selectionReason": "Warm goudgeel van W41 voortzetten naar geel met subtiele groene tint; aquamarijn vervallen."
+  },
+  "publication": {
+    "spotify": {
+      "status": "published",
+      "playlistId": "0MxfTVcVo0Q14ckKRHNEhA",
+      "folderPlacement": "verified-native-ui",
+      "folderName": "💎 Ontdek DNA",
+      "folderPlacementMode": "desktop-native-ui",
+      "url": "https://open.spotify.com/playlist/0MxfTVcVo0Q14ckKRHNEhA"
+    },
+    "express": {
+      "status": "pending",
+      "editionId": null
+    },
+    "gemstoneMuseum": {
+      "status": "awaiting-deployment",
+      "entryId": "2026-42",
+      "url": "https://bcim1958.github.io/bens-music-dna/test/week-museum.html?week=2026-42"
+    }
+  },
+  "selectionRules": {
+    "oneTrackPerArtist": true,
+    "expectedTrackCount": 21,
+    "expectedUniqueArtistCount": 21,
+    "allowedSelectionSources": [
+      "week-positive",
+      "positive-reserve",
+      "separate-taste-test"
+    ],
+    "expectedWeekPositiveCount": 2,
+    "expectedPositiveReserveCount": 15,
+    "expectedSpotifyFolder": "💎 Ontdek DNA",
+    "expectedSeparateTasteTestCount": 4,
+    "exceptionAuthority": "Expliciete gebruikersopdracht 16 oktober 2026; 19+2-template past niet bij deze herstelweek; geen gefabriceerde weekratings",
+    "reserveOrder": "Original positive observation chronology; external timestamps minute precision, not existing iPhone firstPositiveAt"
+  },
+  "tracks": [
+    {
+      "trackId": "0Md3WqXa9vCXWOVcvU94lA",
+      "spotifyTrackId": "0Md3WqXa9vCXWOVcvU94lA",
+      "artistName": "Cold Sweat",
+      "title": "Let's Make Love Tonight",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "47sftmA1pVBWn6C6Sf4suV",
+      "spotifyTrackId": "47sftmA1pVBWn6C6Sf4suV",
+      "artistName": "Eyes",
+      "title": "Young And Innocent",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "3VWGHiQO7fArciqoKB2DSx",
+      "spotifyTrackId": "3VWGHiQO7fArciqoKB2DSx",
+      "artistName": "Nelson",
+      "title": "After The Rain - Remastered 2017",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "60VvnoCXoJ0P6RJki3QO21",
+      "spotifyTrackId": "60VvnoCXoJ0P6RJki3QO21",
+      "artistName": "Rox Diamond",
+      "title": "Heart of Mine",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "17ZHoNeu3j9wPdaCA5OmEi",
+      "spotifyTrackId": "17ZHoNeu3j9wPdaCA5OmEi",
+      "artistName": "Roko",
+      "title": "One Night Stand",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "3fgSnDCK05NDXlDJX0jArO",
+      "spotifyTrackId": "3fgSnDCK05NDXlDJX0jArO",
+      "artistName": "CHINA",
+      "title": "In The Middle Of The Night",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "597sFLu5mDcNFyRkaiNSgW",
+      "spotifyTrackId": "597sFLu5mDcNFyRkaiNSgW",
+      "artistName": "Electric Boys",
+      "title": "Suffer",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "1FiVRpr3BdZmekfdKsjTKt",
+      "spotifyTrackId": "1FiVRpr3BdZmekfdKsjTKt",
+      "artistName": "Atomic Riot",
+      "title": "Dance with the Devil",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "3Csv0MN00Iv3XH9d418JaQ",
+      "spotifyTrackId": "3Csv0MN00Iv3XH9d418JaQ",
+      "artistName": "Child's Play",
+      "title": "Good Ol' Rock And Roll",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "45L8TWrPiA9FCGUKOgujlb",
+      "spotifyTrackId": "45L8TWrPiA9FCGUKOgujlb",
+      "artistName": "Diamond Rexx",
+      "title": "Land Of The Damned",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "7DRkxr8eGnAwcNIbdAWcxM",
+      "spotifyTrackId": "7DRkxr8eGnAwcNIbdAWcxM",
+      "artistName": "Ace Frehley",
+      "title": "Rock Soldiers",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "18n5kMWdrmrEOuh9Qnh2Wf",
+      "spotifyTrackId": "18n5kMWdrmrEOuh9Qnh2Wf",
+      "artistName": "Cats In Boots",
+      "title": "Shotgun Sally",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "2PpqbO2k43P79UHR0WiMs9",
+      "spotifyTrackId": "2PpqbO2k43P79UHR0WiMs9",
+      "artistName": "Banshee",
+      "title": "Shoot Down The Night",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "0fB8w0B7vtpZape6mV9G29",
+      "spotifyTrackId": "0fB8w0B7vtpZape6mV9G29",
+      "artistName": "TOWER",
+      "title": "The Black Rose",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "1MXJAqB4CNEwnG6cBbrxxO",
+      "spotifyTrackId": "1MXJAqB4CNEwnG6cBbrxxO",
+      "artistName": "Tanith",
+      "title": "Adrasteia",
+      "selectionSource": "positive-reserve"
+    },
+    {
+      "trackId": "4LCYlleksg6Qj0nel91vln",
+      "spotifyTrackId": "4LCYlleksg6Qj0nel91vln",
+      "artistName": "The Night Flight Orchestra",
+      "title": "Stratus",
+      "selectionSource": "separate-taste-test"
+    },
+    {
+      "trackId": "6pFmkLJFz8VcgLuz9rTLKi",
+      "spotifyTrackId": "6pFmkLJFz8VcgLuz9rTLKi",
+      "artistName": "Year of the Goat",
+      "title": "Angels’ Necropolis",
+      "selectionSource": "separate-taste-test"
+    },
+    {
+      "trackId": "1G6osOLGrmzdh55hAVl7Ti",
+      "spotifyTrackId": "1G6osOLGrmzdh55hAVl7Ti",
+      "artistName": "Jess and the Ancient Ones",
+      "title": "In Levitating Secret Dreams",
+      "selectionSource": "separate-taste-test"
+    },
+    {
+      "trackId": "2oCEQXUMSsgNr6LLAEGcMD",
+      "spotifyTrackId": "2oCEQXUMSsgNr6LLAEGcMD",
+      "artistName": "Church of the Cosmic Skull",
+      "title": "Sorcery & Sabotage",
+      "selectionSource": "separate-taste-test"
+    },
+    {
+      "trackId": "0290eeW1DvuplJkqwhErTL",
+      "spotifyTrackId": "0290eeW1DvuplJkqwhErTL",
+      "artistName": "ALIAS",
+      "title": "COCKTAILS AND DREAMS",
+      "selectionSource": "week-positive"
+    },
+    {
+      "trackId": "7ef1yxmLkmfnLBSzlgAiUj",
+      "spotifyTrackId": "7ef1yxmLkmfnLBSzlgAiUj",
+      "artistName": "Chinese American Bear",
+      "title": "Love You (爱你)",
+      "selectionSource": "week-positive"
+    }
+  ],
+  "derived": {
+    "uniqueArtists": [
+      "Cold Sweat",
+      "Eyes",
+      "Nelson",
+      "Rox Diamond",
+      "Roko",
+      "CHINA",
+      "Electric Boys",
+      "Atomic Riot",
+      "Child's Play",
+      "Diamond Rexx",
+      "Ace Frehley",
+      "Cats In Boots",
+      "Banshee",
+      "TOWER",
+      "Tanith",
+      "The Night Flight Orchestra",
+      "Year of the Goat",
+      "Jess and the Ancient Ones",
+      "Church of the Cosmic Skull",
+      "ALIAS",
+      "Chinese American Bear"
+    ],
+    "trackCount": 21,
+    "uniqueArtistCount": 21
+  },
+  "artwork": {
+    "status": "published",
+    "kind": "weekly-gemstone-cover",
+    "gemstoneName": "Heliodoor",
+    "assetId": "assets/weekly/music-dna-2026-w42-heliodoor.jpg",
+    "attachedToSpotify": true,
+    "sha256": "02b58dd5abb7eb632c95876c7640f25fb2add520dffdfac8151fd15cdfd98dc9"
+  },
+  "integrity": {
+    "complete": false,
+    "spotifyAndCoverVerified": true,
+    "museumAwaitingDeployment": true,
+    "audioAuditioned": false
+  },
+  "flow": {
+    "profile": "W36-W38 energetic-opening-destination-v1",
+    "review": "All 20 adjacent pairs structurally reviewed; no audio audition claim."
+  }
+}
