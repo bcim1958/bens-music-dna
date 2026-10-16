@@ -3,6 +3,10 @@
 Date: 2026-09-13
 Status: ACCEPTED / ACTIVE
 
+## Voorrang vanaf besluit 13 oktober 2026
+
+[Music DNA 2.0 — Vereenvoudigde zaterdagmachine](DECISION-2026-10-13-MUSIC-DNA-2.0-VEREENVOUDIGDE-ZATERDAGMACHINE.md) vervangt voor toekomstige 2.0-weken de dagelijkse aanbod-/beoordelingspoort en de betekenis van de nieuwe zaterdaglijst. De nieuwe officiële lijst bevat 21 onbeoordeelde ontdekkingen plus standaard 7 extra Spotify-kandidaten; de positieve 21-norm geldt voor de definitieve W-lijst. Voorraadcontrole wordt maandelijks georganiseerd. Integriteit, echte positieve beoordelingen, FIFO-gebruiksbewaking en historische bewaring blijven gelden. Onderstaande tekst blijft historische bron; geen automatische migratie of runtimevrijgave.
+
 ## Doel
 Music DNA moet iedere zaterdag betrouwbaar een Ontdek DNA-playlist van 21 unieke nummers kunnen opleveren, zonder dat de machine ooit namens Ben een nummer als RAAK of GOED kwalificeert.
 
