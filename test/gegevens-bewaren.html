@@ -1,23 +1,30 @@
-<!doctype html><html lang="nl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Music DNA — gegevens bewaren</title><style>body{max-width:600px;margin:40px auto;padding:20px;font:18px/1.5 system-ui;background:#07130f;color:#f5f8f6}button,a{font:inherit;padding:12px;color:#087c3c}pre{white-space:pre-wrap}</style><h1>Gegevens veilig bewaren</h1><p>Deze pagina leest alleen. Zij verandert geen beoordelingen, reserves of opslag. Bewaar het bestand voor herstel; het bevat je persoonlijke muziekhistorie.</p><button id="save">Bewaar volledige gegevenskopie</button><pre id="status">Gebruik dezelfde Safari- of appcontext als Music DNA.</pre><a href="daily.html">Terug naar Music DNA</a><script>
+<!doctype html><html lang="nl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Music DNA — gegevens bewaren</title><style>body{max-width:600px;margin:40px auto;padding:20px;font:18px/1.5 system-ui;background:#07130f;color:#f5f8f6}button,a{font:inherit;padding:12px;color:#087c3c}pre{white-space:pre-wrap}</style><h1>Gegevens veilig bewaren</h1><p>Deze pagina leest alleen. Zij verandert geen beoordelingen, reserves of opslag. Bewaar het bestand voor herstel; het bevat je persoonlijke muziekhistorie.</p><button id="save">Bewaar volledige gegevenskopie</button><pre id="status" role="status" aria-live="polite">Gebruik dezelfde Safari- of appcontext als Music DNA.</pre><a href="daily.html">Terug naar Music DNA</a><script>
 'use strict';
 document.getElementById('save').onclick=async function(){
- const status=document.getElementById('status');let db;
+ const status=document.getElementById('status');let db,stage='oude opslag lezen';
+ this.disabled=true;
+ const missing='Geen beschermde database in deze browser-/appcontext gevonden. Open de export vanuit dezelfde Music DNA-context met je bestaande beoordelingen. Wis of herstel niets.';
  try{
   const legacy={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&k.startsWith('bmd-'))legacy[k]=localStorage.getItem(k);}
+  stage='beschermde database openen';
   const record=await new Promise((resolve,reject)=>{
+   let cancelled=false,missingDatabase=false;
    const req=indexedDB.open('music-dna-daily-v1');
-   req.onupgradeneeded=()=>{req.transaction.abort();};
-   req.onerror=()=>reject(req.error);req.onblocked=()=>reject(Error('Sluit andere Music DNA-pagina’s en probeer opnieuw.'));
-   req.onsuccess=()=>{db=req.result;if(!db.objectStoreNames.contains('state')){db.close();reject(Error('Beschermde gegevens ontbreken.'));return;}
+   req.onupgradeneeded=()=>{missingDatabase=true;req.transaction.abort();};
+   req.onerror=()=>reject(missingDatabase?Error(missing):(req.error||Error('Openen afgebroken.')));
+   req.onblocked=()=>{cancelled=true;reject(Error('Database geblokkeerd. Laat de bestaande Music DNA-context ongemoeid; er is geen export gemaakt.'));};
+   req.onsuccess=()=>{try{db=req.result;if(cancelled){db.close();return;}db.onversionchange=()=>db.close();if(!db.objectStoreNames.contains('state')){db.close();reject(Error('Beschermde gegevens ontbreken.'));return;}
+    stage='beschermd record lezen';
     const tx=db.transaction('state','readonly'),get=tx.objectStore('state').get('daily');let value;
-    get.onsuccess=()=>{value=get.result;};tx.onabort=()=>reject(tx.error);tx.oncomplete=()=>resolve(value);
-   };
+    get.onsuccess=()=>{value=get.result;};tx.onabort=()=>reject(tx.error||Error('Lezen afgebroken.'));tx.oncomplete=()=>resolve(value);
+   }catch(e){reject(e);}};
   });
   if(!record||record.version!==1||record.origin!==location.origin||!record.original||!record.current)throw Error('Geen geldige beschermde gegevens gevonden. Wis niets.');
+  stage='exportbestand maken';
   const payload={schema:'music-dna-full-recovery-v1',exportedAt:new Date().toISOString(),origin:location.origin,record,legacy};
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
-  a.href=url;a.download='Music-DNA-volledige-herstelkopie.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),60000);
+  a.href=url;a.download='Music-DNA-volledige-herstelkopie.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
   status.textContent='Volledige kopie aangeboden: oorspronkelijke gegevens, actuele beoordelingen en reserves, plus oude opslag. Controleer dat het bestand is bewaard.';
- }catch(e){status.textContent='Bewaren gestopt: '+e.message+' Er is niets gewijzigd.';}finally{if(db)db.close();}
+ }catch(e){status.textContent='Bewaren gestopt: '+(e&&e.message?e.message:String(e))+' [Stap: '+stage+'] Er is niets gewijzigd.';}finally{if(db)db.close();this.disabled=false;}
 };
 </script></html>
