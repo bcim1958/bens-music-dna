@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "status": "spotify-published-archive-pending",
+  "status": "published-with-audio-verification-open",
   "purpose": "W42 voorbereidings- en herkomstmanifest; geen uitvoerbare iPhone-import",
   "weekId": "2026-42",
   "freeze": {
@@ -86,9 +86,10 @@
       "editionId": null
     },
     "gemstoneMuseum": {
-      "status": "awaiting-deployment",
+      "status": "published",
       "entryId": "2026-42",
-      "url": "https://bcim1958.github.io/bens-music-dna/test/week-museum.html?week=2026-42"
+      "url": "https://bcim1958.github.io/bens-music-dna/test/week-museum.html?week=2026-42",
+      "verifiedAt": "2026-10-16T15:11:34.879339+00:00"
     }
   },
   "selectionRules": {
@@ -294,8 +295,10 @@
   "integrity": {
     "complete": false,
     "spotifyAndCoverVerified": true,
-    "museumAwaitingDeployment": true,
-    "audioAuditioned": false
+    "museumAwaitingDeployment": false,
+    "audioAuditioned": false,
+    "museumLiveVerified": true,
+    "archivePublished": true
   },
   "flow": {
     "profile": "W36-W38 energetic-opening-destination-v1",

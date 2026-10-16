@@ -70,5 +70,13 @@
     "W42-spotify-eindcontrole.txt",
     "W42-spotify-ID-teruglezing.txt",
     "W42-spotify-afleveringsbewijs.png"
-  ]
+  ],
+  "archiveCommit": "a3e878125356d121010fe322fc330ec58cf94d31",
+  "publicArchivePrivateMetadataExcluded": true,
+  "museumUrl": "https://bcim1958.github.io/bens-music-dna/test/week-museum.html?week=2026-42",
+  "museumLiveVerified": true,
+  "museumVerifiedAt": "2026-10-16T15:11:34.879339+00:00",
+  "deploymentRun": "https://github.com/bcim1958/bens-music-dna/actions/runs/38921668381",
+  "deploymentConclusion": "success",
+  "privateMetadataKeptLocal": true
 }
