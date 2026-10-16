@@ -54,5 +54,13 @@ function elements(n){return [n,...(n.children||[]).flatMap(elements)];}
  s.set('bmd-week-2026-W42-day1-reserve-selection-v1',JSON.stringify({ids:['same-artist']}));
  assert.throws(()=>c.MUSIC_DNA_PREPARED_DAY.selection({key:'2026-W42',preparedThroughDay:2},catalog,2,false,0),/artiest/);assert(!s.has(BASE+'-selection-v1'));
  const cfg=vm.runInContext("MUSIC_DNA_WEEKS.get('2026-W42')",c);assert.equal(cfg.preparedThroughDay,2);assert.equal(cfg.delivery,undefined);assert.equal(cfg.automaticGift,undefined);
+ // Release readiness guard: incomplete W42 cannot be mistaken for a seven-day plan.
+ const prepared=Array.from({length:7},(_,i)=>catalog['day'+(i+1)]);
+ assert.equal(prepared.filter(Boolean).length,2);
+ const available=prepared.filter(Boolean).flatMap(d=>d.official||[]);
+ assert.equal(available.length,6);
+ assert.equal(new Set(available).size,6);
+ assert.equal(cfg.candidateFiles.length,2);
+ assert.equal(cfg.preparedThroughDay,2);
  console.log('PASS: exact day 2; four rating handlers; resume; no fabricated ratings/reserves; day1/W41 receipts preserved; reserve FIFO timestamps/use unchanged; recording aliases and same-week artists blocked; orphan/unknown data preserved; day3-7 and Saturday blocked. Spotify writes=0.');
 })().catch(e=>{console.error(e);process.exitCode=1});
