@@ -1,7 +1,28 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-12**
-**Status: W42 dag 2 gepubliceerd en op iPhone praktisch beoordeeld; dag 3–7 en automatische zaterdaglevering nog NIET end-to-end bewezen. Echte iPhone-data nog niet onafhankelijk als herstelkopie veiliggesteld.**
+**Last updated: 2026-10-23**
+**Status: documentatiecheckpoint 20–23 oktober; W42 vrijdaglevering historisch bewezen, W43-opdracht voor 24 oktober vastgelegd; uitvoering en automatische zaterdagketen nog niet bewezen.**
+
+## Actuele hervatplek — 23 oktober 2026
+
+[Checkpoint 20–23 oktober](CHECKPOINT-2026-10-23-ARCHIVE-20-23-OCTOBER.md) is de actuele statusingang. Gecontroleerde main-basis: `942b73385dd8e0bbdc05914ce6094943cb8aa6cd`. Tien bestaande open PR's (#2/#3/#4/#5/#7/#10/#11/#16/#17/#18); Music DNA 2.0 blijft documentatievoorstel #18 met implementatie open. Deze documentatiebranch levert geen productie-release. Bij latere merges van overlappende PROJECT-STATE-wijzigingen deze actuele kop behouden.
+
+- **Besluit:** definitieve naam **DNA Achter de Muziek**; uitgebreide Split Enz-biografie is goedgekeurd stijlvoorbeeld: prettig leesbaar, natuurlijke verhaallijn, betekenisvolle anekdotes en discrete genummerde bronlinks. Feiten/bronlinks nog te controleren.
+- **Gebruikersbevestiging:** geslaagde lokale Spotify-proef voor Split Enz — I Got You met een **oudere prototypeversie** van het portret. Integratie van de later goedgekeurde tekst is **nog niet aantoonbaar**.
+- **Voorstellen:** gedeelde verhalenbibliotheek, canonieke artiestportretten, nummerverhalen en hergebruik in Explorer/Express. Geen gerealiseerd centraal systeem claimen.
+- **Bewezen archief:** W42 vrijdag 16 oktober geleverd en museumroute gecontroleerd; automatische route en audioflow niet bewezen. Gebruiksrecord heeft **iphoneHistorySynced=false**; externe uitsluitingen worden niet automatisch door de iPhone-selector gelezen.
+- **Opdracht:** W43 zaterdag **24 oktober 2026**, 21 nummers, hoes, tekst en automatische aflevering; geplande uitvoering 09.00 Europe/Amsterdam is historisch vastgelegd. Werkset/flow voorbereid, exacte opnamen en zeven gereconstrueerde eerdere keuzes nog te controleren; hoes/tekst en daadwerkelijke levering niet bewezen. Geen nieuwe automation door deze archivering.
+- **Open FIFO/no-repeat:** lokaal reconciliatierapport noemt 46 ongebruikt geregistreerde items, waaronder 21 geleverde W41- en 17 W42-tracks; saldo 8 is geen vrijgegeven voorraad. Alle 42 geleverde opname-ID's moeten herhaalveilig uitgesloten worden; geen blinde afboeking.
+- **Herstelkopie:** historische analyse van export 18 oktober: current bewaart W42-dag 2, legacy/original niet. Huidige apparaatstand, herstelbaarheid en onafhankelijke kopie blijven open. Walk & Listen-container is afzonderlijke opslag.
+- **Bewijsgrens:** Explorer heeft afzonderlijke prototypes; volledige koppeling met DNA Achter de Muziek niet bewezen. Flow-DNA W42 structureel/redactioneel vastgelegd, twintig overgangen niet beluisterd bewezen. Museum W42 historisch live gecontroleerd; nieuwste Projectkaart/navigatie niet volledig beschikbaar.
+
+Eerst de open controles uit het checkpoint afhandelen. Deze archivering wijzigt geen productiecode, beoordelingen, iPhone-data of Spotify.
+
+---
+
+## Historische projectstatus — bewaard vanaf 12 oktober 2026
+
+Onderstaande oudere “actuele” koppen zijn historische momentopnamen. Waar zij verschillen met de kop van 23 oktober en het gekoppelde checkpoint, geldt die nieuwere status; hun oorspronkelijke bewijs en beperkingen blijven behouden.
 
 ## Actueel checkpoint — maandag 12 oktober 2026 (na PR #13 en #14)
 
