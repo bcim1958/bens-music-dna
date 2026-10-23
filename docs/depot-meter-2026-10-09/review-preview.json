@@ -1,0 +1,943 @@
+{
+  "purpose": "Offline preview only; recovered observations are snapshots, not a complete historical event stream",
+  "asOf": "2026-10-09",
+  "history": [
+    {
+      "eventId": "recovered-v2:2026-W35-13",
+      "candidateId": "2026-W35-13",
+      "rating": "TERUGKOMEN",
+      "sequence": 1,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "DOROTHY",
+        "title": "Rest in Peace",
+        "releaseYear": 2022,
+        "albumOrRelease": "Gifts from the Holy Ghost",
+        "country": "United States"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-07",
+      "candidateId": "2026-W35-07",
+      "rating": "GOED",
+      "sequence": 2,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Wobbler",
+        "title": "Five Rooms",
+        "releaseYear": 2020,
+        "albumOrRelease": "Dwellers of the Deep",
+        "country": "Norway"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-14",
+      "candidateId": "2026-W35-14",
+      "rating": "TERUGKOMEN",
+      "sequence": 3,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Plush",
+        "title": "Hate",
+        "releaseYear": 2021,
+        "albumOrRelease": "Plush",
+        "country": "United States"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-12",
+      "candidateId": "2026-W35-12",
+      "rating": "RAAK",
+      "sequence": 4,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Creeper",
+        "title": "Cry to Heaven",
+        "releaseYear": 2023,
+        "albumOrRelease": "Sanguivore",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-19",
+      "candidateId": "2026-W35-19",
+      "rating": "RAAK",
+      "sequence": 5,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Starbenders",
+        "title": "Blood Moon",
+        "releaseYear": 2022,
+        "albumOrRelease": "Take Back the Night",
+        "country": "United States"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-10",
+      "candidateId": "2026-W35-10",
+      "rating": "RAAK",
+      "sequence": 6,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "7d1jgc7jRYIc1yuUEp7zx7",
+      "identity": {
+        "artist": "Nestor",
+        "title": "On the Run",
+        "releaseYear": 2021,
+        "albumOrRelease": "Kids in a Ghost Town",
+        "country": "Sweden"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-36",
+      "candidateId": "2026-W35-36",
+      "rating": "RAAK",
+      "sequence": 7,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "0cq5YH4eRdbXgunCPgvX6S",
+      "identity": {
+        "artist": "Airbourne",
+        "title": "Breakin' Outta Hell",
+        "releaseYear": 2016,
+        "albumOrRelease": "Breakin' Outta Hell",
+        "country": "Australia"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-25",
+      "candidateId": "2026-W35-25",
+      "rating": "GOED",
+      "sequence": 8,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Bleeker",
+        "title": "Highway",
+        "releaseYear": 2016,
+        "albumOrRelease": "Erase You",
+        "country": "Canada"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-38",
+      "candidateId": "2026-W35-38",
+      "rating": "RAAK",
+      "sequence": 9,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Enforcer",
+        "title": "Kiss of Death",
+        "releaseYear": 2021,
+        "albumOrRelease": "Kiss of Death",
+        "country": "Sweden"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W36-19",
+      "candidateId": "2026-W36-19",
+      "rating": "NIET",
+      "sequence": 10,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "3lubbUrIJx6aghnlMTgWwJ",
+      "identity": {
+        "artist": "Tigercub",
+        "title": "The Perfume of Decay - Redux",
+        "releaseYear": 2025,
+        "albumOrRelease": "The Perfume Of Decay (Redux)",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W36-10",
+      "candidateId": "2026-W36-10",
+      "rating": "TERUGKOMEN",
+      "sequence": 11,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "7iJ9EfGFYKv0Cv9KcaceP2",
+      "identity": {
+        "artist": "Skindred",
+        "title": "Gimme That Boom",
+        "releaseYear": 2023,
+        "albumOrRelease": "Smile",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W36-13",
+      "candidateId": "2026-W36-13",
+      "rating": "TERUGKOMEN",
+      "sequence": 12,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "4XtagwFOP5raVawgXl498u",
+      "identity": {
+        "artist": "Des Rocs",
+        "title": "Never Ending Moment",
+        "releaseYear": 2023,
+        "albumOrRelease": "Dream Machine",
+        "country": "United States"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-04",
+      "candidateId": "2026-W35-04",
+      "rating": "RAAK",
+      "sequence": 13,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Dirty Honey",
+        "title": "When I'm Gone",
+        "releaseDate": null,
+        "releaseYear": 2019,
+        "albumOrRelease": "Dirty Honey",
+        "country": "United States",
+        "locality": null
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-05",
+      "candidateId": "2026-W35-05",
+      "rating": "GOED",
+      "sequence": 14,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "The Struts",
+        "title": "Pretty Vicious",
+        "releaseDate": "2023-11-03",
+        "releaseYear": 2023,
+        "albumOrRelease": "Pretty Vicious",
+        "country": "United Kingdom",
+        "locality": null
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-06",
+      "candidateId": "2026-W35-06",
+      "rating": "GOED",
+      "sequence": 15,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "The Warning",
+        "title": "S!CK",
+        "releaseDate": null,
+        "releaseYear": 2024,
+        "albumOrRelease": "Keep Me Fed",
+        "country": "Mexico",
+        "locality": "Monterrey"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-01",
+      "candidateId": "2026-W35-01",
+      "rating": "RAAK",
+      "sequence": 16,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Crown Lands",
+        "title": "Right Way Back",
+        "releaseDate": "2021-03-11",
+        "releaseYear": 2021,
+        "albumOrRelease": "Context: Fearless Pt. I",
+        "country": "Canada",
+        "locality": "Oshawa, Ontario"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-02",
+      "candidateId": "2026-W35-02",
+      "rating": "GOED",
+      "sequence": 17,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Hällas",
+        "title": "Fading Hero",
+        "releaseDate": "2020-02-14",
+        "releaseYear": 2020,
+        "albumOrRelease": "Conundrum",
+        "country": "Zweden",
+        "locality": "Jönköping"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-03",
+      "candidateId": "2026-W35-03",
+      "rating": "GOED",
+      "sequence": 18,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "The Night Flight Orchestra",
+        "title": "Give Us the Moon",
+        "releaseDate": "2025-01-31",
+        "releaseYear": 2025,
+        "albumOrRelease": "Give Us the Moon",
+        "country": "Zweden",
+        "locality": "Helsingborg"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-22",
+      "candidateId": "2026-W35-22",
+      "rating": "GOED",
+      "sequence": 19,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "6RGURwb5jvJMa3QSe6tViy",
+      "identity": {
+        "artist": "White Reaper",
+        "title": "Might Be Right",
+        "releaseYear": 2019,
+        "albumOrRelease": "You Deserve Love",
+        "country": "United States"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-27",
+      "candidateId": "2026-W35-27",
+      "rating": "TERUGKOMEN",
+      "sequence": 20,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Temples",
+        "title": "Hot Motion",
+        "releaseYear": 2019,
+        "albumOrRelease": "Hot Motion",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-35",
+      "candidateId": "2026-W35-35",
+      "rating": "GOED",
+      "sequence": 21,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "1tFQwUUnsotRNBPCupoyQd",
+      "identity": {
+        "artist": "Drab Majesty",
+        "title": "Ellipsis",
+        "releaseYear": 2019,
+        "albumOrRelease": "Modern Mirror",
+        "country": "United States"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-09",
+      "candidateId": "2026-W35-09",
+      "rating": "RAAK",
+      "sequence": 22,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "2wbfb2aLoDZMfX3kuuqYbt",
+      "identity": {
+        "artist": "Green Lung",
+        "title": "Maxine (Witch Queen)",
+        "releaseYear": 2023,
+        "albumOrRelease": "This Heathen Land",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-15",
+      "candidateId": "2026-W35-15",
+      "rating": "RAAK",
+      "sequence": 23,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Lucifer",
+        "title": "Maculate Heart",
+        "releaseYear": 2024,
+        "albumOrRelease": "Lucifer V",
+        "country": null
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-08",
+      "candidateId": "2026-W35-08",
+      "rating": "RAAK",
+      "sequence": 24,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "2yFzF7w2re0HxT4jDrGgOX",
+      "identity": {
+        "artist": "Elder",
+        "title": "Catastasis",
+        "releaseYear": 2022,
+        "albumOrRelease": "Innate Passage",
+        "country": "United States"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-20",
+      "candidateId": "2026-W35-20",
+      "rating": "GOED",
+      "sequence": 25,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "5lnCypJsQ39undAOrvqLNP",
+      "identity": {
+        "artist": "Unto Others",
+        "title": "Butterfly",
+        "releaseYear": 2024,
+        "albumOrRelease": "Never, Neverland",
+        "country": "United States"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-21",
+      "candidateId": "2026-W35-21",
+      "rating": "GOED",
+      "sequence": 26,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "5TZbDoSfKFm30smKZy7bK2",
+      "identity": {
+        "artist": "King Buffalo",
+        "title": "Mammoth",
+        "releaseYear": 2022,
+        "albumOrRelease": "Regenerator",
+        "country": "United States"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-11",
+      "candidateId": "2026-W35-11",
+      "rating": "RAAK",
+      "sequence": 27,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Crazy Lixx",
+        "title": "Rise Above",
+        "releaseYear": 2021,
+        "albumOrRelease": "Street Lethal",
+        "country": "Sweden"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-16",
+      "candidateId": "2026-W35-16",
+      "rating": "RAAK",
+      "sequence": 28,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "401y3CGGbwRAOQP4jVdGc5",
+      "identity": {
+        "artist": "Amyl and the Sniffers",
+        "title": "Hertz",
+        "releaseYear": 2021,
+        "albumOrRelease": "Comfort to Me",
+        "country": "Australia"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-18",
+      "candidateId": "2026-W35-18",
+      "rating": "GOED",
+      "sequence": 29,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "7hPc1Q8iPbYBzZw6eAOlTa",
+      "identity": {
+        "artist": "Grade 2",
+        "title": "Under the Streetlight",
+        "releaseYear": 2023,
+        "albumOrRelease": "Grade 2",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-17",
+      "candidateId": "2026-W35-17",
+      "rating": "RAAK",
+      "sequence": 30,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": "5LWmGFuiygZ5Sc4uH6ERrj",
+      "identity": {
+        "artist": "The Chats",
+        "title": "6L GTR",
+        "releaseYear": 2022,
+        "albumOrRelease": "Get Fucked",
+        "country": "Australia"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-24",
+      "candidateId": "2026-W35-24",
+      "rating": "NIET",
+      "sequence": 31,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Starcrawler",
+        "title": "She Said",
+        "releaseYear": 2022,
+        "albumOrRelease": "She Said",
+        "country": "United States"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-39",
+      "candidateId": "2026-W35-39",
+      "rating": "GOED",
+      "sequence": 32,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "The Gems",
+        "title": "Like a Phoenix",
+        "releaseYear": 2023,
+        "albumOrRelease": "Phoenix",
+        "country": "Sweden"
+      }
+    },
+    {
+      "eventId": "recovered-v2:2026-W35-37",
+      "candidateId": "2026-W35-37",
+      "rating": "TERUGKOMEN",
+      "sequence": 33,
+      "source": "data/historical-ratings-recovery-w35-w38-v2.json",
+      "observedDate": null,
+      "spotifyTrackId": null,
+      "identity": {
+        "artist": "Church of the Cosmic Skull",
+        "title": "Cold Sweat",
+        "releaseYear": 2018,
+        "albumOrRelease": "Science Fiction",
+        "country": "United Kingdom"
+      }
+    }
+  ],
+  "queues": {
+    "outgoing": [
+      {
+        "candidateId": "2026-W35-24",
+        "latestEventId": "recovered-v2:2026-W35-24",
+        "rating": "NIET"
+      },
+      {
+        "candidateId": "2026-W36-19",
+        "latestEventId": "recovered-v2:2026-W36-19",
+        "rating": "NIET"
+      }
+    ],
+    "waiting": [
+      {
+        "candidateId": "2026-W35-13",
+        "latestEventId": "recovered-v2:2026-W35-13",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W35-14",
+        "latestEventId": "recovered-v2:2026-W35-14",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W35-27",
+        "latestEventId": "recovered-v2:2026-W35-27",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W35-37",
+        "latestEventId": "recovered-v2:2026-W35-37",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W36-10",
+        "latestEventId": "recovered-v2:2026-W36-10",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W36-13",
+        "latestEventId": "recovered-v2:2026-W36-13",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      }
+    ],
+    "retained": [
+      {
+        "candidateId": "2026-W35-01",
+        "latestEventId": "recovered-v2:2026-W35-01",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-02",
+        "latestEventId": "recovered-v2:2026-W35-02",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-03",
+        "latestEventId": "recovered-v2:2026-W35-03",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-04",
+        "latestEventId": "recovered-v2:2026-W35-04",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-05",
+        "latestEventId": "recovered-v2:2026-W35-05",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-06",
+        "latestEventId": "recovered-v2:2026-W35-06",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-07",
+        "latestEventId": "recovered-v2:2026-W35-07",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-08",
+        "latestEventId": "recovered-v2:2026-W35-08",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-09",
+        "latestEventId": "recovered-v2:2026-W35-09",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-10",
+        "latestEventId": "recovered-v2:2026-W35-10",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-11",
+        "latestEventId": "recovered-v2:2026-W35-11",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-12",
+        "latestEventId": "recovered-v2:2026-W35-12",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-15",
+        "latestEventId": "recovered-v2:2026-W35-15",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-16",
+        "latestEventId": "recovered-v2:2026-W35-16",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-17",
+        "latestEventId": "recovered-v2:2026-W35-17",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-18",
+        "latestEventId": "recovered-v2:2026-W35-18",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-19",
+        "latestEventId": "recovered-v2:2026-W35-19",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-20",
+        "latestEventId": "recovered-v2:2026-W35-20",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-21",
+        "latestEventId": "recovered-v2:2026-W35-21",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-22",
+        "latestEventId": "recovered-v2:2026-W35-22",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-25",
+        "latestEventId": "recovered-v2:2026-W35-25",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-35",
+        "latestEventId": "recovered-v2:2026-W35-35",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-36",
+        "latestEventId": "recovered-v2:2026-W35-36",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-38",
+        "latestEventId": "recovered-v2:2026-W35-38",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-39",
+        "latestEventId": "recovered-v2:2026-W35-39",
+        "rating": "GOED"
+      }
+    ],
+    "due": []
+  },
+  "firstReviewQueues": {
+    "outgoing": [
+      {
+        "candidateId": "2026-W35-24",
+        "latestEventId": "recovered-v2:2026-W35-24",
+        "rating": "NIET"
+      },
+      {
+        "candidateId": "2026-W36-19",
+        "latestEventId": "recovered-v2:2026-W36-19",
+        "rating": "NIET"
+      }
+    ],
+    "waiting": [
+      {
+        "candidateId": "2026-W35-13",
+        "latestEventId": "recovered-v2:2026-W35-13",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W35-14",
+        "latestEventId": "recovered-v2:2026-W35-14",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W35-27",
+        "latestEventId": "recovered-v2:2026-W35-27",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W35-37",
+        "latestEventId": "recovered-v2:2026-W35-37",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W36-10",
+        "latestEventId": "recovered-v2:2026-W36-10",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W36-13",
+        "latestEventId": "recovered-v2:2026-W36-13",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      }
+    ],
+    "retained": [
+      {
+        "candidateId": "2026-W35-01",
+        "latestEventId": "recovered-v2:2026-W35-01",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-02",
+        "latestEventId": "recovered-v2:2026-W35-02",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-03",
+        "latestEventId": "recovered-v2:2026-W35-03",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-04",
+        "latestEventId": "recovered-v2:2026-W35-04",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-05",
+        "latestEventId": "recovered-v2:2026-W35-05",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-06",
+        "latestEventId": "recovered-v2:2026-W35-06",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-07",
+        "latestEventId": "recovered-v2:2026-W35-07",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-08",
+        "latestEventId": "recovered-v2:2026-W35-08",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-09",
+        "latestEventId": "recovered-v2:2026-W35-09",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-10",
+        "latestEventId": "recovered-v2:2026-W35-10",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-11",
+        "latestEventId": "recovered-v2:2026-W35-11",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-12",
+        "latestEventId": "recovered-v2:2026-W35-12",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-15",
+        "latestEventId": "recovered-v2:2026-W35-15",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-16",
+        "latestEventId": "recovered-v2:2026-W35-16",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-17",
+        "latestEventId": "recovered-v2:2026-W35-17",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-18",
+        "latestEventId": "recovered-v2:2026-W35-18",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-19",
+        "latestEventId": "recovered-v2:2026-W35-19",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-20",
+        "latestEventId": "recovered-v2:2026-W35-20",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-21",
+        "latestEventId": "recovered-v2:2026-W35-21",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-22",
+        "latestEventId": "recovered-v2:2026-W35-22",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-25",
+        "latestEventId": "recovered-v2:2026-W35-25",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-35",
+        "latestEventId": "recovered-v2:2026-W35-35",
+        "rating": "GOED"
+      },
+      {
+        "candidateId": "2026-W35-36",
+        "latestEventId": "recovered-v2:2026-W35-36",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-38",
+        "latestEventId": "recovered-v2:2026-W35-38",
+        "rating": "RAAK"
+      },
+      {
+        "candidateId": "2026-W35-39",
+        "latestEventId": "recovered-v2:2026-W35-39",
+        "rating": "GOED"
+      }
+    ],
+    "due": [
+      {
+        "candidateId": "2026-W35-13",
+        "latestEventId": "recovered-v2:2026-W35-13",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W35-14",
+        "latestEventId": "recovered-v2:2026-W35-14",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W35-27",
+        "latestEventId": "recovered-v2:2026-W35-27",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W35-37",
+        "latestEventId": "recovered-v2:2026-W35-37",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W36-10",
+        "latestEventId": "recovered-v2:2026-W36-10",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      },
+      {
+        "candidateId": "2026-W36-13",
+        "latestEventId": "recovered-v2:2026-W36-13",
+        "rating": "TERUGKOMEN",
+        "reviewOn": "2027-01-04"
+      }
+    ]
+  }
+}
