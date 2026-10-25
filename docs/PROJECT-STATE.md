@@ -1,9 +1,14 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-23**
-**Status: documentatiecheckpoint 20–23 oktober; W42 vrijdaglevering historisch bewezen, W43-opdracht voor 24 oktober vastgelegd; uitvoering en automatische zaterdagketen nog niet bewezen.**
+**Last updated: 2026-10-25**
+**Status: W43 handmatig gepubliceerd volgens gebruikersbevestiging; exacte 21 ID's uit bestaande bronnen vastgelegd. Finale presentatie en onafhankelijke Spotify-controle open; automatische keten en iPhone-synchronisatie onbewezen.**
 
-## Actuele hervatplek — 23 oktober 2026
+## Actuele hervatplek — 25 oktober 2026
+
+[W43-checkpoint en bronregister](CHECKPOINT-2026-10-25-W43-HEALTHCHECK.md), peiling 21.21.56 Europe/Amsterdam: main `dd87bc2b2731878c32d244c4a4ad1dbeaad5180b`; tien open bestaande PR's. **W43 handmatig gepubliceerd volgens gebruikersbevestiging**, [playlist](https://open.spotify.com/playlist/3fUqfUE9FZYHEH8tRGrKT4), 21 nummers in oorspronkelijke volgorde en drie definitieve versies. Exacte ID's uit drie overeenstemmende bestaande lokale bronnen overgenomen in een afzonderlijk [observatierecord](../data/week-use-observation-2026-43.json). Geen nieuwe onafhankelijke Spotify-uitlezing; finale naam/hoes/beschrijving blijven open. Geen FIFO-afboeking of ratingmutatie; iPhone-synchronisatie en werkende no-repeatuitsluiting onbewezen. W42-zaterdagketen onbewezen; PR #18 open en geen implementatiebewijs. Overige projectstatus en behoudsregels uit 23 oktober blijven gelden.
+
+## Historische hervatplek — 23 oktober 2026
+
 
 [Checkpoint 20–23 oktober](CHECKPOINT-2026-10-23-ARCHIVE-20-23-OCTOBER.md) is de actuele statusingang. Gecontroleerde main-basis: `942b73385dd8e0bbdc05914ce6094943cb8aa6cd`. Tien bestaande open PR's (#2/#3/#4/#5/#7/#10/#11/#16/#17/#18); Music DNA 2.0 blijft documentatievoorstel #18 met implementatie open. Deze documentatiebranch levert geen productie-release. Bij latere merges van overlappende PROJECT-STATE-wijzigingen deze actuele kop behouden.
 
