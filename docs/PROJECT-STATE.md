@@ -1,11 +1,18 @@
 # Ben's Music DNA — Project State
 
+## W44-bronherstel — 25 oktober 2026
+
+[Volledig zelfstandig bronregister](W44-SOURCE-REGISTER-2026-10-25.md): alle **36 oorspronkelijke beoordelingen**, in exacte rondevolgorde, met gebruikersopgave, visueel gelezen hoofdchat-screenshots en SHA-256-bronvingerafdrukken. **23 positief: 10 RAAK + 13 GOED; 7 TERUGKOMEN; 6 NIET**. De eerdere melding dat de volledige namenlijst ontbreekt is hiermee achterhaald; zij blijft hieronder uitsluitend als historische zoekbevinding staan. Voor tien niet-positieve ronde-1-tracks komen exacte titels/posities uit de expliciete vervolgopdracht, terwijl het screenshot artiest/oordeel bevestigt.
+
+Geen keuze van 21/twee reserves gemaakt. Definitieve luistervolgorde, exacte opnameversies/Spotify-ID's en publicatie blijven open. Alleen bronarchivering; geen operationele ratings-, historie-, FIFO-, Spotify- of opslagmutatie. Current/original/legacy beschermd; Walk & Listen afzonderlijk.
+
+
 **Last updated: 2026-10-25**
 **Status: W44 qua aantal compleet: 23 goedgekeurd voor 21 plekken (gebruikersbevestiging 25 oktober). Definitieve 21/twee reserves en exacte IDs open. Oorspronkelijke iPhone-weekwerkwijze losgelaten; iPhone-sync/FIFO is geen blokkade voor weekaflevering. Technische issues blijven open. W43-publicatie gebruikersbevestigd; onafhankelijke presentatiecontrole open.**
 
 ## Leidende correctie — 25 oktober 2026
 
-[Bron- en conflictenregister](SOURCE-RESOLUTION-2026-10-25-W44-WORKFLOW.md) legt herkomst, eerdere besluiten, oudere afwijkende regels en resolutie vast. **Gebruikersbevestiging in hoofdchat:** vanavond 23 nummers goedgekeurd voor 21 plekken in W44 (31 oktober); qua aantal compleet. “Elf goedgekeurd, nog tien nodig” is achterhaald. Geen bewezen namenlijst van alle 23 teruggevonden; welke 21 definitief worden, welke twee reserve en exacte Spotify-ID's/volgorde blijven open. Geen beoordelingen of reserve-identiteiten invullen.
+[Bron- en conflictenregister](SOURCE-RESOLUTION-2026-10-25-W44-WORKFLOW.md) legt herkomst, eerdere besluiten, oudere afwijkende regels en resolutie vast. **Gebruikersbevestiging in hoofdchat:** vanavond 23 nummers goedgekeurd voor 21 plekken in W44 (31 oktober); qua aantal compleet. “Elf goedgekeurd, nog tien nodig” is achterhaald. De volledige namen- en beoordelingsbron is nu vastgelegd in het W44-bronregister; welke 21 definitief worden, welke twee reserve en exacte Spotify-ID's/volgorde blijven open. Geen beoordelingen of reserve-identiteiten invullen.
 
 **Gebruikersbevestigd besluit:** de oorspronkelijke iPhone-gebaseerde wekelijkse werkwijze is losgelaten. **iPhone-sync/FIFO is GEEN BLOKKADE voor de wekelijkse Ontdek DNA-aflevering.** Het eerdere functionele besluit is teruggevonden in open PR #18; dat bewijst geen implementatie. Historische data, ratings, reserves, current/original/legacy en journalen blijven beschermd. iPhone-synchronisatie, herstelbaarheid en FIFO-reconciliatie blijven afzonderlijk open; technisch issue niet opgelost. Walk & Listen heeft afzonderlijke opslag.
 

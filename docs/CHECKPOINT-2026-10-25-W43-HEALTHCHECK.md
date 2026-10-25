@@ -1,5 +1,12 @@
 # Music DNA — W43-checkpoint en healthcheck 25 oktober 2026
 
+## W44-bronherstel — 25 oktober 2026
+
+[Volledig zelfstandig bronregister](W44-SOURCE-REGISTER-2026-10-25.md): alle **36 oorspronkelijke beoordelingen**, in exacte rondevolgorde, met gebruikersopgave, visueel gelezen hoofdchat-screenshots en SHA-256-bronvingerafdrukken. **23 positief: 10 RAAK + 13 GOED; 7 TERUGKOMEN; 6 NIET**. De eerdere melding dat de volledige namenlijst ontbreekt is hiermee achterhaald; zij blijft hieronder uitsluitend als historische zoekbevinding staan. Voor tien niet-positieve ronde-1-tracks komen exacte titels/posities uit de expliciete vervolgopdracht, terwijl het screenshot artiest/oordeel bevestigt.
+
+Geen keuze van 21/twee reserves gemaakt. Definitieve luistervolgorde, exacte opnameversies/Spotify-ID's en publicatie blijven open. Alleen bronarchivering; geen operationele ratings-, historie-, FIFO-, Spotify- of opslagmutatie. Current/original/legacy beschermd; Walk & Listen afzonderlijk.
+
+
 Peiling: **25 oktober 2026, 21.21.56 uur Europe/Amsterdam (CET)**. Onderzocht: door gebruiker geplakte healthcheck van **18.05 uur**. De beschikbare healthchecktekst is afgebroken; onbekende vervolgtekst is niet gereconstrueerd.
 
 ## Aanvullende correctie — 25 oktober 2026
