@@ -2,6 +2,10 @@
 
 Peiling: **25 oktober 2026, 21.21.56 uur Europe/Amsterdam (CET)**. Onderzocht: door gebruiker geplakte healthcheck van **18.05 uur**. De beschikbare healthchecktekst is afgebroken; onbekende vervolgtekst is niet gereconstrueerd.
 
+## Aanvullende correctie — 25 oktober 2026
+
+[Leidend bron- en conflictenregister](SOURCE-RESOLUTION-2026-10-25-W44-WORKFLOW.md): gebruikersbevestiging in hoofdchat **23 W44-nummers goedgekeurd voor 21 plekken; qua aantal compleet**. De definitieve 21/twee reserves en exacte IDs zijn nog niet bewezen. De oorspronkelijke iPhone-gebaseerde weekwerkwijze is losgelaten: **iPhone-sync/FIFO is geen blokkade voor de wekelijkse Ontdek DNA-aflevering**. PR #18 bevat een eerder functioneel ontkoppelingsbesluit; implementatie en technische issues blijven open. De oudere behouds- en open-puntenregels hieronder gelden voor historische veiligheid en technische bewijsvoering, niet als algemene weekleveringspoort. De aanvulling wijzigt geen W43-bronbestanden of observatierecord.
+
 ## Rechtstreeks gecontroleerd op GitHub
 
 - Main: `dd87bc2b2731878c32d244c4a4ad1dbeaad5180b`, laatste commit 23 oktober 2026, merge van PR #20. De in de healthcheck genoemde basis klopt; op het controlemoment geen nieuwere main-commit.
@@ -43,4 +47,4 @@ SHA-256 en oorspronkelijke paden van alle drie de gearchiveerde bronbestanden st
 
 ## Gevolg voor hervatting
 
-Dit checkpoint actualiseert alleen de W43-status ten opzichte van 23 oktober. Overige besluiten en open punten uit dat dossier blijven gelden. Geen nieuw productbesluit, geen nieuwe automation en geen release. De nieuwe branch begint bij de rechtstreeks gecontroleerde main-basis; bestaande PR's zijn niet meegenomen of gewijzigd. Bij latere integratie van overlappende PROJECT-STATE-wijzigingen deze bewijsgrenzen behouden.
+Dit checkpoint actualiseert alleen de W43-status ten opzichte van 23 oktober. Overige besluiten en open punten uit dat dossier blijven gelden binnen hun eigen scope, met voorrang voor bovenstaande correctie en zonder iPhone/FIFO als weekleveringspoort. Geen nieuw productbesluit, geen nieuwe automation en geen release. De nieuwe branch begint bij de rechtstreeks gecontroleerde main-basis; bestaande PR's zijn niet meegenomen of gewijzigd. Bij latere integratie van overlappende PROJECT-STATE-wijzigingen deze bewijsgrenzen behouden.

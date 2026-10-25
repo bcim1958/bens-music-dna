@@ -2,6 +2,14 @@
 
 This is the durable record of accepted product decisions. New chats must not silently reopen these decisions; changes require a new dated decision explaining why.
 
+## 2026-10-25 — W44-telling en loslaten oorspronkelijke iPhone-weekwerkwijze
+
+**Geaccepteerd / herbevestigd door gebruiker in hoofdchat; geen technische vrijgave.** W44 (31 oktober) is qua aantal compleet: **23 goedgekeurd voor 21 plekken**. De oudere claim “11 goedgekeurd, nog 10 nodig” vervalt. De volledige namenlijst, definitieve 21/twee reserves en exacte opname-ID's/volgorde zijn nog niet bewezen; geen ratings of Spotify-ID's reconstrueren.
+
+De oorspronkelijke iPhone-gebaseerde wekelijkse werkwijze is losgelaten. **iPhone-sync/FIFO is geen blokkade voor de wekelijkse Ontdek DNA-aflevering.** Het in PR #18 teruggevonden functionele besluit van 13 oktober ontkoppelt dagelijkse beoordeling en nieuwe weeklevering; implementatie blijft open. Historische opslag, ratings, reserves en journalen behouden hun bescherming. Synchronisatie/herstelbaarheid/reconciliatie blijven afzonderlijke technische open punten; geen opgelost-claim.
+
+Reden: expliciete correctie van twee terugkerende achterhaalde statusclaims op 25 oktober. [Gedateerde bronregistratie, concrete gebruikersberichten, eerdere beslissing, conflicten en bewijsgrenzen](SOURCE-RESOLUTION-2026-10-25-W44-WORKFLOW.md). Dit besluit heeft voorrang boven oudere hervat-/dagquota-/FIFO-poortinterpretaties, zonder historische data te wijzigen.
+
 ## 2026-09-03 — Music remains the centre
 **Decision:** Music is the primary function. Rich artist/band worlds are supporting and optional, but the app must not become visually barren.
 **Reason:** Daily value comes from listening/discovery; enrichment is the reward for curiosity.
