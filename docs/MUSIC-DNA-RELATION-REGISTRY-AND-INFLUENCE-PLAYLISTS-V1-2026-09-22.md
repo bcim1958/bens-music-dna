@@ -717,3 +717,9 @@ Hierdoor wordt een ontbrekend Express-hoofdstuk of Edelsteen-element een zichtba
 ### 24.6 W39 als overgangsgeval
 
 W39 is vóór deze manifestregel gepubliceerd en geldt daarom als migratie-/herstelgeval. De canonieke 21 tracks worden niet uit geheugen of screenshots gegokt. Zodra de werkelijke definitieve W39-selectie machineleesbaar beschikbaar is, kan daarvan een retrospectief manifest worden gemaakt met provenance **migrated-from-pre-manifest-publication**.
+
+## Toepassingsbesluit — 29 oktober 2026
+
+**Playlist = muziek; DNA Express = gepubliceerde verhaallaag; DNA Explorer = levende kennislaag.** Het verhaal achter de playlist hergebruikt dit bestaande Registry-model. Alleen afzonderlijk geverifieerde, getypeerde relaties met stabiele entiteiten en bewijs worden via de bestaande route vastgelegd; geen parallel artikelregister of automatische relatie uit samen op een playlist staan. Persoonlijke smaakgegevens, aannemelijke verbanden en redactionele interpretaties blijven onderscheiden van relationeel bewijs. De Special 102-sporen zijn nog te verifiëren en worden door deze documentatie niet als confirmed geïmporteerd. Gepubliceerde Express-tekst blijft een bewaaruitgave; nieuwe Explorer-kennis herschrijft die niet stilzwijgend. Centrale productie-integratie blijft OPEN; bestaande kleine proeven bewijzen die niet.
+
+[Volledig vastgesteld besluit en tien regels](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md); [broncontrole en open punten](SOURCE-REVIEW-2026-10-29-EDITORIAL-DECISION.md).

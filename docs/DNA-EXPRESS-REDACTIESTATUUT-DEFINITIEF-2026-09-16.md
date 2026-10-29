@@ -318,3 +318,9 @@ De eerder afgewezen 38-pagina-versies en oude paginabegrotingen gelden niet als 
 **Productieformule:**
 
 > **VERHAAL → TEKST → KNIP → BLADZIJDEN → BEELD & ONTDEKKINGEN → VORMGEVING**
+
+## Redactionele aanvulling — vastgesteld 29 oktober 2026
+
+De vaste formule **Het verhaal achter de playlist** en haar tien spelregels vullen dit statuut aan. Bestaande thematische playlists kunnen een samenhangend journalistiek verhaal opleveren; wekelijkse publicatie is ambitie met ruimte voor bronnen, kwaliteit en overige uitgaven. Magazinearchitectuur, vaste rubrieken, persoonlijke selectie met journalistieke vertelstem en de productiewet blijven gelden. Special 102 is de eerste proef, geen reeds gepubliceerd artikel. De gewenste Spotify-luisterkoppeling en Explorer-integratie zijn afzonderlijk te realiseren en te bewijzen.
+
+[Volledig vastgesteld besluit en tien regels](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md); [broncontrole en open punten](SOURCE-REVIEW-2026-10-29-EDITORIAL-DECISION.md).

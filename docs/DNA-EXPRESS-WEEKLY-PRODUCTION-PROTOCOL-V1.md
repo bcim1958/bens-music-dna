@@ -191,3 +191,9 @@ This protocol operationalizes:
 - the accepted Art Direction 2.0 / Editie NUL dramaturgy.
 
 It does not supersede closed Music DNA, taxonomy, playlist or governance decisions.
+
+## Aanvulling productieprotocol — 29 oktober 2026
+
+**Het verhaal achter de playlist** is een vaste redactionele formule, geen gegarandeerde wekelijkse levering. Neem een bestaande thematische playlist als kandidaat op in Gate 1–2; onderzoek alle tracks/artiesten, controleer afzonderlijke claims in Gate 4 en hergebruik bewezen Registry-relaties. De tien regels, Special 102-proef en Spotify-luisterervaring staan in het gekoppelde besluit. Gate 8–9 vereisen nog steeds echte link-/apparaat-/publicatiecontrole; beschreven ambitie of een historische proef maakt geen uitgave LIVE. De formule voegt geen ratingpoort toe: het functionele 2.0-besluit in PR #18 ontkoppelt weeklevering en Express van tijdige ratings, met implementatie OPEN. Onbekende ratings blijven onbekend. De nieuwe formule vervangt de bestaande magazinearchitectuur, vaste rubrieken of weekbio-opdracht niet.
+
+[Volledig vastgesteld besluit en tien regels](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md); [broncontrole en open punten](SOURCE-REVIEW-2026-10-29-EDITORIAL-DECISION.md).

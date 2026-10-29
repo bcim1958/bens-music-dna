@@ -1,11 +1,51 @@
 # Ben's Music DNA — Project State
 
-**Last updated: 2026-10-23**
-**Status: documentatiecheckpoint 20–23 oktober; W42 vrijdaglevering historisch bewezen, W43-opdracht voor 24 oktober vastgelegd; uitvoering en automatische zaterdagketen nog niet bewezen.**
+## Leidende healthcheck — 29 oktober 2026
 
-## Actuele hervatplek — 23 oktober 2026
+[Controle en bewijsgrenzen](HEALTHCHECK-2026-10-29.md): besluit Het verhaal achter de playlist stond al in PR #21 op `c84b5addbdc205cd34e8a4d5954d32884f16e79e`; de healthcheckmelding dat het ontbreekt is achterhaald. De gedateerde aanscherping legt nu vast: primair oude muziek uit bestaande, bijna geheel vanuit de Master Database opgebouwde playlists herontdekken. Magazinearchitectuur behouden; 48p/kleurenslinger/Music Challenge/Smaakmeter/Odometer/Kunst van de Hoes hebben afzonderlijke bewijsstatussen.
 
-[Checkpoint 20–23 oktober](CHECKPOINT-2026-10-23-ARCHIVE-20-23-OCTOBER.md) is de actuele statusingang. Gecontroleerde main-basis: `942b73385dd8e0bbdc05914ce6094943cb8aa6cd`. Tien bestaande open PR's (#2/#3/#4/#5/#7/#10/#11/#16/#17/#18); Music DNA 2.0 blijft documentatievoorstel #18 met implementatie open. Deze documentatiebranch levert geen productie-release. Bij latere merges van overlappende PROJECT-STATE-wijzigingen deze actuele kop behouden.
+**Eerstvolgende werkprioriteit:** [W44-voorbereiding voor 31 oktober](W44-PREPARATION-2026-10-29.md), met alle 36 bronbeoordelingen ongewijzigd. 23 positief voor 21 plaatsen; definitieve selectie, twee overblijvers, luistervolgorde, exacte opname-identiteit en volledige no-repeatcontrole blijven open. Geen publicatie, nieuwe voorspellingen achteraf of operationele mutaties. iPhone-sync/FIFO blijft geen weekleveringspoort; current/original/legacy, FIFO, reserves, journalen en aparte Walk & Listen-opslag blijven beschermd.
+
+Onderstaande oudere peilingen zijn historisch; merge-uitkomst en exacte commits moeten rechtstreeks op GitHub worden gecontroleerd.
+
+## Actuele documentatiestand — 29 oktober 2026
+
+**Besluit vastgelegd, geen productievrijgave.** [Het verhaal achter de playlist](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md) legt de tien regels, Playlist–Express–Explorer, hergebruik van bewezen Registry-relaties, wekelijkse ambitie en Special 102 als eerste volledige proef vast. Titelvoorstel: *De laatste lichting — Toen de glamdroom eindigde*. Bestaande magazinearchitectuur en rubrieken blijven gelden.
+
+**Live gecontroleerd vóór wijziging:** main `dd87bc2b2731878c32d244c4a4ad1dbeaad5180b`; PR #21 OPEN/samenvoegbaar op `00e23d7eadbbf1948fab40687e3e9ddce4a0895a`; PR #18 OPEN/draft/met conflicten op `7bae6b74ac9c72a0980b023b8da29b4ed87fc24a`. Deze documentatie wordt aan #21 toegevoegd; geen merge of release.
+
+**OPEN:** volledige Special 102-inhoud en feitencontrole, proefartikel en publicatiebewijs; artikel–Spotify–Explorer-koppelingen; definitieve DNA Achter de Muziek-tekstintegratie; automatische zaterdagproductie; reconciliatie van #18 met deze nieuwere afspraken. De 31-oktoberdoelen uit #18 en een wekelijkse ambitie zijn geen leveringsbewijs. Gedeelde verhalenbibliotheek/canonieke portretten blijven voorstellen; hergebruik van brongecontroleerde relaties is wel besloten.
+
+**Bronnen:** [controleverslag](SOURCE-REVIEW-2026-10-29-EDITORIAL-DECISION.md), volledige gebruikersbron van 29 oktober en drie lokaal teruggevonden/gelezen v1.0-registers. De healthcheck van 28 oktober levert voor afspraken van 26–27 oktober secundaire meldingen; oorspronkelijke goedkeuringen blijven open. Artwork is een voorstel. Geen ongetoetste nieuwe projectregel ingevoerd.
+
+**Behoud:** alle 36 W44-beoordelingen en oudere besluiten bewaard. Definitieve selectie/volgorde/IDs, historische gegevensveiligheid en FIFO-vragen blijven open zoals hieronder; iPhone-sync/FIFO is geen weekleveringspoort. Geen operationele data, playlists, opslag of andere projecten gewijzigd. Onderstaande koppen zijn gedateerde historische standen en blijven behouden.
+
+## W44-bronherstel — 25 oktober 2026
+
+[Volledig zelfstandig bronregister](W44-SOURCE-REGISTER-2026-10-25.md): alle **36 oorspronkelijke beoordelingen**, in exacte rondevolgorde, met gebruikersopgave, visueel gelezen hoofdchat-screenshots en SHA-256-bronvingerafdrukken. **23 positief: 10 RAAK + 13 GOED; 7 TERUGKOMEN; 6 NIET**. De eerdere melding dat de volledige namenlijst ontbreekt is hiermee achterhaald; zij blijft hieronder uitsluitend als historische zoekbevinding staan. Voor tien niet-positieve ronde-1-tracks komen exacte titels/posities uit de expliciete vervolgopdracht, terwijl het screenshot artiest/oordeel bevestigt.
+
+Geen keuze van 21/twee reserves gemaakt. Definitieve luistervolgorde, exacte opnameversies/Spotify-ID's en publicatie blijven open. Alleen bronarchivering; geen operationele ratings-, historie-, FIFO-, Spotify- of opslagmutatie. Current/original/legacy beschermd; Walk & Listen afzonderlijk.
+
+
+**Last updated: 2026-10-25**
+**Status: W44 qua aantal compleet: 23 goedgekeurd voor 21 plekken (gebruikersbevestiging 25 oktober). Definitieve 21/twee reserves en exacte IDs open. Oorspronkelijke iPhone-weekwerkwijze losgelaten; iPhone-sync/FIFO is geen blokkade voor weekaflevering. Technische issues blijven open. W43-publicatie gebruikersbevestigd; onafhankelijke presentatiecontrole open.**
+
+## Leidende correctie — 25 oktober 2026
+
+[Bron- en conflictenregister](SOURCE-RESOLUTION-2026-10-25-W44-WORKFLOW.md) legt herkomst, eerdere besluiten, oudere afwijkende regels en resolutie vast. **Gebruikersbevestiging in hoofdchat:** vanavond 23 nummers goedgekeurd voor 21 plekken in W44 (31 oktober); qua aantal compleet. “Elf goedgekeurd, nog tien nodig” is achterhaald. De volledige namen- en beoordelingsbron is nu vastgelegd in het W44-bronregister; welke 21 definitief worden, welke twee reserve en exacte Spotify-ID's/volgorde blijven open. Geen beoordelingen of reserve-identiteiten invullen.
+
+**Gebruikersbevestigd besluit:** de oorspronkelijke iPhone-gebaseerde wekelijkse werkwijze is losgelaten. **iPhone-sync/FIFO is GEEN BLOKKADE voor de wekelijkse Ontdek DNA-aflevering.** Het eerdere functionele besluit is teruggevonden in open PR #18; dat bewijst geen implementatie. Historische data, ratings, reserves, current/original/legacy en journalen blijven beschermd. iPhone-synchronisatie, herstelbaarheid en FIFO-reconciliatie blijven afzonderlijk open; technisch issue niet opgelost. Walk & Listen heeft afzonderlijke opslag.
+
+Deze correctie gaat voor bij interpretatie van alle oudere hervat-, NO-GO- en voorraadregels hieronder. Zij geeft geen vrijgave voor opslagmutatie/migratie en bewijst geen automatische zaterdagketen of Spotify-publicatie. Eigen opname-, no-repeat- en publicatiecontroles blijven vereist.
+
+## W43-hervatplek — 25 oktober 2026
+
+[W43-checkpoint en bronregister](CHECKPOINT-2026-10-25-W43-HEALTHCHECK.md), peiling 21.21.56 Europe/Amsterdam: main `dd87bc2b2731878c32d244c4a4ad1dbeaad5180b`; tien open bestaande PR's. **W43 handmatig gepubliceerd volgens gebruikersbevestiging**, [playlist](https://open.spotify.com/playlist/3fUqfUE9FZYHEH8tRGrKT4), 21 nummers in oorspronkelijke volgorde en drie definitieve versies. Exacte ID's uit drie overeenstemmende bestaande lokale bronnen overgenomen in een afzonderlijk [observatierecord](../data/week-use-observation-2026-43.json). Geen nieuwe onafhankelijke Spotify-uitlezing; finale naam/hoes/beschrijving blijven open. Geen FIFO-afboeking of ratingmutatie; iPhone-synchronisatie en werkende no-repeatuitsluiting onbewezen. W42-zaterdagketen onbewezen; PR #18 open en geen implementatiebewijs. Overige projectstatus en behoudsregels uit 23 oktober blijven gelden.
+
+## Historische hervatplek — 23 oktober 2026
+
+
+[Checkpoint 20–23 oktober](CHECKPOINT-2026-10-23-ARCHIVE-20-23-OCTOBER.md) was de toenmalige statusingang; de leidende correctie van 25 oktober hierboven gaat voor. Gecontroleerde main-basis: `942b73385dd8e0bbdc05914ce6094943cb8aa6cd`. Tien bestaande open PR's (#2/#3/#4/#5/#7/#10/#11/#16/#17/#18); Music DNA 2.0 blijft documentatievoorstel #18 met implementatie open. Deze documentatiebranch levert geen productie-release. Bij latere merges van overlappende PROJECT-STATE-wijzigingen deze actuele kop behouden.
 
 - **Besluit:** definitieve naam **DNA Achter de Muziek**; uitgebreide Split Enz-biografie is goedgekeurd stijlvoorbeeld: prettig leesbaar, natuurlijke verhaallijn, betekenisvolle anekdotes en discrete genummerde bronlinks. Feiten/bronlinks nog te controleren.
 - **Gebruikersbevestiging:** geslaagde lokale Spotify-proef voor Split Enz — I Got You met een **oudere prototypeversie** van het portret. Integratie van de later goedgekeurde tekst is **nog niet aantoonbaar**.
@@ -16,7 +56,7 @@
 - **Herstelkopie:** historische analyse van export 18 oktober: current bewaart W42-dag 2, legacy/original niet. Huidige apparaatstand, herstelbaarheid en onafhankelijke kopie blijven open. Walk & Listen-container is afzonderlijke opslag.
 - **Bewijsgrens:** Explorer heeft afzonderlijke prototypes; volledige koppeling met DNA Achter de Muziek niet bewezen. Flow-DNA W42 structureel/redactioneel vastgelegd, twintig overgangen niet beluisterd bewezen. Museum W42 historisch live gecontroleerd; nieuwste Projectkaart/navigatie niet volledig beschikbaar.
 
-Eerst de open controles uit het checkpoint afhandelen. Deze archivering wijzigt geen productiecode, beoordelingen, iPhone-data of Spotify.
+De open controles uit dit historische checkpoint blijven afzonderlijk te behandelen; iPhone-sync/FIFO is geen weekleveringspoort. Deze archivering wijzigt geen productiecode, beoordelingen, iPhone-data of Spotify.
 
 ---
 

@@ -1,0 +1,198 @@
+{
+  "schema": "music-dna-week-use-observation-v1",
+  "week": "2026-W43",
+  "recordedAt": "2026-10-25T21:21:56+01:00",
+  "status": "publication-user-confirmed-independent-verification-open",
+  "source": "user-confirmation-and-existing-local-records",
+  "playlistId": "3fUqfUE9FZYHEH8tRGrKT4",
+  "playlistUrl": "https://open.spotify.com/playlist/3fUqfUE9FZYHEH8tRGrKT4",
+  "reportedPublicationDate": "2026-10-25",
+  "exactPublicationTimeKnown": false,
+  "trackCount": 21,
+  "spotifyTrackIds": [
+    "0VTBzNFO6ScLSheH8iKx0J",
+    "2hJVLv6QlfV5e1LQCDchk7",
+    "1fxpDNE0cpuU94fT7Y2OWL",
+    "3CTIQzmsSsPqI22uwQGq7f",
+    "7vBFZey215dI89dJHcAYpd",
+    "0e3Qf952QLB4KHNECCCvxb",
+    "1BWNpziDWyAMfGdKC2ydS6",
+    "0SL71g20JT0rn5yc1w2XVW",
+    "4bqSsnuHMS059hZAGd8gjZ",
+    "3kLKL5prZ0sDtkg9KhehNN",
+    "0RKdTtXzfPF8PRsx7tN7PE",
+    "1ELKzM7Dd3sIJtQkI5jY21",
+    "4WfOALlN54z9keukpld1MI",
+    "3gOqPDsRlVQL6WJmPD8Jxp",
+    "4BNq37egHwLkzyNd2ZQkDI",
+    "6xuniQYe3FqADkba2N8X8d",
+    "6lJKwx9q3qiB7vgvIYL3FA",
+    "2jTgLMNU9sezW81VEHbVwQ",
+    "6bcRkWchLR9gjIQYjFTxyd",
+    "0OV72xtIQ3Yk1u5lUoiKvS",
+    "4YuVXZhx59iBuJPYXUgbNB"
+  ],
+  "tracks": [
+    {
+      "position": 1,
+      "artist": "Grande Royale",
+      "title": "Tell Me",
+      "spotifyTrackId": "0VTBzNFO6ScLSheH8iKx0J"
+    },
+    {
+      "position": 2,
+      "artist": "The Riven",
+      "title": "On Time",
+      "spotifyTrackId": "2hJVLv6QlfV5e1LQCDchk7"
+    },
+    {
+      "position": 3,
+      "artist": "The New Roses",
+      "title": "Every Wild Heart",
+      "spotifyTrackId": "1fxpDNE0cpuU94fT7Y2OWL"
+    },
+    {
+      "position": 4,
+      "artist": "Horisont",
+      "title": "Electrical",
+      "spotifyTrackId": "3CTIQzmsSsPqI22uwQGq7f"
+    },
+    {
+      "position": 5,
+      "artist": "Märvel",
+      "title": "Danish Rush",
+      "spotifyTrackId": "7vBFZey215dI89dJHcAYpd"
+    },
+    {
+      "position": 6,
+      "artist": "Violet Janine & Pontus Snibb",
+      "title": "Down on My Knees (feat. Pontus Snibb)",
+      "spotifyTrackId": "0e3Qf952QLB4KHNECCCvxb"
+    },
+    {
+      "position": 7,
+      "artist": "The Sheepdogs",
+      "title": "Feeling Good",
+      "spotifyTrackId": "1BWNpziDWyAMfGdKC2ydS6"
+    },
+    {
+      "position": 8,
+      "artist": "DeWolff",
+      "title": "Heart Stopping Kinda Show",
+      "spotifyTrackId": "0SL71g20JT0rn5yc1w2XVW"
+    },
+    {
+      "position": 9,
+      "artist": "Greenleaf",
+      "title": "Let It Out!",
+      "spotifyTrackId": "4bqSsnuHMS059hZAGd8gjZ"
+    },
+    {
+      "position": 10,
+      "artist": "Tanith",
+      "title": "Falling Wizard",
+      "spotifyTrackId": "3kLKL5prZ0sDtkg9KhehNN"
+    },
+    {
+      "position": 11,
+      "artist": "TOWER",
+      "title": "Powder Keg",
+      "spotifyTrackId": "0RKdTtXzfPF8PRsx7tN7PE"
+    },
+    {
+      "position": 12,
+      "artist": "Ambush",
+      "title": "Possessed by Evil",
+      "spotifyTrackId": "1ELKzM7Dd3sIJtQkI5jY21"
+    },
+    {
+      "position": 13,
+      "artist": "Riot City",
+      "title": "Burn the Night",
+      "spotifyTrackId": "4WfOALlN54z9keukpld1MI"
+    },
+    {
+      "position": 14,
+      "artist": "Kip Winger & gastmuzikanten",
+      "title": "Limelight",
+      "spotifyTrackId": "3gOqPDsRlVQL6WJmPD8Jxp"
+    },
+    {
+      "position": 15,
+      "artist": "Voyager",
+      "title": "Promise",
+      "spotifyTrackId": "4BNq37egHwLkzyNd2ZQkDI"
+    },
+    {
+      "position": 16,
+      "artist": "Moron Police",
+      "title": "The Phantom Below",
+      "spotifyTrackId": "6xuniQYe3FqADkba2N8X8d"
+    },
+    {
+      "position": 17,
+      "artist": "Von Hertzen Brothers",
+      "title": "New Day Rising",
+      "spotifyTrackId": "6lJKwx9q3qiB7vgvIYL3FA"
+    },
+    {
+      "position": 18,
+      "artist": "Hällas",
+      "title": "Star Rider",
+      "spotifyTrackId": "2jTgLMNU9sezW81VEHbVwQ"
+    },
+    {
+      "position": 19,
+      "artist": "Maha Sohona",
+      "title": "A Black Star",
+      "spotifyTrackId": "6bcRkWchLR9gjIQYjFTxyd"
+    },
+    {
+      "position": 20,
+      "artist": "Ritual King",
+      "title": "Worlds Divide",
+      "spotifyTrackId": "0OV72xtIQ3Yk1u5lUoiKvS"
+    },
+    {
+      "position": 21,
+      "artist": "Vulkan",
+      "title": "This Visual Hex",
+      "spotifyTrackId": "4YuVXZhx59iBuJPYXUgbNB"
+    }
+  ],
+  "independentSpotifyVerificationPerformed": false,
+  "finalNameVerified": false,
+  "finalCoverVerified": false,
+  "finalDescriptionVerified": false,
+  "automaticRouteProven": false,
+  "iphoneHistorySynced": false,
+  "fifoDebited": false,
+  "ratingsMutated": false,
+  "runtimeIntegrated": false,
+  "excludeFromFutureWeekSelection": true,
+  "exclusionStatus": "declarative-only-not-proven-in-runtime-or-iphone",
+  "provenance": {
+    "userRequest": "Current user confirms manual publication, original order and three final versions; earlier screenshots not re-inspected here.",
+    "healthcheck": "User-pasted healthcheck 2026-10-25 18:05 Europe/Amsterdam; excerpt incomplete.",
+    "priorConversation": "6ad52368-b3e8-83eb-87cf-b7545fcf258d; retrieved recent turns contain inaccessible content references, no additional publication evidence.",
+    "sources": [
+      {
+        "originalPath": "output/W43/W43-publicatierecord.json",
+        "archivedPath": "archive/2026-10-25/W43/sources/W43-publicatierecord.json",
+        "sha256": "6bacfc8ea880b7c33342c0c7525a717b6b3e5566c96b0ded39158deefdb09700"
+      },
+      {
+        "originalPath": "output/W43/W43-publicatiekandidaat.json",
+        "archivedPath": "archive/2026-10-25/W43/sources/W43-publicatiekandidaat.json",
+        "sha256": "d8c820c5a1948df2412590267b0ab30328d3c73d5833d8fc968d84f2368a1543"
+      },
+      {
+        "originalPath": "output/W43/W43-import.csv",
+        "archivedPath": "archive/2026-10-25/W43/sources/W43-import.csv",
+        "sha256": "139bdbb9c3b55c346ac2c300a439d3e4c03746b59fc1ec1bd9664e925c26b410"
+      }
+    ],
+    "crossCheck": "21 unique exact IDs; publication record, candidate and CSV agree in order; these are related local sources, not independent Spotify observations."
+  },
+  "note": "Archival observation only. Do not import as a rating or FIFO transaction. Existing local source claims published-verified are historical claims, not new verification. Final presentation remains open."
+}

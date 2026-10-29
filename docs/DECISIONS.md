@@ -1,6 +1,26 @@
 # Ben's Music DNA — Decision Log
 
+## 2026-10-29 — Aanscherping: oude muziek opnieuw ontdekken
+
+**Vastgesteld:** Het verhaal achter de playlist vertrekt primair vanuit oude muziek in bestaande, bijna geheel uit de Master Database opgebouwde playlists. [Gedateerde aanscherping en primaire bron](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md). [Healthcheck](HEALTHCHECK-2026-10-29.md) onderscheidt de bestaande besluiten, gemelde besluiten, observaties en voorstellen voor 26–29 oktober. Geen vaste 48-paginanorm, nieuwe quizscore of kleurreeks ingevoerd zonder bewijs.
+
+## 2026-10-29 — Het verhaal achter de playlist
+
+**Vastgesteld redactioneel besluit; uitvoering OPEN.** [Volledig besluit met de tien regels](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md): bestaande thematische playlists zijn vertrekpunt voor één samenhangend verhaal. Playlist = muziek, DNA Express = gepubliceerde verhaallaag, DNA Explorer = levende kennislaag via de bestaande brongecontroleerde Relation Registry. Wekelijkse publicatie is ambitie, geen productiegarantie. Special 102 is de eerste proef; Spotify-luisterkoppeling en lezen naast muziek zijn gewenste ervaring, geen gerealiseerde integratieclaim. Magazinearchitectuur, vaste rubrieken en bestaande besluiten blijven behouden.
+
+[Broncontrole 29 oktober](SOURCE-REVIEW-2026-10-29-EDITORIAL-DECISION.md) onderscheidt primaire besluitbron, drie gelezen lokale v1.0-registers en secundair gemelde afspraken van 26–28 oktober. Die laatste worden niet zonder oorspronkelijke goedkeuring tot nieuwe projectregels verheven. Music DNA 2.0 en Achter de Muziek behouden hun afzonderlijke uitvoeringsvragen.
+
+**Gedateerde leeswijzer bij 25 oktober hieronder:** de daarin genoemde ontbrekende W44-namenlijst is inmiddels ingehaald door het [volledige bronregister met 36 beoordelingen](W44-SOURCE-REGISTER-2026-10-25.md). De definitieve 21/twee reserves, volgorde en exacte IDs blijven open. De historische besluittekst is bewaard.
+
 This is the durable record of accepted product decisions. New chats must not silently reopen these decisions; changes require a new dated decision explaining why.
+
+## 2026-10-25 — W44-telling en loslaten oorspronkelijke iPhone-weekwerkwijze
+
+**Geaccepteerd / herbevestigd door gebruiker in hoofdchat; geen technische vrijgave.** W44 (31 oktober) is qua aantal compleet: **23 goedgekeurd voor 21 plekken**. De oudere claim “11 goedgekeurd, nog 10 nodig” vervalt. De volledige namenlijst, definitieve 21/twee reserves en exacte opname-ID's/volgorde zijn nog niet bewezen; geen ratings of Spotify-ID's reconstrueren.
+
+De oorspronkelijke iPhone-gebaseerde wekelijkse werkwijze is losgelaten. **iPhone-sync/FIFO is geen blokkade voor de wekelijkse Ontdek DNA-aflevering.** Het in PR #18 teruggevonden functionele besluit van 13 oktober ontkoppelt dagelijkse beoordeling en nieuwe weeklevering; implementatie blijft open. Historische opslag, ratings, reserves en journalen behouden hun bescherming. Synchronisatie/herstelbaarheid/reconciliatie blijven afzonderlijke technische open punten; geen opgelost-claim.
+
+Reden: expliciete correctie van twee terugkerende achterhaalde statusclaims op 25 oktober. [Gedateerde bronregistratie, concrete gebruikersberichten, eerdere beslissing, conflicten en bewijsgrenzen](SOURCE-RESOLUTION-2026-10-25-W44-WORKFLOW.md). Dit besluit heeft voorrang boven oudere hervat-/dagquota-/FIFO-poortinterpretaties, zonder historische data te wijzigen.
 
 ## 2026-09-03 — Music remains the centre
 **Decision:** Music is the primary function. Rich artist/band worlds are supporting and optional, but the app must not become visually barren.
