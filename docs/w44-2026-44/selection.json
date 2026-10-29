@@ -1,0 +1,891 @@
+{
+  "schema": "music-dna-editorial-prepublication-v1",
+  "week": "2026-W44",
+  "targetDate": "2026-10-31",
+  "baseCommit": "e7351f0c501d32a27248cb708d71a0106ee6abaf",
+  "status": "editorial-selection-complete-publication-not-released",
+  "sourceRegisterSha256": "7e810da502e4e229d3e0de5723074612062d4ce9365aaa012e389beb02b76b87",
+  "ratingCounts": {
+    "RAAK": 10,
+    "GOED": 13,
+    "TERUGKOMEN": 7,
+    "NIET": 6
+  },
+  "all36Ratings": [
+    {
+      "position": 1,
+      "artist": "Mayank",
+      "title": "Destiny Calling",
+      "rating": "GOED"
+    },
+    {
+      "position": 2,
+      "artist": "Starmen",
+      "title": "Ready to Give Me Your Love",
+      "rating": "RAAK"
+    },
+    {
+      "position": 3,
+      "artist": "Night Laser",
+      "title": "Bittersweet Dreams",
+      "rating": "RAAK"
+    },
+    {
+      "position": 4,
+      "artist": "Smoking Snakes",
+      "title": "Angels Calling",
+      "rating": "RAAK"
+    },
+    {
+      "position": 5,
+      "artist": "Trench Dogs",
+      "title": "Homesick Parade",
+      "rating": "RAAK"
+    },
+    {
+      "position": 6,
+      "artist": "MIDAS",
+      "title": "Nobody Gets Out Alive",
+      "rating": "RAAK"
+    },
+    {
+      "position": 7,
+      "artist": "Sanhedrin",
+      "title": "Lost at Sea",
+      "rating": "RAAK"
+    },
+    {
+      "position": 8,
+      "artist": "Lykantropi",
+      "title": "Wild Flowers",
+      "rating": "GOED"
+    },
+    {
+      "position": 9,
+      "artist": "Grave Pleasures",
+      "title": "Be My Hiroshima",
+      "rating": "RAAK"
+    },
+    {
+      "position": 10,
+      "artist": "Mondo Drag",
+      "title": "The Dawn",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "position": 11,
+      "artist": "Magic Pie",
+      "title": "Trick of the Trade",
+      "rating": "RAAK"
+    },
+    {
+      "position": 12,
+      "artist": "Moon Letters",
+      "title": "Child of Tomorrow",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "position": 13,
+      "artist": "Cheeto's Magazine",
+      "title": "Outflow",
+      "rating": "NIET"
+    },
+    {
+      "position": 14,
+      "artist": "Azure",
+      "title": "A Sailor Will Learn",
+      "rating": "NIET"
+    },
+    {
+      "position": 15,
+      "artist": "AVKRVST",
+      "title": "The Pale Moon",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "position": 16,
+      "artist": "Dim Gray",
+      "title": "Again",
+      "rating": "NIET"
+    },
+    {
+      "position": 17,
+      "artist": "Exploring Birdsong",
+      "title": "The Way Down",
+      "rating": "NIET"
+    },
+    {
+      "position": 18,
+      "artist": "Rendezvous Point",
+      "title": "Digital Waste",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "position": 19,
+      "artist": "LeBrock",
+      "title": "Runaway",
+      "rating": "GOED"
+    },
+    {
+      "position": 20,
+      "artist": "GUNSHIP",
+      "title": "Tech Noir",
+      "rating": "NIET"
+    },
+    {
+      "position": 21,
+      "artist": "Empathy Test",
+      "title": "Losing Touch (Remastered)",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "position": 22,
+      "artist": "Fans of the Dark",
+      "title": "Life Kills",
+      "rating": "RAAK"
+    },
+    {
+      "position": 23,
+      "artist": "Junkyard Drive",
+      "title": "Sweet Little Dreamer",
+      "rating": "GOED"
+    },
+    {
+      "position": 24,
+      "artist": "Weedpecker",
+      "title": "Embrace",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "position": 25,
+      "artist": "Michael Oakley",
+      "title": "Control",
+      "rating": "TERUGKOMEN"
+    },
+    {
+      "position": 26,
+      "artist": "Vypera",
+      "title": "Standing on the Edge",
+      "rating": "GOED"
+    },
+    {
+      "position": 27,
+      "artist": "Ashbury",
+      "title": "The Warning",
+      "rating": "GOED"
+    },
+    {
+      "position": 28,
+      "artist": "Artificial Language",
+      "title": "Unself Portrait",
+      "rating": "GOED"
+    },
+    {
+      "position": 29,
+      "artist": "Kalax",
+      "title": "Out of Time",
+      "rating": "GOED"
+    },
+    {
+      "position": 30,
+      "artist": "Nitrate",
+      "title": "All the Right Moves",
+      "rating": "RAAK"
+    },
+    {
+      "position": 31,
+      "artist": "Psychlona",
+      "title": "Blast Off",
+      "rating": "GOED"
+    },
+    {
+      "position": 32,
+      "artist": "Lazuli",
+      "title": "Les courants ascendants",
+      "rating": "NIET"
+    },
+    {
+      "position": 33,
+      "artist": "Crypt Sermon",
+      "title": "Heavy Is the Crown of Bone",
+      "rating": "GOED"
+    },
+    {
+      "position": 34,
+      "artist": "Four Stroke Baron",
+      "title": "Planet Silver Screen",
+      "rating": "GOED"
+    },
+    {
+      "position": 35,
+      "artist": "Barock Project",
+      "title": "Broken",
+      "rating": "GOED"
+    },
+    {
+      "position": 36,
+      "artist": "Droid Bishop",
+      "title": "Dancing in the Darkness",
+      "rating": "GOED"
+    }
+  ],
+  "positiveCandidates": [
+    {
+      "position": 1,
+      "artist": "Mayank",
+      "title": "Destiny Calling",
+      "rating": "GOED",
+      "spotifyTrackId": "7s3iIgurAG0xgDg1ebAweA",
+      "spotifyUrl": "https://open.spotify.com/track/7s3iIgurAG0xgDg1ebAweA",
+      "spotifyTitle": "Destiny Calling",
+      "spotifyArtists": [
+        {
+          "name": "Mayank",
+          "uri": "spotify:artist:0OrBdxyVoXyVgAM6pI79D2"
+        },
+        {
+          "name": "Gui Oliver",
+          "uri": "spotify:artist:0IzChKU6hRh7wCHJmRouAZ"
+        }
+      ],
+      "albumEvidence": "Mayank, Gui Oliver · Mayank · Song · 2021",
+      "durationMs": 185055,
+      "releaseDate": {
+        "isoString": "2021-08-06T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 3,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 2,
+      "artist": "Starmen",
+      "title": "Ready to Give Me Your Love",
+      "rating": "RAAK",
+      "spotifyTrackId": "3pUuCPjhocrhbfQ8V0qO1G",
+      "spotifyUrl": "https://open.spotify.com/track/3pUuCPjhocrhbfQ8V0qO1G",
+      "spotifyTitle": "Ready to Give Me Your Love",
+      "spotifyArtists": [
+        {
+          "name": "Starmen",
+          "uri": "spotify:artist:1jLxOyZv6hLRHuXaw1KMXr"
+        }
+      ],
+      "albumEvidence": "Starmen · Welcome to My World · Song · 2020",
+      "durationMs": 247508,
+      "releaseDate": {
+        "isoString": "2020-02-21T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 2,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 3,
+      "artist": "Night Laser",
+      "title": "Bittersweet Dreams",
+      "rating": "RAAK",
+      "spotifyTrackId": "4OEjJbIBMzaTFsYJhBF4DO",
+      "spotifyUrl": "https://open.spotify.com/track/4OEjJbIBMzaTFsYJhBF4DO",
+      "spotifyTitle": "Bittersweet Dreams",
+      "spotifyArtists": [
+        {
+          "name": "Night Laser",
+          "uri": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr"
+        }
+      ],
+      "albumEvidence": "Night Laser · Call Me What You Want · Song · 2024",
+      "durationMs": 207010,
+      "releaseDate": {
+        "isoString": "2024-05-24T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 1,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 4,
+      "artist": "Smoking Snakes",
+      "title": "Angels Calling",
+      "rating": "RAAK",
+      "spotifyTrackId": "5aISIm0BHmorW4Z7hMDdg7",
+      "spotifyUrl": "https://open.spotify.com/track/5aISIm0BHmorW4Z7hMDdg7",
+      "spotifyTitle": "Angels Calling",
+      "spotifyArtists": [
+        {
+          "name": "Smoking Snakes",
+          "uri": "spotify:artist:4QanEE5Wrkq1JhWMpWKz4f"
+        }
+      ],
+      "albumEvidence": "Smoking Snakes · Danger Zone · Song · 2024",
+      "durationMs": 198109,
+      "releaseDate": {
+        "isoString": "2024-02-09T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 8,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 5,
+      "artist": "Trench Dogs",
+      "title": "Homesick Parade",
+      "rating": "RAAK",
+      "spotifyTrackId": "6VnK5Xeg2u7Zg5qJqKYaDo",
+      "spotifyUrl": "https://open.spotify.com/track/6VnK5Xeg2u7Zg5qJqKYaDo",
+      "spotifyTitle": "Homesick Parade",
+      "spotifyArtists": [
+        {
+          "name": "Trench Dogs",
+          "uri": "spotify:artist:5I22u9LXP5xKHeCRlHTUZ5"
+        }
+      ],
+      "albumEvidence": "Trench Dogs · Year of the Dog · Song · 2018",
+      "durationMs": 176381,
+      "releaseDate": {
+        "isoString": "2018-08-24T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 9,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 6,
+      "artist": "MIDAS",
+      "title": "Nobody Gets Out Alive",
+      "rating": "RAAK",
+      "spotifyTrackId": "6lmrfYBEaTpKk3M30yUrZ7",
+      "spotifyUrl": "https://open.spotify.com/track/6lmrfYBEaTpKk3M30yUrZ7",
+      "spotifyTitle": "Nobody Gets out Alive",
+      "spotifyArtists": [
+        {
+          "name": "Midas",
+          "uri": "spotify:artist:1xbUKM3c1WNURoDHEDGXBf"
+        }
+      ],
+      "albumEvidence": "Midas · Midas · Song · 2022",
+      "durationMs": 286170,
+      "releaseDate": {
+        "isoString": "2022-04-28T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 10,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 7,
+      "artist": "Sanhedrin",
+      "title": "Lost at Sea",
+      "rating": "RAAK",
+      "spotifyTrackId": "6Ny1GkA2KbnytfBYyQskzd",
+      "spotifyUrl": "https://open.spotify.com/track/6Ny1GkA2KbnytfBYyQskzd",
+      "spotifyTitle": "Lost at Sea",
+      "spotifyArtists": [
+        {
+          "name": "Sanhedrin",
+          "uri": "spotify:artist:2p4bCEJL6k03ErhdPTPEbu"
+        }
+      ],
+      "albumEvidence": "Sanhedrin · Lights On · Song · 2022",
+      "durationMs": 267933,
+      "releaseDate": {
+        "isoString": "2022-03-04T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 11,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 8,
+      "artist": "Lykantropi",
+      "title": "Wild Flowers",
+      "rating": "GOED",
+      "spotifyTrackId": "3E6xrYViwCil3oK4pkqpZ4",
+      "spotifyUrl": "https://open.spotify.com/track/3E6xrYViwCil3oK4pkqpZ4",
+      "spotifyTitle": "Wild Flowers",
+      "spotifyArtists": [
+        {
+          "name": "Lykantropi",
+          "uri": "spotify:artist:0oRylpNxHxI8fP7Mpmo4QU"
+        }
+      ],
+      "albumEvidence": "Lykantropi · Spirituosa · Song · 2019",
+      "durationMs": 252213,
+      "releaseDate": {
+        "isoString": "2019-05-24T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 14,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 9,
+      "artist": "Grave Pleasures",
+      "title": "Be My Hiroshima",
+      "rating": "RAAK",
+      "spotifyTrackId": "69feEDlBjijnisHbOWgH7P",
+      "spotifyUrl": "https://open.spotify.com/track/69feEDlBjijnisHbOWgH7P",
+      "spotifyTitle": "Be My Hiroshima",
+      "spotifyArtists": [
+        {
+          "name": "Grave Pleasures",
+          "uri": "spotify:artist:7Gbgr3pNct3IvdhQLO8wPU"
+        }
+      ],
+      "albumEvidence": "Grave Pleasures · Motherblood · Song · 2017",
+      "durationMs": 226348,
+      "releaseDate": {
+        "isoString": "2017-09-29T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 18,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 11,
+      "artist": "Magic Pie",
+      "title": "Trick of the Trade",
+      "rating": "RAAK",
+      "spotifyTrackId": "6eKjzKEAz48JsIjsHTkGHH",
+      "spotifyUrl": "https://open.spotify.com/track/6eKjzKEAz48JsIjsHTkGHH",
+      "spotifyTitle": "Trick of the Trade",
+      "spotifyArtists": [
+        {
+          "name": "Magic Pie",
+          "uri": "spotify:artist:0ABvgllZiW792ERHXuJlGz"
+        }
+      ],
+      "albumEvidence": "Magic Pie · King for a Day · Song · 2015",
+      "durationMs": 368586,
+      "releaseDate": {
+        "isoString": "2015-05-25T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 15,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 19,
+      "artist": "LeBrock",
+      "title": "Runaway",
+      "rating": "GOED",
+      "spotifyTrackId": "3lS99gJJAWuxKxQfXArvvx",
+      "spotifyUrl": "https://open.spotify.com/track/3lS99gJJAWuxKxQfXArvvx",
+      "spotifyTitle": "Runaway",
+      "spotifyArtists": [
+        {
+          "name": "LeBrock",
+          "uri": "spotify:artist:461TaZqofVfcQo2wtMwnQJ"
+        }
+      ],
+      "albumEvidence": "LeBrock · Real Thing · Song · 2018",
+      "durationMs": 232846,
+      "releaseDate": {
+        "isoString": "2018-02-14T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 19,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 22,
+      "artist": "Fans of the Dark",
+      "title": "Life Kills",
+      "rating": "RAAK",
+      "spotifyTrackId": "45yGG3vEZTV8MBVxKqXAq5",
+      "spotifyUrl": "https://open.spotify.com/track/45yGG3vEZTV8MBVxKqXAq5",
+      "spotifyTitle": "Life Kills",
+      "spotifyArtists": [
+        {
+          "name": "Fans Of The Dark",
+          "uri": "spotify:artist:1uJoivXxtZjowli7GAAOOI"
+        }
+      ],
+      "albumEvidence": "Fans Of The Dark · Fans of the Dark · Song · 2021",
+      "durationMs": 314307,
+      "releaseDate": {
+        "isoString": "2021-11-05T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 6,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 23,
+      "artist": "Junkyard Drive",
+      "title": "Sweet Little Dreamer",
+      "rating": "GOED",
+      "spotifyTrackId": "6jIWMzMQ9NuGHAdPFxAjcI",
+      "spotifyUrl": "https://open.spotify.com/track/6jIWMzMQ9NuGHAdPFxAjcI",
+      "spotifyTitle": "Sweet Little Dreamer",
+      "spotifyArtists": [
+        {
+          "name": "Junkyard Drive",
+          "uri": "spotify:artist:7HWdmhoIhvXEHikALsGT4w"
+        }
+      ],
+      "albumEvidence": "Junkyard Drive · Black Coffee · Song · 2018",
+      "durationMs": 282193,
+      "releaseDate": {
+        "isoString": "2018-08-31T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 7,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 26,
+      "artist": "Vypera",
+      "title": "Standing on the Edge",
+      "rating": "GOED",
+      "spotifyTrackId": "6Ko5PM4RK7eumjqnKt5Ahi",
+      "spotifyUrl": "https://open.spotify.com/track/6Ko5PM4RK7eumjqnKt5Ahi",
+      "spotifyTitle": "Standing on the Edge",
+      "spotifyArtists": [
+        {
+          "name": "Vypera",
+          "uri": "spotify:artist:03eYJDAyUMwFRdmW5cgItV"
+        }
+      ],
+      "albumEvidence": "Vypera · Eat Your Heart Out (Bonus Track Edition) · Song · 2022",
+      "durationMs": 235546,
+      "releaseDate": {
+        "isoString": "2022-07-22T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 5,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 27,
+      "artist": "Ashbury",
+      "title": "The Warning",
+      "rating": "GOED",
+      "spotifyTrackId": "6jEGUmbMdvWq6Di1Kv61J0",
+      "spotifyUrl": "https://open.spotify.com/track/6jEGUmbMdvWq6Di1Kv61J0",
+      "spotifyTitle": "The Warning",
+      "spotifyArtists": [
+        {
+          "name": "Ashbury",
+          "uri": "spotify:artist:1olZcNG9rq4RGVVd69Tj4e"
+        }
+      ],
+      "albumEvidence": "Ashbury · Endless Skies · Song · 1983",
+      "durationMs": 238706,
+      "releaseDate": {
+        "isoString": "1983-01-01T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 13,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 28,
+      "artist": "Artificial Language",
+      "title": "Unself Portrait",
+      "rating": "GOED",
+      "spotifyTrackId": "58C4uAvr4MTr88Chmkc6nz",
+      "spotifyUrl": "https://open.spotify.com/track/58C4uAvr4MTr88Chmkc6nz",
+      "spotifyTitle": "Unself Portrait",
+      "spotifyArtists": [
+        {
+          "name": "Artificial Language",
+          "uri": "spotify:artist:10Mmz2UngxRjkZmz0a1H32"
+        }
+      ],
+      "albumEvidence": "Artificial Language · The Observer · Song · 2017",
+      "durationMs": 229963,
+      "releaseDate": {
+        "isoString": "2017-04-28T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 16,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 29,
+      "artist": "Kalax",
+      "title": "Out of Time",
+      "rating": "GOED",
+      "spotifyTrackId": "4O6pSwn4xxx8FdBBdqeEin",
+      "spotifyUrl": "https://open.spotify.com/track/4O6pSwn4xxx8FdBBdqeEin",
+      "spotifyTitle": "Out of Time",
+      "spotifyArtists": [
+        {
+          "name": "Kalax",
+          "uri": "spotify:artist:2o88SjmtVVVyCmTGCuSPoY"
+        },
+        {
+          "name": "PYXIS",
+          "uri": "spotify:artist:4ckOxQj4C9eMY3SP39ixaS"
+        },
+        {
+          "name": "Jay Diggs",
+          "uri": "spotify:artist:5jN1nNCfLoju9G0QHnxlG1"
+        }
+      ],
+      "albumEvidence": "Kalax, PYXIS, Jay Diggs · III · Song · 2019",
+      "durationMs": 295221,
+      "releaseDate": {
+        "isoString": "2019-03-25T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 20,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 30,
+      "artist": "Nitrate",
+      "title": "All the Right Moves",
+      "rating": "RAAK",
+      "spotifyTrackId": "5R8u2wIpO2OKg2EhSygZne",
+      "spotifyUrl": "https://open.spotify.com/track/5R8u2wIpO2OKg2EhSygZne",
+      "spotifyTitle": "All The Right Moves",
+      "spotifyArtists": [
+        {
+          "name": "Nitrate",
+          "uri": "spotify:artist:6wEVMZieIv9ttCzvuDYev8"
+        }
+      ],
+      "albumEvidence": "Nitrate · Feel The Heat · Song · 2023",
+      "durationMs": 234120,
+      "releaseDate": {
+        "isoString": "2023-10-13T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 4,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 31,
+      "artist": "Psychlona",
+      "title": "Blast Off",
+      "rating": "GOED",
+      "spotifyTrackId": "4FkpXxzZEsGFu4NIZMKVt1",
+      "spotifyUrl": "https://open.spotify.com/track/4FkpXxzZEsGFu4NIZMKVt1",
+      "spotifyTitle": "Blast Off",
+      "spotifyArtists": [
+        {
+          "name": "Psychlona",
+          "uri": "spotify:artist:6XIJivrO9KEaxh6bKai91s"
+        }
+      ],
+      "albumEvidence": "Psychlona · Venus Skytrip · Song · 2020",
+      "durationMs": 449063,
+      "releaseDate": {
+        "isoString": "2020-08-21T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": false,
+      "listeningPosition": null,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 33,
+      "artist": "Crypt Sermon",
+      "title": "Heavy Is the Crown of Bone",
+      "rating": "GOED",
+      "spotifyTrackId": "2h7J8G3II0eZj0Kl8uDWmH",
+      "spotifyUrl": "https://open.spotify.com/track/2h7J8G3II0eZj0Kl8uDWmH",
+      "spotifyTitle": "Heavy is the Crown of Bone",
+      "spotifyArtists": [
+        {
+          "name": "Crypt Sermon",
+          "uri": "spotify:artist:363ih5wuNGWBFcjeKFG8cc"
+        }
+      ],
+      "albumEvidence": "Crypt Sermon · The Stygian Rose · Song · 2024",
+      "durationMs": 308542,
+      "releaseDate": {
+        "isoString": "2024-06-14T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 12,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 34,
+      "artist": "Four Stroke Baron",
+      "title": "Planet Silver Screen",
+      "rating": "GOED",
+      "spotifyTrackId": "0Ws0ZUpn49O9B1P4lVNvPx",
+      "spotifyUrl": "https://open.spotify.com/track/0Ws0ZUpn49O9B1P4lVNvPx",
+      "spotifyTitle": "Planet Silver Screen",
+      "spotifyArtists": [
+        {
+          "name": "Four Stroke Baron",
+          "uri": "spotify:artist:091cSUyhQCRgJreqXy17m5"
+        }
+      ],
+      "albumEvidence": "Four Stroke Baron · Planet Silver Screen · Song · 2018",
+      "durationMs": 229576,
+      "releaseDate": {
+        "isoString": "2018-11-09T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 17,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    },
+    {
+      "position": 35,
+      "artist": "Barock Project",
+      "title": "Broken",
+      "rating": "GOED",
+      "spotifyTrackId": "6mlmqSbStWJSVjKpkR8Wej",
+      "spotifyUrl": "https://open.spotify.com/track/6mlmqSbStWJSVjKpkR8Wej",
+      "spotifyTitle": "Broken",
+      "spotifyArtists": [
+        {
+          "name": "Barock Project",
+          "uri": "spotify:artist:1PKB3oDVcZBThmJCYyMOQH"
+        }
+      ],
+      "albumEvidence": "Barock Project · DETACHMENT (2021 Remastered Version) · Song · 2017",
+      "durationMs": 546386,
+      "releaseDate": {
+        "isoString": "2017-01-01T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": false,
+      "listeningPosition": null,
+      "versionStatus": "available-2021-remaster; original-rated-edition-unproven"
+    },
+    {
+      "position": 36,
+      "artist": "Droid Bishop",
+      "title": "Dancing in the Darkness",
+      "rating": "GOED",
+      "spotifyTrackId": "6Hy7t4RIksivCxEXyu6T1b",
+      "spotifyUrl": "https://open.spotify.com/track/6Hy7t4RIksivCxEXyu6T1b",
+      "spotifyTitle": "Dancing in the Darkness",
+      "spotifyArtists": [
+        {
+          "name": "Droid Bishop",
+          "uri": "spotify:artist:0HPVHsbV2yIYPp2Pk4kdHe"
+        }
+      ],
+      "albumEvidence": "Droid Bishop · Into The Abstract · Song · 2021",
+      "durationMs": 260596,
+      "releaseDate": {
+        "isoString": "2021-10-15T00:00:00Z"
+      },
+      "publicEmbedPlayable": true,
+      "NLAllowedInPublicMetadata": true,
+      "selected": true,
+      "listeningPosition": 21,
+      "versionStatus": "intended-studio-catalogue-version-identified; original-rating-had-no-id"
+    }
+  ],
+  "selectedSourcePositions": [
+    3,
+    2,
+    1,
+    30,
+    26,
+    22,
+    23,
+    4,
+    5,
+    6,
+    7,
+    33,
+    27,
+    8,
+    11,
+    28,
+    34,
+    9,
+    19,
+    29,
+    36
+  ],
+  "selectedCount": 21,
+  "selectedRatings": {
+    "RAAK": 10,
+    "GOED": 11
+  },
+  "overblijvers": [
+    {
+      "sourcePosition": 31,
+      "reason": "GOED blijft behouden. 7:29 stoneruitstap weggelaten om de reeds brede heavy/progboog compacter te houden; geen nieuw smaakoordeel."
+    },
+    {
+      "sourcePosition": 35,
+      "reason": "GOED blijft behouden. 9:06 en catalogus vermeldt 2021-remaster; oorspronkelijke beoordeelde editie niet bewezen. Apart houden in plaats van stilzwijgend vervangen."
+    }
+  ],
+  "durationMs": 5276929,
+  "flowAuditioned": false,
+  "bpmOrKeysVerified": false,
+  "publication": {
+    "ready": false,
+    "playlistId": null,
+    "spotifyWrites": 0,
+    "created": false,
+    "published": false,
+    "coverApproved": false,
+    "gemstone": null,
+    "gemstoneSequenceNumber": null,
+    "blockers": [
+      "Oorspronkelijke goedgekeurde W44-steentoewijzing en hoes ontbreken in gecontroleerde bronnen.",
+      "Geen W44-playlist aangemaakt; volledige geauthenticeerde readback van doelplaylist is dus nog uit te voeren."
+    ],
+    "accountObserved": {
+      "displayName": "Ben van Belzen",
+      "userId": "11124659869",
+      "method": "native Spotify UI"
+    },
+    "automaticSaturdayRouteProven": false
+  },
+  "storage": {
+    "runtimeIntegrated": false,
+    "fifoDebited": false,
+    "reserveTransaction": false,
+    "ratingsImported": false,
+    "currentOriginalLegacyChanged": false,
+    "journalsChanged": false,
+    "walkAndListenChanged": false
+  }
+}

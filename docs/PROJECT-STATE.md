@@ -1,3 +1,7 @@
+## W44-uitwerking — 29 oktober 2026, na merge PR #21
+
+[Selectie en publicatiepakket](w44-2026-44/README.md): 21 gekozen tracks (10 RAAK, 11 GOED), twee behouden positieve overblijvers, exacte catalogusversies, volgorde van 1:27:57 en onafhankelijke W42/W43-inhoudscontrole. Alle 36 oorspronkelijke beoordelingen ongewijzigd. Geen Spotify-write of voorraadtransactie; W44-steentoewijzing/hoes en uiteindelijke doelplaylist-readback/publicatie blijven OPEN. Flow is redactioneel opgesteld, niet auditief geverifieerd. Hieronder staan oudere peilingen.
+
 # Ben's Music DNA — Project State
 
 ## Leidende healthcheck — 29 oktober 2026

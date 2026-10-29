@@ -1,0 +1,3686 @@
+{
+  "checkedAt": "2026-10-29T19:33:10.988277+00:00",
+  "scope": "public Spotify metadata and embed; no authenticated playback assertion",
+  "tracks": [
+    {
+      "id": "7s3iIgurAG0xgDg1ebAweA",
+      "source": "https://open.spotify.com/track/7s3iIgurAG0xgDg1ebAweA",
+      "description": "Mayank, Gui Oliver · Mayank · Song · 2021",
+      "entity": {
+        "type": "track",
+        "name": "Destiny Calling",
+        "uri": "spotify:track:7s3iIgurAG0xgDg1ebAweA",
+        "id": "7s3iIgurAG0xgDg1ebAweA",
+        "title": "Destiny Calling",
+        "artists": [
+          {
+            "name": "Mayank",
+            "uri": "spotify:artist:0OrBdxyVoXyVgAM6pI79D2"
+          },
+          {
+            "name": "Gui Oliver",
+            "uri": "spotify:artist:0IzChKU6hRh7wCHJmRouAZ"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2021-08-06T00:00:00Z"
+        },
+        "duration": 185055,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/0468faf52c90dfd493c590843602bea24e49410d"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:0OrBdxyVoXyVgAM6pI79D2",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 96,
+            "green": 89,
+            "red": 49
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 63,
+            "green": 55,
+            "red": 14
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 221,
+            "green": 213,
+            "red": 170
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e8003b215e85082c2cf9eb1f",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851e8003b215e85082c2cf9eb1f",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273e8003b215e85082c2cf9eb1f",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "5znE0H60n0kaGytNkJsCIz",
+      "source": "https://open.spotify.com/track/5znE0H60n0kaGytNkJsCIz",
+      "description": "Mayank, Gui Oliver · Destiny Calling · Song · 2021",
+      "entity": {
+        "type": "track",
+        "name": "Destiny Calling",
+        "uri": "spotify:track:5znE0H60n0kaGytNkJsCIz",
+        "id": "5znE0H60n0kaGytNkJsCIz",
+        "title": "Destiny Calling",
+        "artists": [
+          {
+            "name": "Mayank",
+            "uri": "spotify:artist:0OrBdxyVoXyVgAM6pI79D2"
+          },
+          {
+            "name": "Gui Oliver",
+            "uri": "spotify:artist:0IzChKU6hRh7wCHJmRouAZ"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2021-05-25T00:00:00Z"
+        },
+        "duration": 185055,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/0468faf52c90dfd493c590843602bea24e49410d"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:0OrBdxyVoXyVgAM6pI79D2",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 96,
+            "green": 89,
+            "red": 49
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 63,
+            "green": 55,
+            "red": 14
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 221,
+            "green": 213,
+            "red": 170
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b10ef9d5619af843756e8e6e",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851b10ef9d5619af843756e8e6e",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273b10ef9d5619af843756e8e6e",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "3pUuCPjhocrhbfQ8V0qO1G",
+      "source": "https://open.spotify.com/track/3pUuCPjhocrhbfQ8V0qO1G",
+      "description": "Starmen · Welcome to My World · Song · 2020",
+      "entity": {
+        "type": "track",
+        "name": "Ready to Give Me Your Love",
+        "uri": "spotify:track:3pUuCPjhocrhbfQ8V0qO1G",
+        "id": "3pUuCPjhocrhbfQ8V0qO1G",
+        "title": "Ready to Give Me Your Love",
+        "artists": [
+          {
+            "name": "Starmen",
+            "uri": "spotify:artist:1jLxOyZv6hLRHuXaw1KMXr"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2020-02-21T00:00:00Z"
+        },
+        "duration": 247508,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/e6c5924147686ee4f336f001af33440f0ca3408a"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:1jLxOyZv6hLRHuXaw1KMXr",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 64,
+            "green": 56,
+            "red": 40
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 98,
+            "green": 89,
+            "red": 72
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 219,
+            "green": 208,
+            "red": 189
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02505a55489e52ce419ac8712f",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00004851505a55489e52ce419ac8712f",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273505a55489e52ce419ac8712f",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "2o1cY1EyypZRUNanRPypJG",
+      "source": "https://open.spotify.com/track/2o1cY1EyypZRUNanRPypJG",
+      "description": "Starmen · The Best of Starmen - Volume 1 · Song · 2024",
+      "entity": {
+        "type": "track",
+        "name": "Ready to Give Me Your Love",
+        "uri": "spotify:track:2o1cY1EyypZRUNanRPypJG",
+        "id": "2o1cY1EyypZRUNanRPypJG",
+        "title": "Ready to Give Me Your Love",
+        "artists": [
+          {
+            "name": "Starmen",
+            "uri": "spotify:artist:1jLxOyZv6hLRHuXaw1KMXr"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2024-11-29T00:00:00Z"
+        },
+        "duration": 247508,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/2b4190c6edfca56371773af9496b7a7cfdc053f3"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:1jLxOyZv6hLRHuXaw1KMXr",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 30,
+            "green": 0,
+            "red": 158
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 5,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 185,
+            "green": 189,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e021e937839256df8a05ca527d6",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d000048511e937839256df8a05ca527d6",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2731e937839256df8a05ca527d6",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "5ARlDY2mHUQhUzellm3mf7",
+      "source": "https://open.spotify.com/track/5ARlDY2mHUQhUzellm3mf7",
+      "description": "Starmen · Ready to Give Me Your Love · Song · 2019",
+      "entity": {
+        "type": "track",
+        "name": "Ready to Give Me Your Love",
+        "uri": "spotify:track:5ARlDY2mHUQhUzellm3mf7",
+        "id": "5ARlDY2mHUQhUzellm3mf7",
+        "title": "Ready to Give Me Your Love",
+        "artists": [
+          {
+            "name": "Starmen",
+            "uri": "spotify:artist:1jLxOyZv6hLRHuXaw1KMXr"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2019-12-13T00:00:00Z"
+        },
+        "duration": 247508,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/e6c5924147686ee4f336f001af33440f0ca3408a"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:1jLxOyZv6hLRHuXaw1KMXr",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 159
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 178,
+            "green": 190,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0264bd202be742f4b09227571a",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000485164bd202be742f4b09227571a",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b27364bd202be742f4b09227571a",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "4OEjJbIBMzaTFsYJhBF4DO",
+      "source": "https://open.spotify.com/track/4OEjJbIBMzaTFsYJhBF4DO",
+      "description": "Night Laser · Call Me What You Want · Song · 2024",
+      "entity": {
+        "type": "track",
+        "name": "Bittersweet Dreams",
+        "uri": "spotify:track:4OEjJbIBMzaTFsYJhBF4DO",
+        "id": "4OEjJbIBMzaTFsYJhBF4DO",
+        "title": "Bittersweet Dreams",
+        "artists": [
+          {
+            "name": "Night Laser",
+            "uri": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2024-05-24T00:00:00Z"
+        },
+        "duration": 207010,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": true,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": [
+            "EXPLICIT"
+          ]
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/b0d88da4543196595090d7b7e65b5a2556adc7c1"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 105,
+            "green": 90,
+            "red": 21
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 68,
+            "green": 55,
+            "red": 0
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 232,
+            "green": 215,
+            "red": 151
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02270c4d13cb1f6dd251b61479",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00004851270c4d13cb1f6dd251b61479",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273270c4d13cb1f6dd251b61479",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "01Inhbo6zBTMDR8wbO5I4S",
+      "source": "https://open.spotify.com/track/01Inhbo6zBTMDR8wbO5I4S",
+      "description": "Night Laser · Way To The Thrill · Song · 2024",
+      "entity": {
+        "type": "track",
+        "name": "Bittersweet Dreams",
+        "uri": "spotify:track:01Inhbo6zBTMDR8wbO5I4S",
+        "id": "01Inhbo6zBTMDR8wbO5I4S",
+        "title": "Bittersweet Dreams",
+        "artists": [
+          {
+            "name": "Night Laser",
+            "uri": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2024-04-17T00:00:00Z"
+        },
+        "duration": 207010,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": true,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": [
+            "EXPLICIT"
+          ]
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/b0d88da4543196595090d7b7e65b5a2556adc7c1"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 157,
+            "green": 81,
+            "red": 0
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 116,
+            "green": 43,
+            "red": 0
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 212,
+            "red": 156
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02453574ed99cb05f122253aea",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851453574ed99cb05f122253aea",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273453574ed99cb05f122253aea",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "1rTNmdesXkZxjaiXD4hMCN",
+      "source": "https://open.spotify.com/track/1rTNmdesXkZxjaiXD4hMCN",
+      "description": "Night Laser · Bittersweet Dreams · Song · 2024",
+      "entity": {
+        "type": "track",
+        "name": "Bittersweet Dreams",
+        "uri": "spotify:track:1rTNmdesXkZxjaiXD4hMCN",
+        "id": "1rTNmdesXkZxjaiXD4hMCN",
+        "title": "Bittersweet Dreams",
+        "artists": [
+          {
+            "name": "Night Laser",
+            "uri": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2024-02-28T00:00:00Z"
+        },
+        "duration": 207010,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": true,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": [
+            "EXPLICIT"
+          ]
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/b0d88da4543196595090d7b7e65b5a2556adc7c1"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 63,
+            "green": 1,
+            "red": 156
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 31,
+            "green": 0,
+            "red": 96
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 200,
+            "green": 187,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a0798dad0ee75ade0633b95c",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851a0798dad0ee75ade0633b95c",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273a0798dad0ee75ade0633b95c",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "3dAYEhw1Xv093ErcZ1LePn",
+      "source": "https://open.spotify.com/track/3dAYEhw1Xv093ErcZ1LePn",
+      "description": "Night Laser · Don't Call Me Hero · Song · 2024",
+      "entity": {
+        "type": "track",
+        "name": "Bittersweet Dreams",
+        "uri": "spotify:track:3dAYEhw1Xv093ErcZ1LePn",
+        "id": "3dAYEhw1Xv093ErcZ1LePn",
+        "title": "Bittersweet Dreams",
+        "artists": [
+          {
+            "name": "Night Laser",
+            "uri": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2024-05-15T00:00:00Z"
+        },
+        "duration": 207010,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": true,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": [
+            "EXPLICIT"
+          ]
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/b0d88da4543196595090d7b7e65b5a2556adc7c1"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 152,
+            "green": 82,
+            "red": 0
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 112,
+            "green": 45,
+            "red": 0
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 212,
+            "red": 152
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02674eb9e95795327385a6a3f5",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851674eb9e95795327385a6a3f5",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273674eb9e95795327385a6a3f5",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "5aISIm0BHmorW4Z7hMDdg7",
+      "source": "https://open.spotify.com/track/5aISIm0BHmorW4Z7hMDdg7",
+      "description": "Smoking Snakes · Danger Zone · Song · 2024",
+      "entity": {
+        "type": "track",
+        "name": "Angels Calling",
+        "uri": "spotify:track:5aISIm0BHmorW4Z7hMDdg7",
+        "id": "5aISIm0BHmorW4Z7hMDdg7",
+        "title": "Angels Calling",
+        "artists": [
+          {
+            "name": "Smoking Snakes",
+            "uri": "spotify:artist:4QanEE5Wrkq1JhWMpWKz4f"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2024-02-09T00:00:00Z"
+        },
+        "duration": 198109,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/6e9134be8de751adfc135ecf3d6a9070dd81dc28"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:4QanEE5Wrkq1JhWMpWKz4f",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 159
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 179,
+            "green": 190,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e020ba646a625fb98f2656d7290",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d000048510ba646a625fb98f2656d7290",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2730ba646a625fb98f2656d7290",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "1YQoxVx2mORHy53VrY3c5p",
+      "source": "https://open.spotify.com/track/1YQoxVx2mORHy53VrY3c5p",
+      "description": "Smoking Snakes · Angels Calling · Song · 2024",
+      "entity": {
+        "type": "track",
+        "name": "Angels Calling",
+        "uri": "spotify:track:1YQoxVx2mORHy53VrY3c5p",
+        "id": "1YQoxVx2mORHy53VrY3c5p",
+        "title": "Angels Calling",
+        "artists": [
+          {
+            "name": "Smoking Snakes",
+            "uri": "spotify:artist:4QanEE5Wrkq1JhWMpWKz4f"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2024-01-11T00:00:00Z"
+        },
+        "duration": 198109,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/6e9134be8de751adfc135ecf3d6a9070dd81dc28"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:4QanEE5Wrkq1JhWMpWKz4f",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 159
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 179,
+            "green": 190,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02fc3cf1aac1c5f585655cffe6",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00004851fc3cf1aac1c5f585655cffe6",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273fc3cf1aac1c5f585655cffe6",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "6VnK5Xeg2u7Zg5qJqKYaDo",
+      "source": "https://open.spotify.com/track/6VnK5Xeg2u7Zg5qJqKYaDo",
+      "description": "Trench Dogs · Year of the Dog · Song · 2018",
+      "entity": {
+        "type": "track",
+        "name": "Homesick Parade",
+        "uri": "spotify:track:6VnK5Xeg2u7Zg5qJqKYaDo",
+        "id": "6VnK5Xeg2u7Zg5qJqKYaDo",
+        "title": "Homesick Parade",
+        "artists": [
+          {
+            "name": "Trench Dogs",
+            "uri": "spotify:artist:5I22u9LXP5xKHeCRlHTUZ5"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2018-08-24T00:00:00Z"
+        },
+        "duration": 176381,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": true,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": [
+            "EXPLICIT"
+          ]
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/6aeda950960c1b29037d662444937deb66779965"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:5I22u9LXP5xKHeCRlHTUZ5",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 56,
+            "green": 48,
+            "red": 48
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 91,
+            "green": 82,
+            "red": 82
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 215,
+            "green": 205,
+            "red": 204
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0236a683360ef0f6a4055e3523",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000485136a683360ef0f6a4055e3523",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27336a683360ef0f6a4055e3523",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "6lmrfYBEaTpKk3M30yUrZ7",
+      "source": "https://open.spotify.com/track/6lmrfYBEaTpKk3M30yUrZ7",
+      "description": "Midas · Midas · Song · 2022",
+      "entity": {
+        "type": "track",
+        "name": "Nobody Gets out Alive",
+        "uri": "spotify:track:6lmrfYBEaTpKk3M30yUrZ7",
+        "id": "6lmrfYBEaTpKk3M30yUrZ7",
+        "title": "Nobody Gets out Alive",
+        "artists": [
+          {
+            "name": "Midas",
+            "uri": "spotify:artist:1xbUKM3c1WNURoDHEDGXBf"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2022-04-28T00:00:00Z"
+        },
+        "duration": 286170,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/4fd512185445d3a7392c2c878caa57d4c69782df"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:1xbUKM3c1WNURoDHEDGXBf",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 38,
+            "green": 38,
+            "red": 151
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 182,
+            "green": 189,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e021eddcc96fc8e86857499c67a",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d000048511eddcc96fc8e86857499c67a",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2731eddcc96fc8e86857499c67a",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "6Ny1GkA2KbnytfBYyQskzd",
+      "source": "https://open.spotify.com/track/6Ny1GkA2KbnytfBYyQskzd",
+      "description": "Sanhedrin · Lights On · Song · 2022",
+      "entity": {
+        "type": "track",
+        "name": "Lost at Sea",
+        "uri": "spotify:track:6Ny1GkA2KbnytfBYyQskzd",
+        "id": "6Ny1GkA2KbnytfBYyQskzd",
+        "title": "Lost at Sea",
+        "artists": [
+          {
+            "name": "Sanhedrin",
+            "uri": "spotify:artist:2p4bCEJL6k03ErhdPTPEbu"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2022-03-04T00:00:00Z"
+        },
+        "duration": 267933,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/2e189673496a9b5245bace23bc14f7a5a82a0f97"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:2p4bCEJL6k03ErhdPTPEbu",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 56,
+            "green": 56,
+            "red": 48
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 89,
+            "green": 89,
+            "red": 80
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 207,
+            "green": 207,
+            "red": 197
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022d9a03a884d11411c6872382",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d000048512d9a03a884d11411c6872382",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2732d9a03a884d11411c6872382",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "6UkgG1lbnFWQwBrpUe23VJ",
+      "source": "https://open.spotify.com/track/6UkgG1lbnFWQwBrpUe23VJ",
+      "description": "Sanhedrin · Lost at Sea · Song · 2022",
+      "entity": {
+        "type": "track",
+        "name": "Lost at Sea",
+        "uri": "spotify:track:6UkgG1lbnFWQwBrpUe23VJ",
+        "id": "6UkgG1lbnFWQwBrpUe23VJ",
+        "title": "Lost at Sea",
+        "artists": [
+          {
+            "name": "Sanhedrin",
+            "uri": "spotify:artist:2p4bCEJL6k03ErhdPTPEbu"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2022-02-10T00:00:00Z"
+        },
+        "duration": 267933,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/2e189673496a9b5245bace23bc14f7a5a82a0f97"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:2p4bCEJL6k03ErhdPTPEbu",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 56,
+            "green": 56,
+            "red": 48
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 89,
+            "green": 89,
+            "red": 80
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 207,
+            "green": 207,
+            "red": 197
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029dfd5a534dc42d87f1dba569",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d000048519dfd5a534dc42d87f1dba569",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2739dfd5a534dc42d87f1dba569",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "3E6xrYViwCil3oK4pkqpZ4",
+      "source": "https://open.spotify.com/track/3E6xrYViwCil3oK4pkqpZ4",
+      "description": "Lykantropi · Spirituosa · Song · 2019",
+      "entity": {
+        "type": "track",
+        "name": "Wild Flowers",
+        "uri": "spotify:track:3E6xrYViwCil3oK4pkqpZ4",
+        "id": "3E6xrYViwCil3oK4pkqpZ4",
+        "title": "Wild Flowers",
+        "artists": [
+          {
+            "name": "Lykantropi",
+            "uri": "spotify:artist:0oRylpNxHxI8fP7Mpmo4QU"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2019-05-24T00:00:00Z"
+        },
+        "duration": 252213,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/20143e9a9818bfe782cefbcaef787e2b17ed994c"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:0oRylpNxHxI8fP7Mpmo4QU",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 35,
+            "green": 82,
+            "red": 97
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 49,
+            "red": 63
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 155,
+            "green": 205,
+            "red": 221
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ac3162dc92f7748514ea8e72",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851ac3162dc92f7748514ea8e72",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273ac3162dc92f7748514ea8e72",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "4DdbVPSW8WT1eaq4olTjwW",
+      "source": "https://open.spotify.com/track/4DdbVPSW8WT1eaq4olTjwW",
+      "description": "Lykantropi · Wild Flowers · Song · 2019",
+      "entity": {
+        "type": "track",
+        "name": "Wild Flowers",
+        "uri": "spotify:track:4DdbVPSW8WT1eaq4olTjwW",
+        "id": "4DdbVPSW8WT1eaq4olTjwW",
+        "title": "Wild Flowers",
+        "artists": [
+          {
+            "name": "Lykantropi",
+            "uri": "spotify:artist:0oRylpNxHxI8fP7Mpmo4QU"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2019-04-19T00:00:00Z"
+        },
+        "duration": 252213,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/20143e9a9818bfe782cefbcaef787e2b17ed994c"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:0oRylpNxHxI8fP7Mpmo4QU",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 21,
+            "green": 80,
+            "red": 102
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 47,
+            "red": 68
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 145,
+            "green": 203,
+            "red": 228
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c86d137aab4f81de000fa46c",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851c86d137aab4f81de000fa46c",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273c86d137aab4f81de000fa46c",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "69feEDlBjijnisHbOWgH7P",
+      "source": "https://open.spotify.com/track/69feEDlBjijnisHbOWgH7P",
+      "description": "Grave Pleasures · Motherblood · Song · 2017",
+      "entity": {
+        "type": "track",
+        "name": "Be My Hiroshima",
+        "uri": "spotify:track:69feEDlBjijnisHbOWgH7P",
+        "id": "69feEDlBjijnisHbOWgH7P",
+        "title": "Be My Hiroshima",
+        "artists": [
+          {
+            "name": "Grave Pleasures",
+            "uri": "spotify:artist:7Gbgr3pNct3IvdhQLO8wPU"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2017-09-29T00:00:00Z"
+        },
+        "duration": 226348,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/31d577a538ae1ef113d272492dddbab5f52c1cc9"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:7Gbgr3pNct3IvdhQLO8wPU",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 24,
+            "green": 24,
+            "red": 128
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 49
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 180,
+            "green": 189,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027e183193532f93bdd2e900ca",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d000048517e183193532f93bdd2e900ca",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2737e183193532f93bdd2e900ca",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "1nxCvlms3O7d6LoeHqW6a5",
+      "source": "https://open.spotify.com/track/1nxCvlms3O7d6LoeHqW6a5",
+      "description": "Grave Pleasures · Be My Hiroshima · Song · 2017",
+      "entity": {
+        "type": "track",
+        "name": "Be My Hiroshima",
+        "uri": "spotify:track:1nxCvlms3O7d6LoeHqW6a5",
+        "id": "1nxCvlms3O7d6LoeHqW6a5",
+        "title": "Be My Hiroshima",
+        "artists": [
+          {
+            "name": "Grave Pleasures",
+            "uri": "spotify:artist:7Gbgr3pNct3IvdhQLO8wPU"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2017-08-18T00:00:00Z"
+        },
+        "duration": 226348,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/05331778afb9de25c109d65d29f97cd5a30a7d72"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:7Gbgr3pNct3IvdhQLO8wPU",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 159
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 176,
+            "green": 190,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02de60af411287f16779f1f61a",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851de60af411287f16779f1f61a",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273de60af411287f16779f1f61a",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "7dMRPEtSa7GBMJ5Y1OTDWZ",
+      "source": "https://open.spotify.com/track/7dMRPEtSa7GBMJ5Y1OTDWZ",
+      "description": "Magic Pie · King for a Day · Song · 2015",
+      "entity": {
+        "type": "track",
+        "name": "Trick of the Trade",
+        "uri": "spotify:track:7dMRPEtSa7GBMJ5Y1OTDWZ",
+        "id": "7dMRPEtSa7GBMJ5Y1OTDWZ",
+        "title": "Trick of the Trade",
+        "artists": [
+          {
+            "name": "Magic Pie",
+            "uri": "spotify:artist:0ABvgllZiW792ERHXuJlGz"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2015-05-25T00:00:00Z"
+        },
+        "duration": 368586,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/50fd6524365fb31bf782ee8450f16b7cadecf32f"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:0ABvgllZiW792ERHXuJlGz",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 48,
+            "red": 112
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 4,
+            "red": 46
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 152,
+            "green": 192,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028b217425da6bb6830a6a9a65",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d000048518b217425da6bb6830a6a9a65",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2738b217425da6bb6830a6a9a65",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": false
+    },
+    {
+      "id": "6eKjzKEAz48JsIjsHTkGHH",
+      "source": "https://open.spotify.com/track/6eKjzKEAz48JsIjsHTkGHH",
+      "description": "Magic Pie · King for a Day · Song · 2015",
+      "entity": {
+        "type": "track",
+        "name": "Trick of the Trade",
+        "uri": "spotify:track:6eKjzKEAz48JsIjsHTkGHH",
+        "id": "6eKjzKEAz48JsIjsHTkGHH",
+        "title": "Trick of the Trade",
+        "artists": [
+          {
+            "name": "Magic Pie",
+            "uri": "spotify:artist:0ABvgllZiW792ERHXuJlGz"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2015-05-25T00:00:00Z"
+        },
+        "duration": 368586,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/50fd6524365fb31bf782ee8450f16b7cadecf32f"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:0ABvgllZiW792ERHXuJlGz",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 48,
+            "red": 112
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 4,
+            "red": 46
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 152,
+            "green": 192,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0284f32e0f9e55a3d53ab89e9f",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000485184f32e0f9e55a3d53ab89e9f",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27384f32e0f9e55a3d53ab89e9f",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "3lS99gJJAWuxKxQfXArvvx",
+      "source": "https://open.spotify.com/track/3lS99gJJAWuxKxQfXArvvx",
+      "description": "LeBrock · Real Thing · Song · 2018",
+      "entity": {
+        "type": "track",
+        "name": "Runaway",
+        "uri": "spotify:track:3lS99gJJAWuxKxQfXArvvx",
+        "id": "3lS99gJJAWuxKxQfXArvvx",
+        "title": "Runaway",
+        "artists": [
+          {
+            "name": "LeBrock",
+            "uri": "spotify:artist:461TaZqofVfcQo2wtMwnQJ"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2018-02-14T00:00:00Z"
+        },
+        "duration": 232846,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/2afcd95748f3d9cb819e2e1b2421a65f884f187d"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:461TaZqofVfcQo2wtMwnQJ",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 106,
+            "green": 90,
+            "red": 23
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 69,
+            "green": 55,
+            "red": 0
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 233,
+            "green": 215,
+            "red": 151
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024406e4085540c73681eeca9f",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d000048514406e4085540c73681eeca9f",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2734406e4085540c73681eeca9f",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "45yGG3vEZTV8MBVxKqXAq5",
+      "source": "https://open.spotify.com/track/45yGG3vEZTV8MBVxKqXAq5",
+      "description": "Fans Of The Dark · Fans of the Dark · Song · 2021",
+      "entity": {
+        "type": "track",
+        "name": "Life Kills",
+        "uri": "spotify:track:45yGG3vEZTV8MBVxKqXAq5",
+        "id": "45yGG3vEZTV8MBVxKqXAq5",
+        "title": "Life Kills",
+        "artists": [
+          {
+            "name": "Fans Of The Dark",
+            "uri": "spotify:artist:1uJoivXxtZjowli7GAAOOI"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2021-11-05T00:00:00Z"
+        },
+        "duration": 314307,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/693cddff8b7e766b83a2c97ebb63710c8855211b"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:1uJoivXxtZjowli7GAAOOI",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 99,
+            "green": 91,
+            "red": 0
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 63,
+            "green": 55,
+            "red": 0
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 227,
+            "green": 219,
+            "red": 132
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0272a6a7e4e474841803ffc7d4",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000485172a6a7e4e474841803ffc7d4",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b27372a6a7e4e474841803ffc7d4",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "0UAdyYaq6vMJgLGjR8R6N0",
+      "source": "https://open.spotify.com/track/0UAdyYaq6vMJgLGjR8R6N0",
+      "description": "Fans Of The Dark · Life Kills · Song · 2021",
+      "entity": {
+        "type": "track",
+        "name": "Life Kills",
+        "uri": "spotify:track:0UAdyYaq6vMJgLGjR8R6N0",
+        "id": "0UAdyYaq6vMJgLGjR8R6N0",
+        "title": "Life Kills",
+        "artists": [
+          {
+            "name": "Fans Of The Dark",
+            "uri": "spotify:artist:1uJoivXxtZjowli7GAAOOI"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2021-09-01T00:00:00Z"
+        },
+        "duration": 314307,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/693cddff8b7e766b83a2c97ebb63710c8855211b"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:1uJoivXxtZjowli7GAAOOI",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 99,
+            "green": 91,
+            "red": 0
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 63,
+            "green": 55,
+            "red": 0
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 227,
+            "green": 219,
+            "red": 132
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026183899fcfbe06a80ffc8b22",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d000048516183899fcfbe06a80ffc8b22",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2736183899fcfbe06a80ffc8b22",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "6jIWMzMQ9NuGHAdPFxAjcI",
+      "source": "https://open.spotify.com/track/6jIWMzMQ9NuGHAdPFxAjcI",
+      "description": "Junkyard Drive · Black Coffee · Song · 2018",
+      "entity": {
+        "type": "track",
+        "name": "Sweet Little Dreamer",
+        "uri": "spotify:track:6jIWMzMQ9NuGHAdPFxAjcI",
+        "id": "6jIWMzMQ9NuGHAdPFxAjcI",
+        "title": "Sweet Little Dreamer",
+        "artists": [
+          {
+            "name": "Junkyard Drive",
+            "uri": "spotify:artist:7HWdmhoIhvXEHikALsGT4w"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2018-08-31T00:00:00Z"
+        },
+        "duration": 282193,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/a66c94acad36cb9a5955cc212003ab7b5410e784"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:7HWdmhoIhvXEHikALsGT4w",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 81,
+            "green": 0,
+            "red": 154
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 44,
+            "green": 0,
+            "red": 95
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 213,
+            "green": 186,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02cf8081860aed0371980b952f",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851cf8081860aed0371980b952f",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273cf8081860aed0371980b952f",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "4P2AOTh0aQ68jxFUpd6eSF",
+      "source": "https://open.spotify.com/track/4P2AOTh0aQ68jxFUpd6eSF",
+      "description": "Junkyard Drive · Sweet Little Dreamer · Song · 2018",
+      "entity": {
+        "type": "track",
+        "name": "Sweet Little Dreamer",
+        "uri": "spotify:track:4P2AOTh0aQ68jxFUpd6eSF",
+        "id": "4P2AOTh0aQ68jxFUpd6eSF",
+        "title": "Sweet Little Dreamer",
+        "artists": [
+          {
+            "name": "Junkyard Drive",
+            "uri": "spotify:artist:7HWdmhoIhvXEHikALsGT4w"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2018-06-08T00:00:00Z"
+        },
+        "duration": 282193,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/a66c94acad36cb9a5955cc212003ab7b5410e784"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:7HWdmhoIhvXEHikALsGT4w",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 48,
+            "green": 24,
+            "red": 72
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 86,
+            "green": 62,
+            "red": 115
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 214,
+            "green": 188,
+            "red": 251
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f38a49cb14fe44fbc0adf8e3",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851f38a49cb14fe44fbc0adf8e3",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273f38a49cb14fe44fbc0adf8e3",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "6Ko5PM4RK7eumjqnKt5Ahi",
+      "source": "https://open.spotify.com/track/6Ko5PM4RK7eumjqnKt5Ahi",
+      "description": "Vypera · Eat Your Heart Out (Bonus Track Edition) · Song · 2022",
+      "entity": {
+        "type": "track",
+        "name": "Standing on the Edge",
+        "uri": "spotify:track:6Ko5PM4RK7eumjqnKt5Ahi",
+        "id": "6Ko5PM4RK7eumjqnKt5Ahi",
+        "title": "Standing on the Edge",
+        "artists": [
+          {
+            "name": "Vypera",
+            "uri": "spotify:artist:03eYJDAyUMwFRdmW5cgItV"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2022-07-22T00:00:00Z"
+        },
+        "duration": 235546,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/d1628bccb0d319845814b527df27229239b84631"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:03eYJDAyUMwFRdmW5cgItV",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 98,
+            "green": 91,
+            "red": 0
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 62,
+            "green": 56,
+            "red": 0
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 229,
+            "green": 221,
+            "red": 113
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02fdf38d04e7137dc9f7709168",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851fdf38d04e7137dc9f7709168",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273fdf38d04e7137dc9f7709168",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "2nXKJRG0qhmzysZ5Bk017A",
+      "source": "https://open.spotify.com/track/2nXKJRG0qhmzysZ5Bk017A",
+      "description": "Vypera · Standing on the Edge · Song · 2022",
+      "entity": {
+        "type": "track",
+        "name": "Standing on the Edge",
+        "uri": "spotify:track:2nXKJRG0qhmzysZ5Bk017A",
+        "id": "2nXKJRG0qhmzysZ5Bk017A",
+        "title": "Standing on the Edge",
+        "artists": [
+          {
+            "name": "Vypera",
+            "uri": "spotify:artist:03eYJDAyUMwFRdmW5cgItV"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2022-04-19T00:00:00Z"
+        },
+        "duration": 235546,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/d1628bccb0d319845814b527df27229239b84631"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:03eYJDAyUMwFRdmW5cgItV",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 98,
+            "green": 91,
+            "red": 0
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 62,
+            "green": 56,
+            "red": 0
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 229,
+            "green": 221,
+            "red": 113
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024b5ea95f4396703f014116b0",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d000048514b5ea95f4396703f014116b0",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2734b5ea95f4396703f014116b0",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "6jEGUmbMdvWq6Di1Kv61J0",
+      "source": "https://open.spotify.com/track/6jEGUmbMdvWq6Di1Kv61J0",
+      "description": "Ashbury · Endless Skies · Song · 1983",
+      "entity": {
+        "type": "track",
+        "name": "The Warning",
+        "uri": "spotify:track:6jEGUmbMdvWq6Di1Kv61J0",
+        "id": "6jEGUmbMdvWq6Di1Kv61J0",
+        "title": "The Warning",
+        "artists": [
+          {
+            "name": "Ashbury",
+            "uri": "spotify:artist:1olZcNG9rq4RGVVd69Tj4e"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "1983-01-01T00:00:00Z"
+        },
+        "duration": 238706,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/845c68a2a8997d82525f14aab7bf505bc91276c1"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:1olZcNG9rq4RGVVd69Tj4e",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 159
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 179,
+            "green": 190,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0281e5dbeb33074ea26433490f",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000485181e5dbeb33074ea26433490f",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27381e5dbeb33074ea26433490f",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "58C4uAvr4MTr88Chmkc6nz",
+      "source": "https://open.spotify.com/track/58C4uAvr4MTr88Chmkc6nz",
+      "description": "Artificial Language · The Observer · Song · 2017",
+      "entity": {
+        "type": "track",
+        "name": "Unself Portrait",
+        "uri": "spotify:track:58C4uAvr4MTr88Chmkc6nz",
+        "id": "58C4uAvr4MTr88Chmkc6nz",
+        "title": "Unself Portrait",
+        "artists": [
+          {
+            "name": "Artificial Language",
+            "uri": "spotify:artist:10Mmz2UngxRjkZmz0a1H32"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2017-04-28T00:00:00Z"
+        },
+        "duration": 229963,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/3a667695a7f711821a87df695ef0977373bf0370"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:10Mmz2UngxRjkZmz0a1H32",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 64,
+            "green": 56,
+            "red": 48
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 97,
+            "green": 88,
+            "red": 80
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 217,
+            "green": 207,
+            "red": 197
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028f332d6adb5beaf0341d2b7c",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d000048518f332d6adb5beaf0341d2b7c",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2738f332d6adb5beaf0341d2b7c",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "4O6pSwn4xxx8FdBBdqeEin",
+      "source": "https://open.spotify.com/track/4O6pSwn4xxx8FdBBdqeEin",
+      "description": "Kalax, PYXIS, Jay Diggs · III · Song · 2019",
+      "entity": {
+        "type": "track",
+        "name": "Out of Time",
+        "uri": "spotify:track:4O6pSwn4xxx8FdBBdqeEin",
+        "id": "4O6pSwn4xxx8FdBBdqeEin",
+        "title": "Out of Time",
+        "artists": [
+          {
+            "name": "Kalax",
+            "uri": "spotify:artist:2o88SjmtVVVyCmTGCuSPoY"
+          },
+          {
+            "name": "PYXIS",
+            "uri": "spotify:artist:4ckOxQj4C9eMY3SP39ixaS"
+          },
+          {
+            "name": "Jay Diggs",
+            "uri": "spotify:artist:5jN1nNCfLoju9G0QHnxlG1"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2019-03-25T00:00:00Z"
+        },
+        "duration": 295221,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/0986074b2f6f3ad5cdf1b25e2be9cd28bfcce9e9"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:2o88SjmtVVVyCmTGCuSPoY",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 79,
+            "green": 0,
+            "red": 154
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 43,
+            "green": 0,
+            "red": 95
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 212,
+            "green": 186,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0294150067e8e5202d767ef85a",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000485194150067e8e5202d767ef85a",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27394150067e8e5202d767ef85a",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "5R8u2wIpO2OKg2EhSygZne",
+      "source": "https://open.spotify.com/track/5R8u2wIpO2OKg2EhSygZne",
+      "description": "Nitrate · Feel The Heat · Song · 2023",
+      "entity": {
+        "type": "track",
+        "name": "All The Right Moves",
+        "uri": "spotify:track:5R8u2wIpO2OKg2EhSygZne",
+        "id": "5R8u2wIpO2OKg2EhSygZne",
+        "title": "All The Right Moves",
+        "artists": [
+          {
+            "name": "Nitrate",
+            "uri": "spotify:artist:6wEVMZieIv9ttCzvuDYev8"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2023-10-13T00:00:00Z"
+        },
+        "duration": 234120,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/6b76daf261345a61f5f1dc156aff32c7cf9b989f"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:6wEVMZieIv9ttCzvuDYev8",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 66,
+            "red": 127
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 33,
+            "red": 86
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 136,
+            "green": 194,
+            "red": 253
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a723f334572c3d58ddf51907",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851a723f334572c3d58ddf51907",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273a723f334572c3d58ddf51907",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "5TuIr220ppmyVfiS5DGf9R",
+      "source": "https://open.spotify.com/track/5TuIr220ppmyVfiS5DGf9R",
+      "description": "Nitrate · All The Right Moves · Song · 2023",
+      "entity": {
+        "type": "track",
+        "name": "All The Right Moves",
+        "uri": "spotify:track:5TuIr220ppmyVfiS5DGf9R",
+        "id": "5TuIr220ppmyVfiS5DGf9R",
+        "title": "All The Right Moves",
+        "artists": [
+          {
+            "name": "Nitrate",
+            "uri": "spotify:artist:6wEVMZieIv9ttCzvuDYev8"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2023-09-07T00:00:00Z"
+        },
+        "duration": 234120,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/6b76daf261345a61f5f1dc156aff32c7cf9b989f"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:6wEVMZieIv9ttCzvuDYev8",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 66,
+            "red": 127
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 33,
+            "red": 86
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 136,
+            "green": 194,
+            "red": 253
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e023712c5c26912936aade6c8d4",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d000048513712c5c26912936aade6c8d4",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2733712c5c26912936aade6c8d4",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "1xZPayQA6YUek2EcIxnZ2m",
+      "source": "https://open.spotify.com/track/1xZPayQA6YUek2EcIxnZ2m",
+      "description": "Nitrate · Feel The Heat (Deluxe Edition) · Song · 2023",
+      "entity": {
+        "type": "track",
+        "name": "All the Right Moves",
+        "uri": "spotify:track:1xZPayQA6YUek2EcIxnZ2m",
+        "id": "1xZPayQA6YUek2EcIxnZ2m",
+        "title": "All the Right Moves",
+        "artists": [
+          {
+            "name": "Nitrate",
+            "uri": "spotify:artist:6wEVMZieIv9ttCzvuDYev8"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2023-10-13T00:00:00Z"
+        },
+        "duration": 234120,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/7d66137d3cbeb4288242eb2bd4963635b21b20e5"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:6wEVMZieIv9ttCzvuDYev8",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 24,
+            "green": 32,
+            "red": 88
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 57,
+            "green": 67,
+            "red": 127
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 177,
+            "green": 190,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0296d34fd41fc77da4494ec56a",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000485196d34fd41fc77da4494ec56a",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27396d34fd41fc77da4494ec56a",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "4FkpXxzZEsGFu4NIZMKVt1",
+      "source": "https://open.spotify.com/track/4FkpXxzZEsGFu4NIZMKVt1",
+      "description": "Psychlona · Venus Skytrip · Song · 2020",
+      "entity": {
+        "type": "track",
+        "name": "Blast Off",
+        "uri": "spotify:track:4FkpXxzZEsGFu4NIZMKVt1",
+        "id": "4FkpXxzZEsGFu4NIZMKVt1",
+        "title": "Blast Off",
+        "artists": [
+          {
+            "name": "Psychlona",
+            "uri": "spotify:artist:6XIJivrO9KEaxh6bKai91s"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2020-08-21T00:00:00Z"
+        },
+        "duration": 449063,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/c83fe6be5d2b44c124b99ee12ccf1fbcb24c8063"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:6XIJivrO9KEaxh6bKai91s",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 33,
+            "red": 153
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 164,
+            "green": 191,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02eeecd9e97f22e5e6db316fd0",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851eeecd9e97f22e5e6db316fd0",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273eeecd9e97f22e5e6db316fd0",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "2h7J8G3II0eZj0Kl8uDWmH",
+      "source": "https://open.spotify.com/track/2h7J8G3II0eZj0Kl8uDWmH",
+      "description": "Crypt Sermon · The Stygian Rose · Song · 2024",
+      "entity": {
+        "type": "track",
+        "name": "Heavy is the Crown of Bone",
+        "uri": "spotify:track:2h7J8G3II0eZj0Kl8uDWmH",
+        "id": "2h7J8G3II0eZj0Kl8uDWmH",
+        "title": "Heavy is the Crown of Bone",
+        "artists": [
+          {
+            "name": "Crypt Sermon",
+            "uri": "spotify:artist:363ih5wuNGWBFcjeKFG8cc"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2024-06-14T00:00:00Z"
+        },
+        "duration": 308542,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/42fca753471ec3d90b54bc172d06184cf79deb02"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:363ih5wuNGWBFcjeKFG8cc",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 4,
+            "green": 0,
+            "red": 159
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 181,
+            "green": 189,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02063f08afb5a34bde66753dd3",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851063f08afb5a34bde66753dd3",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273063f08afb5a34bde66753dd3",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "1trQRHcj8MlYystBoi8LjU",
+      "source": "https://open.spotify.com/track/1trQRHcj8MlYystBoi8LjU",
+      "description": "Crypt Sermon · Heavy is the Crown of Bone · Song · 2024",
+      "entity": {
+        "type": "track",
+        "name": "Heavy is the Crown of Bone",
+        "uri": "spotify:track:1trQRHcj8MlYystBoi8LjU",
+        "id": "1trQRHcj8MlYystBoi8LjU",
+        "title": "Heavy is the Crown of Bone",
+        "artists": [
+          {
+            "name": "Crypt Sermon",
+            "uri": "spotify:artist:363ih5wuNGWBFcjeKFG8cc"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2024-04-03T00:00:00Z"
+        },
+        "duration": 308542,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/42fca753471ec3d90b54bc172d06184cf79deb02"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:363ih5wuNGWBFcjeKFG8cc",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 4,
+            "green": 0,
+            "red": 159
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 181,
+            "green": 189,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ce3e37a69159be01e4e10976",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00004851ce3e37a69159be01e4e10976",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273ce3e37a69159be01e4e10976",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "0Ws0ZUpn49O9B1P4lVNvPx",
+      "source": "https://open.spotify.com/track/0Ws0ZUpn49O9B1P4lVNvPx",
+      "description": "Four Stroke Baron · Planet Silver Screen · Song · 2018",
+      "entity": {
+        "type": "track",
+        "name": "Planet Silver Screen",
+        "uri": "spotify:track:0Ws0ZUpn49O9B1P4lVNvPx",
+        "id": "0Ws0ZUpn49O9B1P4lVNvPx",
+        "title": "Planet Silver Screen",
+        "artists": [
+          {
+            "name": "Four Stroke Baron",
+            "uri": "spotify:artist:091cSUyhQCRgJreqXy17m5"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2018-11-09T00:00:00Z"
+        },
+        "duration": 229576,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/1905a01357a3622cc821b76fcad568e3e160d7f9"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:091cSUyhQCRgJreqXy17m5",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 48,
+            "green": 16,
+            "red": 56
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 93,
+            "green": 60,
+            "red": 104
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 228,
+            "green": 190,
+            "red": 242
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0249ffccbaa9af87a5a502225c",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000485149ffccbaa9af87a5a502225c",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27349ffccbaa9af87a5a502225c",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "4QMSOKToKkll5TpxR4blQB",
+      "source": "https://open.spotify.com/track/4QMSOKToKkll5TpxR4blQB",
+      "description": "Four Stroke Baron · Planet Silver Screen · Song · 2018",
+      "entity": {
+        "type": "track",
+        "name": "Planet Silver Screen",
+        "uri": "spotify:track:4QMSOKToKkll5TpxR4blQB",
+        "id": "4QMSOKToKkll5TpxR4blQB",
+        "title": "Planet Silver Screen",
+        "artists": [
+          {
+            "name": "Four Stroke Baron",
+            "uri": "spotify:artist:091cSUyhQCRgJreqXy17m5"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2018-09-14T00:00:00Z"
+        },
+        "duration": 229576,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/1905a01357a3622cc821b76fcad568e3e160d7f9"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:091cSUyhQCRgJreqXy17m5",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 48,
+            "green": 16,
+            "red": 56
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 93,
+            "green": 60,
+            "red": 104
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 228,
+            "green": 190,
+            "red": 242
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ee72ac185436ea05c3c6bcc7",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851ee72ac185436ea05c3c6bcc7",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273ee72ac185436ea05c3c6bcc7",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "6mlmqSbStWJSVjKpkR8Wej",
+      "source": "https://open.spotify.com/track/6mlmqSbStWJSVjKpkR8Wej",
+      "description": "Barock Project · DETACHMENT (2021 Remastered Version) · Song · 2017",
+      "entity": {
+        "type": "track",
+        "name": "Broken",
+        "uri": "spotify:track:6mlmqSbStWJSVjKpkR8Wej",
+        "id": "6mlmqSbStWJSVjKpkR8Wej",
+        "title": "Broken",
+        "artists": [
+          {
+            "name": "Barock Project",
+            "uri": "spotify:artist:1PKB3oDVcZBThmJCYyMOQH"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2017-01-01T00:00:00Z"
+        },
+        "duration": 546386,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/daaae02b7e6a18d2854a35944a08ae292d057974"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:1PKB3oDVcZBThmJCYyMOQH",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 63,
+            "green": 69,
+            "red": 119
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 31,
+            "green": 36,
+            "red": 82
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 183,
+            "green": 191,
+            "red": 250
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02070966ea17a49c4235775291",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851070966ea17a49c4235775291",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273070966ea17a49c4235775291",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "7qFgG4cSE7ZD9WpxA3L6S2",
+      "source": "https://open.spotify.com/track/7qFgG4cSE7ZD9WpxA3L6S2",
+      "description": "Droid Bishop · Dancing in the Darkness · Song · 2021",
+      "entity": {
+        "type": "track",
+        "name": "Dancing in the Darkness",
+        "uri": "spotify:track:7qFgG4cSE7ZD9WpxA3L6S2",
+        "id": "7qFgG4cSE7ZD9WpxA3L6S2",
+        "title": "Dancing in the Darkness",
+        "artists": [
+          {
+            "name": "Droid Bishop",
+            "uri": "spotify:artist:0HPVHsbV2yIYPp2Pk4kdHe"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2021-07-20T00:00:00Z"
+        },
+        "duration": 260596,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/9913eb3725aed632c3c6bef076eac706c8e2a38a"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:0HPVHsbV2yIYPp2Pk4kdHe",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 112,
+            "green": 0,
+            "red": 148
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 66,
+            "green": 0,
+            "red": 91
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 228,
+            "green": 184,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0224b81d2b631818243f65fd0b",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000485124b81d2b631818243f65fd0b",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27324b81d2b631818243f65fd0b",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    },
+    {
+      "id": "6Hy7t4RIksivCxEXyu6T1b",
+      "source": "https://open.spotify.com/track/6Hy7t4RIksivCxEXyu6T1b",
+      "description": "Droid Bishop · Into The Abstract · Song · 2021",
+      "entity": {
+        "type": "track",
+        "name": "Dancing in the Darkness",
+        "uri": "spotify:track:6Hy7t4RIksivCxEXyu6T1b",
+        "id": "6Hy7t4RIksivCxEXyu6T1b",
+        "title": "Dancing in the Darkness",
+        "artists": [
+          {
+            "name": "Droid Bishop",
+            "uri": "spotify:artist:0HPVHsbV2yIYPp2Pk4kdHe"
+          }
+        ],
+        "releaseDate": {
+          "isoString": "2021-10-15T00:00:00Z"
+        },
+        "duration": 260596,
+        "isPlayable": true,
+        "playabilityReason": "PLAYABLE",
+        "isExplicit": false,
+        "isNineteenPlus": false,
+        "contentRatings": {
+          "labels": []
+        },
+        "audioPreview": {
+          "url": "https://p.scdn.co/mp3-preview/9913eb3725aed632c3c6bef076eac706c8e2a38a"
+        },
+        "isMusicVideo": false,
+        "hasVideo": false,
+        "videoPreview": null,
+        "videoThumbnailImage": null,
+        "relatedEntityUri": "spotify:artist:0HPVHsbV2yIYPp2Pk4kdHe",
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 159
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 0,
+            "red": 97
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 177,
+            "green": 190,
+            "red": 255
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d4f1cf91733e39ffb8d70fec",
+              "maxHeight": 300,
+              "maxWidth": 300
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00004851d4f1cf91733e39ffb8d70fec",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273d4f1cf91733e39ffb8d70fec",
+              "maxHeight": 640,
+              "maxWidth": 640
+            }
+          ]
+        }
+      },
+      "NLAllowedInPublicMetadata": true
+    }
+  ]
+}

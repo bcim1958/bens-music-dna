@@ -1,0 +1,971 @@
+{
+  "checkedAt": "2026-10-29T19:33:35.737961+00:00",
+  "playlists": [
+    {
+      "week": "W42",
+      "source": "https://open.spotify.com/embed/playlist/0MxfTVcVo0Q14ckKRHNEhA",
+      "entity": {
+        "type": "playlist",
+        "name": "Ontdek DNA #2026-42",
+        "uri": "spotify:playlist:0MxfTVcVo0Q14ckKRHNEhA",
+        "id": "0MxfTVcVo0Q14ckKRHNEhA",
+        "title": "Ontdek DNA #2026-42",
+        "subtitle": "Ben van Belzen",
+        "authors": null,
+        "coverArt": {
+          "sources": [
+            {
+              "height": null,
+              "width": null,
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844067befdc02f542280502b6a"
+            }
+          ]
+        },
+        "releaseDate": null,
+        "duration": 0,
+        "isPlayable": true,
+        "playabilityReason": "UNKNOWN",
+        "isExplicit": false,
+        "hasVideo": false,
+        "relatedEntityUri": "spotify:playlist:0MxfTVcVo0Q14ckKRHNEhA",
+        "trackList": [
+          {
+            "uri": "spotify:track:0Md3WqXa9vCXWOVcvU94lA",
+            "uid": "2018ef1533eb58f2",
+            "title": "Let's Make Love Tonight",
+            "subtitle": "Cold Sweat",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 250066,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/89599031ba4f1b6781b36ac215b662492ab61a53"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:47sftmA1pVBWn6C6Sf4suV",
+            "uid": "6d4ba7b8c1858f00",
+            "title": "Young And Innocent",
+            "subtitle": "Eyes",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 325066,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/9336ecbf60225c68ac07e513c534ecf2b006f8c4"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:3VWGHiQO7fArciqoKB2DSx",
+            "uid": "52ec9c7d42ea82fe",
+            "title": "After The Rain - Remastered 2017",
+            "subtitle": "Nelson",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 245862,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/0e7885fae8d44ff5345339f9b85c40c3895d45db"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:60VvnoCXoJ0P6RJki3QO21",
+            "uid": "44039e8bb564a7f3",
+            "title": "Heart of Mine",
+            "subtitle": "Rox Diamond",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 210706,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/1ae2c3d613b06c6d3536e47b9131eee42bcacaf7"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:17ZHoNeu3j9wPdaCA5OmEi",
+            "uid": "445685c5bf66a813",
+            "title": "One Night Stand",
+            "subtitle": "Roko",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 270560,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/fb1ae1bb533a40bfcb733cc68b62bf44820d6b88"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:3fgSnDCK05NDXlDJX0jArO",
+            "uid": "572d7b3583d1015e",
+            "title": "In The Middle Of The Night",
+            "subtitle": "CHINA",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 262640,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/72223a65968c11cd0a9e547eda3464dad3f4c1b6"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:597sFLu5mDcNFyRkaiNSgW",
+            "uid": "8f5e1a501a424a36",
+            "title": "Suffer",
+            "subtitle": "Electric Boys",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 221805,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/a396b7d8e51c7b96b572b68969fc3d74fd7a9813"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:1FiVRpr3BdZmekfdKsjTKt",
+            "uid": "eb06348d5e7b5677",
+            "title": "Dance with the Devil",
+            "subtitle": "Atomic Riot",
+            "isExplicit": true,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": [
+                "EXPLICIT"
+              ]
+            },
+            "duration": 211475,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/8acfb846c04a762cdb1941588840638178401776"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:3Csv0MN00Iv3XH9d418JaQ",
+            "uid": "532ecc4f3f8d9c85",
+            "title": "Good Ol' Rock And Roll",
+            "subtitle": "Child's Play",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 265693,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/1bd3badc173fcd6574dad5fa2b9c8882bda0cf19"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:45L8TWrPiA9FCGUKOgujlb",
+            "uid": "6fa5a83080b7b90d",
+            "title": "Land Of The Damned",
+            "subtitle": "Diamond Rexx",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 193187,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/384532f7a171c2faa9512bcf3c312864c6abb495"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:7DRkxr8eGnAwcNIbdAWcxM",
+            "uid": "2c64f4e07a0e0f72",
+            "title": "Rock Soldiers",
+            "subtitle": "Ace Frehley",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 306333,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/e7b51080b9561cb56d10750f0f71e7e87ec61b2c"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:18n5kMWdrmrEOuh9Qnh2Wf",
+            "uid": "4e7bf0ed532935ca",
+            "title": "Shotgun Sally",
+            "subtitle": "Cats In Boots",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 209280,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/859a8229d70b8f3870486580ad890ca1d1337a00"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:2PpqbO2k43P79UHR0WiMs9",
+            "uid": "43f46f4df835449b",
+            "title": "Shoot Down The Night",
+            "subtitle": "Banshee",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 233692,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/df12533166646bf67cce233b009bdd0e779e544f"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:0fB8w0B7vtpZape6mV9G29",
+            "uid": "c740b85ec7251daf",
+            "title": "The Black Rose",
+            "subtitle": "TOWER",
+            "isExplicit": true,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": [
+                "EXPLICIT"
+              ]
+            },
+            "duration": 199727,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/c6b2d5957fab5b12b9595f6b34037c169d5d6c98"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:1MXJAqB4CNEwnG6cBbrxxO",
+            "uid": "b82f5071e66fdad8",
+            "title": "Adrasteia",
+            "subtitle": "Tanith",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 285438,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/b142e44fac3fdc2d4fe0c0556b918306e8a832a7"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:4LCYlleksg6Qj0nel91vln",
+            "uid": "f8f49828f37ae7e4",
+            "title": "Stratus",
+            "subtitle": "The Night Flight Orchestra",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 305806,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/c7da0f3c64edbf24bb1b073fd1746c315cee0ef9"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:6pFmkLJFz8VcgLuz9rTLKi",
+            "uid": "d69f0c06ec614720",
+            "title": "Angels' Necropolis",
+            "subtitle": "Year Of The Goat",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 631120,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/9fe0596cff24545dd1296c8e94e9a3eae8ae214e"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:1G6osOLGrmzdh55hAVl7Ti",
+            "uid": "ee7e96c9072c1739",
+            "title": "In Levitating Secret Dreams",
+            "subtitle": "Jess and the Ancient Ones",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 197013,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/2c5e5322b612ccb4f51ac7a4243821139b3a99ec"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:2oCEQXUMSsgNr6LLAEGcMD",
+            "uid": "c2ea6482fe29c616",
+            "title": "Sorcery & Sabotage",
+            "subtitle": "Church of the Cosmic Skull",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 183145,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/b587912bacb5fd10331eb527ce26b48021e25cce"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:0290eeW1DvuplJkqwhErTL",
+            "uid": "b19a5ed7355fb19f",
+            "title": "COCKTAILS AND DREAMS",
+            "subtitle": "ALIAS",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 213767,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/33c2bb6116713e5710f292d1780ba19605f89750"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:7ef1yxmLkmfnLBSzlgAiUj",
+            "uid": "04452d6134855e98",
+            "title": "Love You (爱你)",
+            "subtitle": "Chinese American Bear",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 237877,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/31ddec9866b73487abdabbe1453dd07abc427606"
+            },
+            "entityType": "track"
+          }
+        ],
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 40,
+            "red": 80
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 39,
+            "green": 74,
+            "red": 117
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 157,
+            "green": 195,
+            "red": 246
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c00006c114067befdc02f542280502b6a",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb4067befdc02f542280502b6a",
+              "maxHeight": 640,
+              "maxWidth": 640
+            },
+            {
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844067befdc02f542280502b6a",
+              "maxHeight": 300,
+              "maxWidth": 300
+            }
+          ]
+        },
+        "attributes": [],
+        "format": ""
+      }
+    },
+    {
+      "week": "W43",
+      "source": "https://open.spotify.com/embed/playlist/3fUqfUE9FZYHEH8tRGrKT4",
+      "entity": {
+        "type": "playlist",
+        "name": "Ontdek DNA #2026-43 ",
+        "uri": "spotify:playlist:3fUqfUE9FZYHEH8tRGrKT4",
+        "id": "3fUqfUE9FZYHEH8tRGrKT4",
+        "title": "Ontdek DNA #2026-43 ",
+        "subtitle": "Ben van Belzen",
+        "authors": null,
+        "coverArt": {
+          "sources": [
+            {
+              "height": null,
+              "width": null,
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84e66e4eee82d0820665a4e34c"
+            }
+          ]
+        },
+        "releaseDate": null,
+        "duration": 0,
+        "isPlayable": true,
+        "playabilityReason": "UNKNOWN",
+        "isExplicit": false,
+        "hasVideo": false,
+        "relatedEntityUri": "spotify:playlist:3fUqfUE9FZYHEH8tRGrKT4",
+        "trackList": [
+          {
+            "uri": "spotify:track:0VTBzNFO6ScLSheH8iKx0J",
+            "uid": "2ce9d99589af4ada",
+            "title": "Tell Me",
+            "subtitle": "Grande Royale",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 175866,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/53a2d4f10872b0bb1dc3c06358cb09b749082392"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:2hJVLv6QlfV5e1LQCDchk7",
+            "uid": "ab641954ccb855e7",
+            "title": "On Time",
+            "subtitle": "The Riven",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 213481,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/79e54144d1589b103df502cfc538cad4ec759274"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:1fxpDNE0cpuU94fT7Y2OWL",
+            "uid": "c8d9ac6cca209bc8",
+            "title": "Every Wild Heart",
+            "subtitle": "The New Roses",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 248573,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/7a3dc1612d5b762866908d03b7870e7a368ec5c5"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:3CTIQzmsSsPqI22uwQGq7f",
+            "uid": "453ff8ddc5d017f2",
+            "title": "Electrical",
+            "subtitle": "Horisont",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 209520,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/84393a9ca25d077a7e55ae9080c25704318a7107"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:7vBFZey215dI89dJHcAYpd",
+            "uid": "7a4abccd61c79528",
+            "title": "Danish Rush",
+            "subtitle": "Märvel",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 175169,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/24949605e29182007be61f5639d5bb3764915bf9"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:0e3Qf952QLB4KHNECCCvxb",
+            "uid": "aace5ea49d0dd8a7",
+            "title": "Down on My Knees (feat. Pontus Snibb)",
+            "subtitle": "Violet Janine, Pontus Snibb",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 240794,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/27322ca95d1d89eefa3056065cac885f0dc6407e"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:1BWNpziDWyAMfGdKC2ydS6",
+            "uid": "695cb58b9b7d1739",
+            "title": "Feeling Good",
+            "subtitle": "The Sheepdogs",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 190133,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/dccda191352d0b087578462155062eb229d72630"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:0SL71g20JT0rn5yc1w2XVW",
+            "uid": "9d0f74895d72a2ad",
+            "title": "Heart Stopping Kinda Show",
+            "subtitle": "DeWolff",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 247013,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/4f17a7c92bd79e08b919743ad619277ae84237c3"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:4bqSsnuHMS059hZAGd8gjZ",
+            "uid": "d1e231ac93f35050",
+            "title": "Let It out!",
+            "subtitle": "Greenleaf",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 286480,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/8d9e35c5447ed9ac1715196ec72d9e6a41512b12"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:3kLKL5prZ0sDtkg9KhehNN",
+            "uid": "784f14979b177e2f",
+            "title": "Falling Wizard",
+            "subtitle": "Tanith",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 276310,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/b3dc3e3e6ea0ba9e5ed44c45a27a53e354b6d149"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:0RKdTtXzfPF8PRsx7tN7PE",
+            "uid": "2b85e53990880dc1",
+            "title": "Powder Keg",
+            "subtitle": "TOWER",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 177975,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/9a5ae4ea6d893ef10b0e74e9f42b055c301792c8"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:1ELKzM7Dd3sIJtQkI5jY21",
+            "uid": "3c9bdcfe1395fb33",
+            "title": "Possessed by Evil",
+            "subtitle": "Ambush",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 211251,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/536792f41bb249f282e1b613410b7490840899da"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:4WfOALlN54z9keukpld1MI",
+            "uid": "1e1456a6df84f07d",
+            "title": "Burn the Night",
+            "subtitle": "Riot City",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 216663,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/a7c9ffe433a0e28f6d17115f523e9a671127b4db"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:3gOqPDsRlVQL6WJmPD8Jxp",
+            "uid": "3bb19fed9dd7434a",
+            "title": "Limelight",
+            "subtitle": "Kip Winger, Andreas Kisser, Vinnie Moore, Stu Hamm, Mike Mangini, Robert Berry, Jeff Feldman, Trent Gardner",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 368613,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/099eac8a7904a5e11c42fcf5a916ff7a0b10be16"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:4BNq37egHwLkzyNd2ZQkDI",
+            "uid": "73db26b615644287",
+            "title": "Promise",
+            "subtitle": "Voyager",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 183889,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/90e81799da0981af281aba910efa922355a1601a"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:6xuniQYe3FqADkba2N8X8d",
+            "uid": "391c572e35fe8774",
+            "title": "The Phantom Below",
+            "subtitle": "Moron Police",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 252303,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/e1d01a57be0b92a28cc9e86d6a7f6bfe9e0c8525"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:6lJKwx9q3qiB7vgvIYL3FA",
+            "uid": "04a6e6c9640bc75b",
+            "title": "New Day Rising",
+            "subtitle": "Von Hertzen Brothers",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 330533,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/153e6b53dbf66a1ab0e2b48607612ab250c9e6a6"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:2jTgLMNU9sezW81VEHbVwQ",
+            "uid": "143c27420557f7bd",
+            "title": "Star Rider - Single Version",
+            "subtitle": "Hällas",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 295260,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/c948f7d2eec35e1c8ffb9083e744df7d7cab20a0"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:6bcRkWchLR9gjIQYjFTxyd",
+            "uid": "9b5f5cfc68d5bd52",
+            "title": "A Black Star",
+            "subtitle": "Maha Sohona",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 504250,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/96432e3cb0a68111650dfc8cfdbb268091a6dd5c"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:0OV72xtIQ3Yk1u5lUoiKvS",
+            "uid": "2ba00ba8be1d49af",
+            "title": "Worlds Divide",
+            "subtitle": "Ritual King",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 448266,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/375ddb79c05ad372e85e3803c46a137a5db32728"
+            },
+            "entityType": "track"
+          },
+          {
+            "uri": "spotify:track:4YuVXZhx59iBuJPYXUgbNB",
+            "uid": "4d1f2e6bc246b162",
+            "title": "This Visual Hex",
+            "subtitle": "Vulkan",
+            "isExplicit": false,
+            "isNineteenPlus": false,
+            "contentRatings": {
+              "labels": []
+            },
+            "duration": 548545,
+            "isPlayable": true,
+            "playabilityReason": "PLAYABLE",
+            "audioPreview": {
+              "format": "MP3_96",
+              "url": "https://p.scdn.co/mp3-preview/02f2b757d419202c89b6b4fa65ce86ba38641c24"
+            },
+            "entityType": "track"
+          }
+        ],
+        "visualIdentity": {
+          "backgroundBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 73,
+            "red": 117
+          },
+          "backgroundTintedBase": {
+            "alpha": 255,
+            "blue": 0,
+            "green": 40,
+            "red": 78
+          },
+          "textBase": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textBrightAccent": {
+            "alpha": 255,
+            "blue": 255,
+            "green": 255,
+            "red": 255
+          },
+          "textSubdued": {
+            "alpha": 255,
+            "blue": 130,
+            "green": 198,
+            "red": 243
+          },
+          "image": [
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c00006c11e66e4eee82d0820665a4e34c",
+              "maxHeight": 64,
+              "maxWidth": 64
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000bebbe66e4eee82d0820665a4e34c",
+              "maxHeight": 640,
+              "maxWidth": 640
+            },
+            {
+              "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84e66e4eee82d0820665a4e34c",
+              "maxHeight": 300,
+              "maxWidth": 300
+            }
+          ]
+        },
+        "attributes": [],
+        "format": ""
+      }
+    }
+  ]
+}
