@@ -7,7 +7,8 @@
   "storageWrites": 0,
   "automaticSaturdayProven": false,
   "week": "2026-W44",
-  "inputSha256": "b7b745272157f5439c7642353f77019b9f4ca50670ff880250b3dfebd15b7415",
+  "inputSha256": "28a0d5707a79ab12914362c108c7d2ce752a1f29e18c43805836b6e8bdcc5814",
+  "engineSha256": "4b6dfd18214ef970b69942c1163e6fcfb961826083e9c1eca80b0912e9927bb2",
   "reason": "DEPENDENCY_MISSING",
   "detail": "editorialReview, deviceReview"
 }

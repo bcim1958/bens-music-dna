@@ -16,8 +16,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "024dfb25fb15d0105f18f3d4d7cd9b0dd0116d476cd3fb054454c32655e14342",
-    "bytes": 9739
+    "sha256": "c87aa2c3d79a4addc28ebae80bbb53f8f1134541a54089820d40ee84d4d930b4",
+    "bytes": 9774
   },
   {
     "path": "Redactieproef.html",
@@ -26,13 +26,13 @@
   },
   {
     "path": "Uitvoeringsrapport.md",
-    "sha256": "8170fbccd652e7afbec7f051ef840e856ef83733667f15c2da760ee7a15ef35b",
-    "bytes": 3687
+    "sha256": "748503f6828de092a091cb056a4f48c24be5f249a8c04ca9fa07138af9407027",
+    "bytes": 4159
   },
   {
     "path": "actual-preflight.json",
-    "sha256": "cdae3d3110fa21216cd02d7671051fbe131819f012db9017e442b37a732f3160",
-    "bytes": 361
+    "sha256": "d13b54d4a45ed037d7f19c9948502551c00916af17e9536854817d714b5fa4a1",
+    "bytes": 447
   },
   {
     "path": "browser-checks.json",
@@ -56,8 +56,8 @@
   },
   {
     "path": "safety-tests.txt",
-    "sha256": "997e974bad8667e45e1cd4310b4016cf3d093390c210776a7ab413098fe3c64a",
-    "bytes": 1258
+    "sha256": "bf1bbe7893319074c333a0747c088beb308d87947647172a8d9591dddd1a08dc",
+    "bytes": 1314
   },
   {
     "path": "sources/PUBLICATIE.md",

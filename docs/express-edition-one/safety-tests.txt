@@ -2,6 +2,7 @@ PASS same input retry returns one immutable bundle and two attempts
 PASS changed input at same revision holds without overwriting
 PASS tampered input digest holds
 PASS tampered output blocks readback
+PASS receipt cannot hide a missing output from readback
 PASS overlapping runner or retained crash lock holds
 PASS precommit interruption cannot expose partial edition; retry works
 PASS missing review never gets a generated pass
@@ -22,4 +23,4 @@ PASS layout change invalidates device review
 PASS editorial review cannot survive changed evidence
 PASS logging failure holds even after local bundle commit
 PASS abrupt process death retains lock and never exposes staged edition
-{"pass":true,"tests":24,"fixtures":"synthetic","externalWrites":0,"endToEndProven":false}
+{"pass":true,"tests":25,"fixtures":"synthetic","externalWrites":0,"endToEndProven":false}

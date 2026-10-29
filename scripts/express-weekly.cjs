@@ -56,14 +56,20 @@ function prepare(inputFile, outputRoot, options = {}) {
       if (digest !== a.sha256) fail('INPUT_CHANGED', a.role);
       artifacts[a.role] = {path: a.path, sha256: digest, data};
     }
-    const fingerprint = sha(Buffer.concat([Buffer.from(VERSION), raw,
+    const engineSha256 = sha(fs.readFileSync(__filename));
+    const fingerprint = sha(Buffer.concat([Buffer.from(VERSION + engineSha256), raw,
       ...Object.keys(artifacts).sort().map(k => Buffer.from(k + artifacts[k].sha256))]));
     result.inputSha256 = fingerprint;
+    result.engineSha256 = engineSha256;
     const key = input.week + '-r' + input.revision;
     const destination = path.join(out, key);
     if (fs.existsSync(destination)) {
+      if (fs.lstatSync(destination).isSymbolicLink()) fail('OUTPUT_CORRUPT','Output directory is a symlink');
       const receipt = JSON.parse(bytes(destination, 'receipt.json'));
       if (receipt.inputSha256 !== fingerprint) fail('REVISION_CONFLICT', 'Existing revision is immutable; explicitly reconcile and use a new revision');
+      const expected = Object.fromEntries(Object.entries(artifacts).map(([role,a])=>[role+path.extname(a.path),a.sha256]));
+      const sorted = obj => JSON.stringify(Object.entries(obj || {}).sort(([a],[b])=>a.localeCompare(b)));
+      if (sorted(receipt.outputs) !== sorted(expected) || receipt.engineSha256 !== engineSha256 || receipt.week !== input.week || receipt.revision !== input.revision || receipt.externalWrites !== 0 || receipt.storageWrites !== 0 || receipt.endToEndProven !== false || receipt.automaticSaturdayProven !== false) fail('OUTPUT_CORRUPT','Receipt metadata or output inventory changed');
       for (const [name, digest] of Object.entries(receipt.outputs)) {
         if (sha(bytes(destination, name)) !== digest) fail('OUTPUT_CORRUPT', name);
       }

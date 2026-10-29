@@ -8,7 +8,7 @@ Status: **REDACTIEPROEF / HOLD**. Dit is geen volledige aflevering, geen W44-pub
 - `Het-verhaal-achter-de-playlist.md`: oorspronkelijk Nederlandstalig manuscript; loopbanen, productie en het verschil tussen opname en voorgeschiedenis vormen de rode draad. Opnamecredits worden niet uit een vroege bandbezetting afgeleid. Negen primaire bronsporen, verdere complete dossiers in `Onderzoeksqueue.md` open.
 - Special 102: alle 15 URI’s op 29 oktober exact in volgorde teruggelezen uit de publieke Spotify-embed. Ook alle 15 aangetroffen in historische Master 1.12 JSON. Dit bewijst geen accounttoelating, afgespeelde audio, actuele Master-versie of nieuwe ratings.
 - Mijn Week: 36 echte bewaarde oordelen (10 RAAK, 13 GOED, 7 TERUGKOMEN, 6 NIET); huidige selectie uit PR #22 bevat 10 RAAK en 11 GOED. Geen achteraf verzegelde voorspelling, succespercentage of smaakwet.
-- `scripts/express-weekly.cjs`: offline pakketvoorbereiding met controles, geen generator voor volledige journalistiek en geen publicatieadapter. `test/express-weekly-regression.cjs`: 24 synthetische veiligheidstests.
+- `scripts/express-weekly.cjs`: offline pakketvoorbereiding met controles, geen generator voor volledige journalistiek en geen publicatieadapter. `test/express-weekly-regression.cjs`: 25 synthetische veiligheidstests.
 
 ## Live uitgangsstand en gelezen bronnen
 
@@ -26,7 +26,7 @@ Input en output zijn gescheiden. Een expliciete UTC-cutoff bevriest de bronperio
 
 Een weekpakket vereist bovendien een expliciet bevroren manifest van de officiële 21, onafhankelijke gedateerde readback van dezelfde URI-volgorde en precies één brononderbouwde bio per afgeleide unieke artiest. Ratings zijn geen voorwaarde voor nieuwe ontdekkingen. Dit nieuwe inputcontract heeft nog geen bewezen adapter vanaf de bestaande weekmanifests/Spotify-account; historische input wordt niet stilzwijgend geconverteerd.
 
-Idempotentie: week + expliciete revisie identificeert het resultaat; engineversie, volledige inputbytes en bronhashes vormen de fingerprint. Identieke retry leest alle opgeslagen outputs terug en levert hetzelfde pakket. Gewijzigde input op dezelfde revisie geeft REVISION_CONFLICT. Een nieuwe revisie vergt expliciete reconciliatie; oudere revisies blijven bestaan. Geen automatische 'latest'-pointer of vervanging van reeds gepubliceerd werk.
+Idempotentie: week + expliciete revisie identificeert het resultaat; engineversie en SHA-256 van de uitvoerbare code, volledige inputbytes en bronhashes vormen de fingerprint. Identieke retry leest alle opgeslagen outputs terug en levert hetzelfde pakket. Gewijzigde input op dezelfde revisie geeft REVISION_CONFLICT. Een nieuwe revisie vergt expliciete reconciliatie; oudere revisies blijven bestaan. Geen automatische 'latest'-pointer of vervanging van reeds gepubliceerd werk.
 
 Concurrentie: exclusieve weeklock. Onderbreking vóór commit laat geen zichtbaar eindpakket achter. Werkelijke procesdood laat lock/staging staan; volgende poging geeft HOLD. Er is bewust geen automatische stale-lock-verwijdering. Onderzoek owner, proces, bronhashes, logs en laatste complete receipt, archiveer de mislukte poging en geef alleen expliciet de lock vrij. Daarna dezelfde invoer opnieuw uitvoeren. Geen oude export terugplaatsen.
 
