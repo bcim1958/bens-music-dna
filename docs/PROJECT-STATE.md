@@ -1,5 +1,17 @@
 # Ben's Music DNA — Project State
 
+## Actuele documentatiestand — 29 oktober 2026
+
+**Besluit vastgelegd, geen productievrijgave.** [Het verhaal achter de playlist](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md) legt de tien regels, Playlist–Express–Explorer, hergebruik van bewezen Registry-relaties, wekelijkse ambitie en Special 102 als eerste volledige proef vast. Titelvoorstel: *De laatste lichting — Toen de glamdroom eindigde*. Bestaande magazinearchitectuur en rubrieken blijven gelden.
+
+**Live gecontroleerd vóór wijziging:** main `dd87bc2b2731878c32d244c4a4ad1dbeaad5180b`; PR #21 OPEN/samenvoegbaar op `00e23d7eadbbf1948fab40687e3e9ddce4a0895a`; PR #18 OPEN/draft/met conflicten op `7bae6b74ac9c72a0980b023b8da29b4ed87fc24a`. Deze documentatie wordt aan #21 toegevoegd; geen merge of release.
+
+**OPEN:** volledige Special 102-inhoud en feitencontrole, proefartikel en publicatiebewijs; artikel–Spotify–Explorer-koppelingen; definitieve DNA Achter de Muziek-tekstintegratie; automatische zaterdagproductie; reconciliatie van #18 met deze nieuwere afspraken. De 31-oktoberdoelen uit #18 en een wekelijkse ambitie zijn geen leveringsbewijs. Gedeelde verhalenbibliotheek/canonieke portretten blijven voorstellen; hergebruik van brongecontroleerde relaties is wel besloten.
+
+**Bronnen:** [controleverslag](SOURCE-REVIEW-2026-10-29-EDITORIAL-DECISION.md), volledige gebruikersbron van 29 oktober en drie lokaal teruggevonden/gelezen v1.0-registers. De healthcheck van 28 oktober levert voor afspraken van 26–27 oktober secundaire meldingen; oorspronkelijke goedkeuringen blijven open. Artwork is een voorstel. Geen ongetoetste nieuwe projectregel ingevoerd.
+
+**Behoud:** alle 36 W44-beoordelingen en oudere besluiten bewaard. Definitieve selectie/volgorde/IDs, historische gegevensveiligheid en FIFO-vragen blijven open zoals hieronder; iPhone-sync/FIFO is geen weekleveringspoort. Geen operationele data, playlists, opslag of andere projecten gewijzigd. Onderstaande koppen zijn gedateerde historische standen en blijven behouden.
+
 ## W44-bronherstel — 25 oktober 2026
 
 [Volledig zelfstandig bronregister](W44-SOURCE-REGISTER-2026-10-25.md): alle **36 oorspronkelijke beoordelingen**, in exacte rondevolgorde, met gebruikersopgave, visueel gelezen hoofdchat-screenshots en SHA-256-bronvingerafdrukken. **23 positief: 10 RAAK + 13 GOED; 7 TERUGKOMEN; 6 NIET**. De eerdere melding dat de volledige namenlijst ontbreekt is hiermee achterhaald; zij blijft hieronder uitsluitend als historische zoekbevinding staan. Voor tien niet-positieve ronde-1-tracks komen exacte titels/posities uit de expliciete vervolgopdracht, terwijl het screenshot artiest/oordeel bevestigt.

@@ -1,5 +1,13 @@
 # Ben's Music DNA — Decision Log
 
+## 2026-10-29 — Het verhaal achter de playlist
+
+**Vastgesteld redactioneel besluit; uitvoering OPEN.** [Volledig besluit met de tien regels](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md): bestaande thematische playlists zijn vertrekpunt voor één samenhangend verhaal. Playlist = muziek, DNA Express = gepubliceerde verhaallaag, DNA Explorer = levende kennislaag via de bestaande brongecontroleerde Relation Registry. Wekelijkse publicatie is ambitie, geen productiegarantie. Special 102 is de eerste proef; Spotify-luisterkoppeling en lezen naast muziek zijn gewenste ervaring, geen gerealiseerde integratieclaim. Magazinearchitectuur, vaste rubrieken en bestaande besluiten blijven behouden.
+
+[Broncontrole 29 oktober](SOURCE-REVIEW-2026-10-29-EDITORIAL-DECISION.md) onderscheidt primaire besluitbron, drie gelezen lokale v1.0-registers en secundair gemelde afspraken van 26–28 oktober. Die laatste worden niet zonder oorspronkelijke goedkeuring tot nieuwe projectregels verheven. Music DNA 2.0 en Achter de Muziek behouden hun afzonderlijke uitvoeringsvragen.
+
+**Gedateerde leeswijzer bij 25 oktober hieronder:** de daarin genoemde ontbrekende W44-namenlijst is inmiddels ingehaald door het [volledige bronregister met 36 beoordelingen](W44-SOURCE-REGISTER-2026-10-25.md). De definitieve 21/twee reserves, volgorde en exacte IDs blijven open. De historische besluittekst is bewaard.
+
 This is the durable record of accepted product decisions. New chats must not silently reopen these decisions; changes require a new dated decision explaining why.
 
 ## 2026-10-25 — W44-telling en loslaten oorspronkelijke iPhone-weekwerkwijze
