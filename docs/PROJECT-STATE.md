@@ -1,5 +1,13 @@
 # Ben's Music DNA — Project State
 
+## Leidende healthcheck — 29 oktober 2026
+
+[Controle en bewijsgrenzen](HEALTHCHECK-2026-10-29.md): besluit Het verhaal achter de playlist stond al in PR #21 op `c84b5addbdc205cd34e8a4d5954d32884f16e79e`; de healthcheckmelding dat het ontbreekt is achterhaald. De gedateerde aanscherping legt nu vast: primair oude muziek uit bestaande, bijna geheel vanuit de Master Database opgebouwde playlists herontdekken. Magazinearchitectuur behouden; 48p/kleurenslinger/Music Challenge/Smaakmeter/Odometer/Kunst van de Hoes hebben afzonderlijke bewijsstatussen.
+
+**Eerstvolgende werkprioriteit:** [W44-voorbereiding voor 31 oktober](W44-PREPARATION-2026-10-29.md), met alle 36 bronbeoordelingen ongewijzigd. 23 positief voor 21 plaatsen; definitieve selectie, twee overblijvers, luistervolgorde, exacte opname-identiteit en volledige no-repeatcontrole blijven open. Geen publicatie, nieuwe voorspellingen achteraf of operationele mutaties. iPhone-sync/FIFO blijft geen weekleveringspoort; current/original/legacy, FIFO, reserves, journalen en aparte Walk & Listen-opslag blijven beschermd.
+
+Onderstaande oudere peilingen zijn historisch; merge-uitkomst en exacte commits moeten rechtstreeks op GitHub worden gecontroleerd.
+
 ## Actuele documentatiestand — 29 oktober 2026
 
 **Besluit vastgelegd, geen productievrijgave.** [Het verhaal achter de playlist](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md) legt de tien regels, Playlist–Express–Explorer, hergebruik van bewezen Registry-relaties, wekelijkse ambitie en Special 102 als eerste volledige proef vast. Titelvoorstel: *De laatste lichting — Toen de glamdroom eindigde*. Bestaande magazinearchitectuur en rubrieken blijven gelden.

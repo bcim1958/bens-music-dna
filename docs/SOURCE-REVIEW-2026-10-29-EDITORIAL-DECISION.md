@@ -52,3 +52,9 @@ Deze tabel bewaart de gemelde lacunes zonder de samenvatting op te waarderen tot
 Alle bestaande regels blijven ongewijzigd aanwezig; nieuwe passages zijn gedateerde aanvullingen met verwijzingen naar één inhoudelijk besluit. W44-bronregister en alle 36 beoordelingen blijven identiek. Geen operationele data, FIFO, playlists, publicatiehistorie, runtime, apparaatopslag of andere projecten wijzigen. De oude DECISIONS-melding dat de W44-namenlijst ontbreekt blijft als historische tekst staan; de nieuwe gedateerde leeswijzer verwijst naar het inmiddels complete bronregister.
 
 Technisch OPEN blijven de automatische zaterdagketen, productie-integratie Registry/Explorer/Express, definitieve Achter-de-Muziek-tekstintegratie, de concrete Spotify-lees-/luisterroute en de Special 102-proef. PR #18 moet later met de nieuwere documentatie worden gereconcilieerd; geen conflictoplossing of merge uitgevoerd.
+
+## Vervolgcontrole — 29 oktober 2026
+
+De volledige hoofdchatberichten zijn opnieuw gelezen met een ruimere tekstlimiet. De healthcheck van 29 oktober noemt het besluit nog ontbrekend, maar GitHub bewijst dat commit `c84b5addbdc205cd34e8a4d5954d32884f16e79e` het reeds bevat. Gebruikersbericht `f36b10ea-8822-486c-8281-8e0bad4e54f6` bevat wel een ontbrekende expliciete aanscherping: oude muziek, bijna geheel opgebouwd vanuit de Master Database. Deze is als gedateerde aanvulling in het besluit verwerkt.
+
+Aanvullend gelezen: lokale regelset én hervatpunt van 27 oktober, cockpitbesluit van 19 september, magazineblauwdruk/artdirection en definitief statuut. Het hervatpunt levert concrete lokale verslaglegging van leesproef, iMac, beeldmerken en een kantlijnquiz; geen zelfstandig opnieuw gelezen oorspronkelijke goedkeuring. Zie [uitgewerkte status per onderwerp en bronvingerafdrukken](HEALTHCHECK-2026-10-29.md). De ontbrekende oorspronkelijke specificaties worden niet alsnog als bewezen aangemerkt.

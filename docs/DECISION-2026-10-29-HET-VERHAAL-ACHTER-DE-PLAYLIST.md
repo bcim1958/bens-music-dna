@@ -14,6 +14,12 @@ Artiesten, muzikanten, producers, stromingen, locaties, tijdperken en gebeurteni
 
 Wekelijkse publicatie is een **redactionele ambitie**, afgestemd op bronnen, kwaliteit en overige DNA Express-uitgaven. Dit is geen gegarandeerd productievolume, publicatieschema, ingestelde automatisering of bewezen zaterdaglevering. De formule vult de bestaande magazinearchitectuur en vaste rubrieken aan; zij vervangt die niet.
 
+## Gedateerde aanscherping — 29 oktober 2026
+
+**VASTGESTELD:** de formule herontdekt primair **oude muziek in bestaande playlists, bijna geheel opgebouwd vanuit de Master Database**. Het nieuwe zit in de verhalende ontdekking van al verzamelde muziek en haar verborgen relaties. Dit is een nieuw Music DNA-idee, geen opdracht om voor ieder artikel nieuwe muziek of een nieuwe playlist te verzamelen.
+
+Bron: expliciete gebruikersaanscherping in de hoofdchat, bericht `f36b10ea-8822-486c-8281-8e0bad4e54f6`, opnieuw volledig gelezen op 29 oktober; herbevestigd in de huidige healthcheckopdracht. Dit preciseert het bovenstaande vertrekpunt zonder de tien regels te vervangen. De afzonderlijke W43-observatie over verrassingen buiten de Master blijft een luisterobservatie; zij schaft de Master niet af en spreekt deze formule niet tegen.
+
 ## De tien redactionele spelregels
 
 1. **De volledige playlist onderzoeken.** Bekijk alle artiesten en nummers, niet uitsluitend de bekendste namen.

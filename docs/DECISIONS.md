@@ -1,5 +1,9 @@
 # Ben's Music DNA — Decision Log
 
+## 2026-10-29 — Aanscherping: oude muziek opnieuw ontdekken
+
+**Vastgesteld:** Het verhaal achter de playlist vertrekt primair vanuit oude muziek in bestaande, bijna geheel uit de Master Database opgebouwde playlists. [Gedateerde aanscherping en primaire bron](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md). [Healthcheck](HEALTHCHECK-2026-10-29.md) onderscheidt de bestaande besluiten, gemelde besluiten, observaties en voorstellen voor 26–29 oktober. Geen vaste 48-paginanorm, nieuwe quizscore of kleurreeks ingevoerd zonder bewijs.
+
 ## 2026-10-29 — Het verhaal achter de playlist
 
 **Vastgesteld redactioneel besluit; uitvoering OPEN.** [Volledig besluit met de tien regels](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md): bestaande thematische playlists zijn vertrekpunt voor één samenhangend verhaal. Playlist = muziek, DNA Express = gepubliceerde verhaallaag, DNA Explorer = levende kennislaag via de bestaande brongecontroleerde Relation Registry. Wekelijkse publicatie is ambitie, geen productiegarantie. Special 102 is de eerste proef; Spotify-luisterkoppeling en lezen naast muziek zijn gewenste ervaring, geen gerealiseerde integratieclaim. Magazinearchitectuur, vaste rubrieken en bestaande besluiten blijven behouden.
