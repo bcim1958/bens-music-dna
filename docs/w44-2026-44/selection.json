@@ -865,24 +865,24 @@
     "spotifyWrites": 0,
     "created": false,
     "published": false,
-    "coverApproved": false,
+    "coverApproved": true,
     "gemstone": {
-      "name": "Smaragd",
+      "name": "Chrysoberil",
       "sequenceNumber": 9,
-      "colour": "samenhangende smaragdgroene wereld; mosgroene/neutralere omgeving, zachte warme horizon, gedeelde reflecties",
-      "selectionMethod": "editorial-choice-under-user-delegation-2026-10-29",
-      "editorialText": "SMARAGD · W44 — Een groene tot blauwgroene variëteit van beryl. Chroom en vanadium geven de steen zijn groene kleur. Bekende vindplaatsen liggen in Colombia, Zambia en Brazilië. Steen 9 van de Music-DNA-slinger.",
+      "colour": "goudgroen als geleidelijke volgende stap na W43",
+      "selectionMethod": "palette-first-editorial-choice-under-user-delegation-2026-10-29",
+      "editorialText": "CHRYSOBERIL · W44 — Een goudgele tot geelgroene edelsteen van berylliumaluminiumoxide. Het mineraal heeft een hardheid van 8½ op de schaal van Mohs. Bekende vindplaatsen liggen in Brazilië en Sri Lanka. Steen 9 van de Music-DNA-slinger.",
       "sources": [
-        "https://www.gia.edu/emerald-description",
-        "https://www.gia.edu/seeing-green"
+        "https://cms.gia.edu/dam/jcr%3A2774854e-0902-4498-9c58-3b9c8fbd1d0f/0113763c-1612-4c4c-aa74-226c519afa5d.pdf",
+        "https://www.gemstone.org/chrysoberyl"
       ],
-      "reason": "Werkelijke W43-hoes is overwegend goudgeel/olijf; W44 zet een kleine stap naar warm bladgroen, geen abrupte sprong naar koel groen.",
+      "reason": "Behoud warme lichtende sfeer eerste acht hoezen; kleine goudgroene overgang vanuit de echte W43-hoes, geen volledige smaragdgroene wereld.",
       "historicalPriorApprovalClaimed": false,
-      "visualSource": "user screenshot 2026-10-29 20.45.46: actual W36-W43 covers"
+      "visualSource": "actual W43 cover and user screenshot of W36-W43",
+      "currentUserFeedback": "Mooi! — in response to v4 shown in this conversation, 2026-10-29"
     },
     "gemstoneSequenceNumber": 9,
     "blockers": [
-      "Derde hoesproef voorgelegd na afwijzing kleurharmonie v2; nog geen gebruikersacceptatie geclaimd.",
       "W44-doelplaylist is nog niet aangemaakt; volledige accountreadback en veilige publicatie blijven uit te voeren."
     ],
     "accountObserved": {
@@ -892,17 +892,18 @@
     },
     "automaticSaturdayRouteProven": false,
     "artwork": {
-      "path": "W44-Smaragd-hoes-v3-800.jpg",
-      "sha256": "123d64bb72affc43abea0ec144d44cc8ea686638bf8f5d2d1ef1b78b42dd2f3c",
+      "path": "W44-Chrysoberil-hoes-v4-800.jpg",
+      "sha256": "50569d14c58c52f5eff87c7fd74ddf208bb10f149284f87a213688df5ae6445f",
       "width": 800,
       "height": 800,
-      "version": 3,
-      "method": "built-in-imagegen-whole-scene-lighting-edit",
-      "status": "proposal-after-user-colour-harmony-feedback",
-      "visualVerification": "text/week/counter/composition checked; whole-scene lighting revised; user acceptance not claimed",
-      "userApprovalClaimed": false,
-      "jpegBytes": 152165,
-      "base64Bytes": 202888
+      "version": 4,
+      "method": "built-in-imagegen-direct-W43-reference",
+      "status": "accepted-current-user-feedback",
+      "visualVerification": "week 44 / stone 9 / CHRYSOBERIL / established composition checked",
+      "userApprovalClaimed": true,
+      "userApprovalEvidence": "Current user: Mooi! after v4 image; no subsequent image generated.",
+      "jpegBytes": 148933,
+      "base64Bytes": 198580
     }
   },
   "storage": {

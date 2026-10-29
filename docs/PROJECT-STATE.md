@@ -1,3 +1,7 @@
+## W44-hoes gekozen — 29 oktober 2026
+
+Ben reageert “Mooi!” op de direct vanuit W43 gemaakte goudgroene chrysoberilhoes (v4). [Gekozen hoes en kleuronderbouwing](w44-2026-44/GEMSTONE-2026-44.md): CHRYSOBERIL, W44, steen 9. De smaragdproeven blijven verworpen ontwerphistorie. Muziekselectie en alle beoordelingen ongewijzigd; Spotify-aanmaak/readback/publicatie blijven open. Onderstaande koppen zijn eerdere ontwerpstanden.
+
 ## W44-hoes — nadere kleurfeedback 29 oktober 2026
 
 Ben wijst v2 af als onsamenhangend groen met geel. V3 corrigeert de verlichting van de hele scène en staat als voorstel in het [W44-pakket](w44-2026-44/README.md). Geen gebruikersacceptatie of Spotify-publicatie geclaimd. De muziekselectie en alle beoordelingen blijven identiek.

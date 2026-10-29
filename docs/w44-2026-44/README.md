@@ -2,7 +2,7 @@
 
 **Doeldatum: zaterdag 31 oktober 2026 · gecontroleerd op 29 oktober 2026.**
 
-**Muziekselectie vastgelegd: 21 nummers, 10 RAAK + 11 GOED, 1 uur 27 minuten 57 seconden. Spotify-publicatie: NIET UITGEVOERD. Steen: SMARAGD, gekozen onder gebruikersdelegatie; tweede hoesversie door gebruiker afgewezen wegens onsamenhangend groen/geel; derde proef met samenhangende verlichting beschikbaar als voorstel.**
+**Muziekselectie vastgelegd: 21 nummers, 10 RAAK + 11 GOED, 1 uur 27 minuten 57 seconden. Hoes: CHRYSOBERIL · W44 · STEEN 9, v4 aangehouden na Bens “Mooi!”. Spotify-publicatie: NIET UITGEVOERD.**
 
 ## Uitgangspunt en behoud
 
@@ -72,11 +72,11 @@ Bewijsgrens blijft: volledige privécollectie, niet geëxporteerde telefoonhisto
 
 ## Edelsteen, hoes en beschrijving
 
-**W44-steentoewijzing: SMARAGD, steen 9.** Ben verduidelijkte op 29 oktober dat hij de steen niet zelf kiest: deze moet passen bij de kleurketen. Daarmee is de redactionele keuze gedelegeerd. De gecontroleerde reeks loopt van imperiale topaas (W40) via citrien (W41), heliodoor (W42) en peridoot (W43) naar een warmer bladgroen voor W44. Bens screenshot van de werkelijke hoezen toont dat W43 nog grotendeels goudgeel/olijf is. De eerste W44-generatie bleek te koel; de tweede generatie maakt hiervan een kleinere stap naar warm bladgroen. Dit is een nieuwe gedateerde redactionele keuze op basis van de huidige opdracht; geen teruggevonden historische goedkeuring. Zie [kleurkeuze en bronnen](GEMSTONE-2026-44.md).
+**W44-steentoewijzing: CHRYSOBERIL, steen 9.** De eerdere smaragdproeven zijn verworpen: eerst botsten groen en geel, daarna werd het beeld te koel en week de sfeer af van de eerste acht hoezen. Ben bevestigde dat de kleurkeuze uit die bestaande reeks moet volgen. De vierde proef is direct vanuit W43 gemaakt, met behoud van de warme lichtende sfeer en een kleine goudgroene verschuiving. Ben reageerde daarop “Mooi!”. V4 wordt aangehouden; geen vijfde afbeelding gemaakt. Zie [kleurkeuze, beoordeling en bronnen](GEMSTONE-2026-44.md).
 
 De vaste beeldfamilie blijft die van W39/W40: filmisch berglandschap, monumentale steen links, kleine reiziger, lichtende hemelbol, vaste Ben’s Music DNA/ONTDEK DNA-kop, week/steen en DNA-footer. Een W44-bestand moet hiermee visueel worden vergeleken en op tekst/steen/teller worden gecontroleerd. Bestaande visuele tests alleen zijn onvoldoende: de gedocumenteerde tellercontrole accepteerde eerder onjuiste waarden.
 
-De kant-en-klare beschrijving staat in `spotify-description.txt`, met een korte muziekinleiding en de zakelijke smaragdalinea. Mineralogische feiten zijn gecontroleerd bij GIA; de bronnen staan afzonderlijk in GEMSTONE-2026-44.md. Geen symbolische eigenschappen of technische procesinformatie in de playlisttekst.
+De kant-en-klare beschrijving staat in `spotify-description.txt`, met een korte muziekinleiding en de zakelijke chrysoberilalinea. Mineralogische feiten zijn gecontroleerd bij GIA en de International Colored Gemstone Association; de bronnen staan afzonderlijk in GEMSTONE-2026-44.md. Geen symbolische eigenschappen of technische procesinformatie in de playlisttekst.
 
 ## Klaar voor uitvoering na visuele hoescontrole
 
@@ -100,10 +100,8 @@ Er is nu geen W44-playlist aangemaakt, gewijzigd of gepubliceerd. De accounttoeg
 
 Geen productiecode of operationele data gewijzigd. Current/original/legacy, FIFO, reserves, journalen en afzonderlijke Walk & Listen-opslag blijven onaangeroerd. PR #18 blijft conflicterend en wordt niet meegenomen. Deze W44-branch wordt niet automatisch gemerged.
 
-## Hoesbestand
+## Gekozen hoesbestand
 
-![W44 Smaragd, samenhangende scèneverlichting — voorstel v3](W44-Smaragd-hoes-v3-800.jpg)
+![W44 Chrysoberil — v4](W44-Chrysoberil-hoes-v4-800.jpg)
 
-De eerste te koele proef blijft lokaal bewaard. Voor de tweede versie is de bestaande W43-hoes samen met Bens overzicht van de werkelijke kleurketen als visuele referentie gebruikt. Generatie: ingebouwde imagegen; eerste prompt in cover-prompt.txt, kleurcorrectie in cover-prompt-v2.txt. Spotify is niet gewijzigd.
-
-**Vervolg op Bens precieze kleurfeedback:** v2 is afgewezen omdat groen en geel geen natuurlijk geheel vormen. V3 verandert de verlichting van de volledige scène: hemel, bergen, nevel, rivier en reflecties delen nu een samenhangend groen/neutraal licht met een zachtere warme horizon. Geen vlak groen filter. De derde afbeelding is een voorstel; geen gebruikersacceptatie of publicatie geclaimd. De exacte bewerkingsprompt staat in cover-prompt-v3.txt.
+V4 is aangehouden na Bens reactie “Mooi!”. Direct gemaakt vanuit de bestaande W43-hoes met ingebouwde imagegen; prompt in cover-prompt-v4.txt. Oudere proeven blijven als ontwerphistorie bewaard. Deze beeldkeuze verandert geen Spotify-playlist of muziekselectie.

@@ -1,4 +1,28 @@
-# W44 — Smaragd als volgende kleur in de slinger
+# W44 — goudgroene overgang vanuit de bestaande acht hoezen
+
+## Actuele richting na beoordeling met Ben — 29 oktober 2026
+
+Ben bevestigt dat de nieuwe afbeelding een natuurlijke kleurovergang in de sfeer van de voorgaande acht hoezen moet zijn. De smaragdproeven hebben dit niet bereikt: v1/v2 combineerden een groene steen met een geel/oranje wereld; v3 was samenhangender maar sprong naar een koelere groene/grijze beeldwereld. Alle drie zijn voor W44 verworpen.
+
+**W44 wordt opnieuw vanuit de werkelijke W43-hoes opgebouwd:** dezelfde warme, vurige, lichtende sfeer; een kleine stap van goud/geel naar goudgroen die in de gehele scène doorloopt. Steen, hemelbol, hemellicht, nevel, rivier en reflecties delen dezelfde geleidelijke kleurbeweging. Geen groene steen op een losstaand oranje landschap, geen koele grijze daglichtscène en geen vlak groen filter.
+
+De steentoewijzing volgt de kleurkeuze. Voor deze tussenstap wordt **chrysoberil, steen 9**, gebruikt. Gewone chrysoberil kan goudgeel en geelgroen zijn. De afgewezen smaragdkeuze blijft hieronder als ontwerphistorie bewaard en geldt niet meer voor W44. De vierde proef gebruikt direct de W43-hoes, niet een van de eerdere W44-proeven.
+
+Bronnen: [GIA — Chrysoberyl](https://cms.gia.edu/dam/jcr%3A2774854e-0902-4498-9c58-3b9c8fbd1d0f/0113763c-1612-4c4c-aa74-226c519afa5d.pdf), [International Colored Gemstone Association — Chrysoberyl](https://www.gemstone.org/chrysoberyl). Alleen mineralogische gegevens gebruikt, geen symbolische eigenschappen.
+
+## Gekozen hoes na gebruikersreactie
+
+De vierde generatie is op 29 oktober in het gesprek getoond. Ben reageerde **“Mooi!”**. Deze reactie hoort bij de chrysoberilhoes die direct vanuit W43 is gemaakt; er is daarna geen nieuwe afbeelding gegenereerd. V4 wordt daarom aangehouden. De daaropvolgend overwogen verdere kleurnuance is niet uitgevoerd.
+
+Bestand: W44-Chrysoberil-hoes-v4-800.jpg. Prompt: cover-prompt-v4.txt. Ingebouwde imagegen gebruikt; PNG-master blijft lokaal bewaard. De 800×800-JPEG is afgeleid voor Spotify en voldoet aan de payloadgrens.
+
+### Korte tekst
+
+CHRYSOBERIL · W44 — Een goudgele tot geelgroene edelsteen van berylliumaluminiumoxide. Het mineraal heeft een hardheid van 8½ op de schaal van Mohs. Bekende vindplaatsen liggen in Brazilië en Sri Lanka. Steen 9 van de Music-DNA-slinger.
+
+## Historische keuzes en afgewezen proeven
+
+# Eerdere smaragdkeuze (vervallen)
 
 Keuzedatum: 29 oktober 2026. Dit is een redactionele uitvoeringskeuze onder de actuele gebruikersopdracht, geen gereconstrueerde historische steenkeuze.
 
