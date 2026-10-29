@@ -2,7 +2,7 @@
 
 **Doeldatum: zaterdag 31 oktober 2026 · gecontroleerd op 29 oktober 2026.**
 
-**Muziekselectie vastgelegd: 21 nummers, 10 RAAK + 11 GOED, 1 uur 27 minuten 57 seconden. Spotify-publicatie: NIET UITGEVOERD. Steen: SMARAGD, gekozen onder gebruikersdelegatie; warmere tweede hoesversie visueel gecontroleerd.**
+**Muziekselectie vastgelegd: 21 nummers, 10 RAAK + 11 GOED, 1 uur 27 minuten 57 seconden. Spotify-publicatie: NIET UITGEVOERD. Steen: SMARAGD, gekozen onder gebruikersdelegatie; tweede hoesversie door gebruiker afgewezen wegens onsamenhangend groen/geel; derde proef met samenhangende verlichting beschikbaar als voorstel.**
 
 ## Uitgangspunt en behoud
 
@@ -102,6 +102,8 @@ Geen productiecode of operationele data gewijzigd. Current/original/legacy, FIFO
 
 ## Hoesbestand
 
-![W44 Smaragd, warmere kleurcorrectie](W44-Smaragd-hoes-v2-800.jpg)
+![W44 Smaragd, samenhangende scèneverlichting — voorstel v3](W44-Smaragd-hoes-v3-800.jpg)
 
 De eerste te koele proef blijft lokaal bewaard. Voor de tweede versie is de bestaande W43-hoes samen met Bens overzicht van de werkelijke kleurketen als visuele referentie gebruikt. Generatie: ingebouwde imagegen; eerste prompt in cover-prompt.txt, kleurcorrectie in cover-prompt-v2.txt. Spotify is niet gewijzigd.
+
+**Vervolg op Bens precieze kleurfeedback:** v2 is afgewezen omdat groen en geel geen natuurlijk geheel vormen. V3 verandert de verlichting van de volledige scène: hemel, bergen, nevel, rivier en reflecties delen nu een samenhangend groen/neutraal licht met een zachtere warme horizon. Geen vlak groen filter. De derde afbeelding is een voorstel; geen gebruikersacceptatie of publicatie geclaimd. De exacte bewerkingsprompt staat in cover-prompt-v3.txt.

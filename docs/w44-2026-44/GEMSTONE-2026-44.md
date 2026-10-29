@@ -42,4 +42,12 @@ Generatie gebeurt met de ingebouwde imagegen. De gebruikte prompt en definitieve
 
 De eerste W44-generatie was te koel en te turquoise ten opzichte van de bestaande reeks. Ben vroeg op 29 oktober met zijn screenshot van W36–W43 nadrukkelijk nog eens goed te kijken. De screenshot is als beeld in het gesprek bekeken; de lokale screenshotbytes konden niet worden geopend en zijn niet gehasht. De eerste generatie blijft lokaal bewaard als afgewezen ontwerpversie en wordt niet gebruikt voor publicatie. De tweede generatie corrigeert kleur en licht; compositie en teksten blijven behouden.
 
-Definitief voorbereid bestand: W44-Smaragd-hoes-v2-800.jpg. De visuele controle bevestigt SMARAGD, #2026-44, GROEN · BERYL · STEEN 9, WEEK 44 / VAN 52, vaste footer en een warmere overgang vanaf W43. Dit is redactionele beeldcontrole, geen bewering dat Ben deze afzonderlijke versie al heeft goedgekeurd.
+Eerder voorbereid, inmiddels afgewezen bestand: W44-Smaragd-hoes-v2-800.jpg. De visuele controle bevestigt SMARAGD, #2026-44, GROEN · BERYL · STEEN 9, WEEK 44 / VAN 52, vaste footer en een warmere overgang vanaf W43. Dit is redactionele beeldcontrole, geen bewering dat Ben deze afzonderlijke versie al heeft goedgekeurd.
+
+## Nadere gebruikerscorrectie — kleurharmonie van de hele wereld
+
+Ben verduidelijkte: “het is nu (kort door de bocht gezegd) groen met geel. Het is geen natuurlijk geheel”. De tweede versie is daarmee geen vrijgegeven eindbeeld. De eerdere opdracht om de gouden horizon grotendeels te behouden blijkt te beperkt: groen in steen/hemelbol en geel/oranje in landschap blijven twee gescheiden kleurwerelden.
+
+De derde proef corrigeert de verlichting van de hele scène: samenhang tussen hemel, nevel, bergen, water, steen en reflecties; natuurlijke lichtafval en neutrale highlights; beperkte zachte warme accenten in plaats van brede verzadigde gele/oranje vlakken. Geen vlak groen filter, geen wijziging van compositie, teksten of muziekinhoud. De afbeelding blijft een voorstel tot de kleurharmonie is beoordeeld.
+
+Derde proefbestand: W44-Smaragd-hoes-v3-800.jpg. Volledige scèneverlichting herzien, tekst en compositie gecontroleerd, JPEG-payload onder 256 KB. Status: voorstel na gebruikersfeedback, niet gepubliceerd. De eerste twee ontwerpen blijven bewaard.

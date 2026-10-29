@@ -1,3 +1,7 @@
+## W44-hoes — nadere kleurfeedback 29 oktober 2026
+
+Ben wijst v2 af als onsamenhangend groen met geel. V3 corrigeert de verlichting van de hele scène en staat als voorstel in het [W44-pakket](w44-2026-44/README.md). Geen gebruikersacceptatie of Spotify-publicatie geclaimd. De muziekselectie en alle beoordelingen blijven identiek.
+
 ## W44-kleurkeuze — 29 oktober 2026, gebruikersdelegatie
 
 [W44 krijgt Smaragd, steen 9](w44-2026-44/GEMSTONE-2026-44.md): warm bladgroen na de op de echte hoes nog goudgele/olijfgroene W43-peridoot. Ben verduidelijkte dat de uitvoerder de steen passend bij de kleurketen kiest. Geen oude goedkeuring gereconstrueerd; geen aparte keuze van Ben meer nodig. Tweede hoesversie is warmer gecorrigeerd en visueel gecontroleerd; Spotify-publicatie blijft open. De 21 gekozen nummers en alle bronbeoordelingen veranderen niet.
