@@ -1,0 +1,97 @@
+[
+  {
+    "path": "Bronnen.md",
+    "sha256": "3e029573236d8f58ceb19fa39fcc17ac676e53b2baa5f86f031255f538a082e3",
+    "bytes": 2005
+  },
+  {
+    "path": "Het-verhaal-achter-de-playlist.md",
+    "sha256": "42748df728018603e2376c6be3c481c1b6a59ad4b58b1c96547626bc45b22749",
+    "bytes": 6346
+  },
+  {
+    "path": "Onderzoeksqueue.md",
+    "sha256": "0466438ab4dd976b9554c98639aac3f1a3f19ccb838b8143ed63620ee1fa852e",
+    "bytes": 2999
+  },
+  {
+    "path": "README.md",
+    "sha256": "024dfb25fb15d0105f18f3d4d7cd9b0dd0116d476cd3fb054454c32655e14342",
+    "bytes": 9739
+  },
+  {
+    "path": "Redactieproef.html",
+    "sha256": "e0193096b91a4238beeec04999f8610f471149710ef5626d2def51ff825c5908",
+    "bytes": 22652
+  },
+  {
+    "path": "Uitvoeringsrapport.md",
+    "sha256": "8170fbccd652e7afbec7f051ef840e856ef83733667f15c2da760ee7a15ef35b",
+    "bytes": 3687
+  },
+  {
+    "path": "actual-preflight.json",
+    "sha256": "cdae3d3110fa21216cd02d7671051fbe131819f012db9017e442b37a732f3160",
+    "bytes": 361
+  },
+  {
+    "path": "browser-checks.json",
+    "sha256": "1f28b12e34acf6d533b38263f1bab2e4becb7463349dfd43ae2afde62ab887c5",
+    "bytes": 713
+  },
+  {
+    "path": "existing-regressions.json",
+    "sha256": "5cc9ec4880e6df00cef0f4d51707d79b9c9a7c0428de4458d18ffa77fc29a57b",
+    "bytes": 2802
+  },
+  {
+    "path": "input.json",
+    "sha256": "11b3df82f3e7d2c92882dc9996bbecfb61cd54191c9a07e3150c5e5ba3b98f46",
+    "bytes": 915
+  },
+  {
+    "path": "master-depot-audit.json",
+    "sha256": "f91d056651cf28240018bbcb58ee406cefba943d1cde10fd02447068e92fe1b9",
+    "bytes": 468
+  },
+  {
+    "path": "safety-tests.txt",
+    "sha256": "997e974bad8667e45e1cd4310b4016cf3d093390c210776a7ab413098fe3c64a",
+    "bytes": 1258
+  },
+  {
+    "path": "sources/PUBLICATIE.md",
+    "sha256": "48497679361d6e36fe53118d6a2d1c9e04db5cd11a0869a0ef04639dfd65793d",
+    "bytes": 2013
+  },
+  {
+    "path": "sources/SELECTIE_15.json",
+    "sha256": "6aaf716c3e8495363fa0cf666aca7514608f7227dd7e50713cefc8f8b3d98898",
+    "bytes": 3343
+  },
+  {
+    "path": "sources/claims.json",
+    "sha256": "2598b2a605baf1196452e23ff8e15ce184f2273fd490f1dc3c47fa81ae80c596",
+    "bytes": 4474
+  },
+  {
+    "path": "sources/master-special-102-extract.json",
+    "sha256": "0729d09474654ba58675150831ee7a866ad84ba7653bf290700d2ac72904c4c0",
+    "bytes": 4371
+  },
+  {
+    "path": "sources/playlist.json",
+    "sha256": "1b9454535c50b1a51eb3839c568d3b2ee1774265646997ac4cc922bcb867fd8b",
+    "bytes": 3832
+  },
+  {
+    "path": "sources/special-102-readback.json",
+    "sha256": "b8cf30d7e787fc31b4295a0f115f3a9336da9227ef799145aadc74a1e1c34866",
+    "bytes": 2338
+  },
+  {
+    "path": "sources/w44-editorial-summary.json",
+    "sha256": "e05ab7434343cfa9666278de2be3a409adf162d9cc45efc5a312e81e82721975",
+    "bytes": 2726
+  }
+]

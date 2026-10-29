@@ -1,0 +1,25 @@
+PASS same input retry returns one immutable bundle and two attempts
+PASS changed input at same revision holds without overwriting
+PASS tampered input digest holds
+PASS tampered output blocks readback
+PASS overlapping runner or retained crash lock holds
+PASS precommit interruption cannot expose partial edition; retry works
+PASS missing review never gets a generated pass
+PASS review must bind exact manuscript bytes
+PASS unverified factual claim holds
+PASS post-cutoff evidence holds
+PASS duplicate recording holds
+PASS weekly issue requires real week truth; story can prepare independently
+PASS path traversal holds
+PASS symlink cannot reach protected input
+PASS invalid JSON holds and does not publish
+PASS future cutoff holds
+PASS no package can claim live or external writes
+PASS weekly manifest derives every artist without requiring ratings
+PASS week readback with wrong order holds
+PASS incomplete or wrong artist biographies hold
+PASS layout change invalidates device review
+PASS editorial review cannot survive changed evidence
+PASS logging failure holds even after local bundle commit
+PASS abrupt process death retains lock and never exposes staged edition
+{"pass":true,"tests":24,"fixtures":"synthetic","externalWrites":0,"endToEndProven":false}

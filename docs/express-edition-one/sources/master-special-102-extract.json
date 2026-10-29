@@ -1,0 +1,129 @@
+{
+  "source": "/Users/benvanbelzen/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/outputs/DNA_MASTER_GLAM_GESYNCHRONISEERD_2026_10_05/MASTER_ACTUEEL.json",
+  "sourceSha256": "1e76b868b27e9326f679fb0a3c21eb211d9c7f332c416a103634c6225f5117a3",
+  "historicalVersion": "1.12, 2026-10-05",
+  "matches": [
+    {
+      "Track URI": "spotify:track:2Dd0cU8vbBl38j2RBLhLAm",
+      "Track Name": "My Life",
+      "Album Name": "Warped",
+      "Artist Name(s)": "D'Molls",
+      "Release Date": "1987",
+      "DNA Uitgiftejaar uitvoering": 1987
+    },
+    {
+      "Track URI": "spotify:track:779PvwBHrHjORk3lC3AMPt",
+      "Track Name": "Walls Come Down",
+      "Album Name": "Every Mother's Nightmare",
+      "Artist Name(s)": "Every Mothers Nightmare",
+      "Release Date": "1990-09-02",
+      "DNA Uitgiftejaar uitvoering": 1990
+    },
+    {
+      "Track URI": "spotify:track:18n5kMWdrmrEOuh9Qnh2Wf",
+      "Track Name": "Shotgun Sally",
+      "Album Name": "Kicked And Klawed",
+      "Artist Name(s)": "Cats In Boots",
+      "Release Date": "1989-01-01",
+      "DNA Uitgiftejaar uitvoering": 1989
+    },
+    {
+      "Track URI": "spotify:track:6wUkj9fhKcMkUlSwcC3xd0",
+      "Track Name": "Rattlesnake Kisses",
+      "Album Name": "Electric Angels",
+      "Artist Name(s)": "Electric Angels",
+      "Release Date": "1990",
+      "DNA Uitgiftejaar uitvoering": 1990
+    },
+    {
+      "Track URI": "spotify:track:31Eino4YwuoQlORmBExbdK",
+      "Track Name": "Come Down Sister",
+      "Album Name": "The Language Of Thieves And Vagabonds",
+      "Artist Name(s)": "The Throbs",
+      "Release Date": "1991",
+      "DNA Uitgiftejaar uitvoering": 1991
+    },
+    {
+      "Track URI": "spotify:track:1vmTDGLj4FteG2Jn4NTazK",
+      "Track Name": "Too Hot To Handle",
+      "Album Name": "Want Some?",
+      "Artist Name(s)": "Roxy Blue",
+      "Release Date": "1992-10-21",
+      "DNA Uitgiftejaar uitvoering": 1992
+    },
+    {
+      "Track URI": "spotify:track:0bwEjc3wdAY8mDdsbnRxcv",
+      "Track Name": "The Hand That Feeds",
+      "Album Name": "Heavy Bones",
+      "Artist Name(s)": "Heavy Bones",
+      "Release Date": "1992",
+      "DNA Uitgiftejaar uitvoering": 1992
+    },
+    {
+      "Track URI": "spotify:track:55Qc3ftOxf63hZn8XJElLF",
+      "Track Name": "Half The Way Valley",
+      "Album Name": "Sea Hags",
+      "Artist Name(s)": "Sea Hags",
+      "Release Date": "1989-01-01",
+      "DNA Uitgiftejaar uitvoering": 1989
+    },
+    {
+      "Track URI": "spotify:track:6HG1C9zt3trYkHAFtRU0lL",
+      "Track Name": "Lick It into Shape",
+      "Album Name": "Social Intercourse",
+      "Artist Name(s)": "Smashed Gladys",
+      "Release Date": "1988",
+      "DNA Uitgiftejaar uitvoering": 1988
+    },
+    {
+      "Track URI": "spotify:track:3Csv0MN00Iv3XH9d418JaQ",
+      "Track Name": "Good Ol' Rock And Roll",
+      "Album Name": "Rat Race",
+      "Artist Name(s)": "Child's Play",
+      "Release Date": "1990-01-01",
+      "DNA Uitgiftejaar uitvoering": 1990
+    },
+    {
+      "Track URI": "spotify:track:6Y3CVmC4P0P0sDcrRSzr4L",
+      "Track Name": "(Angel With A) Devil's Kiss",
+      "Album Name": "Trouble Tribe",
+      "Artist Name(s)": "Trouble Tribe",
+      "Release Date": "1990-09-19",
+      "DNA Uitgiftejaar uitvoering": 1990
+    },
+    {
+      "Track URI": "spotify:track:5AOPC7iW1kj8uGtT4CmcQj",
+      "Track Name": "Don't Need Rules",
+      "Album Name": "No Rules",
+      "Artist Name(s)": "Kik Tracee",
+      "Release Date": "1991-04-22",
+      "DNA Uitgiftejaar uitvoering": 1991
+    },
+    {
+      "Track URI": "spotify:track:5eaveS1Oieqxf9HRNUQymh",
+      "Track Name": "Love Hungry Man",
+      "Album Name": "Passion",
+      "Artist Name(s)": "Julliet",
+      "Release Date": "2002",
+      "DNA Uitgiftejaar uitvoering": 2002
+    },
+    {
+      "Track URI": "spotify:track:0Md3WqXa9vCXWOVcvU94lA",
+      "Track Name": "Let's Make Love Tonight",
+      "Album Name": "Break Out",
+      "Artist Name(s)": "Cold Sweat",
+      "Release Date": "1990-08-25",
+      "DNA Uitgiftejaar uitvoering": 1990
+    },
+    {
+      "Track URI": "spotify:track:4gjFeCBHRvUQluaJgUsDCh",
+      "Track Name": "Shake",
+      "Album Name": "Saints & Sinners",
+      "Artist Name(s)": "Saints & Sinners",
+      "Release Date": "1992-09-29",
+      "DNA Uitgiftejaar uitvoering": 1992
+    }
+  ],
+  "matchedUris": 15,
+  "notCurrentMasterClaim": true
+}

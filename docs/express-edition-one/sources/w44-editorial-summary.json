@@ -1,0 +1,65 @@
+{
+  "sourcePr": "https://github.com/bcim1958/bens-music-dna/pull/22",
+  "sourceHead": "dce0e37985e89bc0d4dc676ae74b82b6236d90bb",
+  "sourceSha256": "e0072b3e56575e369b6b3a1d92804f86cd228eb74be78239237e0a124fbd691e",
+  "ratingCounts": {
+    "RAAK": 10,
+    "GOED": 13,
+    "TERUGKOMEN": 7,
+    "NIET": 6
+  },
+  "selectedRatings": {
+    "RAAK": 10,
+    "GOED": 11
+  },
+  "selectedCount": 21,
+  "flowAuditioned": false,
+  "publication": {
+    "ready": false,
+    "playlistId": null,
+    "spotifyWrites": 0,
+    "created": false,
+    "published": false,
+    "coverApproved": true,
+    "gemstone": {
+      "name": "Chrysoberil",
+      "sequenceNumber": 9,
+      "colour": "goudgroen als geleidelijke volgende stap na W43",
+      "selectionMethod": "palette-first-editorial-choice-under-user-delegation-2026-10-29",
+      "editorialText": "CHRYSOBERIL · W44 — Een goudgele tot geelgroene edelsteen van berylliumaluminiumoxide. Het mineraal heeft een hardheid van 8½ op de schaal van Mohs. Bekende vindplaatsen liggen in Brazilië en Sri Lanka. Steen 9 van de Music-DNA-slinger.",
+      "sources": [
+        "https://cms.gia.edu/dam/jcr%3A2774854e-0902-4498-9c58-3b9c8fbd1d0f/0113763c-1612-4c4c-aa74-226c519afa5d.pdf",
+        "https://www.gemstone.org/chrysoberyl"
+      ],
+      "reason": "Behoud warme lichtende sfeer eerste acht hoezen; kleine goudgroene overgang vanuit de echte W43-hoes, geen volledige smaragdgroene wereld.",
+      "historicalPriorApprovalClaimed": false,
+      "visualSource": "actual W43 cover and user screenshot of W36-W43",
+      "currentUserFeedback": "Mooi! — in response to v4 shown in this conversation, 2026-10-29"
+    },
+    "gemstoneSequenceNumber": 9,
+    "blockers": [
+      "W44-doelplaylist is nog niet aangemaakt; volledige accountreadback en veilige publicatie blijven uit te voeren."
+    ],
+    "accountObserved": {
+      "displayName": "Ben van Belzen",
+      "userId": "11124659869",
+      "method": "native Spotify UI"
+    },
+    "automaticSaturdayRouteProven": false,
+    "artwork": {
+      "path": "W44-Chrysoberil-hoes-v4-800.jpg",
+      "sha256": "50569d14c58c52f5eff87c7fd74ddf208bb10f149284f87a213688df5ae6445f",
+      "width": 800,
+      "height": 800,
+      "version": 4,
+      "method": "built-in-imagegen-direct-W43-reference",
+      "status": "accepted-current-user-feedback",
+      "visualVerification": "week 44 / stone 9 / CHRYSOBERIL / established composition checked",
+      "userApprovalClaimed": true,
+      "userApprovalEvidence": "Current user: Mooi! after v4 image; no subsequent image generated.",
+      "jpegBytes": 148933,
+      "base64Bytes": 198580
+    }
+  },
+  "interpretation": "36 judgments across two rounds, not a random sample or sealed forecast"
+}
