@@ -866,18 +866,42 @@
     "created": false,
     "published": false,
     "coverApproved": false,
-    "gemstone": null,
-    "gemstoneSequenceNumber": null,
+    "gemstone": {
+      "name": "Smaragd",
+      "sequenceNumber": 9,
+      "colour": "warm bladgroen met geelgroene/gouden lichtaccenten; geen turquoise of blauwgroen",
+      "selectionMethod": "editorial-choice-under-user-delegation-2026-10-29",
+      "editorialText": "SMARAGD · W44 — Een groene tot blauwgroene variëteit van beryl. Chroom en vanadium geven de steen zijn groene kleur. Bekende vindplaatsen liggen in Colombia, Zambia en Brazilië. Steen 9 van de Music-DNA-slinger.",
+      "sources": [
+        "https://www.gia.edu/emerald-description",
+        "https://www.gia.edu/seeing-green"
+      ],
+      "reason": "Werkelijke W43-hoes is overwegend goudgeel/olijf; W44 zet een kleine stap naar warm bladgroen, geen abrupte sprong naar koel groen.",
+      "historicalPriorApprovalClaimed": false,
+      "visualSource": "user screenshot 2026-10-29 20.45.46: actual W36-W43 covers"
+    },
+    "gemstoneSequenceNumber": 9,
     "blockers": [
-      "Oorspronkelijke goedgekeurde W44-steentoewijzing en hoes ontbreken in gecontroleerde bronnen.",
-      "Geen W44-playlist aangemaakt; volledige geauthenticeerde readback van doelplaylist is dus nog uit te voeren."
+      "W44-doelplaylist is nog niet aangemaakt; volledige accountreadback en veilige publicatie blijven uit te voeren."
     ],
     "accountObserved": {
       "displayName": "Ben van Belzen",
       "userId": "11124659869",
       "method": "native Spotify UI"
     },
-    "automaticSaturdayRouteProven": false
+    "automaticSaturdayRouteProven": false,
+    "artwork": {
+      "path": "W44-Smaragd-hoes-v2-800.jpg",
+      "sha256": "cb5f499414dd37ea4871ab45dfc38f6b1207dafc75651866ce9bd1633a3040c5",
+      "width": 800,
+      "height": 800,
+      "version": 2,
+      "method": "built-in-imagegen-colour-correction",
+      "visualVerification": "PASS",
+      "userApprovalClaimed": false,
+      "jpegBytes": 150114,
+      "base64Bytes": 200152
+    }
   },
   "storage": {
     "runtimeIntegrated": false,

@@ -2,7 +2,7 @@
 
 **Doeldatum: zaterdag 31 oktober 2026 · gecontroleerd op 29 oktober 2026.**
 
-**Muziekselectie vastgelegd: 21 nummers, 10 RAAK + 11 GOED, 1 uur 27 minuten 57 seconden. Spotify-publicatie: NIET UITGEVOERD. Hoesvrijgave: OPEN.**
+**Muziekselectie vastgelegd: 21 nummers, 10 RAAK + 11 GOED, 1 uur 27 minuten 57 seconden. Spotify-publicatie: NIET UITGEVOERD. Steen: SMARAGD, gekozen onder gebruikersdelegatie; warmere tweede hoesversie visueel gecontroleerd.**
 
 ## Uitgangspunt en behoud
 
@@ -72,13 +72,13 @@ Bewijsgrens blijft: volledige privécollectie, niet geëxporteerde telefoonhisto
 
 ## Edelsteen, hoes en beschrijving
 
-**W44-steentoewijzing: OPEN.** In de drie registers, actuele main, voorbereidingsdossier en beschikbare recente hoofdchat staat geen rechtstreeks bewezen goedgekeurde W44-steen. De op 26 oktober gemelde nieuwe kleurenslinger is in de huidige documentatie nog begrensd als secundair gemeld besluit. Er is daarom geen steen, kleur of steenteller ingevuld en geen hoes gegenereerd of naar Spotify gestuurd. De concrete ontbrekende toewijzing is aan Ben gevraagd.
+**W44-steentoewijzing: SMARAGD, steen 9.** Ben verduidelijkte op 29 oktober dat hij de steen niet zelf kiest: deze moet passen bij de kleurketen. Daarmee is de redactionele keuze gedelegeerd. De gecontroleerde reeks loopt van imperiale topaas (W40) via citrien (W41), heliodoor (W42) en peridoot (W43) naar een warmer bladgroen voor W44. Bens screenshot van de werkelijke hoezen toont dat W43 nog grotendeels goudgeel/olijf is. De eerste W44-generatie bleek te koel; de tweede generatie maakt hiervan een kleinere stap naar warm bladgroen. Dit is een nieuwe gedateerde redactionele keuze op basis van de huidige opdracht; geen teruggevonden historische goedkeuring. Zie [kleurkeuze en bronnen](GEMSTONE-2026-44.md).
 
 De vaste beeldfamilie blijft die van W39/W40: filmisch berglandschap, monumentale steen links, kleine reiziger, lichtende hemelbol, vaste Ben’s Music DNA/ONTDEK DNA-kop, week/steen en DNA-footer. Een W44-bestand moet hiermee visueel worden vergeleken en op tekst/steen/teller worden gecontroleerd. Bestaande visuele tests alleen zijn onvoldoende: de gedocumenteerde tellercontrole accepteerde eerder onjuiste waarden.
 
-De kant-en-klare korte muziekbeschrijving staat in `spotify-description.txt`. Zij bevat alleen de vastgelegde muziekselectie, zonder onbewezen edelsteenfeiten of technische procesinformatie. Een minerale alinea kan pas na de juiste steentoewijzing worden geschreven, met betrouwbare mineralogische bronnen en de bestaande zakelijke tekststijl.
+De kant-en-klare beschrijving staat in `spotify-description.txt`, met een korte muziekinleiding en de zakelijke smaragdalinea. Mineralogische feiten zijn gecontroleerd bij GIA; de bronnen staan afzonderlijk in GEMSTONE-2026-44.md. Geen symbolische eigenschappen of technische procesinformatie in de playlisttekst.
 
-## Klaar voor uitvoering na hoesvrijgave
+## Klaar voor uitvoering na visuele hoescontrole
 
 1. Hercontroleer live main, deze pakketversie en eventuele bestaande W44-playlist om dubbele aanmaak te voorkomen. Controleer eigenaar Ben van Belzen (`11124659869`).
 2. Maak eerst een besloten W44-werkplaylist. Gebruik uitsluitend de 21 URI’s in `spotify-uris.txt`, in die volgorde; `spotify-import.csv` is de leesbare controlelijst. Voeg geen zeven nieuwe kandidaten toe zonder hun eigen gecontroleerde bronset.
@@ -99,3 +99,9 @@ Er is nu geen W44-playlist aangemaakt, gewijzigd of gepubliceerd. De accounttoeg
 - `validation.json`: behoud, tellingen, selectie, beschikbare historie en uitgevoerde lokale controles.
 
 Geen productiecode of operationele data gewijzigd. Current/original/legacy, FIFO, reserves, journalen en afzonderlijke Walk & Listen-opslag blijven onaangeroerd. PR #18 blijft conflicterend en wordt niet meegenomen. Deze W44-branch wordt niet automatisch gemerged.
+
+## Hoesbestand
+
+![W44 Smaragd, warmere kleurcorrectie](W44-Smaragd-hoes-v2-800.jpg)
+
+De eerste te koele proef blijft lokaal bewaard. Voor de tweede versie is de bestaande W43-hoes samen met Bens overzicht van de werkelijke kleurketen als visuele referentie gebruikt. Generatie: ingebouwde imagegen; eerste prompt in cover-prompt.txt, kleurcorrectie in cover-prompt-v2.txt. Spotify is niet gewijzigd.

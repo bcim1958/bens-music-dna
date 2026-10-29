@@ -167,5 +167,9 @@
   "spotifyWrites": 0,
   "flowAuditioned": false,
   "saturdayAutomationProven": false,
-  "gemstoneCoverRelease": "OPEN"
+  "gemstoneCoverRelease": "SMARAGD selected under user delegation; warmer v2 cover visually verified; no separate user approval claimed",
+  "gemstoneSequenceNumber": 9,
+  "artworkSha256": "cb5f499414dd37ea4871ab45dfc38f6b1207dafc75651866ce9bd1633a3040c5",
+  "colourCorrectionReason": "Actual W43 thumbnail is gold/olive; avoid abrupt cyan/teal jump",
+  "artworkPayloadUnder256KB": true
 }
