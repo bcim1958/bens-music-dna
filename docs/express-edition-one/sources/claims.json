@@ -1,0 +1,92 @@
+[
+  {
+    "id": "S1",
+    "claim": "Joel Ellis noemt Cats in Boots en Heavy Bones als bands die hij leidde.",
+    "status": "verified-fact",
+    "url": "https://www.joelellismusic.com/",
+    "locator": "biografische alinea met Cats in Boots en Heavy Bones",
+    "checkedAt": "2026-10-29T21:13:04.540621+00:00",
+    "title": "Joel Ellis — officiële biografie",
+    "sourceType": "official-artist-or-label"
+  },
+  {
+    "id": "S2",
+    "claim": "Roxie speelde in Electric Angels, waarvan Tony Visconti de producer was; in 1996 sloot Roxie zich aan bij Alice Cooper.",
+    "status": "verified-fact",
+    "url": "https://ryanroxie.com/about-ryanroxie",
+    "locator": "loopbaanalinea Electric Angels; daaropvolgende alinea 1996",
+    "checkedAt": "2026-10-29T21:13:04.540621+00:00",
+    "title": "Ryan Roxie — About",
+    "sourceType": "official-artist-or-label"
+  },
+  {
+    "id": "S3",
+    "claim": "Douglas noemt Dana Strum als producer van de eerste Kik Tracee-plaat en beschrijft zijn eigen verbinding met Strum.",
+    "status": "attributed-account",
+    "url": "https://sleazeroxx.com/interviews/interview-part-2-with-van-halen-drum-tech-designer-and-ex-kik-tracee-drummer-johnny-douglas/",
+    "locator": "antwoord over Bobby Rock, Blas Elias en Dana Strum",
+    "checkedAt": "2026-10-29T21:13:04.540621+00:00",
+    "title": "Johnny Douglas — interview door Tyson Briden, 1 augustus 2018",
+    "sourceType": "original-interview"
+  },
+  {
+    "id": "S4",
+    "claim": "Volgens Ferrari vertrok Logan naar George Lynch op de dag dat de band de studio in ging voor het debuut.",
+    "status": "attributed-account",
+    "url": "https://sleazeroxx.com/interviews/marc-ferrari-interview/",
+    "locator": "vraag over Oni Logans vertrek en Ferrari’s antwoord",
+    "checkedAt": "2026-10-29T21:13:04.540621+00:00",
+    "title": "Marc Ferrari — interview door Ruben Mosqueda, 29 januari 2010",
+    "sourceType": "original-interview"
+  },
+  {
+    "id": "S5",
+    "claim": "Julliet ontstond in Tampa; Kevin DuBrow produceerde Passion en liet Frankie Banali drummen; het album bleef vervolgens jaren liggen; de band verhuisde in 1988 naar Los Angeles.",
+    "status": "verified-fact",
+    "url": "https://www.eonianrecords.com/julliet-1/",
+    "locator": "biografie alinea’s 2–4, Passion en verhuizing in 1988",
+    "checkedAt": "2026-10-29T21:13:04.540621+00:00",
+    "title": "Julliet — Eonian Records",
+    "sourceType": "official-artist-or-label"
+  },
+  {
+    "id": "S6",
+    "claim": "De band ontstond in 1987 in Memphis, tekende bij Arista en had onder meer de video Walls Come Down op Headbangers Ball.",
+    "status": "verified-fact",
+    "url": "https://darkstarrecords.net/artists/every-mothers-nightmare/?amp=1",
+    "locator": "BIO, eerste drie zinnen",
+    "checkedAt": "2026-10-29T21:13:04.540621+00:00",
+    "title": "Every Mother’s Nightmare — Dark Star Records",
+    "sourceType": "official-artist-or-label"
+  },
+  {
+    "id": "S7",
+    "claim": "Cato beschrijft hoe zij contacten, contractonderhandelingen en de zakelijke kant voor Smashed Gladys verzorgde.",
+    "status": "attributed-account",
+    "url": "https://sleazeroxx.com/interviews/sally-cato-interview/",
+    "locator": "antwoord op vraag over de Elektra-deal",
+    "checkedAt": "2026-10-29T21:13:04.540621+00:00",
+    "title": "Sally Cato — interview door Benjamin W Barney, 18 oktober 2010",
+    "sourceType": "original-interview"
+  },
+  {
+    "id": "S8",
+    "claim": "Hughes vertelt dat hij met Aldo Nova werkte aan Saints & Sinners en dat zijn song Someday via Nova bij diens eigen album terechtkwam.",
+    "status": "attributed-account",
+    "url": "https://outsiderrock.ca/2025/10/30/rick-hughes-redemption-interview/",
+    "locator": "antwoord op vraag over Someday en Aldo Nova",
+    "checkedAt": "2026-10-29T21:13:04.540621+00:00",
+    "title": "Rick Hughes — Redemption Interview, 30 oktober 2025",
+    "sourceType": "original-interview"
+  },
+  {
+    "id": "S9",
+    "claim": "De interviewintroductie onderscheidt Oni Logans vertrek van diens vervanger Roy Cathey op Break Out.",
+    "status": "verified-fact",
+    "url": "https://metalnation.com/cold-sweat-interview-marc-ferrari-talks-re-issue-of-break-out-28-years-on/",
+    "locator": "introductie bij interview: opvolging Oni Logan door Roy Cathey",
+    "checkedAt": "2026-10-29T21:13:04.540621+00:00",
+    "title": "Marc Ferrari — interview door Rustyn Rose, 2018",
+    "sourceType": "original-interview"
+  }
+]

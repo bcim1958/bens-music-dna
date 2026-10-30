@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "viewport": "iMac",
+      "width": 1440,
+      "height": 900,
+      "navigation": true,
+      "noHorizontalOverflow": true,
+      "returnPosition": true,
+      "jsErrors": [],
+      "realDevice": false
+    },
+    {
+      "viewport": "iPhone",
+      "width": 390,
+      "height": 844,
+      "navigation": true,
+      "noHorizontalOverflow": true,
+      "returnPosition": true,
+      "jsErrors": [],
+      "realDevice": false
+    },
+    {
+      "viewport": "iPad",
+      "width": 820,
+      "height": 1180,
+      "navigation": true,
+      "noHorizontalOverflow": true,
+      "returnPosition": true,
+      "jsErrors": [],
+      "realDevice": false
+    }
+  ],
+  "realDeviceProven": false
+}

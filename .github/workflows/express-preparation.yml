@@ -1,0 +1,22 @@
+name: DNA Express preparation safety
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: express-preparation-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  offline-safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Failure, retry and integrity checks (synthetic, no external writes)
+        run: node test/express-weekly-regression.cjs
+# No schedule, deployment, credentials, Spotify writer or release authority.
+# Enable recurring production only after real route evidence and explicit release.
