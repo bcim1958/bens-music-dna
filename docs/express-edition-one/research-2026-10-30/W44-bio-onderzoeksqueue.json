@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 1,
+  "kind": "candidate-research-queue-not-publication-manifest",
+  "week": "2026-W44",
+  "sourcePr": "https://github.com/bcim1958/bens-music-dna/pull/22",
+  "sourceHead": "dce0e37985e89bc0d4dc676ae74b82b6236d90bb",
+  "selectionSha256": "e0072b3e56575e369b6b3a1d92804f86cd228eb74be78239237e0a124fbd691e",
+  "frozen": false,
+  "published": false,
+  "spotifyWrites": 0,
+  "uniquePrimaryArtists": 21,
+  "artists": [
+    {
+      "artistId": "spotify:artist:0OrBdxyVoXyVgAM6pI79D2",
+      "name": "Mayank",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:7s3iIgurAG0xgDg1ebAweA",
+          "title": "Destiny Calling"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:1jLxOyZv6hLRHuXaw1KMXr",
+      "name": "Starmen",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:3pUuCPjhocrhbfQ8V0qO1G",
+          "title": "Ready to Give Me Your Love"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr",
+      "name": "Night Laser",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:4OEjJbIBMzaTFsYJhBF4DO",
+          "title": "Bittersweet Dreams"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:4QanEE5Wrkq1JhWMpWKz4f",
+      "name": "Smoking Snakes",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:5aISIm0BHmorW4Z7hMDdg7",
+          "title": "Angels Calling"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:5I22u9LXP5xKHeCRlHTUZ5",
+      "name": "Trench Dogs",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:6VnK5Xeg2u7Zg5qJqKYaDo",
+          "title": "Homesick Parade"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:1xbUKM3c1WNURoDHEDGXBf",
+      "name": "Midas",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:6lmrfYBEaTpKk3M30yUrZ7",
+          "title": "Nobody Gets Out Alive"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:2p4bCEJL6k03ErhdPTPEbu",
+      "name": "Sanhedrin",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:6Ny1GkA2KbnytfBYyQskzd",
+          "title": "Lost at Sea"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:0oRylpNxHxI8fP7Mpmo4QU",
+      "name": "Lykantropi",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:3E6xrYViwCil3oK4pkqpZ4",
+          "title": "Wild Flowers"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:7Gbgr3pNct3IvdhQLO8wPU",
+      "name": "Grave Pleasures",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:69feEDlBjijnisHbOWgH7P",
+          "title": "Be My Hiroshima"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:0ABvgllZiW792ERHXuJlGz",
+      "name": "Magic Pie",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:6eKjzKEAz48JsIjsHTkGHH",
+          "title": "Trick of the Trade"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:461TaZqofVfcQo2wtMwnQJ",
+      "name": "LeBrock",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:3lS99gJJAWuxKxQfXArvvx",
+          "title": "Runaway"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:1uJoivXxtZjowli7GAAOOI",
+      "name": "Fans Of The Dark",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:45yGG3vEZTV8MBVxKqXAq5",
+          "title": "Life Kills"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:7HWdmhoIhvXEHikALsGT4w",
+      "name": "Junkyard Drive",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:6jIWMzMQ9NuGHAdPFxAjcI",
+          "title": "Sweet Little Dreamer"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:03eYJDAyUMwFRdmW5cgItV",
+      "name": "Vypera",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:6Ko5PM4RK7eumjqnKt5Ahi",
+          "title": "Standing on the Edge"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:1olZcNG9rq4RGVVd69Tj4e",
+      "name": "Ashbury",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:6jEGUmbMdvWq6Di1Kv61J0",
+          "title": "The Warning"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:10Mmz2UngxRjkZmz0a1H32",
+      "name": "Artificial Language",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:58C4uAvr4MTr88Chmkc6nz",
+          "title": "Unself Portrait"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:2o88SjmtVVVyCmTGCuSPoY",
+      "name": "Kalax",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:4O6pSwn4xxx8FdBBdqeEin",
+          "title": "Out of Time"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:6wEVMZieIv9ttCzvuDYev8",
+      "name": "Nitrate",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:5R8u2wIpO2OKg2EhSygZne",
+          "title": "All the Right Moves"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:363ih5wuNGWBFcjeKFG8cc",
+      "name": "Crypt Sermon",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:2h7J8G3II0eZj0Kl8uDWmH",
+          "title": "Heavy Is the Crown of Bone"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:091cSUyhQCRgJreqXy17m5",
+      "name": "Four Stroke Baron",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:0Ws0ZUpn49O9B1P4lVNvPx",
+          "title": "Planet Silver Screen"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    },
+    {
+      "artistId": "spotify:artist:0HPVHsbV2yIYPp2Pk4kdHe",
+      "name": "Droid Bishop",
+      "candidateTracks": [
+        {
+          "uri": "spotify:track:6Hy7t4RIksivCxEXyu6T1b",
+          "title": "Dancing in the Darkness"
+        }
+      ],
+      "status": "research-required",
+      "identitySource": "PR22 candidate metadata, not frozen published manifest",
+      "needed": [
+        "origin/start",
+        "key people",
+        "style/development",
+        "key releases/career",
+        "context/status",
+        "sources for consequential claims"
+      ]
+    }
+  ]
+}

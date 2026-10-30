@@ -11,13 +11,13 @@
   },
   {
     "path": "Onderzoeksqueue.md",
-    "sha256": "0466438ab4dd976b9554c98639aac3f1a3f19ccb838b8143ed63620ee1fa852e",
-    "bytes": 2999
+    "sha256": "819078b47ee4c43306ac3fc1cd5e75c35643347bff66a39ede64860007e061de",
+    "bytes": 3033
   },
   {
     "path": "README.md",
-    "sha256": "c87aa2c3d79a4addc28ebae80bbb53f8f1134541a54089820d40ee84d4d930b4",
-    "bytes": 9774
+    "sha256": "561d0f267d4fcbe2d0a1da4a9e4f14f65bb90114dc70b99d47175ac5e4adb4ee",
+    "bytes": 11049
   },
   {
     "path": "Redactieproef.html",
@@ -53,6 +53,51 @@
     "path": "master-depot-audit.json",
     "sha256": "f91d056651cf28240018bbcb58ee406cefba943d1cde10fd02447068e92fe1b9",
     "bytes": 468
+  },
+  {
+    "path": "research-2026-10-30/Dossiers.md",
+    "sha256": "d820ffb7eb83c94020d415a7417eb088cfd728602efe42452663ff02b2358362",
+    "bytes": 4585
+  },
+  {
+    "path": "research-2026-10-30/Manuscript-v2.md",
+    "sha256": "e02c91f3c340d0a9e9380234503cce4eae0c2cb6f5c29b7e4d66d29476b086da",
+    "bytes": 10388
+  },
+  {
+    "path": "research-2026-10-30/Rubrieken-en-bronpoorten.md",
+    "sha256": "beed78b4b05a4d408fe0b2975bc689984b355d8dec1c67724e36840f328e6a13",
+    "bytes": 4511
+  },
+  {
+    "path": "research-2026-10-30/Uitvoeringsrapport.md",
+    "sha256": "391420869621c30bcbdcbedcee02705caca086311990e54e05a13e7d144f27a1",
+    "bytes": 2878
+  },
+  {
+    "path": "research-2026-10-30/W44-bio-onderzoeksqueue.json",
+    "sha256": "e0275f28e3bdfb621f6a0eca23ce9bb6734edbd06ad6e661ee4cc2d33b40ec81",
+    "bytes": 12450
+  },
+  {
+    "path": "research-2026-10-30/claims.json",
+    "sha256": "4f43082ed08767068e776e84702ac4afdfef7f8c62eb5826a1177e187edc9da0",
+    "bytes": 6344
+  },
+  {
+    "path": "research-2026-10-30/prior-dossier-manifest.json",
+    "sha256": "c255a4c9548efc208e3b343c74666ba42bba708b522da7a065e3918cbf87a406",
+    "bytes": 2789
+  },
+  {
+    "path": "research-2026-10-30/sources.json",
+    "sha256": "15a865147d856a0970b6c3e1619a15e167884830f1c1b8b8fb0e98b19129b8ce",
+    "bytes": 2559
+  },
+  {
+    "path": "research-2026-10-30/validation.json",
+    "sha256": "6c9c2d79382915fbcdabb89375b05784ca7a85c7a8696bdd3bc48f4a9edd4d23",
+    "bytes": 701
   },
   {
     "path": "safety-tests.txt",

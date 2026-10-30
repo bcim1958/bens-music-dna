@@ -62,3 +62,11 @@ De nieuwe GitHub-workflow test alleen bij PR of handmatige start; hij plant, sch
 ## Beschermd
 
 Alle toevoegingen zijn nieuwe Express-documenten, twee zelfstandige scripts/tests en een alleen-lezen CI-workflow. Geen bestaande runtime, ratings, manifests, Master/Depot, current/original/legacy, FIFO, reserves, journalen, Walk & Listen of Ontdek-DNA-opslag gewijzigd. Familieplan en Digitale werkplek ongemoeid. Oude registers en W44-kandidaten zijn alleen gelezen; geen afboeking/import.
+
+## Vervolg 30 oktober 2026
+
+Live main en heads #18/#22/#23 zijn ongewijzigd ten opzichte van de vorige controle; #18 conflicteert, #22/#23 blijven open drafts. Deze ronde heeft de zes eerder dunne Special 102-dossiers van een gericht gelezen oorspronkelijke interview-/transcriptbron voorzien. Alle vijftien artiesten hebben nu een gericht bronspoor; dit bewijst nog geen volledige biografische/creditdekking.
+
+Nieuwe, afzonderlijke werklaag: [research-2026-10-30/Dossiers.md](research-2026-10-30/Dossiers.md), [Manuscript-v2.md](research-2026-10-30/Manuscript-v2.md), [rubrieken-/bronpoortenmatrix](research-2026-10-30/Rubrieken-en-bronpoorten.md). Elf nieuwe atomaire claims bewaren de bron als toegeschreven herinnering. De oorspronkelijke tekst, HTML, input/cutoff en bronnenlaag van 29 oktober zijn bytegelijk bewaard. V2 is nog niet vormgegeven of als nieuwe pipeline-input vrijgegeven; nieuwe bronnen zijn niet onder de oude cutoff geschoven.
+
+Een aparte **kandidaat-onderzoeksqueue voor 21 W44-artiesten** is uit dezelfde gecontroleerde #22-selectie afgeleid. `frozen=false` en `published=false`: onderzoek kan beginnen, maar de queue is geen weekmanifest, publicatiebewijs of finale artiestenset. Geen runtime, operationele Registry of beschermde opslag gewijzigd.
