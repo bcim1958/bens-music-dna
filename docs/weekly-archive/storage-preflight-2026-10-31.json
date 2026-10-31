@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-31T06:29:06.730893+00:00",
+  "productionProof": false,
+  "cloudServerSyncProven": false,
+  "destinations": [
+    {
+      "testedParent": "/Users/benvanbelzen/Music",
+      "pass": true,
+      "sha256": "a43cafccc29982ddb113cd68d83f677e29533c75229ebb5380e578159ad4bc9a",
+      "bytes": 67,
+      "device": 16777233,
+      "atomicDirectoryRename": true,
+      "collisionRefused": true,
+      "restoreHashVerified": true,
+      "corruptionDetected": true,
+      "testFilesRemoved": true
+    },
+    {
+      "testedParent": "/Users/benvanbelzen/Library/Mobile Documents/com~apple~CloudDocs",
+      "pass": true,
+      "sha256": "a43cafccc29982ddb113cd68d83f677e29533c75229ebb5380e578159ad4bc9a",
+      "bytes": 67,
+      "device": 16777233,
+      "atomicDirectoryRename": true,
+      "collisionRefused": true,
+      "restoreHashVerified": true,
+      "corruptionDetected": true,
+      "testFilesRemoved": true
+    },
+    {
+      "testedParent": "/Volumes/ELEMENTS",
+      "pass": true,
+      "sha256": "a43cafccc29982ddb113cd68d83f677e29533c75229ebb5380e578159ad4bc9a",
+      "bytes": 67,
+      "device": 16777244,
+      "atomicDirectoryRename": true,
+      "collisionRefused": true,
+      "restoreHashVerified": true,
+      "corruptionDetected": true,
+      "testFilesRemoved": true
+    }
+  ]
+}

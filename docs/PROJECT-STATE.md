@@ -1,5 +1,9 @@
 # Ben's Music DNA — Project State
 
+## Leidende archiefstatus — 31 oktober 2026
+
+[Gebruikersbesluit](DECISION-2026-10-31-WEEKLY-SPOTIFY-ARCHIVE.md) vastgelegd. [Voorbereiding en bewijs](weekly-archive/PREPARATION-2026-10-31.md): exacte lokale/iCloud/Seagate-mappen schrijfbaar getest met synthetische herstel- en integriteitsproef. W44-bestaand bewijs betreft Desktop/embed, nog geen directe API-readback. Geen productie-export of actieve weekautomatisering. Eerstvolgende stap: lokale read-only OAuth/API-proef voorbereiden, daarna W44 end-to-end archiveren. Oudere standen hieronder blijven historisch behouden; beschermde data ongewijzigd.
+
 ## Leidende healthcheck — 29 oktober 2026
 
 [Controle en bewijsgrenzen](HEALTHCHECK-2026-10-29.md): besluit Het verhaal achter de playlist stond al in PR #21 op `c84b5addbdc205cd34e8a4d5954d32884f16e79e`; de healthcheckmelding dat het ontbreekt is achterhaald. De gedateerde aanscherping legt nu vast: primair oude muziek uit bestaande, bijna geheel vanuit de Master Database opgebouwde playlists herontdekken. Magazinearchitectuur behouden; 48p/kleurenslinger/Music Challenge/Smaakmeter/Odometer/Kunst van de Hoes hebben afzonderlijke bewijsstatussen.

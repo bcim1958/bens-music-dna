@@ -1,5 +1,9 @@
 # Ben's Music DNA — Decision Log
 
+## 2026-10-31 — Wekelijkse Spotify-archivering goedgekeurd
+
+[Gedateerd gebruikersbesluit](DECISION-2026-10-31-WEEKLY-SPOTIFY-ARCHIVE.md): directe API-readback na bewezen publicatie, versievaste Exportify-compatibele CSV/manifest, atomaire lokale opslag, geverifieerde iCloud- en Seagate 2TB-kopie, afzonderlijke zondagse herstelcontrole en foutmelding. **Besloten route; werkende implementatie niet bewezen.**
+
 ## 2026-10-29 — Aanscherping: oude muziek opnieuw ontdekken
 
 **Vastgesteld:** Het verhaal achter de playlist vertrekt primair vanuit oude muziek in bestaande, bijna geheel uit de Master Database opgebouwde playlists. [Gedateerde aanscherping en primaire bron](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md). [Healthcheck](HEALTHCHECK-2026-10-29.md) onderscheidt de bestaande besluiten, gemelde besluiten, observaties en voorstellen voor 26–29 oktober. Geen vaste 48-paginanorm, nieuwe quizscore of kleurreeks ingevoerd zonder bewijs.
