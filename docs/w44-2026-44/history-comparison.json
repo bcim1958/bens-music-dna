@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "week": "W42",
+      "expectedIdsEqualLiveReadbackInOrder": true,
+      "trackCount": 21,
+      "artistAliasOrSelectedIdOverlaps": []
+    },
+    {
+      "week": "W43",
+      "expectedIdsEqualLiveReadbackInOrder": true,
+      "trackCount": 21,
+      "artistAliasOrSelectedIdOverlaps": []
+    }
+  ],
+  "all42CatalogueVariantIdsAgainstW42W43": "PASS",
+  "unknownCoverage": [
+    "private or unavailable playlists",
+    "unexported device history",
+    "unrecorded artist aliases",
+    "complete ISRC or audio fingerprint matching"
+  ],
+  "note": "Public Spotify readback proves current contents, not historical creation time. W42 receipt and W43 user confirmation supply publication provenance."
+}

@@ -1,0 +1,77 @@
+# W44 — goudgroene overgang vanuit de bestaande acht hoezen
+
+## Actuele richting na beoordeling met Ben — 29 oktober 2026
+
+Ben bevestigt dat de nieuwe afbeelding een natuurlijke kleurovergang in de sfeer van de voorgaande acht hoezen moet zijn. De smaragdproeven hebben dit niet bereikt: v1/v2 combineerden een groene steen met een geel/oranje wereld; v3 was samenhangender maar sprong naar een koelere groene/grijze beeldwereld. Alle drie zijn voor W44 verworpen.
+
+**W44 wordt opnieuw vanuit de werkelijke W43-hoes opgebouwd:** dezelfde warme, vurige, lichtende sfeer; een kleine stap van goud/geel naar goudgroen die in de gehele scène doorloopt. Steen, hemelbol, hemellicht, nevel, rivier en reflecties delen dezelfde geleidelijke kleurbeweging. Geen groene steen op een losstaand oranje landschap, geen koele grijze daglichtscène en geen vlak groen filter.
+
+De steentoewijzing volgt de kleurkeuze. Voor deze tussenstap wordt **chrysoberil, steen 9**, gebruikt. Gewone chrysoberil kan goudgeel en geelgroen zijn. De afgewezen smaragdkeuze blijft hieronder als ontwerphistorie bewaard en geldt niet meer voor W44. De vierde proef gebruikt direct de W43-hoes, niet een van de eerdere W44-proeven.
+
+Bronnen: [GIA — Chrysoberyl](https://cms.gia.edu/dam/jcr%3A2774854e-0902-4498-9c58-3b9c8fbd1d0f/0113763c-1612-4c4c-aa74-226c519afa5d.pdf), [International Colored Gemstone Association — Chrysoberyl](https://www.gemstone.org/chrysoberyl). Alleen mineralogische gegevens gebruikt, geen symbolische eigenschappen.
+
+## Gekozen hoes na gebruikersreactie
+
+De vierde generatie is op 29 oktober in het gesprek getoond. Ben reageerde **“Mooi!”**. Deze reactie hoort bij de chrysoberilhoes die direct vanuit W43 is gemaakt; er is daarna geen nieuwe afbeelding gegenereerd. V4 wordt daarom aangehouden. De daaropvolgend overwogen verdere kleurnuance is niet uitgevoerd.
+
+Bestand: W44-Chrysoberil-hoes-v4-800.jpg. Prompt: cover-prompt-v4.txt. Ingebouwde imagegen gebruikt; PNG-master blijft lokaal bewaard. De 800×800-JPEG is afgeleid voor Spotify en voldoet aan de payloadgrens.
+
+### Korte tekst
+
+CHRYSOBERIL · W44 — Een goudgele tot geelgroene edelsteen van berylliumaluminiumoxide. Het mineraal heeft een hardheid van 8½ op de schaal van Mohs. Bekende vindplaatsen liggen in Brazilië en Sri Lanka. Steen 9 van de Music-DNA-slinger.
+
+## Historische keuzes en afgewezen proeven
+
+# Eerdere smaragdkeuze (vervallen)
+
+Keuzedatum: 29 oktober 2026. Dit is een redactionele uitvoeringskeuze onder de actuele gebruikersopdracht, geen gereconstrueerde historische steenkeuze.
+
+## Opdracht en besluit
+
+Ben antwoordde op de vraag naar de W44-steen: “Ik heb geen idee. Dit is iets dat buiten mij gebeurt. Het moet passen bij de keten die we maken, qua kleur.” Dat verduidelijkt dat de keuze bij de uitvoering ligt. Er wordt geen extra persoonlijke mineralenkeuze of historische goedkeuring van hem verlangd.
+
+**Gekozen: SMARAGD · W44 · STEEN 9**, in warm bladgroen met geelgroene en gouden lichtaccenten. Het door Ben aangeleverde overzicht van de werkelijke W36–W43-hoezen is de visuele bron: W43 oogt nog vooral goudgeel/olijfgroen. Daarom krijgt W44 slechts een volgende, warmgroene kleurstap. De kleurbenaming van een mineraal alleen is onvoldoende. Dit is een kleur- en compositiekeuze, geen mineralogisch noodzakelijke volgorde of muziekpsychologische claim.
+
+## Gecontroleerde bestaande reeks
+
+| Week | Steen | Kleurfunctie | Bewijs |
+| --- | --- | --- | --- |
+| W39 | Carneool | Oranjerood | WEEKLY-COVER-VISUAL-FAMILY-2026-10-03.md |
+| W40 | Imperiale topaas | Roodachtig oranje | Weekmanifest en vaste hoesfamilie |
+| W41 | Citrien | Warm goudgeel | data/week-publication-manifest-2026-41.json |
+| W42 | Heliodoor | Geel met subtiele groene tint | data/week-publication-manifest-2026-42.json; selectionReason |
+| W43 | Peridoot | Geelgroen | archive/2026-10-25/W43/sources/W43-publicatiekandidaat.json; lokale W43-hoes |
+| W44 | Smaragd | Vol groen | Deze gedelegeerde uitvoeringskeuze |
+
+De eerdere W43-publicatievoorbereiding vermeldt W36 Granaat, W37 Robijn en W38 Vuuropaal; W37/W38 worden daarin ondersteund door rechtstreeks gelezen Spotify-beschrijvingen. Die historische onderbouwing wordt hier niet als nieuwe live visuele inspectie gepresenteerd. Voor de W44-overgang zijn vooral de gecontroleerde W40–W43-bronnen bepalend.
+
+Latere weken worden hier niet vooraf aan steennamen gekoppeld. Een volgende beweging naar groenblauw blijft mogelijk; de oudere jaarfinale met opaal blijft een apart concept en wordt niet als definitieve reeks ingevuld.
+
+## Korte tekst voor Spotify
+
+SMARAGD · W44 — Een groene tot blauwgroene variëteit van beryl. Chroom en vanadium geven de steen zijn groene kleur. Bekende vindplaatsen liggen in Colombia, Zambia en Brazilië. Steen 9 van de Music-DNA-slinger.
+
+Bronnen, buiten de playlistalinea:
+
+- [GIA — Emerald Description](https://www.gia.edu/emerald-description): groene tot blauwgroene beryl.
+- [GIA — Seeing Green](https://www.gia.edu/seeing-green): chroom/vanadium, kleur en vindplaatsen.
+
+## Hoesopdracht
+
+Gebruik de bestaande W43-hoes als directe beeldreferentie. Behoud compositie, merkhiërarchie, reiziger, dal, watervallen, hemelbol en DNA-footer. Verander alleen de weekidentiteit en steenkleur/steenvorm: SMARAGD; #2026-44; GROEN · BERYL · STEEN 9; WEEK 44 / VAN 52. Een transparante rechthoekige trapslijpvorm onderscheidt de smaragd van de peridoot. Warme gouden horizon verbindt de groene editie met de eerdere warme reeks; steen en lichtaccenten zijn warm bladgroen met goudgeel. Vermijd turquoise/cyaan en een koude blauwgroene hemelbol. Geen nieuwe sokkelcompositie of willekeurige huisstijl.
+
+Generatie gebeurt met de ingebouwde imagegen. De gebruikte prompt en definitieve beeldhash worden bij het resultaat opgeslagen. Een gemaakt beeld wordt visueel op tekst, week, steenteller en continuïteit gecontroleerd vóór gebruik in Spotify.
+
+## Correctie na visuele bron van Ben
+
+De eerste W44-generatie was te koel en te turquoise ten opzichte van de bestaande reeks. Ben vroeg op 29 oktober met zijn screenshot van W36–W43 nadrukkelijk nog eens goed te kijken. De screenshot is als beeld in het gesprek bekeken; de lokale screenshotbytes konden niet worden geopend en zijn niet gehasht. De eerste generatie blijft lokaal bewaard als afgewezen ontwerpversie en wordt niet gebruikt voor publicatie. De tweede generatie corrigeert kleur en licht; compositie en teksten blijven behouden.
+
+Eerder voorbereid, inmiddels afgewezen bestand: W44-Smaragd-hoes-v2-800.jpg. De visuele controle bevestigt SMARAGD, #2026-44, GROEN · BERYL · STEEN 9, WEEK 44 / VAN 52, vaste footer en een warmere overgang vanaf W43. Dit is redactionele beeldcontrole, geen bewering dat Ben deze afzonderlijke versie al heeft goedgekeurd.
+
+## Nadere gebruikerscorrectie — kleurharmonie van de hele wereld
+
+Ben verduidelijkte: “het is nu (kort door de bocht gezegd) groen met geel. Het is geen natuurlijk geheel”. De tweede versie is daarmee geen vrijgegeven eindbeeld. De eerdere opdracht om de gouden horizon grotendeels te behouden blijkt te beperkt: groen in steen/hemelbol en geel/oranje in landschap blijven twee gescheiden kleurwerelden.
+
+De derde proef corrigeert de verlichting van de hele scène: samenhang tussen hemel, nevel, bergen, water, steen en reflecties; natuurlijke lichtafval en neutrale highlights; beperkte zachte warme accenten in plaats van brede verzadigde gele/oranje vlakken. Geen vlak groen filter, geen wijziging van compositie, teksten of muziekinhoud. De afbeelding blijft een voorstel tot de kleurharmonie is beoordeeld.
+
+Derde proefbestand: W44-Smaragd-hoes-v3-800.jpg. Volledige scèneverlichting herzien, tekst en compositie gecontroleerd, JPEG-payload onder 256 KB. Status: voorstel na gebruikersfeedback, niet gepubliceerd. De eerste twee ontwerpen blijven bewaard.
