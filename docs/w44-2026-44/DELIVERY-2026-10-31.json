@@ -1,0 +1,228 @@
+{
+  "week": "2026-44",
+  "status": "published",
+  "verifiedAt": "2026-10-31T06:14:04.735536+00:00",
+  "timezone": "Europe/Amsterdam",
+  "playlistId": "1oUn9w2BWTztyCmARl8xzk",
+  "url": "https://open.spotify.com/playlist/1oUn9w2BWTztyCmARl8xzk",
+  "name": "Ontdek DNA #2026-44",
+  "owner": {
+    "id": "11124659869",
+    "name": "Ben van Belzen"
+  },
+  "public": true,
+  "folder": "♦️ DNA / 💎 Ontdek DNA",
+  "count": 21,
+  "exactOrderedIdMatch": true,
+  "durationMs": 5276929,
+  "allEmbedTracksPlayable": true,
+  "tracks": [
+    {
+      "position": 1,
+      "uri": "spotify:track:4OEjJbIBMzaTFsYJhBF4DO",
+      "title": "Bittersweet Dreams",
+      "subtitle": "Night Laser",
+      "duration": 207010,
+      "isPlayable": true
+    },
+    {
+      "position": 2,
+      "uri": "spotify:track:3pUuCPjhocrhbfQ8V0qO1G",
+      "title": "Ready to Give Me Your Love",
+      "subtitle": "Starmen",
+      "duration": 247508,
+      "isPlayable": true
+    },
+    {
+      "position": 3,
+      "uri": "spotify:track:7s3iIgurAG0xgDg1ebAweA",
+      "title": "Destiny Calling",
+      "subtitle": "Mayank, Gui Oliver",
+      "duration": 185055,
+      "isPlayable": true
+    },
+    {
+      "position": 4,
+      "uri": "spotify:track:5R8u2wIpO2OKg2EhSygZne",
+      "title": "All The Right Moves",
+      "subtitle": "Nitrate",
+      "duration": 234120,
+      "isPlayable": true
+    },
+    {
+      "position": 5,
+      "uri": "spotify:track:6Ko5PM4RK7eumjqnKt5Ahi",
+      "title": "Standing on the Edge",
+      "subtitle": "Vypera",
+      "duration": 235546,
+      "isPlayable": true
+    },
+    {
+      "position": 6,
+      "uri": "spotify:track:45yGG3vEZTV8MBVxKqXAq5",
+      "title": "Life Kills",
+      "subtitle": "Fans Of The Dark",
+      "duration": 314307,
+      "isPlayable": true
+    },
+    {
+      "position": 7,
+      "uri": "spotify:track:6jIWMzMQ9NuGHAdPFxAjcI",
+      "title": "Sweet Little Dreamer",
+      "subtitle": "Junkyard Drive",
+      "duration": 282193,
+      "isPlayable": true
+    },
+    {
+      "position": 8,
+      "uri": "spotify:track:5aISIm0BHmorW4Z7hMDdg7",
+      "title": "Angels Calling",
+      "subtitle": "Smoking Snakes",
+      "duration": 198109,
+      "isPlayable": true
+    },
+    {
+      "position": 9,
+      "uri": "spotify:track:6VnK5Xeg2u7Zg5qJqKYaDo",
+      "title": "Homesick Parade",
+      "subtitle": "Trench Dogs",
+      "duration": 176381,
+      "isPlayable": true
+    },
+    {
+      "position": 10,
+      "uri": "spotify:track:6lmrfYBEaTpKk3M30yUrZ7",
+      "title": "Nobody Gets out Alive",
+      "subtitle": "Midas",
+      "duration": 286170,
+      "isPlayable": true
+    },
+    {
+      "position": 11,
+      "uri": "spotify:track:6Ny1GkA2KbnytfBYyQskzd",
+      "title": "Lost at Sea",
+      "subtitle": "Sanhedrin",
+      "duration": 267933,
+      "isPlayable": true
+    },
+    {
+      "position": 12,
+      "uri": "spotify:track:2h7J8G3II0eZj0Kl8uDWmH",
+      "title": "Heavy is the Crown of Bone",
+      "subtitle": "Crypt Sermon",
+      "duration": 308542,
+      "isPlayable": true
+    },
+    {
+      "position": 13,
+      "uri": "spotify:track:6jEGUmbMdvWq6Di1Kv61J0",
+      "title": "The Warning",
+      "subtitle": "Ashbury",
+      "duration": 238706,
+      "isPlayable": true
+    },
+    {
+      "position": 14,
+      "uri": "spotify:track:3E6xrYViwCil3oK4pkqpZ4",
+      "title": "Wild Flowers",
+      "subtitle": "Lykantropi",
+      "duration": 252213,
+      "isPlayable": true
+    },
+    {
+      "position": 15,
+      "uri": "spotify:track:6eKjzKEAz48JsIjsHTkGHH",
+      "title": "Trick of the Trade",
+      "subtitle": "Magic Pie",
+      "duration": 368586,
+      "isPlayable": true
+    },
+    {
+      "position": 16,
+      "uri": "spotify:track:58C4uAvr4MTr88Chmkc6nz",
+      "title": "Unself Portrait",
+      "subtitle": "Artificial Language",
+      "duration": 229963,
+      "isPlayable": true
+    },
+    {
+      "position": 17,
+      "uri": "spotify:track:0Ws0ZUpn49O9B1P4lVNvPx",
+      "title": "Planet Silver Screen",
+      "subtitle": "Four Stroke Baron",
+      "duration": 229576,
+      "isPlayable": true
+    },
+    {
+      "position": 18,
+      "uri": "spotify:track:69feEDlBjijnisHbOWgH7P",
+      "title": "Be My Hiroshima",
+      "subtitle": "Grave Pleasures",
+      "duration": 226348,
+      "isPlayable": true
+    },
+    {
+      "position": 19,
+      "uri": "spotify:track:3lS99gJJAWuxKxQfXArvvx",
+      "title": "Runaway",
+      "subtitle": "LeBrock",
+      "duration": 232846,
+      "isPlayable": true
+    },
+    {
+      "position": 20,
+      "uri": "spotify:track:4O6pSwn4xxx8FdBBdqeEin",
+      "title": "Out of Time",
+      "subtitle": "Kalax, PYXIS, Jay Diggs",
+      "duration": 295221,
+      "isPlayable": true
+    },
+    {
+      "position": 21,
+      "uri": "spotify:track:6Hy7t4RIksivCxEXyu6T1b",
+      "title": "Dancing in the Darkness",
+      "subtitle": "Droid Bishop",
+      "duration": 260596,
+      "isPlayable": true
+    }
+  ],
+  "description": "Van melodieuze hardrock en glam via heavy rock en progressieve zijpaden naar donkere melodieën en synths. 21 persoonlijke ontdekkingen. CHRYSOBERIL · W44 · STEEN 9 — Goudgeel tot geelgroen berylliumaluminiumoxide; hardheid 8½ Mohs. Vindplaatsen: Brazilië en Sri Lanka.",
+  "descriptionDeviation": "Spotify Desktop rejected newlines and enforced 300 characters. The 268-character live text preserves musical and mineralogical information; full source description remains unchanged.",
+  "artwork": {
+    "file": "W44-Chrysoberil-hoes-v4-800.jpg",
+    "sha256": "50569d14c58c52f5eff87c7fd74ddf208bb10f149284f87a213688df5ae6445f",
+    "spotifyImageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da842648cb4256ef2ecd904b8111",
+    "verified": "Approved v4 JPEG selected through Spotify file picker, saved and visually confirmed after reopening playlist."
+  },
+  "publicationRoute": "Authenticated Spotify Desktop UI in existing Ben van Belzen session. Existing website route unavailable for W44. No Spotify connector tool exposed. No new credential or permission granted.",
+  "verification": [
+    "Library search for 2026-44 returned no results before creation.",
+    "Native account owner checked; playlist made private during preparation.",
+    "21 source URIs pasted as one batch; all 21 rows visible in fixed custom order.",
+    "Public Spotify embed read back independently: all 21 exact IDs match ordered source.",
+    "Reopened from normal Ontdek DNA folder: public, correct name, owner, 21 tracks, cover and full shortened description.",
+    "Additional empty temporary Mijn playlist 366 removed from library; only one named W44 playlist retained."
+  ],
+  "protectedState": {
+    "ratingCount": 36,
+    "sourceRegisterSha256": "7e810da502e4e229d3e0de5723074612062d4ce9365aaa012e389beb02b76b87",
+    "ratingSourceUnchanged": true,
+    "currentOriginalLegacy": "untouched",
+    "reserves": "untouched; Psychlona and Barock Project remain positive leftovers",
+    "FIFO": "untouched",
+    "journals": "untouched",
+    "WalkAndListen": "untouched"
+  },
+  "githubAtPublication": {
+    "main": "e7351f0c501d32a27248cb708d71a0106ee6abaf",
+    "pr22HeadBeforeReceipt": "ac5cab7daf53b7e60ab9eea88a57beb5627ad2bc",
+    "pr22": "open draft, not merged",
+    "headChecks": "regression and protected-storage-browser success",
+    "mainPagesDeployment": "success"
+  },
+  "limits": [
+    "No auditively verified transition/flow claim.",
+    "Embed playability and active native playback controls do not prove full audio playback of all tracks.",
+    "Automatic future Saturday delivery remains unproven; legacy publication pages remain quarantined."
+  ]
+}
