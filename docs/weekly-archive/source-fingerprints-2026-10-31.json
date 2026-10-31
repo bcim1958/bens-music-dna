@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/Users/benvanbelzen/Documents/ChatGPT/Music DNA/output/W44-aflevering-2026-10-31/delivery-receipt.json",
+    "sha256": "75869e78dfe2d3c17c8b64622a411aa861928770bb9804f12d3d440cbe0077f3"
+  },
+  {
+    "path": "/Users/benvanbelzen/Documents/ChatGPT/Music DNA/output/W44-aflevering-2026-10-31/spotify-live-readback.json",
+    "sha256": "182c38e13b02118ddd516948570e4a542bcf348a8bdfb01325f7f4fd414ccd51"
+  },
+  {
+    "path": "/Users/benvanbelzen/Documents/ChatGPT/Music DNA/output/W44-aflevering-2026-10-31/spotify-import.csv",
+    "sha256": "d33b171a2c757fbe3acf26130e061af28c66dd72ee84844624bf02102655ba3a"
+  },
+  {
+    "path": "/Users/benvanbelzen/Documents/ChatGPT/Music DNA/w44-finalisation/docs/w44-2026-44/selection.json",
+    "sha256": "e0072b3e56575e369b6b3a1d92804f86cd228eb74be78239237e0a124fbd691e"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-31T06:29:16.610029+00:00",
+  "productionProof": false,
+  "cloudServerSyncProven": false,
+  "destinations": [
+    {
+      "testedParent": "/Users/benvanbelzen/Music/Music-DNA/Spotify-Archive",
+      "pass": true,
+      "sha256": "de4805de12e31b4b86e2a596145e6f0009a627fda9dc65f57e84a8e42a78c6cc",
+      "bytes": 67,
+      "device": 16777233,
+      "atomicDirectoryRename": true,
+      "collisionRefused": true,
+      "restoreHashVerified": true,
+      "corruptionDetected": true,
+      "testFilesRemoved": true
+    },
+    {
+      "testedParent": "/Users/benvanbelzen/Library/Mobile Documents/com~apple~CloudDocs/Music-DNA/Spotify-Archive",
+      "pass": true,
+      "sha256": "de4805de12e31b4b86e2a596145e6f0009a627fda9dc65f57e84a8e42a78c6cc",
+      "bytes": 67,
+      "device": 16777233,
+      "atomicDirectoryRename": true,
+      "collisionRefused": true,
+      "restoreHashVerified": true,
+      "corruptionDetected": true,
+      "testFilesRemoved": true
+    },
+    {
+      "testedParent": "/Volumes/Seagate 2TB/Music-DNA/Spotify-Archive",
+      "pass": true,
+      "sha256": "de4805de12e31b4b86e2a596145e6f0009a627fda9dc65f57e84a8e42a78c6cc",
+      "bytes": 67,
+      "device": 16777247,
+      "atomicDirectoryRename": true,
+      "collisionRefused": true,
+      "restoreHashVerified": true,
+      "corruptionDetected": true,
+      "testFilesRemoved": true
+    }
+  ]
+}

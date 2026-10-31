@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "exportify-base-en-v1",
+  "upstreamCommit": "d8eaeb92e7911a2bb626bdcb9d378b0cfe086c12",
+  "header": [
+    "Track URI",
+    "Track Name",
+    "Artist URI(s)",
+    "Artist Name(s)",
+    "Album URI",
+    "Album Name",
+    "Album Artist URI(s)",
+    "Album Artist Name(s)",
+    "Album Release Date",
+    "Album Image URL",
+    "Disc Number",
+    "Track Number",
+    "Track Duration (ms)",
+    "Track Preview URL",
+    "Explicit",
+    "Popularity",
+    "ISRC"
+  ],
+  "encoding": "UTF-8",
+  "delimiter": ",",
+  "lineEnding": "CRLF",
+  "compatibilityTested": false
+}
