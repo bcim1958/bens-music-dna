@@ -1,3 +1,7 @@
+## W44-aflevercontrole — 31 oktober 2026
+
+[Live controle en handmatige afleverroute](w44-2026-44/DELIVERY-CHECK-2026-10-31.md): 21 geordende unieke URI’s, CSV/selection en Chrysoberil-v4-hoes opnieuw gecontroleerd; alle 36 ratings en beschermde gegevens behouden. Spotify-account Ben van Belzen zichtbaar; bibliotheekzoekopdracht 2026-44 geeft geen resultaat. Geen nieuwe playlist aangemaakt. Auditieve flowcontrole, actuele accountafspeelbaarheid en volledige doelplaylist-readback blijven open. **Importpakket geleverd; Spotify-publicatie NIET uitgevoerd. PR #22 blijft draft/open; main niet gewijzigd.** Geen automatische zaterdagwerking bewezen. Hieronder staan eerdere peilingen.
+
 ## W44-hoes gekozen — 29 oktober 2026
 
 Ben reageert “Mooi!” op de direct vanuit W43 gemaakte goudgroene chrysoberilhoes (v4). [Gekozen hoes en kleuronderbouwing](w44-2026-44/GEMSTONE-2026-44.md): CHRYSOBERIL, W44, steen 9. De smaragdproeven blijven verworpen ontwerphistorie. Muziekselectie en alle beoordelingen ongewijzigd; Spotify-aanmaak/readback/publicatie blijven open. Onderstaande koppen zijn eerdere ontwerpstanden.
