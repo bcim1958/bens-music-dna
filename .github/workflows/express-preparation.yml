@@ -18,5 +18,24 @@ jobs:
           node-version: '22'
       - name: Failure, retry and integrity checks (synthetic, no external writes)
         run: node test/express-weekly-regression.cjs
+      - name: Read-only published week source adapter (synthetic)
+        run: node test/express-week-source-regression.cjs
+  reading-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright@1.62.1
+      - run: npx playwright install --with-deps chromium
+      - name: Exact manuscript text, sources and viewport navigation
+        run: node test/express-reading-proof-browser.cjs /tmp/express-reading-proof
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: express-reading-proof-viewport-evidence
+          path: /tmp/express-reading-proof
 # No schedule, deployment, credentials, Spotify writer or release authority.
 # Enable recurring production only after real route evidence and explicit release.

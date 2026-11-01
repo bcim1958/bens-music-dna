@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "week": "2026-W44",
+  "frozen": true,
+  "setKind": "published-playlist-snapshot",
+  "cohortMeaning": "Published W44 selection; does not reconstruct a 2.0 original official cohort or extra cohort.",
+  "frozenAt": "2026-11-01T10:34:19.439002+00:00",
+  "playlistUrl": "https://open.spotify.com/playlist/1oUn9w2BWTztyCmARl8xzk",
+  "provenance": {
+    "sourceHead": "5efb2258fb0a428a6d760238565605c2d9fe31da",
+    "selectionSha256": "e0072b3e56575e369b6b3a1d92804f86cd228eb74be78239237e0a124fbd691e",
+    "deliveryReceiptSha256": "75869e78dfe2d3c17c8b64622a411aa861928770bb9804f12d3d440cbe0077f3",
+    "readbackSha256": "bd6344d3cf725d3ce83d70e420828a7ba776aab4fceb18514516b9be16a0bcc1"
+  },
+  "tracks": [
+    {
+      "uri": "spotify:track:4OEjJbIBMzaTFsYJhBF4DO",
+      "artistId": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr",
+      "artistName": "Night Laser",
+      "title": "Bittersweet Dreams"
+    },
+    {
+      "uri": "spotify:track:3pUuCPjhocrhbfQ8V0qO1G",
+      "artistId": "spotify:artist:1jLxOyZv6hLRHuXaw1KMXr",
+      "artistName": "Starmen",
+      "title": "Ready to Give Me Your Love"
+    },
+    {
+      "uri": "spotify:track:7s3iIgurAG0xgDg1ebAweA",
+      "artistId": "spotify:artist:0OrBdxyVoXyVgAM6pI79D2",
+      "artistName": "Mayank",
+      "title": "Destiny Calling"
+    },
+    {
+      "uri": "spotify:track:5R8u2wIpO2OKg2EhSygZne",
+      "artistId": "spotify:artist:6wEVMZieIv9ttCzvuDYev8",
+      "artistName": "Nitrate",
+      "title": "All the Right Moves"
+    },
+    {
+      "uri": "spotify:track:6Ko5PM4RK7eumjqnKt5Ahi",
+      "artistId": "spotify:artist:03eYJDAyUMwFRdmW5cgItV",
+      "artistName": "Vypera",
+      "title": "Standing on the Edge"
+    },
+    {
+      "uri": "spotify:track:45yGG3vEZTV8MBVxKqXAq5",
+      "artistId": "spotify:artist:1uJoivXxtZjowli7GAAOOI",
+      "artistName": "Fans Of The Dark",
+      "title": "Life Kills"
+    },
+    {
+      "uri": "spotify:track:6jIWMzMQ9NuGHAdPFxAjcI",
+      "artistId": "spotify:artist:7HWdmhoIhvXEHikALsGT4w",
+      "artistName": "Junkyard Drive",
+      "title": "Sweet Little Dreamer"
+    },
+    {
+      "uri": "spotify:track:5aISIm0BHmorW4Z7hMDdg7",
+      "artistId": "spotify:artist:4QanEE5Wrkq1JhWMpWKz4f",
+      "artistName": "Smoking Snakes",
+      "title": "Angels Calling"
+    },
+    {
+      "uri": "spotify:track:6VnK5Xeg2u7Zg5qJqKYaDo",
+      "artistId": "spotify:artist:5I22u9LXP5xKHeCRlHTUZ5",
+      "artistName": "Trench Dogs",
+      "title": "Homesick Parade"
+    },
+    {
+      "uri": "spotify:track:6lmrfYBEaTpKk3M30yUrZ7",
+      "artistId": "spotify:artist:1xbUKM3c1WNURoDHEDGXBf",
+      "artistName": "Midas",
+      "title": "Nobody Gets Out Alive"
+    },
+    {
+      "uri": "spotify:track:6Ny1GkA2KbnytfBYyQskzd",
+      "artistId": "spotify:artist:2p4bCEJL6k03ErhdPTPEbu",
+      "artistName": "Sanhedrin",
+      "title": "Lost at Sea"
+    },
+    {
+      "uri": "spotify:track:2h7J8G3II0eZj0Kl8uDWmH",
+      "artistId": "spotify:artist:363ih5wuNGWBFcjeKFG8cc",
+      "artistName": "Crypt Sermon",
+      "title": "Heavy Is the Crown of Bone"
+    },
+    {
+      "uri": "spotify:track:6jEGUmbMdvWq6Di1Kv61J0",
+      "artistId": "spotify:artist:1olZcNG9rq4RGVVd69Tj4e",
+      "artistName": "Ashbury",
+      "title": "The Warning"
+    },
+    {
+      "uri": "spotify:track:3E6xrYViwCil3oK4pkqpZ4",
+      "artistId": "spotify:artist:0oRylpNxHxI8fP7Mpmo4QU",
+      "artistName": "Lykantropi",
+      "title": "Wild Flowers"
+    },
+    {
+      "uri": "spotify:track:6eKjzKEAz48JsIjsHTkGHH",
+      "artistId": "spotify:artist:0ABvgllZiW792ERHXuJlGz",
+      "artistName": "Magic Pie",
+      "title": "Trick of the Trade"
+    },
+    {
+      "uri": "spotify:track:58C4uAvr4MTr88Chmkc6nz",
+      "artistId": "spotify:artist:10Mmz2UngxRjkZmz0a1H32",
+      "artistName": "Artificial Language",
+      "title": "Unself Portrait"
+    },
+    {
+      "uri": "spotify:track:0Ws0ZUpn49O9B1P4lVNvPx",
+      "artistId": "spotify:artist:091cSUyhQCRgJreqXy17m5",
+      "artistName": "Four Stroke Baron",
+      "title": "Planet Silver Screen"
+    },
+    {
+      "uri": "spotify:track:69feEDlBjijnisHbOWgH7P",
+      "artistId": "spotify:artist:7Gbgr3pNct3IvdhQLO8wPU",
+      "artistName": "Grave Pleasures",
+      "title": "Be My Hiroshima"
+    },
+    {
+      "uri": "spotify:track:3lS99gJJAWuxKxQfXArvvx",
+      "artistId": "spotify:artist:461TaZqofVfcQo2wtMwnQJ",
+      "artistName": "LeBrock",
+      "title": "Runaway"
+    },
+    {
+      "uri": "spotify:track:4O6pSwn4xxx8FdBBdqeEin",
+      "artistId": "spotify:artist:2o88SjmtVVVyCmTGCuSPoY",
+      "artistName": "Kalax",
+      "title": "Out of Time"
+    },
+    {
+      "uri": "spotify:track:6Hy7t4RIksivCxEXyu6T1b",
+      "artistId": "spotify:artist:0HPVHsbV2yIYPp2Pk4kdHe",
+      "artistName": "Droid Bishop",
+      "title": "Dancing in the Darkness"
+    }
+  ]
+}

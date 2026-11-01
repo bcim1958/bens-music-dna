@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "viewport": "iMac",
+      "width": 1440,
+      "height": 900,
+      "sections": 10,
+      "manuscriptParagraphsMatched": 23,
+      "sourceEntries": 15,
+      "allNavigation": true,
+      "noHorizontalOverflow": true,
+      "returnPosition": true,
+      "jsErrors": [],
+      "realDevice": false
+    },
+    {
+      "viewport": "iPhone",
+      "width": 390,
+      "height": 844,
+      "sections": 10,
+      "manuscriptParagraphsMatched": 23,
+      "sourceEntries": 15,
+      "allNavigation": true,
+      "noHorizontalOverflow": true,
+      "returnPosition": true,
+      "jsErrors": [],
+      "realDevice": false
+    },
+    {
+      "viewport": "iPad",
+      "width": 820,
+      "height": 1180,
+      "sections": 10,
+      "manuscriptParagraphsMatched": 23,
+      "sourceEntries": 15,
+      "allNavigation": true,
+      "noHorizontalOverflow": true,
+      "returnPosition": true,
+      "jsErrors": [],
+      "realDevice": false
+    }
+  ],
+  "realDeviceProven": false,
+  "publicationProven": false
+}

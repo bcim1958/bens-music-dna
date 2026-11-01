@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "weekly-issue",
+  "week": "2026-W44",
+  "revision": 2,
+  "cutoff": "2026-11-01T10:36:14Z",
+  "artifacts": [
+    {
+      "role": "manuscript",
+      "path": "research-2026-10-30/Manuscript-v2.md",
+      "sha256": "e02c91f3c340d0a9e9380234503cce4eae0c2cb6f5c29b7e4d66d29476b086da"
+    },
+    {
+      "role": "claims",
+      "path": "research-2026-11-01/claims-v2.json",
+      "sha256": "5159b4bbfeb0ce0b17ee1188ada0d25ef731bdf0191d29b74cd4297fa3c5236a"
+    },
+    {
+      "role": "playlist",
+      "path": "sources/playlist.json",
+      "sha256": "1b9454535c50b1a51eb3839c568d3b2ee1774265646997ac4cc922bcb867fd8b"
+    },
+    {
+      "role": "readingProof",
+      "path": "research-2026-11-01/Redactieproef-v2.html",
+      "sha256": "a4801bdbb867a79a3bb10ac5a3a0b11d8648c21c0d3f3abd1078c0693c817df2"
+    },
+    {
+      "role": "weekManifest",
+      "path": "research-2026-11-01/week-manifest-snapshot.json",
+      "sha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add"
+    },
+    {
+      "role": "weekReadback",
+      "path": "research-2026-11-01/week-readback.json",
+      "sha256": "5f11deb1dda418b7fbbd9558cfa71ca559f8515a623a97a34592666f2584836e"
+    }
+  ],
+  "releaseAuthorized": false
+}

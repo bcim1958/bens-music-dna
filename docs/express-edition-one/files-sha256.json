@@ -16,8 +16,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "561d0f267d4fcbe2d0a1da4a9e4f14f65bb90114dc70b99d47175ac5e4adb4ee",
-    "bytes": 11049
+    "sha256": "c7586eee7addfbdb8794d12be49bc1a71d580b235852675320636ceb90df64b8",
+    "bytes": 12246
   },
   {
     "path": "Redactieproef.html",
@@ -43,6 +43,11 @@
     "path": "existing-regressions.json",
     "sha256": "5cc9ec4880e6df00cef0f4d51707d79b9c9a7c0428de4458d18ffa77fc29a57b",
     "bytes": 2802
+  },
+  {
+    "path": "input-r2.json",
+    "sha256": "d2afacc7b8cd7a6495eb22def70b56557df64698b8df1c48d36d07ec041de7d4",
+    "bytes": 1246
   },
   {
     "path": "input.json",
@@ -98,6 +103,71 @@
     "path": "research-2026-10-30/validation.json",
     "sha256": "6c9c2d79382915fbcdabb89375b05784ca7a85c7a8696bdd3bc48f4a9edd4d23",
     "bytes": 701
+  },
+  {
+    "path": "research-2026-11-01/DELIVERY-2026-10-31.json",
+    "sha256": "75869e78dfe2d3c17c8b64622a411aa861928770bb9804f12d3d440cbe0077f3",
+    "bytes": 7589
+  },
+  {
+    "path": "research-2026-11-01/Redactieproef-v2.html",
+    "sha256": "a4801bdbb867a79a3bb10ac5a3a0b11d8648c21c0d3f3abd1078c0693c817df2",
+    "bytes": 27138
+  },
+  {
+    "path": "research-2026-11-01/Uitvoeringsrapport.md",
+    "sha256": "38c8d94b4ed0c05a8a9ee3e4c483045e18e1ddb217a2b42c66d5089ab2aedfe8",
+    "bytes": 4525
+  },
+  {
+    "path": "research-2026-11-01/browser-v2.json",
+    "sha256": "4e6f8082e4e7a7645b40665b34babe2cf463d2fbefd72170a6b3341249f5178f",
+    "bytes": 1023
+  },
+  {
+    "path": "research-2026-11-01/claims-v2.json",
+    "sha256": "5159b4bbfeb0ce0b17ee1188ada0d25ef731bdf0191d29b74cd4297fa3c5236a",
+    "bytes": 10815
+  },
+  {
+    "path": "research-2026-11-01/preflight.json",
+    "sha256": "d0d773252297c43a5358234a13142e1594fcceb83b6c5706ea02ca222fd0cd19",
+    "bytes": 447
+  },
+  {
+    "path": "research-2026-11-01/preparation-tests.txt",
+    "sha256": "bf1bbe7893319074c333a0747c088beb308d87947647172a8d9591dddd1a08dc",
+    "bytes": 1314
+  },
+  {
+    "path": "research-2026-11-01/selection.json",
+    "sha256": "e0072b3e56575e369b6b3a1d92804f86cd228eb74be78239237e0a124fbd691e",
+    "bytes": 27861
+  },
+  {
+    "path": "research-2026-11-01/source-adapter-tests.txt",
+    "sha256": "b739f5f621c51f9a9eb36c1adcd1915ea7a95da0f0b5c719e9af359c4fa3e6d2",
+    "bytes": 597
+  },
+  {
+    "path": "research-2026-11-01/spotify-readback-2026-11-01.json",
+    "sha256": "bd6344d3cf725d3ce83d70e420828a7ba776aab4fceb18514516b9be16a0bcc1",
+    "bytes": 4110
+  },
+  {
+    "path": "research-2026-11-01/week-bio-queue.json",
+    "sha256": "5e259a9150c6e73a223a3a81755e273255442969866a1338ec2267854f37d9b1",
+    "bytes": 5094
+  },
+  {
+    "path": "research-2026-11-01/week-manifest-snapshot.json",
+    "sha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "bytes": 4805
+  },
+  {
+    "path": "research-2026-11-01/week-readback.json",
+    "sha256": "5f11deb1dda418b7fbbd9558cfa71ca559f8515a623a97a34592666f2584836e",
+    "bytes": 1320
   },
   {
     "path": "safety-tests.txt",
