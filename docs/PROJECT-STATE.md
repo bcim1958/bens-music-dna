@@ -1,5 +1,9 @@
 # Ben's Music DNA — Project State
 
+## OAuth-vervolgonderzoek — 2 november 2026
+
+Main na merge #25 bevestigd op `63ff7d89d8e5d7bb3789cef718f89571a0adbcd9`. [Concreet W44 OAuth-onderzoek en veilige vervolgstappen](W44-OAUTH-READONLY-2026-11-02.md): bestaande bruikbare API-toegang niet vastgesteld; geen authenticated uitlezing uitgevoerd. Geen token/401/403-verloop bewezen. Browsergebonden opslag niet toegankelijk via beschikbare bediening; geen tokens uit Desktop of browserprofielen gekopieerd. Een uitsluitend lezende consoleproef met vaste 21-URI-vergelijkingsbron is voorbereid voor de oorspronkelijk gekoppelde browser. Geen OAuth-/operationele mutatie, nieuwe publicatieclaim of merge. De pre-merge-peiling hieronder blijft historisch.
+
 ## Leidende status — 2 november 2026
 
 **ORANJE — kennis geborgd op documentatiebranch; techniek en publicatievrijgaven blijven afzonderlijk open.** Dit checkpoint gaat voor op oudere statussen hieronder, die als historische bron behouden blijven. Live gecontroleerde main: `e7351f0c501d32a27248cb708d71a0106ee6abaf`. Deze wijziging wijzigt main niet en is geen merge, release of Spotify-uitvoering.
