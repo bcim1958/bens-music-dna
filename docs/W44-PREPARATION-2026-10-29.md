@@ -1,3 +1,5 @@
+> **Vervolg 29 oktober:** [W44-selectie en publicatiepakket](w44-2026-44/README.md) bevat nu 21 gekozen tracks, twee behouden overblijvers, exacte cataloguslinks en onafhankelijke W42/W43-readback. Hoes/steentoewijzing en Spotify-publicatie blijven open. Onderstaand voorbereidingsdossier blijft de historische uitgangsstand.
+
 # W44 — voorbereidingsdossier 29 oktober 2026
 
 Doel: zaterdag **31 oktober 2026**. **VOORBEREIDING; geen definitieve selectie of publicatie.** Alle 36 beoordelingen blijven in het oorspronkelijke bronregister; 23 positief (10 RAAK + 13 GOED), 7 TERUGKOMEN, 6 NIET. Geen nieuw beoordelingsrondje nodig wegens aantallen.

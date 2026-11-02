@@ -1,0 +1,70 @@
+{
+  "checkedDate": "2026-10-29",
+  "main": "e7351f0c501d32a27248cb708d71a0106ee6abaf",
+  "existingOpenPRs": [
+    {
+      "n": 18,
+      "title": "docs: Music DNA 2.0 — Vereenvoudigde zaterdagmachine",
+      "head": "7bae6b74ac9c72a0980b023b8da29b4ed87fc24a"
+    },
+    {
+      "n": 17,
+      "title": "W42: beschermde zaterdagroute, automatische overgang en kandidaatonderzoek",
+      "head": "c4f4122a3a3bfaee740de67fe9818044719e99c1"
+    },
+    {
+      "n": 16,
+      "title": "W42: zeven dagen veilig afronden — dag 3 stop en releasevoorwaarden",
+      "head": "7cf1e17b303718d3d19405570571bc1c74eaaed5"
+    },
+    {
+      "n": 11,
+      "title": "W42: herstel automatische cadeau-overgang en bewijs voorraadblokkade",
+      "head": "7706da392b8bd3edb51a8ceb9e436634c67ad065"
+    },
+    {
+      "n": 10,
+      "title": "W41: controleer Spotify-museumtekst en leg metadataherstel vast",
+      "head": "13a85bd6b7efcb9cb54c292f775fb28883b4aa8d"
+    },
+    {
+      "n": 7,
+      "title": "W41: begrensde proefberekening met zes aangeboden dagen",
+      "head": "8c957a63263cca17b8c780d9e4f89df0984fb1d9"
+    },
+    {
+      "n": 5,
+      "title": "W41: actuele status, NO-GO-bewijs en begrensde archivering",
+      "head": "92d3dcffc38b4b24200db81dbb78ba016b7df7b1"
+    },
+    {
+      "n": 4,
+      "title": "W41 dag 7: NO-GO bevestigd in alle bestaande kandidaatvoorraden",
+      "head": "c82b7a72d62f76796d2accbd016059ac8d520dfb"
+    },
+    {
+      "n": 3,
+      "title": "Ontdek-DNA: bewijs reserveherhaling en W41 dag-7-blokkade",
+      "head": "5c38d211554f5095ffbb7fd05b5b04c2e0385601"
+    },
+    {
+      "n": 2,
+      "title": "Depot & Muziekmeter: reproduceerbare nulmeting en kwartaalherkansing",
+      "head": "077cb10dabd8528c2291200be9e7b6e5a003a6cd"
+    }
+  ],
+  "pr18": {
+    "mergeable": false,
+    "mergeableState": "dirty"
+  },
+  "mainPagesRuns": [
+    {
+      "id": 40939862856,
+      "conclusion": "success"
+    },
+    {
+      "id": 40939861787,
+      "conclusion": "success"
+    }
+  ]
+}

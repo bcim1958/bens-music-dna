@@ -1,0 +1,175 @@
+{
+  "pass": true,
+  "baseCommit": "e7351f0c501d32a27248cb708d71a0106ee6abaf",
+  "sourceRegisterUnchanged": true,
+  "all36RatingsPreserved": true,
+  "positiveCount": 23,
+  "selectedCount": 21,
+  "selectedRatings": {
+    "RAAK": 10,
+    "GOED": 11
+  },
+  "overblijversSourcePositions": [
+    31,
+    35
+  ],
+  "orderedCsvUrisAndSelectionAgree": true,
+  "allSelectedPublicMetadataAllowsNL": true,
+  "W42W43CurrentSpotifyContentsAgreeWithRecords": true,
+  "broaderSourcesRead": 1452,
+  "broaderSourcesMissing": 0,
+  "artistAliasHits": 0,
+  "protectedRepositoryAreasUnchanged": true,
+  "localV1RegistersUnchanged": {
+    "Music-DNA-projectdossier-v1.0.md": "7a94467bde8e4ddd2807515345be7deb789e47df4b2febe1a53f5a1a9758f10a",
+    "Bronregister-v1.0.md": "73f8ff822c405d0d53b8d6a4d8192f717342c311c67bc95717be046a0de19a87",
+    "Besluiten-en-conflictenregister-v1.0.md": "d019b47d6373c60840ef4bfe53e8407bcada143512567b33c4a9bcb37d3843fc"
+  },
+  "regressions": {
+    "pass": true,
+    "tests": [
+      {
+        "test": "test/rating-transition-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/rating-version-compat-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/rating-storage-concurrency-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/rating-journal-review-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/rating-storage-failure-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w42-review-storage-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w42-day2-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w42-day1-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w41-preview-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/positive-bank-recording-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w41-artist-uniqueness-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/week-route-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/discovery-policy-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/discovery-week-capacity-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/daily-reserve-capacity-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/saturday-simulator-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w40-callback-recovery-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w40-resume-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/artwork-payload-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/artwork-identity-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/week-manifest-counter-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w41-daily-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "scripts/saturday-simulator.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/w41-runtime-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      },
+      {
+        "test": "test/express-delivery-regression.cjs",
+        "pass": true,
+        "exitCode": 0
+      }
+    ],
+    "syntheticRatings": true,
+    "spotifyWrites": 0,
+    "endToEndProven": false
+  },
+  "masterDepotAudit": {
+    "pass": true,
+    "version": "1.14.4",
+    "masterCsvDepotRecords": 3877,
+    "filesModified": false
+  },
+  "spotifyWrites": 0,
+  "flowAuditioned": false,
+  "saturdayAutomationProven": false,
+  "gemstoneCoverRelease": "V4 Chrysoberil accepted after current user feedback Mooi!; target playlist readback/publication still open",
+  "gemstoneSequenceNumber": 9,
+  "artworkSha256": "50569d14c58c52f5eff87c7fd74ddf208bb10f149284f87a213688df5ae6445f",
+  "colourCorrectionReason": "Follow first eight covers: warm luminous gold-to-golden-green progression; user accepts v4",
+  "artworkPayloadUnder256KB": true
+}
