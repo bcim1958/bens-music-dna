@@ -197,3 +197,10 @@ It does not supersede closed Music DNA, taxonomy, playlist or governance decisio
 **Het verhaal achter de playlist** is een vaste redactionele formule, geen gegarandeerde wekelijkse levering. Neem een bestaande thematische playlist als kandidaat op in Gate 1–2; onderzoek alle tracks/artiesten, controleer afzonderlijke claims in Gate 4 en hergebruik bewezen Registry-relaties. De tien regels, Special 102-proef en Spotify-luisterervaring staan in het gekoppelde besluit. Gate 8–9 vereisen nog steeds echte link-/apparaat-/publicatiecontrole; beschreven ambitie of een historische proef maakt geen uitgave LIVE. De formule voegt geen ratingpoort toe: het functionele 2.0-besluit in PR #18 ontkoppelt weeklevering en Express van tijdige ratings, met implementatie OPEN. Onbekende ratings blijven onbekend. De nieuwe formule vervangt de bestaande magazinearchitectuur, vaste rubrieken of weekbio-opdracht niet.
 
 [Volledig vastgesteld besluit en tien regels](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md); [broncontrole en open punten](SOURCE-REVIEW-2026-10-29-EDITORIAL-DECISION.md).
+
+
+## Aanvulling 2 november 2026 — geaccepteerde DNA Smaakportretten
+
+Pas het [besluit van 31 oktober 2026](DECISIONS.md#2026-10-31--dna-smaakportretten-als-periodiek-dna-express-onderdeel) toe: één starteditie RAAK-op-mijn-lijf in 2026 (W36–W44); vanaf 2027 in W01/W14/W27/W40. W01-2027 gebruikt eenmalig W36–W52 2026 als referentie. Leg de referentieperiode en ratingprovenance per editie vast; latere selectieperioden, een vaste 21-trackeis en redactionele details blijven voorstellen.
+
+Indeling: DNA Specials → 04 Mijn smaak → DNA SMAAKPORTRETTEN; geen nieuw Specialnummer. Gebruikersbevestigde plaatsing van de starteditie bewijst geen publicatie van DNA Express of werkende automatische keten. KISS/Ilona-bronmateriaal blijft privé zonder publicatievrijgave. Deze aanvulling verleent geen productie- of publicatievrijgave en verandert de bestaande HOLD-status niet.
