@@ -1,5 +1,26 @@
 # Ben's Music DNA — Decision Log
 
+## 2026-10-31 — DNA SMAAKPORTRETTEN als periodiek DNA EXPRESS-onderdeel
+
+**Status: expliciet geaccepteerd gebruikersbesluit van 31 oktober 2026; geborgd op 2 november 2026.**
+
+- Vast periodiek onderdeel van DNA EXPRESS.
+- **2026:** één starteditie, **RAAK-op-mijn-lijf**, 31 oktober 2026, referentie **W36–W44 2026**.
+- **Vanaf 2027:** de weekedities **W01, W14, W27 en W40** van ieder kalenderjaar.
+- **Opstartuitzondering W01-2027:** referentie **W36–W52 2026**.
+- **Spotify-indeling:** **DNA Specials → 04 Mijn smaak → DNA SMAAKPORTRETTEN**; geen nieuw Specialnummer en geen hernummering van bestaande Specials.
+- Echte ratings en provenance behouden; ontbrekende beoordelingen blijven onbekend. Playlistlidmaatschap bewijst geen rating.
+
+**Geen geaccepteerde algemene regel:** een vast aantal van 21 tracks, selectieperioden na W01-2027 of verdere redactionele uitwerking. De 21 tracks van de starteditie scheppen geen aantalsnorm.
+
+[Bronnen H02–H04 en plaatsingsconflict C09](SOURCE-REGISTER-2026-11-02-HEALTHCHECK.md): bestaande lokale registratie B08/S19–S21 gelezen; huidige gebruikersopdracht herbevestigt besluit en bewijsgrenzen. De oude suggestie naast Special 60 blijft historisch voorstel en is vervangen door bovenstaande indeling. RAAK-plaatsing is gebruikersbevestigd, geen onafhankelijk API-bewijs.
+
+## 2026-11-02 — Behoud en privacy bij healthcheck-opvolging
+
+W38-herstel blijft onderscheiden van het historische origineel: alleen vijf expliciete hersteloordelen registreren, overige zestien onbekend. Geen terugwerkende ratingimport, voorraadboeking of ledgerwijziging. Spotify-uitvoering is gebruikersbevestigd; onafhankelijke controle van het herstel blijft open.
+
+KISS/Ilona: zeven gezamenlijke concerten en de huwelijksanekdote zijn **privé bronmateriaal, zonder publicatievrijgave**. Alleen deze bronstatus registreren; geen verhaaltekst, citaten, concertgegevens of aanvullende persoonsgegevens opnemen in de publieke repo of DNA Express. [Bewijsgrenzen en bron H05](SOURCE-REGISTER-2026-11-02-HEALTHCHECK.md).
+
 ## 2026-10-29 — Aanscherping: oude muziek opnieuw ontdekken
 
 **Vastgesteld:** Het verhaal achter de playlist vertrekt primair vanuit oude muziek in bestaande, bijna geheel uit de Master Database opgebouwde playlists. [Gedateerde aanscherping en primaire bron](DECISION-2026-10-29-HET-VERHAAL-ACHTER-DE-PLAYLIST.md). [Healthcheck](HEALTHCHECK-2026-10-29.md) onderscheidt de bestaande besluiten, gemelde besluiten, observaties en voorstellen voor 26–29 oktober. Geen vaste 48-paginanorm, nieuwe quizscore of kleurreeks ingevoerd zonder bewijs.

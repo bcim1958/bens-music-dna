@@ -1,5 +1,42 @@
 # Ben's Music DNA — Project State
 
+## Leidende status — 2 november 2026
+
+**ORANJE — kennis geborgd op documentatiebranch; techniek en publicatievrijgaven blijven afzonderlijk open.** Dit checkpoint gaat voor op oudere statussen hieronder, die als historische bron behouden blijven. Live gecontroleerde main: `e7351f0c501d32a27248cb708d71a0106ee6abaf`. Deze wijziging wijzigt main niet en is geen merge, release of Spotify-uitvoering.
+
+[Bron- en bewijsregister H01–H06](SOURCE-REGISTER-2026-11-02-HEALTHCHECK.md) onderscheidt gebruikersbevestigingen, gelezen lokale bronpakketten, historische uitvoeringsbewijzen en live GitHub-status.
+
+- **W38-herstel:** uitvoering in Spotify gebruikersbevestigd volgens het teruggelezen hoofdchatverslag; vijf expliciete hersteloordelen: Rival Sons GOED, Electric Six GOED, SOFT PLAY RAAK, SNAYX GOED, ACTORS GOED. Exacte titels/ID's/posities in het bronregister. Overige zestien historische individuele oordelen blijven onbekend. Origineel behouden; geen ledger- of ratingoverschrijving. De oude pakketstatus prepared-not-imported blijft historisch bewaard. Onafhankelijke controle van live herstel en behoud van het oorspronkelijke Spotify-object blijft open.
+- **DNA Smaakportretten:** [geaccepteerd besluit 31 oktober](DECISIONS.md#2026-10-31--dna-smaakportretten-als-periodiek-dna-express-onderdeel). Eén starteditie in 2026; vanaf 2027 W01/W14/W27/W40; W01-2027 referentie W36–W52 2026. Latere selectieperioden, vaste 21-trackeis en redactionele details blijven voorstellen.
+- **RAAK-op-mijn-lijf:** starteditie 31 oktober, referentie W36–W44 2026; Spotify-plaatsing **gebruikersbevestigd** onder DNA Specials → 04 Mijn smaak → DNA SMAAKPORTRETTEN, geen nieuw Specialnummer. Geen onafhankelijke API-readback of nieuwe afspeelproef. De oude plaats naast Special 60 is een achterhaald voorstel.
+- **KISS/Ilona:** zeven gezamenlijke concerten en huwelijksanekdote zijn privé bronmateriaal, **geen publicatievrijgave**. Alleen bronstatus geregistreerd; verhaaltekst blijft buiten de publieke repo. Oorspronkelijke volledige anekdote niet opnieuw teruggevonden; niet aanvullen of reconstrueren.
+- **W44:** publicatie gedocumenteerd in open PR #22, niet langer alleen voorbereiding. Het gedateerde ontvangstbewijs van 31 oktober rapporteert 21 exacte track-ID's in volgorde, hoes en Spotify Desktop-controle. Onafhankelijke embed-readback is historisch bewijs; directe authenticated Spotify API-uitlezing, audioflow en toekomstige onbemande zaterdaglevering blijven onbewezen.
+
+### Live PR-peiling — 2 november 2026
+
+Alle vier PR's zijn **open, draft en niet gemerged**. Samenvoegbaarheid is een momentopname, geen vrijgave.
+
+| PR | Exact gecontroleerde head | Live toestand en bewijsgrens |
+|---|---|---|
+| [#18 Music DNA 2.0](https://github.com/bcim1958/bens-music-dna/pull/18) | `7bae6b74ac9c72a0980b023b8da29b4ed87fc24a` | Conflicten (mergeable=false/dirty); functioneel documentatievoorstel, geen bewezen implementatie |
+| [#22 W44](https://github.com/bcim1958/bens-music-dna/pull/22) | `5efb2258fb0a428a6d760238565605c2d9fe31da` | Samenvoegbaar; publicatiebewijs in `docs/w44-2026-44/DELIVERY-2026-10-31.json` op deze head |
+| [#23 DNA Express](https://github.com/bcim1958/bens-music-dna/pull/23) | `3b5b532fbba6792ee4ab3b65627fbcfe3c1f2243` | Samenvoegbaar; 21 brononderbouwde werkportretten toegevoegd; publicatie **HOLD**, editorialReview/deviceReview ontbreken; browser-viewports bewijzen geen echte apparaatproef |
+| [#24 Spotify-archivering](https://github.com/bcim1958/bens-music-dna/pull/24) | `f06df8fe57f14c9f8396188e2c87844a5eeb30ca` | Samenvoegbaar; goedgekeurde archiefroute en synthetisch geteste opslagvoorbereiding, geen productie-export of herstelbewijs van live Spotify-data |
+
+Op de exacte heads van #22/#23/#24 zijn vier Actions-runs completed/success: [#22 regressie](https://github.com/bcim1958/bens-music-dna/actions/runs/41175753735), [#23 preparation safety](https://github.com/bcim1958/bens-music-dna/actions/runs/41423082850), [#23 regressie](https://github.com/bcim1958/bens-music-dna/actions/runs/41423082854), [#24 regressie](https://github.com/bcim1958/bens-music-dna/actions/runs/41176991110). Deze uitslagen bewijzen geen Spotify API-toegang, automatische zaterdagketen, productie-export, iCloud-serverupload, achtergrondtoegang of wekelijkse/zondagse uitvoering.
+
+### Eerstvolgende technische stap — read-only Spotify API-proef W44
+
+Voer na review van deze kennisborging een afzonderlijke **uitsluitend lezende** proef uit voor de bestaande W44-playlist `1oUn9w2BWTztyCmARl8xzk`. Stel eerst vast of bestaande OAuth-toegang bruikbaar is; tokens en andere credentials nooit in repo of rapport opnemen. Bij ontbrekende toegang de concrete toegangsblokkade rapporteren; geen publicatiestatus of API-bewijs simuleren.
+
+Lees met uitsluitend benodigde leestoegang playlistmetadata en alle trackpagina's; leg tijdstip, account-/playlistidentiteit, volledige aantallen, volgorde, exacte URI's en eventuele relinking vast. Vergelijk met het 21-track ontvangstbewijs van #22 op de hierboven vastgelegde head en rapporteer afwijkingen, zonder correcties uit te voeren. Mapplaatsing, afspelen en herstelbaarheid alleen claimen wanneer afzonderlijk aantoonbaar. Dit is een volgende stap, **in deze healthcheck niet uitgevoerd**.
+
+**Bescherming:** ratings, current/original/legacy, historische ledger/originele playlists, reserves/FIFO, journalen, Master/Depot en aparte Walk & Listen-opslag blijven ongewijzigd. Geen Spotify-acties, scheduler, productie-export, voorraadtransactie, merge of deployment. De documentatie-PR dient alleen voor review; bestaande open PR's worden niet gewijzigd of gemerged.
+
+---
+
+## Historische peilingen — bewaard
+
 ## Leidende healthcheck — 29 oktober 2026
 
 [Controle en bewijsgrenzen](HEALTHCHECK-2026-10-29.md): besluit Het verhaal achter de playlist stond al in PR #21 op `c84b5addbdc205cd34e8a4d5954d32884f16e79e`; de healthcheckmelding dat het ontbreekt is achterhaald. De gedateerde aanscherping legt nu vast: primair oude muziek uit bestaande, bijna geheel vanuit de Master Database opgebouwde playlists herontdekken. Magazinearchitectuur behouden; 48p/kleurenslinger/Music Challenge/Smaakmeter/Odometer/Kunst van de Hoes hebben afzonderlijke bewijsstatussen.
