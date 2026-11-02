@@ -16,8 +16,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "c7586eee7addfbdb8794d12be49bc1a71d580b235852675320636ceb90df64b8",
-    "bytes": 12246
+    "sha256": "063ccda014351ab6064697cfbf1a32bd173a1fd7330898de4cf4280a4d409895",
+    "bytes": 12810
   },
   {
     "path": "Redactieproef.html",
@@ -168,6 +168,26 @@
     "path": "research-2026-11-01/week-readback.json",
     "sha256": "5f11deb1dda418b7fbbd9558cfa71ca559f8515a623a97a34592666f2584836e",
     "bytes": 1320
+  },
+  {
+    "path": "research-2026-11-02/Uitvoeringsrapport.md",
+    "sha256": "8d73e48a0a2c1592355642dc95c372d11abc7cadacaf82044c6cd0173c90e513",
+    "bytes": 3332
+  },
+  {
+    "path": "research-2026-11-02/Weekportretten.html",
+    "sha256": "43b0fb2de74782771413887b1c8452db0094517b42391b004e88bc921e14c970",
+    "bytes": 17329
+  },
+  {
+    "path": "research-2026-11-02/Weekportretten.md",
+    "sha256": "4b91ef4f769aa07443be5f36055a4699cf637acb2ff6141076547fc5d68bb91f",
+    "bytes": 15341
+  },
+  {
+    "path": "research-2026-11-02/week-bio-drafts.json",
+    "sha256": "166df7fc3b0026628198110b9bf698019773e6acaa79383646fd06af2434f91b",
+    "bytes": 26124
   },
   {
     "path": "safety-tests.txt",
