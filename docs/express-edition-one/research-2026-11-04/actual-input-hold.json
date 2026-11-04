@@ -1,0 +1,29 @@
+{
+  "scope": "actual frozen input-r2, local preparation only; not a complete chain or device proof",
+  "result": {
+    "schemaVersion": 1,
+    "status": "HOLD",
+    "published": false,
+    "endToEndProven": false,
+    "externalWrites": 0,
+    "storageWrites": 0,
+    "automaticSaturdayProven": false,
+    "week": "2026-W44",
+    "inputSha256": "37903d96650d470904f98f1c7b0b1228f327c71399431aa34e5af333216b0646",
+    "engineSha256": "4b6dfd18214ef970b69942c1163e6fcfb961826083e9c1eca80b0912e9927bb2",
+    "reason": "DEPENDENCY_MISSING",
+    "detail": "editorialReview, deviceReview"
+  },
+  "readback": {
+    "attempts": 1,
+    "status": "HOLD",
+    "finalPackages": 0
+  },
+  "additionalOpenDependencies": [
+    "publishable sourced week biographies",
+    "editorial approval",
+    "real device review",
+    "full edition design and recurring sections",
+    "release authority and publication adapter"
+  ]
+}

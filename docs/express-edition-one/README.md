@@ -80,3 +80,7 @@ De nieuwe read-only weekbronadapter levert een gepubliceerde-lijstsnapshot met e
 ## Vervolg 2 november 2026 — 21 werkportretten
 
 Nieuwe afzonderlijke [weekportretten](research-2026-11-02/Weekportretten.html), met echte ratings uit de bevroren W44-selectie en per artiest bronnen/open controles. Alle 21 artist-/trackkoppelingen gecontroleerd; drie Chrome-viewports zonder overflow. Geen publicatieklare bios of goedgekeurde editie geclaimd; onvolledige bronuitlezing en ontbrekende biografische dekking zijn zichtbaar. Bestaande queue/input/reviews blijven ongewijzigd en HOLD. Zie [exact rapport](research-2026-11-02/Uitvoeringsrapport.md).
+
+## Vervolg 4 november 2026 — herstelbewijs en nieuwe main-besluiten
+
+Main is nu `63ff7d89d8e5d7bb3789cef718f89571a0adbcd9` (documentatiemerge #25). Besluit DNA Smaakportretten gelezen; broncontrole voor dit periodieke onderdeel blijft open. Twee aanvullende lokale SIGKILL-/herstelproeven met synthetische inhoud slagen: 27 veiligheidstests PASS. Echte input-r2 uitgevoerd en log teruggelezen: HOLD wegens ontbrekende editorialReview/deviceReview, nul eindpakketten. Geen apparaat-/publicatie-/zaterdagbewijs. [Exact verslag en herstelgrenzen](research-2026-11-04/Uitvoeringsrapport.md).
