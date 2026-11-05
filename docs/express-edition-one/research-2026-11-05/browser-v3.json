@@ -1,0 +1,43 @@
+{
+  "checks": [
+    {
+      "width": 390,
+      "sections": 17,
+      "exactStoryParagraphs": 23,
+      "exactBios": 21,
+      "exactArtistOrder": true,
+      "exactSourceUrls": true,
+      "openControlBlocks": 21,
+      "navigation": true,
+      "noHorizontalOverflow": true,
+      "realDevice": false
+    },
+    {
+      "width": 820,
+      "sections": 17,
+      "exactStoryParagraphs": 23,
+      "exactBios": 21,
+      "exactArtistOrder": true,
+      "exactSourceUrls": true,
+      "openControlBlocks": 21,
+      "navigation": true,
+      "noHorizontalOverflow": true,
+      "realDevice": false
+    },
+    {
+      "width": 1440,
+      "sections": 17,
+      "exactStoryParagraphs": 23,
+      "exactBios": 21,
+      "exactArtistOrder": true,
+      "exactSourceUrls": true,
+      "openControlBlocks": 21,
+      "navigation": true,
+      "noHorizontalOverflow": true,
+      "realDevice": false
+    }
+  ],
+  "realDeviceProven": false,
+  "editorialApproval": false,
+  "publicationProven": false
+}

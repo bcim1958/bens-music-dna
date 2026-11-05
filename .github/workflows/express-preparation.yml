@@ -32,6 +32,8 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - name: Exact manuscript text, sources and viewport navigation
         run: node test/express-reading-proof-browser.cjs /tmp/express-reading-proof
+      - name: Combined proof text, artist identities, source links and chapter navigation
+        run: node test/express-combined-proof-browser.cjs /tmp/express-reading-proof/v3
       - uses: actions/upload-artifact@v4
         if: always()
         with:

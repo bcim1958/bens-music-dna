@@ -16,8 +16,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "6453b98a0a49aa9933eb40827162281ba34a5667b8c32e3032fd61508d9b1507",
-    "bytes": 13401
+    "sha256": "870268534a73e95369b2c0980f99cc9d71e3d04c629843e581115395d328d9fa",
+    "bytes": 13856
   },
   {
     "path": "Redactieproef.html",
@@ -198,6 +198,21 @@
     "path": "research-2026-11-04/actual-input-hold.json",
     "sha256": "3ed352ab8ead60f9580c64bd25907688564d6cd14c29ef906953aaade319c936",
     "bytes": 906
+  },
+  {
+    "path": "research-2026-11-05/Redactieproef-v3.html",
+    "sha256": "4830b5ad9643eaafa6c0c638b42406475a00c557ecabb39473192e57c2c9e790",
+    "bytes": 49627
+  },
+  {
+    "path": "research-2026-11-05/Uitvoeringsrapport.md",
+    "sha256": "2244bb052c1781c995bec244804850ffac4fae01d43e09954ade174d25fe7f15",
+    "bytes": 3090
+  },
+  {
+    "path": "research-2026-11-05/browser-v3.json",
+    "sha256": "dcbc72bae62164a904b8ae3240621cbdada309c84311bb1f669d990286ee753f",
+    "bytes": 993
   },
   {
     "path": "safety-tests.txt",

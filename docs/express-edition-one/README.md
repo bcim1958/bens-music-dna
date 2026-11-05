@@ -84,3 +84,7 @@ Nieuwe afzonderlijke [weekportretten](research-2026-11-02/Weekportretten.html), 
 ## Vervolg 4 november 2026 — herstelbewijs en nieuwe main-besluiten
 
 Main is nu `63ff7d89d8e5d7bb3789cef718f89571a0adbcd9` (documentatiemerge #25). Besluit DNA Smaakportretten gelezen; broncontrole voor dit periodieke onderdeel blijft open. Twee aanvullende lokale SIGKILL-/herstelproeven met synthetische inhoud slagen: 27 veiligheidstests PASS. Echte input-r2 uitgevoerd en log teruggelezen: HOLD wegens ontbrekende editorialReview/deviceReview, nul eindpakketten. Geen apparaat-/publicatie-/zaterdagbewijs. [Exact verslag en herstelgrenzen](research-2026-11-04/Uitvoeringsrapport.md).
+
+## Vervolg 5 november 2026 — samengestelde leesproef v3
+
+[Verhaal, Mijn Week en 21 weekportretten in één leesroute](research-2026-11-05/Redactieproef-v3.html). 17 secties; bestaande teksten, echte ratings, bronlinks en open controles behouden. Reproduceerbare HTML en drie Chrome-viewports gecontroleerd. Geen volledige editie of apparaatproef; oorspronkelijke inputs/reviews blijven HOLD. [Exact rapport](research-2026-11-05/Uitvoeringsrapport.md).
