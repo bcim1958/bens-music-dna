@@ -1,0 +1,443 @@
+[
+  {
+    "artistId": "spotify:artist:4oALDmWaNK3LnoSSC0kSSr",
+    "name": "Night Laser",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "4OEjJbIBMzaTFsYJhBF4DO",
+    "track": "Bittersweet Dreams",
+    "rating": "RAAK",
+    "ratingSourcePosition": 3,
+    "text": "Hamburg levert hier een eigen antwoord op de glamtraditie. Night Laser draait rond de broers Benno en Robert Hankers, op zang en bas. Voor Call Me What You Want werkte de band met producer Dirk Schlächter; Eike Freese verzorgde mix en mastering. De discografie loopt via Fight For The Night, Laserhead en Power To Power naar dit album uit 2024.",
+    "source": {
+      "url": "https://nightlaser.bandcamp.com/album/call-me-what-you-want",
+      "kind": "artiest/albumcredits",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "De pagina noemt zowel 26 april als 24 mei 2024; daarom alleen het jaar. Albumbezetting is geen bewijs voor huidige bezetting.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:1jLxOyZv6hLRHuXaw1KMXr",
+    "name": "Starmen",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "3pUuCPjhocrhbfQ8V0qO1G",
+    "track": "Ready to Give Me Your Love",
+    "rating": "RAAK",
+    "ratingSourcePosition": 2,
+    "text": "Starmen begon in 2018 in Zweden en kiest bewust voor melodieuze hardrock met wortels in de jaren zeventig en tachtig. De sterrenmake-up geeft die muzikale familie ook een gezicht. Welcome to My World hoort bij de eerste vier albums die de band op zijn eigen website opsomt. Een bruikbare ingang voor wie achter de herkenbare verwijzingen een eigen band wil leren kennen.",
+    "source": {
+      "url": "https://starmen.se/",
+      "kind": "artiest",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Website presenteert een datum uit 2025 nog als toekomst; geen actuele releasevolgorde of huidige bezetting afgeleid.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:0OrBdxyVoXyVgAM6pI79D2",
+    "name": "Mayank",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "7s3iIgurAG0xgDg1ebAweA",
+    "track": "Destiny Calling",
+    "rating": "GOED",
+    "ratingSourcePosition": 1,
+    "text": "De stem achter Mayank is Gui Oliver, bekend van Auras en Landfall. Rond hem bracht Frontiers gitarist Rolf Nordström, toetsenist en producer Alessandro Del Vecchio en drummer Nicholas Papapicco samen. De naam op de hoes verwijst dus naar een project waarin verschillende muzikale loopbanen samenkomen. Destiny Calling opent het gelijknamige album uit 2021.",
+    "source": {
+      "url": "https://ftp.frontiers.it/news/11272",
+      "kind": "labelpersbericht; zoektekst, directe pagina niet uitleesbaar",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Voorlopig bronspoor: volledige pagina time-out. Persbericht bevat bovendien afwijkende albumnaam We Are One in de lopende tekst. Heropenen en vergelijken vóór vrijgave.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:6wEVMZieIv9ttCzvuDYev8",
+    "name": "Nitrate",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "5R8u2wIpO2OKg2EhSygZne",
+    "track": "All the Right Moves",
+    "rating": "RAAK",
+    "ratingSourcePosition": 30,
+    "text": "Achter Nitrate staat bassist en songwriter Nick Hogg uit Nottingham. Zijn terugkeer naar het schrijven kreeg vorm in Real World en Open Wide; later kwam zanger Alexander Strandell erbij. Feel the Heat bouwt voort op die melodieuze hardrocklijn, met Tom en James Martin als belangrijke schrijfpartners. All The Right Moves staat daarmee in een langer verhaal van samenwerking, in plaats van op zichzelf.",
+    "source": {
+      "url": "https://frontiers.shop/products/nitrate-feel-the-heat-cd",
+      "kind": "label",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Albumtijdlijn gecontroleerd; actuele volledige bezetting en opnamecredits van de geselecteerde track nog afzonderlijk toetsen.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:03eYJDAyUMwFRdmW5cgItV",
+    "name": "Vypera",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "6Ko5PM4RK7eumjqnKt5Ahi",
+    "track": "Standing on the Edge",
+    "rating": "GOED",
+    "ratingSourcePosition": 26,
+    "text": "Vypera begon volgens de bandleden met covers in 2014. In hun interview uit 2022 beschrijven zij hoe daaruit eigen materiaal groeide. Eat Your Heart Out werd het album waarop die stap hoorbaar kon worden vastgelegd. Cederick Forsberg hielp bij productie en leadgitaar: een concrete studiobijdrage, die niet automatisch betekent dat hij vast bandlid was.",
+    "source": {
+      "url": "https://www.metal1.info/interviews/vypera/",
+      "kind": "oorspronkelijk bandinterview, 18 augustus 2022",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Interviewherinnering toegeschreven. Oorspronkelijke release en Spotify Bonus Track Edition niet vereenzelvigen; huidige bezetting open.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:1uJoivXxtZjowli7GAAOOI",
+    "name": "Fans Of The Dark",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "45yGG3vEZTV8MBVxKqXAq5",
+    "track": "Life Kills",
+    "rating": "RAAK",
+    "ratingSourcePosition": 22,
+    "text": "Een oude schoolvriendschap krijgt hier een nieuw hoofdstuk: drummer en schrijver Freddie Allen en zanger Alex Falk kenden elkaar van school in Stockholm. In de zomer van 2020 begonnen zij Fans Of The Dark. Voor hun debuut kwamen bassist Robert Majd en gitarist Oscar Bromvall erbij. Het label plaatst hun muziek tussen melodieuze rock en metal uit de jaren tachtig; Life Kills hoort bij dat eerste album.",
+    "source": {
+      "url": "https://frontiers.shop/products/fans-of-the-dark-fans-of-the-dark-cd",
+      "kind": "label",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Debuutbezetting beschreven; latere bassist niet teruggeprojecteerd op deze opname. Volledige actuele biografie open.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:7HWdmhoIhvXEHikALsGT4w",
+    "name": "Junkyard Drive",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "6jIWMzMQ9NuGHAdPFxAjcI",
+    "track": "Sweet Little Dreamer",
+    "rating": "GOED",
+    "ratingSourcePosition": 23,
+    "text": "Black Coffee uit 2018 vormt de halte waar deze week Sweet Little Dreamer vandaan komt. De labeldiscografie zet het tussen Sin & Tonic uit 2017 en Electric Love uit 2022, gevolgd door Look At Me Now uit 2024. Zo krijgt de keuze een plek in een langer bandverhaal. De later beschreven samenwerking met producer Søren Andersen hoort bij een volgende fase.",
+    "source": {
+      "url": "https://mightymusic.dk/junkyard-drive/",
+      "kind": "label",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Nieuwe gitaristen op de huidige labelpagina zijn geen bewezen Black Coffee-bezetting; ontstaan en opnamebezetting nog aanvullen.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:4QanEE5Wrkq1JhWMpWKz4f",
+    "name": "Smoking Snakes",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "5aISIm0BHmorW4Z7hMDdg7",
+    "track": "Angels Calling",
+    "rating": "RAAK",
+    "ratingSourcePosition": 4,
+    "text": "Smoking Snakes ontstond in 2022 in Göteborg. Op Danger Zone uit 2024 zocht de band aansluiting bij de sleaze- en hardrocktraditie van onder anderen Ratt en Dokken. Producer Jakob Herrmann hielp dat debuut vormgeven. Angels Calling staat vooraan op het album: onze weekkeuze is daarmee ook een mogelijke ingang tot de eerste plaat.",
+    "source": {
+      "url": "https://frontiers.shop/products/smoking-snakes-danger-zone-cd",
+      "kind": "label",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Huidige bezetting en latere ontwikkeling niet gedekt door debuutpersbericht; geen oude bezetting als actueel gebruikt.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:5I22u9LXP5xKHeCRlHTUZ5",
+    "name": "Trench Dogs",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "6VnK5Xeg2u7Zg5qJqKYaDo",
+    "track": "Homesick Parade",
+    "rating": "RAAK",
+    "ratingSourcePosition": 5,
+    "text": "Het verhaal van Trench Dogs begint in Stockholm in 2013, met de Australische zanger Andy Hekkandi als een van de schakels. De bandpresentatie beschrijft een mengsel van glam, punk en rock. Debuut Year of the Dog verscheen in 2018; Stockholmiana volgde in 2023. Homesick Parade brengt deze week dus de eerste albumfase terug, binnen een bandgeschiedenis die over landsgrenzen heen loopt.",
+    "source": {
+      "url": "https://www.livewireconcerts.no/trench-dogs",
+      "kind": "concertorganisator/bandpresentatie",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Organisatorbiografie is historisch kader; huidige vijfmansbezetting en trackcredits opnieuw toetsen.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:1xbUKM3c1WNURoDHEDGXBf",
+    "name": "Midas",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "6lmrfYBEaTpKk3M30yUrZ7",
+    "track": "Nobody Gets Out Alive",
+    "rating": "RAAK",
+    "ratingSourcePosition": 6,
+    "text": "Deze Midas komt uit Detroit. Dat onderscheid is nodig voordat een bandnaam een biografie krijgt: een naamgenoot is snel gevonden. De eigen catalogus voert langs Solid Gold Heavy Metal, Still Hungry en The Demo Tapes naar het gelijknamige album uit 2022. Nobody Gets Out Alive staat daarop als tweede track. De vroege uitgaven vormen een concreet spoor voor verder onderzoek.",
+    "source": {
+      "url": "https://midasbanddetroit.bandcamp.com/album/midas",
+      "kind": "artiest/catalogus",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Ontstaansjaar en namen van bandleden ontbreken nog in de gelezen primaire bron; geen gegevens van naamgenoten toegevoegd.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:2p4bCEJL6k03ErhdPTPEbu",
+    "name": "Sanhedrin",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "6Ny1GkA2KbnytfBYyQskzd",
+    "track": "Lost at Sea",
+    "rating": "RAAK",
+    "ratingSourcePosition": 7,
+    "text": "Sanhedrin is een trio uit Brooklyn, met Erica Stoltz op zang en bas en Nathan Honor achter de drums. Lights On uit 2022 levert deze week Lost at Sea. Bij deze band vraagt de tijdlijn aandacht: een oudere biografie presenteert Lights On nog als nieuwste plaat, terwijl Metal Blade inmiddels Heat Lightning uit 2025 vermeldt. Het portret moet beide momenten uit elkaar houden.",
+    "source": {
+      "url": "https://dragon-productions.eu/artist/sanhedrin/",
+      "kind": "boekingsagent; historische albumfase",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Tweede bron: https://www.metalblade.com/us/artists/sanhedrin/ . Volledige bezetting en opnamecredits voor publicatie aanvullen; oude bio niet als actuele status.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:363ih5wuNGWBFcjeKFG8cc",
+    "name": "Crypt Sermon",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "2h7J8G3II0eZj0Kl8uDWmH",
+    "track": "Heavy Is the Crown of Bone",
+    "rating": "GOED",
+    "ratingSourcePosition": 33,
+    "text": "Crypt Sermon komt uit Philadelphia en verbindt doom met heavy metal. Na Out of the Garden en The Ruins of Fading Light vormt The Stygian Rose de albumcontext voor Heavy Is the Crown of Bone. Voor deze plaat werkte de band met producer Arthur Rizk. De labelpagina laat ook zien hoe een album na zijn eerste uitgave blijft doorleven in nieuwe persingen.",
+    "source": {
+      "url": "https://www.darkdescentrecords.com/shop/product/crypt-sermon-the-stygian-rose-gatefold-lp/",
+      "kind": "label; herpersingspagina",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "De winkel noemt een herpersing in december 2026; dat is geen oorspronkelijke releasedatum. Volledige trackcredits en huidige bezetting nog toetsen.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:1olZcNG9rq4RGVVd69Tj4e",
+    "name": "Ashbury",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "6jEGUmbMdvWq6Di1Kv61J0",
+    "track": "The Warning",
+    "rating": "GOED",
+    "ratingSourcePosition": 27,
+    "text": "Randy en Rob Davis vertellen hoe Ashbury vanuit hun samenwerking groeide naar Endless Skies. De plaat werd in januari 1983 in Tucson opgenomen. Het is verleidelijk daarbij meteen een volledige liveband voor je te zien, maar de broers beschrijven juist een compacte studiokern met aanvullende bijdragen. The Warning staat deze week in die vroege albumwereld: een geschiedenis die nauwkeurigere credits verdient dan een latere bandfoto kan geven.",
+    "source": {
+      "url": "https://www.forgotten-scroll.net/metal-interviews/ashbury/",
+      "kind": "oorspronkelijk interview met oprichters",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Interviewherinnering toegeschreven; studiobijdragen onderscheiden van latere livebezetting. Interne tijdsaanduiding 2010 niet verwarren met paginadatum 2013.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:0oRylpNxHxI8fP7Mpmo4QU",
+    "name": "Lykantropi",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "3E6xrYViwCil3oK4pkqpZ4",
+    "track": "Wild Flowers",
+    "rating": "GOED",
+    "ratingSourcePosition": 8,
+    "text": "Lykantropi komt uit Värmland in Zweden. In de presentatie van Despotz staan folk, vintage rock, samenzang en fluit naast elkaar: een instrumentale en vocale familie met wortels in de jaren zeventig. Wild Flowers hoort bij Spirituosa uit 2019. Die context biedt een begin voor het portret; de levensloop en de mensen achter de muziek vragen nog een vollediger primaire bron.",
+    "source": {
+      "url": "https://www.youtube.com/watch?v=PWhlu3k3d6Q",
+      "kind": "officiële Despotz-videobeschrijving; volledige pagina niet uitleesbaar",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Alleen officiële beschrijving gelezen via zoekweergave; heropenen en bezetting/ontstaan onderzoeken. Nog geen volledig brongecontroleerd portret.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:0ABvgllZiW792ERHXuJlGz",
+    "name": "Magic Pie",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "6eKjzKEAz48JsIjsHTkGHH",
+    "track": "Trick of the Trade",
+    "rating": "RAAK",
+    "ratingSourcePosition": 11,
+    "text": "Magic Pie plaatst Noorse progressieve rock naast de hardrocktraditie van de jaren zeventig. Gitarist en componist Kim Stenberg is een centrale naam; zanger Eiríkur Hauksson vormt een andere herkenbare schakel in het labelportret. Trick of the Trade komt uit King for a Day uit 2015. Voor het verhaal achter die keuze is juist de bezetting van die plaat relevant, naast latere hoofdstukken van de band.",
+    "source": {
+      "url": "https://www.karismarecords.no/artists/magic-pie/",
+      "kind": "label",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Huidige labelbezetting niet als 2015-opnamebezetting gebruikt; volledige credits en ontstaan nog toetsen.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:10Mmz2UngxRjkZmz0a1H32",
+    "name": "Artificial Language",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "58C4uAvr4MTr88Chmkc6nz",
+    "track": "Unself Portrait",
+    "rating": "GOED",
+    "ratingSourcePosition": 28,
+    "text": "De eigen Bandcamp-pagina plaatst Artificial Language in Californië en in progressieve rock en metal. The Observer verscheen op 28 april 2017; Unself Portrait is de vierde track. Voorlopig begint het portret bij die controleerbare plaatgegevens. Een bandgeschiedenis vraagt meer dan catalogustags en reacties van luisteraars: de oprichters, hun rollen en de weg naar deze opname moeten nog rechtstreeks worden onderzocht.",
+    "source": {
+      "url": "https://artificiallanguage.bandcamp.com/album/the-observer",
+      "kind": "artiest/catalogus",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Bewust beperkt catalogusportret; geen luisteraarsrecensies of songteksten als biografische bron gebruikt. Ontstaan, namen en ontwikkeling open.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:091cSUyhQCRgJreqXy17m5",
+    "name": "Four Stroke Baron",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "0Ws0ZUpn49O9B1P4lVNvPx",
+    "track": "Planet Silver Screen",
+    "rating": "GOED",
+    "ratingSourcePosition": 34,
+    "text": "Four Stroke Baron begon in 2011 in Reno, Nevada. Prosthetic beschrijft een combinatie van new wave en zwaardere progressieve muziek. Na een vroege eigen ep volgde onder meer Planet Silver Screen, de tweede volledige plaat uit 2018. De gelijknamige weektrack brengt ons bij dat albumhoofdstuk. Kirk Witt, Matt Vallarino en Keegan Ferrari horen bij de bezetting die de labelbiografie voor die periode beschrijft.",
+    "source": {
+      "url": "https://prostheticrecords.com/artists/four-stroke-baron/",
+      "kind": "label",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Albumperiode expliciet; geen bewijs dat dezelfde bezetting in november 2026 actueel is. Individuele opnamecredits nog toetsen.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:7Gbgr3pNct3IvdhQLO8wPU",
+    "name": "Grave Pleasures",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "69feEDlBjijnisHbOWgH7P",
+    "track": "Be My Hiroshima",
+    "rating": "RAAK",
+    "ratingSourcePosition": 9,
+    "text": "Grave Pleasures presenteert zichzelf als postpunk uit Finland, met een uitgesproken apocalyptische invalshoek. Motherblood is een van de albums in de eigen catalogus en levert deze week Be My Hiroshima. Dat is een smalle maar controleerbare ingang. Voor een volwaardig bandportret moeten de ontstaansgeschiedenis, de muzikanten en de overgang tussen eerdere en latere albumfasen nog met gerichte bronnen worden ingevuld.",
+    "source": {
+      "url": "https://gravepleasures.bandcamp.com/",
+      "kind": "artiest/catalogus",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Alleen profiel en catalogus bewezen; geen onbewezen Beastmilk- of bezettingsverhaal toegevoegd. Volledige bio blijft aanvullen.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:461TaZqofVfcQo2wtMwnQJ",
+    "name": "LeBrock",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "3lS99gJJAWuxKxQfXArvvx",
+    "track": "Runaway",
+    "rating": "GOED",
+    "ratingSourcePosition": 19,
+    "text": "LeBrock bestaat uit zanger Shaun Phillips en gitarist en producer Michael Meadows. Het Britse duo brengt rock en synthwave bij elkaar. Hun verhaal voert via Action & Romance uit 2016 en Real Thing uit 2018 naar Fuse uit 2021. Runaway hoort bij Real Thing. Bij terugzoeken vraagt de catalogusversie aandacht: de eigen Bandcamp-pagina biedt ook een geremasterde editie aan.",
+    "source": {
+      "url": "https://www.musicradar.com/news/lebrock-interview-michael-meadows-synthwave",
+      "kind": "oorspronkelijk interview",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Tweede bron: https://lebrock.bandcamp.com/track/runaway-2 . Originele plaat en remaster onderscheiden; geen versie gewijzigd in de bevroren selectie.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:2o88SjmtVVVyCmTGCuSPoY",
+    "name": "Kalax",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "4O6pSwn4xxx8FdBBdqeEin",
+    "track": "Out of Time",
+    "rating": "GOED",
+    "ratingSourcePosition": 29,
+    "text": "Kalax werkt vanuit Liverpool aan elektronische muziek met een duidelijke verwantschap aan de filmsoundtracks van de jaren tachtig. Op III uit maart 2019 krijgt Out of Time een gedeeld auteursverhaal: Kalax en PYXIS worden bij de track genoemd, Jay Diggs bij zang en tekst. Zulke rollen maken het portret preciezer. Een gaststem is immers ook iemand met een eigen bijdrage aan het gekozen nummer.",
+    "source": {
+      "url": "https://kalax.bandcamp.com/album/iii",
+      "kind": "artiest/albumcredits",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Samenwerkingscredits onderscheiden; echte naam en ontstaansjaar van Kalax niet uit afgeleide bronnen ingevuld. Volledige loopbaan open.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  },
+  {
+    "artistId": "spotify:artist:0HPVHsbV2yIYPp2Pk4kdHe",
+    "name": "Droid Bishop",
+    "status": "sourced-draft-needs-review",
+    "sourceManifestSha256": "b712029847cbf224b0171d699b4b6938d15e64d0aaa55ffccfad4eaab1352add",
+    "trackId": "6Hy7t4RIksivCxEXyu6T1b",
+    "track": "Dancing in the Darkness",
+    "rating": "GOED",
+    "ratingSourcePosition": 36,
+    "text": "Droid Bishop vermeldt Los Angeles als thuisbasis. Into The Abstract verscheen op 15 oktober 2021; Dancing in the Darkness staat er als derde track op. De albumcredits leggen schrijven, opnemen en mixen bij Droid Bishop, met mastering door Wayne G. Miller. Daarmee krijgt het project achter de naam al contouren: niet alleen een artiest op een playlist, maar ook een maker die verschillende productierollen samenbrengt.",
+    "source": {
+      "url": "https://droidbishop.bandcamp.com/album/into-the-abstract",
+      "kind": "artiest/albumcredits",
+      "checkedDate": "2026-11-02",
+      "evidenceScope": "targeted-page-or-description; not full discography verification"
+    },
+    "open": "Burgerlijke naam en ontstaansjaar niet primair gedekt; geen volledige carrièrebio of eigen luisteroordeel geclaimd.",
+    "editorialReview": null,
+    "deviceReview": null,
+    "publishable": false
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "canonicalVersion": "1.14.4",
+  "masterTracks": 3877,
+  "csvTracks": 3877,
+  "depotTracks": 3877,
+  "used": 3005,
+  "withoutRegisteredUse": 872,
+  "sourceCheckedCards": 230,
+  "errors": [],
+  "filesModified": false,
+  "liveFifoProven": false,
+  "w41EndToEndProven": false,
+  "archiveSha256": "f567df5976800d4413402db45b671484bf75b27625441157f32e34e6970af504",
+  "catalogSha256": "f433a7272781e3ce8d33bba4266c66dd36d3a7c799b9d5f5c11844e53d7afd6f"
+}

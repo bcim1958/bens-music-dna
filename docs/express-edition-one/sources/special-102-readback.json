@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-10-29T21:10:58.760231+00:00",
+  "sourceUrl": "https://open.spotify.com/embed/playlist/0IE8ZTGYFRb3Cot8HbONwW",
+  "kind": "public-embed-readback",
+  "authenticatedAccount": false,
+  "audioPlayed": false,
+  "name": "DNA SPECIAL 102 Glam: de vergeten zijstraten",
+  "tracks": [
+    {
+      "uri": "spotify:track:18n5kMWdrmrEOuh9Qnh2Wf",
+      "title": "Shotgun Sally",
+      "artist": "Cats In Boots"
+    },
+    {
+      "uri": "spotify:track:2Dd0cU8vbBl38j2RBLhLAm",
+      "title": "My Life",
+      "artist": "D'Molls"
+    },
+    {
+      "uri": "spotify:track:6HG1C9zt3trYkHAFtRU0lL",
+      "title": "Lick It into Shape",
+      "artist": "Smashed Gladys"
+    },
+    {
+      "uri": "spotify:track:6wUkj9fhKcMkUlSwcC3xd0",
+      "title": "Rattlesnake Kisses",
+      "artist": "Electric Angels"
+    },
+    {
+      "uri": "spotify:track:55Qc3ftOxf63hZn8XJElLF",
+      "title": "Half The Way Valley",
+      "artist": "Sea Hags"
+    },
+    {
+      "uri": "spotify:track:3Csv0MN00Iv3XH9d418JaQ",
+      "title": "Good Ol' Rock And Roll",
+      "artist": "Child's Play"
+    },
+    {
+      "uri": "spotify:track:779PvwBHrHjORk3lC3AMPt",
+      "title": "Walls Come Down",
+      "artist": "Every Mothers Nightmare"
+    },
+    {
+      "uri": "spotify:track:5AOPC7iW1kj8uGtT4CmcQj",
+      "title": "Don't Need Rules",
+      "artist": "Kik Tracee"
+    },
+    {
+      "uri": "spotify:track:31Eino4YwuoQlORmBExbdK",
+      "title": "Come Down Sister",
+      "artist": "The Throbs"
+    },
+    {
+      "uri": "spotify:track:0Md3WqXa9vCXWOVcvU94lA",
+      "title": "Let's Make Love Tonight",
+      "artist": "Cold Sweat"
+    },
+    {
+      "uri": "spotify:track:6Y3CVmC4P0P0sDcrRSzr4L",
+      "title": "(Angel With A) Devil's Kiss",
+      "artist": "Trouble Tribe"
+    },
+    {
+      "uri": "spotify:track:5eaveS1Oieqxf9HRNUQymh",
+      "title": "Love Hungry Man",
+      "artist": "Julliet"
+    },
+    {
+      "uri": "spotify:track:1vmTDGLj4FteG2Jn4NTazK",
+      "title": "Too Hot To Handle",
+      "artist": "Roxy Blue"
+    },
+    {
+      "uri": "spotify:track:0bwEjc3wdAY8mDdsbnRxcv",
+      "title": "The Hand That Feeds",
+      "artist": "Heavy Bones"
+    },
+    {
+      "uri": "spotify:track:4gjFeCBHRvUQluaJgUsDCh",
+      "title": "Shake",
+      "artist": "Saints & Sinners"
+    }
+  ],
+  "sameOrderedUris": true,
+  "trackCount": 15
+}

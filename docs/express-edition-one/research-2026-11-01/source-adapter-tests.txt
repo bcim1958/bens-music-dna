@@ -1,0 +1,14 @@
+PASS deterministic matching snapshot derives 21 research tasks without ratings
+PASS receipt published status required
+PASS conflicting source counts rejected
+PASS receipt from another week rejected
+PASS reordered live playlist rejected
+PASS reordered receipt rejected
+PASS duplicate source track rejected
+PASS missing primary artist rejected
+PASS different playlist id rejected
+PASS future readback rejected
+PASS readback older than delivery rejected
+PASS changed source head rejected
+PASS truncated source holds
+{"pass":true,"tests":13,"synthetic":true,"externalWrites":0,"endToEndProven":false}

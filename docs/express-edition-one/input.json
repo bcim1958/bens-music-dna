@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "weekly-issue",
+  "week": "2026-W44",
+  "revision": 1,
+  "cutoff": "2026-10-29T21:14:30Z",
+  "artifacts": [
+    {
+      "role": "manuscript",
+      "path": "Het-verhaal-achter-de-playlist.md",
+      "sha256": "42748df728018603e2376c6be3c481c1b6a59ad4b58b1c96547626bc45b22749"
+    },
+    {
+      "role": "claims",
+      "path": "sources/claims.json",
+      "sha256": "2598b2a605baf1196452e23ff8e15ce184f2273fd490f1dc3c47fa81ae80c596"
+    },
+    {
+      "role": "playlist",
+      "path": "sources/playlist.json",
+      "sha256": "1b9454535c50b1a51eb3839c568d3b2ee1774265646997ac4cc922bcb867fd8b"
+    },
+    {
+      "role": "readingProof",
+      "path": "Redactieproef.html",
+      "sha256": "e0193096b91a4238beeec04999f8610f471149710ef5626d2def51ff825c5908"
+    }
+  ],
+  "editionLabel": "Editie 1 \u2014 working label, canonical issue number pending",
+  "releaseAuthorized": false
+}

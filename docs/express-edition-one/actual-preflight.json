@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "status": "HOLD",
+  "published": false,
+  "endToEndProven": false,
+  "externalWrites": 0,
+  "storageWrites": 0,
+  "automaticSaturdayProven": false,
+  "week": "2026-W44",
+  "inputSha256": "28a0d5707a79ab12914362c108c7d2ce752a1f29e18c43805836b6e8bdcc5814",
+  "engineSha256": "4b6dfd18214ef970b69942c1163e6fcfb961826083e9c1eca80b0912e9927bb2",
+  "reason": "DEPENDENCY_MISSING",
+  "detail": "editorialReview, deviceReview"
+}

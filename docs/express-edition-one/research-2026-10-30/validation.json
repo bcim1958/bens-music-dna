@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-30T09:36:21.500190+00:00",
+  "newInterviewSources": 6,
+  "newAtomicAttributedClaims": 11,
+  "playlistArtistsWithTargetedSource": 15,
+  "fullBiographiesReady": false,
+  "candidateW44ArtistTasks": 21,
+  "originalArtifactsPreserved": {
+    "Het-verhaal-achter-de-playlist.md": "unchanged",
+    "Redactieproef.html": "unchanged",
+    "input.json": "unchanged",
+    "sources/claims.json": "unchanged",
+    "sources/SELECTIE_15.json": "unchanged",
+    "sources/playlist.json": "unchanged",
+    "sources/master-special-102-extract.json": "unchanged"
+  },
+  "runtimeChanged": false,
+  "publication": false,
+  "registryImported": false,
+  "sourceFactsAutomaticallyCertified": false
+}
