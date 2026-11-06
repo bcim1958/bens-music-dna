@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-06T09:31:35.866Z",
+  "timeBasis": "heartbeat trigger; live checks performed during this run",
+  "main": "63ff7d89d8e5d7bb3789cef718f89571a0adbcd9",
+  "prs": [
+    {
+      "number": 18,
+      "url": "https://github.com/bcim1958/bens-music-dna/pull/18",
+      "head": "7bae6b74ac9c72a0980b023b8da29b4ed87fc24a",
+      "state": "open",
+      "draft": true,
+      "mergeable": false
+    },
+    {
+      "number": 22,
+      "url": "https://github.com/bcim1958/bens-music-dna/pull/22",
+      "head": "5efb2258fb0a428a6d760238565605c2d9fe31da",
+      "state": "open",
+      "draft": true,
+      "mergeable": true
+    },
+    {
+      "number": 23,
+      "url": "https://github.com/bcim1958/bens-music-dna/pull/23",
+      "head": "c458fa6a02e71850755924b5ebf25b69dd83f233",
+      "state": "open",
+      "draft": true,
+      "mergeable": true
+    }
+  ],
+  "testedHead": "c458fa6a02e71850755924b5ebf25b69dd83f233",
+  "workflows": [
+    {
+      "id": 42094986489,
+      "name": "Weekly Music DNA regressions",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 58,
+      "jobs_url": "https://api.github.com/repos/bcim1958/bens-music-dna/actions/runs/42094986489/jobs",
+      "logs_url": "https://api.github.com/repos/bcim1958/bens-music-dna/actions/runs/42094986489/logs",
+      "workflow_id": 379647717
+    },
+    {
+      "id": 42094986438,
+      "name": "DNA Express preparation safety",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 7,
+      "jobs_url": "https://api.github.com/repos/bcim1958/bens-music-dna/actions/runs/42094986438/jobs",
+      "logs_url": "https://api.github.com/repos/bcim1958/bens-music-dna/actions/runs/42094986438/logs",
+      "workflow_id": 401113903
+    }
+  ]
+}

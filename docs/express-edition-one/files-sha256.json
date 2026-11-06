@@ -16,8 +16,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "870268534a73e95369b2c0980f99cc9d71e3d04c629843e581115395d328d9fa",
-    "bytes": 13856
+    "sha256": "4874c8f96b4307fc043b020439c5e432cec218817891965f53a8040ec41f704b",
+    "bytes": 14381
   },
   {
     "path": "Redactieproef.html",
@@ -38,6 +38,16 @@
     "path": "browser-checks.json",
     "sha256": "1f28b12e34acf6d533b38263f1bab2e4becb7463349dfd43ae2afde62ab887c5",
     "bytes": 713
+  },
+  {
+    "path": "closing-2026-11-06/Eindrapport.md",
+    "sha256": "033c6978c0f41d0114378ad60c082fb508f78e776099c726fe291c77f9a31ed6",
+    "bytes": 9486
+  },
+  {
+    "path": "closing-2026-11-06/github-readback.json",
+    "sha256": "7415e96d22401fe8927e2d4252eef8d0c4ecfc7160948f6415141f6e3475e796",
+    "bytes": 1765
   },
   {
     "path": "existing-regressions.json",

@@ -88,3 +88,7 @@ Main is nu `63ff7d89d8e5d7bb3789cef718f89571a0adbcd9` (documentatiemerge #25). B
 ## Vervolg 5 november 2026 — samengestelde leesproef v3
 
 [Verhaal, Mijn Week en 21 weekportretten in één leesroute](research-2026-11-05/Redactieproef-v3.html). 17 secties; bestaande teksten, echte ratings, bronlinks en open controles behouden. Reproduceerbare HTML en drie Chrome-viewports gecontroleerd. Geen volledige editie of apparaatproef; oorspronkelijke inputs/reviews blijven HOLD. [Exact rapport](research-2026-11-05/Uitvoeringsrapport.md).
+
+## Afsluiting 6 november 2026
+
+**Tijdelijke weekopdracht afgesloten; REDACTIEPROEF / HOLD.** [Exact eindrapport](closing-2026-11-06/Eindrapport.md) en [GitHub-/CI-readback](closing-2026-11-06/github-readback.json). Leesproef v3 is geleverd, volledige Editie 1 en onbemande weekketen zijn niet gereed/bewezen. Beide workflows op inhoudelijke head c458fa6 zijn success; afsluitdocumentatie krijgt een eigen commit. Geen ontbrekende goedkeuringen ingevuld. Deze opvolging eindigt op 6 november; geen automatische voortzetting.
